@@ -8,7 +8,7 @@ import torch
 from torchtext import data, datasets
 
 sys.path.append('../../sni/model')
-#import model
+import model
 import evalTest
 
 def main():

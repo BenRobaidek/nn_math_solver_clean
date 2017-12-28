@@ -1,0 +1,211 @@
+acc: 35.0877%( 60/171) EPOCH38 - loss: 0.2802 t5_acc: 54.9708%( 94/171) MRR: 0.447683PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs2000_dr2_ed100_fembTrue_ptembTrue_drp0.7
+acc: 35.0877%( 60/171) EPOCH58 - loss: 0.0403 t5_acc: 52.6316%( 90/171) MRR: 0.436088PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs500_dr2_ed300_fembFalse_ptembFalse_drp0.7
+acc: 35.0877%( 60/171) EPOCH60 - loss: 0.0600 t5_acc: 56.1404%( 96/171) MRR: 0.454972PARAMETERS:net-gru_e100_bs64_opt-adamax_ly1_hs500_dr2_ed200_fembFalse_ptembFalse_drp0.3
+acc: 35.0877%( 60/171) EPOCH70 - loss: 0.1292 t5_acc: 52.6316%( 90/171) MRR: 0.434582PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs1000_dr2_ed50_fembFalse_ptembTrue_drp0.0
+acc: 35.0877%( 60/171) EPOCH82 - loss: 0.0500 t5_acc: 52.0468%( 89/171) MRR: 0.439184PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs2000_dr2_ed50_fembTrue_ptembTrue_drp0.5
+acc: 35.0877%( 60/171) EPOCH99 - loss: 0.0337 t5_acc: 60.2339%(103/171) MRR: 0.466615PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs500_dr2_ed300_fembFalse_ptembTrue_drp0.3
+acc: 35.6725%( 61/171) EPOCH50 - loss: 0.0454 t5_acc: 60.8187%(104/171) MRR: 0.469742PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly4_hs100_dr2_ed200_fembFalse_ptembFalse_drp0.5
+acc: 35.6725%( 61/171) EPOCH60 - loss: 0.0343 t5_acc: 60.8187%(104/171) MRR: 0.472388PARAMETERS:net-lstm_e100_bs64_opt-adam_ly4_hs750_dr2_ed100_fembFalse_ptembFalse_drp0.0
+acc: 35.6725%( 61/171) EPOCH66 - loss: 0.0407 t5_acc: 60.2339%(103/171) MRR: 0.458170PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs750_dr2_ed300_fembFalse_ptembTrue_drp0.5
+acc: 35.6725%( 61/171) EPOCH75 - loss: 0.0615 t5_acc: 54.9708%( 94/171) MRR: 0.451451PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs750_dr2_ed300_fembFalse_ptembTrue_drp0.7
+acc: 35.6725%( 61/171) EPOCH80 - loss: 0.0425 t5_acc: 49.1228%( 84/171) MRR: 0.437006PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs1000_dr2_ed100_fembFalse_ptembTrue_drp0.3
+acc: 35.6725%( 61/171) EPOCH82 - loss: 0.0589 t5_acc: 54.3860%( 93/171) MRR: 0.449817PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs100_dr2_ed300_fembFalse_ptembTrue_drp0.0
+acc: 35.6725%( 61/171) EPOCH86 - loss: 0.0631 t5_acc: 58.4795%(100/171) MRR: 0.463620PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs750_dr2_ed200_fembTrue_ptembTrue_drp0.3
+acc: 35.6725%( 61/171) EPOCH87 - loss: 0.0357 t5_acc: 54.3860%( 93/171) MRR: 0.448537PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs100_dr2_ed100_fembFalse_ptembFalse_drp0.0
+acc: 35.6725%( 61/171) EPOCH90 - loss: 0.0372 t5_acc: 54.9708%( 94/171) MRR: 0.454841PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs500_dr2_ed50_fembFalse_ptembFalse_drp0.0
+acc: 35.6725%( 61/171) EPOCH96 - loss: 0.0405 t5_acc: 56.7251%( 97/171) MRR: 0.458516PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs500_dr2_ed200_fembFalse_ptembTrue_drp0.3
+acc: 35.6725%( 61/171) EPOCH97 - loss: 0.0316 t5_acc: 55.5556%( 95/171) MRR: 0.440076PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs750_dr2_ed300_fembFalse_ptembFalse_drp0.0
+acc: 36.2573%( 62/171) EPOCH31 - loss: 0.1287 t5_acc: 54.9708%( 94/171) MRR: 0.455641PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs2000_dr2_ed200_fembFalse_ptembTrue_drp0.3
+acc: 36.2573%( 62/171) EPOCH78 - loss: 0.0346 t5_acc: 59.0643%(101/171) MRR: 0.466095PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly4_hs100_dr2_ed750_fembFalse_ptembFalse_drp0.5
+acc: 36.2573%( 62/171) EPOCH89 - loss: 0.0500 t5_acc: 59.0643%(101/171) MRR: 0.461678PARAMETERS:net-lstm_e100_bs64_opt-sgd_ly2_hs100_dr2_ed200_fembFalse_ptembFalse_drp0.3
+acc: 36.2573%( 62/171) EPOCH95 - loss: 0.0342 t5_acc: 55.5556%( 95/171) MRR: 0.463160PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs500_dr2_ed100_fembFalse_ptembFalse_drp0.0
+acc: 36.8421%( 63/171) EPOCH18 - loss: 0.1066 t5_acc: 56.7251%( 97/171) MRR: 0.463284PARAMETERS:net-gru_e100_bs64_opt-adam_ly1_hs2000_dr2_ed300_fembFalse_ptembTrue_drp0.7
+acc: 36.8421%( 63/171) EPOCH60 - loss: 0.0509 t5_acc: 64.3275%(110/171) MRR: 0.497498PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs750_dr2_ed300_fembTrue_ptembTrue_drp0.7
+acc: 36.8421%( 63/171) EPOCH85 - loss: 0.0392 t5_acc: 55.5556%( 95/171) MRR: 0.460432PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs750_dr2_ed300_fembTrue_ptembTrue_drp0.0
+acc: 36.8421%( 63/171) EPOCH87 - loss: 0.0364 t5_acc: 48.5380%( 83/171) MRR: 0.436228PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs300_dr2_ed200_fembFalse_ptembFalse_drp0.0
+acc: 36.8421%( 63/171) EPOCH87 - loss: 0.0492 t5_acc: 61.4035%(105/171) MRR: 0.473518PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs300_dr2_ed100_fembTrue_ptembTrue_drp0.0
+acc: 36.8421%( 63/171) EPOCH92 - loss: 0.0327 t5_acc: 58.4795%(100/171) MRR: 0.472025PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs1000_dr2_ed300_fembFalse_ptembFalse_drp0.5
+acc: 36.8421%( 63/171) EPOCH99 - loss: 0.0369 t5_acc: 59.0643%(101/171) MRR: 0.470060PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs750_dr2_ed300_fembFalse_ptembFalse_drp0.5
+acc: 37.4269%( 64/171) EPOCH29 - loss: 1.1045 t5_acc: 63.1579%(108/171) MRR: 0.506185PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs100_dr2_ed200_fembFalse_ptembTrue_drp0.7
+acc: 37.4269%( 64/171) EPOCH61 - loss: 0.0331 t5_acc: 50.8772%( 87/171) MRR: 0.446128PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs500_dr2_ed200_fembFalse_ptembFalse_drp0.0
+acc: 37.4269%( 64/171) EPOCH70 - loss: 0.0371 t5_acc: 58.4795%(100/171) MRR: 0.472617PARAMETERS:net-gru_e100_bs64_opt-adamax_ly2_hs100_dr2_ed300_fembFalse_ptembFalse_drp0.0
+acc: 37.4269%( 64/171) EPOCH97 - loss: 0.0736 t5_acc: 53.8012%( 92/171) MRR: 0.461643PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs750_dr2_ed50_fembTrue_ptembTrue_drp0.7
+acc: 38.0117%( 65/171) EPOCH42 - loss: 0.0769 t5_acc: 66.0819%(113/171) MRR: 0.501982PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs2000_dr2_ed300_fembFalse_ptembTrue_drp0.0
+acc: 38.0117%( 65/171) EPOCH43 - loss: 0.0621 t5_acc: 54.9708%( 94/171) MRR: 0.463621PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs2000_dr2_ed300_fembFalse_ptembTrue_drp0.5
+acc: 38.0117%( 65/171) EPOCH43 - loss: 0.1404 t5_acc: 59.0643%(101/171) MRR: 0.482828PARAMETERS:net-gru_e100_bs64_opt-adam_ly1_hs750_dr2_ed100_fembFalse_ptembTrue_drp0.0
+acc: 38.0117%( 65/171) EPOCH46 - loss: 0.0546 t5_acc: 57.8947%( 99/171) MRR: 0.483168PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly4_hs100_dr2_ed750_fembFalse_ptembFalse_drp0.7
+acc: 38.0117%( 65/171) EPOCH60 - loss: 0.0587 t5_acc: 54.3860%( 93/171) MRR: 0.461291PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs2000_dr2_ed100_fembFalse_ptembTrue_drp0.0
+acc: 38.0117%( 65/171) EPOCH66 - loss: 0.0361 t5_acc: 59.0643%(101/171) MRR: 0.474763PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs750_dr2_ed200_fembFalse_ptembFalse_drp0.3
+acc: 38.0117%( 65/171) EPOCH87 - loss: 0.0332 t5_acc: 55.5556%( 95/171) MRR: 0.473591PARAMETERS:net-gru_e100_bs64_opt-adamax_ly1_hs300_dr2_ed200_fembFalse_ptembFalse_drp0.7
+acc: 38.0117%( 65/171) EPOCH89 - loss: 0.0321 t5_acc: 59.0643%(101/171) MRR: 0.469601PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs1000_dr2_ed200_fembFalse_ptembFalse_drp0.5
+acc: 38.0117%( 65/171) EPOCH89 - loss: 0.0365 t5_acc: 56.1404%( 96/171) MRR: 0.467442PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs2000_dr2_ed300_fembFalse_ptembFalse_drp0.7
+acc: 38.0117%( 65/171) EPOCH95 - loss: 0.0481 t5_acc: 59.0643%(101/171) MRR: 0.481355PARAMETERS:net-lstm_e100_bs64_opt-sgd_ly1_hs100_dr2_ed300_fembFalse_ptembFalse_drp0.0
+acc: 38.0117%( 65/171) EPOCH98 - loss: 0.0360 t5_acc: 59.0643%(101/171) MRR: 0.474597PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs500_dr2_ed200_fembFalse_ptembFalse_drp0.7
+acc: 38.5965%( 66/171) EPOCH57 - loss: 0.0410 t5_acc: 59.0643%(101/171) MRR: 0.484808PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs1000_dr2_ed200_fembFalse_ptembFalse_drp0.0
+acc: 38.5965%( 66/171) EPOCH61 - loss: 0.0455 t5_acc: 54.3860%( 93/171) MRR: 0.463856PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs750_dr2_ed300_fembFalse_ptembFalse_drp0.0
+acc: 38.5965%( 66/171) EPOCH68 - loss: 0.0380 t5_acc: 59.0643%(101/171) MRR: 0.482504PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs1000_dr2_ed300_fembFalse_ptembFalse_drp0.0
+acc: 38.5965%( 66/171) EPOCH84 - loss: 0.0346 t5_acc: 53.8012%( 92/171) MRR: 0.469788PARAMETERS:net-gru_e100_bs64_opt-adamax_ly4_hs100_dr2_ed500_fembFalse_ptembFalse_drp0.3
+acc: 38.5965%( 66/171) EPOCH88 - loss: 0.0510 t5_acc: 55.5556%( 95/171) MRR: 0.465354PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs2000_dr2_ed200_fembFalse_ptembTrue_drp0.0
+acc: 38.5965%( 66/171) EPOCH90 - loss: 0.0543 t5_acc: 57.8947%( 99/171) MRR: 0.487277PARAMETERS:net-lstm_e100_bs64_opt-sgd_ly4_hs100_dr2_ed300_fembFalse_ptembFalse_drp0.7
+acc: 38.5965%( 66/171) EPOCH95 - loss: 0.0328 t5_acc: 59.6491%(102/171) MRR: 0.487244PARAMETERS:net-gru_e100_bs64_opt-adamax_ly4_hs100_dr2_ed1000_fembFalse_ptembFalse_drp0.0
+acc: 38.5965%( 66/171) EPOCH95 - loss: 0.0341 t5_acc: 55.5556%( 95/171) MRR: 0.472597PARAMETERS:net-gru_e100_bs64_opt-adamax_ly1_hs2000_dr2_ed200_fembFalse_ptembFalse_drp0.0
+acc: 38.5965%( 66/171) EPOCH99 - loss: 0.1214 t5_acc: 56.1404%( 96/171) MRR: 0.472113PARAMETERS:net-lstm_e100_bs64_opt-adam_ly2_hs750_dr2_ed100_fembTrue_ptembTrue_drp0.5
+acc: 39.1813%( 67/171) EPOCH40 - loss: 0.0750 t5_acc: 54.9708%( 94/171) MRR: 0.473893PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs2000_dr2_ed200_fembTrue_ptembTrue_drp0.5
+acc: 39.1813%( 67/171) EPOCH44 - loss: 0.0542 t5_acc: 57.8947%( 99/171) MRR: 0.486122PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly4_hs100_dr2_ed500_fembFalse_ptembFalse_drp0.3
+acc: 39.1813%( 67/171) EPOCH47 - loss: 0.0617 t5_acc: 60.8187%(104/171) MRR: 0.483914PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs1000_dr2_ed300_fembFalse_ptembTrue_drp0.3
+acc: 39.1813%( 67/171) EPOCH51 - loss: 0.0332 t5_acc: 54.9708%( 94/171) MRR: 0.468655PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs500_dr2_ed300_fembFalse_ptembFalse_drp0.5
+acc: 39.1813%( 67/171) EPOCH63 - loss: 0.0367 t5_acc: 60.8187%(104/171) MRR: 0.493067PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs1000_dr2_ed200_fembFalse_ptembFalse_drp0.7
+acc: 39.1813%( 67/171) EPOCH82 - loss: 0.0358 t5_acc: 56.7251%( 97/171) MRR: 0.485259PARAMETERS:net-gru_e100_bs64_opt-adamax_ly2_hs100_dr2_ed200_fembFalse_ptembFalse_drp0.0
+acc: 39.1813%( 67/171) EPOCH89 - loss: 0.0314 t5_acc: 57.3099%( 98/171) MRR: 0.478470PARAMETERS:net-gru_e100_bs64_opt-adam_ly1_hs750_dr2_ed200_fembFalse_ptembFalse_drp0.0
+acc: 39.1813%( 67/171) EPOCH92 - loss: 0.0382 t5_acc: 54.3860%( 93/171) MRR: 0.469759PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs1000_dr2_ed300_fembFalse_ptembFalse_drp0.7
+acc: 39.1813%( 67/171) EPOCH94 - loss: 0.0391 t5_acc: 57.8947%( 99/171) MRR: 0.481407PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs100_dr2_ed100_fembFalse_ptembFalse_drp0.7
+acc: 39.1813%( 67/171) EPOCH95 - loss: 0.0338 t5_acc: 56.7251%( 97/171) MRR: 0.478139PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly4_hs100_dr2_ed1000_fembFalse_ptembFalse_drp0.5
+acc: 39.7661%( 68/171) EPOCH50 - loss: 0.0548 t5_acc: 64.9123%(111/171) MRR: 0.518592PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs750_dr2_ed300_fembFalse_ptembTrue_drp0.3
+acc: 39.7661%( 68/171) EPOCH51 - loss: 0.0603 t5_acc: 58.4795%(100/171) MRR: 0.488603PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs2000_dr2_ed200_fembFalse_ptembTrue_drp0.5
+acc: 39.7661%( 68/171) EPOCH68 - loss: 0.0383 t5_acc: 59.0643%(101/171) MRR: 0.483507PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs750_dr2_ed300_fembFalse_ptembTrue_drp0.7
+acc: 39.7661%( 68/171) EPOCH72 - loss: 0.0658 t5_acc: 60.8187%(104/171) MRR: 0.492923PARAMETERS:net-lstm_e100_bs64_opt-sgd_ly1_hs300_dr2_ed1250_fembFalse_ptembFalse_drp0.3
+acc: 39.7661%( 68/171) EPOCH81 - loss: 0.0373 t5_acc: 59.0643%(101/171) MRR: 0.481638PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs2000_dr2_ed100_fembFalse_ptembFalse_drp0.5
+acc: 39.7661%( 68/171) EPOCH82 - loss: 0.0377 t5_acc: 62.5731%(107/171) MRR: 0.500307PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs1000_dr2_ed300_fembFalse_ptembFalse_drp0.3
+acc: 39.7661%( 68/171) EPOCH87 - loss: 0.0361 t5_acc: 56.1404%( 96/171) MRR: 0.482905PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs1000_dr2_ed300_fembFalse_ptembFalse_drp0.0
+acc: 39.7661%( 68/171) EPOCH89 - loss: 0.0344 t5_acc: 59.0643%(101/171) MRR: 0.489518PARAMETERS:net-gru_e100_bs64_opt-adamax_ly1_hs300_dr2_ed300_fembFalse_ptembFalse_drp0.5
+acc: 39.7661%( 68/171) EPOCH97 - loss: 0.0330 t5_acc: 55.5556%( 95/171) MRR: 0.476143PARAMETERS:net-gru_e100_bs64_opt-adamax_ly4_hs100_dr2_ed500_fembFalse_ptembFalse_drp0.0
+acc: 39.7661%( 68/171) EPOCH99 - loss: 0.0471 t5_acc: 57.8947%( 99/171) MRR: 0.490918PARAMETERS:net-lstm_e100_bs64_opt-sgd_ly2_hs100_dr2_ed300_fembFalse_ptembFalse_drp0.3
+acc: 40.3509%( 69/171) EPOCH69 - loss: 0.0464 t5_acc: 63.1579%(108/171) MRR: 0.504926PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs2000_dr2_ed200_fembFalse_ptembTrue_drp0.7
+acc: 40.3509%( 69/171) EPOCH93 - loss: 0.0392 t5_acc: 63.7427%(109/171) MRR: 0.506637PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs300_dr2_ed200_fembFalse_ptembFalse_drp0.5
+acc: 40.3509%( 69/171) EPOCH97 - loss: 0.0425 t5_acc: 60.8187%(104/171) MRR: 0.507649PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs1000_dr2_ed50_fembTrue_ptembTrue_drp0.7
+acc: 40.3509%( 69/171) EPOCH99 - loss: 0.0370 t5_acc: 59.0643%(101/171) MRR: 0.494142PARAMETERS:net-gru_e100_bs64_opt-adamax_ly4_hs100_dr2_ed500_fembFalse_ptembFalse_drp0.5
+acc: 40.9357%( 70/171) EPOCH75 - loss: 0.0424 t5_acc: 60.2339%(103/171) MRR: 0.492687PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs1000_dr2_ed200_fembTrue_ptembTrue_drp0.7
+acc: 40.9357%( 70/171) EPOCH80 - loss: 0.0419 t5_acc: 57.3099%( 98/171) MRR: 0.490084PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs2000_dr2_ed200_fembFalse_ptembFalse_drp0.3
+acc: 40.9357%( 70/171) EPOCH84 - loss: 0.0367 t5_acc: 66.6667%(114/171) MRR: 0.525051PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs500_dr2_ed200_fembTrue_ptembTrue_drp0.0
+acc: 40.9357%( 70/171) EPOCH86 - loss: 0.0339 t5_acc: 59.6491%(102/171) MRR: 0.505950PARAMETERS:net-gru_e100_bs64_opt-adamax_ly4_hs100_dr2_ed1000_fembFalse_ptembFalse_drp0.5
+acc: 40.9357%( 70/171) EPOCH88 - loss: 0.0325 t5_acc: 62.5731%(107/171) MRR: 0.512022PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs300_dr2_ed300_fembFalse_ptembFalse_drp0.3
+acc: 40.9357%( 70/171) EPOCH94 - loss: 0.0378 t5_acc: 64.9123%(111/171) MRR: 0.510615PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly4_hs100_dr2_ed300_fembFalse_ptembFalse_drp0.7
+acc: 40.9357%( 70/171) EPOCH95 - loss: 0.0341 t5_acc: 59.6491%(102/171) MRR: 0.498184PARAMETERS:net-gru_e100_bs64_opt-adamax_ly1_hs300_dr2_ed300_fembFalse_ptembFalse_drp0.7
+acc: 41.5205%( 71/171) EPOCH74 - loss: 0.0347 t5_acc: 59.6491%(102/171) MRR: 0.498638PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs300_dr2_ed100_fembFalse_ptembFalse_drp0.7
+acc: 41.5205%( 71/171) EPOCH78 - loss: 0.0363 t5_acc: 65.4971%(112/171) MRR: 0.522819PARAMETERS:net-gru_e100_bs64_opt-adamax_ly2_hs100_dr2_ed500_fembFalse_ptembFalse_drp0.3
+acc: 41.5205%( 71/171) EPOCH82 - loss: 0.0346 t5_acc: 57.3099%( 98/171) MRR: 0.498218PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs2000_dr2_ed300_fembFalse_ptembFalse_drp0.0
+acc: 41.5205%( 71/171) EPOCH92 - loss: 0.0380 t5_acc: 60.2339%(103/171) MRR: 0.503614PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs100_dr2_ed100_fembFalse_ptembFalse_drp0.5
+acc: 41.5205%( 71/171) EPOCH93 - loss: 0.0311 t5_acc: 63.1579%(108/171) MRR: 0.514110PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs500_dr2_ed300_fembFalse_ptembFalse_drp0.0
+acc: 41.5205%( 71/171) EPOCH97 - loss: 0.0364 t5_acc: 59.6491%(102/171) MRR: 0.501382PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs300_dr2_ed200_fembFalse_ptembFalse_drp0.7
+acc: 42.1053%( 72/171) EPOCH66 - loss: 0.0554 t5_acc: 57.8947%( 99/171) MRR: 0.494020PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs300_dr2_ed300_fembFalse_ptembFalse_drp0.7
+acc: 42.1053%( 72/171) EPOCH73 - loss: 0.0352 t5_acc: 57.8947%( 99/171) MRR: 0.499485PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs500_dr2_ed200_fembFalse_ptembFalse_drp0.7
+acc: 42.1053%( 72/171) EPOCH89 - loss: 0.0373 t5_acc: 57.8947%( 99/171) MRR: 0.498375PARAMETERS:net-gru_e100_bs64_opt-adamax_ly2_hs100_dr2_ed200_fembFalse_ptembFalse_drp0.5
+acc: 42.1053%( 72/171) EPOCH95 - loss: 0.0345 t5_acc: 59.6491%(102/171) MRR: 0.503781PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs100_dr2_ed200_fembFalse_ptembFalse_drp0.3
+acc: 42.6901%( 73/171) EPOCH24 - loss: 0.9092 t5_acc: 69.0058%(118/171) MRR: 0.536855PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs100_dr2_ed300_fembFalse_ptembTrue_drp0.3
+acc: 42.6901%( 73/171) EPOCH64 - loss: 0.0400 t5_acc: 57.3099%( 98/171) MRR: 0.496921PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs750_dr2_ed300_fembFalse_ptembFalse_drp0.3
+acc: 42.6901%( 73/171) EPOCH67 - loss: 0.0358 t5_acc: 66.0819%(113/171) MRR: 0.533618PARAMETERS:net-gru_e100_bs64_opt-adamax_ly1_hs500_dr2_ed200_fembFalse_ptembFalse_drp0.7
+acc: 42.6901%( 73/171) EPOCH72 - loss: 0.0387 t5_acc: 60.8187%(104/171) MRR: 0.513184PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs2000_dr2_ed300_fembFalse_ptembFalse_drp0.3
+acc: 42.6901%( 73/171) EPOCH89 - loss: 0.0369 t5_acc: 59.6491%(102/171) MRR: 0.508646PARAMETERS:net-gru_e100_bs64_opt-adamax_ly1_hs500_dr2_ed200_fembFalse_ptembFalse_drp0.0
+acc: 42.6901%( 73/171) EPOCH90 - loss: 0.0368 t5_acc: 58.4795%(100/171) MRR: 0.499488PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs500_dr2_ed200_fembFalse_ptembFalse_drp0.0
+acc: 42.6901%( 73/171) EPOCH91 - loss: 0.0812 t5_acc: 56.1404%( 96/171) MRR: 0.498978PARAMETERS:net-gru_e100_bs64_opt-sgd_ly1_hs300_dr2_ed1500_fembFalse_ptembFalse_drp0.3
+acc: 42.6901%( 73/171) EPOCH92 - loss: 0.0720 t5_acc: 57.3099%( 98/171) MRR: 0.493298PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs500_dr2_ed50_fembTrue_ptembTrue_drp0.0
+acc: 42.6901%( 73/171) EPOCH94 - loss: 0.0395 t5_acc: 55.5556%( 95/171) MRR: 0.500464PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs2000_dr2_ed200_fembTrue_ptembTrue_drp0.0
+acc: 42.6901%( 73/171) EPOCH95 - loss: 0.0330 t5_acc: 61.4035%(105/171) MRR: 0.525590PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs100_dr2_ed200_fembFalse_ptembFalse_drp0.5
+acc: 43.2749%( 74/171) EPOCH34 - loss: 0.0736 t5_acc: 63.1579%(108/171) MRR: 0.523320PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly4_hs100_dr2_ed300_fembFalse_ptembFalse_drp0.5
+acc: 43.2749%( 74/171) EPOCH84 - loss: 0.0391 t5_acc: 61.4035%(105/171) MRR: 0.514865PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly4_hs100_dr2_ed200_fembFalse_ptembFalse_drp0.7
+acc: 43.2749%( 74/171) EPOCH85 - loss: 0.0395 t5_acc: 59.0643%(101/171) MRR: 0.511789PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs2000_dr2_ed100_fembFalse_ptembTrue_drp0.5
+acc: 43.2749%( 74/171) EPOCH86 - loss: 0.0349 t5_acc: 67.8363%(116/171) MRR: 0.539316PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs100_dr2_ed300_fembFalse_ptembFalse_drp0.5
+acc: 43.2749%( 74/171) EPOCH94 - loss: 0.0420 t5_acc: 56.1404%( 96/171) MRR: 0.495835PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs2000_dr2_ed300_fembTrue_ptembTrue_drp0.5
+acc: 43.2749%( 74/171) EPOCH98 - loss: 0.0337 t5_acc: 59.6491%(102/171) MRR: 0.511431PARAMETERS:net-gru_e100_bs64_opt-adamax_ly4_hs100_dr2_ed750_fembFalse_ptembFalse_drp0.7
+acc: 43.8596%( 75/171) EPOCH58 - loss: 0.0480 t5_acc: 66.0819%(113/171) MRR: 0.536150PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs750_dr2_ed300_fembTrue_ptembTrue_drp0.0
+acc: 43.8596%( 75/171) EPOCH79 - loss: 0.0575 t5_acc: 63.1579%(108/171) MRR: 0.534051PARAMETERS:net-gru_e100_bs64_opt-adamax_ly1_hs100_dr2_ed200_fembFalse_ptembFalse_drp0.5
+acc: 43.8596%( 75/171) EPOCH82 - loss: 0.0329 t5_acc: 57.8947%( 99/171) MRR: 0.515749PARAMETERS:net-gru_e100_bs64_opt-adam_ly1_hs300_dr2_ed200_fembFalse_ptembFalse_drp0.0
+acc: 43.8596%( 75/171) EPOCH91 - loss: 0.0315 t5_acc: 60.2339%(103/171) MRR: 0.519529PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly4_hs100_dr2_ed1000_fembFalse_ptembFalse_drp0.0
+acc: 43.8596%( 75/171) EPOCH98 - loss: 0.0327 t5_acc: 62.5731%(107/171) MRR: 0.527645PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs750_dr2_ed200_fembFalse_ptembFalse_drp0.5
+acc: 44.4444%( 76/171) EPOCH40 - loss: 0.0414 t5_acc: 60.8187%(104/171) MRR: 0.519247PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs300_dr2_ed200_fembFalse_ptembFalse_drp0.5
+acc: 44.4444%( 76/171) EPOCH51 - loss: 0.0416 t5_acc: 61.9883%(106/171) MRR: 0.532204PARAMETERS:net-lstm_e100_bs64_opt-adam_ly1_hs1000_dr2_ed300_fembTrue_ptembTrue_drp0.3
+acc: 44.4444%( 76/171) EPOCH63 - loss: 0.0367 t5_acc: 60.8187%(104/171) MRR: 0.513528PARAMETERS:net-gru_e100_bs64_opt-adamax_ly2_hs300_dr2_ed300_fembFalse_ptembFalse_drp0.7
+acc: 44.4444%( 76/171) EPOCH78 - loss: 0.0395 t5_acc: 60.2339%(103/171) MRR: 0.523976PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs100_dr2_ed200_fembFalse_ptembFalse_drp0.7
+acc: 44.4444%( 76/171) EPOCH80 - loss: 0.0396 t5_acc: 66.6667%(114/171) MRR: 0.550666PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs100_dr2_ed200_fembFalse_ptembFalse_drp0.3
+acc: 45.0292%( 77/171) EPOCH61 - loss: 0.0395 t5_acc: 57.3099%( 98/171) MRR: 0.524044PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs300_dr2_ed300_fembFalse_ptembFalse_drp0.5
+acc: 45.0292%( 77/171) EPOCH75 - loss: 0.0376 t5_acc: 56.1404%( 96/171) MRR: 0.508181PARAMETERS:net-gru_e100_bs64_opt-adamax_ly4_hs100_dr2_ed1000_fembFalse_ptembFalse_drp0.3
+acc: 45.0292%( 77/171) EPOCH76 - loss: 0.0387 t5_acc: 56.1404%( 96/171) MRR: 0.515829PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs2000_dr2_ed100_fembFalse_ptembFalse_drp0.0
+acc: 45.0292%( 77/171) EPOCH95 - loss: 0.0330 t5_acc: 56.7251%( 97/171) MRR: 0.518207PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs100_dr2_ed200_fembFalse_ptembFalse_drp0.0
+acc: 45.0292%( 77/171) EPOCH95 - loss: 0.0359 t5_acc: 62.5731%(107/171) MRR: 0.533190PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs500_dr2_ed300_fembFalse_ptembFalse_drp0.3
+acc: 45.6140%( 78/171) EPOCH19 - loss: 0.0653 t5_acc: 59.0643%(101/171) MRR: 0.526134PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs500_dr2_ed300_fembFalse_ptembFalse_drp0.3
+acc: 45.6140%( 78/171) EPOCH70 - loss: 0.0411 t5_acc: 59.6491%(102/171) MRR: 0.523425PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs500_dr2_ed300_fembFalse_ptembFalse_drp0.0
+acc: 45.6140%( 78/171) EPOCH80 - loss: 0.0327 t5_acc: 57.3099%( 98/171) MRR: 0.524520PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs300_dr2_ed200_fembFalse_ptembFalse_drp0.0
+acc: 45.6140%( 78/171) EPOCH81 - loss: 0.0424 t5_acc: 66.6667%(114/171) MRR: 0.549680PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs100_dr2_ed200_fembFalse_ptembFalse_drp0.0
+acc: 45.6140%( 78/171) EPOCH86 - loss: 0.0407 t5_acc: 64.9123%(111/171) MRR: 0.545121PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs2000_dr2_ed300_fembTrue_ptembTrue_drp0.0
+acc: 45.6140%( 78/171) EPOCH93 - loss: 0.1323 t5_acc: 65.4971%(112/171) MRR: 0.549601PARAMETERS:net-gru_e100_bs64_opt-adam_ly2_hs1000_dr2_ed50_fembTrue_ptembTrue_drp0.0
+acc: 46.1988%( 79/171) EPOCH70 - loss: 0.0423 t5_acc: 57.8947%( 99/171) MRR: 0.524159PARAMETERS:net-gru_e100_bs64_opt-adamax_ly4_hs100_dr2_ed500_fembFalse_ptembFalse_drp0.7
+acc: 46.1988%( 79/171) EPOCH78 - loss: 0.0335 t5_acc: 59.0643%(101/171) MRR: 0.525362PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs300_dr2_ed300_fembFalse_ptembFalse_drp0.3
+acc: 46.1988%( 79/171) EPOCH86 - loss: 0.0642 t5_acc: 62.5731%(107/171) MRR: 0.548361PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs2000_dr2_ed300_fembFalse_ptembTrue_drp0.3
+acc: 46.1988%( 79/171) EPOCH91 - loss: 0.0367 t5_acc: 62.5731%(107/171) MRR: 0.547922PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs750_dr2_ed300_fembFalse_ptembFalse_drp0.7
+acc: 46.1988%( 79/171) EPOCH94 - loss: 0.0346 t5_acc: 66.6667%(114/171) MRR: 0.552230PARAMETERS:net-gru_e100_bs64_opt-adamax_ly2_hs100_dr2_ed750_fembFalse_ptembFalse_drp0.0
+acc: 46.7836%( 80/171) EPOCH32 - loss: 0.1060 t5_acc: 68.4211%(117/171) MRR: 0.568810PARAMETERS:net-gru_e100_bs64_opt-adamax_ly2_hs100_dr2_ed1000_fembFalse_ptembFalse_drp0.5
+acc: 46.7836%( 80/171) EPOCH47 - loss: 0.0580 t5_acc: 59.6491%(102/171) MRR: 0.529715PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs2000_dr2_ed50_fembFalse_ptembFalse_drp0.5
+acc: 46.7836%( 80/171) EPOCH59 - loss: 0.0400 t5_acc: 64.3275%(110/171) MRR: 0.554436PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs100_dr2_ed750_fembFalse_ptembFalse_drp0.3
+acc: 46.7836%( 80/171) EPOCH61 - loss: 0.0344 t5_acc: 63.7427%(109/171) MRR: 0.543941PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs300_dr2_ed200_fembFalse_ptembFalse_drp0.7
+acc: 46.7836%( 80/171) EPOCH62 - loss: 0.0481 t5_acc: 70.1754%(120/171) MRR: 0.576357PARAMETERS:net-gru_e100_bs64_opt-adamax_ly2_hs100_dr2_ed1000_fembFalse_ptembFalse_drp0.7
+acc: 46.7836%( 80/171) EPOCH99 - loss: 0.0319 t5_acc: 64.3275%(110/171) MRR: 0.555469PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs100_dr2_ed300_fembFalse_ptembFalse_drp0.0
+acc: 46.7836%( 80/171) EPOCH99 - loss: 0.0543 t5_acc: 63.1579%(108/171) MRR: 0.547511PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs750_dr2_ed300_fembFalse_ptembFalse_drp0.3
+acc: 47.3684%( 81/171) EPOCH68 - loss: 0.0371 t5_acc: 64.9123%(111/171) MRR: 0.553506PARAMETERS:net-gru_e100_bs64_opt-adamax_ly2_hs100_dr2_ed500_fembFalse_ptembFalse_drp0.0
+acc: 47.3684%( 81/171) EPOCH78 - loss: 0.0418 t5_acc: 67.2515%(115/171) MRR: 0.563414PARAMETERS:net-gru_e100_bs64_opt-adamax_ly2_hs100_dr2_ed500_fembFalse_ptembFalse_drp0.7
+acc: 47.3684%( 81/171) EPOCH90 - loss: 0.0654 t5_acc: 60.8187%(104/171) MRR: 0.542788PARAMETERS:net-gru_e100_bs64_opt-adam_ly2_hs300_dr2_ed100_fembFalse_ptembFalse_drp0.0
+acc: 47.9532%( 82/171) EPOCH38 - loss: 0.0541 t5_acc: 70.7602%(121/171) MRR: 0.581563PARAMETERS:net-gru_e100_bs64_opt-adamax_ly2_hs100_dr2_ed1000_fembFalse_ptembFalse_drp0.0
+acc: 47.9532%( 82/171) EPOCH56 - loss: 0.0340 t5_acc: 60.2339%(103/171) MRR: 0.541085PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs500_dr2_ed300_fembFalse_ptembFalse_drp0.5
+acc: 47.9532%( 82/171) EPOCH65 - loss: 0.0502 t5_acc: 63.7427%(109/171) MRR: 0.550602PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs100_dr2_ed200_fembFalse_ptembFalse_drp0.7
+acc: 47.9532%( 82/171) EPOCH82 - loss: 0.0336 t5_acc: 60.8187%(104/171) MRR: 0.544559PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs300_dr2_ed300_fembFalse_ptembFalse_drp0.0
+acc: 47.9532%( 82/171) EPOCH96 - loss: 0.0332 t5_acc: 65.4971%(112/171) MRR: 0.567513PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs100_dr2_ed300_fembFalse_ptembFalse_drp0.3
+acc: 48.5380%( 83/171) EPOCH38 - loss: 0.1085 t5_acc: 70.1754%(120/171) MRR: 0.579890PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs100_dr2_ed200_fembFalse_ptembFalse_drp0.5
+acc: 48.5380%( 83/171) EPOCH66 - loss: 0.0777 t5_acc: 71.3450%(122/171) MRR: 0.580522PARAMETERS:net-gru_e100_bs64_opt-adamax_ly1_hs100_dr2_ed1000_fembFalse_ptembFalse_drp0.3
+acc: 48.5380%( 83/171) EPOCH82 - loss: 0.0333 t5_acc: 65.4971%(112/171) MRR: 0.565379PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs100_dr2_ed500_fembFalse_ptembFalse_drp0.0
+acc: 48.5380%( 83/171) EPOCH89 - loss: 0.0426 t5_acc: 69.0058%(118/171) MRR: 0.579831PARAMETERS:net-gru_e100_bs64_opt-adamax_ly1_hs100_dr2_ed750_fembFalse_ptembFalse_drp0.0
+acc: 48.5380%( 83/171) EPOCH98 - loss: 0.0381 t5_acc: 69.0058%(118/171) MRR: 0.580643PARAMETERS:net-gru_e100_bs64_opt-adamax_ly2_hs100_dr2_ed300_fembFalse_ptembFalse_drp0.5
+acc: 49.1228%( 84/171) EPOCH62 - loss: 0.0523 t5_acc: 71.9298%(123/171) MRR: 0.601749PARAMETERS:net-gru_e100_bs64_opt-adamax_ly1_hs100_dr2_ed300_fembFalse_ptembFalse_drp0.3
+acc: 49.1228%( 84/171) EPOCH85 - loss: 0.0394 t5_acc: 70.7602%(121/171) MRR: 0.587913PARAMETERS:net-gru_e100_bs64_opt-adamax_ly1_hs100_dr2_ed500_fembFalse_ptembFalse_drp0.0
+acc: 49.1228%( 84/171) EPOCH98 - loss: 0.0323 t5_acc: 64.9123%(111/171) MRR: 0.566271PARAMETERS:net-gru_e100_bs64_opt-adamax_ly1_hs500_dr2_ed500_fembFalse_ptembFalse_drp0.0
+acc: 49.7076%( 85/171) EPOCH57 - loss: 0.0516 t5_acc: 63.1579%(108/171) MRR: 0.578054PARAMETERS:net-gru_e100_bs64_opt-adamax_ly2_hs100_dr2_ed750_fembFalse_ptembFalse_drp0.7
+acc: 49.7076%( 85/171) EPOCH65 - loss: 0.0495 t5_acc: 70.1754%(120/171) MRR: 0.593620PARAMETERS:net-gru_e100_bs64_opt-adamax_ly1_hs100_dr2_ed300_fembFalse_ptembFalse_drp0.5
+acc: 49.7076%( 85/171) EPOCH75 - loss: 0.0336 t5_acc: 63.7427%(109/171) MRR: 0.570033PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs300_dr2_ed200_fembFalse_ptembFalse_drp0.3
+acc: 49.7076%( 85/171) EPOCH82 - loss: 0.0326 t5_acc: 62.5731%(107/171) MRR: 0.559318PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs300_dr2_ed1000_fembFalse_ptembFalse_drp0.0
+acc: 49.7076%( 85/171) EPOCH88 - loss: 0.0344 t5_acc: 69.0058%(118/171) MRR: 0.582950PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs300_dr2_ed500_fembFalse_ptembFalse_drp0.7
+acc: 50.2924%( 86/171) EPOCH59 - loss: 0.0554 t5_acc: 69.5906%(119/171) MRR: 0.592091PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs2000_dr2_ed300_fembTrue_ptembTrue_drp0.3
+acc: 50.2924%( 86/171) EPOCH72 - loss: 0.0346 t5_acc: 63.1579%(108/171) MRR: 0.575764PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs300_dr2_ed1250_fembFalse_ptembFalse_drp0.5
+acc: 50.2924%( 86/171) EPOCH77 - loss: 0.0380 t5_acc: 73.0994%(125/171) MRR: 0.603892PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs100_dr2_ed300_fembFalse_ptembFalse_drp0.3
+acc: 50.2924%( 86/171) EPOCH83 - loss: 0.0380 t5_acc: 64.9123%(111/171) MRR: 0.566788PARAMETERS:net-lstm_e100_bs64_opt-adam_ly2_hs500_dr2_ed200_fembFalse_ptembFalse_drp0.7
+acc: 50.2924%( 86/171) EPOCH95 - loss: 0.0360 t5_acc: 69.5906%(119/171) MRR: 0.594306PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs100_dr2_ed300_fembFalse_ptembFalse_drp0.7
+acc: 50.8772%( 87/171) EPOCH43 - loss: 0.0624 t5_acc: 70.1754%(120/171) MRR: 0.603744PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs100_dr2_ed750_fembFalse_ptembFalse_drp0.3
+acc: 50.8772%( 87/171) EPOCH58 - loss: 0.0690 t5_acc: 71.3450%(122/171) MRR: 0.602227PARAMETERS:net-gru_e100_bs64_opt-adamax_ly1_hs100_dr2_ed750_fembFalse_ptembFalse_drp0.5
+acc: 50.8772%( 87/171) EPOCH78 - loss: 0.0373 t5_acc: 66.6667%(114/171) MRR: 0.585067PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs100_dr2_ed300_fembFalse_ptembFalse_drp0.5
+acc: 50.8772%( 87/171) EPOCH80 - loss: 0.0366 t5_acc: 70.7602%(121/171) MRR: 0.598816PARAMETERS:net-gru_e100_bs64_opt-adamax_ly2_hs100_dr2_ed1000_fembFalse_ptembFalse_drp0.3
+acc: 50.8772%( 87/171) EPOCH88 - loss: 0.0327 t5_acc: 71.3450%(122/171) MRR: 0.612118PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs300_dr2_ed300_fembFalse_ptembFalse_drp0.7
+acc: 50.8772%( 87/171) EPOCH94 - loss: 0.0362 t5_acc: 64.9123%(111/171) MRR: 0.575574PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs100_dr2_ed750_fembFalse_ptembFalse_drp0.0
+acc: 50.8772%( 87/171) EPOCH98 - loss: 0.0319 t5_acc: 64.9123%(111/171) MRR: 0.581639PARAMETERS:net-gru_e100_bs64_opt-adamax_ly2_hs300_dr2_ed750_fembFalse_ptembFalse_drp0.3
+acc: 51.4620%( 88/171) EPOCH34 - loss: 0.0512 t5_acc: 70.1754%(120/171) MRR: 0.596016PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs100_dr2_ed1000_fembFalse_ptembFalse_drp0.0
+acc: 51.4620%( 88/171) EPOCH44 - loss: 0.0463 t5_acc: 69.5906%(119/171) MRR: 0.599793PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs100_dr2_ed500_fembFalse_ptembFalse_drp0.3
+acc: 51.4620%( 88/171) EPOCH56 - loss: 0.0943 t5_acc: 63.7427%(109/171) MRR: 0.578856PARAMETERS:net-gru_e100_bs64_opt-sgd_ly4_hs500_dr2_ed300_fembFalse_ptembFalse_drp0.5
+acc: 51.4620%( 88/171) EPOCH75 - loss: 0.0329 t5_acc: 66.6667%(114/171) MRR: 0.587302PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs500_dr2_ed300_fembFalse_ptembFalse_drp0.7
+acc: 51.4620%( 88/171) EPOCH86 - loss: 0.0341 t5_acc: 74.2690%(127/171) MRR: 0.615059PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs100_dr2_ed500_fembFalse_ptembFalse_drp0.7
+acc: 51.4620%( 88/171) EPOCH95 - loss: 0.0342 t5_acc: 65.4971%(112/171) MRR: 0.583783PARAMETERS:net-gru_e100_bs64_opt-adamax_ly1_hs500_dr2_ed500_fembFalse_ptembFalse_drp0.5
+acc: 52.0468%( 89/171) EPOCH48 - loss: 0.0530 t5_acc: 70.7602%(121/171) MRR: 0.609443PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs100_dr2_ed500_fembFalse_ptembFalse_drp0.0
+acc: 52.0468%( 89/171) EPOCH73 - loss: 0.0379 t5_acc: 74.2690%(127/171) MRR: 0.614564PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs100_dr2_ed750_fembFalse_ptembFalse_drp0.7
+acc: 52.0468%( 89/171) EPOCH76 - loss: 0.0330 t5_acc: 67.8363%(116/171) MRR: 0.597480PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs300_dr2_ed300_fembFalse_ptembFalse_drp0.5
+acc: 52.0468%( 89/171) EPOCH77 - loss: 0.0380 t5_acc: 69.0058%(118/171) MRR: 0.605914PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs100_dr2_ed500_fembFalse_ptembFalse_drp0.5
+acc: 52.0468%( 89/171) EPOCH81 - loss: 0.0367 t5_acc: 69.0058%(118/171) MRR: 0.604995PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs100_dr2_ed1000_fembFalse_ptembFalse_drp0.7
+acc: 52.0468%( 89/171) EPOCH87 - loss: 0.0381 t5_acc: 71.9298%(123/171) MRR: 0.607551PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs100_dr2_ed300_fembFalse_ptembFalse_drp0.0
+acc: 52.0468%( 89/171) EPOCH88 - loss: 0.0344 t5_acc: 61.9883%(106/171) MRR: 0.579433PARAMETERS:net-gru_e100_bs64_opt-adamax_ly1_hs300_dr2_ed300_fembFalse_ptembFalse_drp0.0
+acc: 52.0468%( 89/171) EPOCH99 - loss: 0.0324 t5_acc: 67.8363%(116/171) MRR: 0.587606PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs500_dr2_ed500_fembFalse_ptembFalse_drp0.0
+acc: 52.6316%( 90/171) EPOCH83 - loss: 0.0388 t5_acc: 73.0994%(125/171) MRR: 0.621082PARAMETERS:net-gru_e100_bs64_opt-adamax_ly1_hs100_dr2_ed500_fembFalse_ptembFalse_drp0.5
+acc: 52.6316%( 90/171) EPOCH94 - loss: 0.0378 t5_acc: 73.6842%(126/171) MRR: 0.616225PARAMETERS:net-gru_e100_bs64_opt-adamax_ly1_hs100_dr2_ed750_fembFalse_ptembFalse_drp0.3
+acc: 53.2164%( 91/171) EPOCH49 - loss: 0.0506 t5_acc: 70.7602%(121/171) MRR: 0.617401PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs100_dr2_ed300_fembFalse_ptembFalse_drp0.7
+acc: 53.2164%( 91/171) EPOCH66 - loss: 0.0359 t5_acc: 70.7602%(121/171) MRR: 0.616565PARAMETERS:net-gru_e100_bs64_opt-adamax_ly1_hs300_dr2_ed500_fembFalse_ptembFalse_drp0.0
+acc: 53.8012%( 92/171) EPOCH83 - loss: 0.0356 t5_acc: 76.0234%(130/171) MRR: 0.633916PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs100_dr2_ed500_fembFalse_ptembFalse_drp0.3
+acc: 53.8012%( 92/171) EPOCH93 - loss: 0.0516 t5_acc: 71.9298%(123/171) MRR: 0.630004PARAMETERS:net-gru_e100_bs64_opt-adamax_ly1_hs100_dr2_ed1000_fembFalse_ptembFalse_drp0.0
+acc: 54.9708%( 94/171) EPOCH47 - loss: 0.0438 t5_acc: 69.5906%(119/171) MRR: 0.615710PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs300_dr2_ed500_fembFalse_ptembFalse_drp0.3
+acc: 54.9708%( 94/171) EPOCH85 - loss: 0.0357 t5_acc: 76.0234%(130/171) MRR: 0.639962PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs100_dr2_ed750_fembFalse_ptembFalse_drp0.5
+acc: 54.9708%( 94/171) EPOCH88 - loss: 0.0318 t5_acc: 74.2690%(127/171) MRR: 0.638714PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs300_dr2_ed1000_fembFalse_ptembFalse_drp0.3
+acc: 55.5556%( 95/171) EPOCH60 - loss: 0.0387 t5_acc: 73.6842%(126/171) MRR: 0.641755PARAMETERS:net-gru_e100_bs64_opt-adamax_ly1_hs300_dr2_ed1000_fembFalse_ptembFalse_drp0.5
+acc: 55.5556%( 95/171) EPOCH65 - loss: 0.0385 t5_acc: 69.0058%(118/171) MRR: 0.620083PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs100_dr2_ed750_fembFalse_ptembFalse_drp0.5
+acc: 55.5556%( 95/171) EPOCH72 - loss: 0.0323 t5_acc: 75.4386%(129/171) MRR: 0.637827PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs300_dr2_ed750_fembFalse_ptembFalse_drp0.5
+acc: 56.1404%( 96/171) EPOCH41 - loss: 0.0422 t5_acc: 73.6842%(126/171) MRR: 0.643832PARAMETERS:net-gru_e100_bs64_opt-adamax_ly1_hs300_dr2_ed750_fembFalse_ptembFalse_drp0.3
+acc: 56.7251%( 97/171) EPOCH25 - loss: 0.0460 t5_acc: 74.8538%(128/171) MRR: 0.645950PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs300_dr2_ed750_fembFalse_ptembFalse_drp0.3
+acc: 56.7251%( 97/171) EPOCH83 - loss: 0.0331 t5_acc: 76.6082%(131/171) MRR: 0.658565PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs300_dr2_ed1000_fembFalse_ptembFalse_drp0.5
+acc: 56.7251%( 97/171) EPOCH85 - loss: 0.0319 t5_acc: 74.8538%(128/171) MRR: 0.652307PARAMETERS:net-gru_e100_bs64_opt-adamax_ly1_hs300_dr2_ed1000_fembFalse_ptembFalse_drp0.0
+acc: 57.3099%( 98/171) EPOCH76 - loss: 0.0396 t5_acc: 71.3450%(122/171) MRR: 0.638523PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly2_hs100_dr2_ed500_fembFalse_ptembFalse_drp0.7
+acc: 57.3099%( 98/171) EPOCH80 - loss: 0.0337 t5_acc: 79.5322%(136/171) MRR: 0.666818PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs300_dr2_ed1000_fembFalse_ptembFalse_drp0.0
+acc: 57.3099%( 98/171) EPOCH92 - loss: 0.0311 t5_acc: 74.2690%(127/171) MRR: 0.655841PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs300_dr2_ed1000_fembFalse_ptembFalse_drp0.7
+acc: 57.8947%( 99/171) EPOCH73 - loss: 0.0332 t5_acc: 78.9474%(135/171) MRR: 0.670554PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs300_dr2_ed500_fembFalse_ptembFalse_drp0.0
+acc: 58.4795%(100/171) EPOCH97 - loss: 0.0350 t5_acc: 74.2690%(127/171) MRR: 0.659717PARAMETERS:net-gru_e100_bs64_opt-adamax_ly1_hs300_dr2_ed1000_fembFalse_ptembFalse_drp0.7
+acc: 59.6491%(102/171) EPOCH63 - loss: 0.0330 t5_acc: 77.7778%(133/171) MRR: 0.674043PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs300_dr2_ed750_fembFalse_ptembFalse_drp0.0
