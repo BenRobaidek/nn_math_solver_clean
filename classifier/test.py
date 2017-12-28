@@ -20,7 +20,7 @@ def main():
 
     train, val, test = data.TabularDataset.splits(
         path='../tencent/data/', train='train_0.8.tsv',
-        validation='train_dev_0.8_common.tsv', test='train_dev_0.8_uncommon.tsv', format='tsv',
+        validation='train_val_0.8_common.tsv', test='train_val_0.8_uncommon.tsv', format='tsv',
         fields=[('text', TEXT), ('label', LABELS)])
 
     TEXT.build_vocab(train)
