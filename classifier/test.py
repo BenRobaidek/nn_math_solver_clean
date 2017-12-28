@@ -9,10 +9,8 @@ from torch.autograd import Variable
 import data
 import model as m
 from torchtext import data, datasets
-import mydatasets
 from evalTest import eval,test
 from torchtext.vocab import GloVe
-from vecHandler import Vecs
 
 def main():
     cuda = int(torch.cuda.is_available())-1
