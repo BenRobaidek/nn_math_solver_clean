@@ -4,9 +4,26 @@ import re
 from matplotlib.ticker import MaxNLocator
 
 def main():
-    src_train = np.array(open('./data/src-train_val_0.8_common.txt').readlines())
-    tgt_train = np.array(open('./data/tgt-train_val_0.8_common.txt').readlines())
+    showStats('./data/train.tsv', file_type='tsv')
+    showStats('./data/val.tsv', file_type='tsv')
+    showStats('./data/test.tsv', file_type='tsv')
 
+    showStats('./data/train_0.2.tsv', file_type='tsv')
+    showStats('./data/train_0.4.tsv', file_type='tsv')
+    showStats('./data/train_0.6.tsv', file_type='tsv')
+    showStats('./data/train_0.8.tsv', file_type='tsv')
+
+    showStats('./data/val_0.2.tsv', file_type='tsv')
+    showStats('./data/val_0.4.tsv', file_type='tsv')
+    showStats('./data/val_0.6.tsv', file_type='tsv')
+    showStats('./data/val_0.8.tsv', file_type='tsv')
+
+def showStats(path, file_type='txt'):
+    if file_type == 'txt':
+        tgt_train = np.array(open(path).readlines())
+    elif file_type == 'tsv':
+        tgt_train = np.array(open(path).readlines())
+        tgt_train = [example.split('\t')[1].strip() for example in tgt_train]
     print(len(tgt_train))
     print('Number of unique equations:',len(np.unique(tgt_train)))
 
@@ -40,6 +57,7 @@ def main():
     fig = plt.figure().gca()
     fig.grid()
     plt.plot(result[:,1])
+    plt.title(path)
     plt.ylabel('# of occurences')
     plt.xlabel('equation')
     plt.show()
