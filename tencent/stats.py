@@ -1,3 +1,4 @@
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
 import re
@@ -37,8 +38,8 @@ def main():
     #print(equation[indices[0]])
 
     # the histogram of equation frequency
-    #fig = plt.figure().gca()
-    #fig.grid()
+    fig = plt.figure().gca()
+    fig.grid()
     plt.plot(result[:,1])
     plt.ylabel('# of occurences')
     plt.xlabel('equation')
