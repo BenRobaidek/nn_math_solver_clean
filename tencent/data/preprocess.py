@@ -48,14 +48,14 @@ def main():
     #crossValidation(jsondata, k = 5, k_test=5)
 
     # SAVE SPLIT INDICES
-    split('./Math23K-train.txt', './Math23K-dev.txt', './Math23K-test.txt', k_test=5)
+    split('./Math23K-train.txt', './Math23K-val.txt', './Math23K-test.txt', k_test=5)
 
     # SAVE SRC/TGT files
     train_indices = np.genfromtxt('./Math23K-train.txt').astype(int)
-    dev_indices = np.genfromtxt('./Math23K-dev.txt').astype(int)
+    val_indices = np.genfromtxt('./Math23K-val.txt').astype(int)
     test_indices = np.genfromtxt('./Math23K-test.txt').astype(int)
     json2txt(train_indices, jsondata,   './src-train.txt',  './tgt-train.txt')
-    json2txt(dev_indices,   jsondata,   './src-val.txt',    './tgt-val.txt')
+    json2txt(val_indices,   jsondata,   './src-val.txt',    './tgt-val.txt')
     json2txt(test_indices,  jsondata,   './src-test.txt',   './tgt-test.txt')
 
     # REMOVE TEST FOLD BEFORE COUNTING UNCOMMON EQUATIONS
@@ -71,59 +71,59 @@ def main():
     #print('Filtered down to', len(common_data), 'examples')
 
     # SAVE SRC/TGT FILES (FILTERED DATA)
-    train_dev_indices = np.append(train_indices, dev_indices)
-    json2txt(train_dev_indices, common_data2,    './src-train_dev_0.2_common.txt',   './tgt-train_dev_0.2_common.txt')
-    json2txt(train_dev_indices, uncommon_data2,  './src-train_dev_0.2_uncommon.txt', './tgt-train_dev_0.2_uncommon.txt')
+    train_val_indices = np.append(train_indices, val_indices)
+    json2txt(train_val_indices, common_data2,    './src-train_val_0.2_common.txt',   './tgt-train_val_0.2_common.txt')
+    json2txt(train_val_indices, uncommon_data2,  './src-train_val_0.2_uncommon.txt', './tgt-train_val_0.2_uncommon.txt')
 
-    json2txt(train_dev_indices, common_data4,    './src-train_dev_0.4_common.txt',   './tgt-train_dev_0.4_common.txt')
-    json2txt(train_dev_indices, uncommon_data4,  './src-train_dev_0.4_uncommon.txt', './tgt-train_dev_0.4_uncommon.txt')
+    json2txt(train_val_indices, common_data4,    './src-train_val_0.4_common.txt',   './tgt-train_val_0.4_common.txt')
+    json2txt(train_val_indices, uncommon_data4,  './src-train_val_0.4_uncommon.txt', './tgt-train_val_0.4_uncommon.txt')
 
-    json2txt(train_dev_indices, common_data6,    './src-train_dev_0.6_common.txt',   './tgt-train_dev_0.6_common.txt')
-    json2txt(train_dev_indices, uncommon_data6,  './src-train_dev_0.6_uncommon.txt', './tgt-train_dev_0.6_uncommon.txt')
+    json2txt(train_val_indices, common_data6,    './src-train_val_0.6_common.txt',   './tgt-train_val_0.6_common.txt')
+    json2txt(train_val_indices, uncommon_data6,  './src-train_val_0.6_uncommon.txt', './tgt-train_val_0.6_uncommon.txt')
 
-    json2txt(train_dev_indices, common_data8,    './src-train_dev_0.8_common.txt',   './tgt-train_dev_0.8_common.txt')
-    json2txt(train_dev_indices, uncommon_data8,  './src-train_dev_0.8_uncommon.txt', './tgt-train_dev_0.8_uncommon.txt')
+    json2txt(train_val_indices, common_data8,    './src-train_val_0.8_common.txt',   './tgt-train_val_0.8_common.txt')
+    json2txt(train_val_indices, uncommon_data8,  './src-train_val_0.8_uncommon.txt', './tgt-train_val_0.8_uncommon.txt')
 
     # SAVE TSV FILES
     txt2tsv('./src-train.txt',  './tgt-train.txt', './train.tsv')
     txt2tsv('./src-val.txt',  './tgt-val.txt', './val.tsv')
     txt2tsv('./src-test.txt',  './tgt-test.txt', './test.tsv')
-    txt2tsv('./src-train_dev_0.2_common.txt',   './tgt-train_dev_0.2_common.txt',   './train_dev_0.2_common.tsv')
-    txt2tsv('./src-train_dev_0.2_uncommon.txt', './tgt-train_dev_0.2_uncommon.txt', './train_dev_0.2_uncommon.tsv')
-    txt2tsv('./src-train_dev_0.4_common.txt',   './tgt-train_dev_0.4_common.txt',   './train_dev_0.4_common.tsv')
-    txt2tsv('./src-train_dev_0.4_uncommon.txt', './tgt-train_dev_0.4_uncommon.txt', './train_dev_0.4_uncommon.tsv')
-    txt2tsv('./src-train_dev_0.6_common.txt',   './tgt-train_dev_0.6_common.txt',   './train_dev_0.6_common.tsv')
-    txt2tsv('./src-train_dev_0.6_uncommon.txt', './tgt-train_dev_0.6_uncommon.txt', './train_dev_0.6_uncommon.tsv')
-    txt2tsv('./src-train_dev_0.8_common.txt',   './tgt-train_dev_0.8_common.txt',   './train_dev_0.8_common.tsv')
-    txt2tsv('./src-train_dev_0.8_uncommon.txt', './tgt-train_dev_0.8_uncommon.txt', './train_dev_0.8_uncommon.tsv')
+    txt2tsv('./src-train_val_0.2_common.txt',   './tgt-train_val_0.2_common.txt',   './train_val_0.2_common.tsv')
+    txt2tsv('./src-train_val_0.2_uncommon.txt', './tgt-train_val_0.2_uncommon.txt', './train_val_0.2_uncommon.tsv')
+    txt2tsv('./src-train_val_0.4_common.txt',   './tgt-train_val_0.4_common.txt',   './train_val_0.4_common.tsv')
+    txt2tsv('./src-train_val_0.4_uncommon.txt', './tgt-train_val_0.4_uncommon.txt', './train_val_0.4_uncommon.tsv')
+    txt2tsv('./src-train_val_0.6_common.txt',   './tgt-train_val_0.6_common.txt',   './train_val_0.6_common.tsv')
+    txt2tsv('./src-train_val_0.6_uncommon.txt', './tgt-train_val_0.6_uncommon.txt', './train_val_0.6_uncommon.tsv')
+    txt2tsv('./src-train_val_0.8_common.txt',   './tgt-train_val_0.8_common.txt',   './train_val_0.8_common.tsv')
+    txt2tsv('./src-train_val_0.8_uncommon.txt', './tgt-train_val_0.8_uncommon.txt', './train_val_0.8_uncommon.tsv')
 
     # SAVE FULL TSV FILES
-    tsvs2tsv('./train_dev_0.2_common.tsv', './train_dev_0.2_uncommon.tsv', './train_dev_0.2.tsv')
-    tsvs2tsv('./train_dev_0.4_common.tsv', './train_dev_0.4_uncommon.tsv', './train_dev_0.4.tsv')
-    tsvs2tsv('./train_dev_0.6_common.tsv', './train_dev_0.6_uncommon.tsv', './train_dev_0.6.tsv')
-    tsvs2tsv('./train_dev_0.8_common.tsv', './train_dev_0.8_uncommon.tsv', './train_dev_0.8.tsv')
+    tsvs2tsv('./train_val_0.2_common.tsv', './train_val_0.2_uncommon.tsv', './train_val_0.2.tsv')
+    tsvs2tsv('./train_val_0.4_common.tsv', './train_val_0.4_uncommon.tsv', './train_val_0.4.tsv')
+    tsvs2tsv('./train_val_0.6_common.tsv', './train_val_0.6_uncommon.tsv', './train_val_0.6.tsv')
+    tsvs2tsv('./train_val_0.8_common.tsv', './train_val_0.8_uncommon.tsv', './train_val_0.8.tsv')
 
     # SAVE FULL TXT FILES FOR SEQ2SEQ
-    tsvs2txt('./train_dev_0.2_common.tsv', './train_dev_0.2_uncommon.tsv', './src-train_dev_0.2.txt', './tgt-train_dev_0.2.txt')
-    tsvs2txt('./train_dev_0.4_common.tsv', './train_dev_0.4_uncommon.tsv', './src-train_dev_0.4.txt', './tgt-train_dev_0.4.txt')
-    tsvs2txt('./train_dev_0.6_common.tsv', './train_dev_0.6_uncommon.tsv', './src-train_dev_0.6.txt', './tgt-train_dev_0.6.txt')
-    tsvs2txt('./train_dev_0.8_common.tsv', './train_dev_0.8_uncommon.tsv', './src-train_dev_0.8.txt', './tgt-train_dev_0.8.txt')
+    tsvs2txt('./train_val_0.2_common.tsv', './train_val_0.2_uncommon.tsv', './src-train_val_0.2.txt', './tgt-train_val_0.2.txt')
+    tsvs2txt('./train_val_0.4_common.tsv', './train_val_0.4_uncommon.tsv', './src-train_val_0.4.txt', './tgt-train_val_0.4.txt')
+    tsvs2txt('./train_val_0.6_common.tsv', './train_val_0.6_uncommon.tsv', './src-train_val_0.6.txt', './tgt-train_val_0.6.txt')
+    tsvs2txt('./train_val_0.8_common.tsv', './train_val_0.8_uncommon.tsv', './src-train_val_0.8.txt', './tgt-train_val_0.8.txt')
 
-    # SPLIT TRAIN DEV FOR CLASSIFIER
-    splitTrainVal('./train_dev_0.2.tsv', './train_0.2.tsv', './dev_0.2.tsv')
-    splitTrainVal('./train_dev_0.4.tsv', './train_0.4.tsv', './dev_0.4.tsv')
-    splitTrainVal('./train_dev_0.6.tsv', './train_0.6.tsv', './dev_0.6.tsv')
-    splitTrainVal('./train_dev_0.8.tsv', './train_0.8.tsv', './dev_0.8.tsv')
+    # SPLIT TRAIN VAL FOR CLASSIFIER
+    splitTrainVal('./train_val_0.2.tsv', './train_0.2.tsv', './val_0.2.tsv')
+    splitTrainVal('./train_val_0.4.tsv', './train_0.4.tsv', './val_0.4.tsv')
+    splitTrainVal('./train_val_0.6.tsv', './train_0.6.tsv', './val_0.6.tsv')
+    splitTrainVal('./train_val_0.8.tsv', './train_0.8.tsv', './val_0.8.tsv')
 
-    # SPLIT TRAIN DEV FOR SEQ2SEQ
-    splitTrainVal('./src-train_dev_0.2.txt', './src-train_0.2.txt', './src-dev_0.2.txt')
-    splitTrainVal('./tgt-train_dev_0.2.txt', './tgt-train_0.2.txt', './tgt-dev_0.2.txt')
-    splitTrainVal('./src-train_dev_0.4.txt', './src-train_0.4.txt', './src-dev_0.4.txt')
-    splitTrainVal('./tgt-train_dev_0.4.txt', './tgt-train_0.4.txt', './tgt-dev_0.4.txt')
-    splitTrainVal('./src-train_dev_0.6.txt', './src-train_0.6.txt', './src-dev_0.6.txt')
-    splitTrainVal('./tgt-train_dev_0.6.txt', './tgt-train_0.6.txt', './tgt-dev_0.6.txt')
-    splitTrainVal('./src-train_dev_0.8.txt', './src-train_0.8.txt', './src-dev_0.8.txt')
-    splitTrainVal('./tgt-train_dev_0.8.txt', './tgt-train_0.8.txt', './tgt-dev_0.8.txt')
+    # SPLIT TRAIN VAL FOR SEQ2SEQ
+    splitTrainVal('./src-train_val_0.2.txt', './src-train_0.2.txt', './src-val_0.2.txt')
+    splitTrainVal('./tgt-train_val_0.2.txt', './tgt-train_0.2.txt', './tgt-val_0.2.txt')
+    splitTrainVal('./src-train_val_0.4.txt', './src-train_0.4.txt', './src-val_0.4.txt')
+    splitTrainVal('./tgt-train_val_0.4.txt', './tgt-train_0.4.txt', './tgt-val_0.4.txt')
+    splitTrainVal('./src-train_val_0.6.txt', './src-train_0.6.txt', './src-val_0.6.txt')
+    splitTrainVal('./tgt-train_val_0.6.txt', './tgt-train_0.6.txt', './tgt-val_0.6.txt')
+    splitTrainVal('./src-train_val_0.8.txt', './src-train_0.8.txt', './src-val_0.8.txt')
+    splitTrainVal('./tgt-train_val_0.8.txt', './tgt-train_0.8.txt', './tgt-val_0.8.txt')
 
     # SAVE VOCAB
     TEXT_class = data.Field(lower=True,init_token="<start>",eos_token="<end>")
