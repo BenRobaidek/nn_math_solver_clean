@@ -4,8 +4,8 @@ import re
 from matplotlib.ticker import MaxNLocator
 
 def main():
-    src_train = np.array(open('./data/src-train_dev_0.8_common.txt').readlines())
-    tgt_train = np.array(open('./data/tgt-train_dev_0.8_common.txt').readlines())
+    src_train = np.array(open('./data/src-train_val_0.8_common.txt').readlines())
+    tgt_train = np.array(open('./data/tgt-train_val_0.8_common.txt').readlines())
 
     print(len(tgt_train))
     print('Number of unique equations:',len(np.unique(tgt_train)))
