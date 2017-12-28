@@ -31,7 +31,6 @@ def main():
     train = data.TabularDataset(path='../../sni/data/train.tsv', format='tsv', fields=fields)
     TEXT.build_vocab(train)
     LABEL.build_vocab(train)
-    train_classifier = data.TabularDataset(path='./train.tsv', format='tsv', fields=fields)
     LABEL.build_vocab(train)
 
     # PREPROCESS DATA
