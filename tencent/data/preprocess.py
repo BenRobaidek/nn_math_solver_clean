@@ -379,8 +379,6 @@ def txt2tsv(src_path, tgt_path, tsv_path):
     tsv = open(tsv_path, 'w')
     for i in range(len(src_txt)):
         tsv.write(src_txt[i].strip() + '\t' + tgt_txt[i].strip() +'\n')
-    src_txt.close()
-    tgt_txt.close()
     tsv.close()
 
 if __name__ == '__main__':
