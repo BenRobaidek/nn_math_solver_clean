@@ -13,7 +13,7 @@ import evalTest
 
 def main():
 
-    # LOAD DATA
+    # LOAD JSON DATA
     jsondata = json.loads(open('./Math23K.json').read())
 
     # LOAD SNI MODEL
@@ -22,7 +22,6 @@ def main():
         model = model.cuda()
     print(model)
 
-    #if model.model.gru.flatten_parameters()
     model.lstm.flatten_parameters()
     model.eval()
     TEXT = data.Field(lower=True,init_token="<start>",eos_token="<end>")
@@ -34,19 +33,15 @@ def main():
     LABEL.build_vocab(train)
     train_classifier = data.TabularDataset(path='./train.tsv', format='tsv', fields=fields)
     LABEL.build_vocab(train)
-    #print(LABEL.vocab.itos)
 
     # PREPROCESS DATA
     print('Preprocessing...')
     for d in jsondata:
-        #print(d['segmented_text'])
-        #print(d['equation'])
         d['segmented_text'], d['equation'] = preprocess(d['segmented_text'], d['equation'], model, fields)
     print('Preprocessing Complete...')
 
     with open('./Math23K-preprocessed.json', 'w') as outfile:
         json.dump(jsondata, outfile)
-    #jsondata = json.loads(open('./Math23K-preprocessed.json').read())
 
     # 5 FOLD CROSS VALIDATION
     print('Using existing cross validation splits')
@@ -131,7 +126,7 @@ def main():
     splitTrainVal('./src-train_dev_0.8.txt', './src-train_0.8.txt', './src-dev_0.8.txt')
     splitTrainVal('./tgt-train_dev_0.8.txt', './tgt-train_0.8.txt', './tgt-dev_0.8.txt')
 
-    # save vocab
+    # SAVE VOCAB
     TEXT_class = data.Field(lower=True,init_token="<start>",eos_token="<end>")
     LABEL_class = data.Field(sequential=False)
     fields_class = [('text', TEXT_class), ('label', LABEL_class)]
@@ -141,10 +136,11 @@ def main():
     torch.save((list(TEXT_class.vocab.stoi), list(LABEL_class.vocab.stoi)), 'vocab.pt')
 
 def crossValidation(data, k = 5, k_test=5):
-    # Saves k folds
-    # k: k fold cross validation
-    # k_test: fold to use for test
-
+    """
+    Saves k folds from data
+    k: k fold cross validation
+    k_test: fold to use for test
+    """
     random.shuffle(data)
     fold_size = math.floor(np.shape(data)[0] / k)
     for i in range(1, k + 1):
@@ -156,7 +152,9 @@ def crossValidation(data, k = 5, k_test=5):
 
 def split(train_path, val_path, test_path, k_test=5):
     """
-    
+    Writes train, validation, and test indices to train_path, val_path, and
+    test_path respectively
+    foldi.txt files must already exist
     """
     train_val = []
     for i in range(1,6):
