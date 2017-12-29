@@ -14,7 +14,7 @@ import evalTest
 def main():
 
     # LOAD JSON DATA
-    jsondata = json.loads(open('./Math23K.json').read())
+    jsondata = json.loads(open('./input/Math23K.json').read())
 
     # LOAD SNI MODEL
     model = torch.load('../../sni/models/sni_best_model.pt')
@@ -39,21 +39,23 @@ def main():
         d['segmented_text'], d['equation'] = preprocess(d['segmented_text'], d['equation'], model, fields)
     print('Preprocessing Complete...')
 
-    with open('./Math23K-preprocessed.json', 'w') as outfile:
+    # SAVE PREPROCESSED JSON
+    with open('./working/Math23K-preprocessed.json', 'w') as outfile:
         json.dump(jsondata, outfile)
 
     # 5 FOLD CROSS VALIDATION
     print('Using existing cross validation splits')
+    # use the code below to generate new folds
     #print('Preforming cross validation splits...')
     #crossValidation(jsondata, k = 5, k_test=5)
 
     # SAVE SPLIT INDICES
-    split('./Math23K-train.txt', './Math23K-val.txt', './Math23K-test.txt', k_test=5)
+    split('./working/train_indices.txt', './working/val.txt', './working/test.txt', k_test=5)
 
     # SAVE SRC/TGT files
-    train_indices = np.genfromtxt('./Math23K-train.txt').astype(int)
-    val_indices = np.genfromtxt('./Math23K-val.txt').astype(int)
-    test_indices = np.genfromtxt('./Math23K-test.txt').astype(int)
+    train_indices = np.genfromtxt('./working/train_indices.txt').astype(int)
+    val_indices = np.genfromtxt('./working/train_indices.txt').astype(int)
+    test_indices = np.genfromtxt('./working/train_indices.txt').astype(int)
     json2txt(train_indices, jsondata,   './src-train.txt',  './tgt-train.txt')
     json2txt(val_indices,   jsondata,   './src-val.txt',    './tgt-val.txt')
     json2txt(test_indices,  jsondata,   './src-test.txt',   './tgt-test.txt')
