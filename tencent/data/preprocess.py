@@ -295,6 +295,7 @@ def preprocess(question, equation, sni_model, fields, sni=True):
             for batch in iterator:
                 inp = batch.text.t()
             if sni:
+                print('using sni')
                 if isSignificant(inp, sni_model):
                     for symbol in equation:
                         if symbol == token:
@@ -304,6 +305,7 @@ def preprocess(question, equation, sni_model, fields, sni=True):
                             question[question.index(q)] = '[' + chr(97 + i) + ']'
                     i += 1
             else:
+                print('not using sni')
                 for symbol in equation:
                     if symbol == token:
                         equation[equation.index(symbol)] = '[' + chr(97 + i) + ']'

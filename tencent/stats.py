@@ -8,6 +8,10 @@ def main():
     showStats('./data/working/basic/val.tsv', file_type='tsv')
     showStats('./data/working/basic/test.tsv', file_type='tsv')
 
+    showStats('./data/working/no_sni/train.tsv', file_type='tsv')
+    showStats('./data/working/no_sni/val.tsv', file_type='tsv')
+    showStats('./data/working/no_sni/test.tsv', file_type='tsv')
+
     showStats('./data/working/common0.2/train.tsv', file_type='tsv')
     showStats('./data/working/common0.4/train.tsv', file_type='tsv')
     showStats('./data/working/common0.6/train.tsv', file_type='tsv')
