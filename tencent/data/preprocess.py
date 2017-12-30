@@ -4,6 +4,7 @@ import random
 import math
 import re
 import sys
+import os
 import torch
 from torchtext import data, datasets
 
@@ -55,7 +56,7 @@ def main():
     #print('Preforming cross validation splits...')
     #crossValidation(jsondata, k = 5, k_test=5)
 
-    # SAVE SPLIT INDICES
+    # GET TRAIN, VAL, TEST INDICES
     train_indices, val_indices, test_indices = split_indices(k_test=5)
 
     # SAVE SRC/TGT files
