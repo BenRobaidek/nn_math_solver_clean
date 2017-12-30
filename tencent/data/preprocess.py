@@ -34,21 +34,25 @@ def main():
     LABEL.build_vocab(train)
     LABEL.build_vocab(train)
 
-    # PREPROCESS DATA
-    print('Preprocessing...')
-    for d in jsondata:
-        d['segmented_text'], d['equation'] = preprocess(d['segmented_text'], d['equation'], model, fields)
-    print('Preprocessing Complete...')
+    # LOAD EXISTING PREPROCESSED JSON DATA IF AVAILABLE
+    try:
+        jsondata = json.loads(open('./working/Math23K-preprocessed.json').read())
+    except:
+        # PREPROCESS DATA
+        print('Preprocessing...')
+        for d in jsondata:
+            d['segmented_text'], d['equation'] = preprocess(d['segmented_text'], d['equation'], model, fields)
+        print('Preprocessing Complete...')
 
-    # CREATE WORKING AND OUTPUT FOLDERS IF NEEDED
-    if not os.path.exists('./working/'): os.makedirs('./working/')
-    if not os.path.exists('./output/'): os.makedirs('./output/')
+        # CREATE WORKING AND OUTPUT FOLDERS IF NEEDED
+        if not os.path.exists('./working/'): os.makedirs('./working/')
+        if not os.path.exists('./output/'): os.makedirs('./output/')
 
-    # SAVE PREPROCESSED JSON
-    """
-    with open('./working/Math23K-preprocessed.json', 'w') as outfile:
-        json.dump(jsondata, outfile)
-    """
+        # SAVE PREPROCESSED JSON
+        with open('./working/Math23K-preprocessed.json', 'w') as outfile:
+            json.dump(jsondata, outfile)
+
+
 
     # 5 FOLD CROSS VALIDATION
     print('Using existing cross validation splits')
