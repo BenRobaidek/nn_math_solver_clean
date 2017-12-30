@@ -297,6 +297,7 @@ def preprocess(question, equation, sni_model, fields, sni=True):
             if sni:
                 print('using sni')
                 if isSignificant(inp, sni_model):
+                    print('significant')
                     for symbol in equation:
                         if symbol == token:
                             equation[equation.index(symbol)] = '[' + chr(97 + i) + ']'
@@ -304,6 +305,8 @@ def preprocess(question, equation, sni_model, fields, sni=True):
                         if q == token:
                             question[question.index(q)] = '[' + chr(97 + i) + ']'
                     i += 1
+                else:
+                    print('not significant')
             else:
                 print('not using sni')
                 for symbol in equation:
