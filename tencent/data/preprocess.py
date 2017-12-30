@@ -52,12 +52,12 @@ def main():
     #crossValidation(jsondata, k = 5, k_test=5)
 
     # SAVE SPLIT INDICES
-    split('./working/train_indices.txt', './working/val_indices.txt', './working/test_indices.txt', k_test=5)
+    train_indices, val_indices, test_indices = split('./working/train_indices.txt', './working/val_indices.txt', './working/test_indices.txt', k_test=5)
 
     # SAVE SRC/TGT files
-    train_indices = np.genfromtxt('./working/train_indices.txt').astype(int)
-    val_indices = np.genfromtxt('./working/val_indices.txt').astype(int)
-    test_indices = np.genfromtxt('./working/test_indices.txt').astype(int)
+    #train_indices = np.genfromtxt('./working/train_indices.txt').astype(int)
+    #val_indices = np.genfromtxt('./working/val_indices.txt').astype(int)
+    #test_indices = np.genfromtxt('./working/test_indices.txt').astype(int)
     json2tsv(train_indices, jsondata,   './train.tsv')
     json2tsv(val_indices,   jsondata,   './val.tsv')
     json2tsv(test_indices,  jsondata,   './test.tsv')
@@ -133,30 +133,40 @@ def split(train_path, val_path, test_path, k_test=5):
     train_val = []
     for i in range(1,6):
         if not i == k_test:
-            train_val = np.append(train_val, open('fold' + str(i) + '.txt').readlines())
+            train_val = np.append(train_val, open('./input/fold' + str(i) + '.txt').readlines())
     #random.shuffle(train_val)
-    test = open('fold' + str(k_test) + '.txt').readlines()
+    test = open('./input/fold' + str(k_test) + '.txt').readlines()
 
     # Train
+    train_indices = train_val[0:-1000]
+    """
     output = open(train_path, 'w')
     for d in train_val[0:-1000]:
         output.write(d)
     output.close()
     print(train_path + ' saved')
+    """
 
     # Validation
+    val_indices = train_val[-1000:]
+    """
     output = open(val_path, 'w')
     for d in train_val[-1000:]:
         output.write(d)
     output.close()
     print(val_path + ' saved')
+    """
 
     # Test
+    test_indices = test
+    """
     output = open(test_path, 'w')
     for d in test:
         output.write(d)
     output.close()
     print(test_path + ' saved')
+    """
+    return train_indices, val_indices, test_indices
 
 def mostCommon(data, percent):
     """
