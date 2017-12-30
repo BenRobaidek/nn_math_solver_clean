@@ -294,7 +294,7 @@ def preprocess(question, equation, sni_model, fields, use_sni=True):
             iterator.repeat=False
             for batch in iterator:
                 inp = batch.text.t()
-            if isSignificant(inp, sni_model):
+            if not use_sni or isSignificant(inp, sni_model):
                 for symbol in equation:
                     if symbol == token:
                         equation[equation.index(symbol)] = '[' + chr(97 + i) + ']'
