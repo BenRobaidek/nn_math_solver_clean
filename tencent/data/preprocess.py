@@ -39,6 +39,10 @@ def main():
         d['segmented_text'], d['equation'] = preprocess(d['segmented_text'], d['equation'], model, fields)
     print('Preprocessing Complete...')
 
+    # CREATE WORKING AND OUTPUT FOLDERS IF NEEDED
+    if not os.path.exists('./working/'): os.makedirs('./working/')
+    if not os.path.exists('./output/'): os.makedirs('./output/')
+
     # SAVE PREPROCESSED JSON
     """
     with open('./working/Math23K-preprocessed.json', 'w') as outfile:
@@ -52,12 +56,9 @@ def main():
     #crossValidation(jsondata, k = 5, k_test=5)
 
     # SAVE SPLIT INDICES
-    train_indices, val_indices, test_indices = split('./working/train_indices.txt', './working/val_indices.txt', './working/test_indices.txt', k_test=5)
+    train_indices, val_indices, test_indices = split_indices(k_test=5)
 
     # SAVE SRC/TGT files
-    #train_indices = np.genfromtxt('./working/train_indices.txt').astype(int)
-    #val_indices = np.genfromtxt('./working/val_indices.txt').astype(int)
-    #test_indices = np.genfromtxt('./working/test_indices.txt').astype(int)
     json2tsv(train_indices, jsondata,   './train.tsv')
     json2tsv(val_indices,   jsondata,   './val.tsv')
     json2tsv(test_indices,  jsondata,   './test.tsv')
@@ -124,11 +125,10 @@ def crossValidation(data, k = 5, k_test=5):
         output.close()
         print('fold' + str(i) + '.txt' + ' saved')
 
-def split(train_path, val_path, test_path, k_test=5):
+def split_indices(k_test=5):
     """
-    Writes train, validation, and test indices to train_path, val_path, and
-    test_path respectively
-    foldi.txt files must already exist
+    Returns train, validation, and test indices
+    foldi.txt files must already exist in ./input/
     """
     train_val = []
     for i in range(1,6):
@@ -136,36 +136,9 @@ def split(train_path, val_path, test_path, k_test=5):
             train_val = np.append(train_val, open('./input/fold' + str(i) + '.txt').readlines())
     #random.shuffle(train_val)
     test = open('./input/fold' + str(k_test) + '.txt').readlines()
-
-    # Train
     train_indices = train_val[0:-1000]
-    """
-    output = open(train_path, 'w')
-    for d in train_val[0:-1000]:
-        output.write(d)
-    output.close()
-    print(train_path + ' saved')
-    """
-
-    # Validation
     val_indices = train_val[-1000:]
-    """
-    output = open(val_path, 'w')
-    for d in train_val[-1000:]:
-        output.write(d)
-    output.close()
-    print(val_path + ' saved')
-    """
-
-    # Test
     test_indices = test
-    """
-    output = open(test_path, 'w')
-    for d in test:
-        output.write(d)
-    output.close()
-    print(test_path + ' saved')
-    """
     return train_indices, val_indices, test_indices
 
 def mostCommon(data, percent):
@@ -207,30 +180,6 @@ def tsvs2tsv(common_path, uncommon_path, output_path):
     for d in common:
         output.write(d)
     output.close()
-
-def tsvs2txt(common_path, uncommon_path, output_path_src, output_path_tgt):
-    """
-    Takes tsv's common_path and uncommon_path
-    writes combined txt's with uncommon tgt replaced with 'seq'
-    """
-    common = open(common_path).readlines()
-    uncommon = open(uncommon_path).readlines()
-    output_src = open(output_path_src, 'w')
-    output_tgt = open(output_path_tgt, 'w')
-    for d in uncommon:
-        result = d.split('\t')
-        result[0] = result[0].strip() + '\n'
-        result[1] = 'seq\n'
-        output_src.write(result[0])
-        output_tgt.write(result[1])
-    for d in common:
-        result = d.split('\t')
-        result[0] = result[0].strip() + '\n'
-        result[1] = result[1].strip() + '\n'
-        output_src.write(result[0])
-        output_tgt.write(result[1])
-    output_src.close()
-    output_tgt.close()
 
 def splitTrainVal(train_val_path, output_train_path, output_val_path, num_val_examples=1000):
     """
@@ -322,23 +271,6 @@ def preprocess(question, equation, sni_model, fields):
     question = ' '.join(question) + '\n'
     equation = ' '.join(equation) + '\n'
     return question, equation
-
-# maybe can remove this now
-def json2txt(json_indices, json_data, output_path_src, output_path_tgt):
-    """
-    For each example in json_data indexed by json_indices,
-    writes the associated question and equation to output_path_src
-    and output_path_tgt respectively
-    """
-    output_src = open(output_path_src, 'w')
-    output_tgt = open(output_path_tgt, 'w')
-    for d in json_data:
-        if int(d['id']) in json_indices:
-            question, equation = d['segmented_text'], d['equation']
-            output_src.write(question)
-            output_tgt.write(equation)
-    output_src.close()
-    output_tgt.close()
 
 def json2tsv(json_indices, json_data, output_path):
     """
