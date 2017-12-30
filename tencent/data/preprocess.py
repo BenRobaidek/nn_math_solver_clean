@@ -308,8 +308,8 @@ def json2tsv(json_indices, json_data, output_path):
     result = []
     for d in json_data:
         if int(d['id']) in json_indices:
-            output.write(d['segmented_text'].strip() + '\t' + d['equation'].strip())
-            result = np.append(result, [d['segmented_text'].strip() + '\t' + d['equation'].strip()])
+            output.write(d['segmented_text'].strip() + '\t' + d['equation'].strip() + '\n')
+            result = np.append(result, [d['segmented_text'].strip() + '\t' + d['equation'].strip() + '\n'])
     output.close()
     return result
 
