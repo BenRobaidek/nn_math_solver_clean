@@ -60,9 +60,10 @@ def main():
     train_indices, val_indices, test_indices = split_indices(k_test=5)
 
     # SAVE SRC/TGT files
-    json2tsv(train_indices, jsondata,   './train.tsv')
-    json2tsv(val_indices,   jsondata,   './val.tsv')
-    json2tsv(test_indices,  jsondata,   './test.tsv')
+    if not os.path.exists('./working/basic/'): os.makedirs('./working/basic/')
+    json2tsv(train_indices, jsondata,   './working/basic/train.tsv')
+    json2tsv(val_indices,   jsondata,   './working/basic/val.tsv')
+    json2tsv(test_indices,  jsondata,   './working/basic/test.tsv')
 
     # REMOVE TEST FOLD BEFORE COUNTING UNCOMMON EQUATIONS
     jsondata = [d for d in jsondata if int(d['id']) not in test_indices]
@@ -77,39 +78,60 @@ def main():
     #print('Filtered down to', len(common_data), 'examples')
 
     # SAVE TSV FILES (FILTERED DATA)
+    if not os.path.exists('./working/common0.2/'): os.makedirs('./working/common0.2/')
+    if not os.path.exists('./working/common0.4/'): os.makedirs('./working/common0.4/')
+    if not os.path.exists('./working/common0.6/'): os.makedirs('./working/common0.6/')
+    if not os.path.exists('./working/common0.8/'): os.makedirs('./working/common0.8/')
     train_val_indices = np.append(train_indices, val_indices)
-    json2tsv(train_val_indices, common_data2,    './train_val_0.2_common.tsv')
-    json2tsv(train_val_indices, uncommon_data2,  './train_val_0.2_uncommon.tsv')
+    json2tsv(train_val_indices, common_data2,    './working/common0.2/train_val_common.tsv')
+    json2tsv(train_val_indices, uncommon_data2,  './working/common0.2/train_val_uncommon.tsv')
 
-    json2tsv(train_val_indices, common_data4,    './train_val_0.4_common.tsv')
-    json2tsv(train_val_indices, uncommon_data4,  './train_val_0.4_uncommon.tsv')
+    json2tsv(train_val_indices, common_data4,    './working/common0.4/train_val_common.tsv')
+    json2tsv(train_val_indices, uncommon_data4,  './working/common0.4/train_val_uncommon.tsv')
 
-    json2tsv(train_val_indices, common_data6,    './train_val_0.6_common.tsv')
-    json2tsv(train_val_indices, uncommon_data6,  './train_val_0.6_uncommon.tsv')
+    json2tsv(train_val_indices, common_data6,    './working/common0.6/train_val_common.tsv')
+    json2tsv(train_val_indices, uncommon_data6,  './working/common0.6/train_val_uncommon.tsv')
 
-    json2tsv(train_val_indices, common_data8,    './train_val_0.8_common.tsv')
-    json2tsv(train_val_indices, uncommon_data8,  './train_val_0.8_uncommon.tsv')
+    json2tsv(train_val_indices, common_data8,    './working/common0.8/train_val_common.tsv')
+    json2tsv(train_val_indices, uncommon_data8,  './working/common0.8/train_val_uncommon.tsv')
 
     # SAVE FULL TSV FILES
-    tsvs2tsv('./train_val_0.2_common.tsv', './train_val_0.2_uncommon.tsv', './train_val_0.2.tsv')
-    tsvs2tsv('./train_val_0.4_common.tsv', './train_val_0.4_uncommon.tsv', './train_val_0.4.tsv')
-    tsvs2tsv('./train_val_0.6_common.tsv', './train_val_0.6_uncommon.tsv', './train_val_0.6.tsv')
-    tsvs2tsv('./train_val_0.8_common.tsv', './train_val_0.8_uncommon.tsv', './train_val_0.8.tsv')
+    tsvs2tsv('./working/common0.2/train_val_common.tsv', './working/common0.2/train_val_uncommon.tsv', './working/common0.2/train_val.tsv')
+    tsvs2tsv('./working/common0.4/train_val_common.tsv', './working/common0.4/train_val_uncommon.tsv', './working/common0.4/train_val.tsv')
+    tsvs2tsv('./working/common0.6/train_val_common.tsv', './working/common0.6/train_val_uncommon.tsv', './working/common0.6/train_val.tsv')
+    tsvs2tsv('./working/common0.8/train_val_common.tsv', './working/common0.8/train_val_uncommon.tsv', './working/common0.8/train_val.tsv')
 
-    # SPLIT TRAIN VAL FOR CLASSIFIER
-    splitTrainVal('./train_val_0.2.tsv', './train_0.2.tsv', './val_0.2.tsv')
-    splitTrainVal('./train_val_0.4.tsv', './train_0.4.tsv', './val_0.4.tsv')
-    splitTrainVal('./train_val_0.6.tsv', './train_0.6.tsv', './val_0.6.tsv')
-    splitTrainVal('./train_val_0.8.tsv', './train_0.8.tsv', './val_0.8.tsv')
+    # SPLIT TRAIN VAL
+    splitTrainVal('./working/common0.2/train_val.tsv', './working/common0.2/train.tsv', './working/common0.2/val.tsv')
+    splitTrainVal('./working/common0.4/train_val.tsv', './working/common0.4/train.tsv', './working/common0.4/val.tsv')
+    splitTrainVal('./working/common0.6/train_val.tsv', './working/common0.6/train.tsv', './working/common0.6/val.tsv')
+    splitTrainVal('./working/common0.8/train_val.tsv', './working/common0.8/train.tsv', './working/common0.8/val.tsv')
+
+    # REMOVE TEMPORARY FILES
+    os.rm('./working/common0.2/train_val_common.tsv')
+    os.rm('./working/common0.2/train_val_uncommon.tsv')
+    os.rm('./working/common0.2/train_val.tsv')
+
+    os.rm('./working/common0.4/train_val_common.tsv')
+    os.rm('./working/common0.4/train_val_uncommon.tsv')
+    os.rm('./working/common0.4/train_val.tsv')
+
+    os.rm('./working/common0.6/train_val_common.tsv')
+    os.rm('./working/common0.6/train_val_uncommon.tsv')
+    os.rm('./working/common0.6/train_val.tsv')
+
+    os.rm('./working/common0.8/train_val_common.tsv')
+    os.rm('./working/common0.8/train_val_uncommon.tsv')
+    os.rm('./working/common0.8/train_val.tsv')
 
     # SAVE VOCAB
     TEXT_class = data.Field(lower=True,init_token="<start>",eos_token="<end>")
     LABEL_class = data.Field(sequential=False)
     fields_class = [('text', TEXT_class), ('label', LABEL_class)]
-    train_class = data.TabularDataset(path='./train.tsv', format='tsv', fields=fields_class)
+    train_class = data.TabularDataset(path='./working/basic/train.tsv', format='tsv', fields=fields_class)
     TEXT_class.build_vocab(train_class)
     LABEL_class.build_vocab(train_class)
-    torch.save((list(TEXT_class.vocab.stoi), list(LABEL_class.vocab.stoi)), 'vocab.pt')
+    torch.save((list(TEXT_class.vocab.stoi), list(LABEL_class.vocab.stoi)), './working/basic/vocab.pt')
 
 def crossValidation(data, k = 5, k_test=5):
     """
@@ -279,10 +301,13 @@ def json2tsv(json_indices, json_data, output_path):
     writes the associated question and equation to output_path
     """
     output = open(output_path, 'w')
+    result = []
     for d in json_data:
         if int(d['id']) in json_indices:
             output.write(d['segmented_text'] + '\t' + d['equation'])
+            result = np.append(result, [d['segmented_text'] + '\t' + d['equation']])
     output.close()
+    return result
 
 def isFloat(value):
     """
