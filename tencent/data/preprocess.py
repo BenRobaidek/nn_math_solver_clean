@@ -48,7 +48,7 @@ def main():
     jsondata_no_sni = jsondata
     print('Preprocessing without sni...')
     for d in jsondata_no_sni:
-        d['segmented_text'], d['equation'] = preprocess(d['segmented_text'], d['equation'], model, fields, sni=False)
+        d['segmented_text'], d['equation'] = preprocess(d['segmented_text'], d['equation'], model, fields, use_sni=False)
     print('Preprocessing without sni complete...')
 
     # CREATE WORKING AND OUTPUT FOLDERS IF NEEDED
@@ -237,7 +237,7 @@ def splitTrainVal(train_val_path, output_train_path, output_val_path, num_val_ex
     output_train.close()
     output_val.close()
 
-def preprocess(question, equation, sni_model, fields, sni=True):
+def preprocess(question, equation, sni_model, fields, use_sni=True):
     """
     Returns preprocessed version of question and equation using sni_model and
     fields
@@ -294,7 +294,7 @@ def preprocess(question, equation, sni_model, fields, sni=True):
             iterator.repeat=False
             for batch in iterator:
                 inp = batch.text.t()
-            if sni:
+            if use_sni:
                 print('using sni')
                 if isSignificant(inp, sni_model):
                     print('significant')
