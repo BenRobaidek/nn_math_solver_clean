@@ -42,7 +42,14 @@ def main():
     print('Preprocessing...')
     for d in jsondata:
         d['segmented_text'], d['equation'] = preprocess(d['segmented_text'], d['equation'], model, fields)
-    print('Preprocessing Complete...')
+    print('Preprocessing complete...')
+
+    # PREPROCESS DATA WITHOUT SNI
+    jsondata_no_sni = jsondata
+    print('Preprocessing without sni...')
+    for d in jsondata_no_sni:
+        d['segmented_text'], d['equation'] = preprocess(d['segmented_text'], d['equation'], model, fields, sni=False)
+    print('Preprocessing without sni complete...')
 
     # CREATE WORKING AND OUTPUT FOLDERS IF NEEDED
     if not os.path.exists('./working/'): os.makedirs('./working/')
@@ -61,11 +68,17 @@ def main():
     # GET TRAIN, VAL, TEST INDICES
     train_indices, val_indices, test_indices = split_indices(k_test=5)
 
-    # SAVE SRC/TGT files
+    # SAVE SRC/TGT FILES
     if not os.path.exists('./working/basic/'): os.makedirs('./working/basic/')
     json2tsv(train_indices, jsondata,   './working/basic/train.tsv')
     json2tsv(val_indices,   jsondata,   './working/basic/val.tsv')
     json2tsv(test_indices,  jsondata,   './working/basic/test.tsv')
+
+    # SAVE SRC/TGT FILES NO SNI
+    if not os.path.exists('./working/no_sni/'): os.makedirs('./working/no_sni/')
+    json2tsv(train_indices, jsondata_no_sni,   './working/no_sni/train.tsv')
+    json2tsv(val_indices,   jsondata_no_sni,   './working/no_sni/val.tsv')
+    json2tsv(test_indices,  jsondata_no_sni,   './working/no_sni/test.tsv')
 
     # REMOVE TEST FOLD BEFORE COUNTING UNCOMMON EQUATIONS
     jsondata = [d for d in jsondata if int(d['id']) not in test_indices]
@@ -224,7 +237,7 @@ def splitTrainVal(train_val_path, output_train_path, output_val_path, num_val_ex
     output_train.close()
     output_val.close()
 
-def preprocess(question, equation, sni_model, fields):
+def preprocess(question, equation, sni_model, fields, sni=True):
     """
     Returns preprocessed version of question and equation using sni_model and
     fields
@@ -281,7 +294,16 @@ def preprocess(question, equation, sni_model, fields):
             iterator.repeat=False
             for batch in iterator:
                 inp = batch.text.t()
-            if isSignificant(inp, sni_model):
+            if sni:
+                if isSignificant(inp, sni_model):
+                    for symbol in equation:
+                        if symbol == token:
+                            equation[equation.index(symbol)] = '[' + chr(97 + i) + ']'
+                    for q in question:
+                        if q == token:
+                            question[question.index(q)] = '[' + chr(97 + i) + ']'
+                    i += 1
+            else:
                 for symbol in equation:
                     if symbol == token:
                         equation[equation.index(symbol)] = '[' + chr(97 + i) + ']'
