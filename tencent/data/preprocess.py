@@ -305,13 +305,10 @@ def json2tsv(json_indices, json_data, output_path):
     writes the associated question and equation to output_path
     """
     output = open(output_path, 'w')
-    result = []
     for d in json_data:
         if int(d['id']) in json_indices:
             output.write(d['segmented_text'].strip() + '\t' + d['equation'].strip() + '\n')
-            result = np.append(result, [d['segmented_text'].strip() + '\t' + d['equation'].strip() + '\n'])
     output.close()
-    return result
 
 def isFloat(value):
     """
