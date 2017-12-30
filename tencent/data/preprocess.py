@@ -108,6 +108,7 @@ def main():
     splitTrainVal('./working/common0.8/train_val.tsv', './working/common0.8/train.tsv', './working/common0.8/val.tsv')
 
     # REMOVE TEMPORARY FILES
+    """
     os.remove('./working/common0.2/train_val_common.tsv')
     os.remove('./working/common0.2/train_val_uncommon.tsv')
     os.remove('./working/common0.2/train_val.tsv')
@@ -123,6 +124,7 @@ def main():
     os.remove('./working/common0.8/train_val_common.tsv')
     os.remove('./working/common0.8/train_val_uncommon.tsv')
     os.remove('./working/common0.8/train_val.tsv')
+    """
 
     # SAVE VOCAB
     TEXT_class = data.Field(lower=True,init_token="<start>",eos_token="<end>")
