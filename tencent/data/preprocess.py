@@ -345,7 +345,7 @@ def json2tsv(json_indices, json_data, output_path):
     For each example in json_data indexed by json_indices,
     writes the associated question and equation to output_path
     """
-    output = open(output_path_src, 'w')
+    output = open(output_path, 'w')
     for d in json_data:
         if int(d['id']) in json_indices:
             output.write(d['segmented_text'] + '\t' + d['equation'])
