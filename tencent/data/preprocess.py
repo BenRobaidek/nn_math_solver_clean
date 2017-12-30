@@ -37,7 +37,7 @@ def main():
     # LOAD EXISTING PREPROCESSED JSON DATA IF AVAILABLE
     try:
         jsondata = json.loads(open('./working/Math23K-preprocessed.json').read())
-    except:
+    except FileNotFoundError:
         # PREPROCESS DATA
         print('Preprocessing...')
         for d in jsondata:
@@ -52,8 +52,6 @@ def main():
         with open('./working/Math23K-preprocessed.json', 'w') as outfile:
             json.dump(jsondata, outfile)
 
-
-
     # 5 FOLD CROSS VALIDATION
     print('Using existing cross validation splits')
     # use the code below to generate new folds
@@ -62,6 +60,8 @@ def main():
 
     # GET TRAIN, VAL, TEST INDICES
     train_indices, val_indices, test_indices = split_indices(k_test=5)
+
+    print('train_indices:', train_indices)
 
     # SAVE SRC/TGT files
     if not os.path.exists('./working/basic/'): os.makedirs('./working/basic/')
