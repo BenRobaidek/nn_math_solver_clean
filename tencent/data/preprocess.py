@@ -35,22 +35,22 @@ def main():
     LABEL.build_vocab(train)
 
     # LOAD EXISTING PREPROCESSED JSON DATA IF AVAILABLE
-    try:
-        jsondata = json.loads(open('./working/Math23K-preprocessed.json').read())
-    except FileNotFoundError:
-        # PREPROCESS DATA
-        print('Preprocessing...')
-        for d in jsondata:
-            d['segmented_text'], d['equation'] = preprocess(d['segmented_text'], d['equation'], model, fields)
-        print('Preprocessing Complete...')
+    #try:
+    #    jsondata = json.loads(open('./working/Math23K-preprocessed.json').read())
 
-        # CREATE WORKING AND OUTPUT FOLDERS IF NEEDED
-        if not os.path.exists('./working/'): os.makedirs('./working/')
-        if not os.path.exists('./output/'): os.makedirs('./output/')
+    # PREPROCESS DATA
+    print('Preprocessing...')
+    for d in jsondata:
+        d['segmented_text'], d['equation'] = preprocess(d['segmented_text'], d['equation'], model, fields)
+    print('Preprocessing Complete...')
 
-        # SAVE PREPROCESSED JSON
-        with open('./working/Math23K-preprocessed.json', 'w') as outfile:
-            json.dump(jsondata, outfile)
+    # CREATE WORKING AND OUTPUT FOLDERS IF NEEDED
+    if not os.path.exists('./working/'): os.makedirs('./working/')
+    if not os.path.exists('./output/'): os.makedirs('./output/')
+
+    # SAVE PREPROCESSED JSON
+    with open('./working/Math23K-preprocessed.json', 'w') as outfile:
+        json.dump(jsondata, outfile)
 
     # 5 FOLD CROSS VALIDATION
     print('Using existing cross validation splits')
@@ -110,7 +110,6 @@ def main():
     splitTrainVal('./working/common0.8/train_val.tsv', './working/common0.8/train.tsv', './working/common0.8/val.tsv')
 
     # REMOVE TEMPORARY FILES
-    """
     os.remove('./working/common0.2/train_val_common.tsv')
     os.remove('./working/common0.2/train_val_uncommon.tsv')
     os.remove('./working/common0.2/train_val.tsv')
@@ -126,7 +125,6 @@ def main():
     os.remove('./working/common0.8/train_val_common.tsv')
     os.remove('./working/common0.8/train_val_uncommon.tsv')
     os.remove('./working/common0.8/train_val.tsv')
-    """
 
     # SAVE VOCAB
     TEXT_class = data.Field(lower=True,init_token="<start>",eos_token="<end>")
