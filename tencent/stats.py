@@ -4,19 +4,19 @@ import re
 from matplotlib.ticker import MaxNLocator
 
 def main():
-    showStats('./data/train.tsv', file_type='tsv')
-    showStats('./data/val.tsv', file_type='tsv')
-    showStats('./data/test.tsv', file_type='tsv')
+    showStats('./data/working/basic/train.tsv', file_type='tsv')
+    showStats('./data/working/basic/val.tsv', file_type='tsv')
+    showStats('./data/working/basic/test.tsv', file_type='tsv')
 
-    showStats('./data/train_0.2.tsv', file_type='tsv')
-    showStats('./data/train_0.4.tsv', file_type='tsv')
-    showStats('./data/train_0.6.tsv', file_type='tsv')
-    showStats('./data/train_0.8.tsv', file_type='tsv')
+    showStats('./data/working/common0.2/train.tsv', file_type='tsv')
+    showStats('./data/working/common0.4/train.tsv', file_type='tsv')
+    showStats('./data/working/common0.6/train.tsv', file_type='tsv')
+    showStats('./data/working/common0.8/train.tsv', file_type='tsv')
 
-    showStats('./data/val_0.2.tsv', file_type='tsv')
-    showStats('./data/val_0.4.tsv', file_type='tsv')
-    showStats('./data/val_0.6.tsv', file_type='tsv')
-    showStats('./data/val_0.8.tsv', file_type='tsv')
+    showStats('./data/working/common0.2/val.tsv', file_type='tsv')
+    showStats('./data/working/common0.4/val.tsv', file_type='tsv')
+    showStats('./data/working/common0.6/val.tsv', file_type='tsv')
+    showStats('./data/working/common0.8/val.tsv', file_type='tsv')
 
 def showStats(path, file_type='txt'):
     if file_type == 'txt':
