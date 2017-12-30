@@ -61,8 +61,6 @@ def main():
     # GET TRAIN, VAL, TEST INDICES
     train_indices, val_indices, test_indices = split_indices(k_test=5)
 
-    print('train_indices:', train_indices)
-
     # SAVE SRC/TGT files
     if not os.path.exists('./working/basic/'): os.makedirs('./working/basic/')
     json2tsv(train_indices, jsondata,   './working/basic/train.tsv')
@@ -310,8 +308,8 @@ def json2tsv(json_indices, json_data, output_path):
     result = []
     for d in json_data:
         if int(d['id']) in json_indices:
-            output.write(d['segmented_text'] + '\t' + d['equation'])
-            result = np.append(result, [d['segmented_text'] + '\t' + d['equation']])
+            output.write(d['segmented_text'].strip() + '\t' + d['equation'].strip())
+            result = np.append(result, [d['segmented_text'].strip() + '\t' + d['equation'].strip()])
     output.close()
     return result
 
