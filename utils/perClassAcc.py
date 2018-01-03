@@ -6,8 +6,8 @@ def main(args):
     """
     Compute/print per class accuracy
     """
-    truth = open(args.truth).readlines()
-    preds = open(args.preds).readlines()
+    truth = [line.strip().split('\t')[1] for line in open(args.truth).readlines()]
+    preds = [line.strip() for line in open(args.preds).readlines()]
 
     # initialize dict
     perClassAcc = dict.fromkeys(np.unique(truth))
