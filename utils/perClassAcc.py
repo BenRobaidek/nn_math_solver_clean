@@ -1,3 +1,4 @@
+import operator
 import argparse
 import numpy as np
 
@@ -14,19 +15,20 @@ def main(args):
     # populate dict
     for line in zip(truth,preds):
         if perClassAcc[line[0]] is None:
-            perClassAcc[line[0]] = [int(line[0] == line[1]), int(not line[0] == line[1])]
+            perClassAcc[line[0]] = np.array([int(line[0] == line[1]), int(not line[0] == line[1]), 0]).astype(float)
         else:
-            perClassAcc[line[0]] = np.add(perClassAcc[line[0]], [int(line[0] == line[1]), int(not line[0] == line[1])])
+            perClassAcc[line[0]] = np.add(perClassAcc[line[0]], [int(line[0] == line[1]), int(not line[0] == line[1]), 0])
 
-    print(perClassAcc)
+    # compute per class accuracies
+    for key in perClassAcc.keys():
+        perClassAcc[key][2] = perClassAcc[key][0] / (perClassAcc[key][0] + perClassAcc[key][1])
 
     # Sort keys
-    left off here
+    keylist = sorted(perClassAcc, key=lambda x: perClassAcc.get(x)[2], reverse=True)
 
     #
-    for key in perClassAcc:
-        acc = str(perClassAcc[key][0] / (perClassAcc[key][0] + perClassAcc[key][1]))
-        print('{:>12}   {:>12}  ({}/{})'.format(key.strip(), acc, perClassAcc[key][0], perClassAcc[key][0] + perClassAcc[key][1]))
+    for key in keylist:
+        print('{:>40}   {:>5}  ({}/{})'.format(key.strip(), perClassAcc[key][2], int(perClassAcc[key][0]), int(perClassAcc[key][0] + perClassAcc[key][1])))
 
 def parseArgs():
     parser = argparse.ArgumentParser(description='test')
