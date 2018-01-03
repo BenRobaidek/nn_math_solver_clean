@@ -6,7 +6,6 @@ import torch.nn.functional as F
 from numpy import genfromtxt
 from torch.autograd import Variable
 
-import data
 import model as m
 from torchtext import data, datasets
 from evalTest import eval,test
