@@ -11,8 +11,8 @@ def main(args):
 def parseArgs():
     parser = argparse.ArgumentParser(description='test')
 
-    parser.add_argument('-truth', type=str, default='', help='path to ground true file, usually validation file [default: '']')
-    parser.add_argument('-preds', type=str, default='', help='path to preds file [default: '']')
+    parser.add_argument('-truth', type=str, default='./preds.txt', help='path to ground true file, usually validation file [default: '']')
+    parser.add_argument('-preds', type=str, default='./truth.txt', help='path to preds file [default: '']')
 
     args = parser.parse_args()
     return args
