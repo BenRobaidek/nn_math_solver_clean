@@ -1,6 +1,7 @@
 import argparse
 import numpy as np
 import torch
+sys.path.append('../tencent/models/')
 
 def main(args):
     print('Running main...')
