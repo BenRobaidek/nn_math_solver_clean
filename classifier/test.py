@@ -52,8 +52,8 @@ def perClassAcc(truth_path, preds_path):
 def parseArgs():
     parser = argparse.ArgumentParser(description='test')
 
-    parser.add_argument('-model', type=str, default='', help='path to model, [default: '']')
-    parser.add_argument('-train', type=str, default='', help='path to train data file, [default: '']')
+    parser.add_argument('-model', type=str, default='../tencent/models/good_model.pt', help='path to model, [default: \'../tencent/models/good_model.pt\']')
+    parser.add_argument('-train', type=str, default='../tencent/data/', help='path to train data file, [default: \'\']')
     parser.add_argument('-truth', type=str, default='', help='path to ground true file, usually validation file [default: '']')
     parser.add_argument('-preds', type=str, default='', help='path to preds file [default: '']')
 
