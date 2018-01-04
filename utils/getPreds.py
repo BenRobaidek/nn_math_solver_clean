@@ -7,8 +7,8 @@ sys.path.append('../tencent/models/')
 def main(args):
     print('Running main...')
     inp = [line.split('\t')[1].strip() for line in open(args.inp).readlines()]
-    model = torch.load(args.model)
-    print(model)
+    mod = torch.load(args.model)
+    print(mod)
 
 def parseArgs():
     parser = argparse.ArgumentParser(description='test')
