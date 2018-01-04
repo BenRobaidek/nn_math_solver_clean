@@ -12,7 +12,7 @@ def main(args):
     print('Running main...')
     inp = [line.split('\t')[1].strip() for line in open(args.inp).readlines()]
     model = torch.load(args.model, map_location=lambda storage, loc: storage.cuda(0))
-    print(mod)
+    print(model)
 
 def parseArgs():
     parser = argparse.ArgumentParser(description='test')
