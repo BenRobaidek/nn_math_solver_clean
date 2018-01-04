@@ -7,13 +7,13 @@ sys.path.append('../tencent/models/')
 def main(args):
     print('Running main...')
     inp = [line.split('\t')[1].strip() for line in open(args.inp).readlines()]
-    mod = torch.load(args.model)
+    mod = torch.load(args.mod)
     print(mod)
 
 def parseArgs():
     parser = argparse.ArgumentParser(description='test')
 
-    parser.add_argument('-model', type=str, default='../tencent/models/good_model.pt', help='path to model [default: \'../tencent/models/good_model.pt\']')
+    parser.add_argument('-mod', type=str, default='../tencent/models/good_model.pt', help='path to model [default: \'../tencent/models/good_model.pt\']')
     parser.add_argument('-inp', type=str, default='../tencent/data/working/basic/val.tsv', help='path to input tsv file, usually validation file [default: \'../tencent/data/working/basic/val.tsv\']')
     parser.add_argument('-preds', type=str, default='./preds.txt', help='path to save preds file [default: \'./preds\']')
 
