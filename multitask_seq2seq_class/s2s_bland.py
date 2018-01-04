@@ -16,7 +16,7 @@ class model(nn.Module):
     self.args = args
 
     # load model
-    self.m = torch.load()
+    #self.m = torch.load()
 
     # encoder decoder stuff
     self.encemb = nn.Embedding(args.svsz,args.hsz,padding_idx=0)
