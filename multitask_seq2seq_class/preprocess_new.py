@@ -12,11 +12,11 @@ class load_data:
     thresh = 3
     self.vocab = ["<pad>","<end>","<unk>","<start>"]+[x for x in ctr if ctr[x]>thresh]
     self.vsz = len(self.vocab)
-    '''
+
     ctr = Counter([x for z in train_sources for x in z])
     thresh = 1
     self.itos = ["<pad>","<eos>","<unk>","<start>"]+[x for x in ctr if ctr[x]>thresh]
-    '''
+    
     sv,tv = torch.load("vocabs.pt")
     self.itos = sv
     self.stoi = {x:i for i,x in enumerate(self.itos)}
@@ -99,7 +99,7 @@ class load_data:
       ctr+=k
       batches.append((srcs,tgts))
     return batches
-        
+
   def ds(self,fn):
     with open(fn) as f:
       sources, targs = zip(*[x.strip().split("\t",maxsplit=1) for x in f.readlines()])
