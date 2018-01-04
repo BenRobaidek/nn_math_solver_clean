@@ -1,1 +1,0 @@
-PERSON_0 has NUMBER_0 green balloons , he gave PERSON_1 NUMBER_1 of the balloons . How many green balloons does he now have ?

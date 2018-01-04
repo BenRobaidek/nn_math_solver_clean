@@ -1,1 +1,0 @@
-PERSON_0 has some marbles . She bought NUMBER_0 marbles . Now she has NUMBER_1 marbles all together . How many did she start with ?

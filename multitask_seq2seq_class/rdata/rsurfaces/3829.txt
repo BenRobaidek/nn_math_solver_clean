@@ -1,1 +1,0 @@
-PERSON_0 has NUMBER_0 Nintendo games . How many does she need to give away so that she will have NUMBER_1 games left ?

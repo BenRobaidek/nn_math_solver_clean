@@ -1,1 +1,0 @@
-NUMBER_0 more than the product of NUMBER_1 and x is the same as NUMBER_2 . Solve for x.

@@ -1,1 +1,0 @@
-PERSON_0 has NUMBER_0 boxes of pencils . Each box holds NUMBER_1 pencils . How many pencils does PERSON_0 have ?

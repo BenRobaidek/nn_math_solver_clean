@@ -1,1 +1,0 @@
-A farmer started the day with NUMBER_0 buckets of seeds . After spending the morning sowing seeds , she now has NUMBER_1 buckets left . How many buckets of seeds did the farmer sow ?

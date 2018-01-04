@@ -1,1 +1,0 @@
-Negative NUMBER_0 times a number is NUMBER_1 . Find the number .

@@ -1,1 +1,0 @@
-PERSON_0 has NUMBER_0 dozen golf balls . How many golf balls does he have ?

@@ -1,1 +1,0 @@
-( NUMBER_0 - NUMBER_1 ) / 2.0 = VAR_0

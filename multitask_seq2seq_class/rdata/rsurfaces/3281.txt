@@ -1,1 +1,0 @@
-PERSON_0 has NUMBER_0 crayons . PERSON_1 has NUMBER_1 crayons . How many more crayons does PERSON_0 have then PERSON_1 ?

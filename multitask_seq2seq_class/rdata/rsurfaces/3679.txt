@@ -1,1 +1,0 @@
-NUMBER_0 dogs are barking . NUMBER_1 more dogs start to bark . How many dogs are barking ?

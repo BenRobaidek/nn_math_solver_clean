@@ -1,1 +1,0 @@
-Find three consecutive integers whose sum is NUMBER_0 .

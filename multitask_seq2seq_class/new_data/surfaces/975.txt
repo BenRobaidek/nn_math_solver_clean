@@ -1,1 +1,0 @@
-It took me NUMBER_0 minutes to walk NUMBER_1 meters . How fast was I travelling ?

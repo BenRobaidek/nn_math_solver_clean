@@ -1,1 +1,0 @@
-If NUMBER_0 times a number is NUMBER_1 more than the number , find the number .

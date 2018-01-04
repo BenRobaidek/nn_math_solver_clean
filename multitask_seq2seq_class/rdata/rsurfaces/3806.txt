@@ -1,1 +1,0 @@
-My car gets NUMBER_0 miles per gallon . How many miles can I drive on NUMBER_1 gallons of gas ?

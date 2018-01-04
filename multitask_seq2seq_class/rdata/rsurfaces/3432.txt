@@ -1,1 +1,0 @@
-PERSON_0 has NUMBER_0 apples . PERSON_1 takes NUMBER_1 away . How many apples will Ruby have ?

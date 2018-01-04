@@ -1,1 +1,0 @@
-PERSON_0 starts with NUMBER_0 apples . He buys NUMBER_1 more . How many apples does Harry end with ?

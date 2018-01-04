@@ -1,1 +1,0 @@
-PERSON_0 worked NUMBER_0 hours on the first NUMBER_1 days of the week . How many hours did he work in all ?

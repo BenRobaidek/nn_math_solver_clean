@@ -1,1 +1,0 @@
-( NUMBER_2 * NUMBER_2 ) + ( NUMBER_1 * NUMBER_3 ) = VAR_0

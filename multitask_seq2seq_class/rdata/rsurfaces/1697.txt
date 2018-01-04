@@ -1,1 +1,0 @@
-NUMBER_0 is NUMBER_1 less than NUMBER_2 times a number . Find the number .

@@ -1,1 +1,0 @@
-A restaurant made NUMBER_0 hamburgers to serve during lunch . Only NUMBER_1 were actually served . How many hamburgers were over from lunch ?

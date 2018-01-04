@@ -1,1 +1,0 @@
-PERSON_0 has NUMBER_0 dollars in NUMBER_1 dollar bills . How many five dollars bills does he have ?

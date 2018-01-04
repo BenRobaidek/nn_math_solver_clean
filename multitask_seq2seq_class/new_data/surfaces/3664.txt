@@ -1,1 +1,0 @@
-The Litter Patrol picked up NUMBER_0 glass bottles and NUMBER_1 aluminum cans on Saturday . How many pieces of litter did they pick up altogether ?

@@ -1,1 +1,0 @@
-One pencil weighs NUMBER_0 grams . How much do NUMBER_1 pencils weigh ?

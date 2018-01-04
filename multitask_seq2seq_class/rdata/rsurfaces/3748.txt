@@ -1,1 +1,0 @@
-PERSON_0 has NUMBER_0 seashells . How many more seashells does she need to find to have NUMBER_1 seashells in her collection ?

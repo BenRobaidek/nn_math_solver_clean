@@ -1,1 +1,0 @@
-PERSON_0 has NUMBER_0 yellow marbles . PERSON_1 has NUMBER_1 yellow marbles . How many yellow marbles do they have in all ?

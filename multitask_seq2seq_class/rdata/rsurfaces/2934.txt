@@ -1,1 +1,0 @@
-PERSON_0 's high school played NUMBER_0 soccer games this year . She attended NUMBER_1 games . How many soccer games did PERSON_0 miss ?

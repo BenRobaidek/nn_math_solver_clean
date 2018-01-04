@@ -1,1 +1,0 @@
-Each cup contains NUMBER_0 ounces . How many ounces are in NUMBER_1 cups ?

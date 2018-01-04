@@ -1,1 +1,0 @@
-The sum of NUMBER_0 consecutive even numbers is NUMBER_1 . What is the smallest of the NUMBER_2 numbers ?

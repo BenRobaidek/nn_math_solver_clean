@@ -1,1 +1,0 @@
-PERSON_0 starts with NUMBER_0 blocks . She loses NUMBER_1 . How many blocks does PERSON_0 end with ?

@@ -1,1 +1,0 @@
-Virginia starts with NUMBER_0 eggs . PERSON_0 takes NUMBER_1 away . How many eggs does Virginia end with ?

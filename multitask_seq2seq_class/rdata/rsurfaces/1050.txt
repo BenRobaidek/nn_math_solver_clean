@@ -1,1 +1,0 @@
-The sum of 3 consecutive integers is NUMBER_0 . Find the integers , from smallest to largest .

@@ -1,1 +1,0 @@
-The sum of NUMBER_0 and twice a number is NUMBER_1 . Find the number .

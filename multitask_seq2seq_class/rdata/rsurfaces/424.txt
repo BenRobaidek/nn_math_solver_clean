@@ -1,1 +1,0 @@
-The sum of NUMBER_0 and a number is NUMBER_1 . What is the number ?

@@ -1,1 +1,0 @@
-The sum of the reciprocal of a number and the reciprocal of NUMBER_0 less than the number is NUMBER_1 times the reciprical of the original number . Find the original number ?

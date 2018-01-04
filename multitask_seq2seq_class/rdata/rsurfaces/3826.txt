@@ -1,1 +1,0 @@
-PERSON_0 had NUMBER_0 markers . PERSON_1 gave her NUMBER_1 more markers . How many markers does PERSON_0 have altogether ?

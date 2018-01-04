@@ -1,1 +1,0 @@
-PERSON_0 has saved NUMBER_0 dollars from washing cars . How many dozen quarters does PERSON_0 have ?

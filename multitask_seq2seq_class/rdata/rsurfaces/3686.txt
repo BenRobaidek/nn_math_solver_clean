@@ -1,1 +1,0 @@
-PERSON_0 ate NUMBER_0 carrot sticks before dinner and NUMBER_1 more after dinner . How many carrot sticks did he eat ?

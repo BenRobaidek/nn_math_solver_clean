@@ -1,1 +1,0 @@
-A truck carrying NUMBER_0 pounds of sand travels to a construction yard and loses NUMBER_1 pounds of sand along the way . How much sand does the truck have when it arrives at the yard ?

@@ -1,1 +1,0 @@
-PERSON_0 had NUMBER_0 Legos , but she lost NUMBER_1 Legos . How many Legos does she have now ?

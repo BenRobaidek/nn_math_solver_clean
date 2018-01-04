@@ -1,1 +1,0 @@
-PERSON_0 has NUMBER_0 tickets . If she shares them among NUMBER_1 friends , how many tickets does each friend get ?

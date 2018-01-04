@@ -1,1 +1,0 @@
-What is the msrp for a hummer H1 that sold for NUMBER_0 dollars after an NUMBER_1 % discount ?

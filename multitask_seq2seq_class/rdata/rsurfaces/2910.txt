@@ -1,1 +1,0 @@
-PERSON_0 grew NUMBER_0 potatoes . PERSON_1 grew NUMBER_1 potatoes . How many potatoes did they grow in total ?

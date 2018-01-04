@@ -1,1 +1,0 @@
-PERSON_0 has NUMBER_0 books . NUMBER_1 are about school and the rest are about sports . How many books about sports does Iesha have ?

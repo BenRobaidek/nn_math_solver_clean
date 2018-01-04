@@ -1,1 +1,0 @@
-The difference between NUMBER_0 numbers is NUMBER_1 . If you double both numbers , the sum is NUMBER_2 . Find the NUMBER_3 numbers .

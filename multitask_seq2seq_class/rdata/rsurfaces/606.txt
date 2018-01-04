@@ -1,1 +1,0 @@
-The sum of two consecutive integers is NUMBER_0 . Find the two consecutive integers .

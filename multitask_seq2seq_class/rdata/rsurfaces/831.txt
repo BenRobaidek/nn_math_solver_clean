@@ -1,1 +1,0 @@
-At a sale , the cost of a pair of shoes was reduced from NUMBER_0 dollars to NUMBER_1 dollars . What was the percent of discount ?

@@ -1,1 +1,0 @@
-The sum of a number and its reciprocal is NUMBER_0 . Find the number .

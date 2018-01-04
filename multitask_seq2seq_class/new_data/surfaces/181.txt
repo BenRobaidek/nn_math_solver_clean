@@ -1,1 +1,0 @@
-PERSON_0 's Vegetarian Restaurant bought NUMBER_0 pound of green peppers and NUMBER_1 pound of red peppers . How many pounds of peppers did PERSON_0 's Vegetarian Restaurant buy in all ?

@@ -1,1 +1,0 @@
-PERSON_0 has NUMBER_0 marbles . If she shares them among NUMBER_1 friends , how many marbles does each friend get ?

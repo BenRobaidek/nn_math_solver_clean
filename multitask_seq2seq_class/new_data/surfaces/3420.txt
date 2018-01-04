@@ -1,1 +1,0 @@
-PERSON_0 starts with NUMBER_0 erasers . She loses NUMBER_1 . How many erasers does PERSON_0 end with ?

@@ -1,1 +1,0 @@
-PERSON_0 got NUMBER_0 pennies for washing clothes , and NUMBER_1 quarters for mowing lawns . How much money does PERSON_0 have ?

@@ -1,1 +1,0 @@
-PERSON_0 starts with NUMBER_0 candies . PERSON_1 takes NUMBER_1 away . How many candies does PERSON_0 end with ?

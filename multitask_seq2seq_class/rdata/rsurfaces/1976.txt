@@ -1,1 +1,0 @@
-The difference between two numbers is NUMBER_0 and their sum is NUMBER_1 . Find the numbers .

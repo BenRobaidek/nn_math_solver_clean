@@ -1,1 +1,0 @@
-NUMBER_0 toucans are sitting on a tree limb . NUMBER_1 more toucan joins them . How many toucans in all ?

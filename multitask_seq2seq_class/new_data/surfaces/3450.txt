@@ -1,1 +1,0 @@
-PERSON_0 has NUMBER_0 blocks . He gives NUMBER_1 to PERSON_1 . How many blocks will PERSON_0 have ?

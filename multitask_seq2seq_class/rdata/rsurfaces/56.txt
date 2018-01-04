@@ -1,1 +1,0 @@
-PERSON_0 has NUMBER_0 books in his library . He bought several books at a yard sale over the weekend . He now has NUMBER_1 books in his library . How many books did he buy at the yard sale ?

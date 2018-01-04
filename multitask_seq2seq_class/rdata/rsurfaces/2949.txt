@@ -1,1 +1,0 @@
-PERSON_0 has NUMBER_0 cents in his bank . How many dimes does PERSON_0 have ?

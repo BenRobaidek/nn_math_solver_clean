@@ -1,1 +1,0 @@
-The sum of the reciprocals of NUMBER_0 consecutive odd numbers is 8/15 . Find the numbers .

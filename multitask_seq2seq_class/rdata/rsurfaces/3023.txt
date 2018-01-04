@@ -1,1 +1,0 @@
-PERSON_0 saw NUMBER_0 NUMBER_1 birds in a tree . How many birds did PERSON_0 see ?
