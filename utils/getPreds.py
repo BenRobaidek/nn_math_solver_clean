@@ -6,6 +6,7 @@ from torch.autograd import Variable
 import torch.nn.functional as F
 import sys
 sys.path.append('../tencent/models/')
+sys.path.append('../classifier/')
 
 def main(args):
     print('Running main...')
