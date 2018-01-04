@@ -1,19 +1,22 @@
 import argparse
 import numpy as np
 import torch
+from torch import autograd, nn
+from torch.autograd import Variable
+import torch.nn.functional as F
 import sys
 sys.path.append('../tencent/models/')
 
 def main(args):
     print('Running main...')
     inp = [line.split('\t')[1].strip() for line in open(args.inp).readlines()]
-    mod = torch.load(args.mod)
+    model = torch.load(args.model, map_location=lambda storage, loc: storage.cuda(0))
     print(mod)
 
 def parseArgs():
     parser = argparse.ArgumentParser(description='test')
 
-    parser.add_argument('-mod', type=str, default='../tencent/models/good_model.pt', help='path to model [default: \'../tencent/models/good_model.pt\']')
+    parser.add_argument('-model', type=str, default='../tencent/models/good_model.pt', help='path to model [default: \'../tencent/models/good_model.pt\']')
     parser.add_argument('-inp', type=str, default='../tencent/data/working/basic/val.tsv', help='path to input tsv file, usually validation file [default: \'../tencent/data/working/basic/val.tsv\']')
     parser.add_argument('-preds', type=str, default='./preds.txt', help='path to save preds file [default: \'./preds\']')
 
