@@ -1,0 +1,1 @@
+Sue bought NUMBER_0 packs of cookies and NUMBER_1 sacks of potato chips for NUMBER_2 dollars . Later she bought NUMBER_3 pack of cookies and 5 sacks of potato chips for NUMBER_4 dollars . What is the price of a pack of cookies , in dollars ?

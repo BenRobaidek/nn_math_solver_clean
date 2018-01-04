@@ -1,0 +1,1 @@
+Your family goes to a restaurant for dinner . There are NUMBER_0 people in your family . Some order the chicken dinner for NUMBER_1 dollars and some order the steak dinner for NUMBER_2 dollars . If the total bill was NUMBER_3 dollars , how many people ordered the steak dinner . How many people ordered the chicked dinner ?

@@ -1,0 +1,1 @@
+One number is NUMBER_0 less than a first number . A third number is twice the first number . If the sum of the three numbers is NUMBER_1 , find the numbers .

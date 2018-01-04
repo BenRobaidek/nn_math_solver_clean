@@ -1,0 +1,1 @@
+There are NUMBER_0 candies in PERSON_0 's candy collection . If the candies are organized into NUMBER_1 groups , how big is each group ?

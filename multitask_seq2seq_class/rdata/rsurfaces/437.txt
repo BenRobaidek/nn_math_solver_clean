@@ -1,0 +1,1 @@
+Movie tickets for an adult and NUMBER_0 children cost NUMBER_1 dollars . An adult 's ticket costs NUMBER_2 dollars more than a child 's ticket . Find the cost of an adult 's ticket .

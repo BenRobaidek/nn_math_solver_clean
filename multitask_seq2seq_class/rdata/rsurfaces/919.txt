@@ -1,0 +1,1 @@
+In 1986 , there were NUMBER_0 students in Central High School . The number of students enrolled in 1987 was NUMBER_1 % less than in 1986 . How many students were enrolled in 1987 ?

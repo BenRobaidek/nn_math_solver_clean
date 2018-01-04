@@ -1,0 +1,1 @@
+Safety Rent-a-Car rents an intermediate-size car at a daily rate of NUMBER_0 dollars plus NUMBER_1 per mile . City Rentals rent an intermediate-size car for NUMBER_2 dollars plus NUMBER_3 per mile . For what milage is the cost the same ?

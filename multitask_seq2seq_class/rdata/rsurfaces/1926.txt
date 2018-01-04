@@ -1,0 +1,1 @@
+The sum of digits of a 2 digit number is NUMBER_0 . If the digit at NUMBER_1 's place is increased by NUMBER_2 , the digit becomes NUMBER_3 of the original number . Find the original number .

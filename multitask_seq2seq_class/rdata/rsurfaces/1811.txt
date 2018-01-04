@@ -1,0 +1,1 @@
+The larger of NUMBER_0 numbers is NUMBER_1 less than twice the smaller . The sum of the NUMBER_2 numbers is NUMBER_3 . Find the NUMBER_4 numbers .

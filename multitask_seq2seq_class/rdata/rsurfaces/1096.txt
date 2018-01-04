@@ -1,0 +1,1 @@
+On 3 consecutive passes , a football team gain NUMBER_0 yards , loses NUMBER_1 yards , gains NUMBER_2 yards . What number represents the total net net yardage ?

@@ -1,0 +1,1 @@
+NUMBER_0 times a number , plus NUMBER_1 less than twice the number is NUMBER_2 . What is the number ?

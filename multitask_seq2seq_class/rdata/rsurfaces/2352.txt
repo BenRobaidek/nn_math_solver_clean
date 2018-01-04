@@ -1,0 +1,1 @@
+A book store had NUMBER_0 books in the bargin bin . If they sold NUMBER_1 books , but then put NUMBER_2 more in the bin , how many books would be in the bin ?

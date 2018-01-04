@@ -1,0 +1,1 @@
+NUMBER_0 footballs and NUMBER_1 soccer ball cost NUMBER_2 dollars . NUMBER_3 footballs and NUMBER_4 soccer balls cost NUMBER_5 dollars . Determine the cost of NUMBER_6 football and the cost of NUMBER_7 soccer ball , in dollars .

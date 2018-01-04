@@ -1,0 +1,1 @@
+There are NUMBER_0 pencils and NUMBER_1 rulers in the drawer . PERSON_0 took NUMBER_2 pencils out of the drawer . How many pencils are there now ?

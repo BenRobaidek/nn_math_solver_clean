@@ -1,0 +1,1 @@
+Soft drinks are on sale at the grocery store for NUMBER_0 dollars for a NUMBER_1 pack . How much would each can of soft drink cost if purchased individually , in dollars ?

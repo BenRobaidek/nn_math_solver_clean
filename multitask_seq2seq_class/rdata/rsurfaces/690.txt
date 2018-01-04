@@ -1,0 +1,1 @@
+The product of NUMBER_0 and a number is the same as NUMBER_1 less twice that same number . Find the number .

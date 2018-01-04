@@ -1,0 +1,1 @@
+A chef bought NUMBER_0 kilograms of almonds and NUMBER_1 kilograms of pecans . How many kilograms of nuts did the chef buy in all ?

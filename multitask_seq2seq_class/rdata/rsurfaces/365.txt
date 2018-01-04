@@ -1,0 +1,1 @@
+PERSON_0 had 10 quarters and NUMBER_0 pennies in her bank . Her dad gave her NUMBER_1 pennies and her mother gave her NUMBER_2 pennies . How many pennies does PERSON_0 have now ?

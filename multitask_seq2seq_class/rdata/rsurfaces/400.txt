@@ -1,0 +1,1 @@
+Suppose you invested NUMBER_0 dollars , part at NUMBER_1 % annual interest and the rest at NUMBER_2 % annual interest . If you received NUMBER_3 dollars in interest after one year , how much did you invest at NUMBER_4 % annual interest and at NUMBER_5 % annual interest ?

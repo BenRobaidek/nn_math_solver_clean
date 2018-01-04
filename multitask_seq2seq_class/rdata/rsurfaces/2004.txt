@@ -1,0 +1,1 @@
+I need to figure out how to get the amount from a phone bill sent to LOCATION_0 on June 16 . The Rate for First Minute is NUMBER_0 , the Rate for Additional Minutes is NUMBER_1 , and the Total Minutes are NUMBER_2 . How much is the bill ?

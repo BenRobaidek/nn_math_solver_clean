@@ -1,0 +1,1 @@
+At its Grand Opening , the LOCATION_0 LOCATION_1 distributed two different types of souvenirs . One type cost NUMBER_0 cents each , and the other type cost NUMBER_1 cents each . NUMBER_2 NUMBER_3 souvenirs were distributed in all . If the cost of these souvenirs was NUMBER_4 dollars . How many of NUMBER_5 cents and NUMBER_6 cents souveniers were distributed ?

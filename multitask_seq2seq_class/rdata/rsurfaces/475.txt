@@ -1,0 +1,1 @@
+A pipe that is NUMBER_0 feet long is cut into three pieces . The NUMBER_1 piece is NUMBER_2 foot shorter then twice the NUMBER_3 , and the third piece is NUMBER_4 times as long as the other NUMBER_5 pieces combined . How long is the NUMBER_6 piece ? How long is the NUMBER_7 piece ? How long is the third piece ?

@@ -1,0 +1,1 @@
+A company invited NUMBER_0 people to a luncheon , but NUMBER_1 of them did n't show up . If the tables they had held NUMBER_2 people each , how many tables do they need ?

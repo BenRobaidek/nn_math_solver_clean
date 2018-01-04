@@ -1,0 +1,1 @@
+While playing a trivia game , PERSON_0 answered NUMBER_0 questions correct in the first half and NUMBER_1 questions correct in the second half . If each question was worth NUMBER_2 points , what was his final score ?

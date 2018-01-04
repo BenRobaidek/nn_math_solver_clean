@@ -1,0 +1,1 @@
+PERSON_0 has NUMBER_0 bananas that must be put away in boxes . PERSON_1 comes to help and brings 3 cookies to share with PERSON_0 . If there are NUMBER_1 boxes , how many bananas must go in each box ?

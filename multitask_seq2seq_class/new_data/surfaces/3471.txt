@@ -1,0 +1,1 @@
+There are NUMBER_0 eggs in each box . How many eggs are in NUMBER_1 boxes ?

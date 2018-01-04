@@ -1,0 +1,1 @@
+A ship is filled with NUMBER_0 tons of cargo . It stops in the LOCATION_0 , where sailors load NUMBER_1 more tons of cargo onboard . How many tons of cargo does the ship hold now ?

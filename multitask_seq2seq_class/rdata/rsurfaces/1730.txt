@@ -1,0 +1,1 @@
+A recipe calls for NUMBER_0 cup of diced green pepper . Give the number of cups of diced green pepper that should be used to make NUMBER_1 of this recipe .

@@ -1,0 +1,1 @@
+A B and C can finish a job in NUMBER_0 days . If B and C work together the job will take NUMBER_1 days . If A and C work together the job will take NUMBER_2 days . In how many days can each man working alone do the job ?

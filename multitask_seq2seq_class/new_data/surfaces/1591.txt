@@ -1,0 +1,1 @@
+1 cell phone plan costs NUMBER_0 dollars per month . The first 2500 minutes of use are free . Each minute thereafter costs NUMBER_1 dollars . For a bill of NUMBER_2 dollars , how many minutes over 2500 was the cell phone in use ?

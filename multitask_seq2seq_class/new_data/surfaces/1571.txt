@@ -1,0 +1,1 @@
+NUMBER_0 audio cassettes and NUMBER_1 video cassettes cost rs NUMBER_2 , while NUMBER_3 audio cassettes and NUMBER_4 video cassettes cost rs NUMBER_5 . Find the cost of an audio cassette and a video cassette .

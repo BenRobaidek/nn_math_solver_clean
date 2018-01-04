@@ -1,0 +1,1 @@
+A restaurant served NUMBER_0 hot dogs during lunch and NUMBER_1 during dinner today . It served 5 of them yesterday . How many hot dogs were served today ?

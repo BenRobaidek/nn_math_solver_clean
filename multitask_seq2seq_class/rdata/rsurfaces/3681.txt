@@ -1,0 +1,1 @@
+PERSON_0 had NUMBER_0 pet fish . She bought NUMBER_1 more fish . How many pet fish does PERSON_0 have now ?

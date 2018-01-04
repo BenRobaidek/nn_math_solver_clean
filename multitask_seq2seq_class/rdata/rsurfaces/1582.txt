@@ -1,0 +1,1 @@
+PERSON_0 wants to mix NUMBER_0 pounds of LOCATION_0 peanuts that cost NUMBER_1 dollars a pound with Spanish peanuts that cost NUMBER_2 dollars a pound to obtain a mixture that costs NUMBER_3 dollars a pound . How many pounds of Spanish peanuts should she use ?

@@ -1,0 +1,1 @@
+Find NUMBER_0 consecutive integers such that the sum of NUMBER_1 times the middle integer and NUMBER_2 times the smaller integer is the same as NUMBER_3 times the larger integer .

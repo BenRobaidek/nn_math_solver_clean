@@ -1,0 +1,1 @@
+PERSON_0 had NUMBER_0 pounds of shells in her bucket . She added some shells and now has NUMBER_1 pounds of shells . How many pounds did she add ?

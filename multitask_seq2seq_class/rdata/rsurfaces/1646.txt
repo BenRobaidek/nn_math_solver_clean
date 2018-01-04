@@ -1,0 +1,1 @@
+Pencils cost NUMBER_0 dollars per carton and erasers cost NUMBER_1 dollars per carton . If an order comes in for a total of NUMBER_2 cartons for NUMBER_3 dollars , what was the specific number of cartons of pencils ?

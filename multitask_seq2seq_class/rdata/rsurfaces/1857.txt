@@ -1,0 +1,1 @@
+PERSON_0 paid NUMBER_0 dollars , including NUMBER_1 % tax , for a camera . How much did the camera cost before taxes ?

@@ -1,0 +1,1 @@
+If your gross pay is NUMBER_0 dollars , while your net pay is NUMBER_1 dollars , how much do you pay in taxes ? Assume that all tax dollars are not included in net pay .

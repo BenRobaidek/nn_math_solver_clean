@@ -1,0 +1,1 @@
+The total number of students absent from B. Jones High School on a Monday after a significant snow fall was NUMBER_0 . The total attendance that day was NUMBER_1 . How many students , in total , attend B. Jones High School ?

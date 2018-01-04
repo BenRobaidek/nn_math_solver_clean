@@ -1,0 +1,1 @@
+PERSON_0 was collecting coins . She got NUMBER_0 coins from her piggy bank and NUMBER_1 coins from her brother . Her father gave PERSON_0 NUMBER_2 coins . PERSON_0 gave NUMBER_3 of the coins to her friend PERSON_1 . How many coins did PERSON_0 have left ?

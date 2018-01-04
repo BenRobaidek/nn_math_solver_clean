@@ -1,0 +1,1 @@
+The town of LOCATION_0 has NUMBER_0 grown-ups and NUMBER_1 children . How many people live in LOCATION_0 ?

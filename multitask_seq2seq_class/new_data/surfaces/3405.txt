@@ -1,0 +1,1 @@
+PERSON_0 removes NUMBER_0 pencils from a jar . There were originally NUMBER_1 pencils in the jar . How many pencils are left in the jar ?

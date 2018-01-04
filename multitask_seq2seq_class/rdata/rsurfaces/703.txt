@@ -1,0 +1,1 @@
+PERSON_0 has a pocket full of quarters and dimes . There are NUMBER_0 more quarters than dimes and the total value of the change is NUMBER_1 dollars . How many dimes are there ?

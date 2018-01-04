@@ -1,0 +1,1 @@
+While playing at the arcade , PERSON_0 won NUMBER_0 tickets playing ` whack a mole ' and NUMBER_1 tickets playing ` skee ball ' . If he was trying to buy candy that cost NUMBER_2 tickets a piece , how many could he buy ?

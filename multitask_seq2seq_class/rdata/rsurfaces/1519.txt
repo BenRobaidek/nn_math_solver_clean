@@ -1,0 +1,1 @@
+NUMBER_0 small pitchers and 1 large pitcher can hold NUMBER_1 cups of water . 1 large pitcher minus 1 small pitcher constitutes NUMBER_2 cups of a water . How many cups of water does the large pitcher hold ? How many cups of water does the small pitcher hold ?

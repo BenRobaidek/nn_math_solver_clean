@@ -1,0 +1,1 @@
+PERSON_0 paid NUMBER_0 dollars for a pair of running shoes during a NUMBER_1 % off sale . What is the regular price of the running shoes ?

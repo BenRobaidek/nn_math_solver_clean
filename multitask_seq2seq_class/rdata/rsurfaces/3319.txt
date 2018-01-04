@@ -1,0 +1,1 @@
+PERSON_0 can read NUMBER_0 books a day . PERSON_0 reads every Monday and Tuesday . How many books would PERSON_0 read in NUMBER_1 weeks ?

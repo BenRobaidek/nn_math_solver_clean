@@ -1,0 +1,1 @@
+Wal-Mart sells thermometers for NUMBER_0 dollars and hot-water bottles for NUMBER_1 dollars . In December , Wal-Mart 's total sales for these NUMBER_2 items was NUMBER_3 dollars . Customers bought NUMBER_4 times as many thermometers as hot-water bottles . How many thermometers did Wal-Mart sell ? How many hot-water bottles ?

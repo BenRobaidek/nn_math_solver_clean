@@ -1,0 +1,1 @@
+For dessert , PERSON_0 's mom prepared NUMBER_0 pieces of bite-size cinnamon swirls . If the NUMBER_1 of them ate an equal number of pieces of cinnamon swirls , how many pieces did PERSON_0 eat ?

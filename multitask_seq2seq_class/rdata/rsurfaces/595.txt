@@ -1,0 +1,1 @@
+A furniture store marks up items NUMBER_0 % . It the furniture store buys a couch for NUMBER_1 dollars , what will the selling price be , in dollars ?

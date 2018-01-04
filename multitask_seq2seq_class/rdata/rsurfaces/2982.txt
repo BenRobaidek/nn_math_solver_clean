@@ -1,0 +1,1 @@
+There are NUMBER_0 children in the classroom , each student will get NUMBER_1 pencils . How many pencils will the teacher have to give out ?

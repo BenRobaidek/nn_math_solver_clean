@@ -1,0 +1,1 @@
+A new parking lot has spaces for NUMBER_0 cars . The ratio of spaces for full sized cars to compact cars is NUMBER_1 to NUMBER_2 . How many spaces are for full-sized cars ? How many spaces are for compact cars ?

@@ -1,0 +1,1 @@
+A group of boys and girls are playing . When NUMBER_0 boys leave , their remains NUMBER_1 girls for each boy . Then when NUMBER_2 girls leave their remains NUMBER_3 boys for each girl . How many boys were there in the original group ?

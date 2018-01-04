@@ -1,0 +1,1 @@
+On the first day of the week PERSON_0 had NUMBER_0 stickers . PERSON_0 earned NUMBER_1 more during the week . How many stickers did PERSON_0 have at the end of the week ?

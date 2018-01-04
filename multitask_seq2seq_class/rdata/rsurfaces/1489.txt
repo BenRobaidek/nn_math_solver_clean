@@ -1,0 +1,1 @@
+The sum of the digits of a 2-digit number is NUMBER_0 . The number formed by reversing the digits is NUMBER_1 more than double the original number . Find the original number .

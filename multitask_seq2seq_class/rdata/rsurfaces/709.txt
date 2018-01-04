@@ -1,0 +1,1 @@
+A car rental agency advertised renting a luxury , full size car for NUMBER_0 dollars per day and NUMBER_1 dollars per mile . If you rent this car for NUMBER_2 days , how many whole miles can you drive if you only have NUMBER_3 dollars to spend ?

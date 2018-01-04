@@ -1,0 +1,1 @@
+On a college entrance exam , each correct answer adds NUMBER_0 point to your raw score , each unanswered question adds nothing and each incorrect answer subtracts NUMBER_1 point . You answer NUMBER_2 out of 85 questions for a raw score of NUMBER_3 . How many questions did you answer correctly ?

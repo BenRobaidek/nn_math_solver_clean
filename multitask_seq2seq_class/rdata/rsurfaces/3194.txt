@@ -1,0 +1,1 @@
+This afternoon PERSON_0 left school , rode the bus NUMBER_0 miles , and then walked NUMBER_1 of a mile to get home . How much farther did PERSON_0 ride than walk ?

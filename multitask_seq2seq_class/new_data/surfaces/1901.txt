@@ -1,0 +1,1 @@
+If NUMBER_0 costs NUMBER_1 dollars , how much does NUMBER_2 cost , in dollars ?

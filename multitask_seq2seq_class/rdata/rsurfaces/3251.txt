@@ -1,0 +1,1 @@
+The mini library also has a section for the classics . If PERSON_0 has a collection of NUMBER_0 classic authors , with each author having NUMBER_1 books , how many books does he have in the classics section ?

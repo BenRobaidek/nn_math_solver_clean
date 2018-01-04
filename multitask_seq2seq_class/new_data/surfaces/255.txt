@@ -1,0 +1,1 @@
+PERSON_0 hiked NUMBER_0 miles on Saturday . Then , on Sunday , he hiked another NUMBER_1 miles . How far did PERSON_0 hike all together ?

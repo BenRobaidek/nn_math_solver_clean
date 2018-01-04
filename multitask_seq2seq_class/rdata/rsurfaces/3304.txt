@@ -1,0 +1,1 @@
+PERSON_0 had $ NUMBER_0 . PERSON_0 paid $ NUMBER_1 for a ticket to a baseball game . At the game , PERSON_0 bought a hot dog for $ NUMBER_2 . What amount of money did PERSON_0 have then ?

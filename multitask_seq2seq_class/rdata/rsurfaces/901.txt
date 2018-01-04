@@ -1,0 +1,1 @@
+NUMBER_0 pencils and NUMBER_1 pens cost a total of NUMBER_2 dollars . NUMBER_3 pencils and NUMBER_4 pens cost NUMBER_5 dollars . Find the cost of a pencil and a pen in dollars .

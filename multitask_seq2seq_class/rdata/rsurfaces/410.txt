@@ -1,0 +1,1 @@
+In a basketball game , PERSON_0 scored NUMBER_0 times as many points as PERSON_1 . The difference in their point totals was NUMBER_1 . How many points did PERSON_0 score ? How many points did PERSON_1 score ?

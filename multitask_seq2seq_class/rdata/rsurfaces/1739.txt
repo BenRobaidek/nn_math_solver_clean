@@ -1,0 +1,1 @@
+Two numbers are in the ratio NUMBER_0 to NUMBER_1 . If the sum of numbers is NUMBER_2 , find the numbers .

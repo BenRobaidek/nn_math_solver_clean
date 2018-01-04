@@ -1,0 +1,1 @@
+An amusement park sells 2 kinds of tickets . Tickets for children cost NUMBER_0 dollars . Adult tickets cost NUMBER_1 dollars . On a certain day , NUMBER_2 people entered the park . On that same day the admission fees collected totaled NUMBER_3 dollars . How many children were admitted on that day ? How many adults were admitted ?

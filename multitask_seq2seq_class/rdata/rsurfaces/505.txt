@@ -1,0 +1,1 @@
+PERSON_0 wants to have business cards printed . One style will cost NUMBER_0 dollars plus NUMBER_1 cents per card . Another style will cost NUMBER_2 dollars plus NUMBER_3 cents per card . For how many cards will the cost be the same for both styles ?

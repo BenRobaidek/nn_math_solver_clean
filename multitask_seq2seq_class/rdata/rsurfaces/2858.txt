@@ -1,0 +1,1 @@
+Oceanside Bike Rental Shop charges NUMBER_0 dollars plus NUMBER_1 dollars an hour for renting a bike . PERSON_0 paid NUMBER_2 dollars to rent a bike . How many hours did he pay to have the bike checked out ?

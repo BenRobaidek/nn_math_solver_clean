@@ -1,0 +1,1 @@
+PERSON_0 runs NUMBER_0 miles in NUMBER_1 minutes . At the same rate , how many miles would he run in NUMBER_2 minutes ?

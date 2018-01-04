@@ -1,0 +1,1 @@
+A moving van leaves a house traveling at an average rate of NUMBER_0 miles per hour . The family leaves the house in a car NUMBER_1 hour later traveling the same route at an average rate of NUMBER_2 miles per hour . How long , in hours , will it take the family to catch up with the van ?

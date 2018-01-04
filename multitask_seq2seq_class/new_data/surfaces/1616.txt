@@ -1,0 +1,1 @@
+2 investments are made totaling NUMBER_0 dollars . For a certain year , these investments yield NUMBER_1 dollars in simple interest . Part of the NUMBER_2 dollars is invested at NUMBER_3 % and part at NUMBER_4 % . Find the amount invested at NUMBER_5 % and NUMBER_6 % .

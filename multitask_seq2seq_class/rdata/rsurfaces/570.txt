@@ -1,0 +1,1 @@
+PERSON_0 , by himself can paint NUMBER_0 rooms in NUMBER_1 hours . If he hires April to help , they can do the same job together in NUMBER_2 hours . If he lets April work alone how long will it take her to paint NUMBER_3 rooms , in hours ?

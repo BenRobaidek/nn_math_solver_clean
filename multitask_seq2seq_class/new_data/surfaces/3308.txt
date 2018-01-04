@@ -1,0 +1,1 @@
+The town of Milburg has NUMBER_0 grown-ups and NUMBER_1 children . How many people live in Milburg ?

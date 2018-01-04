@@ -1,0 +1,1 @@
+PERSON_0 puts NUMBER_0 % of his monthly paycheck in an IRA . If he invests NUMBER_1 dollars in his IRA , how much was his paycheck ?

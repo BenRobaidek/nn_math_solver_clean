@@ -1,0 +1,1 @@
+PERSON_0 and AJ are chemists . AJ can do an emulsion polymerization experiment in NUMBER_0 hours . If PERSON_1 and PERSON_0 work together they can do the experiment in NUMBER_1 hours . How long will it takeo PERSON_0 working by herself to do the experiment ?

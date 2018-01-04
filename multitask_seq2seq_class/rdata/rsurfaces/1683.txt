@@ -1,0 +1,1 @@
+A man invests NUMBER_0 of his capital at NUMBER_1 % and the remainder at NUMBER_2 % . What is the capital if his total income is NUMBER_3 dollars ?

@@ -1,0 +1,1 @@
+There are NUMBER_0 pots . Each pot has NUMBER_1 flowers in it . How many flowers are there in all ?

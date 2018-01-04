@@ -1,0 +1,1 @@
+A company makes unicycles , bicycles and tricycles . Last week they made NUMBER_0 more bicycles than unicycles , and NUMBER_1 times as many tricycles as unicycles . If they made NUMBER_2 more bicycles than tricycles , how many unicycles did they make ?

@@ -1,0 +1,1 @@
+The cafeteria had NUMBER_0 apples . For lunch they handed out NUMBER_1 to students and decided to use the rest to make pies . If each pie takes NUMBER_2 apples , how many pies could they make ?

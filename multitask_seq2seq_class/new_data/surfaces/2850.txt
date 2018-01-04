@@ -1,0 +1,1 @@
+There are NUMBER_0 walnut trees currently in the park . Park workers will plant more walnut trees today . When the workers are finished there will be NUMBER_1 walnut trees in the park . How many walnut trees did the workers plant today ?

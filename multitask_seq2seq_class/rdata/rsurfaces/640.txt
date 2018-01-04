@@ -1,0 +1,1 @@
+From the years 1980 to 2005 the minimum hourly wage increased about NUMBER_0 % , to NUMBER_1 dollars per hour . What was the minimum hourly wage in 1980 , in dollars ?

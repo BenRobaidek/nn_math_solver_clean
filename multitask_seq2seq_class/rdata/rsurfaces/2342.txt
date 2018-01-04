@@ -1,0 +1,1 @@
+The school cafeteria ordered NUMBER_0 red apples and NUMBER_1 green apples for students lunches . But , if only NUMBER_2 students wanted fruit , how many extra did the cafeteria end up with ?

@@ -1,0 +1,1 @@
+PERSON_0 was selling her necklaces at a garage sale . She sold NUMBER_0 bead necklaces and NUMBER_1 gem stone necklaces . If each necklace cost NUMBER_2 dollars , how much money did she earn ?

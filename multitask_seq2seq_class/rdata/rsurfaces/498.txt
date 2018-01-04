@@ -1,0 +1,1 @@
+A neighborhood grocer sells a mix of chocolate and carob candy . The chocolate cost NUMBER_0 dollars a pound and the carob costs NUMBER_1 dollars a pound . If NUMBER_2 pounds of the chocolate and NUMBER_3 pounds of the carob candy are used , what is the cost per pound of the mixture in dollars ?

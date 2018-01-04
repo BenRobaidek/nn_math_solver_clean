@@ -1,0 +1,1 @@
+There are NUMBER_0 total bicycles and tricycles and there is a total of NUMBER_1 wheels . How many tricycles are there ?

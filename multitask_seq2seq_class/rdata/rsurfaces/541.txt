@@ -1,0 +1,1 @@
+PERSON_0 begins walking at NUMBER_0 miles per hour toward the library . Her friend meets her at the half way point and drives her the rest of the way to the library . The distance to the library is NUMBER_1 miles . How many hours did PERSON_0 walk ?

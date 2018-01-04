@@ -1,0 +1,1 @@
+PERSON_0 found NUMBER_0 seashells and NUMBER_1 starfish , but NUMBER_2 of the seashells were broken . How many unbroken seashells did PERSON_0 find ?

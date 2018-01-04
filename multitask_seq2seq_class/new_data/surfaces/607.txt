@@ -1,0 +1,1 @@
+PERSON_0 invested NUMBER_0 dollars in 2 funds , which pay NUMBER_1 % and NUMBER_2 % simple interest respectively . The combined interest he earned for both funds was NUMBER_3 dollars for one year . How many dollars was invested at NUMBER_4 % ? How much was invested at NUMBER_5 % ?

@@ -1,0 +1,1 @@
+LOCATION_0 oil is a combination of natural oil and synthetic oil -- NUMBER_0 parts natural oil for every NUMBER_1 parts of synthetic oil . How many liters of LOCATION_0 oil can be made from NUMBER_2 liters of synthetic oil ?

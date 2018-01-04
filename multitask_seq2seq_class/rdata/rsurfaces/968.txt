@@ -1,0 +1,1 @@
+Cashews sell for NUMBER_0 dollars per 0.25-pound and LOCATION_0 nuts sell for NUMBER_1 dollars per 0.25-pound . How many pounds of cashews should be mixed with NUMBER_2 pounds of LOCATION_0 nuts to get a mix that sells for NUMBER_3 dollars per 0.25-pound ?

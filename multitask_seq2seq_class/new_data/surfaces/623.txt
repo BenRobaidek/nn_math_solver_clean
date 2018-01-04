@@ -1,0 +1,1 @@
+Adult tickets for a play cost NUMBER_0 dollars and child tickets cost NUMBER_1 dollars . If there were NUMBER_2 people at a performance and the theater collected NUMBER_3 dollars from ticket sales , how many children attended the play ?

@@ -1,0 +1,1 @@
+A boy has NUMBER_0 more dimes than quarters . The total value of the coins is NUMBER_1 dollars . Find the number of dimes and quarters that he has .

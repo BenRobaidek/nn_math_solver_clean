@@ -1,0 +1,1 @@
+April 's discount flowers was having a sale where each rose was NUMBER_0 dollars . If April started with NUMBER_1 roses and had NUMBER_2 roses left , how much money did she earn ?

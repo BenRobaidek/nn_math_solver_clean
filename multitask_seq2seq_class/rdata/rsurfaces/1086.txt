@@ -1,0 +1,1 @@
+Twice one number added to another number is NUMBER_0 . NUMBER_1 times the first number minus the other number is NUMBER_2 . Find the number .

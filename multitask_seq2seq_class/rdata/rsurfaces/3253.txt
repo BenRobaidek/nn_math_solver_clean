@@ -1,0 +1,1 @@
+There was a stack of NUMBER_0 sheets of used paper . PERSON_0 wants to place it in boxes for recycling . If every box can contain 100 sheets , how many boxes does PERSON_0 need ?

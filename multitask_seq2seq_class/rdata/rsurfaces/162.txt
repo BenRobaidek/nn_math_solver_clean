@@ -1,0 +1,1 @@
+Students at LOCATION_0 schools are participating in a coat drive . NUMBER_0 coats have been collected so far . NUMBER_1 coats were collected from the high schools , and the rest from the elementary schools . How many coats were collected at the elementary schools ?

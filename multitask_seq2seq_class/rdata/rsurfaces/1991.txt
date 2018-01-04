@@ -1,0 +1,1 @@
+Two planes start from LOCATION_0 at the same time and fly in opposite directions , one averaging a speed of NUMBER_0 miles per hour greater than the other . If they are NUMBER_1 miles apart after NUMBER_2 hours , find their average speeds .

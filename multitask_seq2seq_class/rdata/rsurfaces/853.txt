@@ -1,0 +1,1 @@
+A bricks manufacturer has a daily cost of NUMBER_0 dollars and a variable cost of NUMBER_1 dollars per brick . Determine how many bricks the company needs to make per day to meet its goal of an average cost of NUMBER_2 dollars per brick .

@@ -1,0 +1,1 @@
+There are NUMBER_0 fishbowls . Each fishbowl has NUMBER_1 fish . How many fish are there ?

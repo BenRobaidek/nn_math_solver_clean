@@ -1,0 +1,1 @@
+Your cell phone company offers two text-messaging plans . Plan A costs NUMBER_0 dollars per text message , plus a monthly fee of NUMBER_1 dollars . The other plan costs NUMBER_2 dollars per text message with no monthly fee . For how many text messages will both plans cost the same amount ?

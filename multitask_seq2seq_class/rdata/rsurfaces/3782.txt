@@ -1,0 +1,1 @@
+How many cookies would you have if you had NUMBER_0 bags of cookies with NUMBER_1 cookies in each bag ?

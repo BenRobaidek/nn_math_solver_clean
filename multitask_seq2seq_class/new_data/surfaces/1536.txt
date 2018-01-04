@@ -1,0 +1,1 @@
+NUMBER_0 ducks and NUMBER_1 pigs cost NUMBER_2 dollars , while NUMBER_3 ducks and NUMBER_4 pigs cost NUMBER_5 dollars . Find the cost of a duck and a pig .

@@ -1,0 +1,1 @@
+The Lakers scored NUMBER_0 points on a combination of NUMBER_1 NUMBER_2 point baskets and NUMBER_3 point baskets . How many shots of NUMBER_4 point baskets and how many shots of NUMBER_5 point baskets were made ?

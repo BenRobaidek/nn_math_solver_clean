@@ -1,0 +1,1 @@
+PERSON_0 drove NUMBER_0 miles in one hour . At that rate , how far can she drive in NUMBER_1 hours ?

@@ -1,0 +1,1 @@
+PERSON_0 is saving money to buy a cd player that costs NUMBER_0 dollars . He also wants to buy some new and used cds . New cds cost NUMBER_1 dollars and the used cds cost NUMBER_2 dollars . He wants to buy an equal number of cds both new and used . He has saved NUMBER_3 dollars . How many new and used cds can he buy if he spends all of his money ?

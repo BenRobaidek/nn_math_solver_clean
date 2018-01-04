@@ -1,0 +1,1 @@
+Two airplanes travel toward each other from cities that are NUMBER_0 kilometers apart at rates of NUMBER_1 kilometers per hour and NUMBER_2 kilometers per hour . They started at the same time . In how many hours will they meet ?

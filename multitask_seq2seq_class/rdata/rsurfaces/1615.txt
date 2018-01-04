@@ -1,0 +1,1 @@
+You and a friend go to a Mexican restaurant . You order NUMBER_0 tacos and NUMBER_1 enchiladas , and your friend orders NUMBER_2 tacos and NUMBER_3 enchiladas . Your bill is NUMBER_4 dollars plus tax , and your friend 's bill is NUMBER_5 dollars plus tax . How much , in dollars , does each taco cost ? How much does each enchilada cost ?

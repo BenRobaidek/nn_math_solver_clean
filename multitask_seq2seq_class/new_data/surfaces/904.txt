@@ -1,0 +1,1 @@
+A garage owner wants to fill a NUMBER_0 gallon drum with a NUMBER_1 percent winter mixture of antifreeze for his customers . How many gallons of NUMBER_2 percent antifreeze should he mix with some NUMBER_3 percent antifreeze mixture in order to fill the drum ?

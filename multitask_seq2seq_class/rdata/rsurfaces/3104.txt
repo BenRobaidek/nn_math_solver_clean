@@ -1,0 +1,1 @@
+PERSON_0 had NUMBER_0 stickers . She bought NUMBER_1 stickers from a store in the mall and got NUMBER_2 stickers for her birthday . Then PERSON_0 gave NUMBER_3 of the stickers to her sister and used NUMBER_4 to decorate a greeting card . How many stickers does PERSON_0 have left ?

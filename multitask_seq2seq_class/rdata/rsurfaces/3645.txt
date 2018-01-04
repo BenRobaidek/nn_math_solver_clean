@@ -1,0 +1,1 @@
+You have NUMBER_0 balloons and your friend has NUMBER_1 balloons . How many more balloons do you have than your friend ?

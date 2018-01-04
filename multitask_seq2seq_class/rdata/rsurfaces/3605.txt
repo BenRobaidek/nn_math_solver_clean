@@ -1,0 +1,1 @@
+If PERSON_0 ran for NUMBER_0 hours at NUMBER_1 miles per hour . How far did PERSON_0 go ?

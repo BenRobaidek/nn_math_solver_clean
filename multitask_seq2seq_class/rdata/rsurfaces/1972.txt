@@ -1,0 +1,1 @@
+Find NUMBER_0 consecutive even integers such that twice the smaller exceeds the larger by NUMBER_1 . What is the smaller number ? What is the larger number ?

@@ -1,0 +1,1 @@
+PERSON_0 invested some money at NUMBER_0 % interest . PERSON_0 also invested NUMBER_1 dollars more than NUMBER_2 times that amount at NUMBER_3 % . How much is invested at NUMBER_4 % and at NUMBER_5 % , if PERSON_0 receives NUMBER_6 dollars in interest after 1 year ?

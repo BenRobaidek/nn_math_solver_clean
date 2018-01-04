@@ -1,0 +1,1 @@
+PERSON_0 's family moved from the Bahamas to Japan , so they had convert their money into Japanese yen . Their checking account now has NUMBER_0 yen and their savings account now has NUMBER_1 yen . How many yen do they have ?

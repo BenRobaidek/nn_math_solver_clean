@@ -1,0 +1,1 @@
+There are NUMBER_0 animals on a farm , each of which is either a pig or a chicken . There are NUMBER_1 legs altogether . How many pigs are there ? How many chickens ?

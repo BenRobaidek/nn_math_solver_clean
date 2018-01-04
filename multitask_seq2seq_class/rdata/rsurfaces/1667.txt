@@ -1,0 +1,1 @@
+PERSON_0 invested NUMBER_0 dollars , a portion earning a simple interest rate of NUMBER_1 % per year and the rest earning a rate of NUMBER_2 % per year . After 1 year the total interest earned on these investments was NUMBER_3 dollars . How many dollars did she invest at NUMBER_4 % ? At NUMBER_5 % ?

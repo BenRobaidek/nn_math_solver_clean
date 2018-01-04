@@ -1,0 +1,1 @@
+NUMBER_0 apples and NUMBER_1 oranges cost NUMBER_2 dollars . NUMBER_3 apples and NUMBER_4 oranges cost NUMBER_5 dollars . Find the cost of each apple and the cost of an orange .

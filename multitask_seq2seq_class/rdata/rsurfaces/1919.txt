@@ -1,0 +1,1 @@
+The ages of A and B are in ratio of NUMBER_0 to NUMBER_1 . NUMBER_2 years from now , the ratio of their ages will be NUMBER_3 to NUMBER_4 , find the present ages of A and B ?

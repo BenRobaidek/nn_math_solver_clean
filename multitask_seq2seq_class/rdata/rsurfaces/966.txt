@@ -1,0 +1,1 @@
+One year PERSON_0 invested NUMBER_0 dollars . He invested part of the money at NUMBER_1 % and the rest at NUMBER_2 % . He made a total of NUMBER_3 dollars in interest . How much was invested at NUMBER_4 % ?

@@ -1,0 +1,1 @@
+PERSON_0 had some candy to give to her NUMBER_0 children . She first took NUMBER_1 pieces for herself and then evenly divided the rest among her children . Each child received NUMBER_2 pieces . With how many pieces did she start ?

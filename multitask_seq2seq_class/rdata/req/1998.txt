@@ -1,0 +1,1 @@
+( VAR_0 + VAR_1 ) + VAR_2 = NUMBER_1 VAR_1 = NUMBER_3 + ( NUMBER_2 * VAR_0 ) VAR_2 = ( NUMBER_6 * VAR_0 ) - NUMBER_5

@@ -1,0 +1,1 @@
+PERSON_0 had NUMBER_0 books . If he sold NUMBER_1 of them and used the money he earned to buy NUMBER_2 new books , how many books would Adam have ?

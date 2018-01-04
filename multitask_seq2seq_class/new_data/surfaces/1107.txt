@@ -1,0 +1,1 @@
+A woman invested a total of NUMBER_0 dollars in 2 accounts , one earning NUMBER_1 % annual interest and the other earning NUMBER_2 % annual interest . After 1 year , her combined interest was NUMBER_3 dollars . How much did she invest in the account paying NUMBER_4 % interest , in dollars ?

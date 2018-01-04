@@ -1,0 +1,1 @@
+You buy NUMBER_0 boxes of candy and spend NUMBER_1 dollars . A box of peppermint cost NUMBER_2 dollars and a box of candy canes cost NUMBER_3 dollars a box . How many boxes of peppermint did you buy ? How many boxes of candy canes ?

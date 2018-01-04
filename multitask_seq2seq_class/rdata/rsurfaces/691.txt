@@ -1,0 +1,1 @@
+Two consecutive odd integers have a sum of NUMBER_0 . What are the integers ?

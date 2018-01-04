@@ -1,0 +1,1 @@
+PERSON_0 's dog had puppies . She gave NUMBER_0 to her friends . She now has NUMBER_1 puppies left . How many puppies did she have to start with ?

@@ -1,0 +1,1 @@
+Mr. PERSON_0 bought NUMBER_0 doughnuts packed equally into NUMBER_1 boxes . How many doughnuts were in each box ?

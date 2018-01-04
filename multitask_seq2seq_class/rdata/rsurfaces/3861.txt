@@ -1,0 +1,1 @@
+Each bag contains NUMBER_0 pounds of oranges . How many pounds of oranges are in NUMBER_1 bags ?

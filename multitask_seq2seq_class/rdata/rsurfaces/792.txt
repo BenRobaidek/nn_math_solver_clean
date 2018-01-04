@@ -1,0 +1,1 @@
+PERSON_0 plays for the cook county regional football league which has NUMBER_0 teams . During a season , each team plays the other team twice , once at home and NUMBER_1 away . How many total games are played in NUMBER_2 season ?

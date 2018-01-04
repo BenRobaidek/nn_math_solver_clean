@@ -1,0 +1,1 @@
+PERSON_0 bought NUMBER_0 tickets at the state fair . He spent NUMBER_1 tickets at the ` dunk a clown ' booth and decided to use the rest on rides . If each ride cost NUMBER_2 tickets , how many rides could he go on ?

@@ -1,0 +1,1 @@
+PERSON_0 broke NUMBER_0 dollars worth of dishes in his first month as a waiter , and steadily decreased his breakage to only NUMBER_1 dollars worth of dishes in his eighth month . Estimate the worth of the dishes PERSON_0 broke in his third month as a waiter .

@@ -1,0 +1,1 @@
+A truck leaves a town traveling at NUMBER_0 miles per hour . Two hours later a car leaves , traveling along the same road at NUMBER_1 miles per hour . In how many hours will the car catch the truck ?

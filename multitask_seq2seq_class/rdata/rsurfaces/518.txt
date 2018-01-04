@@ -1,0 +1,1 @@
+The annual interest earned by NUMBER_0 dollars is NUMBER_1 dollars more than the interest earned by NUMBER_2 dollars invested at a rate NUMBER_3 % less than the one corresponding to the NUMBER_4 dollars . What is the rate of interest , in percent , for the NUMBER_5 dollars ? For the NUMBER_6 dollars ?

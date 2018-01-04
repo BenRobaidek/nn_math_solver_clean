@@ -1,0 +1,1 @@
+A bowl contains NUMBER_0 red chips , NUMBER_1 blue chips , and NUMBER_2 green chips . You choose 1 chip at random . What is the probability that your chip is not red ?

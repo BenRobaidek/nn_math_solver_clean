@@ -1,0 +1,1 @@
+Priya needs NUMBER_0 cupcakes for a birthday party . She already has NUMBER_1 chocolate cupcakes and NUMBER_2 vanilla cupcakes . How many more cupcakes should Priya buy ?

@@ -1,0 +1,1 @@
+The school cafeteria had NUMBER_0 apples . If they used NUMBER_1 to make lunch for the students and then bought NUMBER_2 more , how many apples would they have ?

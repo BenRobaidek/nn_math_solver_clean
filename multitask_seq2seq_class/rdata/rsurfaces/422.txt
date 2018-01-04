@@ -1,0 +1,1 @@
+If a carpenter bills a customer NUMBER_0 dollars for a job which takes him NUMBER_1 hours and bills a second customer NUMBER_2 dollars for a NUMBER_3 hour job , how much would he charge for a job that takes him NUMBER_4 hours ?

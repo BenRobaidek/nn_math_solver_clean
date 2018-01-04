@@ -1,0 +1,1 @@
+There are NUMBER_0 kids in Mrs PERSON_0 ' class . There are twice as many girls as boys . How many boys and girls are there ?

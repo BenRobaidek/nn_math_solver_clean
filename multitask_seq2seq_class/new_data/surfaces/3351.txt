@@ -1,0 +1,1 @@
+PERSON_0 opened a savings account with an initial deposit of NUMBER_0 dollars . If he wants to save NUMBER_1 dollars during the next NUMBER_2 weeks , how much must he save each week , in dollars ?

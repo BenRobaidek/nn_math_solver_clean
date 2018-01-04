@@ -1,0 +1,1 @@
+2 snails are NUMBER_0 centimeters apart . They craw toward each other at rates that differ by NUMBER_1 centimeters per minute . After NUMBER_2 minutes they meet . How fast is each snail crawling ?

@@ -1,0 +1,1 @@
+There are NUMBER_0 times as many cars as motorcycles . There are a total of NUMBER_1 tires . How many motorcycles are there ?

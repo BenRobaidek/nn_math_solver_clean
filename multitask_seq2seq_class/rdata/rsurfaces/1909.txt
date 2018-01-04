@@ -1,0 +1,1 @@
+How much water must be added to NUMBER_0 gallons of mixture which is NUMBER_1 percent alcohol to reduce it to a NUMBER_2 percent mixture ?

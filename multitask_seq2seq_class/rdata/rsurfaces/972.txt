@@ -1,0 +1,1 @@
+PERSON_0 and PERSON_1 save their quarters . PERSON_0 starts out with NUMBER_0 quarters and saves NUMBER_1 quarters a month . PERSON_1 starts out with NUMBER_2 quarters and saves NUMBER_3 quarters a month . In how many months will they have the same number of quarters ?

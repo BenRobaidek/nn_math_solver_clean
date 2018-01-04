@@ -1,0 +1,1 @@
+The sum of 2 numbers is NUMBER_0 . NUMBER_1 times one of the numbers is NUMBER_2 less than NUMBER_3 times the other . What is the smaller number ? What is the larger number ?

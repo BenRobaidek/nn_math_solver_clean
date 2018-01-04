@@ -1,0 +1,1 @@
+A local bus tour sold NUMBER_0 tickets . Senior citizen tickets cost NUMBER_1 dollars and regular tickets cost NUMBER_2 dollars . The total sales were NUMBER_3 dollars . How many senior citizen tickets were sold ? How many regular tickets were sold ?

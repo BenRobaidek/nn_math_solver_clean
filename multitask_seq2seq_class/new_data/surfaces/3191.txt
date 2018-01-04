@@ -1,0 +1,1 @@
+PERSON_0 's science class weighed plastic rings for an experiment . They found that the orange ring weighed NUMBER_0 of an ounce , the purple ring weighed NUMBER_1 of an ounce , and the white ring weighed NUMBER_2 of an ounce . What was the total weight of the plastic rings ?

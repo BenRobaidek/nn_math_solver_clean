@@ -1,0 +1,1 @@
+PERSON_0 sold NUMBER_0 tickets for the school play . Student tickets cost NUMBER_1 dollars and adult tickets cost NUMBER_2 dollars . PERSON_0 's sales totaled NUMBER_3 dollars . How many adult tickets and student tickets did PERSON_0 sell ?

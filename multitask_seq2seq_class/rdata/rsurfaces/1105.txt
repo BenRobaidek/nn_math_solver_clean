@@ -1,0 +1,1 @@
+The sum of two numbers is NUMBER_0 , and their difference is NUMBER_1 more than the smaller number . Find the numbers .

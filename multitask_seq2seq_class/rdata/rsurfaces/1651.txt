@@ -1,0 +1,1 @@
+There are NUMBER_0 animals in a barn . Some are chickens and some are pigs . There are NUMBER_1 legs in the barn . How many are pigs are there and how many chicken are there ?

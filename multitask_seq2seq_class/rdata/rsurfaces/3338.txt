@@ -1,0 +1,1 @@
+A pet supply store has NUMBER_0 bags of dog food and NUMBER_1 bags of cat food . How many more bags of dog food are there than cat food ?

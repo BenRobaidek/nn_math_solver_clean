@@ -1,0 +1,1 @@
+Suppose that 2 hoses are working together to fill a swimming pool . NUMBER_0 of the hoses can fill the pool alone in NUMBER_1 hours the other can fill the pool alone in NUMBER_2 hours . How many hours would it take both hoses to fill the pool together ?

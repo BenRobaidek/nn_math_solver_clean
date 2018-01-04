@@ -1,0 +1,1 @@
+There were NUMBER_0 friends playing a video game online when NUMBER_1 players quit . If each player left had NUMBER_2 lives , how many lives did they have total ?

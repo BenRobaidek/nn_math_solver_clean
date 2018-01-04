@@ -1,0 +1,1 @@
+A petri dish originally contained NUMBER_0 bacteria . A scientist let the bacteria grow and now there are NUMBER_1 of them . How many more bacteria are there now ?

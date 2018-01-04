@@ -1,0 +1,1 @@
+NUMBER_0 boats are in the lake . Each boat has NUMBER_1 people . How many people are on boats in the lake ?

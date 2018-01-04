@@ -1,0 +1,1 @@
+A furniture dealer has NUMBER_0 tables . Some tables have NUMBER_1 legs and some have NUMBER_2 legs , but she does n't know how many of each kind there are . She has counted NUMBER_3 legs in total . How many NUMBER_4 legged tables are there ?

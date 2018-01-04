@@ -1,0 +1,1 @@
+VAR_0 + VAR_1 = NUMBER_0 VAR_2 = VAR_0 + ( 10.0 * VAR_1 ) VAR_3 = ( NUMBER_1 * VAR_2 ) + NUMBER_1 VAR_3 = VAR_1 + ( 10.0 * VAR_0 )

@@ -1,0 +1,1 @@
+LOCATION_0 LOCATION_1 was originally blue because it only had NUMBER_0 algae plants . Now there are NUMBER_1 algae plants , and the lake has turned green . How many more algae plants are in LOCATION_0 LOCATION_1 now ?

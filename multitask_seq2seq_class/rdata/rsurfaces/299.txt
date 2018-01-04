@@ -1,0 +1,1 @@
+There were a total of NUMBER_0 football games this year , NUMBER_1 are played at night . PERSON_0 missed NUMBER_2 of the games . How many football games did PERSON_0 go to in total ?

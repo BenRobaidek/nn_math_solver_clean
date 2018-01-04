@@ -1,0 +1,1 @@
+When PERSON_0 was visited by the toothfairy , she received NUMBER_0 each of quarters , half-dollars , and dimes . How much money did the toothfairy leave PERSON_0 ?

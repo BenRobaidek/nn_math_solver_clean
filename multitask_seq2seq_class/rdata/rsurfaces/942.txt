@@ -1,0 +1,1 @@
+On a test containing NUMBER_0 questions , the final score is based on NUMBER_1 point for each correct answer and NUMBER_2 of a point subtracted for each incorrect answer . PERSON_0 answered all of the questions and received a final score of NUMBER_3 points . How many questions did PERSON_0 answer correctly ?

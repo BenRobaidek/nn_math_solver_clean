@@ -1,0 +1,1 @@
+You have exactly NUMBER_0 dollars to spend on party gifts for your rich uncle 's birthday party . You decide to get watches for the ladies at NUMBER_1 dollars each , and beepers for the men at NUMBER_2 dollars each . You know that the number of watches required will be NUMBER_3 times as much as the number of beepers . How many watches do you buy ? How many beepers do you buy ?

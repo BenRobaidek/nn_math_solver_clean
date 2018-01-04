@@ -1,0 +1,1 @@
+PERSON_0 bought NUMBER_0 packages of cat food and NUMBER_1 packages of dog food . Each package of cat food contained NUMBER_2 cans , and each package of dog food contained NUMBER_3 cans . How many more cans of cat food than dog food did PERSON_0 buy ?

@@ -1,0 +1,1 @@
+If each ball costs $ NUMBER_0 , how much must PERSON_0 pay for NUMBER_1 balls ?

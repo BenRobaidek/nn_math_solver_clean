@@ -1,0 +1,1 @@
+There were NUMBER_0 friends playing a video game online when NUMBER_1 more players joined the game . If each player had NUMBER_2 lives , how many lives did they have total ?

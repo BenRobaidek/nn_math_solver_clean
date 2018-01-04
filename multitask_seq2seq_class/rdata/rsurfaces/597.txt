@@ -1,0 +1,1 @@
+The number of inquiries the first week was NUMBER_0 . The number of inquiries in the fourth week was NUMBER_1 . Find the average rate of change in number of inquiries from the first week to the fourth week , in inquiries per week .

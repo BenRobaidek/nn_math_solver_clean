@@ -1,0 +1,1 @@
+A shopkeeper bought some eggs at NUMBER_0 cents each . NUMBER_1 of them were broken while the rest were resold at NUMBER_2 cents each . If he made a profit of NUMBER_3 dollars , find how many eggs he bought .

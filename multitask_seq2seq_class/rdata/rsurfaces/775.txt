@@ -1,0 +1,1 @@
+If the numerator and the denominator of a fraction are increased by NUMBER_0 , the resulting fractions is NUMBER_1 . But , if the terms of the fractions are decreased by NUMBER_2 , the new fraction is NUMBER_3 . Find the original faction ?

@@ -1,0 +1,1 @@
+A person invested NUMBER_0 dollars . The greater part is invested at NUMBER_1 % and the remainder at NUMBER_2 % . The annual income from the greater part is NUMBER_3 dollars more than the annual income from the smaller part . What is the smaller part of the investment ?

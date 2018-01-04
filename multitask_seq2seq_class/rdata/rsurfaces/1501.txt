@@ -1,0 +1,1 @@
+If 2 cars are moving towards each other from NUMBER_0 miles away and car A meets car B in one hour and if the cars move in the same direction and car B overtakes car A within NUMBER_1 hours , then how fast is each car going ?

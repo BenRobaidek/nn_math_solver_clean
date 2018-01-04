@@ -1,0 +1,1 @@
+PERSON_0 is baking a cake . The recipe calls for NUMBER_0 cups of flour and 2 cups of sugar . She already put in NUMBER_1 cups of flour . How many cups of flour does she need to add ?

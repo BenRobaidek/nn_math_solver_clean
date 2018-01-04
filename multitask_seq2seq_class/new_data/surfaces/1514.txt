@@ -1,0 +1,1 @@
+A car traveled NUMBER_0 kilometers in NUMBER_1 hours . What was its average speed ?

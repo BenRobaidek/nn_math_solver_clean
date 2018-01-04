@@ -1,0 +1,1 @@
+PERSON_0 has NUMBER_0 pencils . PERSON_1 has NUMBER_1 pencils . If PERSON_1 gives all of her pencils to LOCATION_0 , how many pencils will PERSON_0 have ?

@@ -1,0 +1,1 @@
+There are NUMBER_0 students making NUMBER_1 stars each for the school wall . How many stars will they make all together ?

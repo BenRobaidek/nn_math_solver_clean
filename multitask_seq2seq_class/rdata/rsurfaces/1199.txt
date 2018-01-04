@@ -1,0 +1,1 @@
+At a movie theater , tickets cost NUMBER_0 dollars for adults and NUMBER_1 dollars for children . A group of NUMBER_2 moviegoers pays a total of NUMBER_3 dollars . How many adults and children were in the group ?

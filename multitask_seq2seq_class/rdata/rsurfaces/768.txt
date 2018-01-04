@@ -1,0 +1,1 @@
+According to Dr. PERSON_0 PERSON_1 PERSON_2 of the University of Minnesota School of Public Health , your maximum ideal waist size is directly proportional to your hip size . For a woman with NUMBER_0 inch hips , the maximum ideal waist size is NUMBER_1 inches . What is the maximum waist size for a woman with NUMBER_2 inch hips ?

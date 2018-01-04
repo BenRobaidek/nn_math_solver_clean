@@ -1,0 +1,1 @@
+One hour after a truck has left on an overnight haul , a messenger on a motorcycle leaves from the same starting point to overtake the truck . If the messenger travels at an average rate of NUMBER_0 miles per hour and overtakes the truck in NUMBER_1 hours , what is the average rate of the truck ?

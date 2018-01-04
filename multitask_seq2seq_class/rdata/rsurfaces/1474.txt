@@ -1,0 +1,1 @@
+The maximum load that a horizontal beam can carry is directly proportional to its width . If a beam NUMBER_0 inches wide can support a load of NUMBER_1 pounds , find the load that a beam of the same type can support if its width is NUMBER_2 inches ?

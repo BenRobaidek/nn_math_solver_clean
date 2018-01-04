@@ -1,0 +1,1 @@
+An orange has NUMBER_0 fewer calories than a banana . If NUMBER_1 bananas have the same number of calories as NUMBER_2 oranges , how many calories does an orange and a banana have each ?

@@ -1,0 +1,1 @@
+A high school sold gift wrap . The gift wrap in solid colors sold for NUMBER_0 dollars per roll and the print gift wrap sold for NUMBER_1 dollars per roll . The total number of rolls sold was NUMBER_2 rolls , and the total amount of money collected was NUMBER_3 dollars . How many solid rolls were sold ? How many print rolls were sold ?

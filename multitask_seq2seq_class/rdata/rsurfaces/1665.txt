@@ -1,0 +1,1 @@
+In a class of NUMBER_0 students the number of girls is NUMBER_1 of the number of boys . Find the number of girls in the class .

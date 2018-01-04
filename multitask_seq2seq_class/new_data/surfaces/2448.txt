@@ -1,0 +1,1 @@
+April 's discount flowers was having a sale where each flower was NUMBER_0 dollars . If PERSON_0 bought NUMBER_1 roses and NUMBER_2 daisies , how much did she spend ?

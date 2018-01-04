@@ -1,0 +1,1 @@
+Three chemical reactions each produce oxygen . If the first produces twice that of the NUMBER_0 , the third produces twice that of the first , and the combined total is NUMBER_1 cm ^ 3 , what volume is produced by first chemical reaction , what volume is produced by NUMBER_2 and what volume is produced by the third ?

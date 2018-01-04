@@ -1,0 +1,1 @@
+If NUMBER_0 sheets of paper weigh NUMBER_1 pounds , how much do NUMBER_2 sheets weigh ?

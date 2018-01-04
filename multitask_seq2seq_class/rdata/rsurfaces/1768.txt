@@ -1,0 +1,1 @@
+One number is NUMBER_0 more than NUMBER_1 times another number . Their sum is NUMBER_2 . Find the smaller number .

@@ -1,0 +1,1 @@
+PERSON_0 has NUMBER_0 bananas . If he shares them among NUMBER_1 friends , how many bananas does each friend get ?

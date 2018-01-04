@@ -1,0 +1,1 @@
+PERSON_0 and her friends were recycling paper for their class . For every NUMBER_0 pounds they recycled they earned one point . If PERSON_0 recycled NUMBER_1 pounds and her friends recycled NUMBER_2 pounds , how many points did they earn ?

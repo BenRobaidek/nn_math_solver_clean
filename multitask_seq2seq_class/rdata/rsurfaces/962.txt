@@ -1,0 +1,1 @@
+Find 2 consecutive integers whose sum is NUMBER_0 . What 's the smaller number ? What 's the larger number ?

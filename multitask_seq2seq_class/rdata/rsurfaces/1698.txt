@@ -1,0 +1,1 @@
+Together , PERSON_0 and PERSON_1 have NUMBER_0 dolls . PERSON_1 has NUMBER_1 more dolls than PERSON_0 does . How many dolls does PERSON_0 have ? How many does PERSON_1 have ?

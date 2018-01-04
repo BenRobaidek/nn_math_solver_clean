@@ -1,0 +1,1 @@
+A weight of NUMBER_0 pounds stretches a spring NUMBER_1 inches . How far will a weight of NUMBER_2 pounds stretch the spring ?

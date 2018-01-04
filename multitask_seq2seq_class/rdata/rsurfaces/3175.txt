@@ -1,0 +1,1 @@
+On her vacation last summer , PERSON_0 walked all over LOCATION_0 LOCATION_1 LOCATION_2 to buy souvenirs . First , she walked NUMBER_0 of a mile from her hotel to a postcard shop . Then she walked NUMBER_1 of a mile from the postcard shop to a T-shirt shop and NUMBER_2 of a mile from the T-shirt shop back to the hotel . How many miles did PERSON_0 walk in all ?

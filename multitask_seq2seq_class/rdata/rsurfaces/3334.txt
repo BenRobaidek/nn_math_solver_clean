@@ -1,0 +1,1 @@
+PERSON_0 has an aquarium with NUMBER_0 fish . PERSON_0 wants to buy NUMBER_1 more fish . How many fish would PERSON_0 have then ?

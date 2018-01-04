@@ -1,0 +1,1 @@
+NUMBER_0 coins consisting of nickels dimes and quarters are collected for a newspaper vending machine . The total value of the coins is NUMBER_1 dollars and there are NUMBER_2 more dimes than quarters . How many nickels are there ? How many dimes are there ? How many quarters are there ?

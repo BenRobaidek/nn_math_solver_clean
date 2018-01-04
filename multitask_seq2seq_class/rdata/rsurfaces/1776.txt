@@ -1,0 +1,1 @@
+NUMBER_0 is divided in two parts such that NUMBER_1 time the first part added to NUMBER_2 times the second part makes NUMBER_3 . What is the first part ?

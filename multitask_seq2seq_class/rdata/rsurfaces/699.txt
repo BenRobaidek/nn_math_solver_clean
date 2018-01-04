@@ -1,0 +1,1 @@
+Your homemade chili has NUMBER_0 fewer fat grams than your favorite restaurant 's chili . This is NUMBER_1 % less fat than the restaurant 's chili . How many fat grams does the restaurant 's chili have ?

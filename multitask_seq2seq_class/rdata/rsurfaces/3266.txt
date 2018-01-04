@@ -1,0 +1,1 @@
+When relatives visit PERSON_0 and her family , she and her cousins do origami . If she has NUMBER_0 origami papers to give away to her NUMBER_1 cousins , how many will each receive if she gives everyone the same number of origami papers ?

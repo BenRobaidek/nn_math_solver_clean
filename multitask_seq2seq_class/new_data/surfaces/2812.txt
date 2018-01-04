@@ -1,0 +1,1 @@
+Isabel baked NUMBER_0 cupcakes for her school 's bake sale . If her brother , PERSON_0 , ate NUMBER_1 of them how many packages could she make if she put NUMBER_2 cupcake in each package ?

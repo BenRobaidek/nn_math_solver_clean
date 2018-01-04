@@ -1,0 +1,1 @@
+PERSON_0 sold NUMBER_0 peaches from his tree for a total of NUMBER_1 dollars . He sold the small ones for NUMBER_2 cents each and the large ones for NUMBER_3 cents each . How many small ones did he sell ? How many large ones did he sell ?

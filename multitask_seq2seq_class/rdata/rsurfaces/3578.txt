@@ -1,0 +1,1 @@
+There are NUMBER_0 apples in a box . PERSON_0 has 9 apples in a bag . PERSON_1 takes NUMBER_1 apples out of the box . How many apples are left in the box ?

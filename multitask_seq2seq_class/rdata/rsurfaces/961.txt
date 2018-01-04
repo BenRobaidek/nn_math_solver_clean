@@ -1,0 +1,1 @@
+PERSON_0 has 16 jellybeans in her pocket . She has NUMBER_0 red ones , NUMBER_1 green ones , and NUMBER_2 blue ones . What is the minimum number of jellybeans she must take out of her pocket to ensure that she has NUMBER_3 of each color ?

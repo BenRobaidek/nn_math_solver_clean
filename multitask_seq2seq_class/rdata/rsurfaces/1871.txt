@@ -1,0 +1,1 @@
+In a classroom there are NUMBER_0 kinds of seats ; single and double . There are twice as many single seats as double seats . The room can accommodate NUMBER_1 pupils . How many single seats are there ? How many double seats ?

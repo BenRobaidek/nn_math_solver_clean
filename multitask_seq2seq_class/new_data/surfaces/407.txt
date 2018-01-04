@@ -1,0 +1,1 @@
+A theater sells child tickets for NUMBER_0 dollars and adult tickets for NUMBER_1 dollars . One night , NUMBER_2 tickets worth NUMBER_3 dollars were sold . How many adult tickets were sold ? How many child tickets ?

@@ -1,0 +1,1 @@
+The Jurassic Zoo charges NUMBER_0 dollars for each adult and NUMBER_1 dollars for each child . Total bill for the NUMBER_2 people was NUMBER_3 dollars . How many children were at the zoo ?

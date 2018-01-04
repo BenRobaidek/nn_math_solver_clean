@@ -1,0 +1,1 @@
+PERSON_0 had NUMBER_0 baseball cards , and 8 were torn . PERSON_1 bought NUMBER_1 of PERSON_0 's baseball cards . How many baseball cards does PERSON_0 have now ?

@@ -1,0 +1,1 @@
+PERSON_0 had NUMBER_0 coloring books . If she gave away NUMBER_1 of them , but then bought NUMBER_2 more , how many would she have total ?

@@ -1,0 +1,1 @@
+In LOCATION_0 's apartment complex , NUMBER_0 the apartments are one-bedroom apartments and NUMBER_1 are two-bedroom apartments . What fraction of the apartments are either 1 - or two-bedroom apartments ?

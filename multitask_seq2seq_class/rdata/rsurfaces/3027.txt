@@ -1,0 +1,1 @@
+A restaurant sold NUMBER_0 hamburgers last week . How many hamburgers on average were sold each day ?

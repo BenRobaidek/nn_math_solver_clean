@@ -1,0 +1,1 @@
+Find 2 numbers whose sum is NUMBER_0 and whose difference is NUMBER_1 . What is the smaller number ? What is the larger number ?

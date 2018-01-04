@@ -1,0 +1,1 @@
+Three friends own a car in LOCATION_0 . NUMBER_0 owns NUMBER_1 of the car the second owns NUMBER_2 . How much does the third own ?

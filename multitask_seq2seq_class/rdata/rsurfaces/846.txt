@@ -1,0 +1,1 @@
+An office supply store sells three models of computer desk : A , B , and C . In January , the store sold a total of NUMBER_0 computer desks . The number of model B desks was NUMBER_1 more than the number of model C desks , and the number of model A desks was NUMBER_2 more than twice the number of model C desks . How many of each model did the store sell in January ?

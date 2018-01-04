@@ -1,0 +1,1 @@
+A carpenter bought a piece of wood that was NUMBER_0 centimeters long . Then he sawed NUMBER_1 centimeters off the end . How long is the piece of wood now ?

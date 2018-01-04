@@ -1,0 +1,1 @@
+Before the recent housing boom , there were NUMBER_0 houses in Lawrence County . Now , there are NUMBER_1 houses . How many houses did developers build during the housing boom ?

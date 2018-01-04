@@ -1,0 +1,1 @@
+I have a 35-dollar gift certificate . I have to pay NUMBER_0 % sales tax -LRB- based on price of food -RRB- and NUMBER_1 % tip -LRB- based on price of food -RRB- . How much can I spend on food if I want to use the entire gift certificate ?

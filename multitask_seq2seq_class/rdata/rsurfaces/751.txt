@@ -1,0 +1,1 @@
+A cashier had to give PERSON_0 NUMBER_0 dollars in change but he had only quarters and dimes in the register . If he gave her NUMBER_1 coins , how many dimes did she receive ?

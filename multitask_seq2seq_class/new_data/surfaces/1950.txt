@@ -1,0 +1,1 @@
+You are taking a test in which multiple choice questions are worth NUMBER_0 points and essay questions are worth NUMBER_1 points . You answer NUMBER_2 questions correctly , and your score was NUMBER_3 points . Find how many multiple choice questions you got right . How many essay questions did you get right ?

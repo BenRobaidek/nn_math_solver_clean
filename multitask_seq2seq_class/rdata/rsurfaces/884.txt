@@ -1,0 +1,1 @@
+There are NUMBER_0 dishes that need to be rinsed . PERSON_0 can rinse them in NUMBER_1 minutes by himself . It will take his friend PERSON_1 NUMBER_2 minutes to rinse the same dishes . How long , in minutes , will it take them if they rinse the NUMBER_3 dishes together ?

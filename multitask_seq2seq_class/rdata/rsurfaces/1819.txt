@@ -1,0 +1,1 @@
+A total of NUMBER_0 dollars is invested in 2 municipal bonds that pay NUMBER_1 % and NUMBER_2 % simple interest . The investor wants an annual interest income of NUMBER_3 dollars from the investments . What amount should be invested in the NUMBER_4 % bond ?

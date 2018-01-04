@@ -1,0 +1,1 @@
+Mrs. PERSON_0 had NUMBER_0 Valentines . Mrs. PERSON_0 gave some to her students . Now she has NUMBER_1 . How many Valentines did Mrs. PERSON_0 give to her students ?

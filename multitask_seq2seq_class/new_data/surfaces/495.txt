@@ -1,0 +1,1 @@
+A company 's profit for the first half of the year is NUMBER_0 dollars greater than the profit for the second half . If the total annual profit is NUMBER_1 dollars , find the profit for the first half-year and the second half-year .

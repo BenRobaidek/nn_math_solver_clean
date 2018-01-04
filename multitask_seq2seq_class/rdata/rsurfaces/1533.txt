@@ -1,0 +1,1 @@
+The first agency charges NUMBER_0 dollars per day and NUMBER_1 dollars per mile . The second agency charges NUMBER_2 dollars per day and NUMBER_3 dollars per mile . How many miles would you have to drive before the first agency is less expensive than the second ?

@@ -1,0 +1,1 @@
+A recipe calls for NUMBER_0 cups of sugar . You find that you only have NUMBER_1 cups of sugar left . What fraction of the recipe can you make ?

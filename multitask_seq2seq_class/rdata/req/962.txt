@@ -1,0 +1,1 @@
+VAR_0 + VAR_1 = 2 NUMBER_0 VAR_1 = 1.0 + VAR_0

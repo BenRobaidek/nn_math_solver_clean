@@ -1,0 +1,1 @@
+PERSON_0 has some gum . PERSON_1 gave him NUMBER_0 more pieces of gum . Now PERSON_0 has NUMBER_1 pieces of gum . How many pieces did PERSON_0 have to start with ?

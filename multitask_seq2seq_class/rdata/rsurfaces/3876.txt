@@ -1,0 +1,1 @@
+A perfect score is NUMBER_0 points . How many points would you have after NUMBER_1 perfect games in a row ?

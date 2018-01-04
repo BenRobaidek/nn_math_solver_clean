@@ -1,0 +1,1 @@
+My dog had some bones . Then , he dug up NUMBER_0 bones . Now he has NUMBER_1 bones . How many bones did he start with ?

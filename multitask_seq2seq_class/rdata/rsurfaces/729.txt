@@ -1,0 +1,1 @@
+High School A rented and filled NUMBER_0 vans and NUMBER_1 buses with NUMBER_2 students . High School B rented and filled NUMBER_3 vans and NUMBER_4 bus with NUMBER_5 students . Every van had the same number students in it as did the buses . Find the number of students in each van and each bus .

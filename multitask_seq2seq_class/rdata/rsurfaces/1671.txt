@@ -1,0 +1,1 @@
+The selling price of a pair of pants is NUMBER_0 dollars . If the store paid NUMBER_1 dollars less for the pants , find the price that the store paid , in dollars .

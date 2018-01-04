@@ -1,0 +1,1 @@
+PERSON_0 spent $ NUMBER_0 on a snake toy , and a cage cost him $ NUMBER_1 . PERSON_0 also found a dollar bill on the ground . What was the total cost of PERSON_0 's purchases ?

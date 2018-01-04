@@ -1,0 +1,1 @@
+2 high speed trains are NUMBER_0 miles apart and traveling toward each other . They meet in NUMBER_1 hours . If one train is NUMBER_2 miles per hour faster than the other , find the speed of the slower train in miles per hour . Find the speed of the faster train .

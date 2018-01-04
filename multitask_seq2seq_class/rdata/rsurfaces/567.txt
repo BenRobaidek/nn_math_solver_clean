@@ -1,0 +1,1 @@
+The ratio of the number of reds to the number of blues was NUMBER_0 to 1 , NUMBER_1 NUMBER_2 times the sum of the number of reds and blues exceeded NUMBER_3 times the number of whites by NUMBER_4 . If there were NUMBER_5 more whites than blues , how many were red , white , blue ?

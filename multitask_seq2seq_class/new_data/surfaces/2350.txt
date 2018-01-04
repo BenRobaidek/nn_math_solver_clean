@@ -1,0 +1,1 @@
+A florist had NUMBER_0 roses . If she sold NUMBER_1 of them and then later picked NUMBER_2 more , how many roses would she have ?

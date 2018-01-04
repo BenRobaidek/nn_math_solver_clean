@@ -1,0 +1,1 @@
+When PERSON_0 was born , his father was NUMBER_0 years old . Five years ago , his father was twice as old as PERSON_0 will be in NUMBER_1 years time . How old is PERSON_0 ?

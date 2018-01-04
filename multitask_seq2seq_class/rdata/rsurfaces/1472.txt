@@ -1,0 +1,1 @@
+PERSON_0 wants to order a pizza . He has a total of NUMBER_0 dollars to pay the delivery person . The pizza costs NUMBER_1 dollars plus NUMBER_2 dollars per topping . If he plans to tip NUMBER_3 % of the total cost of the pizza , how many toppings can he order ?

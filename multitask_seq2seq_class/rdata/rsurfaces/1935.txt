@@ -1,0 +1,1 @@
+There are NUMBER_0 more girls than boys in PERSON_0 's class , and the sum of girls and boys is NUMBER_1 . How many boys are in the class ? How many girls are in the class ?

@@ -1,0 +1,1 @@
+Your teacher is giving you a test worth NUMBER_0 points containing NUMBER_1 questions . There are 2-point and 4-point questions on the test . How many questions are worth NUMBER_2 points ? How many questions are worth NUMBER_3 points ?

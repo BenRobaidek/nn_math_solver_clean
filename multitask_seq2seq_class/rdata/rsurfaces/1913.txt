@@ -1,0 +1,1 @@
+In a bag there are NUMBER_0 red marbles , NUMBER_1 blue marbles , and NUMBER_2 green marbles . What percent of the marbles are green ?

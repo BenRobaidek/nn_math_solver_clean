@@ -1,0 +1,1 @@
+In one week , an airplane pilot flew NUMBER_0 miles on Tuesday and NUMBER_1 miles on Thursday . If the pilot flies the same number of miles NUMBER_2 weeks in a row , how many miles does the pilot fly in all ?

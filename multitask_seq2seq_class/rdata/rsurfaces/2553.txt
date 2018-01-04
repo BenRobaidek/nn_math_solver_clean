@@ -1,0 +1,1 @@
+For homework PERSON_0 had NUMBER_0 math problems and NUMBER_1 spelling problems . If she can finish NUMBER_2 problems in an hour how long will it take her to finish all the problems ?

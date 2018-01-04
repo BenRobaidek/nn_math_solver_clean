@@ -1,0 +1,1 @@
+A mechanic charged NUMBER_0 dollars an hour , plus NUMBER_1 dollars for the parts and labor . If the total bill was NUMBER_2 , how long did the job take ?

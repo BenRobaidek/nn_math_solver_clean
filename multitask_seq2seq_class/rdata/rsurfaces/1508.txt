@@ -1,0 +1,1 @@
+A shop sells bicycles and tricycles . There are a total of NUMBER_0 cycles and there are NUMBER_1 wheels . How many bicycles are there ?

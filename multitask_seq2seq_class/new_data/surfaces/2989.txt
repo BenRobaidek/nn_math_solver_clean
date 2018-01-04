@@ -1,0 +1,1 @@
+PERSON_0 bought NUMBER_0 dozen eggs from the grocery store to bake some cakes . How many eggs did PERSON_0 buy ?

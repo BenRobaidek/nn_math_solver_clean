@@ -1,0 +1,1 @@
+A book is on sale for NUMBER_0 % off . If the regular price is NUMBER_1 dollars , what is the sale price ?

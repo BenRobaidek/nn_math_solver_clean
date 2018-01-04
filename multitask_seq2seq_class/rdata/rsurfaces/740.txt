@@ -1,0 +1,1 @@
+A group of students are on a tour . The total fare is NUMBER_0 dollars and this is to be shared equally among the students . If NUMBER_1 more students join the tour , each will pay two dollars less . Find the original number of students in the group .

@@ -1,0 +1,1 @@
+Mrs. PERSON_0 bought a notebook for $ NUMBER_0 . She paid with nickels . How many nickels did she use to buy the notebook ?

@@ -1,0 +1,1 @@
+On the first day of school , the percentage of boys in a particular class is NUMBER_0 % . During the school year , NUMBER_1 girls move away , and are replaced in the class by NUMBER_2 boys . This makes the class roster NUMBER_3 % boys . Find the number of boys and girls in the class on the first day of school .

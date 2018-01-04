@@ -1,0 +1,1 @@
+PERSON_0 went to NUMBER_0 hockey games this year , but missed 7 . He went to NUMBER_1 games last year . How many hockey games did PERSON_0 go to in all ?

@@ -1,0 +1,1 @@
+Mrs. PERSON_0 bought a yoyo for NUMBER_0 cents and a whistle for NUMBER_1 cents . How much did she spend in all for the two toys ?

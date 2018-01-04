@@ -1,0 +1,1 @@
+The sum of NUMBER_0 numbers is NUMBER_1 . If twice the smaller number is NUMBER_2 more than the larger , find the smaller number and the larger number .

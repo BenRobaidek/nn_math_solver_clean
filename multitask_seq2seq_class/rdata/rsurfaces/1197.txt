@@ -1,0 +1,1 @@
+Tickets for a show cost NUMBER_0 dollars for adults and NUMBER_1 dollars for children . They sold NUMBER_2 tickets for a total of NUMBER_3 dollars . How many adults tickets and how many childrens tickets were sold ?

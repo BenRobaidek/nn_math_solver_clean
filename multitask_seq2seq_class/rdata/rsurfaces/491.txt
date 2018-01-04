@@ -1,0 +1,1 @@
+A positive integer is NUMBER_0 more than another integer . The product of the two integers is -15 . What is the larger of the numbers ?

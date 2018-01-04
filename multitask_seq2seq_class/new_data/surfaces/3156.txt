@@ -1,0 +1,1 @@
+PERSON_0 went to the salon and had NUMBER_0 of an inch of hair cut off . The next day she went back and asked for another NUMBER_1 of an inch to be cut off . How much hair did she have cut off in all ?

@@ -1,0 +1,1 @@
+PERSON_0 had NUMBER_0 flowers . PERSON_1 gave her some more flowers . Now , PERSON_0 has NUMBER_1 flowers . How many flowers did PERSON_1 give to PERSON_0 ?

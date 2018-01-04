@@ -1,0 +1,1 @@
+Two cars leave the same point , traveling in opposite directions . If one travels at a constant speed of NUMBER_0 miles per hour and the other travels at a constant speed of NUMBER_1 miles per hour . In how many hours will they be NUMBER_2 miles apart ?

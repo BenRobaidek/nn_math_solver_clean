@@ -1,0 +1,1 @@
+There are NUMBER_0 scissors and 22 pencils in the drawer . PERSON_0 placed NUMBER_1 scissors in the drawer . How many scissors are now there in total ?

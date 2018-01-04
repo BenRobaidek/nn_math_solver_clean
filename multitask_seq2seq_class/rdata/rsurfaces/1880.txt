@@ -1,0 +1,1 @@
+Two planes leave an airport at the same time . One is flying east while the other plane is flying west . The eastbound plane travels NUMBER_0 miles per hour slower . They are NUMBER_1 miles apart after NUMBER_2 hours . Find the speed of each plane .

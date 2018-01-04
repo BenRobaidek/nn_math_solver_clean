@@ -1,0 +1,1 @@
+PERSON_0 asked a bank teller to cash a NUMBER_0 dollars check using 20-dollar bills and 50-dollar bills . If the teller gave her a total of NUMBER_1 bills , how many 20-dollar bills did she get ? How many 50-dollar bills ?

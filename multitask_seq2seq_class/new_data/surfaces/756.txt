@@ -1,0 +1,1 @@
+NUMBER_0 is divided into two parts such that NUMBER_1 times the first part added to NUMBER_2 times the second part makes NUMBER_3 . Find each part .

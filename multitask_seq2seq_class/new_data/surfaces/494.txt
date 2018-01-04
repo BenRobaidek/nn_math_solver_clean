@@ -1,0 +1,1 @@
+A cashier at Apex Parts received a check for NUMBER_0 dollars for NUMBER_1 parts . Some parts cost NUMBER_2 dollars per part and other parts cost NUMBER_3 dollars per part . How many 20-dollar parts are in the order ? How many 50-dollar parts are in the order ?

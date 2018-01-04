@@ -1,0 +1,1 @@
+A farmer has cows and chickens . He only sees NUMBER_0 legs and NUMBER_1 heads . How many are cows and how many are chickens ?

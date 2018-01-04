@@ -1,0 +1,1 @@
+The farmer had NUMBER_0 apples . The farmer gave NUMBER_1 apples to his neighbor . How many apples does the farmer have now ?

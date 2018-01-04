@@ -1,0 +1,1 @@
+Find NUMBER_0 consecutive even integers such that twice the smaller is NUMBER_1 less than NUMBER_2 times the larger .

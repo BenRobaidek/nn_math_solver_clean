@@ -1,0 +1,1 @@
+PERSON_0 invested a total of NUMBER_0 dollars . Part of the money yields NUMBER_1 percent interest per year and the rest yields NUMBER_2 percent interest per year . If the total yearly interest from this investment is NUMBER_3 dollars , how much did PERSON_0 invest at NUMBER_4 percent and how much at NUMBER_5 percent ?

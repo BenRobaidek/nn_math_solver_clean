@@ -1,0 +1,1 @@
+After paying NUMBER_0 dollars for the pie , PERSON_0 has NUMBER_1 dollars , her friend has 43 dollars . How much money did she have before buying the pie ?

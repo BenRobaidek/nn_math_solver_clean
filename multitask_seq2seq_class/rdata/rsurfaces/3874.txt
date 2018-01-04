@@ -1,0 +1,1 @@
+Sue 's family went on vacation . Her mom drove the car at NUMBER_0 mph . They camped at a campground after traveling for NUMBER_1 hours . How far was the campground from their home ?

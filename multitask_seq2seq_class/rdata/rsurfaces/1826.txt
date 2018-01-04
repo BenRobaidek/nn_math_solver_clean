@@ -1,0 +1,1 @@
+A quiz is worth 40 points . You want a NUMBER_0 point average for all NUMBER_1 quizzes . You already took 4 quizzes with scores of NUMBER_2 , NUMBER_3 , NUMBER_4 and NUMBER_5 . What must your score be on your final quiz to reach your average ?

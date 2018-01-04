@@ -1,0 +1,1 @@
+NUMBER_0 boys and NUMBER_1 girls can finish the work in NUMBER_2 days , while NUMBER_3 boys and NUMBER_4 girls can finish it in NUMBER_5 days . Find the time taken by NUMBER_6 boy to finish the work . Find the time taken by NUMBER_7 girl alone to finish the work .

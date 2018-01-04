@@ -1,0 +1,1 @@
+A coffee merchant has coffee beans that sell for NUMBER_0 dollars per pound and NUMBER_1 dollars per pound . The two types are to mixed to create NUMBER_2 pounds of a mixture that sells for NUMBER_3 dollars per pound . How much of each type of bean should be used in the mixture ?

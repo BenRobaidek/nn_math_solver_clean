@@ -1,0 +1,1 @@
+PERSON_0 and PERSON_1 made egg rolls to share at the school potluck . PERSON_0 rolled NUMBER_0 egg rolls . PERSON_1 rolled NUMBER_1 egg rolls . What is the total number of egg rolls PERSON_0 and PERSON_1 rolled ?

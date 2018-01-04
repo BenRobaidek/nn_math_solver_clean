@@ -1,0 +1,1 @@
+As part of a lesson on earthquakes , a science class is researching the movement of a nearby fault line . The fault line moved NUMBER_0 inches during the past year and NUMBER_1 inches the year before . How far did the fault line move in all ?

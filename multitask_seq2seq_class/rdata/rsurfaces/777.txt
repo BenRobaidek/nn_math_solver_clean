@@ -1,0 +1,1 @@
+A and B working together can do a job in NUMBER_0 hours . After A worked alone for NUMBER_1 hours , B joined him and together they finished the rest of the job in NUMBER_2 hours . How many hours would it take A working alone to do the job ? How many hours would it take B working alone ?

@@ -1,0 +1,1 @@
+PERSON_0 has the following grades NUMBER_0 % , NUMBER_1 % , NUMBER_2 % and NUMBER_3 % on her first 4 math quizzes . What grade would she need on her next math quiz to have an average of a NUMBER_4 % ?

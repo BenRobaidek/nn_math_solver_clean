@@ -1,0 +1,1 @@
+PERSON_0 earns NUMBER_0 dollars per hour working after school and he earns NUMBER_1 dollars per hour working on Saturday . If he works NUMBER_2 hours in a week and earned NUMBER_3 dollars , how many hours did he work on Saturday ?

@@ -1,0 +1,1 @@
+PERSON_0 uses a NUMBER_0 % off coupon at her local nursery . After buying azaleas , bougainvillea , and bags of potting soil , her checkout price before tax is NUMBER_1 dollars . How much would she have paid without the coupon ?

@@ -1,0 +1,1 @@
+PERSON_0 saved checking on the grapevines for his last stop . He was told by one of the pickers that they fill NUMBER_0 drums of grapes per day . How many drums of grapes would be filled in NUMBER_1 days ?

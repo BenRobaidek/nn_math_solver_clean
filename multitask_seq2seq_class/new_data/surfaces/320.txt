@@ -1,0 +1,1 @@
+For his car , PERSON_0 spent $ NUMBER_0 on speakers and $ NUMBER_1 on new tires . PERSON_0 wanted 3 CD 's for $ 4.58 but decided not to . In total , how much did PERSON_0 spend on car parts ?

@@ -1,0 +1,1 @@
+A motel in new orleans charges NUMBER_0 dollars a day for a double occupacy , and they charge NUMBER_1 dollars for a single occupacy . If NUMBER_2 rooms are occupied for a total of NUMBER_3 dollars , how many single occupancy rooms are sold and how many double occupancy rooms are sold ?

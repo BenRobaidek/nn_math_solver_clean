@@ -1,0 +1,1 @@
+On Monday , NUMBER_0 students went on a trip to the zoo . All NUMBER_1 buses were filled and NUMBER_2 students had to travel in cars . How many students were in each bus ?

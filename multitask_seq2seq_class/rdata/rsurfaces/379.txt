@@ -1,0 +1,1 @@
+Last week PERSON_0 had NUMBER_0 dollars and PERSON_1 had 36 dollars . PERSON_0 washed cars over the weekend and now has NUMBER_1 dollars . How much money did PERSON_0 make washing cars ?

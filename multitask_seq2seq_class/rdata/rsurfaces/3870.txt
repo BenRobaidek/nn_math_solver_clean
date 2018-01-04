@@ -1,0 +1,1 @@
+A cereal box holds NUMBER_0 cups of cereal . Each serving is NUMBER_1 cups . How many servings are in the whole box ?

@@ -1,0 +1,1 @@
+PERSON_0 uploaded NUMBER_0 pictures to Facebook . She put NUMBER_1 pics into one album and put the rest into NUMBER_2 different albums . How many pictures were in each album ?

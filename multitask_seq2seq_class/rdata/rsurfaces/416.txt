@@ -1,0 +1,1 @@
+A professor started a project with a group of students , 60 % of whom were boys . Due to some unavoidable reasons , NUMBER_0 girls could not turn up , so the professor had to make some changes in the group . He admitted NUMBER_1 boys . In doing so , the percentage of boys in the project increased to 75 % . Find the number of boys and girls involved in the project initially .

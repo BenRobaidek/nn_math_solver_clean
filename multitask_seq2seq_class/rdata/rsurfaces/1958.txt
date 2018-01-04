@@ -1,0 +1,1 @@
+A 177-inch pipe is cut into NUMBER_0 pieces . One piece is NUMBER_1 times the length of the other . Find the lengths of the NUMBER_2 pieces .

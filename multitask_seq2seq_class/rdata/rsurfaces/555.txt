@@ -1,0 +1,1 @@
+PERSON_0 scored NUMBER_0 more points than PERSON_1 in a basketball game . PERSON_2 scored NUMBER_1 points less than PERSON_1 in the same game . If the 3 boys scored a total of NUMBER_2 points , how many points did PERSON_1 score ?

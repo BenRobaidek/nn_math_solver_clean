@@ -1,0 +1,1 @@
+If NUMBER_0 of the tickets had been sold and there were NUMBER_1 tickets left , how many tickets were printed ?

@@ -1,0 +1,1 @@
+Find NUMBER_0 consecutive numbers such that NUMBER_1 times the middle NUMBER_2 shall be greater than the sum of the other 2 by NUMBER_3 .

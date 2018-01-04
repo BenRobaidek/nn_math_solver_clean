@@ -1,0 +1,1 @@
+There are NUMBER_0 crayons in the drawer and NUMBER_1 crayons on the desk . PERSON_0 placed NUMBER_2 crayons and 8 scissors on the desk . How many crayons are now there in total ?

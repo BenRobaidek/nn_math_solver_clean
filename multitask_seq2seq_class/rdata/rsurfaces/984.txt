@@ -1,0 +1,1 @@
+Together , NUMBER_0 printers can print NUMBER_1 lines if the NUMBER_2 printer prints for NUMBER_3 minutes and the NUMBER_4 prints for NUMBER_5 minute . If the NUMBER_6 prints for NUMBER_7 minute and the NUMBER_8 prints for NUMBER_9 minute , they can print NUMBER_10 lines together . Find the number of lines per minute that each printer prints .

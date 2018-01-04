@@ -1,0 +1,1 @@
+NUMBER_0 students are going to the zoo . They have to be divided into groups so that each teacher has one group . There are NUMBER_1 teachers . How many students will be in each group ?

@@ -1,0 +1,1 @@
+A student has scores of NUMBER_0 , NUMBER_1 , and NUMBER_2 on his first three tests . He needs an average of at least NUMBER_3 to earn a grade of A . What is the minimum score that the student needs on the NUMBER_4 test to ensure a A ?

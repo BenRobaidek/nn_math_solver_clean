@@ -1,0 +1,1 @@
+A carpenter gave an estimate of NUMBER_0 dollars to build a cover over a patio . His hourly rate is NUMBER_1 dollars and he expects to need NUMBER_2 dollars in materials . How many hours will the job take ?

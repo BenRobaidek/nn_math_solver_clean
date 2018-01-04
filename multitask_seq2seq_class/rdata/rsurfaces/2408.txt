@@ -1,0 +1,1 @@
+PERSON_0 picked NUMBER_0 carrots from her garden . If she threw out NUMBER_1 of them and then picked NUMBER_2 more the next day , how many carrots would she have total ?

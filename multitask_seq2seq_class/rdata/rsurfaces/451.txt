@@ -1,0 +1,1 @@
+NUMBER_0 man and NUMBER_1 boys can do in NUMBER_2 days certain work that could be done in NUMBER_3 days by NUMBER_4 men and NUMBER_5 boy . How many days would it take NUMBER_6 man to do the work ?

@@ -1,0 +1,1 @@
+LOCATION_0 stables offers scenic tours on horseback . A 4-hour tour averaged NUMBER_0 miles per hour . If the average rate was NUMBER_1 miles per hour for the first NUMBER_2 hours , what was the average rate for the last hour ?

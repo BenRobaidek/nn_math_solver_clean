@@ -1,0 +1,1 @@
+On Wednesday , PERSON_0 spent NUMBER_0 half-dollars playing pinball . The next day , she spent NUMBER_1 half-dollars on pinball . What was the total amount PERSON_0 spent playing pinball ?

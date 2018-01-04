@@ -1,0 +1,1 @@
+Mrs. PERSON_0 baked pies last weekend for a holiday dinner . She baked NUMBER_0 pecan pies and NUMBER_1 apples pies . If she wants to arrange all of the pies in rows of 5 pies each , how many rows will she have ?

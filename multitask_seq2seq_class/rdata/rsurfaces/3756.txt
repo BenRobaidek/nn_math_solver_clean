@@ -1,0 +1,1 @@
+Mrs. PERSON_0 has NUMBER_0 cents . A pencil costs NUMBER_1 cents . How many pencils can she buy with the money she has ?

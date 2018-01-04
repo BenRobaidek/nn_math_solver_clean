@@ -1,0 +1,1 @@
+PERSON_0 earned NUMBER_0 dollars for each lawn he mowed . If he had NUMBER_1 lawns to mow , but forgot to mow NUMBER_2 of them , how much money did he actually earn ?

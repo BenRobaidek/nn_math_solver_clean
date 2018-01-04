@@ -1,0 +1,1 @@
+PERSON_0 invested a total of NUMBER_0 dollars in two accounts paying NUMBER_1 % and NUMBER_2 % simple interest . If her total return at the end of the first year was NUMBER_3 dollars , how much did she invest in each account ?

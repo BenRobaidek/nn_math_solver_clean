@@ -1,0 +1,1 @@
+You have space in your garden for NUMBER_0 small flowering bulbs . Crocus bulbs cost NUMBER_1 dollars each and daffodil bulbs cost NUMBER_2 dollars each . Your budget allows you to spend NUMBER_3 dollars on bulbs . How many crocus bulbs and daffodil bulbs can you buy ?

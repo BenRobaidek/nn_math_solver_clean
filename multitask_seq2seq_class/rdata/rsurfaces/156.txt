@@ -1,0 +1,1 @@
+Recently , the value of PERSON_0 's retirement fund decreased by $ NUMBER_0 . If her fund was worth $ NUMBER_1 before , how much is it worth now ?

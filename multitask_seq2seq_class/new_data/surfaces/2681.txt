@@ -1,0 +1,1 @@
+At lunch a waiter had NUMBER_0 customers and NUMBER_1 of them did n't leave a tip . If he got $ NUMBER_2 each from the ones who did tip , how much money did he earn ?

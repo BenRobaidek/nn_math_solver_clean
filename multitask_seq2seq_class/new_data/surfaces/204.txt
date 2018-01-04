@@ -1,0 +1,1 @@
+PERSON_0 and PERSON_1 own neighboring cornfields . PERSON_0 harvested NUMBER_0 acre of corn on Monday and PERSON_1 harvested NUMBER_1 acre . How many more acres did PERSON_0 harvest than PERSON_1 ?

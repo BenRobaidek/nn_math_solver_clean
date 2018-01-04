@@ -1,0 +1,1 @@
+Find two numbers whose sum is NUMBER_0 if one number is NUMBER_1 times as large as the other number .

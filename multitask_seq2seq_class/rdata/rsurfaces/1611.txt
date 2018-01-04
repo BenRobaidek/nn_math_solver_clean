@@ -1,0 +1,1 @@
+Two cyclists start at the same point and travel in opposite directions . One cyclist travels NUMBER_0 kilometers per hour faster than the other . If the two cyclists are NUMBER_1 kilometers apart after NUMBER_2 hours what is the rate of each cyclist ?

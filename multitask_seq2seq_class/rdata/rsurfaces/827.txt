@@ -1,0 +1,1 @@
+Pop 's Cycle Shop sells bicycles and tricycles . The number of bicycles is NUMBER_0 less than NUMBER_1 times the number of tricycles . All the bicycles and tricycles together have a total of NUMBER_2 wheels . How many bicycles are there ?

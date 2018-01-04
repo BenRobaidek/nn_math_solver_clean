@@ -1,0 +1,1 @@
+If NUMBER_0 is added to twice a number and this sum is multiplied by NUMBER_1 , the result is the same as if the number is multiplied by NUMBER_2 and NUMBER_3 is added to this product . What is this number ?

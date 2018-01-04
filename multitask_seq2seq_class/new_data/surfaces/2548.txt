@@ -1,0 +1,1 @@
+PERSON_0 was making baggies of cookies with NUMBER_0 cookies in each bag . If she had NUMBER_1 chocolate chip cookies and NUMBER_2 oatmeal cookies , how many baggies could she make ?

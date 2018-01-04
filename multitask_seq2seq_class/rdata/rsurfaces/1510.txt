@@ -1,0 +1,1 @@
+A self-employed contractor nearing retirement made two investments totaling NUMBER_0 dollars . In one year , these investments yielded NUMBER_1 dollars in simple interest . Part of the money was invested at NUMBER_2 % and the rest at NUMBER_3 % . How much was invested at each rate ?

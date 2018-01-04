@@ -1,0 +1,1 @@
+Mrs. PERSON_0 ate NUMBER_0 apples every hour . How many apples had she eaten at the end of NUMBER_1 hours ?

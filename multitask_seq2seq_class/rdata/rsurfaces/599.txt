@@ -1,0 +1,1 @@
+One recipe calls for NUMBER_0 teaspoon vanilla , and a second recipe requires for NUMBER_1 teaspoon vanilla , and a third recipe calls for NUMBER_2 teaspoon vanilla . How much vanilla is required to make all 3 recipes , in teaspoons ?

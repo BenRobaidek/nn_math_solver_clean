@@ -1,0 +1,1 @@
+A markup rate of NUMBER_0 % was used on a basketball with a selling price of NUMBER_1 dollars . Find the cost of the basketball .

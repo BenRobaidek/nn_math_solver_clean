@@ -1,0 +1,1 @@
+A washer-dryer combination costs NUMBER_0 dollars . If the washer costs NUMBER_1 dollars more than the dryer , what does the washer cost ? How much does the dryer cost ?

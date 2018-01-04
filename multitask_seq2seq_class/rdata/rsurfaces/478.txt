@@ -1,0 +1,1 @@
+On the first day of school , the percentage of boys in a class is 60 % . In the middle of the year NUMBER_0 girls move away and are replaced by NUMBER_1 boys . This makes the roster now 75 % boys . Find the number of boys and girls in the class on the first day of school .

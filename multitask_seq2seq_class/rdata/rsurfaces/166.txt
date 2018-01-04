@@ -1,0 +1,1 @@
+Last year , egg producers in LOCATION_0 LOCATION_1 produced NUMBER_0 eggs . This year , those same farms produced NUMBER_1 eggs . How many more eggs did the farms produce this year ?

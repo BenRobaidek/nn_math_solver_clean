@@ -1,0 +1,1 @@
+The PERSON_0 family spends NUMBER_0 their budget on groceries and another NUMBER_1 going out to eat . Altogether , what fraction of their budget does the PERSON_0 family spend on food ?

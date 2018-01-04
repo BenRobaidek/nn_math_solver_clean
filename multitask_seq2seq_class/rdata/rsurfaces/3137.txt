@@ -1,0 +1,1 @@
+PERSON_0 sprinted NUMBER_0 of a lap and then took a break by jogging NUMBER_1 of a lap . How much farther did PERSON_0 sprint than jog ?

@@ -1,0 +1,1 @@
+A grain storage warehouse has a total of NUMBER_0 bins . Some hold NUMBER_1 tons of grain each , and the rest hold NUMBER_2 tons each . If the capacity of the warehouse is NUMBER_3 tons , how many NUMBER_4 ton bins are there ? How many NUMBER_5 ton bins ?

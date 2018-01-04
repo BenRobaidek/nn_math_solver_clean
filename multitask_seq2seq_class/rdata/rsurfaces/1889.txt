@@ -1,0 +1,1 @@
+When a 2 digit number is divided by the sum of its digits the quotient is NUMBER_0 . If the NUMBER_1 's digit is diminished by NUMBER_2 times the NUMBER_3 's digit , the remainder is NUMBER_4 . What is the number ?

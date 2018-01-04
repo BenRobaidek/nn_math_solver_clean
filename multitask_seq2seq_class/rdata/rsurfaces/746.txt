@@ -1,0 +1,1 @@
+If the NUMBER_0 number is subtracted from the sum of the NUMBER_1 number and NUMBER_2 times the NUMBER_3 number , the result is NUMBER_4 . The NUMBER_5 number plus NUMBER_6 times the NUMBER_7 number is NUMBER_8 . The NUMBER_9 number plus NUMBER_10 times the NUMBER_11 number plus the NUMBER_12 number is NUMBER_13 . Find the NUMBER_14 , NUMBER_15 , and third number respectively .

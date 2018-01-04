@@ -1,0 +1,1 @@
+PERSON_0 had NUMBER_0 dogs . Each dog had NUMBER_1 puppies . How many puppies does PERSON_0 now have ?

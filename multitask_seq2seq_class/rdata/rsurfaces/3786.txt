@@ -1,0 +1,1 @@
+A garden has NUMBER_0 rows and NUMBER_1 columns of bean plans . How many plants are there in all ?

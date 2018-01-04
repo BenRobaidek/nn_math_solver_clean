@@ -1,0 +1,1 @@
+Uncle PERSON_0 bought NUMBER_0 ice cream sandwiches . If he wants to give them to his NUMBER_1 hungry nieces , how many can each niece get ?

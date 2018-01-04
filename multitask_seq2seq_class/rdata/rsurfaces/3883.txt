@@ -1,0 +1,1 @@
+I walked NUMBER_0 miles in 1 hour for Relay for Life . If I maintained this pace for the NUMBER_1 hours I walk , how many miles total will I walk ?

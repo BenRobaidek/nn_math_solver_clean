@@ -1,0 +1,1 @@
+The sum of 2 consecutive integers is NUMBER_0 . Find the smaller integer . Find the larger integer .

@@ -1,0 +1,1 @@
+The US Senate had a total of NUMBER_0 Democrats and Republicans . There were NUMBER_1 more Republicans than Democrats . How many Democrats and Republicans were there in the Senate ?

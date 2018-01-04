@@ -1,0 +1,1 @@
+PERSON_0 's mom gave her $ NUMBER_0 to go shopping . She bought a sweater for $ NUMBER_1 , a T-shirt for $ NUMBER_2 , and a pair of shoes for $ NUMBER_3 . How much money does PERSON_0 have left ?

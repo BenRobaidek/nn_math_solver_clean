@@ -1,0 +1,1 @@
+A pro shop in a bowling alley drops the price of bowling balls NUMBER_0 % , to a sale price of NUMBER_1 dollars . What was the original price , in dollars ?

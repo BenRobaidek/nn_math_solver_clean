@@ -1,0 +1,1 @@
+On a hot day , PERSON_0 poured NUMBER_0 bucket of water into a plastic wading pool . A few minutes later he added another NUMBER_1 buckets . How much water did PERSON_0 pour into the pool ?

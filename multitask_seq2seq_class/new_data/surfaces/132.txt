@@ -1,0 +1,1 @@
+PERSON_0 purchased a football game for $ NUMBER_0 , a strategy game for $ NUMBER_1 , and a Batman game for $ NUMBER_2 . How much did PERSON_0 spend on video games ?

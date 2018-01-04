@@ -1,0 +1,1 @@
+When NUMBER_0 is subtracted from NUMBER_1 times a certain number , the result is the original number . What is the number ?

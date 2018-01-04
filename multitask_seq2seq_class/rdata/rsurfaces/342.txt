@@ -1,0 +1,1 @@
+PERSON_0 had 7 quarters and NUMBER_0 nickels in his bank . His dad gave him NUMBER_1 nickels and 5 pennies . How many nickels does PERSON_0 have now ?

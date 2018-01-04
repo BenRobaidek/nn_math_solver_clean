@@ -1,0 +1,1 @@
+Twice one number added to NUMBER_0 times another gives NUMBER_1 . Find the numbers , if the difference between them is NUMBER_2 .

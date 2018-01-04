@@ -1,0 +1,1 @@
+PERSON_0 saved $ NUMBER_0 in September . He saved $ NUMBER_1 in October and $ NUMBER_2 in November . Then PERSON_0 spent $ NUMBER_3 on a video game . How much money does PERSON_0 have left ?

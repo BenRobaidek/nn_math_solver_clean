@@ -1,0 +1,1 @@
+Amber has NUMBER_0 coins in nickels and dimes . In all she has NUMBER_1 dollars . How many nickels and dimes does she have ?

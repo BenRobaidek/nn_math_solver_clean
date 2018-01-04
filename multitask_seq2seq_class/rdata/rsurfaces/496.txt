@@ -1,0 +1,1 @@
+PERSON_0 and PERSON_1 needed to meet to discuss changes in a construction project . They were NUMBER_0 miles apart . If they met after NUMBER_1 hours and both traveled at the same speed , how fast did each go in miles per hour ?

@@ -1,0 +1,1 @@
+There are NUMBER_0 maple trees and 5 popular trees currently in the park . Park workers will plant NUMBER_1 maple trees today . How many maple trees will the park have when the workers are finished ?

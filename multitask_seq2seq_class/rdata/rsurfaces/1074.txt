@@ -1,0 +1,1 @@
+For his long distance phone service Milan pays a NUMBER_0 dollars monthly fee plus NUMBER_1 cents per minute . Last month , Milan 's long distance bill was NUMBER_2 dollars . For how many minutes was LOCATION_0 billed for ?

@@ -1,0 +1,1 @@
+NUMBER_0 children are taking a bus to the zoo . They sit NUMBER_1 children in every seat . How many seats will the children need in all ?

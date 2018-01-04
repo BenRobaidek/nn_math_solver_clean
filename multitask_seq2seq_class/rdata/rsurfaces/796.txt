@@ -1,0 +1,1 @@
+Two teachers are grading math homework . NUMBER_0 teacher can grade a stack of papers in NUMBER_1 minutes and the other can complete the job in NUMBER_2 minutes . How long does it take them to grade all the papers if the NUMBER_3 teacher grades alone for NUMBER_4 minutes , then they work together to finish ?

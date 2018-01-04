@@ -1,0 +1,1 @@
+You order NUMBER_0 tacos and NUMBER_1 enchiladas for NUMBER_2 dollars . Your friend orders NUMBER_3 tacos and NUMBER_4 enchilada for NUMBER_5 dollars . How much does a taco cost in dollars ? How much does an enchilada cost in dollars ?

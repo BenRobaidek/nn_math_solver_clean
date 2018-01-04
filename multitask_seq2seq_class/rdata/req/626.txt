@@ -1,0 +1,1 @@
+VAR_0 + VAR_1 = NUMBER_1 VAR_0 = ( 2.0 * VAR_1 ) - NUMBER_0

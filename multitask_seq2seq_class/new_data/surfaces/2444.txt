@@ -1,0 +1,1 @@
+For the school bake sale PERSON_0 made NUMBER_0 cupcakes . If she sold NUMBER_1 of them and then made NUMBER_2 more , how many cupcakes would she have ?

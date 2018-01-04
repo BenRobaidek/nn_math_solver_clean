@@ -1,0 +1,1 @@
+NUMBER_0 times a number is the same as NUMBER_1 more than NUMBER_2 times the number . Find the number .

@@ -1,0 +1,1 @@
+Mrs. PERSON_0 is buying PERSON_1 's Day treats for her NUMBER_0 dogs . If she wants to buy them NUMBER_1 heart biscuits each , how many biscuits does she need to buy ?

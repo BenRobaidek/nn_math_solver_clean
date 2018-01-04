@@ -1,0 +1,1 @@
+PERSON_0 picked NUMBER_0 apples from the orchard , and gave NUMBER_1 apples to PERSON_1 . How many apples does PERSON_0 have now ?

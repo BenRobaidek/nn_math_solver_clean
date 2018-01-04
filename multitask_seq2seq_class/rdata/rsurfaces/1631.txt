@@ -1,0 +1,1 @@
+A gas station owner has NUMBER_0 gallons of gasoline for which he charges NUMBER_1 dollars per gallon and some for which he charges NUMBER_2 dollars per gallon . How many gallons of the NUMBER_3 dollars brand must the owner mix in to produce gasoline that costs NUMBER_4 dollars per gallon ?

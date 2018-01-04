@@ -1,0 +1,1 @@
+PERSON_0 had to wash NUMBER_0 short sleeve shirts and NUMBER_1 long sleeve shirts before school . If he had only washed NUMBER_2 of them by the time school started , how many did he not wash ?

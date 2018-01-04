@@ -1,0 +1,1 @@
+A group of women decided to contribute equal amounts toward obtaining a speaker for a book review . If there were NUMBER_0 more women , each would have paid NUMBER_1 dollars less . However , if there were NUMBER_2 less women , each would have paid NUMBER_3 dollars more . How many women were in the group ? How much was the speaker paid , in dollars ?

@@ -1,0 +1,1 @@
+An oil pipe in the sea broke . Before engineers started to fix the pipe , NUMBER_0 liters of oil leaked into the water . While the engineers worked , the pipe leaked NUMBER_1 liters of oil . In all , how many liters of oil leaked into the water ?

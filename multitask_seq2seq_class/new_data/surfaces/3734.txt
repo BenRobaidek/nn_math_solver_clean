@@ -1,0 +1,1 @@
+Each CD rack holds NUMBER_0 CDs . A shelf can hold NUMBER_1 racks . How many total CDs can fit on the shelf ?

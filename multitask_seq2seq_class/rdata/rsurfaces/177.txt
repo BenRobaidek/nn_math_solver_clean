@@ -1,0 +1,1 @@
+A tailor cut NUMBER_0 inch off a skirt and NUMBER_1 inch off a pair of pants . How much more did the tailor cut off the skirt than the pants ?

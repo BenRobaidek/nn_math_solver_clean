@@ -1,0 +1,1 @@
+There are NUMBER_0 pigs in the barn . Some more come to join them . Now there are NUMBER_1 pigs . How many pigs came to join them ?

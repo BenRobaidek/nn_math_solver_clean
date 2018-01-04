@@ -1,0 +1,1 @@
+Find NUMBER_0 numbers such that the sum of twice the first and the NUMBER_1 is NUMBER_2 , NUMBER_3 NUMBER_4 times the first exceeds NUMBER_5 times the NUMBER_6 by NUMBER_7 .

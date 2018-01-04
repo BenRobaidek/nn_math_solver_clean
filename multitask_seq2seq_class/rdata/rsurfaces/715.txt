@@ -1,0 +1,1 @@
+There are 2 positive numbers whose ratio is NUMBER_0 to NUMBER_1 and whose product is NUMBER_2 . What is the smaller number ? What is the larger number ?

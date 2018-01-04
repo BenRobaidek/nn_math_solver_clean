@@ -1,0 +1,1 @@
+Suppose we agree to pay you NUMBER_0 cents for every problem in this chapter that you solve correctly and fine you NUMBER_1 cents for every problem done incorrectly . If at the end of NUMBER_2 problems we do n't owe each other any money , how many problems did you solve correctly ?

@@ -1,0 +1,1 @@
+In a purse is NUMBER_0 dollars in nickels and dimes . There are NUMBER_1 more nickels than dimes . How nickels are there ? How many dimes ?

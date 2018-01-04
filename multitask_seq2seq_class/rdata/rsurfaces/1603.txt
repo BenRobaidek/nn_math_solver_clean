@@ -1,0 +1,1 @@
+The sum of 3 numbers is NUMBER_0 . The first number is the difference of the other 2 numbers . When you add the other 2 numbers and subtract NUMBER_1 the result will be the first number . What is the first number ?

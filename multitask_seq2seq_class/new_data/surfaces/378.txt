@@ -1,0 +1,1 @@
+There were NUMBER_0 red orchids and 4 white orchids in the vase . PERSON_0 cut some red orchids from her flower garden . There are now NUMBER_1 red orchids in the vase . How many red orchids did she cut ?

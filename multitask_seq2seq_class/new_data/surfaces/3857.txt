@@ -1,0 +1,1 @@
+PERSON_0 and PERSON_1 aced their math test . So their mother bought for them a wonderful trampoline yesterday . PERSON_1 jumped NUMBER_0 times on the trampoline . PERSON_0 jumped NUMBER_1 more times than PERSON_1 . How many times did they jump altogether ?

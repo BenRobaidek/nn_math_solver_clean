@@ -1,0 +1,1 @@
+The Florin High School Sophomore class plans to sell sodas and candy at the homecoming dance . They are planning to sell sodas for NUMBER_0 dollars and candy for NUMBER_1 dollars . Their goal is to reach a total of NUMBER_2 dollars in sales . If they sell NUMBER_3 sodas , how much candy do they need to sell to meet their goal ?

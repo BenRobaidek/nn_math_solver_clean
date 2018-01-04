@@ -1,0 +1,1 @@
+There are NUMBER_0 rulers in the drawer . PERSON_0 took NUMBER_1 rulers from the drawer . How many rulers are now in the drawer ?

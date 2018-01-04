@@ -1,0 +1,1 @@
+PERSON_0 's car gets NUMBER_0 kilometers per gallon . How far can he drive on NUMBER_1 gallons of gas ?

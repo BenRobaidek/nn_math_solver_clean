@@ -1,0 +1,1 @@
+PERSON_0 and his roommates ate NUMBER_0 pints of ice cream on Friday night and NUMBER_1 of a pint of ice cream on Saturday night . How many pints did they eat in all ?

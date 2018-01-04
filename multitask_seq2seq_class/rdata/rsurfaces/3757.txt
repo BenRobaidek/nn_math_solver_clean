@@ -1,0 +1,1 @@
+Mrs. PERSON_0 bought NUMBER_0 pizzas for $ NUMBER_1 each . What was the total amount she paid for the NUMBER_2 pizzas ?

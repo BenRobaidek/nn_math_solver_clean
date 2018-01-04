@@ -1,0 +1,1 @@
+PERSON_0 PERSON_1 received NUMBER_0 more votes than opponent PERSON_2 PERSON_3 . If the total number of votes was NUMBER_1 , find the number of votes for PERSON_0 . Find the number of votes for PERSON_2 .

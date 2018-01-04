@@ -1,0 +1,1 @@
+Neale makes NUMBER_0 dollars per hour . He worked NUMBER_1 hours and recieved NUMBER_2 dollars in tips what is his salary ?

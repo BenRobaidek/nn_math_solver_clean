@@ -1,0 +1,1 @@
+How much interest , in dollars , will you pay on a NUMBER_0 dollars loan for 1 year if the interest rate is NUMBER_1 % ?

@@ -1,0 +1,1 @@
+Suppose you are starting an office cleaning service . You have spent NUMBER_0 dollars on equipment . To clean an office , you use NUMBER_1 dollars worth of supplies you purchased . You charge NUMBER_2 dollars per office . How many offices must you clean to break even ?

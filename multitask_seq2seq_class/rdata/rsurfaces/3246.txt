@@ -1,0 +1,1 @@
+The first act included NUMBER_0 clown mobiles , each stuffed with NUMBER_1 clowns . How many clowns are inside all the clown mobiles combined ?

@@ -1,0 +1,1 @@
+Gumballs come in packages of NUMBER_0 . PERSON_0 ate NUMBER_1 gumballs . How many whole boxes did he eat and how many gumballs does he have left ?

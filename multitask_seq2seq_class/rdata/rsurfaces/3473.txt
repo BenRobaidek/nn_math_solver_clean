@@ -1,0 +1,1 @@
+Each child has NUMBER_0 oranges . If there are NUMBER_1 children , how many oranges are there in total ?

@@ -1,0 +1,1 @@
+A bus went NUMBER_0 kilometers farther than a car . The car went NUMBER_1 as far as the bus . How far did the bus travel , in kilometers ? How far did the car travel ?

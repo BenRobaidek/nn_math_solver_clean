@@ -1,0 +1,1 @@
+A jet takes the same time to travel NUMBER_0 kilometers with the wind as it does to travel NUMBER_1 kilometers against the wind . If its speed relative to the air is NUMBER_2 kilometers per hour , what is the speed of the wind ?

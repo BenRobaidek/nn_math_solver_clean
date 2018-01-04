@@ -1,0 +1,1 @@
+Each day , the polar bear at Richmond 's zoo eats NUMBER_0 of a bucket of trout and NUMBER_1 of a bucket of salmon . How many buckets of fish does the polar bear eat daily ?

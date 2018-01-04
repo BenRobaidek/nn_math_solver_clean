@@ -1,0 +1,1 @@
+There are NUMBER_0 bottle caps in a box . PERSON_0 takes NUMBER_1 bottle caps . How many are left ?

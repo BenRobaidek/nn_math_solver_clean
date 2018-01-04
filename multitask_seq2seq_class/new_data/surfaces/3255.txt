@@ -1,0 +1,1 @@
+PERSON_0 's younger brother helped pick up all the paper clips in PERSON_0 's room . He was able to collect NUMBER_0 paper clips . If he wants to distribute the paper clips in NUMBER_1 boxes , how many paper clips will each box contain ?

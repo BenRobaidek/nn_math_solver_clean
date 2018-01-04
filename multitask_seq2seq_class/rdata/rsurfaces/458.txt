@@ -1,0 +1,1 @@
+If I subtract NUMBER_0 from a number and then multiply the difference by NUMBER_1 the result is NUMBER_2 . What is the number ?

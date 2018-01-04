@@ -1,0 +1,1 @@
+There are NUMBER_0 butterflies . Each butterfly has NUMBER_1 black dots and 17 yellow dots . How many black dots are there in all ?

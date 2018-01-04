@@ -1,0 +1,1 @@
+During summer vacation PERSON_0 and PERSON_1 earned a total of NUMBER_0 dollars . PERSON_0 worked NUMBER_1 days fewer than PERSON_1 and earned NUMBER_2 dollars per day less . Find the number of days he worked and the daily wage he made if the total number of days worked by both was NUMBER_3 .

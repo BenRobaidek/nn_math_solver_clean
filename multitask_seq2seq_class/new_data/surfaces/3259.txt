@@ -1,0 +1,1 @@
+Christian and the junior ranger brought a bag of NUMBER_0 nails as they visited every station assigned to the junior ranger . If they left exactly NUMBER_1 nails in every station they visited , how many stations did PERSON_0 and the junior ranger visit ?

@@ -1,0 +1,1 @@
+Two airplanes left the same airport traveling in opposite directions . If one airplane averages NUMBER_0 miles per hour and the other NUMBER_1 miles per hour , how many hours will it take for the distance between them to be NUMBER_2 miles ?

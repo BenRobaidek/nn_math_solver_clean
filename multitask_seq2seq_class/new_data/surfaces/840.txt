@@ -1,0 +1,1 @@
+An investor will invest a total of NUMBER_0 dollars in 2 accounts , one paying NUMBER_1 % annual simple interest and the other NUMBER_2 % . If he wants to earn NUMBER_3 dollars annual interest , how much should he invest at NUMBER_4 % ? How much at NUMBER_5 % ?

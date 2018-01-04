@@ -1,0 +1,1 @@
+You are running a concession stand . You are selling hot dogs and soda . Each hot dog costs NUMBER_0 dollars and each soda costs NUMBER_1 dollars . You made a total of NUMBER_2 dollars . You sold a total of NUMBER_3 hot dogs and sodas combined . You must report the number of hot dogs and sodas sold . How many hot dogs and sodas were sold ?

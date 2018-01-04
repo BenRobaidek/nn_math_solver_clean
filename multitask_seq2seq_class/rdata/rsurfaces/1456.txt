@@ -1,0 +1,1 @@
+The sum of NUMBER_0 integers is NUMBER_1 . NUMBER_2 times the larger integer is NUMBER_3 less than NUMBER_4 times the smaller integer . Find the smaller number and larger number .

@@ -1,0 +1,1 @@
+Each ticket costs $ NUMBER_0 . How much do NUMBER_1 tickets cost ?

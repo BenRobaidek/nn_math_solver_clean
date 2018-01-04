@@ -1,0 +1,1 @@
+The enrollment in a school this year is NUMBER_0 . This is an increase of NUMBER_1 % over last year 's enrollment . How many were enrolled last year ?

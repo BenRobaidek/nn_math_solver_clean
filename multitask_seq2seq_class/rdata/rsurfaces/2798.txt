@@ -1,0 +1,1 @@
+There are NUMBER_0 students trying out for the school 's trivia teams . If NUMBER_1 of them did n't get picked for the team and the rest were put into NUMBER_2 groups , how many students would be in each group ?

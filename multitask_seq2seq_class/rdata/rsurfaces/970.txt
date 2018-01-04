@@ -1,0 +1,1 @@
+NUMBER_0 times the sum of the digits of a 2-digit number is equal to the number . If the digits are reversed , the resulting number is NUMBER_1 greater than the original number . What is the number ?

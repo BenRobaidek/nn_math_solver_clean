@@ -1,0 +1,1 @@
+A jazz concert brought in NUMBER_0 dollars with the sale of NUMBER_1 tickets . If tickets were sold for NUMBER_2 dollars and NUMBER_3 dollars each , how many 20-dollar tickets were sold ? How many 30-dollar tickets ?

@@ -1,0 +1,1 @@
+The sum of 3 numbers is NUMBER_0 . The second is NUMBER_1 more than the smallest and the third is NUMBER_2 more than the smallest . Find the smallest number , the middle number and the largest number .

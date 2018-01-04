@@ -1,0 +1,1 @@
+A pot contains NUMBER_0 liters of brine at a concentration of NUMBER_1 grams per liter . How much of the water should be boiled off to increase the concentration to NUMBER_2 grams per liter ?

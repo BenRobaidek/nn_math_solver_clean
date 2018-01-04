@@ -1,0 +1,1 @@
+Rita received a NUMBER_0 dollars gift card for a coffee store . She used it in buying some coffee that cost NUMBER_1 dollars per pound . After buying the coffee , she had NUMBER_2 dollars left on her card . How many pounds of coffee did she buy ?

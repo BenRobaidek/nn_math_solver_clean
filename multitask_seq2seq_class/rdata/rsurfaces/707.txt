@@ -1,0 +1,1 @@
+A NUMBER_0 foot pipe is divided into 3 pieces . NUMBER_1 piece is twice as long as the shortest piece and the third piece is NUMBER_2 foot longer than NUMBER_3 times the shortest piece . Find the length of the shortest piece .

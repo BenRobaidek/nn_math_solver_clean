@@ -1,0 +1,1 @@
+A load of NUMBER_0 kilograms attached to the bottom of a coil spring stretches the spring to a length of NUMBER_1 cm , and a load of NUMBER_2 kilograms stretches it to a length of NUMBER_3 cm . Find the natural length of the spring .

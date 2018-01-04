@@ -1,0 +1,1 @@
+A stamp collection consists of 0.06-cent , 0.13-cent and 0.18-cent stamps . There are NUMBER_0 stamps in the collection and there are twice as many 0.13-cent stamps as there are 0.06-cent stamps . The total value of the stamps in the collection is NUMBER_1 dollars . Find the number of 0.18-cent stamps in the collection .

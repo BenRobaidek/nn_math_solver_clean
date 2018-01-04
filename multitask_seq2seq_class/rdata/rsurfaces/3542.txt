@@ -1,0 +1,1 @@
+If PERSON_0 split NUMBER_0 Skittles between NUMBER_1 people in her class and kept the left overs , how many Skittles did each classmate get ?

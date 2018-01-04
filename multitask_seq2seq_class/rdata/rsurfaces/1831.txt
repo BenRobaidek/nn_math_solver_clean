@@ -1,0 +1,1 @@
+PERSON_0 did all NUMBER_0 problems on his test and got an NUMBER_1 . Scores are computed by giving NUMBER_2 points for each right answer and subtracting NUMBER_3 point for each wrong answer . How many problems did terry get right and wrong ?

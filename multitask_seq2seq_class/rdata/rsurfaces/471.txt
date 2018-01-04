@@ -1,0 +1,1 @@
+A jet leaves an airport traveling a steady pace of NUMBER_0 kilometers per hour . Another jet leaves the same airport NUMBER_1 hours later traveling NUMBER_2 kilometers per hour . How long will it take the second jet to overtake the first ?

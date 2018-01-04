@@ -1,0 +1,1 @@
+PERSON_0 has NUMBER_0 pence to invest and decides to invest part of it at NUMBER_1 % and the rest of it at NUMBER_2 % . If the total interest for the year is NUMBER_3 pence , how much does PERSON_0 has to invest at NUMBER_4 % rate and how much does she has to invest at NUMBER_5 % rate ?

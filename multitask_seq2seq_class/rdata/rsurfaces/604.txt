@@ -1,0 +1,1 @@
+There are NUMBER_0 barrels of cement in one shed and NUMBER_1 in another shed . How many barrels must be transferred from the second to the first shed so that the first shed will contain NUMBER_2 as much as the second shed ?

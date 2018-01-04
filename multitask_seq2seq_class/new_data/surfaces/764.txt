@@ -1,0 +1,1 @@
+A mixture of water and antifreeze in a car is NUMBER_0 % antifreeze . In colder climates this mixture should contain NUMBER_1 % antifreeze . If the radiator contains NUMBER_2 gallons of fluid , how many gallons of radiator fluid should be drained and replaced with a mixture containing NUMBER_3 % antifreeze ?

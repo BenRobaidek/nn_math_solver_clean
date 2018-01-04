@@ -1,0 +1,1 @@
+Tickets for a concert were sold to adults for NUMBER_0 dollars and to students for NUMBER_1 dollars . If the total receipts were NUMBER_2 dollars and twice as many adult tickets as student tickets were sold , then how many adult tickets were sold ? How many student tickets were sold ?

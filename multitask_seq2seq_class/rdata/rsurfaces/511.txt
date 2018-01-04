@@ -1,0 +1,1 @@
+A grocer bought NUMBER_0 bushels of PERSON_0 and McInotosh apples . Baldwins costs NUMBER_1 cents a bushel , but McIntosh cost only NUMBER_2 cents a bushel . If he paid NUMBER_3 dollars for the lot , how many bushels of Baldwins did he get ? How many bushels of PERSON_1 ?

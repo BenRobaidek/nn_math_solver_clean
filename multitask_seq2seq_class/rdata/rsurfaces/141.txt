@@ -1,0 +1,1 @@
+There were originally NUMBER_0 houses in LOCATION_0 LOCATION_1 . During a housing boom , developers built NUMBER_1 . How many houses are there now in LOCATION_0 LOCATION_1 ?

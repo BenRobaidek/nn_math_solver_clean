@@ -1,0 +1,1 @@
+The ratio of foxes to rabbits in the Deerfield Forest Preserve is NUMBER_0 to NUMBER_1 . If there are NUMBER_2 fewer foxes than rabbits , then how many foxes are there ? How many rabbits are there ?

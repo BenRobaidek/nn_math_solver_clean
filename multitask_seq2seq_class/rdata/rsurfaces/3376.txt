@@ -1,0 +1,1 @@
+If there are NUMBER_0 erasers in a box and PERSON_0 puts NUMBER_1 more erasers inside , how many erasers are in the box ?

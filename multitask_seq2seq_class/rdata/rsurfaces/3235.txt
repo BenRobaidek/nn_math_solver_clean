@@ -1,0 +1,1 @@
+We ordered NUMBER_0 pizzas . Each pizza has NUMBER_1 slices . How many slices of pizza are there altogether ?

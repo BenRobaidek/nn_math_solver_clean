@@ -1,0 +1,1 @@
+The difference between NUMBER_0 numbers is NUMBER_1 . If the smaller is multiplied by NUMBER_2 , the result is NUMBER_3 greater than the larger number . Find the smaller and the larger number .

@@ -1,0 +1,1 @@
+The school is selling tickets to a performance . They have adult and child tickets . Each adult ticket is NUMBER_0 dollars and each child ticket is NUMBER_1 dollars . By the end of the week , there was NUMBER_2 dollars in sales from NUMBER_3 tickets sold . How many adult tickets were sold ? How many child tickets ?

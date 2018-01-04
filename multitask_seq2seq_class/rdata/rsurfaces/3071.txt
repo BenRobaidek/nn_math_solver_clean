@@ -1,0 +1,1 @@
+On Saturday , PERSON_0 spent $ NUMBER_0 each on NUMBER_1 tickets to a movie theater . She also rented a movie for $ NUMBER_2 , and bought a movie for $ 13.95 . How much money in total did PERSON_0 spend on movies ?

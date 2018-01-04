@@ -1,0 +1,1 @@
+PERSON_0 paid 25 cents for a bag of jellybeans . After giving her brother half the beans , she ate NUMBER_0 . Her sister then ate NUMBER_1 more than half the remaining beans , after which there were NUMBER_2 left . How many jellybeans were in the bag before it was opened ?

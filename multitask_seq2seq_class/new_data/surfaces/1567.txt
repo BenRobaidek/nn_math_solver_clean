@@ -1,0 +1,1 @@
+PERSON_0 's investment fell NUMBER_0 % in the month of June to NUMBER_1 dollars . What was the amount of her investment at the beginning of June ?

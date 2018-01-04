@@ -1,0 +1,1 @@
+The ratio of men to woman in a certain factory is NUMBER_0 to NUMBER_1 . There are NUMBER_2 men . How many people work in the factory ?

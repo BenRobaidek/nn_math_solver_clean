@@ -1,0 +1,1 @@
+There are NUMBER_0 calories in a candy bar . How many NUMBER_1 calories are there in NUMBER_2 candy bars ?

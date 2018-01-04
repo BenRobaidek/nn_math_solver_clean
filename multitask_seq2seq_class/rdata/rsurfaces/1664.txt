@@ -1,0 +1,1 @@
+A dog is NUMBER_0 its weight plus NUMBER_1 pounds . How many pounds does the dog weigh ?

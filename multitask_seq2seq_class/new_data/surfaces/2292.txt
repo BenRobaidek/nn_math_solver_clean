@@ -1,0 +1,1 @@
+While on vacation , PERSON_0 took NUMBER_0 pictures at the zoo and NUMBER_1 at the museum . If she later deleted NUMBER_2 of the pictures , how many pictures from her vacation did she still have ?

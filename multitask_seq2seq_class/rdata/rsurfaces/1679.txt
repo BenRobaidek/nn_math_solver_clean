@@ -1,0 +1,1 @@
+PERSON_0 can jog to work in NUMBER_0 of an hour . When she rides her bike , it takes her NUMBER_1 of an hour . If she rides NUMBER_2 miles per hour faster than she jogs , how far away is her work ?

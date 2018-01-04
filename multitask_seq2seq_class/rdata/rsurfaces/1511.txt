@@ -1,0 +1,1 @@
+PERSON_0 always throws loose change into a pencil holder on his desk and takes it out every two weeks . This time it is all nickels and dimes . There are NUMBER_0 times as many dimes as nickels , and the value of the dimes is NUMBER_1 dollars more than the value of the nickels . How many nickels and dimes does PERSON_0 have ?

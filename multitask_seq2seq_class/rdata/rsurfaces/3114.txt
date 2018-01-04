@@ -1,0 +1,1 @@
+PERSON_0 wants to buy a jump rope that costs $ NUMBER_0 , a board game that costs $ NUMBER_1 , and a playground ball that costs $ NUMBER_2 . He has saved $ NUMBER_3 from his allowance , and his uncle gave him $ NUMBER_4 . How much more money does PERSON_0 need to buy the jump rope , the game , and the ball ?

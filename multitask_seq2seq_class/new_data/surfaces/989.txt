@@ -1,0 +1,1 @@
+Lakota bought NUMBER_0 new compact disks and NUMBER_1 used compact disks for NUMBER_2 dollars . At the same prices , PERSON_0 bought NUMBER_3 new compact disks and NUMBER_4 used compact disks for NUMBER_5 dollars . Find the cost of buying a single used compact disk .

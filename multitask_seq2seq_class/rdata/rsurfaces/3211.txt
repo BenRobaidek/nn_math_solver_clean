@@ -1,0 +1,1 @@
+PERSON_0 ran NUMBER_0 miles and walked NUMBER_1 miles . How much farther did PERSON_0 run than walk ?

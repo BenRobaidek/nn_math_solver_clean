@@ -1,0 +1,1 @@
+PERSON_0 had 27 pennies and NUMBER_0 dimes in his bank . His dad gave him NUMBER_1 dimes and 49 nickels . How many dimes does he have now ?

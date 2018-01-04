@@ -1,0 +1,1 @@
+If NUMBER_0 is added to a number and then subtracted from the same number , the product of the sum and the difference is NUMBER_1 . What is the number ?

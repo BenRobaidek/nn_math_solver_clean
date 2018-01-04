@@ -1,0 +1,1 @@
+PERSON_0 collects baseball and football cards . He has NUMBER_0 cards total . The number of baseball cards he has is NUMBER_1 more than three times the number of football cards . How many baseball and football cards does he have ?

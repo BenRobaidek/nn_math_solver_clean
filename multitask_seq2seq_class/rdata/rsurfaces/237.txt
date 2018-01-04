@@ -1,0 +1,1 @@
+PERSON_0 's chemistry textbook weighs NUMBER_0 pounds and her geometry textbook weighs NUMBER_1 pound . How much more does the chemistry textbook weigh than the geometry textbook ?

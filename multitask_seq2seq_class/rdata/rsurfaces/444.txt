@@ -1,0 +1,1 @@
+A grocery store is selling hamburger for NUMBER_0 dollars per pound . This is NUMBER_1 dollars less than the price at a competitor 's store . Find the price at the competitor 's store .

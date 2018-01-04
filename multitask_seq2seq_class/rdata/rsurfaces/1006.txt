@@ -1,0 +1,1 @@
+The Freshman class is organizing a picnic and ordered a total of NUMBER_0 hot dogs and hamburgers for the event . The hot dogs cost NUMBER_1 dollars each and the hamburgers cost NUMBER_2 dollars each before tax . The total bill came to NUMBER_3 dollars , which included NUMBER_4 dollars in tax . How many hot dogs and hamburgers were ordered ?

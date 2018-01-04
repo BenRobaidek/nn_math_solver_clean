@@ -1,0 +1,1 @@
+A farmer grows only sunflowers and flax on his NUMBER_0 acre farm . This year he wants to plant NUMBER_1 more acres of sunflowers than flax . How many acres of sunflowers does the farmer need to plant ? How many acres of flax ?

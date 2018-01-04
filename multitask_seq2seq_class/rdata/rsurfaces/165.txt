@@ -1,0 +1,1 @@
+A cell phone company has a total of NUMBER_0 customers across the world . If NUMBER_1 of its customers live in the LOCATION_0 LOCATION_1 , how many of its customers live in other countries ?

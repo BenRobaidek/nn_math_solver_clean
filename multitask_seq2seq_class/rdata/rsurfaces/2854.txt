@@ -1,0 +1,1 @@
+PERSON_0 bought NUMBER_0 new baseball trading cards to add to his collection . The next day his dog ate half of his collection . There are now only NUMBER_1 cards left . How many cards did PERSON_0 start with ?

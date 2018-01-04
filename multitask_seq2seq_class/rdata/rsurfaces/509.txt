@@ -1,0 +1,1 @@
+PERSON_0 can deliver his papers in NUMBER_0 minutes . If PERSON_1 helps , they can finish in NUMBER_1 minutes . How long will it take PERSON_1 to work alone ?

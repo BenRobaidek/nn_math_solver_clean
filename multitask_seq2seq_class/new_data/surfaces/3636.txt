@@ -1,0 +1,1 @@
+If PERSON_0 jogged NUMBER_0 kilometers at NUMBER_1 kilometers per hour , how long was PERSON_0 jogging ?

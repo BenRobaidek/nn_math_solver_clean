@@ -1,0 +1,1 @@
+There are NUMBER_0 oranges in a box . PERSON_0 takes NUMBER_1 oranges . How many are left ?

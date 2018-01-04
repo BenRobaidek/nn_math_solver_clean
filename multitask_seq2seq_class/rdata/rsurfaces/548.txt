@@ -1,0 +1,1 @@
+2 stockbrokers are making cold calls to potential customers regarding a hot IPO . NUMBER_0 of the brokers is able to get a new client every NUMBER_1 hour , and the other is able to get a new client every NUMBER_2 hour . At what rate , in clients per hour , are the new clients being acquired when both are working ?

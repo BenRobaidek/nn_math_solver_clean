@@ -1,0 +1,1 @@
+University Theater sold NUMBER_0 tickets for a play . Tickets cost NUMBER_1 dollars per adult and NUMBER_2 dollars per senior citizen . If total receipts were NUMBER_3 dollars , how many senior citizen tickets were sold ?

@@ -1,0 +1,1 @@
+Twice the sum of NUMBER_0 numbers is NUMBER_1 . Twice their difference is NUMBER_2 . Find the smaller number . Find the larger number .

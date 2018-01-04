@@ -1,0 +1,1 @@
+PERSON_0 sold half of her comic books and then bought NUMBER_0 more . She now has NUMBER_1 . How many did she begin with ?

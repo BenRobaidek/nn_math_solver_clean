@@ -1,0 +1,1 @@
+A cosmetologist has a bottle of NUMBER_0 % hydrogen peroxide solution and a bottle of NUMBER_1 % hydrogen peroxide solution . The cosmetologist needs NUMBER_2 milliliters of a NUMBER_3 % hydrogen peroxide solution . Find how many milliliters of each solution the cosmetologist needs to mix together .

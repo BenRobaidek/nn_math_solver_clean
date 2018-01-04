@@ -1,0 +1,1 @@
+Each child has NUMBER_0 pencils . If there are NUMBER_1 children , how many pencils are there in total ?

@@ -1,0 +1,1 @@
+Each day , the polar bear at LOCATION_0 's zoo eats NUMBER_0 bucket of trout and NUMBER_1 bucket of salmon . How many buckets of fish does the polar bear eat daily ?

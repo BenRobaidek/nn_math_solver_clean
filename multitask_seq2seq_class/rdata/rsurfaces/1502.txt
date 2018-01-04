@@ -1,0 +1,1 @@
+A NUMBER_0 seat theater charges NUMBER_1 dollars for adults and NUMBER_2 dollars for children . If all seats were filled and the total ticket income was NUMBER_3 dollars how many adults and children were in the audience ?

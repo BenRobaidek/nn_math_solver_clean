@@ -1,0 +1,1 @@
+NUMBER_0 times the difference of twice a number and NUMBER_1 is negative NUMBER_2 . Find the number .

@@ -1,0 +1,1 @@
+A total of NUMBER_0 tickets were sold for the school play . The number of student tickets sold was NUMBER_1 times the number of adult tickets sold . How many adult tickets were sold ?

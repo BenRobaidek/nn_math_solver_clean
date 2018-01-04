@@ -1,0 +1,1 @@
+There is a pole in a lake . NUMBER_0 of the pole is in the ground , another NUMBER_1 of it is covered with water , and NUMBER_2 feet of it is out of the water . What is the total length of the pole in feet ?

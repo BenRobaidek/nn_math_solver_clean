@@ -1,0 +1,1 @@
+Cashews sell for NUMBER_0 dollars a pound and peanuts sell for NUMBER_1 dollars a pound . How many pounds of peanuts and cashews would you use to make NUMBER_2 pounds of a mixure that sells for NUMBER_3 dollars ?

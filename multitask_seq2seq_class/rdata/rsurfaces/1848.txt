@@ -1,0 +1,1 @@
+If apples cost NUMBER_0 dollars for NUMBER_1 pounds , what is the cost , at the same rate , of NUMBER_2 pounds of apples ?

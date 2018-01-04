@@ -1,0 +1,1 @@
+White t-shirts can be purchased in packages of NUMBER_0 . If PERSON_0 buys NUMBER_1 packages , how many white t-shirts will Mom have ?

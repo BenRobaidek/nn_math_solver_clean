@@ -1,0 +1,1 @@
+Assume that the Dell Computer Corp. has increased its output of computers by NUMBER_0 computers per month . This amount represents an NUMBER_1 % increase over last years production . Find the monthly output last year .

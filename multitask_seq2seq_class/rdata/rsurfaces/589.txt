@@ -1,0 +1,1 @@
+kevin bought NUMBER_0 muffins and a bottle of juice that cost NUMBER_1 dollars . He paid a total of NUMBER_2 dollars . How much did each muffin cost ?

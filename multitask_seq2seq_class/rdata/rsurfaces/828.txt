@@ -1,0 +1,1 @@
+A radiator contains NUMBER_0 quarts of a NUMBER_1 % antifreeze solution . How much anitfreeze should be drained and replaced with pure antifreeze to yield a NUMBER_2 % solution ?

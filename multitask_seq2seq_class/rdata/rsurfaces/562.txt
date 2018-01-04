@@ -1,0 +1,1 @@
+One number is NUMBER_0 less than NUMBER_1 times a second number . If NUMBER_2 more than twice the first number is decreased by the NUMBER_3 , the result is NUMBER_4 . Find both numbers .

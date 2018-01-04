@@ -1,0 +1,1 @@
+A swim team has NUMBER_0 times as many girls as boys . There are a total of NUMBER_1 people on the swim team . How many girls and boys are their on the team ?

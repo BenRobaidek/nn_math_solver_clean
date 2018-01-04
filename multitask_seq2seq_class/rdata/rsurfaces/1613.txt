@@ -1,0 +1,1 @@
+A two digit number is NUMBER_0 less than seven times the sum of its digits . If the digits are reversed , the new number is NUMBER_1 less than the original number . What is the original number ?

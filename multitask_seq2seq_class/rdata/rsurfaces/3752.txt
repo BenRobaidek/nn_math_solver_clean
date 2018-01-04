@@ -1,0 +1,1 @@
+Mrs. PERSON_0 bought an ice cream cone for NUMBER_0 cents . How much would NUMBER_1 ice cream cones cost ?

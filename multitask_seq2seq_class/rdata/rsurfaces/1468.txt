@@ -1,0 +1,1 @@
+PERSON_0 is one year older than NUMBER_0 times PERSON_1 's age . PERSON_2 is NUMBER_1 times as old as PERSON_0 . If PERSON_2 is NUMBER_2 , then how old are PERSON_0 and PERSON_3 ?

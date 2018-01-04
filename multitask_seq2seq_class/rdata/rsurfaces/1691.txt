@@ -1,0 +1,1 @@
+Twice a number decreased by NUMBER_0 is NUMBER_1 times the sum of the number and NUMBER_2 times the number . What is the number ?

@@ -1,0 +1,1 @@
+PERSON_0 took a look at his books as well . If PERSON_0 has NUMBER_0 books in each of his NUMBER_1 bookshelves , how many books does he have in total ?

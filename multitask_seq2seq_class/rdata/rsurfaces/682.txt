@@ -1,0 +1,1 @@
+NUMBER_0 times the sum of a number and NUMBER_1 yields the same result as the twice the same number decreased by NUMBER_2 . What is the number ?

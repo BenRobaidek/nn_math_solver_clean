@@ -1,0 +1,1 @@
+NUMBER_0 times 1 number equals twice a second number . Twice the first number is NUMBER_1 more than the NUMBER_2 number . Find the smaller and the larger number .

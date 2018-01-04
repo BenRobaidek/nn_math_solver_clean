@@ -1,0 +1,1 @@
+Tickets cost NUMBER_0 dollars for students , and NUMBER_1 dollars for general admission . You sell NUMBER_2 tickets and collect NUMBER_3 dollars . How many student tickets did you sell , and how many general admission tickets did you sell ?

@@ -1,0 +1,1 @@
+To make NUMBER_0 kilograms of aluminum alloy with NUMBER_1 % aluminum , a scientist wants to use 2 metals with NUMBER_2 % and NUMBER_3 % aluminum content respectively . How many kilograms of NUMBER_4 % aluminum and how many kilograms of NUMBER_5 % aluminum should she mix ?

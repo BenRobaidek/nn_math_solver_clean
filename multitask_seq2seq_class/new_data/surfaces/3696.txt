@@ -1,0 +1,1 @@
+PERSON_0 had some noodles . He gave NUMBER_0 noodles to PERSON_1 . Now PERSON_0 only has NUMBER_1 noodles . How many noodles did PERSON_0 have to begin with ?

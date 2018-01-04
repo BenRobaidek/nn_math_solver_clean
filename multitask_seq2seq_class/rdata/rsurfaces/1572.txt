@@ -1,0 +1,1 @@
+PERSON_0 has two solutions with strengths of NUMBER_0 % and NUMBER_1 % . Find the amount of the NUMBER_2 % and NUMBER_3 % solution if he mixes to get NUMBER_4 liters of NUMBER_5 % saline solution ?

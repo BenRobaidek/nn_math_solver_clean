@@ -1,0 +1,1 @@
+If PERSON_0 can mix 20 drinks in NUMBER_0 minutes , Sue can mix 20 drinks in NUMBER_1 minutes , and PERSON_1 can mix 20 drinks in NUMBER_2 minutes , how much time , in minutes , will it take all 3 of them to mix 20 drinks if they work together ?

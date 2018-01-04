@@ -1,0 +1,1 @@
+PERSON_0 's bus ride to school is NUMBER_0 mile and PERSON_1 's bus ride is NUMBER_1 mile . How much longer is PERSON_0 's bus ride than PERSON_1 's ?

@@ -1,0 +1,1 @@
+A pet store had NUMBER_0 siamese cats and NUMBER_1 house cats . During a sale they sold NUMBER_2 cats . How many cats do they have left ?

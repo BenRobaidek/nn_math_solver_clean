@@ -1,0 +1,1 @@
+PERSON_0 PERSON_1 travelled NUMBER_0 miles east of LOCATION_0 LOCATION_1 . For most of the trip he travelled NUMBER_1 miles per hour , but for one period of time he was slowed to NUMBER_2 miles per hour due to a major accident . If the total time of travel was NUMBER_3 hours , how many miles did he drive at the reduced speed ?

@@ -1,0 +1,1 @@
+Mrs. PERSON_0 needs to share $ NUMBER_0 equally among NUMBER_1 total people . How much money will each person get ?

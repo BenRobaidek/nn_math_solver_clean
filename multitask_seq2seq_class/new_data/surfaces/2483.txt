@@ -1,0 +1,1 @@
+At the town carnival PERSON_0 rode the ferris wheel NUMBER_0 times and the bumper cars NUMBER_1 times . If each ride cost NUMBER_2 tickets , how many tickets did he use ?

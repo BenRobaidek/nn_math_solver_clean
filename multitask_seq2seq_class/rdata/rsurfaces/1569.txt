@@ -1,0 +1,1 @@
+A person is choosing between 2 cellular phone plans . One has a monthly fee of NUMBER_0 dollars for NUMBER_1 minutes plus NUMBER_2 dollars for each minute over the NUMBER_3 . The second plan has a monthly fee of NUMBER_4 dollars for NUMBER_5 minutes plus NUMBER_6 dollars for each minute over the NUMBER_7 . After how many minutes used are the monthly costs of the plans equal ?

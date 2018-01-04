@@ -1,0 +1,1 @@
+A treasure hunter discovered a buried treasure chest filled with a total of NUMBER_0 gems . NUMBER_1 of the gems were diamonds , and the rest were rubies . How many of the gems were rubies ?

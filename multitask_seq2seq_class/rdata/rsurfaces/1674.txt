@@ -1,0 +1,1 @@
+PERSON_0 has NUMBER_0 coins that are dimes and quarters . Together they equal NUMBER_1 dollars . How many dimes and how many quarters does she have ?

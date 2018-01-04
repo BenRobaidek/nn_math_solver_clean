@@ -1,0 +1,1 @@
+For a matinee , a movie theater charges NUMBER_0 dollars for children and NUMBER_1 dollars for adults . At today 's matinee , there are NUMBER_2 more children than adults and the total receipts are NUMBER_3 dollars . How many children are at today 's matinee ?

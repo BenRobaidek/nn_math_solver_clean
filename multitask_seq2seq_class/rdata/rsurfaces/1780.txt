@@ -1,0 +1,1 @@
+NUMBER_0 dollars is divided among NUMBER_1 people , a , b , and c , so that a gets NUMBER_2 times as much as c , and b gets twice as much as c . How much does c get ?

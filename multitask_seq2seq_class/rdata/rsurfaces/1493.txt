@@ -1,0 +1,1 @@
+PERSON_0 's present age is NUMBER_0 of PERSON_1 's present age . In NUMBER_1 years , PERSON_0 's age will be NUMBER_2 of PERSON_1 's age . Find their present ages .

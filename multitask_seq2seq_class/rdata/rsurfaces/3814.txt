@@ -1,0 +1,1 @@
+I have NUMBER_0 cents to buy candy . If each gumdrop costs NUMBER_1 cents , how many gumdrops can I buy ?

@@ -1,0 +1,1 @@
+At a pie-eating contest , PERSON_0 got through NUMBER_0 of a pie before time was called ; PERSON_1 finished just NUMBER_1 of a pie . How much more pie did PERSON_0 eat than PERSON_1 ?

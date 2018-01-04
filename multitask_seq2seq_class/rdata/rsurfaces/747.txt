@@ -1,0 +1,1 @@
+An art dealer sold 2 artworks for NUMBER_0 dollars thereby making a profit of NUMBER_1 % on the first work and NUMBER_2 % profit on the other , whereas if he had approached any exhibition he would have sold them together for NUMBER_3 dollars with a profit of NUMBER_4 % on the first and NUMBER_5 % on the other artwork . Find the actual cost of each artwork .

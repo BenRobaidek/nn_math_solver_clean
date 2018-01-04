@@ -1,0 +1,1 @@
+A chef needs to cook NUMBER_0 potatoes . He has already cooked NUMBER_1 . If each potato takes NUMBER_2 minutes to cook , how long will it take him to cook the rest ?

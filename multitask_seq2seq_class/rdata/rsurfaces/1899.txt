@@ -1,0 +1,1 @@
+The first minute of a telephone call costs NUMBER_0 cents and each additional minute NUMBER_1 cents . What is the cost of a NUMBER_2 minute telephone call ?

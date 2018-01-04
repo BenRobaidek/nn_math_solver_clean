@@ -1,0 +1,1 @@
+PERSON_0 has two solutions available in the lab , one with NUMBER_0 % alcohol and another with NUMBER_1 % alcohol . How many gallons of the NUMBER_2 % and the NUMBER_3 % solution should he mix together to obtain NUMBER_4 gallons of a solution that contains NUMBER_5 % alcohol ?

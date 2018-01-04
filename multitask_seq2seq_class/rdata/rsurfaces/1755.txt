@@ -1,0 +1,1 @@
+Mr. and Mrs. PERSON_0 invested some money at NUMBER_0 % simple interest and some money at NUMBER_1 % simple interest . In the second investment they put NUMBER_2 dollars more than they put in the first . If the income from both investments for 1 year was NUMBER_3 dollars , then how much did they invest at NUMBER_4 % , in dollars ? How much did they invest at NUMBER_5 % ?

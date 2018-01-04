@@ -1,0 +1,1 @@
+PERSON_0 had $ NUMBER_0 . Then she saved $ NUMBER_1 from her allowance and spent $ NUMBER_2 on a comic book and $ NUMBER_3 on a puzzle . How much money does PERSON_0 have left ?

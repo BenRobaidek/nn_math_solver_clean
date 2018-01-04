@@ -1,0 +1,1 @@
+PERSON_0 did a running drill to get in shape for soccer season . First , PERSON_0 ran NUMBER_0 mile . Then she ran NUMBER_1 mile and NUMBER_2 mile . How many miles did PERSON_0 run in total ?

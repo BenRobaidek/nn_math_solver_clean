@@ -1,0 +1,1 @@
+Working together , PERSON_0 , PERSON_1 , and PERSON_2 can process NUMBER_0 orders per day for their business . PERSON_1 can process NUMBER_1 more orders per day than PERSON_0 can process . PERSON_2 can process NUMBER_2 fewer orders per day than PERSON_1 and PERSON_0 combined . Find the number of orders that each person can process per day .

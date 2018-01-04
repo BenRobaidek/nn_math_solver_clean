@@ -1,0 +1,1 @@
+The room numbers of NUMBER_0 adjacent classrooms are NUMBER_1 consecutive even numbers . If their sum is NUMBER_2 , find the classroom numbers .

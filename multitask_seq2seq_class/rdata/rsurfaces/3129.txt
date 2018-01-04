@@ -1,0 +1,1 @@
+PERSON_0 has NUMBER_0 guests coming to her Halloween party . Each table will hold NUMBER_1 guests . How many tables will PERSON_0 need ?

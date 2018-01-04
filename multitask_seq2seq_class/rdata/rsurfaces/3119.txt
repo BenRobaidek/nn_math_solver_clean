@@ -1,0 +1,1 @@
+PERSON_0 's aunt gave her $ NUMBER_0 to spend on clothes at the mall . She bought NUMBER_1 shirts that cost $ NUMBER_2 each and a pair of pants that cost $ NUMBER_3 . How much money does PERSON_0 have left to buy more clothes ?

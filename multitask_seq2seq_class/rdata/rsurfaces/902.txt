@@ -1,0 +1,1 @@
+An airplane flew for NUMBER_0 hours with a tail wind of NUMBER_1 kilometers per hour . The return flight against the same wind took NUMBER_2 hours . Find the speed of the airplane in still air .

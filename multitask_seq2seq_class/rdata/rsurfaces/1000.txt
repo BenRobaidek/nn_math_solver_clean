@@ -1,0 +1,1 @@
+PERSON_0 bought NUMBER_0 pounds of nuts at a party . The total cost was NUMBER_1 dollars . The peanuts cost NUMBER_2 dollars per pound and the almounds cost NUMBER_3 dollars per pound . How many pounds of peanuts did max buy ? How many pounds of almounds did PERSON_0 buy ?

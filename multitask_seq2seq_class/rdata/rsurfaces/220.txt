@@ -1,0 +1,1 @@
+During a canned food drive , items were sorted into bins . The drive resulted in NUMBER_0 bin of soup , NUMBER_1 bin of vegetables , and NUMBER_2 bin of pasta . Altogether , how many bins would the canned food take up ?

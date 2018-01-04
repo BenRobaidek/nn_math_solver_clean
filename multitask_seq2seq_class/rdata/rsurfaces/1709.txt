@@ -1,0 +1,1 @@
+2 trains leave simultaneously traveling on the same track in opposite directions at speeds of NUMBER_0 and NUMBER_1 miles per hour . How many hours will it take before they are NUMBER_2 miles apart ?

@@ -1,0 +1,1 @@
+A writing workshop enrolls novelists and poets in a ratio of NUMBER_0 to NUMBER_1 . There are NUMBER_2 people at the workshop . How many novelists are there ? How many poets are there ?

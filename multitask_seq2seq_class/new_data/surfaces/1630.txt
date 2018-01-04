@@ -1,0 +1,1 @@
+PERSON_0 invested NUMBER_0 dollars , part at NUMBER_1 % and the rest at NUMBER_2 % per year . How much did she invest at NUMBER_3 % and NUMBER_4 % if her total return per year on the investments was NUMBER_5 dollars ?

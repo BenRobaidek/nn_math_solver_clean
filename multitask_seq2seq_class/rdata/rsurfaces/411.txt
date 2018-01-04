@@ -1,0 +1,1 @@
+How many yards of material from a NUMBER_0 yard length of cloth remains after NUMBER_1 pieces each NUMBER_2 yards long and NUMBER_3 pieces each NUMBER_4 long are removed ?

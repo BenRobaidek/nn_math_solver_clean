@@ -1,0 +1,1 @@
+The carpenter saws a board that is NUMBER_0 feet long into NUMBER_1 pieces . NUMBER_2 piece is to be NUMBER_3 foot longer than twice the length of the shorter piece . Find the Length of each piece .

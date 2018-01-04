@@ -1,0 +1,1 @@
+A washer and a dryer cost NUMBER_0 dollars combined . The price of the washer is NUMBER_1 times the price of the dryer . What is the cost of the dryer ?

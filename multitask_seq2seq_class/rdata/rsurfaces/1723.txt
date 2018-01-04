@@ -1,0 +1,1 @@
+A number of 2 digits is such that NUMBER_0 times the unit digit is NUMBER_1 greater than thrice the NUMBER_2 's digit . When the digit are reversed , the number is increased by NUMBER_3 . Find the number .

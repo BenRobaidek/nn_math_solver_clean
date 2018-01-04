@@ -1,0 +1,1 @@
+There were a total of NUMBER_0 football games this year . PERSON_0 missed NUMBER_1 of the games . How many football games did PERSON_0 go to in all ?

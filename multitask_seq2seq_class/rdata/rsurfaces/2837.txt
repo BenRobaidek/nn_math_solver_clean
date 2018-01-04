@@ -1,0 +1,1 @@
+PERSON_0 was selling his old games . He started out with NUMBER_0 but sold NUMBER_1 of them . He packed the rest up putting NUMBER_2 games into each box . How many boxes did he have to use ?

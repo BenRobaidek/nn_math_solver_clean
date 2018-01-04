@@ -1,0 +1,1 @@
+One canned juice drink is NUMBER_0 % orange juice ; another is NUMBER_1 % orange juice . How many liters of each should be mixed together in order to get NUMBER_2 liters that is NUMBER_3 % orange juice ?

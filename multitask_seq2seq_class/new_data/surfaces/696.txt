@@ -1,0 +1,1 @@
+A painting is NUMBER_0 inches tall and NUMBER_1 inches wide . A print of the painting is NUMBER_2 inches tall , how wide is the print in inches ?

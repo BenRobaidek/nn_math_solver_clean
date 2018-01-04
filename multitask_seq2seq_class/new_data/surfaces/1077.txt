@@ -1,0 +1,1 @@
+Red cards are worth NUMBER_0 credits , while blue cards are worth NUMBER_1 credits . You need any combination of NUMBER_2 cards to play a game . With NUMBER_3 credits to buy cards , how many blue cards will you have when you play ? how many red cards will you have when you play ?

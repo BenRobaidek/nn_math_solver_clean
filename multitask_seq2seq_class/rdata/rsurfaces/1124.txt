@@ -1,0 +1,1 @@
+Twice the sum of a number and NUMBER_0 is NUMBER_1 less than NUMBER_2 times the number . Find the number .

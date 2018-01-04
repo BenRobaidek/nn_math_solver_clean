@@ -1,0 +1,1 @@
+A tank has supply pipe A and an exhaust pipe B. Pipe A takes NUMBER_0 minutes less to fill a tank than pipe B takes to empty it . When both are open , the tank is filled in NUMBER_1 minutes . How many minutes does it take for pipe A to fill the tank when pipe B is closed ?

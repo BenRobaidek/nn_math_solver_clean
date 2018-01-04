@@ -1,0 +1,1 @@
+A three-digit number , which is divisible by NUMBER_0 , has a hundreds digit that is NUMBER_1 less than its tens digit . The number also is NUMBER_2 times the sum of its digits . Find the number .

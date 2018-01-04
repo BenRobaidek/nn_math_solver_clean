@@ -1,0 +1,1 @@
+A jar containing pennies , nickels and dimes is worth NUMBER_0 dollars . The number of dimes is NUMBER_1 less than twice the number of pennies and there is an equal number of dimes and nickels . How many nickels are in the jar ?

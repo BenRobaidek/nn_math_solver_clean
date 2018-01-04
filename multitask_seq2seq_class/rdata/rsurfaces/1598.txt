@@ -1,0 +1,1 @@
+A disc jockey now charges NUMBER_0 dollars for a full night of music . He recently decreased his price by NUMBER_1 % . What did he charge before the decrease , in dollars ?

@@ -1,0 +1,1 @@
+1 evening , a restaurant served a total of NUMBER_0 loaf of wheat bread and NUMBER_1 loaf of white bread . How many loaves were served in all ?

@@ -1,0 +1,1 @@
+A large bag of balls was kept under PERSON_0 's bed . Her mom placed the balls in bags for children in foster homes . If every bag can contain NUMBER_0 balls and PERSON_0 has NUMBER_1 balls , how many bags will be used ?

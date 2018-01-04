@@ -1,0 +1,1 @@
+If PERSON_0 can paint a house in NUMBER_0 hours and PERSON_1 in NUMBER_1 hours , how long will it take for both of them to paint the house together ?

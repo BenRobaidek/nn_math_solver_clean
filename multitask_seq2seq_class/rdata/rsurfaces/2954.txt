@@ -1,0 +1,1 @@
+PERSON_0 's shelves hold NUMBER_0 books each . How many shelves will PERSON_0 need if PERSON_0 has NUMBER_1 books ?

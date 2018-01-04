@@ -1,0 +1,1 @@
+In one week , PERSON_0 's family drank NUMBER_0 of a carton of regular milk and NUMBER_1 of a carton of soy milk . How much milk did they drink in all ?

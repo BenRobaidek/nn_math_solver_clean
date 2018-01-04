@@ -1,0 +1,1 @@
+A car was worth NUMBER_0 dollars when it was NUMBER_1 year old . It was worth NUMBER_2 dollars when it was NUMBER_3 years old . If the age of the car and its worth have a linear relationship , how much will the car be worth when it it is NUMBER_4 years old ?

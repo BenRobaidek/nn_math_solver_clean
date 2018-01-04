@@ -1,0 +1,1 @@
+PERSON_0 's mom baked NUMBER_0 cookies . PERSON_1 's dad baked NUMBER_1 cookies . They both brought them to school for a party . How many cookies did they have altogether ?

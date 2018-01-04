@@ -1,0 +1,1 @@
+A house is worth NUMBER_0 dollars . That is NUMBER_1 % of the original price . What was the original price ?

@@ -1,0 +1,1 @@
+A petroleum company has two different sources of crude oil . The first source provides crude oil that is NUMBER_0 % hydrocarbons and the second one provides crude oil that is NUMBER_1 % hydrocarbons . In order to obtain NUMBER_2 gallons of crude oil that is NUMBER_3 % hydrocarbons , how many gallons of crude oil must be used from each of the two sources ?

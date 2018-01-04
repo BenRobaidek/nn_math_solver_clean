@@ -1,0 +1,1 @@
+When a bathtub faucet is turned on , it can fill a tub in NUMBER_0 minutes . When the drain is open , a full bathtub can empty in NUMBER_1 minutes . How many minutes would it take for the bathtub to fill if the water were turned on with the drain left open ?

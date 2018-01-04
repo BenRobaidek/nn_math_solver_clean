@@ -1,0 +1,1 @@
+Wild and Crazy Productions wants to purchase a new CD producing machine . It 's cost is NUMBER_0 dollars . If their labor and other unit costs are NUMBER_1 dollars per CD and they can sell the CD for NUMBER_2 dollars each , how many must they manufacture before they pay for their new machine ?

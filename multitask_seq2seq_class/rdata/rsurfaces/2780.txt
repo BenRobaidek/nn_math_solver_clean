@@ -1,0 +1,1 @@
+A store had NUMBER_0 coloring books in stock . They ended up putting them on sale and getting rid of NUMBER_1 of them . The put the ones they still had onto shelves with NUMBER_2 on each shelf . How many shelves did they use ?

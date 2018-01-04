@@ -1,0 +1,1 @@
+Some insects called aphids attack a large farm . In response , the farmer releases ladybugs onto the fields . There are NUMBER_0 ladybugs with spots and NUMBER_1 ladybugs without spots . How many ladybugs are there in all ?

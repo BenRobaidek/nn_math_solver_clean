@@ -1,0 +1,1 @@
+PERSON_0 has NUMBER_0 cards . She gives NUMBER_1 to PERSON_1 . How many cards will PERSON_0 have ?

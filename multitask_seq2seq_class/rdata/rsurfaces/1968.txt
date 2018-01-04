@@ -1,0 +1,1 @@
+If a number is subtracted from NUMBER_0 more than twice the number , the result is NUMBER_1 . Find the number .

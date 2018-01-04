@@ -1,0 +1,1 @@
+PERSON_0 owns the Wafting Pie Company . This morning , her employees used NUMBER_0 eggs to bake pumpkin pies . If her employees used a total of NUMBER_1 eggs today , how many eggs did they use in the afternoon ?

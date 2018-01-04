@@ -1,0 +1,1 @@
+NUMBER_0 people are watching a movie in a theater . The theater has NUMBER_1 seats . How many seats are empty in the theater ?

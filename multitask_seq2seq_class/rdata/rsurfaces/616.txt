@@ -1,0 +1,1 @@
+A car rents for NUMBER_0 dollars per day plus NUMBER_1 cents per mile . You are on a daily budget of NUMBER_2 dollars . What mileage can you go and stay within your budget ?

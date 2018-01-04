@@ -1,0 +1,1 @@
+In a baseball game NUMBER_0 the number of runs scored by the winning team exceeds NUMBER_1 by as much as NUMBER_2 the losing teams runs exceeds NUMBER_3 . If the total runs scored is NUMBER_4 , what is the final score ?

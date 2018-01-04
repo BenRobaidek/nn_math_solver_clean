@@ -1,0 +1,1 @@
+PERSON_0 and PERSON_1 plan to leave their houses at the same time , roller blade towards each other , and meet for lunch after NUMBER_0 hours on the road . PERSON_0 can maintain a speed of NUMBER_1 miles per hour , which is NUMBER_2 % of PERSON_1 's speed . If they meet exactly as planned , what is the distance in miles between their houses ?

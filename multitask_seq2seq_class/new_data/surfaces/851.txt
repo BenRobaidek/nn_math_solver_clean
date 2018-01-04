@@ -1,0 +1,1 @@
+Tickets for adults are NUMBER_0 dollars and tickets for children are NUMBER_1 dollars . How many adult tickets and children 's tickets were purchased if NUMBER_2 tickets were bought for NUMBER_3 dollars ?

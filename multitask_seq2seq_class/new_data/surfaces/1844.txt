@@ -1,0 +1,1 @@
+A NUMBER_0 inch board is cut into NUMBER_1 pieces . One piece is NUMBER_2 times the length of the other . What is the length of the shorter piece , in inches ? What is the length of the longer piece ?

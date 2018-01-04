@@ -1,0 +1,1 @@
+There are NUMBER_0 bananas in PERSON_0 's banana collection . If the bananas are organized into NUMBER_1 groups , how big is each group ?

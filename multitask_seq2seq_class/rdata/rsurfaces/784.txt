@@ -1,0 +1,1 @@
+PERSON_0 has NUMBER_0 more than twice as many rocks in his wagon as PERSON_1 has in his wagon . If he gives PERSON_1 NUMBER_1 rocks , he will have NUMBER_2 more than PERSON_1 . How many rocks does PERSON_0 and PERSON_1 have in his wagon right now ?

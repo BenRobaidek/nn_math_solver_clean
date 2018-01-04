@@ -1,0 +1,1 @@
+Repair costs exceeds NUMBER_0 % of a car 's value , but the car sustains NUMBER_1 dollars worth of damages . What is the car 's value ?

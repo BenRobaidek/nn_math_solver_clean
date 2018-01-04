@@ -1,0 +1,1 @@
+PERSON_0 loves trading cards . He bought NUMBER_0 packs of football cards for $ NUMBER_1 each , a pack of Pokemon cards for $ NUMBER_2 , and a deck of baseball cards for $ NUMBER_3 . How much did PERSON_0 spend on cards ?

@@ -1,0 +1,1 @@
+A collection of dimes and quarters is worth NUMBER_0 dollars . There are NUMBER_1 coins in all . How many dimes are there ? How many quarters ?

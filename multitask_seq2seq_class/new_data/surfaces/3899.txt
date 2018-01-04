@@ -1,0 +1,1 @@
+PERSON_0 needs to read a NUMBER_0 page book for school . He has already read NUMBER_1 pages . How many pages does he have left to read ?

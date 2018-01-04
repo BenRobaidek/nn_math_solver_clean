@@ -1,0 +1,1 @@
+PERSON_0 starts with NUMBER_0 pencils . He gives NUMBER_1 to PERSON_1 . How many pencils does PERSON_0 end with ?

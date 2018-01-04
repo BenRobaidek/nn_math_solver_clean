@@ -1,0 +1,1 @@
+NUMBER_0 of PERSON_0 's income each month goes to taxes . If she pays NUMBER_1 dollars in taxes each month , what is her monthly income in dollars ?

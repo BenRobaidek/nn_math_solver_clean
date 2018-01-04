@@ -1,0 +1,1 @@
+Christian 's mother prepared lemonade . Every pitcher of lemonade can serve NUMBER_0 glasses . If she was able to serve NUMBER_1 glasses of lemonade , how many pitchers of lemonade did she prepare ?

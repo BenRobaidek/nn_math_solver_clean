@@ -1,0 +1,1 @@
+A student runs NUMBER_0 times as fast as she walks . She walked for NUMBER_1 hours and ran for NUMBER_2 hours and altogether went NUMBER_3 kilometers . What was her speed of walking ?

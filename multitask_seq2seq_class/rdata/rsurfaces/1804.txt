@@ -1,0 +1,1 @@
+How many liters of water must be mixed with NUMBER_0 liters of a NUMBER_1 % alcohol mixture so that the alcohol content of the mixture is reduced to NUMBER_2 % ?

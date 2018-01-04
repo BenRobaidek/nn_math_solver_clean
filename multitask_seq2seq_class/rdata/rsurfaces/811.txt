@@ -1,0 +1,1 @@
+A total of NUMBER_0 dollars was invested in two bond mutual funds , a junk bond fund and a government bond fund . The junk fund is risky and yields NUMBER_1 % interest . The safer government bond fund yields only NUMBER_2 % . The year 's total income from the two investments was NUMBER_3 dollars . How much was invested in each fund ?

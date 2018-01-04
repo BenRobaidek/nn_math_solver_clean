@@ -1,0 +1,1 @@
+A new virus is released on the internet . The administrator of a department 's LAN is given five minutes by a manager to estimate the impact . The administrator samples NUMBER_0 of the PCs connected to the LAN and finds that NUMBER_1 are infected . Use a proportion to estimate the number of infected PCs if there are a total of NUMBER_2 PCs connected to the LAN .

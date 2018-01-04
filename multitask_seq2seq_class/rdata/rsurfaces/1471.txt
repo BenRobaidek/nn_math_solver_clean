@@ -1,0 +1,1 @@
+If a pair of shoes that cost NUMBER_0 dollars was marked down by NUMBER_1 % , how much do they cost now ?

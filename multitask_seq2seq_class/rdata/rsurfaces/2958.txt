@@ -1,0 +1,1 @@
+PERSON_0 , PERSON_1 , PERSON_2 , and PERSON_3 each bought NUMBER_0 baseball cards , which come in packs of NUMBER_1 . How many packs of baseball cards do they have in all ?

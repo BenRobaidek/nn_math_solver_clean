@@ -1,0 +1,1 @@
+Tickets for a ballet performance cost NUMBER_0 dollars for adults and NUMBER_1 dollars for students . If total receipts from the sale of NUMBER_2 tickets were NUMBER_3 dollars , how many adult tickets were sold ? How many student tickets were sold ?

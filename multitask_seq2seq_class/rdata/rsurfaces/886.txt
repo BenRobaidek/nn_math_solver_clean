@@ -1,0 +1,1 @@
+PERSON_0 can rake the leaves in her yard in NUMBER_0 hours . Her brother can do the job in NUMBER_1 hours . Working together , how many hours will it take them to do the job ?

@@ -1,0 +1,1 @@
+Mrs. PERSON_0 wants to make a border around her garden . She needs NUMBER_0 rocks to complete the border . She has NUMBER_1 rocks . How many more rocks does she need to complete the border ?

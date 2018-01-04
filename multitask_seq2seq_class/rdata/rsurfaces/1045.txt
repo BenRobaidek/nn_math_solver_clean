@@ -1,0 +1,1 @@
+How many days will it take PERSON_0 and PERSON_1 , together , to plow a field which PERSON_0 can plow alone in NUMBER_0 days and PERSON_1 can plow alone in NUMBER_1 days ?

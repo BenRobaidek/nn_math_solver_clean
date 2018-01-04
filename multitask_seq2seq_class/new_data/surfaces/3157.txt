@@ -1,0 +1,1 @@
+In Shannon 's apartment complex , NUMBER_0 of the apartments are one-bedroom apartments and NUMBER_1 are two-bedroom apartments . What fraction of the apartments are either one - or two-bedroom apartments ?

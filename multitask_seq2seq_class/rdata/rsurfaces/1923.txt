@@ -1,0 +1,1 @@
+Flying with the wind , a bird was able to make NUMBER_0 kilometers per hour . If the wind was NUMBER_1 times as strong and the bird flies against it , it could make only NUMBER_2 kilometers per hour . Find the velocity of the wind in kilometers per hour . Find the velocity of the bird .

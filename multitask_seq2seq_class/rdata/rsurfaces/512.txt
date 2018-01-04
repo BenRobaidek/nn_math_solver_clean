@@ -1,0 +1,1 @@
+Some students planned for a get-together . The budget for food was NUMBER_0 dollars . NUMBER_1 of the students failed to come because of the distance and therefore the cost of food for each member increased by NUMBER_2 dollars . How many students attended the get-together ?

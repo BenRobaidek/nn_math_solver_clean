@@ -1,0 +1,1 @@
+A man goes into a grocery store and buys a grapefruit and a toy ball . A NUMBER_0 % tax is applied to the price of non-food items . If the total bill is NUMBER_1 dollars , including NUMBER_2 dollars in tax on the toy ball , what are the prices , in dollars , of the grapefruit and the ball ?

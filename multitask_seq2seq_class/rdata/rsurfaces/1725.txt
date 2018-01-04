@@ -1,0 +1,1 @@
+Suppose you invest NUMBER_0 dollars in equipment to put pictures on T-shirts . You buy each T-shirt for NUMBER_1 dollars . After you have placed the pictures on a shirt , you sell it for NUMBER_2 dollars . How many T-shirts must you sell to break even ?

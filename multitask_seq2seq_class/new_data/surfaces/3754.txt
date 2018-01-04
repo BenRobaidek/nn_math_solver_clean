@@ -1,0 +1,1 @@
+Mrs. PERSON_0 and her sister drove to a concert NUMBER_0 miles away . They drove NUMBER_1 miles and then stopped for gas . Her sister put 28 gallons of gas in the car . How many miles did they have left to drive ?

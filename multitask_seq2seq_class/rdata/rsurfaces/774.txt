@@ -1,0 +1,1 @@
+Hockey teams receive NUMBER_0 points for a win and NUMBER_1 point for a tie . The wild cats once won a championship with NUMBER_2 points . They won NUMBER_3 more games than they tied . How many wins and how many ties did the Wildcats have ?

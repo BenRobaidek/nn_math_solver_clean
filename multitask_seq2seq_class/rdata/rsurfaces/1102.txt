@@ -1,0 +1,1 @@
+A caterer charges a fixed cost for preparing dinner plus an additional cost for each person served . You know the cost for NUMBER_0 students will be NUMBER_1 dollars and the cost for NUMBER_2 students will be NUMBER_3 dollars . Find the caterer 's fixed cost and the cost per student served .

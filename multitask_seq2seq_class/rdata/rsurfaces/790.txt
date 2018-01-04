@@ -1,0 +1,1 @@
+NUMBER_0 Pairs of jeans and NUMBER_1 shirts costs NUMBER_2 dollars . The cost of NUMBER_3 jeans and NUMBER_4 shirts is NUMBER_5 dollars . Find the cost of each pair of jeans and each shirt .

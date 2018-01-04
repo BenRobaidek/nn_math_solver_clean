@@ -1,0 +1,1 @@
+PERSON_0 was planting vegetables in her garden . She started with NUMBER_0 seeds and planted NUMBER_1 of them in the big garden and in each of her small gardens put NUMBER_2 seeds each . How many small gardens did PERSON_0 have ?

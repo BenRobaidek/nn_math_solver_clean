@@ -1,0 +1,1 @@
+A tennis racket that regularly sells for NUMBER_0 dollars is on sale for NUMBER_1 % off the regular price . What is the sale price , in dollars ?

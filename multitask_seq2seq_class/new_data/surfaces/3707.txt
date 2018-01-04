@@ -1,0 +1,1 @@
+Mrs. PERSON_0 has NUMBER_0 red roses . Mrs. PERSON_1 has NUMBER_1 . How many more red roses does Mrs. PERSON_0 have than Mrs. PERSON_1 ?

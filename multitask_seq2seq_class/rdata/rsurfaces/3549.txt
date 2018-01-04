@@ -1,0 +1,1 @@
+PERSON_0 starts with NUMBER_0 bottle caps . She shares NUMBER_1 with PERSON_1 . How many bottle caps does PERSON_0 end with ?

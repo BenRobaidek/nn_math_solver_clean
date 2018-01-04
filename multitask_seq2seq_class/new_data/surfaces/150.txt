@@ -1,0 +1,1 @@
+A multi-national corporation has NUMBER_0 part-time employees and NUMBER_1 full-time employees . How many employees work for the corporation ?

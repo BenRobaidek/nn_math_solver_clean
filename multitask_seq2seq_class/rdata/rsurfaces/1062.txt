@@ -1,0 +1,1 @@
+In college there are NUMBER_0 times as many students as professors . If together the students and professors number NUMBER_1 , how many students are there in college ?

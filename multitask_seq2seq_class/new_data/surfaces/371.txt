@@ -1,0 +1,1 @@
+PERSON_0 has NUMBER_0 red balloons , PERSON_1 has NUMBER_1 red balloons , and PERSON_2 has NUMBER_2 red balloons . The balloons cost NUMBER_3 dollars . How many red balloons do they have in all ?

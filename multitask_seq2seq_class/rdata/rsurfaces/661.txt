@@ -1,0 +1,1 @@
+Find the largest of NUMBER_0 consecutive even integers such that NUMBER_1 times the larger added to the smaller is NUMBER_2 .

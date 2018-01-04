@@ -1,0 +1,1 @@
+A painter can do a given job in NUMBER_0 hours . Her helper can do the same job in NUMBER_1 hours . The painter begins the work and after NUMBER_2 hours is joined by the helper . In how many hours will they complete the job ?

@@ -1,0 +1,1 @@
+PERSON_0 went to the store NUMBER_0 times last month . He buys NUMBER_1 bananas each time he goes to the store . How many bananas did PERSON_0 buy last month ?

@@ -1,0 +1,1 @@
+Tickets for a play at the community theater cost NUMBER_0 dollars for an adult and NUMBER_1 dollars for a child . If NUMBER_2 tickets were sold and the total receipts were NUMBER_3 dollars , how many adult tickets and child tickets were sold ?

@@ -1,0 +1,1 @@
+When you reverse the digits in a certain 2 digit number you decrease its value by NUMBER_0 . Find the number if the sum of its digits is NUMBER_1 .

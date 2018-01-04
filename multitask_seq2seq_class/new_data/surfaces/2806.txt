@@ -1,0 +1,1 @@
+For Halloween PERSON_0 received NUMBER_0 pieces of candy . She ate NUMBER_1 pieces then placed the rest into piles with NUMBER_2 in each pile . How many piles could she make ?

@@ -1,0 +1,1 @@
+PERSON_0 has NUMBER_0 peanuts . Kenya has NUMBER_1 more than PERSON_0 . How many peanuts does Kenya have ?

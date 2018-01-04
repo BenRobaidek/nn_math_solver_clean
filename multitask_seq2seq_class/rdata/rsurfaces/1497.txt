@@ -1,0 +1,1 @@
+How many pounds of a certain alloy containing NUMBER_0 percent must be melted with another alloy containing NUMBER_1 percent silver to obtain NUMBER_2 pounds of an alloy containing NUMBER_3 percent silver ?

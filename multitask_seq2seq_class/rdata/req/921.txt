@@ -1,0 +1,1 @@
+0.05 * VAR_0 + 0.1 * VAR_1 + 0.25 * VAR_2 = NUMBER_0 VAR_3 = 2.0 * VAR_0 VAR_4 = 0.5 * VAR_1 VAR_5 = VAR_2 0.05 * VAR_3 + 0.1 * 0.5 * VAR_4 + 0.25 * VAR_5 = NUMBER_1 VAR_0 + VAR_1 + VAR_2 = NUMBER_2

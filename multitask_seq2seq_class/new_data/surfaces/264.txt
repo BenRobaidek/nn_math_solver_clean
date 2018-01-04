@@ -1,0 +1,1 @@
+PERSON_0 had NUMBER_0 grams of pepper . Then he used NUMBER_1 grams of the pepper to make some scrambled eggs . How much pepper does PERSON_0 have ?

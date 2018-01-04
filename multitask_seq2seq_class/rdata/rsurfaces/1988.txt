@@ -1,0 +1,1 @@
+A boat can move at NUMBER_0 miles per hour in still water . If it can travel NUMBER_1 miles downstream in the same time , it can travel NUMBER_2 miles upstream . Determine the rate of the stream .

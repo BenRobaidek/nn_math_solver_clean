@@ -1,0 +1,1 @@
+Two investments earn an annual income of NUMBER_0 dollars . One investment earns an annual simple interest rate of NUMBER_1 % , and the other investment earns an annual simple interest rate of NUMBER_2 % . The amount invested is NUMBER_3 dollars . How much money is invested in the first investment and second investment respectively ?

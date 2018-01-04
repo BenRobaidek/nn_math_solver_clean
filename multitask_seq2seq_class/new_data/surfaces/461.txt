@@ -1,0 +1,1 @@
+At the carnival , tickets for the rides are NUMBER_0 dollars each , or you can buy an armband for NUMBER_1 dollars and ride unlimited for one night . At how many rides does the armband cost the same as buying individual tickets ?

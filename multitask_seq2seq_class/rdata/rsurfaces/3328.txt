@@ -1,0 +1,1 @@
+Mrs. PERSON_0 read NUMBER_0 books . Each book had NUMBER_1 chapters in it . How many chapters did Mrs. PERSON_0 read ?

@@ -1,0 +1,1 @@
+A theater has a seating capacity of NUMBER_0 and charges NUMBER_1 dollars for children , NUMBER_2 dollars for students , and NUMBER_3 dollars for adults . At a certain screening with full attendance , there were NUMBER_4 as many adults as children and students combined . The receipts totaled NUMBER_5 dollars . How many children attended the show ?

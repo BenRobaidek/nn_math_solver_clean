@@ -1,0 +1,1 @@
+A vase can hold NUMBER_0 flowers . If you had NUMBER_1 carnations and NUMBER_2 roses , how many vases would you need to hold the flowers ?

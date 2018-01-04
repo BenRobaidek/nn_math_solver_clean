@@ -1,0 +1,1 @@
+PERSON_0 worked NUMBER_0 hours 1 week and earned a NUMBER_1 dollars paycheck . She earns NUMBER_2 times her regular hourly wage for the hours she works in excess of NUMBER_3 . What is PERSON_0 's regular hourly wage in dollars ?

@@ -1,0 +1,1 @@
+White vinegar is a solution of acetic acid in water . There are two strengths of white vinegar , a NUMBER_0 % solution and a NUMBER_1 % solution . How many milliliters of each solution must be mixed to make NUMBER_2 milliliters of a NUMBER_3 % vinegar solution ?

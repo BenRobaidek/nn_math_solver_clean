@@ -1,0 +1,1 @@
+The attendance at a school concert was NUMBER_0 people . Admission cost NUMBER_1 dollars for adults and NUMBER_2 dollars for children . The receipts were NUMBER_3 dollars . How many adults and how many children attended the concert ?

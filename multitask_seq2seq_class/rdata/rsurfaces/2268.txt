@@ -1,0 +1,1 @@
+PERSON_0 had NUMBER_0 dollars . For his birthday he got NUMBER_1 more dollars but spent NUMBER_2 on a new game . How much money does he have now ?

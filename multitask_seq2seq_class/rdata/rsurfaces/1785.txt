@@ -1,0 +1,1 @@
+At a theater , NUMBER_0 tickets were sold . The ticket prices were NUMBER_1 dollars , NUMBER_2 dollars , and NUMBER_3 dollars . The total income from ticket sales was NUMBER_4 dollars . How many tickets of each type were sold if the combined number of NUMBER_5 dollars and NUMBER_6 dollars tickets sold was NUMBER_7 times the number of NUMBER_8 dollars tickets sold ?

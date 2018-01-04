@@ -1,0 +1,1 @@
+NUMBER_0 people attend a banquet at Disney . Residents paid NUMBER_1 dollars and non-residents paid NUMBER_2 dollars . If Disney made NUMBER_3 dollars from ticket sales for the event , how many residents and non-residents attended ?

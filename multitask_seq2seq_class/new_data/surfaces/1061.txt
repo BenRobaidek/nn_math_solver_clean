@@ -1,0 +1,1 @@
+A car costs NUMBER_0 dollars and is NUMBER_1 % off . What was the original price of the car ?

@@ -1,0 +1,1 @@
+A man starts walking for the first week and walks NUMBER_0 miles . Every week he increases the distance by NUMBER_1 miles . How many miles does he walk by the 8th week ?

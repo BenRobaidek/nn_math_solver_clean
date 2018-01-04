@@ -1,0 +1,1 @@
+A dentist can schedule NUMBER_0 patients in a day if she allows NUMBER_1 minutes per patient . How many can she schedule if she allows NUMBER_2 minutes per patient and works the same number of hours ?

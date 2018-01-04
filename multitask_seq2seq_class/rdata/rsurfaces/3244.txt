@@ -1,0 +1,1 @@
+Upon arriving at the circus , they went to the ticket booth and asked how much each ticket cost . If each ticket costs NUMBER_0 dollars and they bought NUMBER_1 tickets , how much money did they spend on tickets ?

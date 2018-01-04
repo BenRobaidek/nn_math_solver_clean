@@ -1,0 +1,1 @@
+The sum of the ages of PERSON_0 and PERSON_1 is NUMBER_0 . NUMBER_1 years from now , PERSON_0 will be twice PERSON_1 's age . Find PERSON_0 's present age .

@@ -1,0 +1,1 @@
+A plane flies with a ground speed of NUMBER_0 miles per hour if there is no wind . it travels NUMBER_1 miles with a head wind and in the same time it takes to go NUMBER_2 miles with a tail wind . Find the speed of the wind in miles per hour .

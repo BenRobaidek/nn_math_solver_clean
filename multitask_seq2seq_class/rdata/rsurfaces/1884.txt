@@ -1,0 +1,1 @@
+In a test of NUMBER_0 questions , NUMBER_1 points are given for each correct answer and NUMBER_2 points are deducted for each one answered incorrectly . If PERSON_0 answered all of the questions and got a NUMBER_3 of NUMBER_4 , how many did she get correct ?

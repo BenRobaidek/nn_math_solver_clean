@@ -1,0 +1,1 @@
+The ages of PERSON_0 and PERSON_1 are in the ratio NUMBER_0 to NUMBER_1 . NUMBER_2 years hence , the ratio of their ages will be NUMBER_3 to NUMBER_4 . Find PERSON_0 's current age . Find PERSON_1 's current age .

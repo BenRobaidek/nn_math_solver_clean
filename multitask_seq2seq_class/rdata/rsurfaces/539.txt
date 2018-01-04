@@ -1,0 +1,1 @@
+PERSON_0 has NUMBER_0 more marbles than PERSON_1 has . If their mother gives NUMBER_1 marbles to each of them , PERSON_0 will have NUMBER_2 times as many marbles as PERSON_1 . How many marbles does PERSON_1 have before her mother gives them any more ?

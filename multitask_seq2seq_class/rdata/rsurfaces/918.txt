@@ -1,0 +1,1 @@
+A chemist has one solution that is NUMBER_0 % acid and a second that is NUMBER_1 % acid . How many liters of each should be mixed together to get NUMBER_2 liters that is NUMBER_3 % acid ?

@@ -1,0 +1,1 @@
+Tickets for the homecoming dance cost NUMBER_0 dollars for a single ticket or NUMBER_1 dollars for a couple . Ticket sales totaled NUMBER_2 dollars , and NUMBER_3 people attended . How many single tickets were sold ? How many couple tickets were sold ?

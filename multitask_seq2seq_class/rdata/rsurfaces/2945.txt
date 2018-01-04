@@ -1,0 +1,1 @@
+PERSON_0 goes fishing with PERSON_1 . They catch NUMBER_0 trout . If they equally split up the trout , how many will each one get ?

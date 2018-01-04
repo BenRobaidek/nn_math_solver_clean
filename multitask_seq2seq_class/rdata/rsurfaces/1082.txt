@@ -1,0 +1,1 @@
+PERSON_0 is buying candy bars for his friends . He wants to give NUMBER_0 bars to each friend , and he wants to have NUMBER_1 spare bars . He can afford to buy NUMBER_2 candy bars . How many friends can he treat ?

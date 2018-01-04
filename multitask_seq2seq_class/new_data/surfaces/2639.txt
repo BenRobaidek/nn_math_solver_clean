@@ -1,0 +1,1 @@
+PERSON_0 was helping the cafeteria workers pick up lunch trays , but he could only carry NUMBER_0 trays at a time . If he had to pick up NUMBER_1 trays from one table and NUMBER_2 trays from another , how many trips will he make ?

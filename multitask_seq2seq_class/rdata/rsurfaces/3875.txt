@@ -1,0 +1,1 @@
+PERSON_0 drove NUMBER_0 miles every hour . How many miles would he drive in NUMBER_1 hours ?

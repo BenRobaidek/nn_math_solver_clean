@@ -1,0 +1,1 @@
+You have NUMBER_0 dollars and save NUMBER_1 dollars per week . Your friend has NUMBER_2 dollars and saves NUMBER_3 dollars per week . After how many weeks will each of you have saved the same amount of money ?

@@ -1,0 +1,1 @@
+A man has NUMBER_0 coins consisting of dimes and quarters . The total value is NUMBER_1 dollars . How many dimes does he have ? How many quarters ?

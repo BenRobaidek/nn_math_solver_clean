@@ -1,0 +1,1 @@
+Two mechanics worked on a car . The first mechanic charged NUMBER_0 dollars per hour , and the second mechanic charged NUMBER_1 dollars per hour . The mechanics worked for a combined total of NUMBER_2 hours , and together they charged a total of NUMBER_3 dollars . How long did the first mechanic and second mechanic work ?

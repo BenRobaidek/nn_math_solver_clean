@@ -1,0 +1,1 @@
+Mrs. PERSON_0 bought NUMBER_0 dollars in groceries . She paid her bill with 5-dollar notes and 20-dollar notes using a total of NUMBER_1 notes . How many 5-dollar notes were used ? How many 20-dollar notes were used ?

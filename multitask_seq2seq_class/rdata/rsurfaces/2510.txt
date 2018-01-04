@@ -1,0 +1,1 @@
+PERSON_0 was playing a video game where she scores NUMBER_0 points for each treasure she finds . If she found NUMBER_1 treasures on the first level and NUMBER_2 on the second , what would her score be ?

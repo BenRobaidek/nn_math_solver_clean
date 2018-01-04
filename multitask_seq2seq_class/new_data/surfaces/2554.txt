@@ -1,0 +1,1 @@
+Will was organizing his baseball cards in a binder with NUMBER_0 on each page . If he had NUMBER_1 new cards and NUMBER_2 old cards to put in the binder , how many pages would he use ?

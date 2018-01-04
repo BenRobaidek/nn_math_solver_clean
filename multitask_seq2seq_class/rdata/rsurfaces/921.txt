@@ -1,0 +1,1 @@
+Harry has NUMBER_0 dollars in nickels , dimes , and quarters . If he had twice as many nickels , half as many dimes and the same number of quarters , he would have NUMBER_1 dollars . If he has NUMBER_2 coins altogether , then how many nickels , dimes , and quarters does he have ?

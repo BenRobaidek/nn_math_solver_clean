@@ -1,0 +1,1 @@
+A father is NUMBER_0 times as old as his son . NUMBER_1 years ago the father was NUMBER_2 times as old as his son . How old is the son and how old is the father now ?

@@ -1,0 +1,1 @@
+A vendor sold NUMBER_0 tickets for an upcoming rock concert . Floor seats were NUMBER_1 dollars and stadium seats were NUMBER_2 dollars . The vendor sold NUMBER_3 dollars in tickets . How many 36-dollar tickets did the vendor sell ? How many 28-dollar tickets did the vendor sell ?

@@ -1,0 +1,1 @@
+A company painted some houses in LOCATION_0 LOCATION_1 white and blue using a total of NUMBER_0 gallons of paint . If they used NUMBER_1 gallons of white paint , how many gallons of blue paint did the company use ?

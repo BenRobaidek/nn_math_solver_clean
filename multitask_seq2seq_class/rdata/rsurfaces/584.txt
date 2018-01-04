@@ -1,0 +1,1 @@
+At an amusement park you get NUMBER_0 points for each bull 's eye you hit , but you lose NUMBER_1 points for every miss . After NUMBER_2 tries , PERSON_0 lost NUMBER_3 points . How many bull 's eyes did he have ?

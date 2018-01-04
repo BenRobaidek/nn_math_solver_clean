@@ -1,0 +1,1 @@
+PERSON_0 wants to buy a digital camera from her NUMBER_0 month savings . To do this she needs to maintain an average saving of NUMBER_1 in each month . She saves NUMBER_2 in the first month and NUMBER_3 in the second month . Find the amount she should save in the third month , in dollars , to buy a digital camera at the end of three months .

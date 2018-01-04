@@ -1,0 +1,1 @@
+PERSON_0 was playing a trivia game . In the first round she scored NUMBER_0 points and in the second round she scored NUMBER_1 points . In the last round she lost NUMBER_2 points . How many points did she have at the end of the game ?

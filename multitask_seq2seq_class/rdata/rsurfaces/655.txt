@@ -1,0 +1,1 @@
+A plumber charged NUMBER_0 dollars for a NUMBER_1 hour job and NUMBER_2 dollars for a NUMBER_3 hour job . At this rate , how much would he charge for an NUMBER_4 hour job ?

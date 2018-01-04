@@ -1,0 +1,1 @@
+A hotel purchased NUMBER_0 bath towels and NUMBER_1 washcloths for a total cost of NUMBER_2 dollars . A second purchase of NUMBER_3 bath towels and NUMBER_4 washcloths , at the same prices , cost NUMBER_5 dollars . Find the individual prices of the bath towels and washcloths .

@@ -1,0 +1,1 @@
+In PERSON_0 it snowed NUMBER_0 inch in the morning and NUMBER_1 inch in the afternoon . What was the total amount of snowfall ?

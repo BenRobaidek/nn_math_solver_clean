@@ -1,0 +1,1 @@
+A number has 2 digits . The unit digit is NUMBER_0 times the tens digit . If the digits are reversed the new number formed is NUMBER_1 more than the original number . Find the original number .

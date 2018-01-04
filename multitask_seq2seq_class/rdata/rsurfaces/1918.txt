@@ -1,0 +1,1 @@
+A certain number is NUMBER_0 less than three times the next number . Find the Number .

@@ -1,0 +1,1 @@
+A toy store had NUMBER_0 giant stuffed bears in stock when they got another shipment with NUMBER_1 bears in it . The put the bears onto shelves with NUMBER_2 on each shelf . How many shelves did they use ?

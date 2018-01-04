@@ -1,0 +1,1 @@
+A van travels for two hours at an average speed of NUMBER_0 miles per hour . For how long must the van then travel at an average speed of NUMBER_1 miles per hour to raise the overall average speed to NUMBER_2 miles per hour ? What is the total time traveled ?

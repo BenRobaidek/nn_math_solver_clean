@@ -1,0 +1,1 @@
+Mrs. PERSON_0 bought NUMBER_0 pizzas . Each pizza had NUMBER_1 slices . How many total slices of pizza did she have ?

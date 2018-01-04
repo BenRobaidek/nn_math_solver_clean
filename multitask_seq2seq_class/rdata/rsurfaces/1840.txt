@@ -1,0 +1,1 @@
+A furniture store has a chair , originally priced at NUMBER_0 dollars , on sale for NUMBER_1 dollars . What is the percent of decrease , rounded to the nearest tenth ?

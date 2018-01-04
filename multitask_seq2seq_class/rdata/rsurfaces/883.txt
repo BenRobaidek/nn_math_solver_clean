@@ -1,0 +1,1 @@
+PERSON_0 drove NUMBER_0 miles . Using NUMBER_1 gallons of gas at this rate , how many gallons of gas would she need to drive NUMBER_2 miles ?

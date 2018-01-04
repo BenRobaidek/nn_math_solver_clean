@@ -1,0 +1,1 @@
+Average movie prices in general are lower in the LOCATION_0 LOCATION_1 than in other countries . It would cost NUMBER_0 dollars to buy NUMBER_1 tickets in LOCATION_2 plus NUMBER_2 tickets in LOCATION_3 . NUMBER_3 tickets in LOCATION_3 plus NUMBER_4 tickets in LOCATION_2 would cost NUMBER_5 dollars . How much does a movie cost in LOCATION_2 ? In LOCATION_3 ?

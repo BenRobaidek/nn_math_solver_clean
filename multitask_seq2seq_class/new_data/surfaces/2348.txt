@@ -1,0 +1,1 @@
+In NUMBER_0 grade there were NUMBER_1 students at the start of the year . During the year NUMBER_2 students left and NUMBER_3 new students came to school . How many students were in NUMBER_4 grade at the end ?

@@ -1,0 +1,1 @@
+Find 3 consecutive odd numbers whose sum is NUMBER_0 more than twice the next consecutive number .

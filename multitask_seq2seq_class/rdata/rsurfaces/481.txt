@@ -1,0 +1,1 @@
+A baseball player has a batting average of 0.320 with NUMBER_0 hits in NUMBER_1 bats . His average against left-handed pitching is NUMBER_2 . Against right-handed pitching it is NUMBER_3 . How many times did he bat against left-handers ?

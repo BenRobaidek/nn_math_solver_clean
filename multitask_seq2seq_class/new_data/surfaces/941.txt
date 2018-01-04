@@ -1,0 +1,1 @@
+2 teachers are going to a conference for a few days . Mrs. PERSON_0 plans on spending NUMBER_0 dollars on NUMBER_1 meals and NUMBER_2 nights in a hotel . Mrs. PERSON_1 plans on spending NUMBER_3 dollars on NUMBER_4 meals and NUMBER_5 nights in a hotel . How much are they planning on spending per meal and per night for a hotel ?

@@ -1,0 +1,1 @@
+A dealer has some hard candy worth NUMBER_0 dollars a pound and some worth NUMBER_1 dollars a pound . He wishes to make a mixture of NUMBER_2 pounds that he can sell for NUMBER_3 dollars per pound . How many pounds of each kind should he use ?

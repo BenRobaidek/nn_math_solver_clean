@@ -1,0 +1,1 @@
+A junior college awarded NUMBER_0 varsity letters in crew , NUMBER_1 in swimming , and NUMBER_2 in soccer . If awards went to NUMBER_3 students and only NUMBER_4 lettered in all sports , how many students lettered in NUMBER_5 of the NUMBER_6 sports ?

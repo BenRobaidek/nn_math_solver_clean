@@ -1,0 +1,1 @@
+Isabel bought NUMBER_0 pieces of paper . She used NUMBER_1 pieces of the paper . How many pieces of paper does she have left ?

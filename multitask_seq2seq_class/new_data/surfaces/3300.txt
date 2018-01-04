@@ -1,0 +1,1 @@
+Connie has NUMBER_0 marbles . PERSON_0 has NUMBER_1 more marbles than Connie . How many marbles does PERSON_0 have ?

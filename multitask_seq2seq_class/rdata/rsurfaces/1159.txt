@@ -1,0 +1,1 @@
+NUMBER_0 times a number is added to NUMBER_1 times a number to get NUMBER_2 . The NUMBER_3 number is NUMBER_4 less than the first . What is the smaller number ? What is the larger number ?

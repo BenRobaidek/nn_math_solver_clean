@@ -1,0 +1,1 @@
+PERSON_0 just bought a new lamp for her bedside table . The old lamp was NUMBER_0 foot tall and the new lamp is NUMBER_1 feet tall . How much taller is the new lamp than the old lamp ?

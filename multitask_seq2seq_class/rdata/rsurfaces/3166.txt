@@ -1,0 +1,1 @@
+PERSON_0 added NUMBER_0 of a cup of yellow raisins and NUMBER_1 of a cup of black raisins to a batch of trail mix . How many cups of raisins did PERSON_0 add in all ?

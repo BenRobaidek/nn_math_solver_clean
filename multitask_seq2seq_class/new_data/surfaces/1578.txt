@@ -1,0 +1,1 @@
+Best Rentals charges a daily fee plus a mileage fee for renting its cars . PERSON_0 was charged NUMBER_0 dollars for NUMBER_1 days and NUMBER_2 miles , while PERSON_1 was charged NUMBER_3 dollars for NUMBER_4 days and NUMBER_5 miles . Find the daily fee and find the mileage charge ?

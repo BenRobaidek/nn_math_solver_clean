@@ -1,0 +1,1 @@
+Front tickets cost NUMBER_0 dollars more than the middle tickets , while middle tickets cost NUMBER_1 dollars more than rear tickets . Twice the cost of a front ticket is NUMBER_2 dollars more than NUMBER_3 times the cost of a rear ticket . Find the price of front ticket , middle ticket and rear ticket .

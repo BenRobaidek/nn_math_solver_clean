@@ -1,0 +1,1 @@
+Your class is having a pizza party . You buy NUMBER_0 pizzas . Each pizza has NUMBER_1 slices . How many slices is that altogether ?

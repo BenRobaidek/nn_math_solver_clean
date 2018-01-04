@@ -1,0 +1,1 @@
+PERSON_0 spent $ NUMBER_0 on a cat toy , and a cage cost her $ NUMBER_1 . What was the total cost of PERSON_0 's purchases ?

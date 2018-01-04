@@ -1,0 +1,1 @@
+if NUMBER_0 shirts and NUMBER_1 jerseys cost NUMBER_2 dollars , calculate the cost of each shirt given that the cost of a single jersey is NUMBER_3 dollars .

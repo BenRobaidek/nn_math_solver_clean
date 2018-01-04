@@ -1,0 +1,1 @@
+A bricklayer lays an average of NUMBER_0 bricks per hour . During a job , he is called away and replaced by a less experienced man , who averages NUMBER_1 bricks per hour . The two men laid NUMBER_2 bricks in NUMBER_3 hours . How long did each work ?

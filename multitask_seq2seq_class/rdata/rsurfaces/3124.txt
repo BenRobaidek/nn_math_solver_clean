@@ -1,0 +1,1 @@
+PERSON_0 needs NUMBER_0 cupcakes for a birthday party . He already has NUMBER_1 chocolate cupcakes and 19 vanilla cupcakes . How many more cupcakes should PERSON_0 buy ?

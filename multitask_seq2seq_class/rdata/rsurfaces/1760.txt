@@ -1,0 +1,1 @@
+PERSON_0 has NUMBER_0 points in his math class . He must have NUMBER_1 % of the NUMBER_2 points possible by the end of the term to receive credit for the class . What is the minimum of additional points he must earn by the end of the term to receive credit for the class ?

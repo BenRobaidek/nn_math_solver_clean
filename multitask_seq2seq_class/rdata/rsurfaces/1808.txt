@@ -1,0 +1,1 @@
+A total of NUMBER_0 dollars is invested in 2 funds paying NUMBER_1 % and NUMBER_2 % annual interest . The combined annual interest is NUMBER_3 dollars . How much of the NUMBER_4 dollars is invested at NUMBER_5 % ? How much at NUMBER_6 % ?

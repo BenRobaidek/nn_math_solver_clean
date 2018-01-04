@@ -1,0 +1,1 @@
+NUMBER_0 students were sitting at each table in the lunchroom . There are NUMBER_1 tables . How many students were sitting in the lunchroom ?

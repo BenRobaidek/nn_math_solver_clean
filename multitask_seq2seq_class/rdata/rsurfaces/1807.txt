@@ -1,0 +1,1 @@
+X pounds of candy valued at NUMBER_0 dollars per pound is mixed with Y pounds of candy valued at NUMBER_1 dollars per pound to produce NUMBER_2 pounds of a mixture selling for NUMBER_3 dollars per pound . Find X and Y , the number of pounds of each type .

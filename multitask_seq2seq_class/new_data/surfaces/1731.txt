@@ -1,0 +1,1 @@
+Tickets for a concert were priced at NUMBER_0 dollars for students and NUMBER_1 dollars for non-students . There were NUMBER_2 tickets sold for a total of NUMBER_3 dollars . How many student ticket were sold ?

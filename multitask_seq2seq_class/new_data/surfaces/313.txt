@@ -1,0 +1,1 @@
+There are NUMBER_0 pencils and 49 crayons in the drawer . PERSON_0 took NUMBER_1 pencils from the drawer . How many pencils are now in the drawer ?

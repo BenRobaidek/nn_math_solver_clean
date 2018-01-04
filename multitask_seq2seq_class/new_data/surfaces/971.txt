@@ -1,0 +1,1 @@
+Hockey teams receive NUMBER_0 points when they win and NUMBER_1 point when they tie . NUMBER_2 season , a team won a championship with NUMBER_3 points . They won NUMBER_4 games more than they tied . How many wins and ties did the team have ?

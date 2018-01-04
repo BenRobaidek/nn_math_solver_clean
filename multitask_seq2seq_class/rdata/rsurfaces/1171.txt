@@ -1,0 +1,1 @@
+How many quarters and half-dollars would it take to make up NUMBER_0 dollars if you only had NUMBER_1 coins ?

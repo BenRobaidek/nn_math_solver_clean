@@ -1,0 +1,1 @@
+The average salary for computer programmers is NUMBER_0 dollars less than twice the average salary for carpenters . Combined , their average salaries are NUMBER_1 dollars . Determine the average salary for a computer programmer . Determine the average salary for a carpenter .

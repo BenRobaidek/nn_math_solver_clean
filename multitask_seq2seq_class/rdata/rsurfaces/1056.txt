@@ -1,0 +1,1 @@
+The sum of three numbers is NUMBER_0 . The sum of the first and the NUMBER_1 number is NUMBER_2 more than the third number and the third is twice the first number . Find the numbers .

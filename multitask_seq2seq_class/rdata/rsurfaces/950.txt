@@ -1,0 +1,1 @@
+The cost of NUMBER_0 gallons of regular gasoline and NUMBER_1 gallons of premium gasoline is NUMBER_2 dollars . Premium costs NUMBER_3 dollars more per gallon than regular . What is the cost per gallon of each type of gasoline ?

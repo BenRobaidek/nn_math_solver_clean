@@ -1,0 +1,1 @@
+There is available NUMBER_0 gallons of a NUMBER_1 % solution of glycerin and water . What volume of water must be added to the solution to reduce the glycerin concentration to NUMBER_2 % ?

@@ -1,0 +1,1 @@
+Carefully following a recipe , PERSON_0 used exactly NUMBER_0 of a cup of oil and NUMBER_1 cups of water . How many cups of liquid did PERSON_0 use in all ?

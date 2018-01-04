@@ -1,0 +1,1 @@
+NUMBER_0 students are in a small private school . NUMBER_1 of the girls play soccer . 0.3333 of the boys play soccer . NUMBER_2 girls do not play soccer . How many boys are in this school ?

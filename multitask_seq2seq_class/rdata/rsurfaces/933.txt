@@ -1,0 +1,1 @@
+How much pure acid , in gallons , should be mixed with NUMBER_0 gallons of a NUMBER_1 % acid solution in order to get a NUMBER_2 % acid solution ?

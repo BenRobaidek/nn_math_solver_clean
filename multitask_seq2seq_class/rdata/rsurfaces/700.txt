@@ -1,0 +1,1 @@
+If NUMBER_0 is subtracted from NUMBER_1 times a number , the result is NUMBER_2 more than twice the number . What is the number ?

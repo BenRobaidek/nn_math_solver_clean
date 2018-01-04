@@ -1,0 +1,1 @@
+A catering company is setting up tables for a big event that will host NUMBER_0 people . When they set up the tables they need NUMBER_1 forks for each child and NUMBER_2 forks for each adult . If the company ordered a total of NUMBER_3 forks , how many adults and how many children will be attending the event ?

@@ -1,0 +1,1 @@
+PERSON_0 is twice as old as his daughter . In NUMBER_0 years PERSON_0 's age will be NUMBER_1 times what his daughter 's age was NUMBER_2 years ago . How old is PERSON_0 now ? How old is his daughter ?

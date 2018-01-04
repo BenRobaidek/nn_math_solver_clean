@@ -1,0 +1,1 @@
+A garden table and a bench cost NUMBER_0 combined . The price of the garden table is NUMBER_1 times the price of the bench . What is the cost of the bench ?

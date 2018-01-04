@@ -1,0 +1,1 @@
+I walk 1 mile every NUMBER_0 minutes . I walked NUMBER_1 miles . How many minutes did it take me ?

@@ -1,0 +1,1 @@
+An item is marked up NUMBER_0 % to a retail price of NUMBER_1 dollars . What is the wholesale price ?

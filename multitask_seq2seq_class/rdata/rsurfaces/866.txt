@@ -1,0 +1,1 @@
+Find 3 consecutive even integers such that the sum of the smallest and the largest integer is equal to NUMBER_0 .

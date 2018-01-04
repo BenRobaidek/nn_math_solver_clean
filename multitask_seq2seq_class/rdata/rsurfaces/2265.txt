@@ -1,0 +1,1 @@
+For the school bake sale PERSON_0 made pastries . She baked NUMBER_0 cupcakes and NUMBER_1 cookies . After the sale she had NUMBER_2 to take back home . How many pastries did she sell ?

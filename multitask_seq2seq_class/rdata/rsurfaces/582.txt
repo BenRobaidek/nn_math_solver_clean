@@ -1,0 +1,1 @@
+PERSON_0 has coffee that sells for NUMBER_0 dollars per pound and coffee that sells for NUMBER_1 dollars per pound . How many pounds of NUMBER_2 dollars coffee and how many pounds of NUMBER_3 dollars coffee must be mixed to get NUMBER_4 pounds of coffee that sells for NUMBER_5 dollars per pound ?

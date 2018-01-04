@@ -1,0 +1,1 @@
+PERSON_0 jogged NUMBER_0 laps in P.E. class and NUMBER_1 laps during track practice . How many laps did PERSON_0 jog in all ?

@@ -1,0 +1,1 @@
+A building with NUMBER_0 units consists of 1 bedrooms costing NUMBER_1 dollars and 2 bedrooms costing NUMBER_2 dollars respectively . When all units are full the total is NUMBER_3 dollars . How many 2 bedroom units are there ?

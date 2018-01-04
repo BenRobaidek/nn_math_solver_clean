@@ -1,0 +1,1 @@
+Customers of a phone company can choose between 2 service plans for long distance calls . The first plan has a NUMBER_0 dollars one-time activation fee and charges NUMBER_1 cents a minute . The second plan has no activation fee and charges NUMBER_2 cents a minute . After how many minutes of long distance calls will the costs of the 2 plans be equal ?

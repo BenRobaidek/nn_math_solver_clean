@@ -1,0 +1,1 @@
+A roofer requires NUMBER_0 hours to shingle a roof . An apprentice roofer can do the job in NUMBER_1 hours . How many hours would it take to shingle the roof if they work together ?

@@ -1,0 +1,1 @@
+A number increased by NUMBER_0 is equal to NUMBER_1 the number . Find the number .

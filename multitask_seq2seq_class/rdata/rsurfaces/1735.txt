@@ -1,0 +1,1 @@
+You make candles and sell them for NUMBER_0 dollars each . The material to make up to NUMBER_1 candles costs NUMBER_2 dollars . How many candles must you sell to have a profit of NUMBER_3 dollars ?

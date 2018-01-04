@@ -1,0 +1,1 @@
+Find NUMBER_0 numbers such that twice the NUMBER_1 exceeds NUMBER_2 times the NUMBER_3 by NUMBER_4 , NUMBER_5 NUMBER_6 times the NUMBER_7 exceeds twice the NUMBER_8 by NUMBER_9 .

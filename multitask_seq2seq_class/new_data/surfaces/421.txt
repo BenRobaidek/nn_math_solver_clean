@@ -1,0 +1,1 @@
+On Monday , PERSON_0 picked up NUMBER_0 doughnuts and NUMBER_1 large coffees for the office staff . He paid NUMBER_2 dollars . On Tuesday PERSON_1 picked up NUMBER_3 doughnuts and NUMBER_4 large coffees for the office staff . She paid NUMBER_5 dollars . What is the cost of one doughnut ? What is the cost of one large coffee ?

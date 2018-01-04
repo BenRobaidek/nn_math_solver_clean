@@ -1,0 +1,1 @@
+PERSON_0 also bought NUMBER_0 shiny blue round stones . If NUMBER_1 pieces of this stone is in each bracelet , how many bracelets of blue shiny round stones will there be ?

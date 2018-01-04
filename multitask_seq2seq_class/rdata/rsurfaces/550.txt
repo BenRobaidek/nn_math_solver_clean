@@ -1,0 +1,1 @@
+A spider has NUMBER_0 legs and no wings . A dragonfly has NUMBER_1 legs and NUMBER_2 pairs of wings . A cicada has NUMBER_3 legs and NUMBER_4 pair of wings . We have all 3 kinds of insects and a total of NUMBER_5 insects in a cage . This gives us a total of NUMBER_6 legs and NUMBER_7 pairs of wings . How many spiders do we have ? How many dragonflies ? How many cicadas ?

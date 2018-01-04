@@ -1,0 +1,1 @@
+At a consession stand , NUMBER_0 hotdogs and NUMBER_1 hamburgers cost $ NUMBER_2 . NUMBER_3 hotdogs and NUMBER_4 hamburgers costs $ NUMBER_5 . Find the cost of one hotdog and one hamburger .

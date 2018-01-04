@@ -1,0 +1,1 @@
+Find 3 consecutive integers such that the sum of the NUMBER_0 integer and twice the NUMBER_1 integer is NUMBER_2 more than the third integer . List from lowest to highest .

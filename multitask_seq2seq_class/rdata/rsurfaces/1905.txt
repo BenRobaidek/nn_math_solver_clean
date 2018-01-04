@@ -1,0 +1,1 @@
+An ice skating rink charges 5 dollars for admission and NUMBER_0 dollars to rent skates . PERSON_0 can purchase a new pair of skates for NUMBER_1 dollars . How many times would she need to go the rink to justify buying the skates rather than renting a pair ?

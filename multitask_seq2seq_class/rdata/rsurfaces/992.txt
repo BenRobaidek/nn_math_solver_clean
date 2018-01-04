@@ -1,0 +1,1 @@
+A plane flies NUMBER_0 miles with the wind and NUMBER_1 miles against the wind in the same length of time . If the speed of the wind is NUMBER_2 miles per hour , what is the speed of the plane in still air ?

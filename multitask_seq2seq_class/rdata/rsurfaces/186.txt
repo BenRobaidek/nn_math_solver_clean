@@ -1,0 +1,1 @@
+In Mr. PERSON_0 's mathematics class , NUMBER_0 the students received A 's and NUMBER_1 received B 's . What fraction of the students received either A 's or B 's ?

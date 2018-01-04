@@ -1,0 +1,1 @@
+The denominator of a fraction exceeds the numerator by NUMBER_0 . If NUMBER_1 is added to the numerator and NUMBER_2 is subtracted from the denominator , the result is NUMBER_3 . Find the original fraction .

@@ -1,0 +1,1 @@
+An auditorium has NUMBER_0 balcony seats and NUMBER_1 main-level seats . If tickets for balcony seats will cost NUMBER_2 dollars less than tickets for main-level seats , what should the prices be for the main-level seats and prices for the balcony seats , so that the total revenue from a sellout performance will be NUMBER_3 ?

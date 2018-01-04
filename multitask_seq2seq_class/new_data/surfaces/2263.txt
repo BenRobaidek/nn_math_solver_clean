@@ -1,0 +1,1 @@
+At the arcade , PERSON_0 won NUMBER_0 tickets playing ` whack a mole ' and NUMBER_1 tickets playing ` skee ball ' . If he spent NUMBER_2 of his tickets on a hat , how many tickets does PERSON_0 have left ?

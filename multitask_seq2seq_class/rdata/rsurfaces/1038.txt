@@ -1,0 +1,1 @@
+A laboratory assistant is asked to mix a NUMBER_0 % alcohol solution with NUMBER_1 liters of an NUMBER_2 % alcohol solution to make a NUMBER_3 % alcohol solution . How many liters of the NUMBER_4 % alcohol solution should be used ?

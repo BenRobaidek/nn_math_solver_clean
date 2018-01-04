@@ -1,0 +1,1 @@
+Snookers Lumber can convert logs into either lumber or plywood . In a given day , the mill turns out NUMBER_0 times as many units of plywood as lumber . It makes a profit of NUMBER_1 dollars on a unit of lumber and NUMBER_2 dollars on a unit of plywood . Snookers lumber must produce and sell ___ units of lumber and ___ units of plywood to make a profit of NUMBER_3 dollars ?

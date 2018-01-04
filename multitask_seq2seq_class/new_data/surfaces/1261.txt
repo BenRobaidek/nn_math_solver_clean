@@ -1,0 +1,1 @@
+NUMBER_0 people go to a zoo . Tickets are NUMBER_1 dollars for adults and NUMBER_2 dollars for kids . Total sales are NUMBER_3 dollars . How many adults went to zoo ? How many kids ?

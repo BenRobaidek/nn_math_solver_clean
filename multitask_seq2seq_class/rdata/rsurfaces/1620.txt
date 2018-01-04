@@ -1,0 +1,1 @@
+The sum of NUMBER_0 numbers is NUMBER_1 and the sum of the first and twice the NUMBER_2 is NUMBER_3 . What are the numbers ?

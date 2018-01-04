@@ -1,0 +1,1 @@
+A bathing suit manufacturer has a supply of NUMBER_0 bathing suits for men . In addition , it has NUMBER_1 bathing suits for women . How many bathing suits are available overall ?

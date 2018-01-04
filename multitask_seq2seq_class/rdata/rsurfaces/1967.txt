@@ -1,0 +1,1 @@
+In one year , for the election for president there were NUMBER_0 million voters , whereas in the next year there were NUMBER_1 million voters . Find the percentage change in the number of voters ?

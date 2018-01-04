@@ -1,0 +1,1 @@
+A blimp flies at NUMBER_0 miles per hour . A round trip of NUMBER_1 miles into the wind and NUMBER_2 miles with the wind takes NUMBER_3 hours . What is the speed of the wind , in miles per hour ?

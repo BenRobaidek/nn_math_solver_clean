@@ -1,0 +1,1 @@
+The Kings won NUMBER_0 less than three times as many games as they lost . They played NUMBER_1 games . How many wins and losses did the team have ?

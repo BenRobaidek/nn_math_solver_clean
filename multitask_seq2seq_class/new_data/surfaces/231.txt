@@ -1,0 +1,1 @@
+PERSON_0 went to the county fair last weekend . When she got there , she had to walk NUMBER_0 mile from the car to the entrance . Then she walked NUMBER_1 mile to the carnival rides and NUMBER_2 mile from the carnival rides back to the car . How many miles did PERSON_0 walk in all ?

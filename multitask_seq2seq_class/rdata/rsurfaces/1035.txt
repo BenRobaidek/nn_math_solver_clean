@@ -1,0 +1,1 @@
+Advance tickets to a show cost NUMBER_0 , and same-day tickets cost NUMBER_1 . The total number of tickets sold was NUMBER_2 for total receipts of NUMBER_3 . How many advance tickets were sold ? How many same-day tickets were sold ?

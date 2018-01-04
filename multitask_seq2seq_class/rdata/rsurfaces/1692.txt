@@ -1,0 +1,1 @@
+Car 1 travels from point A to point B. Car NUMBER_0 leaves NUMBER_1 hours later , but goes NUMBER_2 miles an hour faster and passes car 1 in NUMBER_3 hours . How fast is Car 1 going , in miles per hour ? How fast is Car NUMBER_4 going ?

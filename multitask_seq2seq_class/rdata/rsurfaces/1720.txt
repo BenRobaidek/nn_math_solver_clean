@@ -1,0 +1,1 @@
+A pharmacist wants to mix a medicine that is NUMBER_0 % aspirin with a medicine that is NUMBER_1 % aspirin to make NUMBER_2 grams of a medicine that is NUMBER_3 % aspirin . How many grams of NUMBER_4 % and NUMBER_5 % medicine should the pharmacist mix together ?

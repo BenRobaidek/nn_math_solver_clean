@@ -1,0 +1,1 @@
+Flying against the jetstream , a jet travels NUMBER_0 kilometers in NUMBER_1 hours . Flying with the jetstream , the same jet travels NUMBER_2 kilometers in NUMBER_3 hours . In kilometers per hour , what is the speed of the jet in still air , and what is the speed of the jetstream ?

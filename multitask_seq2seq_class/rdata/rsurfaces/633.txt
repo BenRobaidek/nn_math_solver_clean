@@ -1,0 +1,1 @@
+PERSON_0 traveled against the wind in a small plane for NUMBER_0 hours . The return trip with the wind took NUMBER_1 hours . Find the speed of the wind if the speed of the plane in still air is NUMBER_2 miles per hour .

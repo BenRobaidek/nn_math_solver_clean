@@ -1,0 +1,1 @@
+A home purchased for NUMBER_0 dollars depreciated NUMBER_1 % over a 1-year period . What was the value of the home after at the end of the year , in dollars ?

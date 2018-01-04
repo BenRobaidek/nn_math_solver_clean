@@ -1,0 +1,1 @@
+A student inherited NUMBER_0 dollars . She invested part of it at NUMBER_1 % and the rest at NUMBER_2 % . If her total interest amounted to NUMBER_3 dollars , how much did she invest at NUMBER_4 % ? At NUMBER_5 % ?

@@ -1,0 +1,1 @@
+A storeowner buys a quantity of balls for NUMBER_0 dollars . If they had each cost NUMBER_1 dollars less , she would have had NUMBER_2 more for the same amount of money . How much did she pay for each ball ?

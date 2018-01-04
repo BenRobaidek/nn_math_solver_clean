@@ -1,0 +1,1 @@
+At a hotel one night , NUMBER_0 rooms were booked . Some were single rooms and some were double rooms . The single rooms cost NUMBER_1 dollars each and the double rooms cost NUMBER_2 dollars . The hotel made NUMBER_3 dollars that night . How many single rooms and double rooms were booked ?

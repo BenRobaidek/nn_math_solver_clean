@@ -1,0 +1,1 @@
+With a tail wind , a jet flew NUMBER_0 miles in NUMBER_1 hours . The jet 's return trip against the same wind required NUMBER_2 hours . Find the jet 's speed and the wind speed .

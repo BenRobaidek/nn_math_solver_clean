@@ -1,0 +1,1 @@
+There are NUMBER_0 animals total , all sheep and chickens . If there are NUMBER_1 legs total , how many of the NUMBER_2 animals are sheep ? How many are chickens ?

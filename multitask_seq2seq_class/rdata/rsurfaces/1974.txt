@@ -1,0 +1,1 @@
+The first of three numbers exceeds twice the NUMBER_0 number by NUMBER_1 , while the third number is twice the first . If the sum of the three numbers is NUMBER_2 , find the numbers .

@@ -1,0 +1,1 @@
+A candy store has NUMBER_0 boxes of chocolates . Each box has NUMBER_1 pieces . How many pieces are there altogether in the boxes ?

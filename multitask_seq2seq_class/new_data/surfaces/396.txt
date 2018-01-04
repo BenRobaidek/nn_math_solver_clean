@@ -1,0 +1,1 @@
+PERSON_0 is writing an article . The article is limited to NUMBER_0 words . He decides to use two types of font . Large font is NUMBER_1 words per page , small font is NUMBER_2 words per page . He is allowed NUMBER_3 pages for this article . How many pages are in small font ? How many pages are in large font ?

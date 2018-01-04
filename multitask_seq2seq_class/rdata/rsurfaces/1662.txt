@@ -1,0 +1,1 @@
+PERSON_0 earns NUMBER_0 times PERSON_1 's wage and PERSON_1 earns NUMBER_1 dollars more than PERSON_2 . How many dollars does PERSON_0 earn if their combined wages are NUMBER_2 dollars ?

@@ -1,0 +1,1 @@
+In a certain city , the amount of property tax paid varies directly with the assessed value of the property . If a family whose house is assessed at NUMBER_0 dollars pays NUMBER_1 dollars in property tax during a certain year , what is the assessed value of a house whose owners paid NUMBER_2 dollars in taxes during the same year ?

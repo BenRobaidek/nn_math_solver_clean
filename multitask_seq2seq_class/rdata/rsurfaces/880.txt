@@ -1,0 +1,1 @@
+A coin bank contains only quarters and dimes . The total value of the coins is NUMBER_0 dollars . If the dimes were quarters and the quarters were dimes the total value of the coins would be NUMBER_1 dollars . Find the total number of dimes in the bank .

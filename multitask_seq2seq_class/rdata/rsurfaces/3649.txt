@@ -1,0 +1,1 @@
+There are NUMBER_0 birds and NUMBER_1 nests . How many more birds are there than nests ?

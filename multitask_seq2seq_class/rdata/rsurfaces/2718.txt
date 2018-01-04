@@ -1,0 +1,1 @@
+Isabel baked NUMBER_0 brownies , but needed NUMBER_1 total for her party . If she used NUMBER_2 cups of flour on each one , how much cups of flour does she still need ?

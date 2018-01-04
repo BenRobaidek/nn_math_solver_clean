@@ -1,0 +1,1 @@
+The difference of NUMBER_0 and NUMBER_1 times a number is the same as the sum of the number and -10 . Find the number .

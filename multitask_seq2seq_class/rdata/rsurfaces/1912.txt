@@ -1,0 +1,1 @@
+You deposit NUMBER_0 dollars in a savings account that pays an annual interest rate of NUMBER_1 % . How much simple interest would you earn in NUMBER_2 years , in dollars ?

@@ -1,0 +1,1 @@
+If the quotient of NUMBER_0 times a number and NUMBER_1 is increased by NUMBER_2 , the result is NUMBER_3 . Find the number .

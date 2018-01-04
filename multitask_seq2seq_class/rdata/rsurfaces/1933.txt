@@ -1,0 +1,1 @@
+A college charters a bus for NUMBER_0 dollars to take a group to a museum . When NUMBER_1 more students join the trip , the cost per student drops by NUMBER_2 dollars . How many students are in the original group ?

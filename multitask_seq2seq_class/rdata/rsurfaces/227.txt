@@ -1,0 +1,1 @@
+A spaceship traveled NUMBER_0 light-year from LOCATION_0 to Planet X and NUMBER_1 light-year from Planet X to Planet Y . Then it traveled NUMBER_2 light-year from Planet Y back to LOCATION_0 . How many light-years did the spaceship travel in all ?

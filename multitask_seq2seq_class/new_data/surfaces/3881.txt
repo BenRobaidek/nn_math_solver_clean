@@ -1,0 +1,1 @@
+I have a pet golden retriever . Each year he gains NUMBER_0 pounds . He is NUMBER_1 years old . How many pounds does he weigh ?

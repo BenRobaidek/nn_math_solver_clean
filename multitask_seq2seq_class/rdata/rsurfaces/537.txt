@@ -1,0 +1,1 @@
+A metallurgist has one alloy containing NUMBER_0 % copper and another containing NUMBER_1 % copper . How many pounds of each alloy must he use to make NUMBER_2 pounds of a third alloy containing NUMBER_3 % copper ?

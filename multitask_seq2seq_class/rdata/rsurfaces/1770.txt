@@ -1,0 +1,1 @@
+Mrs.Martin bought NUMBER_0 cups of coffee and NUMBER_1 bagels and spent NUMBER_2 dollars . Mr.Martin bought NUMBER_3 cups of coffee and NUMBER_4 bagels and spent NUMBER_5 dollars . Find the cost of one cup of coffee and the cost of one bagel .

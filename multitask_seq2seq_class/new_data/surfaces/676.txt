@@ -1,0 +1,1 @@
+PERSON_0 and PERSON_1 use a metal alloy that is NUMBER_0 % copper to make jewelry . How many ounces of a NUMBER_1 % alloy must be mixed with a NUMBER_2 % alloy to form NUMBER_3 ounces of the desired alloy ?

@@ -1,0 +1,1 @@
+NUMBER_0 cars started off in the same direction at the same time , but the first car was going twice as fast as the NUMBER_1 car . In NUMBER_2 hours , the first car was ahead of the NUMBER_3 car by NUMBER_4 miles . How fast was the NUMBER_5 car going ?

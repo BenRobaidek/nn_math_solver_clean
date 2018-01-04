@@ -1,0 +1,1 @@
+PERSON_0 is selling NUMBER_0 gumballs for eight cents each . How much money can PERSON_0 get from selling the gumballs ?

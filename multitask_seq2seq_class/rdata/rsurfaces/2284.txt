@@ -1,0 +1,1 @@
+PERSON_0 was trying to expand his game collection . He bought NUMBER_0 games from a friend and bought NUMBER_1 more at a garage sale . If NUMBER_2 of the games did n't work , how many good games did he end up with ?

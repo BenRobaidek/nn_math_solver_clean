@@ -1,0 +1,1 @@
+The manager of a coffee shop has one type of coffee that sells for NUMBER_0 dollars per pound and another that sells for NUMBER_1 dollars per pound . The manager wishes to mix NUMBER_2 pounds of the NUMBER_3 dollars coffee to get a mixture that will sell for NUMBER_4 dollars per pound . How many pounds of the NUMBER_5 dollars coffee should be used ?

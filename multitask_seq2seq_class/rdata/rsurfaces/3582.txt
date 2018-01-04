@@ -1,0 +1,1 @@
+There are NUMBER_0 candies in a box . PERSON_0 has 18 candies in a bag . PERSON_1 takes NUMBER_1 candies out of the box . How many candies are left in the box ?

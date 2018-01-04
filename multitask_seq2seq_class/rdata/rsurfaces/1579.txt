@@ -1,0 +1,1 @@
+A number consist of two digits whose sum is NUMBER_0 . If NUMBER_1 is subtracted from the number its digits are reversed . Find the number .

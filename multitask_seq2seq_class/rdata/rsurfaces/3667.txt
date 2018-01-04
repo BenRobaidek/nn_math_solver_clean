@@ -1,0 +1,1 @@
+PERSON_0 went to the grocery store . She bought NUMBER_0 packs of cookies and NUMBER_1 packs of noodles . How many packs of groceries did she buy in all ?

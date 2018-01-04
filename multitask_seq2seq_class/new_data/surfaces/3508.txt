@@ -1,0 +1,1 @@
+There are NUMBER_0 students in the class and NUMBER_1 eggs . If the eggs are divided equally among the students , how many does each student get ?

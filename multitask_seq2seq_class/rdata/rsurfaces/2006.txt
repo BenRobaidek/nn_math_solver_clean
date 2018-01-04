@@ -1,0 +1,1 @@
+I want to give each child here NUMBER_0 cookies , but I lack NUMBER_1 cookies for that . If I gave NUMBER_2 cookies to each child , I would have NUMBER_3 left over . How many children are there ? How many cookies do I have ?

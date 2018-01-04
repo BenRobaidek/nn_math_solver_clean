@@ -1,0 +1,1 @@
+For a special event at the TCR spring fest , the cost of NUMBER_0 adult tickets and NUMBER_1 student tickets was NUMBER_2 dollars and the cost of NUMBER_3 adult tickets and NUMBER_4 student tickets was NUMBER_5 dollars . Find the admission price for an adult ticket and for a student ticket at the spring fest , in dollars .

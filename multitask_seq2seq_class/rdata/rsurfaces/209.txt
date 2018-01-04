@@ -1,0 +1,1 @@
+When PERSON_0 had 1 cat , he needed to serve NUMBER_0 can of cat food each day . Now that PERSON_0 has adopted a second cat , he needs to serve a total of NUMBER_1 can each day . How much extra food is needed to feed the second cat ?

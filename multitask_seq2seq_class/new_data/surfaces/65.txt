@@ -1,0 +1,1 @@
+There are NUMBER_0 crayons in the drawer . PERSON_0 placed NUMBER_1 crayons in the drawer . How many crayons are now there in total ?

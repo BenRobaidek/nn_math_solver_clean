@@ -1,0 +1,1 @@
+A bee colony produced NUMBER_0 pounds of honey , but bears ate NUMBER_1 pounds of it . How much honey remains ?

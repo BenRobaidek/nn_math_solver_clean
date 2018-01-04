@@ -1,0 +1,1 @@
+PERSON_0 , PERSON_1 's neighbor , joined PERSON_1 in making bracelets . She brought NUMBER_0 heart-shaped stones and wanted to have NUMBER_1 of this type of stone in each of the bracelet she makes . How many bracelets with heart-shaped stones can PERSON_0 make ?

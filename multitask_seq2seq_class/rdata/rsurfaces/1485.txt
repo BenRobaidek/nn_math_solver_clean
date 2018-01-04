@@ -1,0 +1,1 @@
+Tickets to a local movie were sold at NUMBER_0 dollars for adults and NUMBER_1 dollars for students . If NUMBER_2 tickets were sold for a total of NUMBER_3 dollars , how many student tickets were sold ?

@@ -1,0 +1,1 @@
+A farmer had some chickens and some cows . She counted NUMBER_0 heads and NUMBER_1 legs . How many chickens and how many cows did she have ?

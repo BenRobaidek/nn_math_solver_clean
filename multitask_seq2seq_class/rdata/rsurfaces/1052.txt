@@ -1,0 +1,1 @@
+A store sells cashews for NUMBER_0 dollars per pound and peanuts for NUMBER_1 dollars per pound . The manager decides to mix NUMBER_2 pounds of peanuts with some cashews and sell the mixture for NUMBER_3 dollars per pound . How many pounds of cashews should be mixed with the peanuts so that the mixture will produce the same revenue as would selling the nuts separately ?

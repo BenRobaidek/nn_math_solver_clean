@@ -1,0 +1,1 @@
+PERSON_0 recorded the snowfall every day during a snowstorm . He recorded NUMBER_0 of a centimeter on Wednesday , NUMBER_1 of a centimeter on Thursday , and NUMBER_2 of a centimeter on Friday . How many total centimeters of snow did LOCATION_0 record ?

@@ -1,0 +1,1 @@
+PERSON_0 's cat had NUMBER_0 kittens and NUMBER_1 had spots . She gave NUMBER_2 to her friends . How many kittens does she now have ?

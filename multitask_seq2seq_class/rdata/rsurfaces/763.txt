@@ -1,0 +1,1 @@
+PERSON_0 had to submit NUMBER_0 animation projects as per his syllabus in the final semesters . He scored NUMBER_1 , NUMBER_2 , NUMBER_3 , NUMBER_4 NUMBER_5 points out of 100 in 4 projects . What should be his score in the NUMBER_6 project so that the average of his projects is at least NUMBER_7 ?

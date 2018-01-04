@@ -1,0 +1,1 @@
+The sum of NUMBER_0 numbers is NUMBER_1 . The NUMBER_2 number is NUMBER_3 more than two times the first number . The NUMBER_4 number is NUMBER_5 less than three times the first number . Find the NUMBER_6 numbers .

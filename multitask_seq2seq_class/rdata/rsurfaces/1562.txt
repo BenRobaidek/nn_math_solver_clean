@@ -1,0 +1,1 @@
+A swimming pool holds NUMBER_0 liters of water . THe pool has 2 drainage pipes . When the pool is completely full , the first pipe alone can empty it in NUMBER_1 minutes , and the second pipe alone can empty it in NUMBER_2 minutes . When both pipes are draining together , how long does it take them to empty the pool , in minutes ?

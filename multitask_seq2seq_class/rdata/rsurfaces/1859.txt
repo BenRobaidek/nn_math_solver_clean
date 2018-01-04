@@ -1,0 +1,1 @@
+Two cars are at a distance of NUMBER_0 kilometers . These are moving in opposite directions . If there is a difference of NUMBER_1 kilometers per hour in their speeds and after NUMBER_2 hours distance between them is NUMBER_3 kilometers then find the speed of each car .

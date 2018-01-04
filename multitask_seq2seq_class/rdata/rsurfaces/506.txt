@@ -1,0 +1,1 @@
+Sunshine Car Rentals rents a basic car at a daily rate of NUMBER_0 dollars plus NUMBER_1 per mile . City Rentals rents a basic car at NUMBER_2 dollars plus NUMBER_3 per mile . For what mileage is the cost the same ?

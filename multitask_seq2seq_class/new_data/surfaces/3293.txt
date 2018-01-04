@@ -1,0 +1,1 @@
+PERSON_0 had NUMBER_0 cookies . PERSON_0 ate NUMBER_1 of them . How many cookies did PERSON_0 have left ?

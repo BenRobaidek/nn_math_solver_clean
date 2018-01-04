@@ -1,0 +1,1 @@
+A renovation project required NUMBER_0 truck-load of sand , NUMBER_1 truck-load of dirt , and NUMBER_2 truck-load of cement . How many truck-loads of material were needed in all ?

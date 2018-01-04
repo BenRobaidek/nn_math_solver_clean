@@ -1,0 +1,1 @@
+There are NUMBER_0 pencils in the drawer . PERSON_0 placed NUMBER_1 more pencils in the drawer . How many pencils are now there in all ?

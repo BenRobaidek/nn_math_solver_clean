@@ -1,0 +1,1 @@
+During a school play , PERSON_0 staffed the snack bar . He served NUMBER_0 pitcher of lemonade during the first intermission , NUMBER_1 pitcher during the second , and NUMBER_2 pitcher during the third . How many pitchers of lemonade did PERSON_0 pour in all ?

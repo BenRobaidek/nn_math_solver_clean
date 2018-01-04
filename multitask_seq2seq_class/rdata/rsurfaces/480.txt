@@ -1,0 +1,1 @@
+From a group of boys and girls , NUMBER_0 girls leave . Twice as many boys as girls are left . Then NUMBER_1 boys leave . NUMBER_2 times as many girls as boys remain . How many boys and girls were in the initial group ?

@@ -1,0 +1,1 @@
+A dust storm sweeps across the prairie . It covers NUMBER_0 acres of the prairie in dust , but leaves NUMBER_1 acres untouched . How many acres does the prairie cover ?

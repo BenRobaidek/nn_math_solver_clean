@@ -1,0 +1,1 @@
+A sales person purchased an automobile that was advertised as averaging NUMBER_0 miles per gallon in the city and NUMBER_1 miles per gallon on the highway . A recent sales trip that covered NUMBER_2 miles required NUMBER_3 gallons of gasoline . Assuming that the advertised mileage estimates were correct , how many miles were driven in the city ?

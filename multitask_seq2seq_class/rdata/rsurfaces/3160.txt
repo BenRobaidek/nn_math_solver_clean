@@ -1,0 +1,1 @@
+While taking inventory at her pastry shop , PERSON_0 realizes that she had NUMBER_0 of a box of baking powder yesterday , but the supply is now down to NUMBER_1 of a box . How much more baking powder did PERSON_0 have yesterday ?

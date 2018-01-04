@@ -1,0 +1,1 @@
+A passenger train leaves a train depot NUMBER_0 hours after a freight train leaves the same depot . The freight train is traveling NUMBER_1 miles per hour slower than the passenger train . Find the rate of the passenger train and freight train if the passenger train overtakes the freight train in NUMBER_2 hours .

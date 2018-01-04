@@ -1,0 +1,1 @@
+PERSON_0 had NUMBER_0 socks . If he threw away NUMBER_1 old ones that did n't fit and bought NUMBER_2 new ones , how many socks would he have ?

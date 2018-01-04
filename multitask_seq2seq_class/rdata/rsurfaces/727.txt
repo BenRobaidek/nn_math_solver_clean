@@ -1,0 +1,1 @@
+A cabbage and a cauliflower cost NUMBER_0 dollars in total , a cauliflower and a pumpkin cost NUMBER_1 dollars in total and a pumpkin and a cabbage cost NUMBER_2 dollars in total . Find the cost of pumpkin , cauliflower and cabbage .

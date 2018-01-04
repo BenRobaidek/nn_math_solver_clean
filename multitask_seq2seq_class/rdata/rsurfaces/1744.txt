@@ -1,0 +1,1 @@
+The speed of a motor boat in still water is 60kph . It goes NUMBER_0 kilometers up the river and then comes the NUMBER_1 kilometers back in a total of NUMBER_2 hours . What is the speed of the current of the river ?

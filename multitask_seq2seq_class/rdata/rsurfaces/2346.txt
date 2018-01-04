@@ -1,0 +1,1 @@
+For PERSON_0 PERSON_1 scored NUMBER_0 pieces of candy . She ate NUMBER_1 pieces the first night and then her sister gave her NUMBER_2 more pieces . How many pieces of candy does PERSON_1 have now ?

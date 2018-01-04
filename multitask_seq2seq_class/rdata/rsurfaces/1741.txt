@@ -1,0 +1,1 @@
+PERSON_0 goes to the market and buys a total of NUMBER_0 plums and peaches for NUMBER_1 dollars . A plum costs NUMBER_2 dollars and a peach costs NUMBER_3 dollars . How many plums did PERSON_0 buy ?

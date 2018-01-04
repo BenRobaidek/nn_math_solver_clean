@@ -1,0 +1,1 @@
+PERSON_0 has NUMBER_0 candies . He gives NUMBER_1 to PERSON_1 . How many candies will PERSON_0 have ?

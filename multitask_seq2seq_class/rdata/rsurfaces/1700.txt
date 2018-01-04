@@ -1,0 +1,1 @@
+A bank teller has NUMBER_0 5-dollar and 20-dollar bills in her cash drawer . The value of the bills is NUMBER_1 dollars . How many NUMBER_2 dollars bills are there ?

@@ -1,0 +1,1 @@
+If NUMBER_0 hens lay NUMBER_1 eggs in NUMBER_2 days , how many days will it take a NUMBER_3 hens to lay NUMBER_4 dozen eggs ?

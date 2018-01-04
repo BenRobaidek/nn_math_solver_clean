@@ -1,0 +1,1 @@
+PERSON_0 's age is one year more than twice PERSON_1 's age . Eight years ago , the sum of their ages was equal to PERSON_0 's age ten years from now . How old is PERSON_0 ? How old is Nori ?

@@ -1,0 +1,1 @@
+The Richmond Tigers sold a total of NUMBER_0 tickets last season . If they sold NUMBER_1 tickets in the first half of the season , how many tickets did they sell in the second half ?

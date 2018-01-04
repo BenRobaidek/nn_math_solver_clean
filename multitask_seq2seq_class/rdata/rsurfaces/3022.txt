@@ -1,0 +1,1 @@
+PERSON_0 , PERSON_1 , PERSON_2 , and PERSON_3 each have NUMBER_0 dozen Pokemon cards . How many Pokemon cards do they have in all ?

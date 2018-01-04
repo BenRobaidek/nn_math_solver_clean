@@ -1,0 +1,1 @@
+Will was working as a sacker at a grocery store where he made NUMBER_0 dollars an hour . On Monday he worked NUMBER_1 hours and on Tuesday he worked NUMBER_2 hours . How much money did Will make in those two days ?

@@ -1,0 +1,1 @@
+The product of NUMBER_0 and NUMBER_1 times a number is the same as the difference between NUMBER_2 times the number and NUMBER_3 . What is the number ?

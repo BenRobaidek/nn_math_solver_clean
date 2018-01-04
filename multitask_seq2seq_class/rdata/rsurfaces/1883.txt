@@ -1,0 +1,1 @@
+A peach and a apple cost NUMBER_0 cents . The peach is more expensive than the apple by NUMBER_1 cents . What is the cost of a peach , in cents ? What is the cost of an apple , in cents ?

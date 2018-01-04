@@ -1,0 +1,1 @@
+PERSON_0 had NUMBER_0 cents . He paid NUMBER_1 cents for a candy bar . How much change will he get ?

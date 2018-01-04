@@ -1,0 +1,1 @@
+While shopping for music online , PERSON_0 bought NUMBER_0 country albums and NUMBER_1 pop albums . Each album came with a lyric sheet and had NUMBER_2 songs . How many songs did Isabel buy total ?

@@ -1,0 +1,1 @@
+PERSON_0 drew a white line that was NUMBER_0 inches long . Then he drew a blue line that was NUMBER_1 inches long . How much longer was the white line than the blue line ?

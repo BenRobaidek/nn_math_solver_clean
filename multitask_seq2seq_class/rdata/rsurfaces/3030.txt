@@ -1,0 +1,1 @@
+There were a total of NUMBER_0 baseball games a month . The season is played for NUMBER_1 months . How many baseball games are in a season ?

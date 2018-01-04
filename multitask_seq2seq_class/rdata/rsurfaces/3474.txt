@@ -1,0 +1,1 @@
+Each banana costs $ NUMBER_0 . How much do NUMBER_1 bananas cost ?

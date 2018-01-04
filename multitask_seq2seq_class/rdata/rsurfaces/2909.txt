@@ -1,0 +1,1 @@
+There were NUMBER_0 bales of hay in the barn . PERSON_0 stacked more bales in the barn today . There are now NUMBER_1 bales of hay in the barn . How many bales did he store in the barn ?

@@ -1,0 +1,1 @@
+PERSON_0 had NUMBER_0 files on her computer . She deleted NUMBER_1 of them and put the rest into folders with NUMBER_2 files in each one . How many folders did PERSON_0 end up with ?

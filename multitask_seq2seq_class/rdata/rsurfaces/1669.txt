@@ -1,0 +1,1 @@
+Wal-Mart sells thermometers for NUMBER_0 dollars , and hot-water bottles for NUMBER_1 dollars . Total sales for these NUMBER_2 items during the month of January was NUMBER_3 dollars . There were NUMBER_4 times as many thermometers as hot-water bottles sold . How many thermometers were sold ? How many hot-water bottles ?

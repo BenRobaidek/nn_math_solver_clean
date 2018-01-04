@@ -1,0 +1,1 @@
+The owner of a pizza parlor wants to make a profit of NUMBER_0 % of the cost for each pizza sold . If it costs NUMBER_1 dollars to make a pizza , at what price should each pizza be sold , in dollars ?

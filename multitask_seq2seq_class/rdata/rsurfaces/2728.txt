@@ -1,0 +1,1 @@
+At a restaurant each adult meal costs $ NUMBER_0 and kids eat free . If a group of NUMBER_1 people came in and NUMBER_2 were kids , how much would it cost for the group to eat ?

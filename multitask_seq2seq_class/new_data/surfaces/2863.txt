@@ -1,0 +1,1 @@
+PERSON_0 has NUMBER_0 yellow balloons . PERSON_1 has NUMBER_1 yellow balloons . How many yellow balloons do they have in total ?

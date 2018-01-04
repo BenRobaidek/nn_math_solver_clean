@@ -1,0 +1,1 @@
+When a number is increased by NUMBER_0 the number is equal to NUMBER_1 the original number . Find the original number ?

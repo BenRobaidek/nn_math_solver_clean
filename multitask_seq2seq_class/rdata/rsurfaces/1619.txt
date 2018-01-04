@@ -1,0 +1,1 @@
+If NUMBER_0 of a pound is worth NUMBER_1 dollars , how much is NUMBER_2 pounds worth ?

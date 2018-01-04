@@ -1,0 +1,1 @@
+NUMBER_0 ducks are swimming in a lake . NUMBER_1 more ducks come to join them . How many ducks are swimming in the lake ?

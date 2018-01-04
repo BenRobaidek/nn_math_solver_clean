@@ -1,0 +1,1 @@
+A customer walks into an electronics store and buys NUMBER_0 MP3 players and NUMBER_1 sets of headphones , paying NUMBER_2 dollars . A 2nd customer buys NUMBER_3 MP3 players and NUMBER_4 sets of headphones , and pays NUMBER_5 dollars . How much does an MP3 player cost ? How much does a set of headphones cost ?

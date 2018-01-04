@@ -1,0 +1,1 @@
+During a visit to an orchard , PERSON_0 picked NUMBER_0 bag of Golden Delicious apples , NUMBER_1 bag of Macintosh apples , and NUMBER_2 bag of LOCATION_0 apples . How many bags of fruit did PERSON_0 pick in total ?

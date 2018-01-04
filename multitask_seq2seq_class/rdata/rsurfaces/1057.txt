@@ -1,0 +1,1 @@
+Safety Rent A Truck costs NUMBER_0 dollars plus NUMBER_1 dollars per mile . City Rentals rents the truck for NUMBER_2 dollars plus NUMBER_3 dollars per mile . For what mileage are the costs the same ?

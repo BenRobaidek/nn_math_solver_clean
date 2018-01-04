@@ -1,0 +1,1 @@
+PERSON_0 has NUMBER_0 orange balloons but lost NUMBER_1 of them . How many orange balloons does PERSON_0 have now ?

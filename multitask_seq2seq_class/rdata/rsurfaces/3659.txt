@@ -1,0 +1,1 @@
+Mrs. PERSON_0 had NUMBER_0 cents . She bought a pencil for NUMBER_1 cents . How much money did she have left ?

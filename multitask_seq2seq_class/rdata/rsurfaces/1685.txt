@@ -1,0 +1,1 @@
+PERSON_0 began walking home from school , heading south at a rate of NUMBER_0 miles per hour . PERSON_1 left school at the same time heading north at NUMBER_1 miles per hour . How long will it take for them to be NUMBER_2 miles apart ?

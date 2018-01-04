@@ -1,0 +1,1 @@
+A train leaves station M and travels west at NUMBER_0 kilometers per hour . NUMBER_1 hour later , a faster train leaves station M and also travels west on a parallel track at NUMBER_2 kilometers per hour . How far from station M , in kilometers , will the faster train catch the slower NUMBER_3 ?

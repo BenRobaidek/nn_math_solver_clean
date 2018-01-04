@@ -1,0 +1,1 @@
+PERSON_0 , PERSON_1 , and Chelsea order a large pizza . They decide to split the cost according to how much they will eat . PERSON_1 pays NUMBER_0 dollars , PERSON_2 eats NUMBER_1 of the pizza , and PERSON_0 eats NUMBER_2 of the pizza . How much did the pizza cost ?

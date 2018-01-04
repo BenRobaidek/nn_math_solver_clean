@@ -1,0 +1,1 @@
+PERSON_0 began her pizza delivery route with NUMBER_0 tank of gas in her car . When she made it back to the pizzeria , NUMBER_1 tank of gas was . How much gas did PERSON_0 use ?

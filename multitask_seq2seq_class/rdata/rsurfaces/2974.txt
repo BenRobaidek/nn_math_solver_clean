@@ -1,0 +1,1 @@
+PERSON_0 grew NUMBER_0 watermelons , but the rabbits ate NUMBER_1 watermelons . How many watermelons does PERSON_0 have left ?

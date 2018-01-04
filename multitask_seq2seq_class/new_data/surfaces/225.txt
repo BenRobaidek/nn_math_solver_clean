@@ -1,0 +1,1 @@
+A construction company ordered NUMBER_0 ton of concrete , NUMBER_1 ton of bricks , and NUMBER_2 ton of stone . How many tons of material did the company order in all ?

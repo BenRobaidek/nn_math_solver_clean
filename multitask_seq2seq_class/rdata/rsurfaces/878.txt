@@ -1,0 +1,1 @@
+There are 2 numbers whose sum is NUMBER_0 , such that one is NUMBER_1 times as large as the other . What is the smaller number ? What is the larger number ?

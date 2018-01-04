@@ -1,0 +1,1 @@
+( ( 0.05 * VAR_0 ) + ( 0.1 * VAR_1 ) ) + ( 0.25 * VAR_2 ) = NUMBER_0 ( VAR_0 + VAR_1 ) + VAR_2 = NUMBER_2 VAR_1 = NUMBER_1 VAR_1

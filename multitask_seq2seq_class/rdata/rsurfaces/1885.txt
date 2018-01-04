@@ -1,0 +1,1 @@
+NUMBER_0 children were sharing equally the cost of a present for their teacher . When NUMBER_1 of the children decided not to contribute , each of the other children had to pay $ dollars NUMBER_2 more . How much did the present cost , in dollars ?

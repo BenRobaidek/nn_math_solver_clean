@@ -1,0 +1,1 @@
+A rental car agency charges NUMBER_0 dollars per day plus NUMBER_1 cents per mile to rent a certain car . Another agency charges NUMBER_2 dollars per day plus NUMBER_3 cents per mile to rent the same car . How many miles per day will have to be driven for the cost of a car from the first agency to equal the cot of a car from the second agency ?

@@ -1,0 +1,1 @@
+A chemist has two solutions . One has NUMBER_0 % the other NUMBER_1 % concentrate . How many liters of each solution must be mixed to obtain NUMBER_2 liters of NUMBER_3 % solution ?

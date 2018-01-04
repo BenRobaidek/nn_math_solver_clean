@@ -1,0 +1,1 @@
+PERSON_0 has NUMBER_0 marbles and 17 blocks . If he shares the marbles among NUMBER_1 friends , how many marbles does each friend get ?

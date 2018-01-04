@@ -1,0 +1,1 @@
+NUMBER_0 NUMBER_1 quarts of milk testing NUMBER_2 % butterfat are to be reduced to NUMBER_3 % . How many quarts of cream testing NUMBER_4 % butterfat must be separated from the milk to produce the required result ?

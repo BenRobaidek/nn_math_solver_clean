@@ -1,0 +1,1 @@
+A cord is NUMBER_0 feet long . It is to be cut into three pieces so that the NUMBER_1 piece is twice as long as the first , and the third is twice as long as the NUMBER_2 . Find the length of the first , NUMBER_3 and third piece in feet .

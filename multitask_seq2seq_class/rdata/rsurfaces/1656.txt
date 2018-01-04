@@ -1,0 +1,1 @@
+The Sears Tower in LOCATION_0 is NUMBER_0 feet tall . The John Hancock Center in LOCATION_0 is NUMBER_1 feet tall . Suppose you are asked to build a small-scale replica of each . If you make the Sears Tower NUMBER_2 meter tall , what would be the approximate height of the PERSON_0 PERSON_1 replica ? Round your answer to the nearest hundredth .

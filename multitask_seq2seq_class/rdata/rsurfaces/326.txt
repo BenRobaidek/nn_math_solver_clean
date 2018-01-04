@@ -1,0 +1,1 @@
+PERSON_0 spent $ NUMBER_0 on speakers , $ NUMBER_1 on a CD player , and $ NUMBER_2 on new tires . He wanted 3 CD 's for $ 6.16 , but did n't buy them . In total , how much did he spend ?

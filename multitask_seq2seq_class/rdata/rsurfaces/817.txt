@@ -1,0 +1,1 @@
+A manufacturer produces two models of the same toy , Model A and Model B. Model A takes NUMBER_0 hours to produce and costs NUMBER_1 dollars each . Model B takes NUMBER_2 hours to produce and costs NUMBER_3 dollars each . If the manufacturer allots a total of NUMBER_4 hours and NUMBER_5 dollars for production each week , how many of each model will be produced ?

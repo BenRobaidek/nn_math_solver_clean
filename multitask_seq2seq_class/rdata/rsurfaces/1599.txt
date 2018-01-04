@@ -1,0 +1,1 @@
+The smallest of NUMBER_0 consecutive even integers is NUMBER_1 less than NUMBER_2 times the largest . What are the integers , from smallest to largest ?

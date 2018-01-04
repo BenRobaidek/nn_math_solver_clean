@@ -1,0 +1,1 @@
+A textbook costs a bookstore NUMBER_0 dollars , and the store sells it for NUMBER_1 dollars . Find the amount of profit based on the selling price .

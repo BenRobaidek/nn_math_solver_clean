@@ -1,0 +1,1 @@
+PERSON_0 is at the library helping put away books . There are NUMBER_0 book to put away total but a librarian takes NUMBER_1 of them and leaves PERSON_0 with the rest . If he can fit NUMBER_2 books on a shelf , how many shelves will he need ?

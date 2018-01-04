@@ -1,0 +1,1 @@
+Each bottle cap costs $ NUMBER_0 . How much do NUMBER_1 bottle caps cost ?

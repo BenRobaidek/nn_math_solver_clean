@@ -1,0 +1,1 @@
+There school 's baseball team had NUMBER_0 new players and NUMBER_1 returning players . If the coach put them into groups with NUMBER_2 players in each group , how many groups would there be ?

@@ -1,0 +1,1 @@
+The Rocket Coaster has NUMBER_0 cars , some that hold NUMBER_1 people and some that hold NUMBER_2 people . There is room for NUMBER_3 people altogether . How many NUMBER_4 passenger cars are there ? How many NUMBER_5 passenger cars are there ?

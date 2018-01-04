@@ -1,0 +1,1 @@
+Third-grade students went to a concert in NUMBER_0 buses . Each bus took NUMBER_1 students . How many students went to the concert ?

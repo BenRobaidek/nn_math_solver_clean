@@ -1,0 +1,1 @@
+A girl saves 1-dollar coins and 2-dollar coins . She takes it to a bank , she has NUMBER_0 coins in total that equals NUMBER_1 dollars . How many 1-dollar coins are there ? How many 2-dollar coins are there ?

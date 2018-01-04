@@ -1,0 +1,1 @@
+After the price of petroleum oil went up by NUMBER_0 % , a consumer reduced his oil consumption by the same percent . By what percent would his petroleum bill be changed ?

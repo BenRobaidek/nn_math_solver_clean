@@ -1,0 +1,1 @@
+PERSON_0 had NUMBER_0 marbles . He gave NUMBER_1 to PERSON_1 . How many does he have left ?

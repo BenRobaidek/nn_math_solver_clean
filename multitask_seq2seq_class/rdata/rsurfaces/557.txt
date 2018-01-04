@@ -1,0 +1,1 @@
+Pencils cost NUMBER_0 cents a piece . Pens cost NUMBER_1 cents a piece . PERSON_0 spent NUMBER_2 dollars for a total of NUMBER_3 pens and pencils . How many pencils did she buy ?

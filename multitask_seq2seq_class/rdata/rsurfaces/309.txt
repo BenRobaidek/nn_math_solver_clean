@@ -1,0 +1,1 @@
+PERSON_0 found NUMBER_0 seashells and 25 starfish on the beach . She gave NUMBER_1 of the seashells to PERSON_1 . How many seashells does PERSON_0 now have ?

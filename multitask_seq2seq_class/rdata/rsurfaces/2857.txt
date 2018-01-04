@@ -1,0 +1,1 @@
+PERSON_0 had NUMBER_0 dollars to spend on NUMBER_1 books . After buying them he had NUMBER_2 dollars . How much did each book cost ?

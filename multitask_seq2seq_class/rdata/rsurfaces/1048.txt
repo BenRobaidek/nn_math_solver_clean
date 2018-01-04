@@ -1,0 +1,1 @@
+Rescue crews working for Stockton Rescue average NUMBER_0 calls per shift . After his NUMBER_1 four shifts , PERSON_0 had received NUMBER_2 , NUMBER_3 , NUMBER_4 , NUMBER_5 NUMBER_6 calls , respectively . How many calls will PERSON_0 need on his next shift for his average to be NUMBER_7 ?

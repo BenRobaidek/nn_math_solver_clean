@@ -1,0 +1,1 @@
+NUMBER_0 of PERSON_0 's closest friends like stickers . If she plans to give all of them an equal number of stickers , how many will each receive if she has NUMBER_1 stickers ?

@@ -1,0 +1,1 @@
+One unit of whole wheat flour has NUMBER_0 grams of protein and NUMBER_1 grams of fat . One unit of whole milk has NUMBER_2 grams of protein and NUMBER_3 grams of fat . To the nearest tenth , find the number of units of whole wheat flour and whole milk that must be mixed to make dough that has NUMBER_4 grams of protein and NUMBER_5 grams of fat .

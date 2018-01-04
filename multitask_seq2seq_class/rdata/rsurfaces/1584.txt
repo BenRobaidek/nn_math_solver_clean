@@ -1,0 +1,1 @@
+On a jury there are NUMBER_0 fewer men than twice the number of women . If there were NUMBER_1 more women on the jury , the number of men and women would be equal . How many men are on the jury ?

@@ -1,0 +1,1 @@
+When the digits of a two-digit number are reversed , the new number is NUMBER_0 more than the original number , and the sum of the digits of the original number is NUMBER_1 . What is the original number ?

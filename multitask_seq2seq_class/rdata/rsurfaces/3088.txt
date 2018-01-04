@@ -1,0 +1,1 @@
+Last year at PERSON_0 's airport , NUMBER_0 passengers landed on time . Unfortunately , NUMBER_1 passengers landed late . In all , how many passengers landed in LOCATION_0 last year ?

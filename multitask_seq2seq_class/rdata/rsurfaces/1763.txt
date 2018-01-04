@@ -1,0 +1,1 @@
+PERSON_0 want to have her hair cut and permed and also to go to lunch . She knows she will need NUMBER_0 dollars . The perm costs twice as much as her haircut and she needs NUMBER_1 dollars for lunch . What are the costs of hair cut , permed and lunch ?

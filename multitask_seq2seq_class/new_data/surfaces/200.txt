@@ -1,0 +1,1 @@
+At the beach , PERSON_0 and her sister both built sandcastles and then measured their heights . PERSON_0 's sandcastle was NUMBER_0 foot tall and her sister 's was NUMBER_1 foot tall . How much taller was PERSON_0 's sandcastle than her sister 's ?

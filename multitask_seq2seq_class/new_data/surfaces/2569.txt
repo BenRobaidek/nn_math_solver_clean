@@ -1,0 +1,1 @@
+For Halloween PERSON_0 received NUMBER_0 pieces of candy from neighbors and NUMBER_1 pieces from her older sister . If she only ate NUMBER_2 pieces a day , how long would the candy last her ?

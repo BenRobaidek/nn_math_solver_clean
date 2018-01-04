@@ -1,0 +1,1 @@
+It takes a boat NUMBER_0 hours to travel NUMBER_1 miles down a river and NUMBER_2 hours to return upstream to its starting point . What is the rate of the current in the river ?

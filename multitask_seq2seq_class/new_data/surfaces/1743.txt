@@ -1,0 +1,1 @@
+A concert sells out a NUMBER_0 seat arena . Main seat tickets cost NUMBER_1 dollars , and back seat tickets for NUMBER_2 dollars . The concert made NUMBER_3 dollars . How many main seat tickets and back seat tickets were sold ?

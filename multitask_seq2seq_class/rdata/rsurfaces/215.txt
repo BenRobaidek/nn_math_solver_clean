@@ -1,0 +1,1 @@
+Before starting her shift , a waitress checks to make sure there is enough mustard for her customers . She finds NUMBER_0 bottle at the first table , NUMBER_1 bottle at the second table , and NUMBER_2 bottle at the third table . Altogether , how many bottles of mustard does the waitress find ?

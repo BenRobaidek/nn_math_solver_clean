@@ -1,0 +1,1 @@
+There are NUMBER_0 leaves . There are NUMBER_1 ladybugs on each leaf . How many ladybugs are there in all ?

@@ -1,0 +1,1 @@
+On Friday , PERSON_0 paid $ NUMBER_0 each on NUMBER_1 tickets to a movie theater . He also borrowed a movie for $ NUMBER_2 . PERSON_0 paid with a $ NUMBER_3 bill . How much change did PERSON_0 receive ?

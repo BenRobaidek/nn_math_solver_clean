@@ -1,0 +1,1 @@
+PERSON_0 bought NUMBER_0 cartons of ice cream and NUMBER_1 cartons of yogurt . Each carton of ice cream cost $ NUMBER_2 and each carton of yogurt cost $ NUMBER_3 . How much more did PERSON_0 spend on ice cream than on yogurt ?

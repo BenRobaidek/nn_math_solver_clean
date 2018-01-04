@@ -1,0 +1,1 @@
+On a canoe trip , PERSON_0 paddled upstream at an average speed of NUMBER_0 miles per hour relative to the riverbank . On the return trip downstream , her average speed was NUMBER_1 miles per hour . Find PERSON_0 's paddling speed in still water and the speed of the river 's current .

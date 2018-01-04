@@ -1,0 +1,1 @@
+A producer of packaged frozen meat wants to market mixed meat at NUMBER_0 dollars per kilogram . How many kilograms of pork meat worth NUMBER_1 dollars per kilogram must be mixed with NUMBER_2 kilograms of chicken meat worth NUMBER_3 dollars per kilogram and NUMBER_4 kilograms of beef meat worth NUMBER_5 dollars per kilogram to produce a satisfactory mixture ?

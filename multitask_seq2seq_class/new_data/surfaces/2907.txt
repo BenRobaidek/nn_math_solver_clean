@@ -1,0 +1,1 @@
+There were NUMBER_0 roses in the vase . PERSON_0 cut some more roses from her flower garden . There are now NUMBER_1 roses in the vase . How many roses did she cut ?

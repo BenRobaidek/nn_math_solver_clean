@@ -1,0 +1,1 @@
+A bracelet was marked up NUMBER_0 dollars from cost , which amounts to a NUMBER_1 % increase . Find the original cost of the bracelet .

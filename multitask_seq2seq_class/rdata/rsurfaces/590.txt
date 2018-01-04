@@ -1,0 +1,1 @@
+A plane flies NUMBER_0 miles against a steady NUMBER_1 miles per hour headwind and then returns to the same point with the wind . If the entire takes NUMBER_2 hours , what is the plane 's speed in still air ?

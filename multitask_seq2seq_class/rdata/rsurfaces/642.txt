@@ -1,0 +1,1 @@
+PERSON_0 took NUMBER_0 hours to drive NUMBER_1 kilometers from LOCATION_0 to LOCATION_1 . For the first part of the trip , she drove at NUMBER_2 kilometers per hour . For the second part of the trip , she drove at NUMBER_3 kilometers per hour . How far did she drive at each speed ?

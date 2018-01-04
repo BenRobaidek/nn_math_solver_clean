@@ -1,0 +1,1 @@
+The Drama Club sold NUMBER_0 tickets for the end-of-year-performance . Admission prices were NUMBER_1 dollars for adults and NUMBER_2 dollars for students . The total amount collected at the box office was NUMBER_3 dollars . How many students attended the play ? How many adult attended the play ?

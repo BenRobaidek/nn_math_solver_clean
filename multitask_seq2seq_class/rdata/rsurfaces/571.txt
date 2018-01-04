@@ -1,0 +1,1 @@
+A bicyclist rode into the country for NUMBER_0 hours . In returning , her speed was NUMBER_1 miles per hour faster and the trip took NUMBER_2 hours . What was her speed each way ?

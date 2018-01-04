@@ -1,0 +1,1 @@
+Tennis rackets can be packaged in cartons holding NUMBER_0 rackets each or in cartons holding NUMBER_1 rackets each . Yesterday 's packing slip showed that NUMBER_2 cartons were used to pack a total of NUMBER_3 rackets . How many cartons of NUMBER_4 rackets size were used yesterday ? How many cartons of NUMBER_5 rackets size were used yesterday ?

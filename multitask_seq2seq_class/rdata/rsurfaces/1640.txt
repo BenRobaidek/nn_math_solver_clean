@@ -1,0 +1,1 @@
+The sum of three consecutive odd numbers is NUMBER_0 . Find the numbers .

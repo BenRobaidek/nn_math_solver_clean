@@ -1,0 +1,1 @@
+How many pounds of hamburger that costs NUMBER_0 dollars per pound must be mixed with NUMBER_1 pounds of hamburger that costs NUMBER_2 dollars per pound to make a mixture that costs NUMBER_3 dollars per pound ?

@@ -1,0 +1,1 @@
+Three consecutive numbers have a combined sum of NUMBER_0 . Name the smallest of the three numbers .

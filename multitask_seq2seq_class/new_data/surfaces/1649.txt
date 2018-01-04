@@ -1,0 +1,1 @@
+NUMBER_0 gallon container is full of a NUMBER_1 % alcohol solution . How much must be drained off and replaced by a NUMBER_2 % alcohol solution to produce NUMBER_3 gallon of NUMBER_4 % alcohol solution ?

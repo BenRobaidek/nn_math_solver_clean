@@ -1,0 +1,1 @@
+There are NUMBER_0 cards in PERSON_0 's card collection . If the cards are organized into NUMBER_1 groups , how big is each group ?

@@ -1,0 +1,1 @@
+At the fair PERSON_0 bought NUMBER_0 tickets . After riding the ferris wheel he had NUMBER_1 tickets left . If each ticket cost NUMBER_2 dollars , how much money did PERSON_0 spend riding the ferris wheel ?

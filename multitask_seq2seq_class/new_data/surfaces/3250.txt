@@ -1,0 +1,1 @@
+PERSON_0 has a section filled with short story booklets . If each booklet has NUMBER_0 pages and there are NUMBER_1 booklets in the short story section , how many pages will PERSON_0 need to go through if he plans to read them all ?

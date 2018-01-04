@@ -1,0 +1,1 @@
+There are NUMBER_0 eggs in a box . PERSON_0 takes NUMBER_1 eggs . How many are left ?

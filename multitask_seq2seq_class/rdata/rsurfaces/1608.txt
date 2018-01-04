@@ -1,0 +1,1 @@
+Cole 's student loans totaled NUMBER_0 dollars . One of his loans was at NUMBER_1 % simple interest and the other at NUMBER_2 % . After one year , Cole owed NUMBER_3 dollars in interest . What was the amount of each loan ?

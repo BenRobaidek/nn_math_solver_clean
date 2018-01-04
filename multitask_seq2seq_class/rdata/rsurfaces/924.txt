@@ -1,0 +1,1 @@
+A store is selling compact discs for NUMBER_0 dollars and NUMBER_1 dollars . You buy NUMBER_2 discs and spend a total of NUMBER_3 dollars . How many compact discs did you buy that cost NUMBER_4 dollars ? How many did you buy that cost NUMBER_5 dollars ?

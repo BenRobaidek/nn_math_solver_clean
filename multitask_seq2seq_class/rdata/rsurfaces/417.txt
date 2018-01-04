@@ -1,0 +1,1 @@
+I paid NUMBER_0 dollars for NUMBER_1 lawn chairs of different quality . At the same prices , NUMBER_2 of the cheaper chairs would have cost NUMBER_3 dollars less than NUMBER_4 of the better ones . Find the cost of the better chair . Find the cost of the cheaper chair .

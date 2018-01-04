@@ -1,0 +1,1 @@
+PERSON_0 starts with NUMBER_0 tickets . He buys NUMBER_1 more . How many tickets does PERSON_0 end with ?

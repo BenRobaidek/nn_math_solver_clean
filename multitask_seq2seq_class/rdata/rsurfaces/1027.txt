@@ -1,0 +1,1 @@
+One number is NUMBER_0 more than twice a second number . Their sum is NUMBER_1 . Find the smaller number . Find the larger number .

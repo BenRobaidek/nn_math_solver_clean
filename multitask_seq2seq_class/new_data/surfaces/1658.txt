@@ -1,0 +1,1 @@
+For a certain event , NUMBER_0 tickets were sold , for a total of NUMBER_1 dollars . If students paid NUMBER_2 dollars per ticket and nonstudents paid NUMBER_3 dollars per ticket , how many student tickets were sold ?

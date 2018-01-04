@@ -1,0 +1,1 @@
+PERSON_0 's famous yogurt blends regular yogurt that is NUMBER_0 % fat with its no-fat yogurt to obtain low-fat yogurt that is NUMBER_1 % fat . How many pounds of regular yogurt and how many pounds of no-fat yogurt should be mixed to obtain NUMBER_2 pounds of low-fat yogurt ?

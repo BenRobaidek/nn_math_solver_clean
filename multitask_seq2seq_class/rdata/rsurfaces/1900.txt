@@ -1,0 +1,1 @@
+A number consists of two digits . The tens digit is NUMBER_0 more than the ones digit and the number is NUMBER_1 times the sum of its digits . Find the number .

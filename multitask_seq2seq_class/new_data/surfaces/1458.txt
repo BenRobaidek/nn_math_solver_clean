@@ -1,0 +1,1 @@
+The Lakers scored a total of NUMBER_0 points in a basketball game against the Bulls . The Lakers made a total of NUMBER_1 baskets , consisting of NUMBER_2 point baskets and NUMBER_3 point baskets . How many NUMBER_4 point baskets did the Lakers make ? How many NUMBER_5 point baskets did the Lakers make ?

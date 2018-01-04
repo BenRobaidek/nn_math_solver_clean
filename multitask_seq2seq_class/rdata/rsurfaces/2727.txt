@@ -1,0 +1,1 @@
+PERSON_0 had NUMBER_0 action figures , but needed NUMBER_1 total for a complete collection . If each one costs $ NUMBER_2 , how much money would he need to finish his collection ?

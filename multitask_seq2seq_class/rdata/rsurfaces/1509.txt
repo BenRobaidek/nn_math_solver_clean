@@ -1,0 +1,1 @@
+A worker gets NUMBER_0 cents an hour for ordinary time and NUMBER_1 cents an hour for overtime . If she gets NUMBER_2 dollars for a NUMBER_3 hour week , how many hours are overtime ?

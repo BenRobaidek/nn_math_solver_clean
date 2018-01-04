@@ -1,0 +1,1 @@
+a grocer wants to mix nuts which sell for rs NUMBER_0 per kilo with nuts which sell for rs NUMBER_1 per kilo in order to make a mixture which could sell for rs NUMBER_2 per kilo . How many kilos of each should he mix to get a mixture of NUMBER_3 kilos ?

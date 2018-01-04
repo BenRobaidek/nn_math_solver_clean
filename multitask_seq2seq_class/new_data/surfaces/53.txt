@@ -1,0 +1,1 @@
+PERSON_0 had NUMBER_0 Pokemon cards . PERSON_1 gave her NUMBER_1 new Pokemon cards . PERSON_0 bought NUMBER_2 Pokemon cards . How many Pokemon cards does PERSON_0 have now ?

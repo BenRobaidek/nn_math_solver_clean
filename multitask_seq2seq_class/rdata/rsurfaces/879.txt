@@ -1,0 +1,1 @@
+To strengthen a mixture of NUMBER_0 % alcohol to NUMBER_1 % alcohol , how many liters NUMBER_2 % alcohol solution must be added to NUMBER_3 liters of the NUMBER_4 % solution ?

@@ -1,0 +1,1 @@
+The greater of NUMBER_0 numbers is NUMBER_1 less than NUMBER_2 times the smaller . If the greater is increased by twice the smaller , the result is NUMBER_3 less than NUMBER_4 times the greater , What are the NUMBER_5 numbers ?

@@ -1,0 +1,1 @@
+PERSON_0 purchased a Batman game for $ NUMBER_0 , and a Superman game for $ NUMBER_1 . PERSON_0 already owns 2 games . How much did PERSON_0 spend on video games ?

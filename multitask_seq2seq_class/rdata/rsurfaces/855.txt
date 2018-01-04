@@ -1,0 +1,1 @@
+A lawyer bills her clients NUMBER_0 dollars per hour of service . If a client 's case requires NUMBER_1 hours to complete , use proportion to calculate how much the client will owe the lawyer in dollars .

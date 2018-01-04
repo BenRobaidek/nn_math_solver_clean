@@ -1,0 +1,1 @@
+A dealer pays NUMBER_0 dollars for a car . The dealer wants to make a profit that is NUMBER_1 % of the selling price . For how much should the dealer sell the car ?

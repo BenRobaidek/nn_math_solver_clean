@@ -1,0 +1,1 @@
+Adult tickets for a show cost NUMBER_0 dollars while children 's tickets cost NUMBER_1 dollars . If there were twice as many adults as children and the total receipts for the show were NUMBER_2 dollars . How many adults were at the show ?

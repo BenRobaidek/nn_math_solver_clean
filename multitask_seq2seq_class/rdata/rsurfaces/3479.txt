@@ -1,0 +1,1 @@
+Each child has NUMBER_0 candies . If there are NUMBER_1 children , how many candies are there in total ?

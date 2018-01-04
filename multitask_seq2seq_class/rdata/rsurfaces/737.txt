@@ -1,0 +1,1 @@
+An airplane whose speed in still air is NUMBER_0 kilometers per hour can travel NUMBER_1 kilometers with the wind in the same amount of time that it takes to fly NUMBER_2 kilometers against the wind . What is the wind speed ?

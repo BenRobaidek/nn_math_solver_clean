@@ -1,0 +1,1 @@
+When PERSON_0 was born her mother was NUMBER_0 . In NUMBER_1 more years PERSON_0 's mother will be twice PERSON_0 's age now . How old is PERSON_0 now ? How old is her mother ?

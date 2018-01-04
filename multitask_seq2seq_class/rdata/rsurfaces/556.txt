@@ -1,0 +1,1 @@
+An airplane flew NUMBER_0 hours against a wind of NUMBER_1 kilometers per hour on return he was flowing with the wind and flight was NUMBER_2 hours . Whats speed of airplane in still air ?

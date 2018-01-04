@@ -1,0 +1,1 @@
+Mrs. PERSON_0 has NUMBER_0 markers . They are divided equally into NUMBER_1 packages . Mrs. PERSON_0 wants to know how many markers are in each package ?

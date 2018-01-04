@@ -1,0 +1,1 @@
+A lion eats NUMBER_0 sheep in NUMBER_1 hours , a leopard eats NUMBER_2 sheep in NUMBER_3 hours , and a bear eats NUMBER_4 sheep in NUMBER_5 hours . How long would it take the three animals together to eat NUMBER_6 sheep ?

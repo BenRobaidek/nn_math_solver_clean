@@ -1,0 +1,1 @@
+PERSON_0 has NUMBER_0 boxes of eggs . Each box holds NUMBER_1 eggs and there are 8 boxes in a case . How many eggs does PERSON_0 have ?

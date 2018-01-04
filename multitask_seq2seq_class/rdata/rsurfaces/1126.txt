@@ -1,0 +1,1 @@
+Mr. PERSON_0 is NUMBER_0 times as old as his son . In NUMBER_1 years , he will be only twice as old . What is Mr. PERSON_0 's age now ? How old is his son now ?

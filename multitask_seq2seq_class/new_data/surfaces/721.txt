@@ -1,0 +1,1 @@
+A motorist drove NUMBER_0 hours at NUMBER_1 speed and then for NUMBER_2 hours at another speed . He covered a distance of NUMBER_3 kilometers . If he had travelled NUMBER_4 hours at the NUMBER_5 speed and NUMBER_6 hour at the NUMBER_7 speed , he would have covered NUMBER_8 kilometers . Find NUMBER_9 speeds ?

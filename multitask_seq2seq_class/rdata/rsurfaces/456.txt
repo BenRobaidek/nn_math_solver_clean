@@ -1,0 +1,1 @@
+A light plane flew from its home base to an airport NUMBER_0 miles away . With a headwind the trip took NUMBER_1 hours . The return trip , with a tailwind took NUMBER_2 hours . Find the average air speed of the plane and then the average wind speed in miles per hour .

@@ -1,0 +1,1 @@
+PERSON_0 will rent a car for the weekend . He can choose 1 of 2 plans . The first plan has an initial fee of NUMBER_0 dollars and costs an additional NUMBER_1 dollars per mile driven . The second plan has no initial fee but costs NUMBER_2 dollars per mile driven . How many miles would PERSON_0 need to drive for the 2 plans to cost the same ?

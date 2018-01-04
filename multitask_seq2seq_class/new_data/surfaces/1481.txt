@@ -1,0 +1,1 @@
+There are NUMBER_0 students in an Algebra 1 class . There are NUMBER_1 fewer girls than boys . How many girls are in the class ?

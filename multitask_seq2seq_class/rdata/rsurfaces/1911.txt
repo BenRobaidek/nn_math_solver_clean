@@ -1,0 +1,1 @@
+LOCATION_0 sells electronic supplies . Each week he earns NUMBER_0 dollars plus commission equal to NUMBER_1 % of his sales . This week his goal is to earn no less than NUMBER_2 dollars . Write and solve an inequality to find the amount of sales he must make to reach his goal .

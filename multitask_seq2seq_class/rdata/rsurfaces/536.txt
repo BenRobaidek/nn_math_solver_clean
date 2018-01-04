@@ -1,0 +1,1 @@
+A NUMBER_0 % acid solution and a NUMBER_1 % acid solution must be mixed to produce NUMBER_2 liters of a NUMBER_3 % acid solution . How many liters of NUMBER_4 % acid solution should be used ? How many liters of NUMBER_5 % acid solution should be used ?

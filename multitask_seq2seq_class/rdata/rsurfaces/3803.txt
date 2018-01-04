@@ -1,0 +1,1 @@
+There are NUMBER_0 people on the LOCATION_0 LOCATION_1 LOCATION_2 track team . If a relay race is NUMBER_1 meters long , how far will each team member have to run ?

@@ -1,0 +1,1 @@
+In a club , the ratio of boys to girls is NUMBER_0 to NUMBER_1 . The ratio of NUMBER_2 less than the number of girls to the total number of members is NUMBER_3 to NUMBER_4 . How many boys and how many girls are in the club ?

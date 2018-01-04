@@ -1,0 +1,1 @@
+A chemist needs to make NUMBER_0 ounces of a NUMBER_1 % alcohol solution by mixing together a NUMBER_2 % alcohol solution with a NUMBER_3 % alcohol solution . How many ounces of the NUMBER_4 % solution should he use ? How many ounces of the NUMBER_5 % solution ?

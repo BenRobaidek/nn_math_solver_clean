@@ -1,0 +1,1 @@
+A cable company charges NUMBER_0 dollars for installation plus NUMBER_1 dollars per month . Another cable company offers free installation but charges NUMBER_2 dollars per month . For how many months of cable service would the total cost from either company be the same ?

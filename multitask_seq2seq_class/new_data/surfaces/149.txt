@@ -1,0 +1,1 @@
+To fill an order , the factory dyed NUMBER_0 yards of silk green and NUMBER_1 yards pink . How many yards of silk did it dye for that order ?

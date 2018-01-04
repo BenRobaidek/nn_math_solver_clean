@@ -1,0 +1,1 @@
+PERSON_0 has a job working in an office for NUMBER_0 dollars an hour and another job driving a tractor for NUMBER_1 dollars an hour . One week she works in the office twice as long as she drives the tractor . Her total income for that week is NUMBER_2 dollars . How many hours did she spend at the office ? How many hours driving the tractor ?

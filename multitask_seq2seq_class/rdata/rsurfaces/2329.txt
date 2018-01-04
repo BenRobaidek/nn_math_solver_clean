@@ -1,0 +1,1 @@
+For PERSON_0 PERSON_1 and her sister combined the candy they received . PERSON_1 had NUMBER_0 pieces of candy while her sister had NUMBER_1 . If they ate NUMBER_2 pieces the first night , how many pieces do they have left ?

@@ -1,0 +1,1 @@
+Mr. PERSON_0 read NUMBER_0 pages of a book on Monday . He read NUMBER_1 of the remainder on Wednesday . If he still has NUMBER_2 pages to read , how many pages are in the book ?

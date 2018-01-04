@@ -1,0 +1,1 @@
+After eating at the restaurant , PERSON_0 , PERSON_1 , and PERSON_2 decided to divide the bill evenly . If each person paid NUMBER_0 dollars , what was the total of the bill ?

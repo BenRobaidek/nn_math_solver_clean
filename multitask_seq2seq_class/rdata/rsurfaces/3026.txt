@@ -1,0 +1,1 @@
+PERSON_0 goes to lunch with PERSON_1 and PERSON_2 . The total bill came to NUMBER_0 dollars . They decided to equally split up the bill , how much will each person have to pay ?

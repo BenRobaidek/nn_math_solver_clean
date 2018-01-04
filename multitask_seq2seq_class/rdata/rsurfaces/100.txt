@@ -1,0 +1,1 @@
+PERSON_0 had Pokemon cards . He gave NUMBER_0 to his friends . He now has NUMBER_1 Pokemon cards . How many Pokemon cards did he have to start with ?

@@ -1,0 +1,1 @@
+PERSON_0 's Catering is planning a wedding reception . The bride and groom would like to serve a nut mixture containing NUMBER_0 % peanuts . PERSON_0 has available mixtures that are either NUMBER_1 % or NUMBER_2 % peanuts . How much of each type should be mixed to get a 10-pound mixture that is NUMBER_3 % peanuts ?

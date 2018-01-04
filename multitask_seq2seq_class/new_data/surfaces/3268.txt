@@ -1,0 +1,1 @@
+PERSON_0 has NUMBER_0 magazines in her cabinet . She plans to send it to the recycling office in their area . If she places it in boxes which can contain NUMBER_1 magazines , how many boxes will PERSON_1 use ?

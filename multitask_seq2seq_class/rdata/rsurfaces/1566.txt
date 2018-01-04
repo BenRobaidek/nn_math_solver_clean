@@ -1,0 +1,1 @@
+A merchant wants to combine peanuts selling NUMBER_0 dollars per pound and cashews selling for NUMBER_1 dollars per pound to form NUMBER_2 pounds which will sell at NUMBER_3 dollars per pound . What amount of peanuts and what amount of cashews must be used ?

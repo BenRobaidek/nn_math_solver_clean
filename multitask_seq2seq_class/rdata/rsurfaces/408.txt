@@ -1,0 +1,1 @@
+The cost of a taxi ride is calculated by adding a fixed amount to a charge for each NUMBER_0 mile of the trip . If a NUMBER_1 mile trip costs NUMBER_2 dollars and a NUMBER_3 mile trip costs NUMBER_4 dollars , what will be the cost of a NUMBER_5 mile trip ?

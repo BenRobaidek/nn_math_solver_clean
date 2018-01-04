@@ -1,0 +1,1 @@
+A fruit vendor bought NUMBER_0 pineapples for NUMBER_1 dollars . He sold some at NUMBER_2 dollars each and the rest at NUMBER_3 dollars , therby gaining NUMBER_4 dollars . How many did he sell at NUMBER_5 dollars ? At NUMBER_6 dollars ?

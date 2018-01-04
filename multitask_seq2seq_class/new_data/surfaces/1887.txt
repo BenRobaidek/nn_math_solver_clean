@@ -1,0 +1,1 @@
+Tickets to the school 's dinner theatre cost NUMBER_0 dollars for children and NUMBER_1 dollars for adults . NUMBER_2 tickets were sold for a total of NUMBER_3 dollars . How many children attended ? How many adults attended ?

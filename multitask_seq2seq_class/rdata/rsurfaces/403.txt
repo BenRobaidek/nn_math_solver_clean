@@ -1,0 +1,1 @@
+Suppose that I agree to pay you NUMBER_0 cents for every problem you solve correctly on a test and fine you NUMBER_1 cents for every problem that you get wrong . If at the end of NUMBER_2 problems we do not owe each other any money , how many problems did you get right ?

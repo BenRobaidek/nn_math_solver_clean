@@ -1,0 +1,1 @@
+Each of farmer PERSON_0 's NUMBER_0 lambs is either black or white . There are NUMBER_1 white ones . How many of Farmer PERSON_0 's lambs are black ?

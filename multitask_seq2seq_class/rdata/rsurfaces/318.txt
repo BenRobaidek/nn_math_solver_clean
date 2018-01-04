@@ -1,0 +1,1 @@
+PERSON_0 bought a skateboard for $ NUMBER_0 , and spent $ NUMBER_1 on marbles . PERSON_0 also spent $ 14.50 on shorts . In total , how much did PERSON_0 spend on toys ?

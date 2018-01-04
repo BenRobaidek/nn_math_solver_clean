@@ -1,0 +1,1 @@
+Will had NUMBER_0 pieces of clothing to wash . He put NUMBER_1 of them in one load , but decided to split the rest into NUMBER_2 equal loads . How many pieces of clothing could go in each of the small loads ?

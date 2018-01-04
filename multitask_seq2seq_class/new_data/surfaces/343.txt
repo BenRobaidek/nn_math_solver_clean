@@ -1,0 +1,1 @@
+A restaurant served NUMBER_0 slices of pie during lunch and NUMBER_1 during dinner today . It served 8 of them yesterday . How many slices of pie were served today ?

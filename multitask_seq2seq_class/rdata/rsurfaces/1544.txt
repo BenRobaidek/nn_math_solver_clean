@@ -1,0 +1,1 @@
+Recently , AT&T offered 2 long-distance calling plans . The Rate Plus Plan cost NUMBER_0 dollars per month plus NUMBER_1 cents a minute . Another plan has no monthly fee , but costs NUMBER_2 cents a minute . For what number of minutes will the 2 plans cost the same ?

@@ -1,0 +1,1 @@
+Qantas shares pay a yearly return of NUMBER_0 % and Telstra shares pay NUMBER_1 % . PERSON_0 invests NUMBER_2 dollars more on Telstra shares than on Qantas and his total yearly earnings from the two investments is NUMBER_3 dollars . How much did he invest in Qantas shares ?

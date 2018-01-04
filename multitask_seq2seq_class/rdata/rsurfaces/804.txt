@@ -1,0 +1,1 @@
+The sum of NUMBER_0 numbers is NUMBER_1 . NUMBER_2 times one of them is more than NUMBER_3 times the NUMBER_4 by NUMBER_5 . Find the smaller number . Find the larger number .

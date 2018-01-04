@@ -1,0 +1,1 @@
+Ticket prices at concert were NUMBER_0 dollars for adults , NUMBER_1 dollars for seniors , and NUMBER_2 dollars for children . There were twice as many children as adults and NUMBER_3 more seniors than adults . If the total receipts for the concert were NUMBER_4 dollars , how many children were in attendance ?

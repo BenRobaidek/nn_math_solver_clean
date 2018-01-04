@@ -1,0 +1,1 @@
+NUMBER_0 less than NUMBER_1 times a number equals NUMBER_2 . What is the number ?

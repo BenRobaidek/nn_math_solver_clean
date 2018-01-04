@@ -1,0 +1,1 @@
+A truck and trailer together weigh NUMBER_0 pounds . The trailer weighs NUMBER_1 pounds less than NUMBER_2 as much as the truck . Find the truck 's weight . Find the trailer 's weight .

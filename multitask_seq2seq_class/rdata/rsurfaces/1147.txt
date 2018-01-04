@@ -1,0 +1,1 @@
+The product of 3 numbers is NUMBER_0 . The first number is NUMBER_1 % of the second number and the third number is NUMBER_2 . What is the second number ?

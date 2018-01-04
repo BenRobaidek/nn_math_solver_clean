@@ -1,0 +1,1 @@
+PERSON_0 had NUMBER_0 music files and NUMBER_1 video files on her flash drive . If she deleted NUMBER_2 of the files , how many files were still on her flash drive ?

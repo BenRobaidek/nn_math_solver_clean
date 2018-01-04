@@ -1,0 +1,1 @@
+If NUMBER_0 apples and NUMBER_1 oranges equals NUMBER_2 dollars and NUMBER_3 apples and NUMBER_4 orange equals NUMBER_5 dollars , how much does each apple and each orange cost ?

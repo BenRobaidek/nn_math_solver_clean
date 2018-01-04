@@ -1,0 +1,1 @@
+A piggy bank has NUMBER_0 coins . The coins are either nickels or dimes . The bank has NUMBER_1 dollars in total . How many coins are nickels ? How many are dimes ?

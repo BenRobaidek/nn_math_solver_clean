@@ -1,0 +1,1 @@
+Soybean meal is NUMBER_0 % protein and cornmeal is NUMBER_1 % . How many pounds of each should be mixed together in order to get a NUMBER_2 pound mixture that is NUMBER_3 % protein ?

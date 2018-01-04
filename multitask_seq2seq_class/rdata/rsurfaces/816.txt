@@ -1,0 +1,1 @@
+How many liters of a blue dye that costs NUMBER_0 dollars per liter must be mixed with NUMBER_1 liters of Anil , which costs NUMBER_2 dollars per liter , to make a mixture that costs NUMBER_3 dollars per liter ?

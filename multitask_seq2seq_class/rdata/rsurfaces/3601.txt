@@ -1,0 +1,1 @@
+LOCATION_0 has NUMBER_0 eggs and 8 Skittles . If she shares the eggs among NUMBER_1 friends , how many eggs does each friend get ?

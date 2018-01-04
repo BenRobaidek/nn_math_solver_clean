@@ -1,0 +1,1 @@
+PERSON_0 has NUMBER_0 packs of crayons . Each pack has NUMBER_1 crayons in it . She also has 6 extra crayons . How many crayons does PERSON_0 have altogether ?

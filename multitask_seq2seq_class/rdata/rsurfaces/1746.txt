@@ -1,0 +1,1 @@
+PERSON_0 , PERSON_1 , and PERSON_2 have been selling raffle tickets to raise money for the math club . PERSON_0 sold NUMBER_0 less than twice as many tickets as PERSON_2 . PERSON_1 sold twice as many tickets as PERSON_2 . Together the three sold NUMBER_1 tickets . How many tickets did PERSON_0 , PERSON_1 , and PERSON_2 sell ?

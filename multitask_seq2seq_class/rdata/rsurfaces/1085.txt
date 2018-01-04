@@ -1,0 +1,1 @@
+In a room with NUMBER_0 men , NUMBER_1 % of the occupants are women . How many women are in the room ?

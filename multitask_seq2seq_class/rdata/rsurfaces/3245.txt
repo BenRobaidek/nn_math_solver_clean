@@ -1,0 +1,1 @@
+They entered the circus tent and saw that there are NUMBER_0 sections for the audience . If each section can accommodate NUMBER_1 people , how many people can the tent accommodate in total ?

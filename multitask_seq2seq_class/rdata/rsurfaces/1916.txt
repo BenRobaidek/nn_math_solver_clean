@@ -1,0 +1,1 @@
+The difference between NUMBER_0 of a line and NUMBER_1 of the same line is NUMBER_2 centimeters . Find the length of the line .

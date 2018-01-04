@@ -1,0 +1,1 @@
+If PERSON_0 strolled NUMBER_0 miles at NUMBER_1 miles per hour , how long was PERSON_0 travelling ?

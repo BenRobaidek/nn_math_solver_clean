@@ -1,0 +1,1 @@
+NUMBER_0 of a number decreased by NUMBER_1 is equal to NUMBER_2 . Find the number .

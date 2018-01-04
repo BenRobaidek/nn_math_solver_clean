@@ -1,0 +1,1 @@
+Mrs. PERSON_0 measured the distance from her desk to the water fountain . It was NUMBER_0 feet . How many feet will Mrs. PERSON_0 walk on her trips to the fountain if she goes to the water fountain NUMBER_1 times today ?

@@ -1,0 +1,1 @@
+NUMBER_0 pencils and NUMBER_1 erasers cost NUMBER_2 dollars , whereas NUMBER_3 pencils and NUMBER_4 erasers cost NUMBER_5 dollars . Calculate the cost of NUMBER_6 erasers .

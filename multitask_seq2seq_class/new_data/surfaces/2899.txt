@@ -1,0 +1,1 @@
+PERSON_0 went to NUMBER_0 football games this month . He went to NUMBER_1 games last month , and plans to go to NUMBER_2 games next month . How many games will he attend in all ?

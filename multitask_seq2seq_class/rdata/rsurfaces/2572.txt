@@ -1,0 +1,1 @@
+A pet shelter had NUMBER_0 puppies when another NUMBER_1 were brought in . If NUMBER_2 puppies a day are adopted , how long would it take for all of them to be adopted ?

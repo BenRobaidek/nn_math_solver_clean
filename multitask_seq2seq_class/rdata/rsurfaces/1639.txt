@@ -1,0 +1,1 @@
+PERSON_0 's home is NUMBER_0 meters from his school . One morning he walked part of the way to school and then ran the rest . If it took him NUMBER_1 minutes or less to get school , and he walks at NUMBER_2 meters per minute and runs NUMBER_3 meters minute , how far did he run ?

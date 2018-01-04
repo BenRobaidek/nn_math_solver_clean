@@ -1,0 +1,1 @@
+For Monday morning 's staff meeting , PERSON_0 bought NUMBER_0 bags of bagels and NUMBER_1 packages of cream cheese and paid NUMBER_2 dollars . For Friday 's meeting , he bought NUMBER_3 bags of bagels and NUMBER_4 packages of cream cheese and paid NUMBER_5 dollars . How much does a bag of bagels and a package of cream cheese cost , in dollars ?

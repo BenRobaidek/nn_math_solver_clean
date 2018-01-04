@@ -1,0 +1,1 @@
+An art dealer sold NUMBER_0 etchings for NUMBER_1 dollars . He sold some of them at NUMBER_2 dollars each and the rest at NUMBER_3 dollars each . How many etchings did he sell at NUMBER_4 dollars ? How many etchings did he sell at NUMBER_5 dollars ?

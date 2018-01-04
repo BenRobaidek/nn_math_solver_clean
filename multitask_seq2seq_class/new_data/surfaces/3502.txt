@@ -1,0 +1,1 @@
+PERSON_0 wants to split a collection of bottle caps into groups of NUMBER_0 . PERSON_0 has NUMBER_1 bottle caps . How many groups will be created ?

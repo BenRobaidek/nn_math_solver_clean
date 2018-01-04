@@ -1,0 +1,1 @@
+River Joes 's Seafood Diner charges NUMBER_0 dollars for a catfish dinner and NUMBER_1 dollars for an order of popcorn shrimp . After filling NUMBER_2 orders , River PERSON_0 had collected NUMBER_3 dollars . How many orders of popcorn shrimp and catfish dinners did they sell ?

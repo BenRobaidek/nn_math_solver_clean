@@ -1,0 +1,1 @@
+If NUMBER_0 tacos cost NUMBER_1 dollars . How much does NUMBER_2 tacos cost , in dollars ?

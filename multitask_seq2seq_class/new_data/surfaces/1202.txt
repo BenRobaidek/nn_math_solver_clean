@@ -1,0 +1,1 @@
+You sell tickets for admission to your school play and collect a total of NUMBER_0 dollars . Admission prices are NUMBER_1 dollars for adults and NUMBER_2 dollars for children . You sold NUMBER_3 tickets . How many adult tickets did you sell ? How many children tickets did you sell ?

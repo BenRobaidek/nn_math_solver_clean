@@ -1,0 +1,1 @@
+Find the number whose double is NUMBER_0 greater than its half ?

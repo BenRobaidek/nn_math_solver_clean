@@ -1,0 +1,1 @@
+LOCATION_0 starts with NUMBER_0 eggs . PERSON_0 takes NUMBER_1 away . How many eggs does LOCATION_0 end with ?

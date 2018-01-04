@@ -1,0 +1,1 @@
+NUMBER_0 times a number added to NUMBER_1 amounts to NUMBER_2 less than the product of NUMBER_3 and the number .

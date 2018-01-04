@@ -1,0 +1,1 @@
+Mrs. PERSON_0 saw NUMBER_0 bugs eat NUMBER_1 flowers each . How many flowers total did the bugs eat ?

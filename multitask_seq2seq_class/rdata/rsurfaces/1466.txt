@@ -1,0 +1,1 @@
+A semi truck travels on a paved road for NUMBER_0 hours at an average speed of NUMBER_1 miles per hour faster than it travels on a dirt road . The time spent on the dirt is NUMBER_2 hours . If the entire trip is NUMBER_3 miles , how fast is the truck traveling on the dirt road ?

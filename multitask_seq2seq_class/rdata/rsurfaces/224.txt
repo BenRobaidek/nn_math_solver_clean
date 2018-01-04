@@ -1,0 +1,1 @@
+Last Saturday , PERSON_0 walked all over town running errands . First , he walked NUMBER_0 mile from his house to the library and NUMBER_1 mile from the library to the post office . Then he walked NUMBER_2 mile from the post office back home . How many miles did PERSON_0 walk in all ?

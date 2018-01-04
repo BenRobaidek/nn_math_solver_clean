@@ -1,0 +1,1 @@
+PERSON_0 , PERSON_1 , PERSON_2 sold magazine subscriptions to raise money for playground equipment . PERSON_1 sold NUMBER_0 more subscriptions than PERSON_0 . PERSON_2 sold NUMBER_1 less than twice as many subscriptions as PERSON_0 . If together they sold a total of NUMBER_2 magazine subscriptions , how many did each girl sell ?

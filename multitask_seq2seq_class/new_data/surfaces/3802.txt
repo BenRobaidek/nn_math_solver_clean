@@ -1,0 +1,1 @@
+PERSON_0 's room is NUMBER_0 feet long and NUMBER_1 feet wide . How much carpet does she need to cover the whole floor ?

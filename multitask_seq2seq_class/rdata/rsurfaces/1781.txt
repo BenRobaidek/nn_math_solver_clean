@@ -1,0 +1,1 @@
+1 number is NUMBER_0 less than twice another , and their sum is NUMBER_1 . Find the NUMBER_2 numbers .

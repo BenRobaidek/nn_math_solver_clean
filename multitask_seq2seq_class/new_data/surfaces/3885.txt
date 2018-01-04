@@ -1,0 +1,1 @@
+PERSON_0 has NUMBER_0 elementary schools . There are NUMBER_1 students in each school . How many elementary students are there altogether in Lansing ?

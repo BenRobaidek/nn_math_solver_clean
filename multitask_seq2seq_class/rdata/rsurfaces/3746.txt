@@ -1,0 +1,1 @@
+PERSON_0 made a tower with NUMBER_0 blocks . He added some more blocks and now he has NUMBER_1 blocks . How many did he have to add ?

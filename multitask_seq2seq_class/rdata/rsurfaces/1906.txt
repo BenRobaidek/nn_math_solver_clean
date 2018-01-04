@@ -1,0 +1,1 @@
+NUMBER_0 similar tables and NUMBER_1 similar chairs cost NUMBER_2 dollars . If the table cost NUMBER_3 dollars more than a chair , what is the cost , in dollars , of the table ? What is the cost of the chair ?

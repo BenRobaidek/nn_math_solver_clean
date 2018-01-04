@@ -1,0 +1,1 @@
+The sum of twice a number and NUMBER_0 less than the number is the same as the difference between -32 and the number . What is the number ?

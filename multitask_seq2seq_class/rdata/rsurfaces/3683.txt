@@ -1,0 +1,1 @@
+Our class got NUMBER_0 books from the library . Then we got NUMBER_1 more books from the library . How many books did our class get from the library ?

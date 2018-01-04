@@ -1,0 +1,1 @@
+Adult tickets for a school fair cost NUMBER_0 dollars and children 's tickets are half the price of an adult ticket . The amount of the adult tickets exceeds the children tickets by NUMBER_1 . How many adults attended this fair ? The total receipts for this event are NUMBER_2 dollars .

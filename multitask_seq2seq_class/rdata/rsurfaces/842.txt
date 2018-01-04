@@ -1,0 +1,1 @@
+The total points that a basketball team scored was NUMBER_0 . If there were NUMBER_1 times as many field goals as free throws , how many of each were there , respectively ? Field goals count NUMBER_2 points and free throws 1 point .

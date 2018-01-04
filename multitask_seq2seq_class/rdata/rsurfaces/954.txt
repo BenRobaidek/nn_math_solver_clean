@@ -1,0 +1,1 @@
+PERSON_0 , PERSON_1 and PERSON_2 receive an average of NUMBER_0 dollars per week in pocket money . PERSON_0 receives NUMBER_1 dollars more than PERSON_1 but NUMBER_2 dollars less than PERSON_2 . How much does PERSON_0 receive ? How much does PERSON_1 get ? How much does PERSON_2 get ?

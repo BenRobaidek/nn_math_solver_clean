@@ -1,0 +1,1 @@
+PERSON_0 , PERSON_1 's sister , wanted to have NUMBER_0 bracelets with star-shaped stones . She also bought NUMBER_1 star-shaped stones from the local store and gave it to PERSON_1 . How many star-shaped stones will there be in each of the bracelet PERSON_1 makes for PERSON_0 ?

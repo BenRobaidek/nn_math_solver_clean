@@ -1,0 +1,1 @@
+NUMBER_0 times the sum of NUMBER_1 and a number is NUMBER_2 . Find the number .

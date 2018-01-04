@@ -1,0 +1,1 @@
+LOCATION_0 's salary is NUMBER_0 dollars a month plus a NUMBER_1 % commission on all of his sales . What must the amount of his sales be , in dollars , for him to earn at least NUMBER_2 dollars each month ?

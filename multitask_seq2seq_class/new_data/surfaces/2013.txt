@@ -1,0 +1,1 @@
+They charged NUMBER_0 dollars for adults and NUMBER_1 dollars for children . NUMBER_2 adults and children attended , and NUMBER_3 dollars was made from ticket sales . How many children and adults went to the film premiere ?

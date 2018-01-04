@@ -1,0 +1,1 @@
+NUMBER_0 positive integers have a product of NUMBER_1 . One integer is twice the other . What is the smaller number ?

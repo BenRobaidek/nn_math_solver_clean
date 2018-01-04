@@ -1,0 +1,1 @@
+A special tea blend is made from NUMBER_0 varieties of herbal tea , one that costs NUMBER_1 dollars per kilogram and another that costs NUMBER_2 dollars per kilogram . How many kilograms of each type are needed to make NUMBER_3 kilograms of a blend worth NUMBER_4 dollars per kilogram ?

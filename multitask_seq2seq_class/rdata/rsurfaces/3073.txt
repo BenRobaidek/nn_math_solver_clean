@@ -1,0 +1,1 @@
+PERSON_0 loves eating fruits . PERSON_0 paid $ NUMBER_0 for berries , and $ NUMBER_1 for peaches with a $ NUMBER_2 bill . How much change did PERSON_0 receive ?

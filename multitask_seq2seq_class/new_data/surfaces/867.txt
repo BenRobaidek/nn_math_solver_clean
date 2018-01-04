@@ -1,0 +1,1 @@
+Two rainstorms occurred in one week in a certain area . In the first storm NUMBER_0 milliliters of rain fell per hour , and in the second storm NUMBER_1 milliliters of rain fell per hour . Rain fell that week for a total of NUMBER_2 hours , for a total rainfall of NUMBER_3 milliliters . How many hours was the first storm and the second storm ?

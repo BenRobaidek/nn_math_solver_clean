@@ -1,0 +1,1 @@
+A piece of rope NUMBER_0 meters long is cut into NUMBER_1 pieces so that the longest piece is twice as long as the shorter piece . How long are the NUMBER_2 pieces ?

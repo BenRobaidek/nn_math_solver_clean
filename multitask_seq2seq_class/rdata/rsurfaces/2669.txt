@@ -1,0 +1,1 @@
+Will bought NUMBER_0 boxes of chocolate candy and gave NUMBER_1 to his little brother . If each box has NUMBER_2 pieces inside it , how many pieces did Will still have ?

@@ -1,0 +1,1 @@
+There are NUMBER_0 douglas fir and ponderosa pine trees in a section of the forest bought by PERSON_0 logging company . The company paid an average of NUMBER_1 dollars for each douglas fir and NUMBER_2 dollars for each ponderosa pine . If the company paid NUMBER_3 dollars for the trees , how many firs and pines did they buy ?

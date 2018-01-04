@@ -1,0 +1,1 @@
+A woman has NUMBER_0 dollars invested , part at NUMBER_1 % and the remainder at NUMBER_2 % simple interest . If the total annual income is NUMBER_3 dollars , how much is invested at NUMBER_4 % , in dollars ? How much is invested at NUMBER_5 % ?

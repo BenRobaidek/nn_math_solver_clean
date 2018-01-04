@@ -1,0 +1,1 @@
+A teacher had NUMBER_0 worksheets to grade . If she graded NUMBER_1 , but then another NUMBER_2 were turned in , how many worksheets would she have to grade ?

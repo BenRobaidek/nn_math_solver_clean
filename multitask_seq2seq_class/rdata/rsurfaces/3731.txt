@@ -1,0 +1,1 @@
+PERSON_0 had some trucks . She gave NUMBER_0 to PERSON_1 , and now she has NUMBER_1 trucks left . How many trucks did PERSON_0 have to start with ?

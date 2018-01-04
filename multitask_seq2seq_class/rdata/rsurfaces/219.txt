@@ -1,0 +1,1 @@
+PERSON_0 counted the leftover ice cream after a sundae party . She had NUMBER_0 carton of rocky road ice cream , NUMBER_1 carton of cookie dough ice cream , and NUMBER_2 carton of strawberry cheesecake ice cream . How many cartons of ice cream did PERSON_0 have in all ?

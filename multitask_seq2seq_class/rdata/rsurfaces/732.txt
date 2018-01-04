@@ -1,0 +1,1 @@
+Find the two digit number whose tens digit is NUMBER_0 less than the unit digit . The original number is NUMBER_1 more than NUMBER_2 times the sum of the digits .

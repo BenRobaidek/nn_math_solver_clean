@@ -1,0 +1,1 @@
+She finds that NUMBER_0 liters of regular and NUMBER_1 liters of unleaded were sold for a total of NUMBER_2 dollars . Regular was NUMBER_3 cents per liter cheaper than unleaded . What is the price of 1 liter of regular ? What is the price of 1 liter of unleaded ?

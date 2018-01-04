@@ -1,0 +1,1 @@
+At the schools book fair PERSON_0 bought NUMBER_0 adventure books and NUMBER_1 mystery books . If NUMBER_2 of the books were used , how many new books did he buy ?

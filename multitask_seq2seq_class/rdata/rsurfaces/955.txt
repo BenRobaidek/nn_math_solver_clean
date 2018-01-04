@@ -1,0 +1,1 @@
+A farmhouse has NUMBER_0 animals . Some are goats and some are ducks . Altogether there are NUMBER_1 legs . How many of each animal are there ?

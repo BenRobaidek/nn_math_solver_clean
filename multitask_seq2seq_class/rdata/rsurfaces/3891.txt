@@ -1,0 +1,1 @@
+There are NUMBER_0 books in a library . They are arranged on shelves that hold NUMBER_1 books each . How many shelves are in the library ?

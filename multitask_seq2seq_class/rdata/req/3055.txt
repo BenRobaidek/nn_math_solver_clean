@@ -1,0 +1,1 @@
+( NUMBER_0 * 0.05 ) + ( NUMBER_1 * 0.1 ) + ( NUMBER_2 * 0.1 ) + ( NUMBER_3 * 0.5 ) = VAR_0

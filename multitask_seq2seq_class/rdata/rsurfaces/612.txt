@@ -1,0 +1,1 @@
+The sum of two numbers is NUMBER_0 . The difference between NUMBER_1 times the smaller number and the larger number is NUMBER_2 . Find the smaller number and the larger number .

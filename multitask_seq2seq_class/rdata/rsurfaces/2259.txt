@@ -1,0 +1,1 @@
+PERSON_0 had NUMBER_0 math problems and NUMBER_1 science problems for homework . If she finished NUMBER_2 of the problems at school , how many problems did she have to do for homework ?

@@ -1,0 +1,1 @@
+When both copying machines A and B are working , NUMBER_0 copies can be made in one minute . In one minute , copiers A and C can make NUMBER_1 copies . If all three copy machines are working , NUMBER_2 copies can be made in one minute . How many copies per minute can A make ? How many copies per minute can B make ? How many copies per minute can C make ?

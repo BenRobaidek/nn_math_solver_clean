@@ -1,0 +1,1 @@
+The speed of an airplane in still air is NUMBER_0 kilometers . The plane travels NUMBER_1 kilometers against the wind and NUMBER_2 kilometers with the wind in a total time of NUMBER_3 hours . What is the speed of the wind ?

@@ -1,0 +1,1 @@
+Dawns SUV gets NUMBER_0 miles per gallon in city driving and NUMBER_1 miles per gallon in highway driving . The SUV is driven NUMBER_2 miles on NUMBER_3 gallons of gas . How many miles were driven in the city ? How many miles were driven on the highway ?

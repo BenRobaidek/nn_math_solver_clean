@@ -1,0 +1,1 @@
+At the pico de Gallo Restaurante the dinner specials include combinations of tacos and enchiladas . THe number One special offers NUMBER_0 tacos and NUMBER_1 enchiladas for NUMBER_2 . oo . The number NUMBER_3 special offers NUMBER_4 tacos and 1 enchilada for NUMBER_5 . Find the cost of a taco and a enchilada .

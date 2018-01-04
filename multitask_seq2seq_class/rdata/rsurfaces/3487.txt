@@ -1,0 +1,1 @@
+There are NUMBER_0 bottle caps in each box . How many bottle caps are in NUMBER_1 boxes ?

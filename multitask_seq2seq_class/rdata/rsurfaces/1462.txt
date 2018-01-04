@@ -1,0 +1,1 @@
+PERSON_0 has a choice between receiving an NUMBER_0 dollars monthly salary from Furniture by Design or a base salary of NUMBER_1 dollars and a NUMBER_2 % commission on the amount of furniture she sells during the month . For what amount of sales will the 2 choices be equal ?

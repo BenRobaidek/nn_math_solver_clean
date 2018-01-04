@@ -1,0 +1,1 @@
+One number is NUMBER_0 more than twice another number . If the sum of the numbers is twice their difference , find the smaller number . Find the larger number .

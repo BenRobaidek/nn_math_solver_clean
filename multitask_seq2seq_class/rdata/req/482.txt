@@ -1,0 +1,1 @@
+( ( 0.06 * VAR_0 ) + ( 0.13 * VAR_1 ) ) + ( 0.18 * VAR_2 ) = NUMBER_1 ( VAR_0 + VAR_1 ) + VAR_2 = NUMBER_0 VAR_1 = 2.0 * VAR_0

@@ -1,0 +1,1 @@
+It took PERSON_0 NUMBER_0 hours to ride to PERSON_1 's house at NUMBER_1 miles per hour . How far is it between PERSON_0 's house and PERSON_1 's house ?

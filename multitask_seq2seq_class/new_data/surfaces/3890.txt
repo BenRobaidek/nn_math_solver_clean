@@ -1,0 +1,1 @@
+Arthur baked NUMBER_0 muffins . PERSON_0 baked NUMBER_1 times as many . How many muffins did PERSON_0 bake ?

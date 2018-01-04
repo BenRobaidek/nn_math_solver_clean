@@ -1,0 +1,1 @@
+A teacher gives out a test of NUMBER_0 problems . Each computation problem is worth NUMBER_1 points . Each word problem is worth NUMBER_2 points . The total points you can receive on the test is NUMBER_3 points . How many computation problems are there ?

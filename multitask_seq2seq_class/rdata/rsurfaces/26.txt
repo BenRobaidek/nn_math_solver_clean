@@ -1,0 +1,1 @@
+PERSON_0 found NUMBER_0 seashells and PERSON_1 found NUMBER_1 seashells on the beach . How many seashells did they find together ?

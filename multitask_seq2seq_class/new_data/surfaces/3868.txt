@@ -1,0 +1,1 @@
+You have NUMBER_0 cookies and want to share them equally with NUMBER_1 people . How many cookies would each person get ?

@@ -1,0 +1,1 @@
+A two digit number is such that the sum of its digit is NUMBER_0 . The number is NUMBER_1 greater than the number obtained by interchanging the digits . What number could it be ?

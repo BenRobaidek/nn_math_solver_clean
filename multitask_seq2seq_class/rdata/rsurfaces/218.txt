@@ -1,0 +1,1 @@
+Brandy made trail mix for a backpacking trip . She used NUMBER_0 pound of peanuts , NUMBER_1 pound of chocolate chips , and NUMBER_2 pound of raisins . How many pounds of trail mix did Brandy make ?

@@ -1,0 +1,1 @@
+NUMBER_0 birds were sitting in a tree . Some more fly up to the tree . Then there were NUMBER_1 birds in the tree . How many more flew up to the tree ?

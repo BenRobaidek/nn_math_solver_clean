@@ -1,0 +1,1 @@
+A person wishes to invest NUMBER_0 dollars , part at NUMBER_1 % and part at NUMBER_2 % . If the total interest desired at the end of the year is NUMBER_3 dollars , how much should be invested at each rate ?

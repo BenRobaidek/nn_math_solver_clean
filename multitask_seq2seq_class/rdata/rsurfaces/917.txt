@@ -1,0 +1,1 @@
+A car rented for NUMBER_0 dollars per day plus NUMBER_1 dollars per mile . PERSON_0 paid NUMBER_2 dollars for a 1-day rental . How far did she drive , in miles ?

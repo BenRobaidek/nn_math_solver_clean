@@ -1,0 +1,1 @@
+A theater sold NUMBER_0 tickets to a play . Floor seats cost NUMBER_1 dollars each and balcony seats NUMBER_2 dollars each . Total receipts were NUMBER_3 dollars . How many floor seats were sold ? How many balcony seats were sold ?

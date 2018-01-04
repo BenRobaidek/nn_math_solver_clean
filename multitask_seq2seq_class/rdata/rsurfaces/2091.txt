@@ -1,0 +1,1 @@
+Admission to an amusement park is NUMBER_0 dollars for adults and NUMBER_1 dollars for children . If NUMBER_2 dollars was paid for NUMBER_3 tickets , how many adult tickets were purchased ? How many children 's tickets were purchased ?

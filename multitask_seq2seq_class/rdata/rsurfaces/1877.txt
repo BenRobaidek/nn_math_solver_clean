@@ -1,0 +1,1 @@
+A positive number is NUMBER_0 times another number . If NUMBER_1 is added to both the numbers then one of the numbers becomes twice the other new number . What are the numbers ?

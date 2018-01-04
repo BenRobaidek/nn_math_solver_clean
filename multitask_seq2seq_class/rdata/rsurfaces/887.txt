@@ -1,0 +1,1 @@
+The difference between NUMBER_0 numbers is NUMBER_1 . NUMBER_2 times the smaller is the same as NUMBER_3 less than twice the larger . Find the numbers .

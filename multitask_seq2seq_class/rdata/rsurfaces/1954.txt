@@ -1,0 +1,1 @@
+A 20-foot board is cut into NUMBER_0 pieces . Twice the length of the shorter piece is NUMBER_1 feet more than the length of the longer piece . Find the length of the shorter piece .

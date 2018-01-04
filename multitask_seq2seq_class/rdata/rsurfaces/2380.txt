@@ -1,0 +1,1 @@
+At the fair there were NUMBER_0 people in line for the bumper cars . If NUMBER_1 of them got tired of waiting and left and NUMBER_2 more got in line , how many people would be in line ?

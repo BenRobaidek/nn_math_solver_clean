@@ -1,0 +1,1 @@
+A sandbox is NUMBER_0 centimeters long and NUMBER_1 centimeters wide . How many square centimeters of ground does the sandbox cover ?

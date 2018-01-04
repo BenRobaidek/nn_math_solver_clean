@@ -1,0 +1,1 @@
+Old McDonald has NUMBER_0 goats and chickens on his farm . The animals combined have a total of NUMBER_1 legs . Assuming there are no physical defects , how many goats are on the farm ? How many chickens are on the farm ?

@@ -1,0 +1,1 @@
+There were NUMBER_0 pieces of candy in a jar . If NUMBER_1 pieces were red and the rest were blue , how many were blue ?

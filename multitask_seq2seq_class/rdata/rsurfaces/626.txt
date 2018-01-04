@@ -1,0 +1,1 @@
+One number is NUMBER_0 less than twice another . If their sum is NUMBER_1 , find the numbers .

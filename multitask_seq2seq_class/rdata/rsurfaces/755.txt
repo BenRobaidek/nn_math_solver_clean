@@ -1,0 +1,1 @@
+PERSON_0 traveled NUMBER_0 miles at a certain speed . Had he gone NUMBER_1 miles per hour faster , the trip would have taken NUMBER_2 hour less . Find the speed of his vehicle in miles per hour .

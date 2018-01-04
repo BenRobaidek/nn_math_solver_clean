@@ -1,0 +1,1 @@
+An athlete can burn NUMBER_0 calories per minute while running and NUMBER_1 calories per minute while walking . If the athlete burns NUMBER_2 calories in NUMBER_3 minutes , how many minutes are spent running ? How many minutes are spent walking ?

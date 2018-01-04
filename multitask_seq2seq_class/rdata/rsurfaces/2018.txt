@@ -1,0 +1,1 @@
+Purses cost NUMBER_0 dollars each . Scarves cost NUMBER_1 dollars each . NUMBER_2 combined items sold costing NUMBER_3 dollars total . How many purses were sold ? How many scarves were sold ?

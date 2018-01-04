@@ -1,0 +1,1 @@
+Of NUMBER_0 students in a class , NUMBER_1 passed . What percentage of the students passed ?

@@ -1,0 +1,1 @@
+The units digits of a 2-digit number is NUMBER_0 more than twice the NUMBER_1 's digit . If the digits are reversed , the new number is NUMBER_2 less than NUMBER_3 times the original number . Find the original number .

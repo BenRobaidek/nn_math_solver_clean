@@ -1,0 +1,1 @@
+PERSON_0 has NUMBER_0 balloons . PERSON_1 has NUMBER_1 balloons . How many more balloons does PERSON_0 have than PERSON_1 ?

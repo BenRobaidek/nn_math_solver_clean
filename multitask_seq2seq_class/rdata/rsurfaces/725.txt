@@ -1,0 +1,1 @@
+NUMBER_0 more than NUMBER_1 times a number is equal to NUMBER_2 less than NUMBER_3 times the number . Find the number .

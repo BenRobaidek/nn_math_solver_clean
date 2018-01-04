@@ -1,0 +1,1 @@
+If June is NUMBER_0 % taller than PERSON_0 and PERSON_0 is NUMBER_1 % taller than PERSON_1 . June is taller than PERSON_1 by how many percent ?

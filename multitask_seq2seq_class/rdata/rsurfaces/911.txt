@@ -1,0 +1,1 @@
+NUMBER_0 times the reciprocal of a number plus NUMBER_1 times the reciprocal of the number equals NUMBER_2 . Find the number .

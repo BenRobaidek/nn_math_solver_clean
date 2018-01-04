@@ -1,0 +1,1 @@
+PERSON_0 , PERSON_1 and PERSON_2 go to the movies . PERSON_0 pays NUMBER_0 dollars for a large drink and large popcorn . PERSON_1 and PERSON_2 decide to share a large popcorn but they each get a large drink PERSON_1 and PERSON_2 pay a total of NUMBER_1 dollars . What is the cost of 1 large popcorn , in dollars ?

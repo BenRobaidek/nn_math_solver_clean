@@ -1,0 +1,1 @@
+Divide NUMBER_0 into two parts such that NUMBER_1 % of the first part is equal to NUMBER_2 % of the second part . What is the first part and what is the second part ?

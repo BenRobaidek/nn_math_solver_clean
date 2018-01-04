@@ -1,0 +1,1 @@
+There were originally NUMBER_0 houses in Lincoln County . During a housing boom , developers built NUMBER_1 more . How many houses are there now in Lincoln County ?

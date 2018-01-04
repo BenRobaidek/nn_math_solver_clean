@@ -1,0 +1,1 @@
+The cost of NUMBER_0 feet of chain is NUMBER_1 dollars , what length of chain can be purchased with NUMBER_2 dollars ?

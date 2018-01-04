@@ -1,0 +1,1 @@
+Mrs. PERSON_0 lacks NUMBER_0 years from being NUMBER_1 times as old as her son . Six years from now she will lack NUMBER_2 years from being NUMBER_3 times as old as her son . What is her current age ? What is her son 's current age ?

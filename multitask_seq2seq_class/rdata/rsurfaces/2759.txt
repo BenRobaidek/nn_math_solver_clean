@@ -1,0 +1,1 @@
+A pet store had NUMBER_0 puppies . In one day they sold NUMBER_1 of them and put the rest into cages with NUMBER_2 in each cage . How many cages did they use ?

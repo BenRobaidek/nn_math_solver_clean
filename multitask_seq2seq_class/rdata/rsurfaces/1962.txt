@@ -1,0 +1,1 @@
+Suppose you use NUMBER_0 gallons to drive NUMBER_1 miles and the car gets NUMBER_2 miles per gallon for the city and NUMBER_3 miles per gallon for the highway , Find the number of city and highway miles you drove .

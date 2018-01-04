@@ -1,0 +1,1 @@
+Find NUMBER_0 consecutive integers such that the sum of NUMBER_1 times the NUMBER_2 integer and NUMBER_3 times NUMBER_4 integer is NUMBER_5 . What is the smaller number ? What is the larger number ?

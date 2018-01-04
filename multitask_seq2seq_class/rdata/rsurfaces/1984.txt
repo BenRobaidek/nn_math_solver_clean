@@ -1,0 +1,1 @@
+A clothing store offers a NUMBER_0 % discount on all purchases . How much would a shopper pay for an item originally costing NUMBER_1 dollars dollars ?

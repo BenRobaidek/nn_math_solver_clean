@@ -1,0 +1,1 @@
+It rained NUMBER_0 inches on Saturday and NUMBER_1 inches on Sunday . How much did it rain on Saturday and Sunday combined ?

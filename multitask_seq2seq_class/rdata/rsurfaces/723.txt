@@ -1,0 +1,1 @@
+The difference between NUMBER_0 numbers is NUMBER_1 . When twice the smaller number is subtracted from NUMBER_2 times the larger number , the difference is NUMBER_3 . What is the larger number ?

@@ -1,0 +1,1 @@
+You have collected NUMBER_0 crickets . How many more crickets do you need to collect to have NUMBER_1 crickets ?

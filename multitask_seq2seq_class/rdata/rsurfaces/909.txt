@@ -1,0 +1,1 @@
+Safety rent-a-truck rents a truck at a daily rate of NUMBER_0 dollars plus NUMBER_1 cents per mile . City rentals rent the same truck for NUMBER_2 dollars plus NUMBER_3 cents per mile . For what mileage is the cost the same ?

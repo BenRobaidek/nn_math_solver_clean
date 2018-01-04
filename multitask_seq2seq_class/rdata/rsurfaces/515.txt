@@ -1,0 +1,1 @@
+Two rainstorms occurred in one week in a certain area . The first storm lasted NUMBER_0 hours , and the second storm lasted NUMBER_1 hours , for a total NUMBER_2 milliliters of rain . What was the rate of rainfall in milliliters per hour for the first and second storms if the sum of the two rates was NUMBER_3 milliliters per hour ?

@@ -1,0 +1,1 @@
+The junior ranger asked Christian to help him place NUMBER_0 seedlings in packets . If every packet needs to contain NUMBER_1 seeds , how many packets do they need ?

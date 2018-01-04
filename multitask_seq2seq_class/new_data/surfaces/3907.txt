@@ -1,0 +1,1 @@
+A cake recipe requires NUMBER_0 cup of sugar for the frosting and NUMBER_1 cup of sugar for the cake . How much sugar is that altogether ?

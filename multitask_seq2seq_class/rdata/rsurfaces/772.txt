@@ -1,0 +1,1 @@
+Find two positive numbers if one is NUMBER_0 times the other and their difference is NUMBER_1 .

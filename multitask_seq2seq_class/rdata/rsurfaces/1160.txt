@@ -1,0 +1,1 @@
+A plumber contractor decides to field-test two new pumps . One is rated at 180-gallons per hour and the other at 250-gallons per hour . Over a period of NUMBER_0 hours , she pumps a total of NUMBER_1 gallons . How many hours were used by the 180-gallons per hour pump ? How many hours were used by the NUMBER_2 ?

@@ -1,0 +1,1 @@
+There are NUMBER_0 chickens and cows on a farm . Together they have NUMBER_1 legs . How many chickens are there ? How many cows ?

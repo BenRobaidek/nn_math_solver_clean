@@ -1,0 +1,1 @@
+In NUMBER_0 years , PERSON_0 will be NUMBER_1 times as old as his sister PERSON_1 , a year ago PERSON_0 was NUMBER_2 times as old as Precy . How old are they now ?

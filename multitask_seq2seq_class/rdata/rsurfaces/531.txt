@@ -1,0 +1,1 @@
+It costs a restaurant owner NUMBER_0 cents per glass for orange juice , which is sold for NUMBER_1 cents per glass . How many glasses of orange juice must the restaurant owner sell to make a profit of NUMBER_2 dollars ?

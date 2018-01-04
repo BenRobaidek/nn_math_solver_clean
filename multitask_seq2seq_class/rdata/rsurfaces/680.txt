@@ -1,0 +1,1 @@
+In a 2-digit number , unit 's digit is NUMBER_0 more than the NUMBER_1 's digit . The number formed by interchanging the digits and the original number are in the ratio NUMBER_2 : NUMBER_3 . Find the number .

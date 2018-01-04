@@ -1,0 +1,1 @@
+A magician was selling magic card decks for NUMBER_0 dollars each . If he started with NUMBER_1 decks and by the end of the day he had NUMBER_2 left , how much money did he earn ?

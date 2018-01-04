@@ -1,0 +1,1 @@
+PERSON_0 grew NUMBER_0 watermelons and 22 cantelopes . PERSON_1 grew NUMBER_1 watermelons . How many watermelons did they grow in total ?

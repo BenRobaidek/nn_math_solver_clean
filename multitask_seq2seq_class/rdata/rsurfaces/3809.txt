@@ -1,0 +1,1 @@
+PERSON_0 scored NUMBER_0 points in each game . How many points did she score in NUMBER_1 games ?

@@ -1,0 +1,1 @@
+If NUMBER_0 is subtracted from a number and this difference is tripled , the result is NUMBER_1 more than the number . Find the number .

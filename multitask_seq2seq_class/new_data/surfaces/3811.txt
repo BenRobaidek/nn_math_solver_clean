@@ -1,0 +1,1 @@
+Our watermelons have NUMBER_0 seeds each . If we have NUMBER_1 watermelons , how many seeds should there be when all seeds are taken out of the watermelons ?

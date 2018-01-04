@@ -1,0 +1,1 @@
+A car company produced NUMBER_0 cars in LOCATION_0 LOCATION_1 and NUMBER_1 cars in LOCATION_2 . How many cars is that in all ?

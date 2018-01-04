@@ -1,0 +1,1 @@
+A theater has NUMBER_0 seats . On opening night , they sold out , selling adult tickets for NUMBER_1 dollars each and child tickets for NUMBER_2 dollars each . If they made a total of NUMBER_3 dollars , how many child tickets were sold ?

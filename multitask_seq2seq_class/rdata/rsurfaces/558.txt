@@ -1,0 +1,1 @@
+A woman invests NUMBER_0 times as much at NUMBER_1 % as she did at NUMBER_2 % . The total amount of interest she earns in 1 year from both accounts is NUMBER_3 dollars . How much did she invest at NUMBER_4 % , in dollars ? How much did she invest at NUMBER_5 % ?

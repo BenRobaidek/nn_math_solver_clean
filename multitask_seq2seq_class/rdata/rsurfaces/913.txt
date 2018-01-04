@@ -1,0 +1,1 @@
+An airplane traveled NUMBER_0 miles in the same time that a car traveled NUMBER_1 miles . If the rate of the plane is NUMBER_2 miles per hour greater than the rate of the car , find the rate of the car in miles per hour .

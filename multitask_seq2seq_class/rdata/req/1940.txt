@@ -1,0 +1,1 @@
+NUMBER_5 = ( ( ( ( NUMBER_0 + NUMBER_1 ) + NUMBER_2 ) + NUMBER_4 ) + VAR_0 ) / 5.0

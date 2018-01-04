@@ -1,0 +1,1 @@
+PERSON_0 claims she is older than PERSON_1 by only NUMBER_0 years . PERSON_1 claims she is half of PERSON_2 's age . PERSON_2 admits she is the oldest but is older than PERSON_0 by only NUMBER_1 years . What is PERSON_0 's age ? What is PERSON_1 's age ? What is PERSON_2 's age ?

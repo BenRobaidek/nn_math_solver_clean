@@ -1,0 +1,1 @@
+There are NUMBER_0 bicycles and NUMBER_1 tricycles in the storage area at PERSON_0 's apartment building . Each bicycle has NUMBER_2 wheels and each tricycle has NUMBER_3 wheels . How many wheels are there in all ?

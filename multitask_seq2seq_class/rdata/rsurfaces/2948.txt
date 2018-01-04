@@ -1,0 +1,1 @@
+There were a total of NUMBER_0 soccer games during the NUMBER_1 month season . If the games are equally divided , how many soccer games are played a month ?

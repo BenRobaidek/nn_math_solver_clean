@@ -1,0 +1,1 @@
+A plane travels due East at NUMBER_0 miles per hour and another plane travels due west at NUMBER_1 miles per hour . If they leave at the same time , and from the same place , in how many hours will they be NUMBER_2 miles apart ?

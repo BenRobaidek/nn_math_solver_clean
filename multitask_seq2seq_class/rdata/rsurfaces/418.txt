@@ -1,0 +1,1 @@
+A truck , its driver and its load weigh NUMBER_0 pounds . The truck weighs NUMBER_1 times the weight of the driver and the load is NUMBER_2 pounds more than three times the driver 's weight . What is the weight of the load , in pounds ?

@@ -1,0 +1,1 @@
+PERSON_0 can deliver all of the newspapers on a given paper route in NUMBER_0 hours . PERSON_1 can deliver all the newspapers on the same route in NUMBER_1 hours . How many hours would it take them to deliver newspapers if they both work together ?

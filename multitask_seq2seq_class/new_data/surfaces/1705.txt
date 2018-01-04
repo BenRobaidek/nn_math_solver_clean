@@ -1,0 +1,1 @@
+1 blend of coffee sells for NUMBER_0 dollars per pound and another blend sells for NUMBER_1 dollars per pound . You want to make a NUMBER_2 pound blend that sells for NUMBER_3 dollars per pound . How many pounds of the NUMBER_4 dollars per pound coffee do you need ? How many pounds of the NUMBER_5 dollars per pound coffee do you need ?

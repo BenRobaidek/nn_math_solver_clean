@@ -1,0 +1,1 @@
+A waiter had NUMBER_0 customers to wait on . If NUMBER_1 customers left and he got another NUMBER_2 customers , how many customers would he have ?

@@ -1,0 +1,1 @@
+An artist has NUMBER_0 kilograms of an alloy that is NUMBER_1 % copper . How many kilograms of a second alloy that is NUMBER_2 % copper should be mixed with the first alloy to get a new alloy that is NUMBER_3 % copper

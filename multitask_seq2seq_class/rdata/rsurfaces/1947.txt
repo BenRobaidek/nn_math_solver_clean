@@ -1,0 +1,1 @@
+Admission tickets to a football game were NUMBER_0 cents for adults and NUMBER_1 cents for children . Receipts for the day showed that NUMBER_2 persons attended and NUMBER_3 dollars was collected . How many adults attended ? How many children attended ?

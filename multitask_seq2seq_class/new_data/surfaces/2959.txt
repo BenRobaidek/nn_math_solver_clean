@@ -1,0 +1,1 @@
+A teacher has NUMBER_0 pieces of candy . If there are NUMBER_1 students , and the candy is divided evenly , How many pieces will each student get ?

@@ -1,0 +1,1 @@
+PERSON_0 is learning to drive , so this weekend she practiced driving NUMBER_0 mile with her mother and another NUMBER_1 mile with her father . How far did PERSON_0 drive in all ?

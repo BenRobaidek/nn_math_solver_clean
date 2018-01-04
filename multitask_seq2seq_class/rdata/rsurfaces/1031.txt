@@ -1,0 +1,1 @@
+A movie theater charges NUMBER_0 dollars for adults and NUMBER_1 dollars for children . The receipts for a showing of a movie were NUMBER_2 dollars . If NUMBER_3 tickets were sold , find how many adult tickets were sold . Find how many child tickets were sold .

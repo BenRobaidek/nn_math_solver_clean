@@ -1,0 +1,1 @@
+NUMBER_0 pump can empty a pool in NUMBER_1 days , whereas a second pump can empty the pool in NUMBER_2 days . How long will it take the two pumps , working together , to empty the pool ?

@@ -1,0 +1,1 @@
+A bee has NUMBER_0 legs . How many legs do NUMBER_1 bees have ?

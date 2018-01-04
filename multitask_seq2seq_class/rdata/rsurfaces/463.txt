@@ -1,0 +1,1 @@
+Tickets to the Valentine Dance cost NUMBER_0 dollars per person or NUMBER_1 dollars per couple . If NUMBER_2 dollars worth of tickets were sold and NUMBER_3 people attended the dance , how many couples were there ?

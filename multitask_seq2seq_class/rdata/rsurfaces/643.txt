@@ -1,0 +1,1 @@
+A collection of nickels , dimes , and quarters in a money bag is worth NUMBER_0 dollars . The number of quarters is NUMBER_1 times the number of nickels and the number of dimes is NUMBER_2 less than NUMBER_3 times the number of nickels . Find the number of nickels , dimes , and quarters .

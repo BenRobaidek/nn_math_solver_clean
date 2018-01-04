@@ -1,0 +1,1 @@
+A plane flies NUMBER_0 miles against a steady 30-mile-per-hour headwind and then returns to the same point with the wind , if the entire trip takes NUMBER_1 hours what is the plane 's speed in still air ?

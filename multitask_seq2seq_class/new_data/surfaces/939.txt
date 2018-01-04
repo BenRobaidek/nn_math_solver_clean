@@ -1,0 +1,1 @@
+Apples cost NUMBER_0 dollars per pound and grapes cost NUMBER_1 dollars per pound . PERSON_0 bought NUMBER_2 pounds of fruit and paid NUMBER_3 dollars . How many pounds of apples did she buy ? How many pounds of grapes ?

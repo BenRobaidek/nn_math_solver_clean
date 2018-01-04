@@ -1,0 +1,1 @@
+An MP3 player costs NUMBER_0 dollars . The sales tax is NUMBER_1 dollars . What is the percent of sales tax ?

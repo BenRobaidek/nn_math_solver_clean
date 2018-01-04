@@ -1,0 +1,1 @@
+( ( 4.0 / NUMBER_0 VAR_0 ) * NUMBER_1 VAR_0 ) + ( NUMBER_1 VAR_0 * VAR_1 ) = 4.0 VAR_1 * VAR_0 = 4.0

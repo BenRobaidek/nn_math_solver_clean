@@ -1,0 +1,1 @@
+The number of kilograms of water in a human body varies directly as the total body weight . A person who weighs NUMBER_0 kilograms contains NUMBER_1 kilograms of water . How many kilograms of water are in a person weighing NUMBER_2 kilograms ?

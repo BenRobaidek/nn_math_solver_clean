@@ -1,0 +1,1 @@
+A group of students went hiking in a wildlife sanctuary . During the hike a total of NUMBER_0 ticks and mosquitoes were slapped . Ticks have NUMBER_1 legs and mosquitoes have NUMBER_2 legs . If these pests has a total of NUMBER_3 legs , how many mosquitoes and how many ticks were slapped during the hike ?

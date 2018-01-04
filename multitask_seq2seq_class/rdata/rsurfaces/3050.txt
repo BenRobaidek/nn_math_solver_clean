@@ -1,0 +1,1 @@
+PERSON_0 sold lemonade in her neighborhood . She got NUMBER_0 half-dollars on Saturday and NUMBER_1 half-dollars on Sunday . What amount of money did PERSON_0 receive ?

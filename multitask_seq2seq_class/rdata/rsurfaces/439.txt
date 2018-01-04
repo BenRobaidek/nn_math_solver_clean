@@ -1,0 +1,1 @@
+The sum of PERSON_0 's age and PERSON_1 's age is NUMBER_0 years . Five years ago , the sum of twice PERSON_0 's age and NUMBER_1 times PERSON_1 's age was NUMBER_2 years . How old is PERSON_0 now ? How old is PERSON_1 now ?

@@ -1,0 +1,1 @@
+PERSON_0 has NUMBER_0 candies stored in boxes . If there are NUMBER_1 boxes , how many candies must go in each box ?

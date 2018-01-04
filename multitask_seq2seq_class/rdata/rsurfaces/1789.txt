@@ -1,0 +1,1 @@
+There were NUMBER_0 people at a play . The admission price was NUMBER_1 dollars for adults and NUMBER_2 dollars for children . The admission receipts were NUMBER_3 dollars . How many adults and children attended ?

@@ -1,0 +1,1 @@
+If NUMBER_0 is subtracted from NUMBER_1 times a number , the difference is twice the number . What is the number ?

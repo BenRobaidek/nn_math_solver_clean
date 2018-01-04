@@ -1,0 +1,1 @@
+A candy store wishes to mix NUMBER_0 types of candy to get NUMBER_1 pounds of NUMBER_2 dollars per pound candy . If candy A costs NUMBER_3 dollars per pound and candy B costs NUMBER_4 dollars per pound , how many pounds of candy A and candy B should be mixed ?

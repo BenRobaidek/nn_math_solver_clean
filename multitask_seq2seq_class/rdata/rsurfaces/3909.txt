@@ -1,0 +1,1 @@
+You go out for a long walk . You walk NUMBER_0 mile and then sit down to take a rest . Then you walk NUMBER_1 of a mile . How far did you walk altogether ?

@@ -1,0 +1,1 @@
+PERSON_0 invests in a circus production . The coast includes an overhead of NUMBER_0 dollars , plus production costs of NUMBER_1 dollars per performance . A sold-out performance brings in NUMBER_2 dollars , Determine the number of sold-out performances , x , needed to break even .

@@ -1,0 +1,1 @@
+PERSON_0 picked NUMBER_0 flowers for her friend 's wedding . She was making bouquets with NUMBER_1 flowers in each one . If NUMBER_2 of the flowers wilted before the wedding , how many bouquets could she still make ?

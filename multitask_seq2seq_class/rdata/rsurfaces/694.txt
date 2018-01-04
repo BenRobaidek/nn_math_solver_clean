@@ -1,0 +1,1 @@
+NUMBER_0 times the smaller of NUMBER_1 numbers is equal to twice the larger . When the larger is doubled , it exceeds their original sum by NUMBER_2 . Find the smaller number . Find the larger number .

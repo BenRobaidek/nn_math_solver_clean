@@ -1,0 +1,1 @@
+PERSON_0 has $ NUMBER_0 . He bought a candy bar for $ NUMBER_1 . How much money is left ?

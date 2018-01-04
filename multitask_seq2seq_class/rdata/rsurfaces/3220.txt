@@ -1,0 +1,1 @@
+It rained NUMBER_0 inches on Monday . On Tuesday , it rained NUMBER_1 inches less than on Monday . How much did it rain on Tuesday ?

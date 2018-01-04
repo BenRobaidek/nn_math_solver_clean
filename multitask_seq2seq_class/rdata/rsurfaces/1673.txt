@@ -1,0 +1,1 @@
+Students of a class go for an excursion . The total expending for food is NUMBER_0 rupees . NUMBER_1 students did not join the excursion , hence the rest of the students each had to pay NUMBER_2 rupees more . How many participated in the excursion ?

@@ -1,0 +1,1 @@
+At a company picnic NUMBER_0 managers and NUMBER_1 employees decided to start a game of volleyball . If they split into NUMBER_2 teams how many people would be on each team ?

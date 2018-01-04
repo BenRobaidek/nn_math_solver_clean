@@ -1,0 +1,1 @@
+PERSON_0 has NUMBER_0 blocks . He uses NUMBER_1 blocks to build a tower . How many blocks are left ?

@@ -1,0 +1,1 @@
+Find the cost per pound of a trail mix made from NUMBER_0 pounds of raisins that costs NUMBER_1 dollars per pound and NUMBER_2 pounds of granola that costs NUMBER_3 dollars per pound .

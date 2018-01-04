@@ -1,0 +1,1 @@
+PERSON_0 rented a truck for one day . There was a rental fee of NUMBER_0 dollars , and there also was a charge of NUMBER_1 cents for each mile . PERSON_0 paid NUMBER_2 dollars when he returned the truck . For how many miles did he drive the truck ?

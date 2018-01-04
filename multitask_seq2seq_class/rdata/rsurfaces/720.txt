@@ -1,0 +1,1 @@
+A coin bank contains NUMBER_0 dollars in pennies and nickels . If there are NUMBER_1 coins in the bank , how many of the coins are nickels ?

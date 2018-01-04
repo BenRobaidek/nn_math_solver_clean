@@ -1,0 +1,1 @@
+As PERSON_0 was searching through her couch cushions , she found NUMBER_0 quarters , and NUMBER_1 pennies in the couch . How much money in total does PERSON_0 have ?

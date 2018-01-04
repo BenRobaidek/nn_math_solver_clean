@@ -1,0 +1,1 @@
+A man is NUMBER_0 times as old as his daughter . After NUMBER_1 years , he will be twice as old as his daughter . Find the daughter 's age .

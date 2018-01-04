@@ -1,0 +1,1 @@
+If NUMBER_0 pesos can buy NUMBER_1 kilograms of fish and NUMBER_2 kilograms of pork while NUMBER_3 pesos can buy NUMBER_4 kilograms of fish and NUMBER_5 kilograms of pork , how much does a kilogram of fish cost ?

@@ -1,0 +1,1 @@
+A man walks a certain distance at certain rate . Had he walked NUMBER_0 kilometers an hour faster he would have taken NUMBER_1 hour less , but he had gone NUMBER_2 kilometers per hour slower , he would have taken NUMBER_3 hours longer . Find the distance he traveled in kilometers and his original rate in kilometers per hour .

@@ -1,0 +1,1 @@
+PERSON_0 and PERSON_1 fly from Philly to Chicago , it takes NUMBER_0 hours to go West and NUMBER_1 hours to fly East . The trip is NUMBER_2 miles one way . If the wind speed is the same on each trip , find the speed of the wind and find the speed of the plane in the still air , in miles per hour .

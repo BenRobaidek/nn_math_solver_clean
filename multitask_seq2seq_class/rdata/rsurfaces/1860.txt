@@ -1,0 +1,1 @@
+If PERSON_0 can make NUMBER_0 feet of rope in NUMBER_1 hours and PERSON_1 can make NUMBER_2 feet of rope in NUMBER_3 hours , how many feet of rope can PERSON_0 and PERSON_1 working together make in NUMBER_4 hours ?

@@ -1,0 +1,1 @@
+A plane is using fuel at the rate of NUMBER_0 gallons per hour and it has NUMBER_1 gallons left in its tank . How long can the plane continue to fly ?

@@ -1,0 +1,1 @@
+A freight train and an express train leave towns NUMBER_0 kilometers apart , traveling toward one another . The freight train travels NUMBER_1 kilometers per hour slower than the express train . They pass one another NUMBER_2 hours later . How fast is the freight train , in miles per hour ? How fast is the express train ?

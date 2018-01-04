@@ -1,0 +1,1 @@
+PERSON_0 found an orange caterpillar and a green caterpillar in her backyard . The green caterpillar was NUMBER_0 inches long and the orange caterpillar was NUMBER_1 inches long . How much longer was the green caterpillar than the orange caterpillar ?

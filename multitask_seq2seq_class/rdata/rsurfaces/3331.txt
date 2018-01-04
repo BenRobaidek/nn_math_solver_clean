@@ -1,0 +1,1 @@
+Mrs. PERSON_0 saw a rollercoaster . NUMBER_0 students rode the rollercoaster every NUMBER_1 minutes . How many students rode the rollercoaster in NUMBER_2 minutes ?

@@ -1,0 +1,1 @@
+What weight of water must be evaporated from NUMBER_0 pounds of a NUMBER_1 % salt solution to produce a NUMBER_2 % solution ?

@@ -1,0 +1,1 @@
+Each unit of grain A contains NUMBER_0 grams of fat and NUMBER_1 calories , and unit B has NUMBER_2 grams of fat and NUMBER_3 calories . If the final product is to provide NUMBER_4 grams of fat and NUMBER_5 calories , how much of grain A and how much of grain B should be used .

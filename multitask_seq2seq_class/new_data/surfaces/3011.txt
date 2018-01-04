@@ -1,0 +1,1 @@
+There were a total of NUMBER_0 hockey games a month . The season is played for NUMBER_1 months . How many hockey games are in the seasons ?

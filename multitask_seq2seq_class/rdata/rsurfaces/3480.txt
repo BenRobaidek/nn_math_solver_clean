@@ -1,0 +1,1 @@
+Each child has NUMBER_0 bottle caps . If there are NUMBER_1 children , how many bottle caps are there in total ?

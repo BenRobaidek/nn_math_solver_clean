@@ -1,0 +1,1 @@
+PERSON_0 has a collection of nickels and dimes that is worth NUMBER_0 dollars . If the number of dimes were doubled and the number of nickels were increased by NUMBER_1 , the value of the coins would be NUMBER_2 dollars . How many dimes does he have ?

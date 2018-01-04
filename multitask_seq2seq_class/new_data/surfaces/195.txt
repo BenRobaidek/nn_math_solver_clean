@@ -1,0 +1,1 @@
+PERSON_0 made a fruit salad with NUMBER_0 pound of melon and NUMBER_1 pound of berries . How many pounds of fruit did PERSON_0 use in all ?

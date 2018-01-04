@@ -1,0 +1,1 @@
+Crystal sells coffee . Her special blend is a combination of french roast at NUMBER_0 dollars per pound and kona deluxe at NUMBER_1 dollars per pound . How many pounds of kona should she mix with NUMBER_2 pounds of french roast to get a blend to be sold for NUMBER_3 dollars per pound ?

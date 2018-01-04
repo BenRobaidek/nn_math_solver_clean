@@ -1,0 +1,1 @@
+On a recent trip to CA , we averaged NUMBER_0 miles per hour . On the return trip we averaged NUMBER_1 miles per hour . Determine the average speed of the trip to CA and back .

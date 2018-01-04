@@ -1,0 +1,1 @@
+PERSON_0 has NUMBER_0 crayons . NUMBER_1 are eaten by a hippopotamus . How many crayons will PERSON_0 have ?

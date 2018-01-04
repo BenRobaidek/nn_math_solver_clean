@@ -1,0 +1,1 @@
+NUMBER_0 cartons of juice cost the same as NUMBER_1 fruit cups . Also , NUMBER_2 fruit cup costs NUMBER_3 cents more than one bowl of soup , while NUMBER_4 bowl of soup costs NUMBER_5 cents more than one carton of juice . What would be the cost of each item ; a carton of juice , a fruit cup , and a bowl of soup , in cents ?

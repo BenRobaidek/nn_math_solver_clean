@@ -1,0 +1,1 @@
+While playing a video game , PERSON_0 scored NUMBER_0 points . He and his cousin together have a total of NUMBER_1 points . How many points does PERSON_0 's cousin have ?

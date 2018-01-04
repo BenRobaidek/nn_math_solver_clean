@@ -1,0 +1,1 @@
+Find two numbers whose sum is NUMBER_0 and one is NUMBER_1 greather than NUMBER_2 of the other .

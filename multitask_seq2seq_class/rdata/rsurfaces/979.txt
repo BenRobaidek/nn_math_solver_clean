@@ -1,0 +1,1 @@
+A student is pricing 2 different picture packages . PERSON_0 's Photo World charges NUMBER_0 dollars per sheet and a one time sitting fee of NUMBER_1 dollars . PERSON_1 's Picture Emporium charges NUMBER_2 dollars per sheet and a one time sitting fee of NUMBER_3 dollars . For how many sheets of pictures do the 2 companies charge the same amount ?

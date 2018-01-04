@@ -1,0 +1,1 @@
+If you purchase a membership for NUMBER_0 dollars to receive NUMBER_1 % off purchases , how much would you need to spend to pay off the membership ?

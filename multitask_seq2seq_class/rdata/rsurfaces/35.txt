@@ -1,0 +1,1 @@
+PERSON_0 went to NUMBER_0 basketball games this year , but missed 35 . He went to NUMBER_1 games last year . How many basketball games did PERSON_0 go to in total ?

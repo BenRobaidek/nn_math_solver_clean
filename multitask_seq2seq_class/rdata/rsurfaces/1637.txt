@@ -1,0 +1,1 @@
+NUMBER_0 of the cows are grazing grass . NUMBER_1 of the remaining are sleeping and NUMBER_2 cows are drinking water from the pond . Find the total number of cows .

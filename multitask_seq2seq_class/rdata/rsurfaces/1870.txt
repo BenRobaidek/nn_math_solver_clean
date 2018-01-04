@@ -1,0 +1,1 @@
+NUMBER_0 painter can paint a room in NUMBER_1 hours and another can paint the same room in NUMBER_2 hours . How long will it take to paint the room if they work together ?

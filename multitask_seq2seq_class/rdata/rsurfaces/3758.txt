@@ -1,0 +1,1 @@
+The Hawks scored NUMBER_0 touchdowns worth NUMBER_1 points each . How many points do they have ?

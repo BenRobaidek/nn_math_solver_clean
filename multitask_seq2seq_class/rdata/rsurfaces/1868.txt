@@ -1,0 +1,1 @@
+Twice a number increased by NUMBER_0 is NUMBER_1 . Find the number .

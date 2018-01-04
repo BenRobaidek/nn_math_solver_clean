@@ -1,0 +1,1 @@
+A direct flight on delta air lines from Atlanta to Paris is NUMBER_0 miles and takes approximately NUMBER_1 hours going East and NUMBER_2 hours going West . Although the plane averages the same airspeed , there is a headwind while traveling East , resulting in a different air speeds . What is the average air speed of the plane in miles per hour and the average wind speed ?

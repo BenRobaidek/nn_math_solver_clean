@@ -1,0 +1,1 @@
+It snowed NUMBER_0 inches on Monday and NUMBER_1 inches on Tuesday . How much did it snow on Monday and Tuesday combined ?

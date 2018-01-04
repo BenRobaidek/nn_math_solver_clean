@@ -1,0 +1,1 @@
+Mrs. PERSON_0 has NUMBER_0 cats . Mr. PERSON_0 gave her NUMBER_1 more cats . How many cats does Mrs. PERSON_0 have altogether ?

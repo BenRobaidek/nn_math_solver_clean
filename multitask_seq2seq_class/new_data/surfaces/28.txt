@@ -1,0 +1,1 @@
+There are NUMBER_0 rulers and 34 crayons in the drawer . PERSON_0 placed NUMBER_1 rulers in the drawer . How many rulers are now there in all ?

@@ -1,0 +1,1 @@
+PERSON_0 drove NUMBER_0 miles to visit his grandmother . PERSON_1 drove NUMBER_1 miles to visit her grandmother . What is the total number of miles PERSON_0 and PERSON_1 drove ?

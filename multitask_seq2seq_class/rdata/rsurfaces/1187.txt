@@ -1,0 +1,1 @@
+Separate NUMBER_0 into 2 parts so that NUMBER_1 of one part exceeds NUMBER_2 of the other part by NUMBER_3 . What is the smaller part ? What is the larger part ?

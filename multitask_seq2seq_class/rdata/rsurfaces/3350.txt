@@ -1,0 +1,1 @@
+A NUMBER_0 ounce can of cranberry juice sells for NUMBER_1 cents . What is the cost in cents per ounce .

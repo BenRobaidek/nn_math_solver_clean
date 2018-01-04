@@ -1,0 +1,1 @@
+There were NUMBER_0 girls and NUMBER_1 boys trying out for the schools basketball team . If only NUMBER_2 of them got called back , how many students did n't make the cut ?

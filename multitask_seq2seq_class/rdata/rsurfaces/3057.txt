@@ -1,0 +1,1 @@
+On Friday , PERSON_0 spent NUMBER_0 pennies on ice cream . The next day , PERSON_0 spent NUMBER_1 dimes on baseball cards . All in all , how much money did PERSON_0 spend ?

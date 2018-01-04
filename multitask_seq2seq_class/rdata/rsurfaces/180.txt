@@ -1,0 +1,1 @@
+A marine biologist measured 1 fish that was NUMBER_0 foot long and a second fish that was NUMBER_1 foot long . How much longer was the first fish ?

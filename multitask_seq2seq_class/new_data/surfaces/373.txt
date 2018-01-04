@@ -1,0 +1,1 @@
+PERSON_0 picked NUMBER_0 limes , PERSON_1 picked NUMBER_1 limes , and PERSON_2 picked NUMBER_2 limes and 18 pears , at the farm . How many limes were picked in total ?

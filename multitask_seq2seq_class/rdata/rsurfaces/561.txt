@@ -1,0 +1,1 @@
+A NUMBER_0 inch board is cut into NUMBER_1 pieces . The second piece is NUMBER_2 times as long as the first piece . The NUMBER_3 piece is NUMBER_4 in . longer than the first piece . How long is the shortest piece ?

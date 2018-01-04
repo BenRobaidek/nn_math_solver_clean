@@ -1,0 +1,1 @@
+E-Chem Testing has a solution that is NUMBER_0 % base and another that is NUMBER_1 % base . A technician needs NUMBER_2 liters of a solution that is NUMBER_3 % base . The NUMBER_4 liters will be prepared by mixing the two solutions on hand . How much of the NUMBER_5 % base and the NUMBER_6 % base should be used ?

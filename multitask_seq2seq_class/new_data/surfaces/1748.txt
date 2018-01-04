@@ -1,0 +1,1 @@
+A chemist has two acid solutions . One solution is NUMBER_0 % pure acid and the other is NUMBER_1 % pure acid . How much of NUMBER_2 % pure acid and NUMBER_3 % pure acid is needed to produce NUMBER_4 square-centimeters of a solution that is NUMBER_5 % pure acid ?

@@ -1,0 +1,1 @@
+PERSON_0 picked NUMBER_0 oranges and PERSON_1 picked NUMBER_1 oranges from the orange tree . How many oranges were picked in total ?

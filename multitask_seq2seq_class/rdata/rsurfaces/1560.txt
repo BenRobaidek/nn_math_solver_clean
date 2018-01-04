@@ -1,0 +1,1 @@
+Places A and B are NUMBER_0 kilometers apart on a highway . One car starts from A and another starts from B . If the cars travel in the same directions with different speed , they meet in NUMBER_1 hours . If they travel towards each other , they meet in 1 hour . What are the speeds of the two cars ?

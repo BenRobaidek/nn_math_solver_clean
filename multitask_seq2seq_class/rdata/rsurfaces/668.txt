@@ -1,0 +1,1 @@
+A boat can go NUMBER_0 miles per hour in still water . It takes as long to go NUMBER_1 miles upstream as it does to go downstream NUMBER_2 miles . How fast is the current in miles per hour ?

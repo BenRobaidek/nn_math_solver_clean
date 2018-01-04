@@ -1,0 +1,1 @@
+The total value of the pennies and nickels was NUMBER_0 dollars . PERSON_0 counted the coins and found there were NUMBER_1 in all . How many pennies did she have and how many nickels did she have ?

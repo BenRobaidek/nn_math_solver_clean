@@ -1,0 +1,1 @@
+A discount store sold plastic cups for NUMBER_0 dollars each and ceramic cups for NUMBER_1 dollars each . If NUMBER_2 cups were sold for a total of NUMBER_3 dollars , how many plastic cups and ceramic cups were sold ?

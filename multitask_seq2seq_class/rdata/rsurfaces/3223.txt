@@ -1,0 +1,1 @@
+A construction company bought NUMBER_0 tons of gravel and NUMBER_1 tons of sand . How many tons of material did the company buy in all ?

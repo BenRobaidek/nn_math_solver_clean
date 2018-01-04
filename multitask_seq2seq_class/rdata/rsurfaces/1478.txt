@@ -1,0 +1,1 @@
+A water flow restrictor has reduced the flow of water to NUMBER_0 gallons per minute . This amount is NUMBER_1 gallon per minute less than NUMBER_2 the original flow rate . Find the original rate in gallons per minute .

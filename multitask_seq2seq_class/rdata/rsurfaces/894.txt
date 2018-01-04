@@ -1,0 +1,1 @@
+A jet plane traveling at NUMBER_0 miles per hour overtakes a propeller plane traveling at NUMBER_1 miles per hour that had a 2-hour head start . How far from the starting point are the planes ?

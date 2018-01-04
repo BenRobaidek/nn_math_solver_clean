@@ -1,0 +1,1 @@
+PERSON_0 starts with NUMBER_0 Skittles . NUMBER_1 are eaten by a hippopotamus . How many Skittles does PERSON_0 end with ?

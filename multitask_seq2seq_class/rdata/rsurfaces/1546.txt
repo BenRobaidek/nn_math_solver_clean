@@ -1,0 +1,1 @@
+A store mixes Kenyan coffee worth NUMBER_0 dollars per kilogram and Venezuelan coffee worth NUMBER_1 dollars per kilogram . The mixture is to sell for NUMBER_2 dollars per kilogram . Find how much of each should be used to make a NUMBER_3 kilogram mixture .

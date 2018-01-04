@@ -1,0 +1,1 @@
+A container ship left from PERSON_0 PERSON_1 and traveled north . An aircraft carrier left four hours later traveling at NUMBER_0 miles per hour in an effort to catch up to the container ship . After traveling for eight hours the aircraft carrier finally caught up . What was the container ship 's average speed in miles per hour ?

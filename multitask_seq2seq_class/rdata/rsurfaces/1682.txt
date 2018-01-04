@@ -1,0 +1,1 @@
+An employment agency specializing in temporary construction help pays heavy equipment operators NUMBER_0 dollars per day and general laborers NUMBER_1 dollars per day . If NUMBER_2 people were hired and the payroll was NUMBER_3 dollars , how many heavy equipment operators were employed ? How many laborers were employed ?

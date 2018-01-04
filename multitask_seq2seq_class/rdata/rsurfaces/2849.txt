@@ -1,0 +1,1 @@
+PERSON_0 's high school played NUMBER_0 basketball games this year . The team won most of their games . They were defeated during NUMBER_1 games . How many games did they win ?

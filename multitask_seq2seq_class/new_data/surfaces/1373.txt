@@ -1,0 +1,1 @@
+The admission fee at an amusement park is NUMBER_0 dollars for children and NUMBER_1 dollars for adults . On a certain day NUMBER_2 people entered the park , and the admission fees collected NUMBER_3 dollars . How many children and adults were admitted ?

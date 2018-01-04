@@ -1,0 +1,1 @@
+A painter needed to paint NUMBER_0 rooms in a building . Each room takes NUMBER_1 hours to paint . If he already painted NUMBER_2 rooms , how much longer will he take to paint the rest ?

@@ -1,0 +1,1 @@
+The number of gears a machine can make varies directly by how long it operates . If it can make NUMBER_0 gears in NUMBER_1 hours , How many gears can it make in NUMBER_2 hours ?

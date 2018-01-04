@@ -1,0 +1,1 @@
+Mrs. PERSON_0 made NUMBER_0 heart cookies . She made NUMBER_1 red cookies and the rest are pink . How many pink cookies did she make ?

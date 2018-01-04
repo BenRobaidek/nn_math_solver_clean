@@ -1,0 +1,1 @@
+A 5-pound bag of apples costs NUMBER_0 dollars . At the same rate , what would be the cost of NUMBER_1 pounds of apples in dollars ?

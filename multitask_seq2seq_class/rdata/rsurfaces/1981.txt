@@ -1,0 +1,1 @@
+The PERSON_0 family spent the afternoon at the baseball game . Mr. PERSON_0 purchased NUMBER_0 hot dogs and NUMBER_1 sodas on his first trip to the concession stand and spent NUMBER_2 dollars . On his NUMBER_3 trip to the concession stand , he spent NUMBER_4 dollars on NUMBER_5 sodas and NUMBER_6 hot dogs . How many dollars does a hot dog cost ? How much does a soda cost ?

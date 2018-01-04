@@ -1,0 +1,1 @@
+PERSON_0 purchased tickets to a circus for NUMBER_0 adults and NUMBER_1 children . The total cost was NUMBER_2 dollars . The cost of a child 's ticket was NUMBER_3 dollars less than the cost of an adult 's ticket . Find the price of an adult 's ticket and a child 's ticket .

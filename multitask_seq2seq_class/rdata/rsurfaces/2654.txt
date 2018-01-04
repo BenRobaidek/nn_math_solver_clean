@@ -1,0 +1,1 @@
+Each chocolate bar in a box cost $ NUMBER_0 . If a box had NUMBER_1 bars total and PERSON_0 sold all but NUMBER_2 bars , how much money would she have made ?

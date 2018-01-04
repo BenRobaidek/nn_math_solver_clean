@@ -1,0 +1,1 @@
+On a certain hot summer 's day , NUMBER_0 people used the public swimming pool . The daily prices are NUMBER_1 dollars for children and NUMBER_2 dollars for adults . The receipts for admission totaled NUMBER_3 dollars . How many children and adults swam at the public pool that day ?

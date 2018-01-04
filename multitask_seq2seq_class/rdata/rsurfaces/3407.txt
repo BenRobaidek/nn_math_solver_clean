@@ -1,0 +1,1 @@
+PERSON_0 removes NUMBER_0 bottle caps from a jar . There were originally NUMBER_1 bottle caps in the jar . How many bottle caps are left in the jar ?

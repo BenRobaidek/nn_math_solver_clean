@@ -1,0 +1,1 @@
+PERSON_0 picked NUMBER_0 pears and PERSON_1 picked NUMBER_1 pears from the pear tree . PERSON_2 picked 5 apples from the apple tree . How many pears were picked in total ?

@@ -1,0 +1,1 @@
+A 2-digit number is NUMBER_0 times its 1 's digit . The sum of the digits is NUMBER_1 . Find the number .

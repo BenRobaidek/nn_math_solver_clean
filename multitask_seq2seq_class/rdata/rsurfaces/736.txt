@@ -1,0 +1,1 @@
+Mr. PERSON_0 accumulated a number of shares . He sold NUMBER_0 of his shares to his brother , NUMBER_1 to his cousin and NUMBER_2 , which is NUMBER_3 of the original number of shares , to his best friend , PERSON_1 . What fraction of shares remained with Mr. PERSON_0 ? How many shares did Mr. PERSON_0 sell in total ?

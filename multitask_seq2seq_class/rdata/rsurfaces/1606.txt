@@ -1,0 +1,1 @@
+A plane flying at NUMBER_0 miles per hour has a NUMBER_1 hour head start on a chase plane which has a speed of NUMBER_2 miles per hour . How far from the airport will the chase plane overtake the first plane ?

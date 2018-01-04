@@ -1,0 +1,1 @@
+The probability that LOCATION_0 LOCATION_1 plays in the next super bowl is NUMBER_0 times the probability that they do not play in the next super bowl . The probability that LOCATION_0 LOCATION_1 plays in the next super bowl plus the probability that they do not play is NUMBER_1 . What is the probability that LOCATION_0 LOCATION_1 plays in the next super bowl ?

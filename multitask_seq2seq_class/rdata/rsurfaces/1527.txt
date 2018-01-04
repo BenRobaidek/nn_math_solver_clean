@@ -1,0 +1,1 @@
+One solution contains NUMBER_0 % alcohol and another solution contains NUMBER_1 % alcohol . How many liters of NUMBER_2 % alcohol and NUMBER_3 % alcohol should be mixed to produce NUMBER_4 liters of a NUMBER_5 % alcohol solution ?

@@ -1,0 +1,1 @@
+A jeweler has NUMBER_0 rings , each weighing NUMBER_1 grams , made of an alloy of 10 % silver and NUMBER_2 % gold . He decides to melt down the rings and add enough silver to reduce the gold content to NUMBER_3 % . How many grams of pure silver must be added for the mixture to have a gold content of NUMBER_4 % ?

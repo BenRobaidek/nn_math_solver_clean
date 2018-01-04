@@ -1,0 +1,1 @@
+A chemistry lab can be used by NUMBER_0 students at one time . The lab has NUMBER_1 workstations , some set up for NUMBER_2 students each and the others set up for NUMBER_3 students each . How many workstations accommodate NUMBER_4 students ?

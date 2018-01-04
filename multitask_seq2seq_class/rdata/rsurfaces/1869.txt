@@ -1,0 +1,1 @@
+A lake is being drained at a rate that will leave it empty after NUMBER_0 weeks , while being filled by a river that will fill it in NUMBER_1 weeks . How long will it take to empty the lake , in weeks ?

@@ -1,0 +1,1 @@
+In a school , there are NUMBER_0 girls and NUMBER_1 boys . How many pupils are there in that school ?

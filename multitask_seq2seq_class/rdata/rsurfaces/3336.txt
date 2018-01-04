@@ -1,0 +1,1 @@
+PERSON_0 has been saving his allowance to buy a new pair of soccer cleats and a ball . His grandmother gave PERSON_0 $ NUMBER_0 for his birthday . His aunt and uncle gave PERSON_0 $ NUMBER_1 and his parents gave him $ NUMBER_2 . Now PERSON_0 had $ NUMBER_3 . How much money did PERSON_0 have before his birthday ?

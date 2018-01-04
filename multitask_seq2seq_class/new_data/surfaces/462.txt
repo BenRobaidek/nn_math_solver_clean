@@ -1,0 +1,1 @@
+PERSON_0 sold NUMBER_0 books on Thursday for a certain price . On Friday , he sold NUMBER_1 of the same books , but he charged NUMBER_2 dollars less per book . He made NUMBER_3 dollars in total . How much did the book sell for on Thursday ? How much did the book sell for on Friday ?
