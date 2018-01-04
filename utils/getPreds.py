@@ -25,4 +25,5 @@ def parseArgs():
 
 if __name__ == '__main__':
     args = parseArgs()
+    print('args:', args)
     main(args)
