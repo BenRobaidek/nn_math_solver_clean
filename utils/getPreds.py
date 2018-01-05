@@ -26,7 +26,10 @@ def main(args):
     LABELS.build_vocab(train)
 
     inp_iter = data.BucketIterator(inp, batch_size=8)
-    
+
+    for batch in inp_iter:
+        preds = model(batch.text.t())
+        print(preds)
 
 def parseArgs():
     parser = argparse.ArgumentParser(description='test')
