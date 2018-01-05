@@ -31,8 +31,8 @@ def main(args):
     for batch in inp_iter:
         logit = model(batch.text.t())
         _, preds = torch.max(logit, 1)
-        for line in preds:
-            print(line)
+        for ID in preds:
+            print(LABELS.vocab.itos)
     print(LABELS)
     predictions.close()
 
