@@ -32,6 +32,7 @@ def main(args):
         preds = model(batch.text.t())
         for line in preds:
             print(line)
+    print(LABELS)
     predictions.close()
 
 def parseArgs():
