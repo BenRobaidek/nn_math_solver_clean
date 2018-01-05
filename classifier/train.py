@@ -6,13 +6,10 @@ import torch.nn.functional as F
 from numpy import genfromtxt
 from torch.autograd import Variable
 
-import data
 import model as m
 from torchtext import data, datasets
-import mydatasets
 from evalTest import eval,test
 from torchtext.vocab import GloVe
-from vecHandler import Vecs
 
 def main():
     args = parseParams()
@@ -187,7 +184,7 @@ def parseParams():
     parser.add_argument('-data-path', type=str, default='../new_data/', help='data path [default: ../new_data/]') #
     parser.add_argument('-train-path', type=str, default='kdata_train.tsv', help='data path [default: kdata_train.tsv]') #
     parser.add_argument('-dev-path', type=str, default='kdata_dev.tsv', help='data path [default: kdata_dev.tsv]') #
-    parser.add_argument('-test-path', type=str, default='kdata_test.tsv', help='data path [default: kdata_test.tsv]') #
+    parser.add_argument('-test-path', type=str, default='../basic/test.tsv', help='data path [default: kdata_test.tsv]') #
 
     # learning
     parser.add_argument('-mf', type=int, default=1, help='min_freq for vocab [default: 1]') #
@@ -209,6 +206,7 @@ def parseParams():
 
     # options
     parser.add_argument('-save-path', type=str, default='./saved_models', help='path to save models [default: ./saved_models]')
+    parser.add_argument('-save', type=bool, default=False, help='save model [default: False]')
     parser.add_argument('-folder', type=str, default='', help='folder to save models [default: '']')
     parser.add_argument('-acc-thresh', type=float, default=40, help='top1 accuracy threshold to save model')
     parser.add_argument('-device', type=int, default=0, help='GPU to use [default: 0]')
