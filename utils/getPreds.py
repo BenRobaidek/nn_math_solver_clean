@@ -27,8 +27,12 @@ def main(args):
 
     inp_iter = data.BucketIterator(inp, batch_size=8, sort_key=lambda x: len(x.text), repeat=False)
 
+    predictions = open(args.preds, 'w')
     for batch in inp_iter:
         preds = model(batch.text.t())
+        for line in preds:
+            print(line)
+    predictions.close()
 
 def parseArgs():
     parser = argparse.ArgumentParser(description='test')
