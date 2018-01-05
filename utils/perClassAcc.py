@@ -29,7 +29,7 @@ def main(args):
 
     #
     for key in keylist:
-        print('{:>40}   {:>5}  ({}/{})'.format(key.strip(), perClassAcc[key][2], int(perClassAcc[key][0]), int(perClassAcc[key][0] + perClassAcc[key][1])))
+        print('{:>60}   {:>5}  ({}/{})'.format(key.strip(), perClassAcc[key][2], int(perClassAcc[key][0]), int(perClassAcc[key][0] + perClassAcc[key][1])))
 
 def parseArgs():
     parser = argparse.ArgumentParser(description='test')
