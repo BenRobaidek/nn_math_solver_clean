@@ -29,7 +29,6 @@ def main(args):
 
     for batch in inp_iter:
         preds = model(batch.text.t())
-        print('AaaaAA')
 
 def parseArgs():
     parser = argparse.ArgumentParser(description='test')
