@@ -5,6 +5,8 @@ from torch import autograd, nn
 from torch.autograd import Variable
 import torch.nn.functional as F
 import sys
+from torchtext import data
+
 sys.path.append('../tencent/models/')
 sys.path.append('../classifier/')
 
@@ -17,7 +19,7 @@ def main(args):
     TEXT = data.Field(lower=True,init_token="<start>",eos_token="<end>")
     LABELS = data.Field(sequential=False)
 
-    inp = data.TabularDataset(path=args.inp, format='tsv', fields=[('text', TEXT), ('label', LABELS)])
+    inp = data.TabulagrDataset(path=args.inp, format='tsv', fields=[('text', TEXT), ('label', LABELS)])
 
 
 def parseArgs():
