@@ -14,10 +14,10 @@ def main(args):
     model = torch.load(args.model, map_location=lambda storage, loc: storage.cuda(0))
     model.eval()
 
-    TEXT = torch.data.Field(lower=True,init_token="<start>",eos_token="<end>")
-    LABELS = torch.data.Field(sequential=False)
+    TEXT = data.Field(lower=True,init_token="<start>",eos_token="<end>")
+    LABELS = data.Field(sequential=False)
 
-    inp = torch.data.TadubalrDataset(path=args.inp, format='tsv', fields=[('text', TEXT), ('label', LABELS)])
+    inp = data.TabularDataset(path=args.inp, format='tsv', fields=[('text', TEXT), ('label', LABELS)])
 
 
 def parseArgs():
