@@ -56,8 +56,8 @@ def main():
     if not os.path.exists('./output/'): os.makedirs('./output/')
 
     # SAVE PREPROCESSED JSON
-    with open('./working/Math23K-preprocessed.json', 'w') as outfile:
-        json.dump(jsondata, outfile)
+    #with open('./working/Math23K-preprocessed.json', 'w') as outfile:
+    #    json.dump(jsondata, outfile)
 
     # 5 FOLD CROSS VALIDATION
     print('Using existing cross validation splits')
@@ -294,7 +294,7 @@ def preprocess(question, equation, sni_model, fields, use_sni=True):
             iterator.repeat=False
             for batch in iterator:
                 inp = batch.text.t()
-            if not use_sni or isSignificant(inp, sni_model):
+            if (not use_sni) or isSignificant(inp, sni_model):
                 for symbol in equation:
                     if symbol == token:
                         equation[equation.index(symbol)] = '[' + chr(97 + i) + ']'
