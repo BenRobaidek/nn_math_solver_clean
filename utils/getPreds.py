@@ -12,7 +12,13 @@ def main(args):
     print('Running main...')
     inp = [line.split('\t')[1].strip() for line in open(args.inp).readlines()]
     model = torch.load(args.model, map_location=lambda storage, loc: storage.cuda(0))
-    print(model)
+    model.eval()
+
+    TEXT = data.Field(lower=True,init_token="<start>",eos_token="<end>")
+    LABELS = data.Field(sequential=False)
+
+    inp = torch.data.TadubalrDataset(path=args.inp, format='tsv', fields=[('text', TEXT), ('label', LABELS)])
+
 
 def parseArgs():
     parser = argparse.ArgumentParser(description='test')
