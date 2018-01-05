@@ -20,6 +20,7 @@ def main(args):
             perClassAcc[line[0]] = np.add(perClassAcc[line[0]], [int(line[0] == line[1]), int(not line[0] == line[1]), 0])
 
     # compute per class accuracies
+    print(perClassAcc)
     for key in perClassAcc.keys():
         perClassAcc[key][2] = perClassAcc[key][0] / (perClassAcc[key][0] + perClassAcc[key][1])
 
@@ -33,7 +34,7 @@ def main(args):
 def parseArgs():
     parser = argparse.ArgumentParser(description='test')
 
-    parser.add_argument('-truth', type=str, default='../tencent/data/working/basic/train.tsv', help='path to ground true file, usually validation file [default: '']')
+    parser.add_argument('-truth', type=str, default='../tencent/data/working/basic/val.tsv', help='path to ground true file, usually validation file [default: '']')
     parser.add_argument('-preds', type=str, default='./preds.txt', help='path to preds file [default: '']')
 
     args = parser.parse_args()
