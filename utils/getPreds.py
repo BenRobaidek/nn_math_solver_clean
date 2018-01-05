@@ -32,7 +32,7 @@ def main(args):
         logit = model(batch.text.t())
         _, preds = torch.max(logit, 1)
         for ID in preds:
-            predictions.write(LABELS.vocab.itos[ID.data])
+            predictions.write(LABELS.vocab.itos[ID.data[0]])
     predictions.close()
 
 def parseArgs():
