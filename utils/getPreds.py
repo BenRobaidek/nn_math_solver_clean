@@ -29,7 +29,8 @@ def main(args):
 
     predictions = open(args.preds, 'w')
     for batch in inp_iter:
-        preds = model(batch.text.t())
+        logit = model(batch.text.t())
+        _, preds = torch.max(logit, 1)
         for line in preds:
             print(line)
     print(LABELS)
