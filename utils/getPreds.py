@@ -19,13 +19,17 @@ def main(args):
     TEXT = data.Field(lower=True,init_token="<start>",eos_token="<end>")
     LABELS = data.Field(sequential=False)
 
+    train = data.TabularDataset(path=args.train, format='tsv', fields=[('text', TEXT), ('label', LABELS)])
     inp = data.TabularDataset(path=args.inp, format='tsv', fields=[('text', TEXT), ('label', LABELS)])
 
+    TEXT.build_vocab(train)
+    LABELS.build_vocab(train)
 
 def parseArgs():
     parser = argparse.ArgumentParser(description='test')
 
     parser.add_argument('-model', type=str, default='../tencent/models/good_model.pt', help='path to model [default: \'../tencent/models/good_model.pt\']')
+    parser.add_argument('-train', type=str, default='../tencent/data/working/basic/train.tsv', help='path to train tsv file [default: \'../tencent/data/working/basic/train.tsv\']')
     parser.add_argument('-inp', type=str, default='../tencent/data/working/basic/val.tsv', help='path to input tsv file, usually validation file [default: \'../tencent/data/working/basic/val.tsv\']')
     parser.add_argument('-preds', type=str, default='./preds.txt', help='path to save preds file [default: \'./preds\']')
 
