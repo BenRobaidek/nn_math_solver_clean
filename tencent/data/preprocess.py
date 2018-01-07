@@ -45,20 +45,19 @@ def main():
     for d in jsondata:
         #print('d[\'segmented_text\']:', d['segmented_text'])
         #print('d[\'equation\']', d['equation'])
-        d['segmented_text'], d['equation'] = preprocess(d['segmented_text'], d['equation'], model, fields, use_sni=True)
+        d['segmented_text'], d['equation'], d['variable_values'] = preprocess(d['segmented_text'], d['equation'], model, fields, use_sni=True)
         #print('d[\'segmented_text\']:', d['segmented_text'])
         #print('d[\'equation\']', d['equation'])
         #print()
     print('Preprocessing complete...')
+    #print(jsondata)
 
     # PREPROCESS DATA WITHOUT SNI
     print('Preprocessing without sni...')
     for d in jsondata_no_sni:
-        d['segmented_text'], d['equation'] = preprocess(d['segmented_text'], d['equation'], model, fields, use_sni=False)
+        d['segmented_text'], d['equation'], d['variable_values'] = preprocess(d['segmented_text'], d['equation'], model, fields, use_sni=False)
         #print(d['segmented_text'])
     print('Preprocessing without sni complete...')
-
-    print('jsondata', jsondata)
 
     # CREATE WORKING AND OUTPUT FOLDERS IF NEEDED
     if not os.path.exists('./working/'): os.makedirs('./working/')
@@ -83,11 +82,17 @@ def main():
     json2tsv(val_indices,   jsondata,   './working/basic/val.tsv')
     json2tsv(test_indices,  jsondata,   './working/basic/test.tsv')
 
+    # SAVE VARIABLE VALUES TO FILE
+    saveValues(val_indices, jsondata,    './working/basic/val_values.txt')
+
     # SAVE SRC/TGT FILES NO SNI
     if not os.path.exists('./working/no_sni/'): os.makedirs('./working/no_sni/')
     json2tsv(train_indices, jsondata_no_sni,   './working/no_sni/train.tsv')
     json2tsv(val_indices,   jsondata_no_sni,   './working/no_sni/val.tsv')
     json2tsv(test_indices,  jsondata_no_sni,   './working/no_sni/test.tsv')
+
+    # SAVE VARIABLE VALUES TO FILE NO SNI
+    saveValues(val_indices, jsondata_no_sni,    './working/no_sni/val_values.txt')
 
     # REMOVE TEST FOLD BEFORE COUNTING UNCOMMON EQUATIONS
     jsondata = [d for d in jsondata if int(d['id']) not in test_indices]
@@ -106,6 +111,13 @@ def main():
     if not os.path.exists('./working/common0.4/'): os.makedirs('./working/common0.4/')
     if not os.path.exists('./working/common0.6/'): os.makedirs('./working/common0.6/')
     if not os.path.exists('./working/common0.8/'): os.makedirs('./working/common0.8/')
+    
+    # SAVE VARIABLE VALUES TO FILE FOR COMMON/UNCOMMON
+    saveValues(val_indices, jsondata, './working/common0.2/val_values.txt')
+    saveValues(val_indices, jsondata, './working/common0.4/val_values.txt')
+    saveValues(val_indices, jsondata, './working/common0.6/val_values.txt')
+    saveValues(val_indices, jsondata, './working/common0.8/val_values.txt')
+
     train_val_indices = np.append(train_indices, val_indices)
     json2tsv(train_val_indices, common_data2,    './working/common0.2/train_val_common.tsv')
     json2tsv(train_val_indices, uncommon_data2,  './working/common0.2/train_val_uncommon.tsv')
@@ -212,6 +224,13 @@ def mostCommon(data, percent):
         occurences += 1
     return data, removed
 
+def saveValues(indices, jsondata, output_path):
+    output = open(output_path, 'w')
+    for d in jsondata:
+        if int(d['id']) in indices:
+            output.write(str(d['variable_values']) + '\n')
+    output.close()
+
 def tsvs2tsv(common_path, uncommon_path, output_path):
     """
     takes tsv for both common and uncommon data
@@ -293,6 +312,7 @@ def preprocess(question, equation, sni_model, fields, use_sni=True):
 
     # replace significant numbers in question and equation
     i = 0
+    variable_values = dict()
     for j,token in enumerate(question):
         if isFloat(token):
             example = question_copy[j-3:j+4]
@@ -303,16 +323,14 @@ def preprocess(question, equation, sni_model, fields, use_sni=True):
             iterator.repeat=False
             for batch in iterator:
                 inp = batch.text.t()
-            #print('use_sni:', use_sni)
-            #print('isSignificant(inp, sni_model)', isSignificant(inp, sni_model))
-            #print('(use_sni and isSignificant(inp, sni_model)) or (not use_sni)',(use_sni and isSignificant(inp, sni_model)) or (not use_sni))
-            #print()
-            # If not using sni, every float is replace, if using sni, then a float is replace iff it is significant
+            
             if (not use_sni) or (use_sni and isSignificant(inp, sni_model)):
                 #if (use_sni and isSignificant(inp, sni_model)) or (not use_sni):
                 for symbol in equation:
                     if symbol == token:
                         equation[equation.index(symbol)] = '[' + chr(97 + i) + ']'
+                character = '[' +chr(97 + i) + ']'
+                variable_values[character] = token 
                 for q in question:
                     if q == token:
                         question[question.index(q)] = '[' + chr(97 + i) + ']'
@@ -323,7 +341,7 @@ def preprocess(question, equation, sni_model, fields, use_sni=True):
 
     question = ' '.join(question) + '\n'
     equation = ' '.join(equation) + '\n'
-    return question, equation
+    return question, equation, variable_values
 
 def json2tsv(json_indices, json_data, output_path):
     """
