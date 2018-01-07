@@ -6,37 +6,23 @@ def main(args):
     """
     Print true accuracy
     """
-    truth = [line.strip().split('\t')[1] for line in open(args.truth).readlines()]
-    preds = [line.strip() for line in open(args.preds).readlines()]
+    # LOAD DATA FILES
+    variables = open(args.variables).readlines()
+    preds = open(args.preds).readlines()
+    answers = open(args.answers, 'w')
 
-    # initialize dict
-    perClassAcc = dict.fromkeys(np.unique(truth))
+    # COMPUTE ANSWERS
 
-    # populate dict
-    for line in zip(truth,preds):
-        if perClassAcc[line[0]] is None:
-            perClassAcc[line[0]] = np.array([int(line[0] == line[1]), int(not line[0] == line[1]), 0]).astype(float)
-        else:
-            perClassAcc[line[0]] = np.add(perClassAcc[line[0]], [int(line[0] == line[1]), int(not line[0] == line[1]), 0])
 
-    # compute per class accuracies
-    print(perClassAcc)
-    for key in perClassAcc.keys():
-        perClassAcc[key][2] = perClassAcc[key][0] / (perClassAcc[key][0] + perClassAcc[key][1])
-
-    # Sort keys
-    keylist = sorted(perClassAcc, key=lambda x: perClassAcc.get(x)[2], reverse=True)
-
-    #
-    for key in keylist:
-        print('{:>60}   {:>5}  ({}/{})'.format(key.strip(), perClassAcc[key][2], int(perClassAcc[key][0]), int(perClassAcc[key][0] + perClassAcc[key][1])))
+    # CLOSE FILES
+    answers.close()
 
 def parseArgs():
     parser = argparse.ArgumentParser(description='test')
-
-    parser.add_argument('-truth', type=str, default='../tencent/data/working/basic/val.tsv', help='path to ground true file, usually validation file [default: '']')
-    parser.add_argument('-preds', type=str, default='./preds.txt', help='path to preds file [default: '']')
-
+    parser.add_argument('-variables', type=str, default='../tencent/data/working/basic/val_values.txt', help='path to variable values [default: \'../tencent/data/working/basic/val_values.txt\']')
+    parser.add_argument('-preds', type=str, default='../tencent/data/output/basic/preds.txt', help='path to preds [default: \'../tencent/data/working/preds.txt\']')
+    parser.add_argument('-answers', type=str, default='../tencent/data/output/basic/answers.txt', help='path to save answers [default: \'../tencent/data/output/basic/answers.txt\']')
+     
     args = parser.parse_args()
     return args
 
