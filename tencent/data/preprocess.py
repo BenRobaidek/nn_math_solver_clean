@@ -1,4 +1,5 @@
 import json
+import copy
 import numpy as np
 import random
 import math
@@ -16,6 +17,7 @@ def main():
 
     # LOAD JSON DATA
     jsondata = json.loads(open('./input/Math23K.json').read())
+    jsondata_no_sni = copy.deepcopy(jsondata)
 
     # LOAD SNI MODEL
     model = torch.load('../../sni/models/sni_best_model.pt')
@@ -41,15 +43,22 @@ def main():
     # PREPROCESS DATA
     print('Preprocessing...')
     for d in jsondata:
-        d['segmented_text'], d['equation'] = preprocess(d['segmented_text'], d['equation'], model, fields)
+        #print('d[\'segmented_text\']:', d['segmented_text'])
+        #print('d[\'equation\']', d['equation'])
+        d['segmented_text'], d['equation'] = preprocess(d['segmented_text'], d['equation'], model, fields, use_sni=True)
+        #print('d[\'segmented_text\']:', d['segmented_text'])
+        #print('d[\'equation\']', d['equation'])
+        #print()
     print('Preprocessing complete...')
 
     # PREPROCESS DATA WITHOUT SNI
-    jsondata_no_sni = jsondata
     print('Preprocessing without sni...')
     for d in jsondata_no_sni:
         d['segmented_text'], d['equation'] = preprocess(d['segmented_text'], d['equation'], model, fields, use_sni=False)
+        #print(d['segmented_text'])
     print('Preprocessing without sni complete...')
+
+    print('jsondata', jsondata)
 
     # CREATE WORKING AND OUTPUT FOLDERS IF NEEDED
     if not os.path.exists('./working/'): os.makedirs('./working/')
@@ -294,7 +303,13 @@ def preprocess(question, equation, sni_model, fields, use_sni=True):
             iterator.repeat=False
             for batch in iterator:
                 inp = batch.text.t()
-            if (not use_sni) or isSignificant(inp, sni_model):
+            #print('use_sni:', use_sni)
+            #print('isSignificant(inp, sni_model)', isSignificant(inp, sni_model))
+            #print('(use_sni and isSignificant(inp, sni_model)) or (not use_sni)',(use_sni and isSignificant(inp, sni_model)) or (not use_sni))
+            #print()
+            # If not using sni, every float is replace, if using sni, then a float is replace iff it is significant
+            if (not use_sni) or (use_sni and isSignificant(inp, sni_model)):
+                #if (use_sni and isSignificant(inp, sni_model)) or (not use_sni):
                 for symbol in equation:
                     if symbol == token:
                         equation[equation.index(symbol)] = '[' + chr(97 + i) + ']'
