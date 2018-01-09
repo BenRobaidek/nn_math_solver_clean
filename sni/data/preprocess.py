@@ -4,13 +4,12 @@ import random
 import math
 import re
 import sys
-sys.path.append('../../tencent/data/')
-from preprocess
+from py_expression_eval import Parser
 
 def main():
 
     # LOAD DATA
-    data = json.loads(open('../../tencent/data/Math23K.json').read())
+    data = json.loads(open('../../tencent/data/input/Math23K.json').read())
 
     # PREPROCESS DATA
     for d in data:
@@ -97,6 +96,7 @@ def preprocess(question, equation):
     question = re.sub(r'(\d+)([A-z]{1,2})', r'\1 \2', question)
 
     # seperate equation at operators
+    print('equation (before):', equation)
     equation = equation.replace('[', ' ( ')
     equation = equation.replace(']', ' ) ')
     equation = equation.replace('+', ' + ')
@@ -108,6 +108,7 @@ def preprocess(question, equation):
     equation = equation.replace(')', ' ) ')
     equation = equation.replace('=', ' = ')
     equation = equation.replace('^', ' ^ ')
+
 
     # reduce %'s
     equation = equation.replace('%', ' / 100 ')
@@ -121,31 +122,31 @@ def preprocess(question, equation):
     numbers = np.array([token for token in question if isFloat(token)])# or float(token) == 2)])
     _, indices = np.unique(numbers, return_index=True)
     numbers = numbers[np.sort(indices)]
-    equation = np.array([token.strip() for token in equation])
+
+    equation = np.array([token.strip() for token in equation.split(' ')])
 
     examples = []
+    print('equation:', equation)
 
     for i,number in enumerate(numbers):
+        index = np.where(question == number)[0][0]
+        src = question[index-3:index+4]
+        src = ' '.join(src)
         if number.strip() in equation:
-            index = np.where(question == number)[0][0]
-            src = question[index-3:index+4]
-            src = ' '.join(src)
-            #print('np.shape(examples):', np.shape(examples))
             examples = np.append(examples, [src + '\t' + 'yes'])
+            print('example:', src + '\t' + 'yes')
         else:
-            index = np.where(question == number)[0][0]
-            src = question[index-3:index+4]
-            src = ' '.join(src)
             examples = np.append(examples, [src + '\t' + 'no'])
+            print('example:', src + '\t' + 'no')
     return examples
 
 def json2txt(json_indices, data, output_path):
     output = open(output_path, 'w')
     for d in data:
         if int(d['id']) in json_indices:
-            print(d['examples'])
+            #print(d['examples'])
             for example in d['examples']:
-                print(example)
+                #print(example)
                 output.write(example + '\n')
     output.close()
 
