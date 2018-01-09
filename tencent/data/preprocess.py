@@ -8,6 +8,7 @@ import sys
 import os
 import torch
 from torchtext import data, datasets
+from py_expression_eval import Parser
 
 sys.path.append('../../sni/model')
 import model
@@ -111,7 +112,7 @@ def main():
     if not os.path.exists('./working/common0.4/'): os.makedirs('./working/common0.4/')
     if not os.path.exists('./working/common0.6/'): os.makedirs('./working/common0.6/')
     if not os.path.exists('./working/common0.8/'): os.makedirs('./working/common0.8/')
-    
+
     # SAVE VARIABLE VALUES TO FILE FOR COMMON/UNCOMMON
     saveValues(val_indices, jsondata, './working/common0.2/val_values.txt')
     saveValues(val_indices, jsondata, './working/common0.4/val_values.txt')
@@ -274,11 +275,14 @@ def preprocess(question, equation, sni_model, fields, use_sni=True):
     question = question.replace('%', ' % ')
 
     # handle fractions
+    parser = Parser()
     fractions = re.findall('\(\d+\)/\(\d+\)', question)
     fractions = np.append(fractions, re.findall('\(\d+/\d+\)', question))
     for i,fraction in enumerate(fractions):
-        question = question.replace(fraction, str(sys.maxsize - i))
-        equation = equation.replace(fraction, str(sys.maxsize - i))
+        #question = question.replace(fraction, str(sys.maxsize - i))
+        #equation = equation.replace(fraction, str(sys.maxsize - i))
+        question = question.replace(fraction, parser.evaluate(fraction, variables=None))
+        equation = equation.replace(fraction, parser.evaluate(fraction, variables=None))
 
     # handle numbers with units
     question = re.sub(r'(\d+)([A-z]{1,2})', r'\1 \2', question)
@@ -323,14 +327,14 @@ def preprocess(question, equation, sni_model, fields, use_sni=True):
             iterator.repeat=False
             for batch in iterator:
                 inp = batch.text.t()
-            
+
             if (not use_sni) or (use_sni and isSignificant(inp, sni_model)):
                 #if (use_sni and isSignificant(inp, sni_model)) or (not use_sni):
                 for symbol in equation:
                     if symbol == token:
                         equation[equation.index(symbol)] = '[' + chr(97 + i) + ']'
                 character = '[' +chr(97 + i) + ']'
-                variable_values[character] = token 
+                variable_values[character] = token
                 for q in question:
                     if q == token:
                         question[question.index(q)] = '[' + chr(97 + i) + ']'
