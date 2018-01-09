@@ -281,8 +281,8 @@ def preprocess(question, equation, sni_model, fields, use_sni=True):
     for i,fraction in enumerate(fractions):
         #question = question.replace(fraction, str(sys.maxsize - i))
         #equation = equation.replace(fraction, str(sys.maxsize - i))
-        question = question.replace(fraction, parser.evaluate(fraction, variables=None))
-        equation = equation.replace(fraction, parser.evaluate(fraction, variables=None))
+        question = question.replace(fraction, str(parser.evaluate(fraction, variables=None)))
+        equation = equation.replace(fraction, str(parser.evaluate(fraction, variables=None)))
 
     # handle numbers with units
     question = re.sub(r'(\d+)([A-z]{1,2})', r'\1 \2', question)
