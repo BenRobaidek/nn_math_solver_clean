@@ -4,6 +4,8 @@ import random
 import math
 import re
 import sys
+sys.path.append('../../tencent/data/')
+from preprocess
 
 def main():
 
@@ -74,41 +76,30 @@ def split(train_path, dev_path, test_path, k_test=5):
     output.close()
     print(test_path + ' saved')
 
-def mostCommon(data, percent):
-    # returns PERCENT of data by # of equation occurences
-
-    equation, count= np.unique([d['equation'] for d in data], return_counts=True)
-    indices = np.asarray((equation, count)).T[:,1].astype(int).argsort()
-    result = np.asarray([[equation[i], count[i]] for i in indices])
-    removed = np.array([])
-
-    total_eqs = np.sum(np.asarray(result[:,1]).astype(int))
-    occurences = 1
-    while len(removed) < total_eqs * (1 - percent):
-        print('Removing equations with', occurences, 'occurences...')
-        equations_to_remove = result[:,0][np.asarray(result[:,1]).astype(int) == occurences]
-        for eq in equations_to_remove:
-            eq = eq.strip()
-            removed = np.append(removed, [d for d in data if d['equation'].strip() == eq])
-            data = [d for d in data if not d['equation'].strip() == eq]
-
-        print('total # equations removed:', len(removed))
-        occurences += 1
-    return data, removed
-
-
 def preprocess(question, equation):
-
-
-    #handle fractions and % and numbers with units
+    """
+    Returns preprocessed version of question and equation
+    """
+    # handle %'s
     question = question.replace('%', ' % ')
 
+    # handle fractions
+    parser = Parser()
     fractions = re.findall('\(\d+\)/\(\d+\)', question)
     fractions = np.append(fractions, re.findall('\(\d+/\d+\)', question))
     for i,fraction in enumerate(fractions):
-        question = question.replace(fraction, str(sys.maxsize - i))
-        equation = equation.replace(fraction, str(sys.maxsize - i))
+        #question = question.replace(fraction, str(sys.maxsize - i))
+        #equation = equation.replace(fraction, str(sys.maxsize - i))
+        question = question.replace(fraction, str(parser.evaluate(fraction, variables=None)))
+        equation = equation.replace(fraction, str(parser.evaluate(fraction, variables=None)))
 
+    # handle numbers with units
+    question = re.sub(r'(\d+)([A-z]{1,2})', r'\1 \2', question)
+
+    # seperate equation at operators
+    equation = equation.replace('[', ' ( ')
+    equation = equation.replace(']', ' ) ')
+    equation = equation.replace('+', ' + ')
     equation = equation.replace('+', ' + ')
     equation = equation.replace('-', ' - ')
     equation = equation.replace('*', ' * ')
@@ -117,10 +108,9 @@ def preprocess(question, equation):
     equation = equation.replace(')', ' ) ')
     equation = equation.replace('=', ' = ')
     equation = equation.replace('^', ' ^ ')
-    equation = equation.replace('%', ' % ')
-    equation = equation.split()
 
-    question = re.sub(r'(\d+)([A-z]{1,2})', r'\1 \2', question)
+    # reduce %'s
+    equation = equation.replace('%', ' / 100 ')
 
     # Preprocess Question
 
@@ -147,7 +137,6 @@ def preprocess(question, equation):
             src = question[index-3:index+4]
             src = ' '.join(src)
             examples = np.append(examples, [src + '\t' + 'no'])
-    #print(examples)
     return examples
 
 def json2txt(json_indices, data, output_path):
@@ -166,13 +155,6 @@ def isFloat(value):
     return True
   except ValueError:
     return False
-
-def txt2tsv(src_path, tgt_path, tsv_path):
-    src_txt = open(src_path).readlines()
-    tgt_txt = open(tgt_path).readlines()
-    tsv = open(tsv_path, 'w')
-    for i in range(len(src_txt)):
-        tsv.write(src_txt[i].strip() + '\t' + tgt_txt[i].strip() +'\n')
 
 if __name__ == '__main__':
     main()
