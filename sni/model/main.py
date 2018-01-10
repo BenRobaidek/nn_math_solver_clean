@@ -21,8 +21,8 @@ bs = 64,
 opt = ('adam',)# 'adam', 'sgd')
 num_lay =  (1,)
 hs = (128,)
-num_dir = 2,
-embdim = (100,)
+num_dir = (1,2)
+embdim = (100,128,512)
 embfix = (False,)#True)
 ptemb = (False,)#True)
 dropout = (0,)
@@ -42,7 +42,7 @@ try:
                 (net_type, epoch, bs, opt, num_lay, hs, num_dir, embdim, embfix,
                                                             ptemb, dropout, mf))
             os.system('python train.py' + \
-                        ' -save-path=' + '../models/'+ \
+                        ' -save-path=' + '../saved_models/'+ \
                         ' -data-path=' + '../data/'+ \
                         ' -train-path=' + 'train.tsv' + \
                         ' -dev-path=' + 'val.tsv' + \

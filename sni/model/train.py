@@ -6,13 +6,10 @@ import torch.nn.functional as F
 from numpy import genfromtxt
 from torch.autograd import Variable
 
-import data
 import model as m
 from torchtext import data, datasets
-import mydatasets
 from evalTest import eval,test
 from torchtext.vocab import GloVe
-from vecHandler import Vecs
 
 def main():
     args = parseParams()
@@ -182,31 +179,31 @@ def writeResults(args, results, highest_t1_acc, highest_t1_acc_metrics, highest_
 def parseParams():
     parser = argparse.ArgumentParser(description='LSTM text classifier')
     # data
-    parser.add_argument('-data-path', type=str, default='../new_data/', help='data path [default: ../new_data/]') #
-    parser.add_argument('-train-path', type=str, default='kdata_train.tsv', help='data path [default: kdata_train.tsv]') #
-    parser.add_argument('-dev-path', type=str, default='kdata_dev.tsv', help='data path [default: kdata_dev.tsv]') #
-    parser.add_argument('-test-path', type=str, default='kdata_test.tsv', help='data path [default: kdata_test.tsv]') #
+    parser.add_argument('-data-path', type=str, default='../data/', help='data path [default: ../new_data/]') #
+    parser.add_argument('-train-path', type=str, default='train.tsv', help='data path [default: kdata_train.tsv]') #
+    parser.add_argument('-dev-path', type=str, default='val.tsv', help='data path [default: kdata_dev.tsv]') #
+    parser.add_argument('-test-path', type=str, default='test.tsv', help='data path [default: kdata_test.tsv]') #
 
     # learning
     parser.add_argument('-mf', type=int, default=1, help='min_freq for vocab [default: 1]') #
     parser.add_argument('-lr', type=float, default=0.001, help='initial learning rate [default: 0.001]') #
-    parser.add_argument('-epochs', type=int, default=100, help='number of epochs for train [default: 100]') #
+    parser.add_argument('-epochs', type=int, default=10, help='number of epochs for train [default: 100]') #
     parser.add_argument('-batch-size', type=int, default=64, help='batch size for training [default: 64]') #
     parser.add_argument('-opt', type=str, default='adamax', help='optimizer [default: adamax]') #
 
     # model
     parser.add_argument('-net-type', type=str, default='lstm', help='network type [default: lstm]')
-    parser.add_argument('-num-layers', type=int, default=4, help='number of layers [default: 1]') #
-    parser.add_argument('-hidden-sz', type=int, default=500, help='hidden size [default: 300]') #
-    parser.add_argument('-num-dir', type=int, default=2, help='number of directions [default: 2]') #
-    parser.add_argument('-emb-dim', type=int, default=300, help='number of embedding dimension [default: 300]') #
+    parser.add_argument('-num-layers', type=int, default=1, help='number of layers [default: 1]') #
+    parser.add_argument('-hidden-sz', type=int, default=128, help='hidden size [default: 300]') #
+    parser.add_argument('-num-dir', type=int, default=1, help='number of directions [default: 2]') #
+    parser.add_argument('-emb-dim', type=int, default=128, help='number of embedding dimension [default: 300]') #
     parser.add_argument('-embfix', type=str, default=False, help='fix the embeddings [default: False]') #
     parser.add_argument('-pretr-emb', type=str, default=False, help='use pretrained embeddings') #
-    parser.add_argument('-dropout', type=float, default=.5, help='dropout rate [default: .5]')
+    parser.add_argument('-dropout', type=float, default=0, help='dropout rate [default: .5]')
 
     # options
     parser.add_argument('-save', type=bool, default=False, help='if save models [default: False]')
-    parser.add_argument('-save-path', type=str, default='./saved_models', help='path to save models [default: ./saved_models]')
+    parser.add_argument('-save-path', type=str, default='../saved_models/', help='path to save models [default: ../saved_models/]')
     parser.add_argument('-folder', type=str, default='', help='folder to save models [default: '']')
     parser.add_argument('-acc-thresh', type=float, default=40, help='top1 accuracy threshold to save model')
     parser.add_argument('-device', type=int, default=0, help='GPU to use [default: 0]')
