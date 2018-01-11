@@ -32,7 +32,10 @@ def solve(equation, variables):
     if re.search('[[a-z]]', equation) is not None:
         answer = 'no answer'
     else:
-        answer = parser.evaluate(equation, variables=None)
+        try:
+            answer = parser.evaluate(equation, variables=None)
+        except OverflowError:
+            answer = float('inf')
     return answer
 
 
