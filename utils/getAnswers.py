@@ -34,7 +34,7 @@ def solve(equation, variables):
     else:
         try:
             answer = parser.evaluate(equation, variables=None)
-        except OverflowError:
+        except OverflowError, ZeroDivisionError:
             answer = float('inf')
     return answer
 
