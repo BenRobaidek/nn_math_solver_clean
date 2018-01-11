@@ -396,7 +396,7 @@ def txt2tsv(src_path, tgt_path, tsv_path):
 def saveAnswers(json_indices, jsondata, output_path):
     output = open(output_path, 'w')
     for d in jsondata:
-        if int(d['id']) in indices:
+        if int(d['id']) in json_indices:
             output.write(str(d['ans']) + '\n')
     output.close()
 
