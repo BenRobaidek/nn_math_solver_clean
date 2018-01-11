@@ -385,5 +385,12 @@ def txt2tsv(src_path, tgt_path, tsv_path):
         tsv.write(src_txt[i].strip() + '\t' + tgt_txt[i].strip() +'\n')
     tsv.close()
 
+def saveAnswers(json_indices, jsondata, output_path):
+    output = open(output_path, 'w')
+    for d in jsondata:
+        if int(d['id']) in indices:
+            output.write(str(d['ans']) + '\n')
+    output.close()
+
 if __name__ == '__main__':
     main()

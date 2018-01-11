@@ -12,9 +12,10 @@ def main(args):
     equations = [line for line in open(args.equations).readlines()]
     variables = [ast.literal_eval(line) for line in open(args.variables).readlines()]
 
-    #
+    answers = open(args.answers, 'w')
     for eq, var in zip(equations, variables):
-        print(solve(eq, var))
+        answers.write(solve(eq, var))
+    answers.close()
 
 def solve(equation, variables):
     """
@@ -40,6 +41,7 @@ def parseArgs():
 
     parser.add_argument('-equations', type=str, default='../tencent/data/output/basic/preds.txt', help='path to equations file, usually preds.txt [default: '']')
     parser.add_argument('-variables', type=str, default='../tencent/data/working/basic/val_values.txt', help='path to validation variable values file [default: '']')
+    parser.add_argument('-answers', type=str, default='../tencent/data/output/basic/answers.txt', help='path to save answers [default: '']')
 
     args = parser.parse_args()
     return args
