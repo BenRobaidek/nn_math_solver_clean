@@ -14,7 +14,7 @@ def main(args):
 
     answers = open(args.answers, 'w')
     for eq, var in zip(equations, variables):
-        answers.write(solve(eq, var))
+        answers.write(str(solve(eq, var)))
     answers.close()
 
 def solve(equation, variables):
