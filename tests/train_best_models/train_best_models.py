@@ -2,7 +2,7 @@ import os
 
 def main():
     print('Training classifier on full tencent data')
-    os.system('python train.py' + \
+    os.system('python ../../classifier/train.py' + \
                 ' -save-path=' + './saved_models/classifier_basic/'+ \
                 ' -save=' + 'True'
                 ' -data-path=' + '../../tencent/data/working/basic/'+ \
