@@ -25,7 +25,8 @@ def main(args):
     TEXT.build_vocab(train)
     LABELS.build_vocab(train)
 
-    inp_iter = data.BucketIterator(inp, batch_size=8, sort_key=lambda x: len(x.text), repeat=False)
+    #sort_key=lambda x: len(x.text)
+    inp_iter = data.Iterator(inp, batch_size=8, train=False, repeat=False, shuffle=False)
 
     predictions = open(args.preds, 'w')
     for batch in inp_iter:
