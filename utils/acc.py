@@ -24,13 +24,13 @@ for i,line in enumerate(tgts):
     except (ValueError,TypeError):
         output = output
     tgts[i] = output
-print(preds)
-print(tgts)
+#print(preds)
+#print(tgts)
 
 corrects = copy.deepcopy(preds)
 
 for i,example in enumerate(corrects):
-    try: 
+    try:
         float(preds[i])
         float(tgts[i])
         if (float(preds[i]) - float(tgts[i]) / float(tgts[i]) <= .02):
@@ -41,7 +41,8 @@ for i,example in enumerate(corrects):
         corrects[i] = 0
 corrects = np.array(corrects).astype(int)
 print(np.sum(corrects) / len(corrects))
+
 for i,c in enumerate(corrects):
-    if c == 1:
+    if c == 0:
         print('tgt:', tgts[i], 'pred:', preds[i])
 #print(np.sum(tgts[:] == preds[:])/len(preds))

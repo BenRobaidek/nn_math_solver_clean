@@ -11,10 +11,16 @@ def main(args):
     preds = open(args.preds).readlines()
     preds = [line.strip() for line in preds]
     #preds = np.expand_dims(preds, axis=1)
-    print('Accuracy of guessing equation:', np.sum(val_tgts[:] == preds[:]) / len(preds))
-    for i,line in enumerate(val_tgts):
-        if not val_tgts[i] == preds[i]:
-            print(val_tgts[i], preds[i])
+    correct = 0
+    total = len(preds)
+    for i,ex in enumerate(preds):
+        if preds[i] == val_tgts[i]:
+            correct += 1
+    print('Accuracy of guessing equation:', correct/total, '(', correct, '/', total, ')')
+    #for i,line in enumerate(val_tgts):
+    #    if not val_tgts[i] == preds[i]:
+    #        #print(val_tgts[i], preds[i])
+    #        #print(i)
 
 
 def parseArgs():

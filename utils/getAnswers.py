@@ -25,15 +25,17 @@ def solve(equation, variables):
     for key in variables.keys():
         equation = equation.replace(key, variables[key])
     equation = equation.strip('x =')
+    equation = equation.strip()
     print('equation:', equation)
     print('variables:', variables)
     parser = Parser()
-    print(re.search('[[a-z]]', equation))
+    #print(re.search('[[a-z]]', equation))
     if re.search('[[a-z]]', equation) is not None:
         answer = 'no answer'
     else:
         try:
             print('equation:', equation)
+            equation.replace('%', ' / 100')
             answer = parser.evaluate(equation, variables=None)
             print('answer:', answer)
         except (OverflowError, ZeroDivisionError):

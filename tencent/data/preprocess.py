@@ -397,6 +397,7 @@ def saveAnswers(json_indices, jsondata, output_path):
     output = open(output_path, 'w')
     for d in jsondata:
         if int(d['id']) in json_indices:
+            print(str(d['ans']) + '\n')
             output.write(str(d['ans']) + '\n')
     output.close()
 
