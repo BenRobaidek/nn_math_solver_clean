@@ -28,7 +28,8 @@ def main(args):
     #sort_key=lambda x: len(x.text)
     print(inp.examples)
     inp_iter = data.Iterator(inp, batch_size=8, repeat=False, train=False, sort=False, sort_within_batch=False)
-    print(inp_iter.data())
+    for i in inp_iter.data():
+        print(i)
 
     predictions = open(args.preds, 'w')
     for batch in inp_iter:
