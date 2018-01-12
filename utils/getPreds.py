@@ -26,7 +26,7 @@ def main(args):
     LABELS.build_vocab(train)
 
     #sort_key=lambda x: len(x.text)
-    inp_iter = data.Iterator(inp, batch_size=8, train=False, repeat=False, shuffle=False)
+    inp_iter = data.Iterator(inp, batch_size=8)
 
     predictions = open(args.preds, 'w')
     for batch in inp_iter:
