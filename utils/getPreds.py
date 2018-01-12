@@ -38,10 +38,10 @@ def main(args):
 def parseArgs():
     parser = argparse.ArgumentParser(description='test')
 
-    parser.add_argument('-model', type=str, default='../tencent/models/good_model.pt', help='path to model [default: \'../tencent/models/good_model.pt\']')
+    parser.add_argument('-model', type=str, default='../tests/train_best_models/saved_models/classifier_basic/best_model.pt', help='path to model [default:]')
     parser.add_argument('-train', type=str, default='../tencent/data/working/basic/train.tsv', help='path to train tsv file [default: \'../tencent/data/working/basic/train.tsv\']')
     parser.add_argument('-inp', type=str, default='../tencent/data/working/basic/val.tsv', help='path to input tsv file, usually validation file [default: \'../tencent/data/working/basic/val.tsv\']')
-    parser.add_argument('-preds', type=str, default='./preds.txt', help='path to save preds file [default: \'./preds\']')
+    parser.add_argument('-preds', type=str, default='../tests/train_best_models/saved_models/classifier_basic/preds.txt', help='path to save preds file [default: \'../tests/train_best_models/saved_models/classifier_basic/preds\']')
 
     args = parser.parse_args()
     return args
