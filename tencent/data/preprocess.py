@@ -121,7 +121,7 @@ def main():
 
     # SAVE ANSWER FILES
     saveAnswers(val_indices, jsondata, './working/basic/answers.txt')
-    saveAnswers(val_indices, jsondata, './working/commom0.2/answers.txt')
+    saveAnswers(val_indices, jsondata, './working/common0.2/answers.txt')
     saveAnswers(val_indices, jsondata, './working/common0.4/answers.txt')
     saveAnswers(val_indices, jsondata, './working/common0.6/answers.txt')
     saveAnswers(val_indices, jsondata, './working/common0.8/answers.txt')
@@ -395,9 +395,13 @@ def txt2tsv(src_path, tgt_path, tsv_path):
 
 def saveAnswers(json_indices, jsondata, output_path):
     output = open(output_path, 'w')
+    parser = Parser()
     for d in jsondata:
         if int(d['id']) in json_indices:
             print(str(d['ans']) + '\n')
+            answer = answer.replace('%', ' / 100')
+            try:
+                answer = parser.evaluate(answer, variables=None)
             output.write(str(d['ans']) + '\n')
     output.close()
 
