@@ -1,0 +1,1 @@
+acc: 51.7000%(517/1000) EPOCH88 - loss: 0.0051 t5_acc: 82.4000%(824/1000) MRR: 0.662740PARAMETERS:net-lstm_e100_bs64_opt-adamax_ly1_hs300_dr2_ed100_fembFalse_ptembFalse_drp0.3_mf1

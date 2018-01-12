@@ -14,7 +14,7 @@ def main(args):
 
     answers = open(args.answers, 'w')
     for eq, var in zip(equations, variables):
-        answers.write(str(solve(eq, var)))
+        answers.write(str(solve(eq, var)) + '\n')
     answers.close()
 
 def solve(equation, variables):
@@ -33,7 +33,9 @@ def solve(equation, variables):
         answer = 'no answer'
     else:
         try:
+            print('equation:', equation)
             answer = parser.evaluate(equation, variables=None)
+            print('answer:', answer)
         except (OverflowError, ZeroDivisionError):
             answer = float('inf')
     return answer
@@ -42,7 +44,7 @@ def solve(equation, variables):
 def parseArgs():
     parser = argparse.ArgumentParser(description='test')
 
-    parser.add_argument('-equations', type=str, default='../tencent/data/output/basic/preds.txt', help='path to equations file, usually preds.txt [default: '']')
+    parser.add_argument('-equations', type=str, default='../tests/train_best_models/saved_models/classifier_basic/preds.txt', help='path to equations file, usually preds.txt [default: '']')
     parser.add_argument('-variables', type=str, default='../tencent/data/working/basic/val_values.txt', help='path to validation variable values file [default: '']')
     parser.add_argument('-answers', type=str, default='../tencent/data/output/basic/answers.txt', help='path to save answers [default: '']')
 
