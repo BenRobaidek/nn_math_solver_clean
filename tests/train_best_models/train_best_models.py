@@ -22,29 +22,32 @@ def main():
                 ' -dropout=' + '0.3' + \
                 ' -mf=' + '1' + \
                 ' -folder=' + '')
-    """
-    print('Training classifier on common0.2 tencent data')
+
+def train_classifier(save_path, save, data_path, train_path, val_path,
+                    test_path, net_type, epochs, batch_size, opt, num_layers,
+                    hidden_size, num_dir, emd_dim, emb_fix, pretr_emb, dropout,
+                    mf, folder):
     os.system('python train.py' + \
     #PARAMETERS:net-lstm_e100_bs8_opt-adamax_ly1_hs300_dr2_ed300_fembFalse_ptembFalse_drp0.7_mf2
-                ' -save-path=' + './saved_models/classifier_common0.2/'+ \
-                ' -save=' + 'True'
-                ' -data-path=' + '../../tencent/data/working/common0.2/'+ \
-                ' -train-path=' + 'train.tsv' + \
-                ' -dev-path=' + 'val.tsv' + \
-                ' -test-path=' + '../basic/test.tsv' + \
-                ' -net-type=' + '' + \
-                ' -epochs=' + '100' + \
-                ' -batch-size=' + '' + \
-                ' -opt=' + '' + \
-                ' -num-layers=' + '' + \
-                ' -hidden-sz=' + '' + \
-                ' -num-dir=' + '' + \
-                ' -emb-dim=' + '' + \
-                ' -embfix=' + '' + \
-                ' -pretr-emb=' + '' + \
-                ' -dropout=' + '' + \
-                ' -mf=' + '' + \
-                ' -folder=' + '')
+                ' -save-path=' + save_path+ \
+                ' -save=' + save
+                ' -data-path=' + data_path+ \
+                ' -train-path=' + train_path + \
+                ' -dev-path=' + val_path + \
+                ' -test-path=' + test_path + \
+                ' -net-type=' + net_type + \
+                ' -epochs=' + epochs + \
+                ' -batch-size=' + batch_size + \
+                ' -opt=' + opt + \
+                ' -num-layers=' + num_layers + \
+                ' -hidden-sz=' + hidden_size + \
+                ' -num-dir=' + num_dir + \
+                ' -emb-dim=' + emb_dim + \
+                ' -embfix=' + emb_fix + \
+                ' -pretr-emb=' + pretr_emb + \
+                ' -dropout=' + dropout + \
+                ' -mf=' + mf + \
+                ' -folder=' + folder)
 
     print('Training classifier on common0.4 tencent data')
     os.system('python train.py' + \
