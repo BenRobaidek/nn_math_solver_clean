@@ -398,10 +398,12 @@ def saveAnswers(json_indices, jsondata, output_path):
     parser = Parser()
     for d in jsondata:
         if int(d['id']) in json_indices:
-            print(str(d['ans']) + '\n')
+            #print(str(d['ans']) + '\n')
             answer = answer.replace('%', ' / 100')
             try:
                 answer = parser.evaluate(answer, variables=None)
+            except:
+                pass
             output.write(str(d['ans']) + '\n')
     output.close()
 
