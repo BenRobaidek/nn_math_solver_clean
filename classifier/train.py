@@ -63,7 +63,7 @@ def train(data_path, train_path, val_path, test_path, mf, lr, epochs, bs, opt,
     ###############################################################################
     # Build the model
     ###############################################################################
-    print('MADE IT HERE')
+
     model = m.Model(input_size=input_size,
                     hidden_size=hs,
                     num_classes=num_classes,
@@ -98,6 +98,7 @@ def train(data_path, train_path, val_path, test_path, mf, lr, epochs, bs, opt,
     highest_t1_acc_metrics = ''
     highest_t1_acc_params = ''
     results = ''
+    print('MADE IT HERE')
     for epoch in range(epochs):
         losses = []
         tot_loss = 0
