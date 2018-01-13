@@ -98,8 +98,8 @@ def train(data_path, train_path, val_path, test_path, mf, lr, epochs, bs, opt,
     highest_t1_acc_metrics = ''
     highest_t1_acc_params = ''
     results = ''
-    print('MADE IT HERE')
     for epoch in range(epochs):
+        print('MADE IT HERE')
         losses = []
         tot_loss = 0
         train_iter.repeat=False
