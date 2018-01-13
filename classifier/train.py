@@ -119,10 +119,10 @@ def train(data_path, train_path, val_path, test_path, mf, lr, epochs, bs, opt,
         #print('Average loss over epoch ' + str(epoch) + ': ' + str(tot_loss/len(losses)))
         (avg_loss, accuracy, corrects, size, t5_acc, t5_corrects, mrr) = eval(val_iter, model, TEXT, emb_dim, LABELS, snis, pred_filter=pred_filter)
         if accuracy > acc_thresh:
-            save_path = '{}/acc{:.2f}_e{}.pt'.format(save_path, accuracy, epoch)
-            if not os.path.isdir(save_path):
-                os.makedirs(save_path)
-            torch.save(model, save_path)
+            save_path_f = '{}/acc{:.2f}_e{}.pt'.format(save_path, accuracy, epoch)
+            if not os.path.isdir(save_path_f):
+                os.makedirs(save_path_f)
+            torch.save(model, save_path_f)
 
         if highest_t1_acc < accuracy:
             highest_t1_acc = accuracy
