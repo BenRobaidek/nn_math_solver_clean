@@ -12,11 +12,19 @@ from evalTest import eval,test
 from torchtext.vocab import GloVe
 
 def main():
+    """
     args = parseParams()
     if not os.path.isdir(args.save_path_full):
         train(args)
     else:
         print('Previously Trained')
+    """
+    train(data_path='../tencent/data/working/basic/', train_path='train.tsv',
+            val_path='val.tsv', test_path='test.tsv', mf=1, lr=.001, epochs=100,
+            bs=8, opt='adam', net_type='lstm', ly=2, hs=300, num_dir=2,
+            emb_dim=300, embfix=False, pretrained_emb=False, dropout=0.0,
+            pred_filter=True, save_path='./', save=False, folder='',
+            acc_thresh=.4, device=0, verbose=False)
 
 def train(data_path, train_path, val_path, test_path, mf, lr, epochs, bs, opt,
             net_type, ly, hs, num_dir, emb_dim, embfix, pretrained_emb,
@@ -132,8 +140,8 @@ def train(data_path, train_path, val_path, test_path, mf, lr, epochs, bs, opt,
                     '_ptemb%s' \
                     '_drp%.1f' \
                     '_mf%d\n'
-                    % (args.net_type, args.epochs, args.batch_size, args.opt, args.num_layers,
-                    args.hidden_sz, args.num_dir, args.emb_dim, args.embfix, args.pretr_emb, args.dropout, args.mf)))
+                    % (net_type, epochs, batch_size, opt, num_layers,
+                    hidden_sz, num_dir, emb_dim, embfix, pretr_emb, dropout, mf)))
         results += ('\nEPOCH{:2d} - loss: {:.4f}  acc: {:6.4f}%({:3d}/{}) t5_acc: {:6.4f}%({:3d}' \
                 '/{}) MRR: {:.6f}'.format(epoch, avg_loss, accuracy,
                                         corrects, size, t5_acc, t5_corrects, size,
@@ -143,9 +151,9 @@ def train(data_path, train_path, val_path, test_path, mf, lr, epochs, bs, opt,
     writeResults(args, results, highest_t1_acc, highest_t1_acc_metrics, highest_t1_acc_params)
 
 def writeResults(args, results, highest_t1_acc, highest_t1_acc_metrics, highest_t1_acc_params):
-    if not os.path.isdir(args.save_path_full):
-        os.makedirs(args.save_path_full)
-    f = open(args.save_path_full + '/results.txt','w')
+    if not os.path.isdir(save_path):
+        os.makedirs(save_path)
+    f = open(save_path + '/results.txt','w')
     f.write('PARAMETERS:\n' \
             'Net Type: %s\n' \
             #'Learning Rate: %f\n' \
@@ -160,12 +168,12 @@ def writeResults(args, results, highest_t1_acc, highest_t1_acc_metrics, highest_
             'Pretrained Embeddings: %s\n' \
             'Dropout: %.1f\n' \
             'Min Freq: %d'
-            % (args.net_type, args.epochs, args.batch_size, args.opt, args.num_layers,
-            args.hidden_sz, args.num_dir, args.emb_dim, args.embfix, args.pretr_emb, args.dropout, args.mf))
+            % (net_type, epochs, bs, opt, num_layers,
+            hs, num_dir, emb_dim, embfix, pretr_emb, dropout, mf))
     f.write(results)
     f.close()
-    if highest_t1_acc > args.acc_thresh:
-        g = open(args.save_path + args.folder+ '/best_models.txt','a')
+    if highest_t1_acc > acc_thresh:
+        g = open(save_path + folder+ '/best_models.txt','a')
         g.write(highest_t1_acc_metrics)
         g.write(highest_t1_acc_params)
         g.close()
