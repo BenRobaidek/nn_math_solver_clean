@@ -106,17 +106,17 @@ def train(data_path, train_path, val_path, test_path, mf, lr, epochs, bs, opt,
             tot_loss += loss.data[0]
 
         (avg_loss, accuracy, corrects, size, t5_acc, t5_corrects, mrr) = eval(val_iter, model, TEXT, emb_dim, LABELS, snis, pred_filter=pred_filter)
-        epoch_results = dict()
-        epoch_results['avg_loss'] = avg_loss
-        epoch_results['accuracy'] = accuracy
-        epoch_results['corrects'] = corrects
-        epoch_results['size'] = size
-        epoch_results['t5_acc'] = t5_acc
-        epoch_results['t5_corrects'] = t5_corrects
-        epoch_results['mrr'] = mrr
+        epoch_results = {'avg_loss':avg_loss, 'accuracy':accuracy,
+            'corrects':corrects, 'size':size, 't5_acc':t5_acc,
+            't5_corrects'=t5_corrects, 'mrr':mrr}
         results = np.append(results, epoch_results)
-        args, _, _, loc = inspect.getargvalues(inspect.currentframe())
-        print(loc)
+        hyperparams = {'mf':mf, 'lr':lr, 'epochs':epochs, 'bs':bs, 'opt':opt,
+                    'net_type':net_type, 'ly':ly, 'hs':hs, 'num_dir':num_dir,
+                    'emb_dim':emb_dim, 'embfix':embfix,
+                    'pretrained_emb':pretrained_emb, 'dropout':dropout,
+                    'pred_filter':pred_filter}
+        print(results)
+        print(hyperparams)
     return results
 
 if __name__ == '__main__':
