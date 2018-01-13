@@ -116,6 +116,8 @@ def train(data_path, train_path, val_path, test_path, mf, lr, epochs, bs, opt,
         epoch_results['mrr'] = mrr
         results = np.append(results, epoch_results)
         args, _, _, _ = inspect.getargvalues(inspect.currentframe())
+        for arg in args:
+            setattr(self, arg, locals()[arg])
         print(args)
     return results
 
