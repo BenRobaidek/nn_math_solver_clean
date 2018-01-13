@@ -3,7 +3,7 @@ import os
 import subprocess
 import random
 import itertools
-import train
+from trainEval import train, evaluate
 import torch
 
 rand = True
@@ -35,7 +35,7 @@ for (net_type, epoch, bs, opt, num_lay, hs, num_dir, embdim, embfix, ptemb,
                 'ptemb=%s, dropout=%.1f, mf=%d})') %
             (net_type, epoch, bs, opt, num_lay, hs, num_dir, embdim, embfix,
                                                         ptemb, dropout, mf))
-        train.train(data_path='../tencent/data/working/basic/', train_path='train.tsv',
+        train(data_path='../tencent/data/working/basic/', train_path='train.tsv',
                 val_path='val.tsv', test_path='test.tsv', mf=1, epochs=5,
                 bs=8, opt='adam', net_type='lstm', ly=1, hs=100, num_dir=1,
                 emb_dim=100, embfix=False, pretrained_emb=False, dropout=0.0,
