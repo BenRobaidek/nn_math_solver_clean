@@ -33,6 +33,7 @@ def train(data_path, train_path, val_path, test_path, mf, lr, epochs, bs, opt,
     ###############################################################################
     # Load data
     ###############################################################################
+    print('MADE IT HERE')
     cuda = int(torch.cuda.is_available())-1
 
     TEXT = data.Field(lower=True,init_token="<start>",eos_token="<end>")
