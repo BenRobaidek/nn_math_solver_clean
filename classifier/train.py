@@ -109,7 +109,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
         if save:
             if not os.path.isdir(save_path):
                 os.makedirs(save_path)
-            torch.save(model, save_path)
+            torch.save(model, save_path + '{}_e{}.pt'.format(accuracy, epoch))
 
         results = np.append(results, {'avg_loss':avg_loss, 'accuracy':accuracy,
             'corrects':corrects, 'size': size, 't5_acc':t5_acc,
