@@ -107,8 +107,8 @@ def train(data_path, train_path, val_path, test_path, mf, lr, epochs, bs, opt,
 
         (avg_loss, accuracy, corrects, size, t5_acc, t5_corrects, mrr) = eval(val_iter, model, TEXT, emb_dim, LABELS, snis, pred_filter=pred_filter)
         epoch_results = {'avg_loss':avg_loss, 'accuracy':accuracy,
-            'corrects':corrects, 'size':size, 't5_acc':t5_acc,
-            't5_corrects'=t5_corrects, 'mrr':mrr}
+            'corrects':corrects, 'size': size, 't5_acc':t5_acc,
+            't5_corrects':t5_corrects, 'mrr':mrr}
         results = np.append(results, epoch_results)
         hyperparams = {'mf':mf, 'lr':lr, 'epochs':epochs, 'bs':bs, 'opt':opt,
                     'net_type':net_type, 'ly':ly, 'hs':hs, 'num_dir':num_dir,
