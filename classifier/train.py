@@ -87,10 +87,7 @@ def train(data_path, train_path, val_path, test_path, mf, lr, epochs, bs, opt,
     if cuda == 0:
         model = model.cuda()
 
-    highest_t1_acc = 0
-    highest_t1_acc_metrics = ''
-    highest_t1_acc_params = ''
-    results = ''
+    results = []
     for epoch in range(epochs):
         losses = []
         tot_loss = 0
@@ -106,46 +103,14 @@ def train(data_path, train_path, val_path, test_path, mf, lr, epochs, bs, opt,
             losses.append(loss)
             tot_loss += loss.data[0]
 
-            #if (batch_count % 20 == 0):
-            #    print('Batch: ', batch_count, '\tLoss: ', str(losses[-1].data[0]))
-        #print('Average loss over epoch ' + str(epoch) + ': ' + str(tot_loss/len(losses)))
-        (avg_loss, accuracy, corrects, size, t5_acc, t5_corrects, mrr) = eval(val_iter, model, TEXT, emb_dim, LABELS, snis, pred_filter=pred_filter)
-        """
-        if accuracy > acc_thresh:
-            save_path_f = '{}/acc{:.2f}_e{}.pt'.format(save_path, accuracy, epoch)
-            print(not os.path.isdir(save_path_f))
-            if not os.path.isdir(save_path_f):
-                print('making dir')
-                os.makedirs(save_path_f)
-            torch.save(model, save_path_f)
-        """
-
-        if highest_t1_acc < accuracy:
-            highest_t1_acc = accuracy
-            highest_t1_acc_metrics = ('acc: {:6.4f}%({:3d}/{}) EPOCH{:2d} - loss: {:.4f} t5_acc: {:6.4f}%({:3d}' \
-                    '/{}) MRR: {:.6f}'.format(accuracy, corrects, size,epoch, avg_loss, t5_acc, t5_corrects, size, mrr))
-
-            highest_t1_acc_params = (('PARAMETERS:' \
-                    'net-%s' \
-                    '_e%i' \
-                    '_bs%i' \
-                    '_opt-%s' \
-                    '_ly%i' \
-                    '_hs%i' \
-                    '_dr%i'
-                    '_ed%i' \
-                    '_femb%s' \
-                    '_ptemb%s' \
-                    '_drp%.1f' \
-                    '_mf%d\n'
-                    % (net_type, epochs, bs, opt, ly,
-                    hs, num_dir, emb_dim, embfix, pretrained_emb, dropout, mf)))
-        results += ('\nEPOCH{:2d} - loss: {:.4f}  acc: {:6.4f}%({:3d}/{}) t5_acc: {:6.4f}%({:3d}' \
-                '/{}) MRR: {:.6f}'.format(epoch, avg_loss, accuracy,
-                                        corrects, size, t5_acc, t5_corrects, size,
-                                        mrr))
-
-    print(highest_t1_acc_metrics + '\n')
+        results = np.append(results, [])
+        (avg_loss, accuracy, corrects, size, t5_acc, t5_corrects, mrr) =
+            eval(val_iter, model, TEXT, emb_dim, LABELS, snis,
+            pred_filter=pred_filter)
+        results = np.append(results, [avg_loss, accuracy, corrects, size,
+            t5_acc, t5_corrects, mrr])
+        print(results)
+    return results
 
 if __name__ == '__main__':
     main()
