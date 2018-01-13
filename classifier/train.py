@@ -21,8 +21,8 @@ def main():
     """
     train(data_path='../tencent/data/working/basic/', train_path='train.tsv',
             val_path='val.tsv', test_path='test.tsv', mf=1, lr=.001, epochs=100,
-            bs=8, opt='adam', net_type='lstm', ly=2, hs=300, num_dir=2,
-            emb_dim=300, embfix=False, pretrained_emb=False, dropout=0.0,
+            bs=8, opt='adam', net_type='lstm', ly=1, hs=100, num_dir=1,
+            emb_dim=100, embfix=False, pretrained_emb=False, dropout=0.0,
             pred_filter=True, save_path='./', save=False, folder='',
             acc_thresh=.4, device=0, verbose=False)
 
