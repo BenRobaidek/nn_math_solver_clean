@@ -147,7 +147,7 @@ def train(data_path, train_path, val_path, test_path, mf, lr, epochs, bs, opt,
                     '_drp%.1f' \
                     '_mf%d\n'
                     % (net_type, epochs, bs, opt, ly,
-                    hidden_sz, num_dir, emb_dim, embfix, pretr_emb, dropout, mf)))
+                    hs, num_dir, emb_dim, embfix, pretr_emb, dropout, mf)))
         results += ('\nEPOCH{:2d} - loss: {:.4f}  acc: {:6.4f}%({:3d}/{}) t5_acc: {:6.4f}%({:3d}' \
                 '/{}) MRR: {:.6f}'.format(epoch, avg_loss, accuracy,
                                         corrects, size, t5_acc, t5_corrects, size,
