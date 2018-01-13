@@ -12,13 +12,6 @@ from evalTest import eval,test
 from torchtext.vocab import GloVe
 
 def main():
-    """
-    args = parseParams()
-    if not os.path.isdir(args.save_path_full):
-        train(args)
-    else:
-        print('Previously Trained')
-    """
     train(data_path='../tencent/data/working/basic/', train_path='train.tsv',
             val_path='val.tsv', test_path='test.tsv', mf=1, lr=.001, epochs=100,
             bs=8, opt='adam', net_type='lstm', ly=1, hs=100, num_dir=1,
@@ -99,7 +92,6 @@ def train(data_path, train_path, val_path, test_path, mf, lr, epochs, bs, opt,
     highest_t1_acc_params = ''
     results = ''
     for epoch in range(epochs):
-        print('MADE IT HERE')
         losses = []
         tot_loss = 0
         train_iter.repeat=False
@@ -154,88 +146,6 @@ def train(data_path, train_path, val_path, test_path, mf, lr, epochs, bs, opt,
                                         mrr))
 
     print(highest_t1_acc_metrics + '\n')
-    writeResults(args, results, highest_t1_acc, highest_t1_acc_metrics, highest_t1_acc_params)
-
-def writeResults(args, results, highest_t1_acc, highest_t1_acc_metrics, highest_t1_acc_params):
-    if not os.path.isdir(save_path):
-        os.makedirs(save_path)
-    f = open(save_path + '/results.txt','w')
-    f.write('PARAMETERS:\n' \
-            'Net Type: %s\n' \
-            #'Learning Rate: %f\n' \
-            'Epochs: %i\n' \
-            'Batch Size: %i\n' \
-            'Optimizer: %s\n' \
-            'Num Layers: %i\n' \
-            'Hidden Size: %i\n' \
-            'Num Directions: %i\n'
-            'Embedding Dimension: %i\n' \
-            'Fixed Embeddings: %s\n' \
-            'Pretrained Embeddings: %s\n' \
-            'Dropout: %.1f\n' \
-            'Min Freq: %d'
-            % (net_type, epochs, bs, opt, num_layers,
-            hs, num_dir, emb_dim, embfix, pretr_emb, dropout, mf))
-    f.write(results)
-    f.close()
-    if highest_t1_acc > acc_thresh:
-        g = open(save_path + folder+ '/best_models.txt','a')
-        g.write(highest_t1_acc_metrics)
-        g.write(highest_t1_acc_params)
-        g.close()
-
-def parseParams():
-    parser = argparse.ArgumentParser(description='LSTM text classifier')
-    # data
-    parser.add_argument('-data-path', type=str, default='../new_data/', help='data path [default: ../new_data/]') #
-    parser.add_argument('-train-path', type=str, default='kdata_train.tsv', help='data path [default: kdata_train.tsv]') #
-    parser.add_argument('-dev-path', type=str, default='kdata_dev.tsv', help='data path [default: kdata_dev.tsv]') #
-    parser.add_argument('-test-path', type=str, default='../basic/test.tsv', help='data path [default: kdata_test.tsv]') #
-
-    # learning
-    parser.add_argument('-mf', type=int, default=1, help='min_freq for vocab [default: 1]') #
-    parser.add_argument('-lr', type=float, default=0.001, help='initial learning rate [default: 0.001]') #
-    parser.add_argument('-epochs', type=int, default=100, help='number of epochs for train [default: 100]') #
-    parser.add_argument('-batch-size', type=int, default=64, help='batch size for training [default: 64]') #
-    parser.add_argument('-opt', type=str, default='adamax', help='optimizer [default: adamax]') #
-
-    # model
-    parser.add_argument('-net-type', type=str, default='lstm', help='network type [default: lstm]')
-    parser.add_argument('-num-layers', type=int, default=4, help='number of layers [default: 1]') #
-    parser.add_argument('-hidden-sz', type=int, default=500, help='hidden size [default: 300]') #
-    parser.add_argument('-num-dir', type=int, default=2, help='number of directions [default: 2]') #
-    parser.add_argument('-emb-dim', type=int, default=300, help='number of embedding dimension [default: 300]') #
-    parser.add_argument('-embfix', type=str, default=False, help='fix the embeddings [default: False]') #
-    parser.add_argument('-pretr-emb', type=str, default=False, help='use pretrained embeddings') #
-    parser.add_argument('-dropout', type=float, default=.5, help='dropout rate [default: .5]')
-    parser.add_argument('-pred-filter', type=bool, default=True, help='Filter preds using SNI [default: True]')
-
-    # options
-    parser.add_argument('-save-path', type=str, default='./saved_models', help='path to save models [default: ./saved_models]')
-    parser.add_argument('-save', type=bool, default=False, help='save model [default: False]')
-    parser.add_argument('-folder', type=str, default='', help='folder to save models [default: '']')
-    parser.add_argument('-acc-thresh', type=float, default=40, help='top1 accuracy threshold to save model')
-    parser.add_argument('-device', type=int, default=0, help='GPU to use [default: 0]')
-    args = parser.parse_args()
-
-    args.embfix = (args.embfix == 'True')
-    args.pretr_emb = (args.pretr_emb == 'True')
-
-    args.save_path_full = args.save_path + \
-                        args.folder + \
-                        '/net-' + str(args.net_type) + \
-                        '_e' + str(args.epochs) + \
-                        '_bs' + str(args.batch_size) + \
-                        '_opt-' + str(args.opt) + \
-                        '_ly' + str(args.num_layers) + \
-                        '_hs' + str(args.hidden_sz) + \
-                        '_dr' + str(args.num_dir) + \
-                        '_ed' + str(args.emb_dim) + \
-                        '_femb' + str(args.embfix) + \
-                        '_ptemb' + str(args.pretr_emb) + \
-                        '_drp' + str(args.dropout)
-    if args.mf > 1: args.save_path_full += '_mf' + str(args.mf)
-    return args
 
 if __name__ == '__main__':
     main()
