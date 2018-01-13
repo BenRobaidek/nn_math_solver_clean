@@ -104,9 +104,7 @@ def train(data_path, train_path, val_path, test_path, mf, lr, epochs, bs, opt,
             tot_loss += loss.data[0]
 
         results = np.append(results, [])
-        (avg_loss, accuracy, corrects, size, t5_acc, t5_corrects, mrr) =
-            eval(val_iter, model, TEXT, emb_dim, LABELS, snis,
-            pred_filter=pred_filter)
+        (avg_loss, accuracy, corrects, size, t5_acc, t5_corrects, mrr) = eval(val_iter, model, TEXT, emb_dim, LABELS, snis, pred_filter=pred_filter)
         results = np.append(results, [avg_loss, accuracy, corrects, size,
             t5_acc, t5_corrects, mrr])
         print(results)
