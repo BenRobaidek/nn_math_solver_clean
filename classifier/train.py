@@ -121,7 +121,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
             'corrects':corrects, 'size': size, 't5_acc':t5_acc,
             't5_corrects':t5_corrects, 'mrr':mrr})
         if verbose: print('Accuracy:', accuracy)
-    print('Accuracy:', np.sort([i['accuracy'] for i in result])[-1])
+    print('Accuracy:', np.sort([i['accuracy'] for i in results])[-1])
     return results
 
 if __name__ == '__main__':
