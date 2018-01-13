@@ -13,16 +13,17 @@ for i,line in enumerate(preds):
         output = float(line)
         output = parser.evaluate(output, variables=None)
     except (ValueError,TypeError):
-        output = output
+        output = line.strip()
     preds[i] = output
 
 for i,line in enumerate(tgts):
     output = None
     try:
-        output = float(line)
+        output = line.replace('%', ' / 100')
+        #output = float(line)
         output = parser.evaluate(output, variables=None)
-    except (ValueError,TypeError):
-        output = output
+    except:# (ValueError,TypeError):
+        output = line.strip()
     tgts[i] = output
 #print(preds)
 #print(tgts)
@@ -33,7 +34,7 @@ for i,example in enumerate(corrects):
     try:
         float(preds[i])
         float(tgts[i])
-        if (float(preds[i]) - float(tgts[i]) / float(tgts[i]) <= .02):
+        if abs((float(preds[i]) - float(tgts[i])) / float(tgts[i])) <= .02:
             corrects[i] = 1
         else:
             corrects[i] = 0
@@ -41,6 +42,7 @@ for i,example in enumerate(corrects):
         corrects[i] = 0
 corrects = np.array(corrects).astype(int)
 print(np.sum(corrects) / len(corrects))
+
 
 for i,c in enumerate(corrects):
     if c == 0:
