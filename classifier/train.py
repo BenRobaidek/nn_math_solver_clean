@@ -23,7 +23,7 @@ def main():
             val_path='val.tsv', test_path='test.tsv', mf=1, lr=.001, epochs=100,
             bs=8, opt='adam', net_type='lstm', ly=1, hs=100, num_dir=1,
             emb_dim=100, embfix=False, pretrained_emb=False, dropout=0.0,
-            pred_filter=True, save_path='./', save=False, folder='',
+            pred_filter=True, save_path='', save=False, folder='',
             acc_thresh=.4, device=0, verbose=False)
 
 def train(data_path, train_path, val_path, test_path, mf, lr, epochs, bs, opt,
