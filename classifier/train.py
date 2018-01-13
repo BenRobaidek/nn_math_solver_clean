@@ -15,7 +15,7 @@ from torchtext.vocab import GloVe
 
 def main():
     train(data_path='../tencent/data/working/basic/', train_path='train.tsv',
-            val_path='val.tsv', test_path='test.tsv', mf=1, epochs=100,
+            val_path='val.tsv', test_path='test.tsv', mf=1, epochs=10,
             bs=8, opt='adam', net_type='lstm', ly=1, hs=100, num_dir=1,
             emb_dim=100, embfix=False, pretrained_emb=False, dropout=0.0,
             pred_filter=True, save_path='./', save=True, verbose=False)
@@ -119,8 +119,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
                     'emb_dim':emb_dim, 'embfix':embfix,
                     'pretrained_emb':pretrained_emb, 'dropout':dropout,
                     'pred_filter':pred_filter}
-        print(results)
-        print(hyperparams)
+        if verbose: print('Accuracy:', accuracy)
     return results
 
 if __name__ == '__main__':
