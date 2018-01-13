@@ -43,7 +43,7 @@ for (net_type, epoch, bs, opt, ly, hs, num_dir, embdim, embfix, ptemb,
         results = train(data_path=data_path, train_path='train.tsv',
                 val_path='val.tsv', test_path='test.tsv', mf=mf, epochs=5,
                 bs=bs, opt=opt, net_type=net_type, ly=ly, hs=hs, num_dir=num_dir,
-                emb_dim=emb_dim, embfix=embfix, pretrained_emb=ptemb, dropout=dropout,
+                emb_dim=embdim, embfix=embfix, pretrained_emb=ptemb, dropout=dropout,
                 pred_filter=pred_filter, save_path='./', save=False, verbose=False)
         hyperparam_results[str(hyperparams)] = results
         print(hyperparam_results)
