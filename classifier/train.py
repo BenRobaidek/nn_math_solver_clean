@@ -115,10 +115,8 @@ def train(data_path, train_path, val_path, test_path, mf, lr, epochs, bs, opt,
         epoch_results['t5_corrects'] = t5_corrects
         epoch_results['mrr'] = mrr
         results = np.append(results, epoch_results)
-        args, _, _, _ = inspect.getargvalues(inspect.currentframe())
-        for arg in args:
-            setattr(self, arg, locals()[arg])
-        print(args)
+        args, _, _, loc = inspect.getargvalues(inspect.currentframe())
+        print(loc)
     return results
 
 if __name__ == '__main__':
