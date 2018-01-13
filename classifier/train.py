@@ -88,6 +88,12 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
     if cuda == 0:
         model = model.cuda()
 
+    hyperparams = {'mf':mf, 'epochs':epochs, 'bs':bs, 'opt':opt,
+                'net_type':net_type, 'ly':ly, 'hs':hs, 'num_dir':num_dir,
+                'emb_dim':emb_dim, 'embfix':embfix,
+                'pretrained_emb':pretrained_emb, 'dropout':dropout,
+                'pred_filter':pred_filter}
+    print('Training:', hyperparams)
     results = []
     for epoch in range(epochs):
         losses = []
@@ -114,12 +120,8 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
         results = np.append(results, {'avg_loss':avg_loss, 'accuracy':accuracy,
             'corrects':corrects, 'size': size, 't5_acc':t5_acc,
             't5_corrects':t5_corrects, 'mrr':mrr})
-        hyperparams = {'mf':mf, 'epochs':epochs, 'bs':bs, 'opt':opt,
-                    'net_type':net_type, 'ly':ly, 'hs':hs, 'num_dir':num_dir,
-                    'emb_dim':emb_dim, 'embfix':embfix,
-                    'pretrained_emb':pretrained_emb, 'dropout':dropout,
-                    'pred_filter':pred_filter}
         if verbose: print('Accuracy:', accuracy)
+    print('Accuracy:', np.sort([i['accuracy'] for i in result])[-1])
     return results
 
 if __name__ == '__main__':
