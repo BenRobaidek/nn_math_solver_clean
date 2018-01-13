@@ -39,4 +39,4 @@ for (net_type, epoch, bs, opt, num_lay, hs, num_dir, embdim, embfix, ptemb,
                 val_path='val.tsv', test_path='test.tsv', mf=1, epochs=5,
                 bs=8, opt='adam', net_type='lstm', ly=1, hs=100, num_dir=1,
                 emb_dim=100, embfix=False, pretrained_emb=False, dropout=0.0,
-                pred_filter=True, save_path='./', save=True, verbose=False)
+                pred_filter=True, save_path='./', save=False, verbose=False)
