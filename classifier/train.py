@@ -120,7 +120,9 @@ def train(data_path, train_path, val_path, test_path, mf, lr, epochs, bs, opt,
         (avg_loss, accuracy, corrects, size, t5_acc, t5_corrects, mrr) = eval(val_iter, model, TEXT, emb_dim, LABELS, snis, pred_filter=pred_filter)
         if accuracy > acc_thresh:
             save_path_f = '{}/acc{:.2f}_e{}.pt'.format(save_path, accuracy, epoch)
+            print(not os.path.isdir(save_path_f))
             if not os.path.isdir(save_path_f):
+                print('making dir')
                 os.makedirs(save_path_f)
             torch.save(model, save_path_f)
 
