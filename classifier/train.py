@@ -3,6 +3,7 @@ import argparse
 import torch
 from torch import autograd, nn
 import torch.nn.functional as F
+import numpy as np
 from numpy import genfromtxt
 from torch.autograd import Variable
 
