@@ -15,16 +15,14 @@ from torchtext.vocab import GloVe
 
 def main():
     train(data_path='../tencent/data/working/basic/', train_path='train.tsv',
-            val_path='val.tsv', test_path='test.tsv', mf=1, lr=.001, epochs=100,
+            val_path='val.tsv', test_path='test.tsv', mf=1, epochs=100,
             bs=8, opt='adam', net_type='lstm', ly=1, hs=100, num_dir=1,
             emb_dim=100, embfix=False, pretrained_emb=False, dropout=0.0,
-            pred_filter=True, save_path='.', save=False, folder='',
-            acc_thresh=.4, device=0, verbose=False)
+            pred_filter=True, save_path='.', save=True, verbose=False)
 
-def train(data_path, train_path, val_path, test_path, mf, lr, epochs, bs, opt,
+def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
             net_type, ly, hs, num_dir, emb_dim, embfix, pretrained_emb,
-            dropout, pred_filter, save_path, save, folder, acc_thresh, device,
-            verbose=False):
+            dropout, pred_filter, save_path, save, verbose=False):
     ############################################################################
     # Load data
     ############################################################################
@@ -41,7 +39,8 @@ def train(data_path, train_path, val_path, test_path, mf, lr, epochs, bs, opt,
 
     prevecs = None
     if (pretrained_emb == True):
-        TEXT.build_vocab(train,vectors=GloVe(name='6B', dim=emb_dim),min_freq=mf)
+        TEXT.build_vocab(train,vectors=GloVe(name='6B', dim=emb_dim),
+                                                                min_freq=mf)
         prevecs=TEXT.vocab.vectors
     else:
         TEXT.build_vocab(train)
@@ -51,7 +50,7 @@ def train(data_path, train_path, val_path, test_path, mf, lr, epochs, bs, opt,
 
     train_iter, val_iter, test_iter = data.BucketIterator.splits(
         (train, val, test), batch_sizes=(bs, bs, bs),
-        sort_key=lambda x: len(x.text))#, device=cuda)
+        sort_key=lambda x: len(x.text))
 
     num_classes = len(LABELS.vocab)
     input_size = len(TEXT.vocab)
@@ -74,9 +73,9 @@ def train(data_path, train_path, val_path, test_path, mf, lr, epochs, bs, opt,
 
     # Select optimizer
     if (opt == 'adamax'):
-        optimizer = torch.optim.Adamax(model.parameters())#, lr=args.lr)
+        optimizer = torch.optim.Adamax(model.parameters())
     elif (opt == 'adam'):
-        optimizer = torch.optim.Adam(model.parameters())#, lr=args.lr)
+        optimizer = torch.optim.Adam(model.parameters())
     elif (opt == 'sgd'):
         optimizer = torch.optim.SGD(model.parameters(),lr=0.1, momentum=0.5)
     else:
@@ -105,12 +104,19 @@ def train(data_path, train_path, val_path, test_path, mf, lr, epochs, bs, opt,
             losses.append(loss)
             tot_loss += loss.data[0]
 
-        (avg_loss, accuracy, corrects, size, t5_acc, t5_corrects, mrr) = eval(val_iter, model, TEXT, emb_dim, LABELS, snis, pred_filter=pred_filter)
-        epoch_results = {'avg_loss':avg_loss, 'accuracy':accuracy,
+        (avg_loss, accuracy, corrects, size, t5_acc, t5_corrects, mrr)
+            = eval(val_iter, model, TEXT, emb_dim, LABELS, snis,
+            pred_filter=pred_filter)
+
+        if save:
+            if not os.path.isdir(save_path):
+                os.makedirs(save_path)
+            torch.save(model, save_path)
+
+        results = np.append(results, {'avg_loss':avg_loss, 'accuracy':accuracy,
             'corrects':corrects, 'size': size, 't5_acc':t5_acc,
-            't5_corrects':t5_corrects, 'mrr':mrr}
-        results = np.append(results, epoch_results)
-        hyperparams = {'mf':mf, 'lr':lr, 'epochs':epochs, 'bs':bs, 'opt':opt,
+            't5_corrects':t5_corrects, 'mrr':mrr})
+        hyperparams = {'mf':mf, 'epochs':epochs, 'bs':bs, 'opt':opt,
                     'net_type':net_type, 'ly':ly, 'hs':hs, 'num_dir':num_dir,
                     'emb_dim':emb_dim, 'embfix':embfix,
                     'pretrained_emb':pretrained_emb, 'dropout':dropout,
