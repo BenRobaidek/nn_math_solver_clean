@@ -1,5 +1,6 @@
 import os
 import argparse
+import inspect
 import torch
 from torch import autograd, nn
 import torch.nn.functional as F
@@ -24,9 +25,9 @@ def train(data_path, train_path, val_path, test_path, mf, lr, epochs, bs, opt,
             net_type, ly, hs, num_dir, emb_dim, embfix, pretrained_emb,
             dropout, pred_filter, save_path, save, folder, acc_thresh, device,
             verbose=False):
-    ###############################################################################
+    ############################################################################
     # Load data
-    ###############################################################################
+    ############################################################################
 
     cuda = int(torch.cuda.is_available())-1
 
@@ -54,9 +55,9 @@ def train(data_path, train_path, val_path, test_path, mf, lr, epochs, bs, opt,
 
     num_classes = len(LABELS.vocab)
     input_size = len(TEXT.vocab)
-    ###############################################################################
+    ############################################################################
     # Build the model
-    ###############################################################################
+    ############################################################################
 
     model = m.Model(input_size=input_size,
                     hidden_size=hs,
@@ -77,14 +78,14 @@ def train(data_path, train_path, val_path, test_path, mf, lr, epochs, bs, opt,
     elif (opt == 'adam'):
         optimizer = torch.optim.Adam(model.parameters())#, lr=args.lr)
     elif (opt == 'sgd'):
-        optimizer = torch.optim.SGD(model.parameters(),lr=0.1, momentum=0.5)#,lr=args.lr,momentum=0.5)
+        optimizer = torch.optim.SGD(model.parameters(),lr=0.1, momentum=0.5)
     else:
         #print('Optimizer unknown, defaulting to adamax')
         optimizer = torch.optim.Adamax(model.parameters())
 
-    ###############################################################################
+    ############################################################################
     # Training the Model
-    ###############################################################################
+    ############################################################################
     if cuda == 0:
         model = model.cuda()
 
@@ -104,7 +105,6 @@ def train(data_path, train_path, val_path, test_path, mf, lr, epochs, bs, opt,
             losses.append(loss)
             tot_loss += loss.data[0]
 
-        #results = np.append(results, [])
         (avg_loss, accuracy, corrects, size, t5_acc, t5_corrects, mrr) = eval(val_iter, model, TEXT, emb_dim, LABELS, snis, pred_filter=pred_filter)
         epoch_results = dict()
         epoch_results['avg_loss'] = avg_loss
@@ -115,7 +115,8 @@ def train(data_path, train_path, val_path, test_path, mf, lr, epochs, bs, opt,
         epoch_results['t5_corrects'] = t5_corrects
         epoch_results['mrr'] = mrr
         results = np.append(results, epoch_results)
-        print(results)
+        args, _, _, _ = inspect.getargvalues(inspect.currentframe())
+        print(args)
     return results
 
 if __name__ == '__main__':
