@@ -47,5 +47,5 @@ for (net_type, epoch, bs, opt, ly, hs, num_dir, embdim, embfix, ptemb,
                 emb_dim=embdim, embfix=embfix, pretrained_emb=ptemb, dropout=dropout,
                 pred_filter=pred_filter, save_path='./', save=False, verbose=False)
         hyperparam_results[str(hyperparams)] = results
-        hyperparam_results = np.sort(hyperparam_results, key=lambda x : x['accuracy'])
+        hyperparam_results = sorted(hyperparam_results, key=lambda k: k['accuracy'])
         print(hyperparam_results)
