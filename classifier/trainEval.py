@@ -10,7 +10,6 @@ from torch.autograd import Variable
 
 import model as m
 from torchtext import data, datasets
-from evalTest import eval,test
 from torchtext.vocab import GloVe
 
 def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
