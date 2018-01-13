@@ -6,6 +6,7 @@ import itertools
 from train import train
 import torch
 import json
+import numpy as np
 
 rand = True
 
