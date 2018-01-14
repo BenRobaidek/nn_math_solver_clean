@@ -49,5 +49,5 @@ for (net_type, epoch, bs, opt, ly, hs, num_dir, embdim, embfix, ptemb,
                 pred_filter=pred_filter, save_path='./', save=False, verbose=False)
         for key, value in sorted(json['results']):#, key=lambda (k,v): v['accuracy']):
             print("%s: %s" % (key, value))
-        json['best'] =
+        #json['best'] =
         print(hyperparam_results)
