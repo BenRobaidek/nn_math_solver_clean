@@ -11,26 +11,13 @@ import numpy as np
 def main():
 
     # LOAD FROM CONFIG FILE
-    rand = True
+    with open('../tests/exp1/config.json', 'r') as f:
+        config = json.load(f)
 
-    data_path = '../tencent/data/working/basic/'
-
-    mf = (1,)
-    net_type = ('lstm',)
-    epochs = 3,
-    bs = 8,
-    opt = ('adamax',)
-    ly =  1, 2
-    hs = (100,)
-    num_dir = 1,
-    embdim = (50,)
-    embfix = (False,)#True)
-    ptemb = (False,)#True)
-    dropout = (0,)
-    pred_filter = (True,)
-
-    x = list(itertools.product(net_type, epochs, bs, opt, ly, hs, num_dir,
-                                embdim, embfix, ptemb, dropout, mf, pred_filter))
+    x = list(itertools.product(config['net_type'], config['epochs'],
+        config['bs'], config['opt'], config['ly'], config['hs'],
+        config['num_dir'], config['embdim'], config['embfix'], config['ptemb'],
+        config['dropout', config['mf'], config['pred_filter']))
     if rand: random.shuffle(x)
 
 
