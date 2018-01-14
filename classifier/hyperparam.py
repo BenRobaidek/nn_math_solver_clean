@@ -36,16 +36,18 @@ hyperparam_results = dict()
 for (net_type, epoch, bs, opt, ly, hs, num_dir, embdim, embfix, ptemb,
                     dropout, mf, pred_filter) in x:
     if not (embfix and not ptemb):
-        hyperparams = {'mf':mf, 'epochs':epoch, 'bs':bs, 'opt':opt,
+        json = dict()
+        json['hyperparams'] = {'mf':mf, 'epochs':epoch, 'bs':bs, 'opt':opt,
                     'net_type':net_type, 'ly':ly, 'hs':hs, 'num_dir':num_dir,
                     'embdim':embdim, 'embfix':embfix,
                     'pretrained_emb':ptemb, 'dropout':dropout,
                     'pred_filter':pred_filter}
-        results = train(data_path=data_path, train_path='train.tsv',
+        json['results'] = train(data_path=data_path, train_path='train.tsv',
                 val_path='val.tsv', test_path='test.tsv', mf=mf, epochs=epoch,
                 bs=bs, opt=opt, net_type=net_type, ly=ly, hs=hs, num_dir=num_dir,
                 emb_dim=embdim, embfix=embfix, pretrained_emb=ptemb, dropout=dropout,
                 pred_filter=pred_filter, save_path='./', save=False, verbose=False)
-        hyperparam_results[str(hyperparams)] = results
-        hyperparam_results = sorted(hyperparam_results, key=lambda k: k['accuracy'])
+        for key, value in sorted(json['results'], key=lambda (k,v): v['accuracy']:
+            print "%s: %s" % (key, value)
+        json['best'] =
         print(hyperparam_results)
