@@ -47,6 +47,7 @@ for (net_type, epoch, bs, opt, ly, hs, num_dir, embdim, embfix, ptemb,
                 bs=bs, opt=opt, net_type=net_type, ly=ly, hs=hs, num_dir=num_dir,
                 emb_dim=embdim, embfix=embfix, pretrained_emb=ptemb, dropout=dropout,
                 pred_filter=pred_filter, save_path='./', save=False, verbose=False)
+        print(json_entry)
         json_entry['results'] = sorted(json['results'], key=lambda x: x['accuracy'], reverse=True)
         hyperparam_results = np.append(hyperparam_results, json_entry)
 
