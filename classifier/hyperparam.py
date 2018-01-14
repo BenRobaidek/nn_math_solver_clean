@@ -8,47 +8,54 @@ import torch
 import json
 import numpy as np
 
-rand = True
+def main():
 
-data_path = '../tencent/data/working/basic/'
+    # LOAD FROM CONFIG FILE
+    rand = True
 
-mf = (1,)
-net_type = ('lstm',)
-epochs = 3,
-bs = 8,
-opt = ('adamax',)
-ly =  1, 2
-hs = (100,)
-num_dir = 1,
-embdim = (50,)
-embfix = (False,)#True)
-ptemb = (False,)#True)
-dropout = (0,)
-pred_filter = (True,)
+    data_path = '../tencent/data/working/basic/'
 
-x = list(itertools.product(net_type, epochs, bs, opt, ly, hs, num_dir,
-                            embdim, embfix, ptemb, dropout, mf, pred_filter))
-if rand: random.shuffle(x)
+    mf = (1,)
+    net_type = ('lstm',)
+    epochs = 3,
+    bs = 8,
+    opt = ('adamax',)
+    ly =  1, 2
+    hs = (100,)
+    num_dir = 1,
+    embdim = (50,)
+    embfix = (False,)#True)
+    ptemb = (False,)#True)
+    dropout = (0,)
+    pred_filter = (True,)
+
+    x = list(itertools.product(net_type, epochs, bs, opt, ly, hs, num_dir,
+                                embdim, embfix, ptemb, dropout, mf, pred_filter))
+    if rand: random.shuffle(x)
 
 
-hyperparam_results = []
+    hyperparam_results = dict()
 
-for (net_type, epoch, bs, opt, ly, hs, num_dir, embdim, embfix, ptemb,
-                    dropout, mf, pred_filter) in x:
-    if not (embfix and not ptemb):
-        json_entry = dict()
-        json_entry['hyperparams'] = {'mf':mf, 'epochs':epoch, 'bs':bs, 'opt':opt,
-                    'net_type':net_type, 'ly':ly, 'hs':hs, 'num_dir':num_dir,
-                    'embdim':embdim, 'embfix':embfix,
-                    'pretrained_emb':ptemb, 'dropout':dropout,
-                    'pred_filter':pred_filter}
-        json_entry['results'] = train(data_path=data_path, train_path='train.tsv',
-                val_path='val.tsv', test_path='test.tsv', mf=mf, epochs=epoch,
-                bs=bs, opt=opt, net_type=net_type, ly=ly, hs=hs, num_dir=num_dir,
-                emb_dim=embdim, embfix=embfix, pretrained_emb=ptemb, dropout=dropout,
-                pred_filter=pred_filter, save_path='./', save=False, verbose=False)
-        print(json_entry)
-        json_entry['results'] = sorted(json_entry['results'], key=lambda x: x['accuracy'], reverse=True)
-        hyperparam_results = np.append(hyperparam_results, json_entry)
+    # HYPERPARAM SEARCH
+    for (net_type, epoch, bs, opt, ly, hs, num_dir, embdim, embfix, ptemb,
+                        dropout, mf, pred_filter) in x:
+        if not (embfix and not ptemb):
+            hyperparams = {'mf':mf, 'epochs':epoch, 'bs':bs, 'opt':opt,
+                        'net_type':net_type, 'ly':ly, 'hs':hs, 'num_dir':num_dir,
+                        'embdim':embdim, 'embfix':embfix,
+                        'pretrained_emb':ptemb, 'dropout':dropout,
+                        'pred_filter':pred_filter}
+            results = train(data_path=data_path, train_path='train.tsv',
+                    val_path='val.tsv', test_path='test.tsv', mf=mf, epochs=epoch,
+                    bs=bs, opt=opt, net_type=net_type, ly=ly, hs=hs, num_dir=num_dir,
+                    emb_dim=embdim, embfix=embfix, pretrained_emb=ptemb, dropout=dropout,
+                    pred_filter=pred_filter, save_path='./', save=False, verbose=False)
+            results = sorted(results, key=lambda x: x['accuracy'], reverse=True)
+            hyperparam_results[str(hyperparams)] = results
 
-print(hyperparam_results)
+    print(hyperparam_results)
+
+    # RETRAIN/SAVE BEST MODEL
+
+if __name__ == '__main__':
+    main()
