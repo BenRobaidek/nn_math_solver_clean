@@ -14,7 +14,12 @@ def main():
     with open('../tests/exp1/config.json', 'r') as f:
         config = json.load(f)
 
-    x = list(itertools.product(config['net_type'], config['epochs'], config['bs'], config['opt'], config['ly'], config['hs'], config['num_dir'], config['embdim'], config['embfix'], config['ptemb'], config['dropout', config['mf'], config['pred_filter']))
+    print('CONFIG:', config)
+
+    x = list(itertools.product(config['net_type'], config['epochs'],
+        config['bs'], config['opt'], config['ly'], config['hs'],
+        config['num_dir'], config['embdim'], config['embfix'], config['ptemb'],
+        config['dropout', config['mf'], config['pred_filter']))
     if rand: random.shuffle(x)
 
 
