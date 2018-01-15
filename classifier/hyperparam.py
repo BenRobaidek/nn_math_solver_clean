@@ -9,9 +9,16 @@ import json
 import numpy as np
 
 def main():
+    # PARSE ARGS
+    parser = argparse.ArgumentParser(description='LSTM text classifier')
+    parser.add_argument('-config', type=str,
+        default='../tests/exp1/config.json',
+        help='config file path [default: ../tests/exp1/config.json]')
+    args = parser.parse_args()
 
     # LOAD FROM CONFIG FILE
-    with open('../tests/exp1/config.json', 'r') as f:
+    print('Loading parameters from config file:', args.config)
+    with open(args.config, 'r') as f:
         config = json.load(f)
 
     print('CONFIG:', config)
@@ -47,7 +54,7 @@ def main():
                 print('Oops... Ran out of memory')
             hyperparam_results[str(hyperparams)] = results
 
-    print(hyperparam_results)
+    #print(hyperparam_results)
 
     # RETRAIN/SAVE BEST MODEL
 
