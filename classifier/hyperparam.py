@@ -34,6 +34,7 @@ def main():
                         'embdim':embdim, 'embfix':embfix,
                         'pretrained_emb':ptemb, 'dropout':dropout,
                         'pred_filter':pred_filter}
+            print(hyperparams)
             results = train(data_path=config['data_path'], train_path='train.tsv',
                     val_path='val.tsv', test_path='test.tsv', mf=mf, epochs=epoch,
                     bs=bs, opt=opt, net_type=net_type, ly=ly, hs=hs, num_dir=num_dir,
