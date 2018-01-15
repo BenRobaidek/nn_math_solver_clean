@@ -61,7 +61,8 @@ def main():
                 print('Oops... Ran out of memory')
             hyperparam_results[str(hyperparams)] = results
     print('json dumps')
-    json.dump(hyperparam_results, args.hyperparam_results)
+    with open(args.hyperparam_results, 'w') as f:
+        json.dump(hyperparam_results, f)
     #print(hyperparam_results)
 
     # RETRAIN/SAVE BEST MODEL
