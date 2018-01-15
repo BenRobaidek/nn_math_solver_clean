@@ -96,7 +96,8 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
         train_iter.repeat=False
         for batch_count,batch in enumerate(train_iter):
             model.zero_grad()
-            inp = batch.text.t().volatile
+            inp = batch.text.t()
+            print(inp)
 
             preds = model(inp)
             loss = criterion(preds, batch.label)
