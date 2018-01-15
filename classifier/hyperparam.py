@@ -39,7 +39,7 @@ def main():
     try:
         hyperparam_results = json.load(open(args.hyperparam_results), 'r')
     except FileNotFoundError:
-        print('exception')
+        hyperparam_results = dict()
     #hyperparam_results = dict()
     for (net_type, epoch, bs, opt, ly, hs, num_dir, embdim, embfix, ptemb,
                         dropout, mf, pred_filter) in x:
