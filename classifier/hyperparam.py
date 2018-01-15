@@ -26,15 +26,14 @@ def main():
     with open(args.config, 'r') as f:
         config = json.load(f)
 
-    print('CONFIG:', config)
-
+    # HYPERPARAM SEARCH
     x = list(itertools.product(config['net_type'], config['epochs'],
         config['bs'], config['opt'], config['ly'], config['hs'],
         config['num_dir'], config['embdim'], config['embfix'], config['ptemb'],
         config['dropout'], config['mf'], config['pred_filter']))
     if bool(config['rand']): random.shuffle(x)
 
-    # HYPERPARAM SEARCH
+    name = raw_input("Do you wish to start/continue hyperparameter search? ")
     hyperparam_results = None
     try:
         hyperparam_results = json.load(open(args.hyperparam_results, 'r'))
