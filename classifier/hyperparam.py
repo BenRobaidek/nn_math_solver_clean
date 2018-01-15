@@ -37,7 +37,7 @@ def main():
     # HYPERPARAM SEARCH
     hyperparam_results = None
     try:
-        hyperparam_results = open(args.hyperparam_results)
+        hyperparam_results = json.load(args.hyperparam_results)
     except FileNotFoundError:
         print('exception')
     hyperparam_results = dict()
