@@ -24,12 +24,10 @@ class Model(nn.Module):
             self.lstm = nn.LSTM(emb_dim, hidden_size, num_layers=num_layers,
                                     batch_first=True,bidirectional=(num_dir==2),
                                     dropout=dropout)
-            self.lstm.flatten_parameters()
         elif net_type == 'gru':
             self.gru = nn.GRU(emb_dim, hidden_size, num_layers=num_layers,
                                     batch_first=True,bidirectional=(num_dir==2),
                                     dropout=dropout)
-            self.gru.flatten_parameters()
         #self.TanH = nn.TanH(hidden_size*num_dir*num_layers, num_classes)
         self.softmax = None
         self.Lin = nn.Linear(hidden_size*num_dir*num_layers, num_classes)

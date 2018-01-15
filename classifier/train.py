@@ -62,6 +62,8 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
                     embfix=embfix,
                     dropout=dropout,
                     net_type=net_type)
+
+    model.flatten_parameters()
     criterion = nn.CrossEntropyLoss()
 
     # Select optimizer
