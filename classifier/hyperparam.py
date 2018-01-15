@@ -37,10 +37,10 @@ def main():
     # HYPERPARAM SEARCH
     hyperparam_results = None
     try:
-        hyperparam_results = json.load(open(args.hyperparam_results), 'w')
+        hyperparam_results = json.load(open(args.hyperparam_results), 'r')
     except FileNotFoundError:
         print('exception')
-    hyperparam_results = dict()
+    #hyperparam_results = dict()
     for (net_type, epoch, bs, opt, ly, hs, num_dir, embdim, embfix, ptemb,
                         dropout, mf, pred_filter) in x:
         if not (embfix and not ptemb):
@@ -50,7 +50,6 @@ def main():
                         'pretrained_emb':ptemb, 'dropout':dropout,
                         'pred_filter':pred_filter}
             results = None
-            print(hyperparams)
             try:
                 results = train(data_path=config['data_path'], train_path='train.tsv',
                         val_path='val.tsv', test_path='test.tsv', mf=mf, epochs=epoch,
@@ -61,7 +60,8 @@ def main():
             except RuntimeError:
                 print('Oops... Ran out of memory')
             hyperparam_results[str(hyperparams)] = results
-
+    print('json dumps')
+    json.dump(hyperparam_results, args.hyperparam_results)
     #print(hyperparam_results)
 
     # RETRAIN/SAVE BEST MODEL
