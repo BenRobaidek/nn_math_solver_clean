@@ -15,6 +15,10 @@ def main():
     parser.add_argument('-config', type=str,
         default='../tests/exp1/config.json',
         help='config file path [default: ../tests/exp1/config.json]')
+    parser.add_argument('-hyperparam_results', type=str,
+        default='../tests/exp1/hyperparam_results.json',
+        help='hyperparameter search results file path' \
+            '[default: ../tests/exp1/hyperparam_results.json]')
     args = parser.parse_args()
 
     # LOAD FROM CONFIG FILE
@@ -30,10 +34,13 @@ def main():
         config['dropout'], config['mf'], config['pred_filter']))
     if bool(config['rand']): random.shuffle(x)
 
-
-    hyperparam_results = dict()
-
     # HYPERPARAM SEARCH
+    hyperparam_results = None
+    try:
+        hyperparam_results = open(args.hyperparam_results)
+    except FileNotFoundError:
+        print('exception')
+    hyperparam_results = dict()
     for (net_type, epoch, bs, opt, ly, hs, num_dir, embdim, embfix, ptemb,
                         dropout, mf, pred_filter) in x:
         if not (embfix and not ptemb):
