@@ -63,7 +63,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
                     dropout=dropout,
                     net_type=net_type)
 
-    model.flatten_parameters()
+
     criterion = nn.CrossEntropyLoss()
 
     # Select optimizer
@@ -96,7 +96,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
         train_iter.repeat=False
         for batch_count,batch in enumerate(train_iter):
             model.zero_grad()
-            inp = batch.text.t()
+            inp = batch.text.t().volatile
 
             preds = model(inp)
             loss = criterion(preds, batch.label)
