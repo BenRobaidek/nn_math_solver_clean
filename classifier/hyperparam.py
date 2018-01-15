@@ -42,7 +42,7 @@ def main():
                         emb_dim=embdim, embfix=bool(embfix), pretrained_emb=bool(ptemb), dropout=dropout,
                         pred_filter=bool(pred_filter), save_path='./', save=False, verbose=False)
                 results = sorted(results, key=lambda x: x['accuracy'], reverse=True)
-            except 
+            #except 
             hyperparam_results[str(hyperparams)] = results
 
     print(hyperparam_results)
