@@ -46,7 +46,7 @@ def main():
         hyperparam_results = dict()
 
     print('Hyperparameter search progress: {}% ({}/{})'.format(
-        len(hyperparam_results.keys()) / len(x)),
+        len(hyperparam_results.keys()) / len(x),
         len(hyperparam_results.keys()),
         len(x))
 
