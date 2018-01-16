@@ -60,20 +60,21 @@ def main():
                             'pretrained_emb':ptemb, 'dropout':dropout,
                             'pred_filter':pred_filter}
                 results = None
-                try:
-                    results = train(data_path=config['data_path'],
-                            train_path='train.tsv',
-                            val_path='val.tsv', test_path='test.tsv', mf=mf,
-                            epochs=epoch, bs=bs, opt=opt, net_type=net_type,
-                            ly=ly, hs=hs, num_dir=num_dir, emb_dim=embdim,
-                            embfix=bool(embfix), pretrained_emb=bool(ptemb),
-                            dropout=dropout, pred_filter=bool(pred_filter),
-                            save_path='./', save=False, verbose=False)
-                    results = sorted(results, key=lambda x: x['accuracy'],
-                            reverse=True)
-                except RuntimeError:
-                    print('Oops... Ran out of memory')
-                hyperparam_results[str(hyperparams)] = results
+                if not hyperparam_results.keys().contains(hyperparams):
+                    try:
+                        results = train(data_path=config['data_path'],
+                                train_path='train.tsv',
+                                val_path='val.tsv', test_path='test.tsv', mf=mf,
+                                epochs=epoch, bs=bs, opt=opt, net_type=net_type,
+                                ly=ly, hs=hs, num_dir=num_dir, emb_dim=embdim,
+                                embfix=bool(embfix), pretrained_emb=bool(ptemb),
+                                dropout=dropout, pred_filter=bool(pred_filter),
+                                save_path='./', save=False, verbose=False)
+                        results = sorted(results, key=lambda x: x['accuracy'],
+                                reverse=True)
+                    except RuntimeError:
+                        print('Oops... Ran out of memory')
+                    hyperparam_results[str(hyperparams)] = results
             with open(args.hyperparam_results, 'w') as f:
                 json.dump(hyperparam_results, f)
 
@@ -83,7 +84,6 @@ def main():
     if input('Do you wish to train the best model found thus far? (y/n)? ') == 'y':
         print('hyperparam_results:', hyperparam_results)
 
-        
         #best_hyperparams = sorted(hyperparams_results, key=lambda x: x.values()['accuracy'],
         #        reverse=True)
         train(data_path=config['data_path'],

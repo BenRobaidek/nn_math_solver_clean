@@ -99,7 +99,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
             inp = batch.text.t()
 
             # Check with Rik about this
-            inp.volatile = False
+            inp.requires_grad=True
 
             preds = model(inp)
             loss = criterion(preds, batch.label)
