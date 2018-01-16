@@ -82,8 +82,8 @@ def main():
     ############################################################################
     # RETRAIN/SAVE BEST MODEL
     ############################################################################
-    if input('Do you want to train the best model found thus far? (y/n)? '):
-            == 'y'
+    if input('Do you want to train the best model found thus far? (y/n)? ')
+            == 'y':
         print('hyperparam_results:', hyperparam_results)
 
         #best_hyperparams = sorted(hyperparams_results, key=lambda x: x.values()['accuracy'],
