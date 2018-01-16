@@ -109,6 +109,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
             losses.append(loss)
             tot_loss += loss.data[0]
             del preds, loss
+            os.system('nvidia-smi')
 
         (avg_loss, accuracy, corrects, size, t5_acc, t5_corrects, mrr) = evaluate(val_iter, model, TEXT, emb_dim, LABELS, snis, pred_filter=pred_filter)
 
