@@ -82,7 +82,7 @@ def main():
     ############################################################################
     # RETRAIN/SAVE BEST MODEL
     ############################################################################
-    if input('Do you want to train the best model found thus far? (y/n)? ')
+    if input('Do you want to train the best model found thus far? (y/n)? '):
             == 'y'
         print('hyperparam_results:', hyperparam_results)
 
