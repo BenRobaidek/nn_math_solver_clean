@@ -108,6 +108,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
             optimizer.step()
             losses.append(loss)
             tot_loss += loss.data[0]
+            del preds, loss
 
         (avg_loss, accuracy, corrects, size, t5_acc, t5_corrects, mrr) = evaluate(val_iter, model, TEXT, emb_dim, LABELS, snis, pred_filter=pred_filter)
 
