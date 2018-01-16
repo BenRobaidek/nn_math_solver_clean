@@ -115,7 +115,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
                 os.makedirs(save_path)
             torch.save(model, save_path + '{}_e{}.pt'.format(accuracy, epoch))
 
-        results = np.append(results, {'avg_loss':avg_loss, 'accuracy':accuracy,
+        results = np.append(results, {'epoch':epoch, avg_loss':avg_loss, 'accuracy':accuracy,
             'corrects':corrects, 'size': size, 't5_acc':t5_acc,
             't5_corrects':t5_corrects, 'mrr':mrr})
         if verbose: print('\nEvaluation - loss: {:.6f}  acc: {:.4f}%({}/{}) ' \
