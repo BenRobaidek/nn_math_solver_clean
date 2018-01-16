@@ -94,7 +94,6 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
         tot_loss = 0
         train_iter.repeat=False
         for batch_count,batch in enumerate(train_iter):
-            print('batch_count:', batch_count)
             model.zero_grad()
             inp = batch.text.t()
 
