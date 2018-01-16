@@ -50,9 +50,7 @@ def main():
         len(hyperparam_results.keys()),
         len(x)))
 
-    start_hyperparam = bool(input(
-        "Do you wish to start/continue hyperparameter search? (y/n) ") == "y")
-    if start_hyperparam:
+    if input("Do you wish to start/continue hyperparameter search? (y/n) ") == "y":
         for (net_type, epoch, bs, opt, ly, hs, num_dir, embdim, embfix, ptemb,
                             dropout, mf, pred_filter) in x:
             if not (embfix and not ptemb):
@@ -82,9 +80,10 @@ def main():
     ############################################################################
     # RETRAIN/SAVE BEST MODEL
     ############################################################################
-    if input('Do you want to train the best model found thus far? (y/n)? ') == 'y':
+    if input('Do you wish to train the best model found thus far? (y/n)? ') == 'y':
         print('hyperparam_results:', hyperparam_results)
 
+        
         #best_hyperparams = sorted(hyperparams_results, key=lambda x: x.values()['accuracy'],
         #        reverse=True)
         train(data_path=config['data_path'],
