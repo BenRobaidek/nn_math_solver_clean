@@ -41,7 +41,7 @@ def main():
 
     print('Hyperparameter search progress:', len(hyperparam_results.keys()) / len(x))
 
-    start_hyperparam = bool(raw_input(
+    start_hyperparam = bool(input(
         "Do you wish to start/continue hyperparameter search? (y/n) ") == "y")
 
     for (net_type, epoch, bs, opt, ly, hs, num_dir, embdim, embfix, ptemb,
