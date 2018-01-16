@@ -60,7 +60,7 @@ def main():
                             'pretrained_emb':ptemb, 'dropout':dropout,
                             'pred_filter':pred_filter}
                 results = None
-                if not hyperparam_results.keys().contains(hyperparams):
+                if not list(hyperparam_results.keys()).contains(hyperparams):
                     try:
                         results = train(data_path=config['data_path'],
                                 train_path='train.tsv',
