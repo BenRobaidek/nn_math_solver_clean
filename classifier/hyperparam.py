@@ -48,7 +48,7 @@ def main():
     print('Hyperparameter search progress: {}% ({}/{})'.format(
         len(hyperparam_results.keys()) / len(x),
         len(hyperparam_results.keys()),
-        len(x))
+        len(x)))
 
     start_hyperparam = bool(input(
         "Do you wish to start/continue hyperparameter search? (y/n) ") == "y")
