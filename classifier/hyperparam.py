@@ -33,13 +33,17 @@ def main():
         config['dropout'], config['mf'], config['pred_filter']))
     if bool(config['rand']): random.shuffle(x)
 
-    name = raw_input("Do you wish to start/continue hyperparameter search? ")
     hyperparam_results = None
     try:
         hyperparam_results = json.load(open(args.hyperparam_results, 'r'))
     except FileNotFoundError:
         hyperparam_results = dict()
-    #hyperparam_results = dict()
+
+    print('Hyperparameter search progress:', len(hyperparam_resluts.keys()) / len(x))
+    
+    start_hyperparam = bool(raw_input(
+        "Do you wish to start/continue hyperparameter search? (y/n) ") == "y")
+
     for (net_type, epoch, bs, opt, ly, hs, num_dir, embdim, embfix, ptemb,
                         dropout, mf, pred_filter) in x:
         if not (embfix and not ptemb):
