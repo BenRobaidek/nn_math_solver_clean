@@ -91,7 +91,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
     print('Training:', hyperparams)
     results = []
     for epoch in range(epochs):
-        losses = []
+        #losses = []
         tot_loss = 0
         train_iter.repeat=False
         for batch_count,batch in enumerate(train_iter):
@@ -106,9 +106,9 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
             loss = criterion(preds, batch.label)
             loss.backward()
             optimizer.step()
-            losses.append(loss)
+            #losses.append(loss)
             tot_loss += loss.data[0]
-            del preds, loss, batch
+            del preds, loss, batch,
             os.system('nvidia-smi')
 
         (avg_loss, accuracy, corrects, size, t5_acc, t5_corrects, mrr) = evaluate(val_iter, model, TEXT, emb_dim, LABELS, snis, pred_filter=pred_filter)
