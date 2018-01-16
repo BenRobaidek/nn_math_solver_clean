@@ -39,6 +39,8 @@ def main():
     except FileNotFoundError:
         hyperparam_results = dict()
 
+    print('hyperparam_results.keys()', hyperparam_results.keys())
+    print('len(x)', len(x))
     print('Hyperparameter search progress:', len(hyperparam_results.keys()) / len(x))
 
     start_hyperparam = bool(input(
