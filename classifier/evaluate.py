@@ -38,7 +38,10 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_fil
         var_values = np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)]
         print(np.array(LABELS.vocab.itos)[preds.data])
         for i,ex in enumerate(np.array(LABELS.vocab.itos)[preds.data]):
-            print(parser.evaluate(ex, variables=var_values[i]))
+            try:
+                print(parser.evaluate(ex, variables=var_values[i]))
+            except:
+                print('EXCEPTION')
         #print('np.array(LABELS.vocab.itos)[preds.data]', np.array(LABELS.vocab.itos)[preds.data])
         #print('np.array(LABELS.vocab.itos)[target.data]', np.array(LABELS.vocab.itos)[target.data])
         #print('np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values)]', np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)])
