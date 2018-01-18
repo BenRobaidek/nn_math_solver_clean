@@ -24,11 +24,12 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
 
     TEXT = data.Field(lower=True,init_token="<start>",eos_token="<end>")
     LABELS = data.Field(sequential=False)
+    VAR_VALUES = data.Field(sequential=False)
 
     train, val, test = data.TabularDataset.splits(
         path=data_path, train=train_path,
         validation=val_path, test=test_path, format='tsv',
-        fields=[('text', TEXT), ('label', LABELS)])
+        fields=[('text', TEXT), ('label', LABELS), ('val_values', VAR_VALUES)])
 
     prevecs = None
     if (pretrained_emb == True):
@@ -38,6 +39,9 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
     else:
         TEXT.build_vocab(train)
     LABELS.build_vocab(train)
+
+    var_values_data = data.Dataset(path='../tencent/data/working/basic/val_values.txt')
+    VAR_VALUES.build_vocab(var_values_data)
 
     snis = [eq.count('[') for eq in LABELS.vocab.itos]
 

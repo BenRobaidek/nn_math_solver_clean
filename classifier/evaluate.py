@@ -34,7 +34,6 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, snis, pred_filter=True):
         # True Acc
         print('np.array(LABELS.vocab.itos)[preds.data]', np.array(LABELS.vocab.itos)[preds.data])
         print('np.array(LABELS.vocab.itos)[target.data]', np.array(LABELS.vocab.itos)[target.data])
-        #print('preds.data.eq(target.data).sum() / batch.batch_size', preds.data.eq(target.data).sum() / batch.batch_size)
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
