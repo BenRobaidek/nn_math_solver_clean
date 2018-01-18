@@ -39,7 +39,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_fil
         print(np.array(LABELS.vocab.itos)[preds.data])
         for i,ex in enumerate(np.array(LABELS.vocab.itos)[preds.data]):
             print('ex:', ex)
-            print('dict(var_values[i]):', dict(var_values[i]))
+            print('var_values[i]:', var_values[i])
             try:
                 print(parser.evaluate(ex, variables=var_values[i]))
             except Exception as e:
