@@ -32,8 +32,8 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, snis, pred_filter=True):
         corrects += preds.data.eq(target.data).sum()
 
         # True Acc
-        print('LABELS.vocab.itos[preds.data]', LABELS.vocab.itos[preds.data])
-        print('LABELS.vocab.itos[target.data]', LABELS.vocab.itos[target.data])
+        print('np.array(LABELS.vocab.itos)[preds.data]', np.array(LABELS.vocab.itos)[preds.data])
+        print('np.array(LABELS.vocab.itos)[target.data]', np.array(LABELS.vocab.itos)[target.data])
         #print('preds.data.eq(target.data).sum() / batch.batch_size', preds.data.eq(target.data).sum() / batch.batch_size)
 
         # Rank 5
