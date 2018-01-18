@@ -34,6 +34,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, snis, pred_filter=True):
         # True Acc
         print('preds.data', preds.data)
         print('target.data', target.data)
+        print('preds.data.eq(target.data).sum() / batch.batch_size', preds.data.eq(target.data).sum() / batch.batch_size)
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
