@@ -13,7 +13,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_fil
         inp.data.t_()
 
         logit = model(inp)
-        print('inp:', ipn)
+        print('inp:', inp)
 
         # Filter predictions based on SNI
         if pred_filter:
