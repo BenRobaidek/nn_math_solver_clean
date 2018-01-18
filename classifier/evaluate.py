@@ -9,13 +9,13 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_fil
     model.eval()
     corrects, avg_loss, t5_corrects, rr = 0, 0, 0, 0
     for batch_count,batch in enumerate(data_iter):
-        inp, target, variable_values = batch.text, batch.label, batch.variable_values
+        inp, target, variable_values = batch.text, batch.label, batch.var_values
         inp.data.t_()
 
         logit = model(inp)
         #print('inp:', inp)
         print('target', target)
-        print('variable_values', variable_values)
+        print('var_values', var_values)
 
         # Filter predictions based on SNI
         if pred_filter:

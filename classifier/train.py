@@ -29,7 +29,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
     train, val, test = data.TabularDataset.splits(
         path=data_path, train=train_path,
         validation=val_path, test=test_path, format='tsv',
-        fields=[('text', TEXT), ('label', LABELS), ('val_values', VAR_VALUES)])
+        fields=[('text', TEXT), ('label', LABELS), ('var_values', VAR_VALUES)])
 
     prevecs = None
     if (pretrained_emb == True):
