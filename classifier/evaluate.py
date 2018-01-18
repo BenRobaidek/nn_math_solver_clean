@@ -37,7 +37,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_fil
         parser = Parser()
         var_values = np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)]
         for i,ex in np.array(LABELS.vocab.itos)[preds.data]:
-            print(parser.evaluate(ex, variables=var_values[i])
+            print(parser.evaluate(ex, variables=var_values[i]))
         #print('np.array(LABELS.vocab.itos)[preds.data]', np.array(LABELS.vocab.itos)[preds.data])
         #print('np.array(LABELS.vocab.itos)[target.data]', np.array(LABELS.vocab.itos)[target.data])
         #print('np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values)]', np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)])
