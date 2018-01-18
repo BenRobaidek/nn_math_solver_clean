@@ -40,9 +40,6 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
         TEXT.build_vocab(train)
     LABELS.build_vocab(train)
 
-    var_values_data = data.Dataset(path='../tencent/data/working/basic/val_values.txt')
-    VAR_VALUES.build_vocab(var_values_data)
-
     snis = [eq.count('[') for eq in LABELS.vocab.itos]
 
     train_iter, val_iter, test_iter = data.BucketIterator.splits(
