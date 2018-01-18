@@ -39,7 +39,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
     else:
         TEXT.build_vocab(train)
     LABELS.build_vocab(train)
-    VAR_VALUES.build_vocab(train)
+    VAR_VALUES.build_vocab(val)
 
     snis = [eq.count('[') for eq in LABELS.vocab.itos]
 
