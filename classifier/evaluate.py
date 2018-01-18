@@ -4,6 +4,7 @@ from torch.autograd import Variable
 import torch.nn.functional as F
 import numpy as np
 import sys
+from py_expression_eval import Parser
 
 def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_filter=True):
     model.eval()
@@ -33,9 +34,13 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_fil
         corrects += preds.data.eq(target.data).sum()
 
         # True Acc
-        print('np.array(LABELS.vocab.itos)[preds.data]', np.array(LABELS.vocab.itos)[preds.data])
-        print('np.array(LABELS.vocab.itos)[target.data]', np.array(LABELS.vocab.itos)[target.data])
-        print('np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values)]', np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)])
+        parser = Parser()
+        var_values = np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)]
+        for i,ex in np.array(LABELS.vocab.itos)[preds.data]:
+            print(parser.evaluate(ex, variables=var_values[i])
+        #print('np.array(LABELS.vocab.itos)[preds.data]', np.array(LABELS.vocab.itos)[preds.data])
+        #print('np.array(LABELS.vocab.itos)[target.data]', np.array(LABELS.vocab.itos)[target.data])
+        #print('np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values)]', np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)])
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
