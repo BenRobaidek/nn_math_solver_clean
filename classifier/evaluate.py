@@ -12,7 +12,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_fil
     for batch_count,batch in enumerate(data_iter):
         inp, target, var_values = batch.text, batch.label, batch.var_values
         inp.data.t_()
-        print('batch.var_values', batch.var_values)
+        #print('batch.var_values', batch.var_values)
 
         logit = model(inp)
 
@@ -36,7 +36,8 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_fil
         # True Acc
         parser = Parser()
         var_values = np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)]
-        for i,ex in np.array(LABELS.vocab.itos)[preds.data]:
+        print(np.array(LABELS.vocab.itos)[preds.data])
+        for i,ex in enumerate(np.array(LABELS.vocab.itos)[preds.data]):
             print(parser.evaluate(ex, variables=var_values[i]))
         #print('np.array(LABELS.vocab.itos)[preds.data]', np.array(LABELS.vocab.itos)[preds.data])
         #print('np.array(LABELS.vocab.itos)[target.data]', np.array(LABELS.vocab.itos)[target.data])
