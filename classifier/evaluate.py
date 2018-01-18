@@ -11,6 +11,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_fil
     for batch_count,batch in enumerate(data_iter):
         inp, target, var_values = batch.text, batch.label, batch.var_values
         inp.data.t_()
+        print('batch.var_values', batch.var_values)
 
         logit = model(inp)
 
@@ -34,7 +35,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_fil
         # True Acc
         print('np.array(LABELS.vocab.itos)[preds.data]', np.array(LABELS.vocab.itos)[preds.data])
         print('np.array(LABELS.vocab.itos)[target.data]', np.array(LABELS.vocab.itos)[target.data])
-        print('np.array(VAR_VALUES.vocab.itos)[preds.data]', np.array(VAR_VALUES.vocab.itos)[preds.data])
+        #print('VAR_VALUES', VAR_VALUES)
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
