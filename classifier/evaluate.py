@@ -32,7 +32,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, snis, pred_filter=True):
         corrects += preds.data.eq(target.data).sum()
 
         # True Acc
-        print('TEXT.vocab.itos', TEXT.vocab.itos)
+        print('LABELS.vocab.itos', LABELS.vocab.itos)
         print('preds.data', preds.data)
         print('target.data', target.data)
         print('preds.data.eq(target.data).sum() / batch.batch_size', preds.data.eq(target.data).sum() / batch.batch_size)
