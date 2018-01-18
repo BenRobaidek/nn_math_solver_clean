@@ -31,6 +31,10 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, snis, pred_filter=True):
         _, preds = torch.max(logit, 1)
         corrects += preds.data.eq(target.data).sum()
 
+        # True Acc
+        print('preds.data', preds.data)
+        print('target.data', target.data)
+
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
         x = torch.unsqueeze(target.data, 1)
