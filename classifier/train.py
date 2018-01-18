@@ -39,6 +39,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
     else:
         TEXT.build_vocab(train)
     LABELS.build_vocab(train)
+    VAR_VALUES.build_vocab(train)
 
     snis = [eq.count('[') for eq in LABELS.vocab.itos]
 
@@ -107,7 +108,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
             optimizer.step()
             tot_loss += loss.data[0]
 
-        (avg_loss, accuracy, corrects, size, t5_acc, t5_corrects, mrr) = evaluate(val_iter, model, TEXT, emb_dim, LABELS, snis, pred_filter=pred_filter)
+        (avg_loss, accuracy, corrects, size, t5_acc, t5_corrects, mrr) = evaluate(val_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_filter=pred_filter)
 
         if save:
             if not os.path.isdir(save_path):

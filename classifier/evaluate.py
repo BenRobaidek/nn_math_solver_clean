@@ -5,7 +5,7 @@ import torch.nn.functional as F
 import numpy as np
 import sys
 
-def evaluate(data_iter, model, TEXT, emb_dim, LABELS, snis, pred_filter=True):
+def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_filter=True):
     model.eval()
     corrects, avg_loss, t5_corrects, rr = 0, 0, 0, 0
     for batch_count,batch in enumerate(data_iter):
@@ -13,6 +13,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, snis, pred_filter=True):
         inp.data.t_()
 
         logit = model(inp)
+        print('inp:', ipn)
 
         # Filter predictions based on SNI
         if pred_filter:

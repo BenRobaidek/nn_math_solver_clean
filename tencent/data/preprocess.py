@@ -120,12 +120,14 @@ def main():
     saveValues(val_indices, jsondata, './working/common0.8/val_values.txt')
 
     # SAVE ANSWER FILES
+    """
     saveAnswers(val_indices, jsondata, './working/basic/answers.txt')
     saveAnswers(val_indices, jsondata, './working/common0.2/answers.txt')
     saveAnswers(val_indices, jsondata, './working/common0.4/answers.txt')
     saveAnswers(val_indices, jsondata, './working/common0.6/answers.txt')
     saveAnswers(val_indices, jsondata, './working/common0.8/answers.txt')
     saveAnswers(val_indices, jsondata, './working/no_sni/answers.txt')
+    """
 
     train_val_indices = np.append(train_indices, val_indices)
     json2tsv(train_val_indices, common_data2,    './working/common0.2/train_val_common.tsv')
