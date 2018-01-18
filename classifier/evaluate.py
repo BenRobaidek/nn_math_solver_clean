@@ -32,10 +32,9 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, snis, pred_filter=True):
         corrects += preds.data.eq(target.data).sum()
 
         # True Acc
-        print('LABELS.vocab.itos', LABELS.vocab.itos)
-        print('preds.data', preds.data)
-        print('target.data', target.data)
-        print('preds.data.eq(target.data).sum() / batch.batch_size', preds.data.eq(target.data).sum() / batch.batch_size)
+        print('LABELS.vocab.itos[preds.data]', LABELS.vocab.itos[preds.data])
+        print('LABELS.vocab.itos[target.data]', LABELS.vocab.itos[target.data])
+        #print('preds.data.eq(target.data).sum() / batch.batch_size', preds.data.eq(target.data).sum() / batch.batch_size)
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
