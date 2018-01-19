@@ -44,7 +44,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_fil
                 pred = pred.replace(k, eval(str(var))[k])
             print('pred AFTER:', pred)
             try:
-                print('ANSWER:', eval(pred))
+                parser.evaluate(pred, variables=None)
             except Exception as e:
                 print(e)
 
