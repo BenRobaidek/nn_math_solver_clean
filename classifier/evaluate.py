@@ -49,6 +49,8 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_fil
                 tgt_answer = parser.evaluate(tgt, variables=None)
                 if abs((pred_answer - tgt_answer) / tgt_answer) <= .02:
                     true_corrects += 1
+                print('pred', pred)
+                print('tgt', tgt)
             except Exception as e:
                 pass
 
