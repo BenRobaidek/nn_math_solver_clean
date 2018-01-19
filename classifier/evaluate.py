@@ -43,6 +43,11 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_fil
             for k in eval(str(var)).keys():
                 pred = pred.replace(k, eval(str(var))[k])
             print('pred AFTER:', pred)
+            try:
+                eval(pred)
+            except Exception as e:
+                print(e)
+
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
