@@ -41,11 +41,17 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_fil
                                     var_values):
             for k in eval(str(var)).keys():
                 pred = pred.replace(k, eval(str(var))[k])
+                tgt = tgt.replace(k, eval(str(var))[k])
             pred = pred.strip('x = ')
+            tgt = tgt.strip('x = ')
             try:
-                print(parser.evaluate(pred, variables=None))
+                pred_answer = parser.evaluate(pred, variables=None))
+                tgt_answer = parser.evaluate(tgt, variables=None))
+                print('pred_answer:', pred_answer)
+                print('tgt_answer:', tgt_answer)
             except Exception as e:
                 print(e)
+
 
 
         # Rank 5
