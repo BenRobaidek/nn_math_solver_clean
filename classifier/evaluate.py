@@ -38,7 +38,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_fil
         var_values = np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)]
         for pred, tgt, var in zip(np.array(LABELS.vocab.itos)[preds.data],
                                     np.array(LABELS.vocab.itos)[target.data],
-                                    var_values)
+                                    var_values):
             print('pred:', pred)
             print('tgt:', tgt)
             print('var:', var)
