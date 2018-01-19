@@ -39,10 +39,10 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_fil
         for pred, tgt, var in zip(np.array(LABELS.vocab.itos)[preds.data],
                                     np.array(LABELS.vocab.itos)[target.data],
                                     var_values):
-            print('pred:', pred)
-            print('tgt:', tgt)
+            print('pred BEFORE:', pred)
             for k in eval(str(var)).keys():
-                print('key:', k, 'type(val):', type(float(eval(str(var))[k])))
+                pred.replace(k, float(eval(str(var))[k]))
+            print('pred AFTER:', pred)
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
