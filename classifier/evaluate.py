@@ -39,12 +39,10 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_fil
         for pred, tgt, var in zip(np.array(LABELS.vocab.itos)[preds.data],
                                     np.array(LABELS.vocab.itos)[target.data],
                                     var_values):
-            print('pred BEFORE:', pred)
             for k in eval(str(var)).keys():
                 pred = pred.replace(k, eval(str(var))[k])
-            print('pred AFTER:', pred)
             try:
-                parser.evaluate(pred, variables=None)
+                print(parser.evaluate(pred, variables=None))
             except Exception as e:
                 print(e)
 
