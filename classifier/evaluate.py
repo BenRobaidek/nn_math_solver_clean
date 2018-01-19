@@ -8,7 +8,7 @@ from py_expression_eval import Parser
 
 def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_filter=True):
     model.eval()
-    corrects, avg_loss, t5_corrects, rr = 0, 0, 0, 0
+    corrects, true_corrects, avg_loss, t5_corrects, rr = 0, 0, 0, 0, 0
     for batch_count,batch in enumerate(data_iter):
         inp, target, var_values = batch.text, batch.label, batch.var_values
         inp.data.t_()
@@ -47,8 +47,8 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_fil
             try:
                 pred_answer = parser.evaluate(pred, variables=None)
                 tgt_answer = parser.evaluate(tgt, variables=None)
-                print('pred_answer:', pred_answer)
-                print('tgt_answer:', tgt_answer)
+                if abs((pred_answer - tgt_answer) / tgt_answer <= .02):
+                    print(pred_answer, '~~', tgt_answer)
             except Exception as e:
                 print(e)
 
