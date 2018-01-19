@@ -36,6 +36,10 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_fil
         # True Acc
         parser = Parser()
         var_values = np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)]
+
+        pred_answers = []
+        tgt_answers = []
+
         for pred, tgt, var in zip(np.array(LABELS.vocab.itos)[preds.data],
                                     np.array(LABELS.vocab.itos)[target.data],
                                     var_values):
@@ -45,16 +49,12 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_fil
             pred = pred.strip('x = ')
             tgt = tgt.strip('x = ')
             try:
-                pred_answer = parser.evaluate(pred, variables=None)
-                tgt_answer = parser.evaluate(tgt, variables=None)
-                if abs((pred_answer - tgt_answer) / tgt_answer) <= .02:
-                    true_corrects += 1
-                print('pred', pred)
-                print('tgt', tgt)
+                pred_answers = np.append(pred_answers, [parser.evaluate(pred, variables=None]))
+                pred_answers = np.append(tgt_answers, [parser.evaluate(tgt, variables=None]))
             except Exception as e:
                 pass
-
-
+        print('pred_answers:', pred_answers)
+        print('tgt_answers:', tgt_answers)
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
