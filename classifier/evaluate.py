@@ -47,7 +47,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_fil
             try:
                 pred_answer = parser.evaluate(pred, variables=None)
                 tgt_answer = parser.evaluate(tgt, variables=None)
-                if abs((pred_answer - tgt_answer) / tgt_answer <= .02):
+                if abs((pred_answer - tgt_answer) / tgt_answer) <= .02:
                     print(pred_answer, '~~', tgt_answer)
             except Exception as e:
                 print(e)
