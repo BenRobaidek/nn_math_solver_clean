@@ -39,7 +39,6 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_fil
 
         pred_answers = []
         tgt_answers = []
-
         for pred, tgt, var in zip(np.array(LABELS.vocab.itos)[preds.data],
                                     np.array(LABELS.vocab.itos)[target.data],
                                     var_values):
@@ -49,10 +48,13 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_fil
             pred = pred.strip('x = ')
             tgt = tgt.strip('x = ')
             try:
-                pred_answers = np.append(pred_answers, [parser.evaluate(pred, variables=None)])
-                tgt_answers = np.append(tgt_answers, [parser.evaluate(tgt, variables=None)])
+                pred_answer = parser.evaluate(pred, variables=None)
+                tgt_answer = parser.evaluate(tgt, variables=None)
             except Exception as e:
-                pass
+                pred_answer = None
+                tgt_answer = None
+            pred_answers = np.append(pred_answers, [pred_answer])
+            tgt_answers = np.append(tgt_answers, [tgt_answer])
         print('pred_answers:', pred_answers)
         print('tgt_answers:', tgt_answers)
 
