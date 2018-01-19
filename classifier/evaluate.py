@@ -50,7 +50,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_fil
             tgt = tgt.strip('x = ')
             try:
                 pred_answers = np.append(pred_answers, [parser.evaluate(pred, variables=None)])
-                pred_answers = np.append(tgt_answers, [parser.evaluate(tgt, variables=None)])
+                tgt_answers = np.append(tgt_answers, [parser.evaluate(tgt, variables=None)])
             except Exception as e:
                 pass
         print('pred_answers:', pred_answers)
