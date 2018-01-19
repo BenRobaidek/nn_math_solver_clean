@@ -36,17 +36,8 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_fil
         # True Acc
         parser = Parser()
         var_values = np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)]
-        print(np.array(LABELS.vocab.itos)[preds.data])
-        for i,ex in enumerate(np.array(LABELS.vocab.itos)[preds.data]):
-            print('ex:', ex)
-            print('var_values[i]:', var_values[i])
-            try:
-                print(parser.evaluate(ex, variables=var_values[i]))
-            except Exception as e:
-                print(e)
-        #print('np.array(LABELS.vocab.itos)[preds.data]', np.array(LABELS.vocab.itos)[preds.data])
-        #print('np.array(LABELS.vocab.itos)[target.data]', np.array(LABELS.vocab.itos)[target.data])
-        #print('np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values)]', np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)])
+        print('np.array(LABELS.vocab.itos)[preds.data]', np.array(LABELS.vocab.itos)[preds.data])
+        print('np.array(LABELS.vocab.itos)[target.data]', np.array(LABELS.vocab.itos)[target.data])
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
