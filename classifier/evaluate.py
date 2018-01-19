@@ -48,9 +48,9 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_fil
                 pred_answer = parser.evaluate(pred, variables=None)
                 tgt_answer = parser.evaluate(tgt, variables=None)
                 if abs((pred_answer - tgt_answer) / tgt_answer) <= .02:
-                    print(pred_answer, '~~', tgt_answer)
+                    true_corrects += 1
             except Exception as e:
-                print(e)
+                pass
 
 
 
@@ -73,6 +73,10 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_fil
     size = len(data_iter.dataset)
     avg_loss = loss.data[0]/size
     accuracy = 100.0 * corrects/size
+    true_acc = 100.0 * true_corrects/size
+    print('acc:', acc)
+    print('true_acc:', true_acc)
+    print()
     t5_acc = 100.0 * t5_corrects/size
     mrr = rr/size
     model.train()
