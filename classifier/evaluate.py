@@ -42,7 +42,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_fil
             print('pred:', pred)
             print('tgt:', tgt)
             for k in eval(str(var)).keys():
-                print('key:', k, 'type(val):', type(eval(str(var))[k]))
+                print('key:', k, 'type(val):', type(float(eval(str(var))[k])))
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
