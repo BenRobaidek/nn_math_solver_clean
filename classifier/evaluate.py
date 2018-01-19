@@ -41,6 +41,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_fil
                                     var_values):
             for k in eval(str(var)).keys():
                 pred = pred.replace(k, eval(str(var))[k])
+            pred = pred.strip('x = ')
             try:
                 print(parser.evaluate(pred, variables=None))
             except Exception as e:
