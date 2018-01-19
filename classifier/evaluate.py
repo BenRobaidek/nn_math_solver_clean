@@ -41,7 +41,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_fil
                                     var_values):
             print('pred BEFORE:', pred)
             for k in eval(str(var)).keys():
-                pred.replace(k, float(eval(str(var))[k]))
+                pred.replace(k, eval(str(var))[k])
             print('pred AFTER:', pred)
 
         # Rank 5
