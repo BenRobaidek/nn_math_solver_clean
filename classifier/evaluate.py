@@ -36,8 +36,12 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_fil
         # True Acc
         parser = Parser()
         var_values = np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)]
-        print('np.array(LABELS.vocab.itos)[preds.data]', np.array(LABELS.vocab.itos)[preds.data])
-        print('np.array(LABELS.vocab.itos)[target.data]', np.array(LABELS.vocab.itos)[target.data])
+        for pred, tgt, var in zip(np.array(LABELS.vocab.itos)[preds.data],
+                                    np.array(LABELS.vocab.itos)[target.data],
+                                    var_values)
+            print('pred:', pred)
+            print('tgt:', tgt)
+            print('var:', var)
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
