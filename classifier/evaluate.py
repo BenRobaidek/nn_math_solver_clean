@@ -43,7 +43,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 ans[i] = eval(x)
             except Exception as e:
                 try:
-                    x = x.replace('(', ' * (', 1))
+                    x = x.replace('(', ' * (', 1)
                     ans[i] = eval(x)
                 except:
                     print('THINGS WENT REALLY WRONG')
