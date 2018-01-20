@@ -77,7 +77,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             try:
                 float(pred_answer)
                 if abs((pred_answer - answer) / answer) <= .02:
-                    print('pred_answer:', pred_answer, 'answer:', answer)
+                    #print('pred_answer:', pred_answer, 'answer:', answer)
                     true_corrects += 1
                 elif pred_eq_id == tgt_eq_id:
                     print('pred_answer:', pred_answer)
