@@ -74,7 +74,9 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         #print('ans:', ans)
 
         for pred_answer, answer in zip(pred_answers, ans):
-            print('pred_answer:', pred_answer, 'answer:', answer)
+            if abs((pred_answer - answer) / answer) <= .02:
+                print('pred_answer:', pred_answer, 'answer:', answer)
+                true_corrects += 1
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
