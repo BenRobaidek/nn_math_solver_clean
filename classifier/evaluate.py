@@ -47,8 +47,6 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                     ans[i] = eval(x)
                 except:
                     print('THINGS WENT REALLY WRONG')
-                print(e)
-                print(x)
 
         pred_answers = []
         tgt_answers = []
@@ -68,9 +66,9 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 tgt_answer = None
             pred_answers = np.append(pred_answers, [pred_answer])
             tgt_answers = np.append(tgt_answers, [tgt_answer])
-        #print('pred_answers:', pred_answers)
-        #print('tgt_answers:', tgt_answers)
-        #print('ans:', ans)
+        print('pred_answers:', pred_answers)
+        print('tgt_answers:', tgt_answers)
+        print('ans:', ans)
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
