@@ -68,10 +68,13 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 pred_answer = None
             pred_answers = np.append(pred_answers, [pred_answer])
             tgt_answers = np.append(tgt_answers, [tgt_answer])
-        print('pred_answers:', pred_answers)
-        print('tgt_answers:', tgt_answers)
+        #print('pred_answers:', pred_answers)
+        #print('tgt_answers:', tgt_answers)
         ans = ans.astype(float)
-        print('ans:', ans)
+        #print('ans:', ans)
+
+        for pred_answer, answer in zip(pred_answers, ans):
+            print('pred_answer:', pred_answer, 'answer:', answer)
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
