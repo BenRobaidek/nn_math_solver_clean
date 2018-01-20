@@ -39,7 +39,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         ans = np.array(ANS.vocab.itos)[np.array(batch.ans.data)]
         for i,x in enumerate(ans):
             print('x:', x)
-            ans[i] = parser.evaluate(x, variables=None)
+            ans[i] = eval(x)
 
         pred_answers = []
         tgt_answers = []
