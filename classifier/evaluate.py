@@ -73,12 +73,14 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         ans = ans.astype(float)
         #print('ans:', ans)
 
-        for pred_answer, answer in zip(pred_answers, ans):
+        for pred_answer, pred_eq_id, answer, tgt_eq_id in zip(pred_answers, pred.data, ans, target.data):
             try:
                 float(pred_answer)
                 if abs((pred_answer - answer) / answer) <= .02:
                     print('pred_answer:', pred_answer, 'answer:', answer)
                     true_corrects += 1
+                elif pred_eq_id == tgt_eq_id:
+                    print('REALLLY BADDDD')
             except TypeError:
                 pass
 
