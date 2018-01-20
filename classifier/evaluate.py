@@ -59,11 +59,13 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             pred = pred.strip('x = ')
             tgt = tgt.strip('x = ')
             try:
-                tgt_answer = parser.evaluate(tgt, variables=None) # seperate these
+                tgt_answer = parser.evaluate(tgt, variables=None)
+            except Exception as e:
+                tgt_answer = None
+            try:
                 pred_answer = parser.evaluate(pred, variables=None)
             except Exception as e:
                 pred_answer = None
-                tgt_answer = None
             pred_answers = np.append(pred_answers, [pred_answer])
             tgt_answers = np.append(tgt_answers, [tgt_answer])
         print('pred_answers:', pred_answers)
