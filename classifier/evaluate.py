@@ -11,6 +11,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
     corrects, true_corrects, avg_loss, t5_corrects, rr = 0, 0, 0, 0, 0
     for batch_count,batch in enumerate(data_iter):
         inp, target, var_values, ans = batch.text, batch.label, batch.var_values, batch.ans
+        print('ans:', ans)
         inp.data.t_()
         #print('batch.var_values', batch.var_values)
 
