@@ -70,6 +70,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             tgt_answers = np.append(tgt_answers, [tgt_answer])
         print('pred_answers:', pred_answers)
         print('tgt_answers:', tgt_answers)
+        ans = ans.astype(float)
         print('ans:', ans)
 
         # Rank 5
