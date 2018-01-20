@@ -365,7 +365,9 @@ def json2tsv(json_indices, json_data, output_path):
     output = open(output_path, 'w')
     for d in json_data:
         if int(d['id']) in json_indices:
-            output.write(d['segmented_text'].strip() + '\t' + d['equation'].strip() + '\t' + str(d['variable_values']) + '\n')
+            output.write(d['segmented_text'].strip() + '\t' +
+                    d['equation'].strip() + '\t' + str(d['variable_values'])
+                    + '\t' + str(d['ans']) + '\n')
     output.close()
 
 def isFloat(value):

@@ -25,11 +25,12 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
     TEXT = data.Field(lower=True,init_token="<start>",eos_token="<end>")
     LABELS = data.Field(sequential=False)
     VAR_VALUES = data.Field(sequential=False)
+    ANS = data.Field(sequential=False)
 
     train, val, test = data.TabularDataset.splits(
         path=data_path, train=train_path,
         validation=val_path, test=test_path, format='tsv',
-        fields=[('text', TEXT), ('label', LABELS), ('var_values', VAR_VALUES)])
+        fields=[('text', TEXT), ('label', LABELS), ('var_values', VAR_VALUES), ('ans', ANS)])
 
     prevecs = None
     if (pretrained_emb == True):
@@ -108,7 +109,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
             optimizer.step()
             tot_loss += loss.data[0]
 
-        (avg_loss, accuracy, corrects, size, t5_acc, t5_corrects, mrr) = evaluate(val_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, snis, pred_filter=pred_filter)
+        (avg_loss, accuracy, corrects, size, t5_acc, t5_corrects, mrr) = evaluate(val_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pred_filter=pred_filter)
 
         if save:
             if not os.path.isdir(save_path):
