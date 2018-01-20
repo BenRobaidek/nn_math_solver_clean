@@ -37,7 +37,9 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         parser = Parser()
         var_values = np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)]
         ans = np.array(ANS.vocab.itos)[np.array(batch.ans.data)]
-        ans = [parser.evaluate(x, variables=None) for x in ans]
+        for i,x in enumerate(ans):
+            print('x:', x)
+            ans[i] = parser.evaluate(x, variables=None)
 
         pred_answers = []
         tgt_answers = []
