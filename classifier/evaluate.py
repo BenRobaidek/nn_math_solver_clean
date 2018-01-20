@@ -76,15 +76,15 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         for pred_answer, pred_eq_id, answer, tgt_eq_id in zip(pred_answers, preds.data, ans, target.data):
             try:
                 float(pred_answer)
-                if abs((pred_answer - answer) / answer) <= .02:
+                if abs(pred_answer - answer) <= .02 * abs(answer):
                     #print('pred_answer:', pred_answer, 'answer:', answer)
                     true_corrects += 1
                 elif pred_eq_id == tgt_eq_id:
-                    pass
-                    #print('pred_answer:', pred_answer)
-                    #print('pred_eq_id:', pred_eq_id)
-                    #print('answer:', answer)
-                    #print('tgt_eq_id:', tgt_eq_id)
+                    #pass
+                    print('pred_answer:', pred_answer)
+                    print('pred_eq_id:', pred_eq_id)
+                    print('answer:', answer)
+                    print('tgt_eq_id:', tgt_eq_id)
             except TypeError:
                 pass
 
