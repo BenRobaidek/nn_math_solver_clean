@@ -38,7 +38,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         var_values = np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)]
         ans = np.array(ANS.vocab.itos)[np.array(batch.ans.data)]
         for i,x in enumerate(ans):
-            print('x:', x)
+            #print('x:', x)
             try:
                 ans[i] = eval(x)
             except Exception as e:
