@@ -80,11 +80,11 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                     #print('pred_answer:', pred_answer, 'answer:', answer)
                     true_corrects += 1
                 elif pred_eq_id == tgt_eq_id:
-                    #pass
-                    print('pred_answer:', pred_answer)
-                    print('pred_eq_id:', pred_eq_id)
-                    print('answer:', answer)
-                    print('tgt_eq_id:', tgt_eq_id)
+                    pass
+                    #print('pred_answer:', pred_answer)
+                    #print('pred_eq_id:', pred_eq_id)
+                    #print('answer:', answer)
+                    #print('tgt_eq_id:', tgt_eq_id)
             except TypeError:
                 pass
 
