@@ -110,24 +110,21 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
             optimizer.step()
             tot_loss += loss.data[0]
 
-        (avg_loss, accuracy, corrects, size, t5_acc, t5_corrects, mrr) = evaluate(val_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pred_filter=pred_filter)
+        (avg_loss, accuracy, true_acc, corrects, size, t5_acc, t5_corrects, mrr) = evaluate(val_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pred_filter=pred_filter)
 
         if save:
             if not os.path.isdir(save_path):
                 os.makedirs(save_path)
             torch.save(model, save_path + '{}_e{}.pt'.format(accuracy, epoch))
 
-        results = np.append(results, {'epoch':epoch, 'avg_loss':avg_loss, 'accuracy':accuracy,
-            'corrects':corrects, 'size': size, 't5_acc':t5_acc,
-            't5_corrects':t5_corrects, 'mrr':mrr})
+        results = np.append(results, {'epoch':epoch, 'avg_loss':avg_loss,
+            'accuracy':accuracy, 'true_acc':true_acc, 'corrects':corrects,
+            'size': size, 't5_acc':t5_acc, 't5_corrects':t5_corrects,
+                                                                    'mrr':mrr})
         if verbose: print('\nEvaluation - loss: {:.6f}  acc: {:.4f}%({}/{}) ' \
-                    't5_acc: {:.4f}%({}/{}) MRR: {:.6f}\n'.format(avg_loss,
-                                                                accuracy,
-                                                                corrects,
-                                                                size,
-                                                                t5_acc,
-                                                                t5_corrects,
-                                                                size,
-                                                                mrr))
-    print('Accuracy:', np.sort([i['accuracy'] for i in results])[-1])
+                    'true_acc: {:.4f}%(todo/todo) t5_acc: {:.4f}%({}/{}) MRR:' \
+                    '{:.6f}\n'.format(avg_loss, accuracy, corrects, size,
+                            t5_acc, t5_corrects, size, mrr))
+    print('Best Accuracy:', np.sort([i['accuracy'] for i in results])[-1])
+    print('Best True Accuracy:', np.sort([i['true_acc'] for i in results])[-1]))
     return results

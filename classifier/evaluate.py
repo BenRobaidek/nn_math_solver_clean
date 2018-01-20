@@ -80,10 +80,11 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                     #print('pred_answer:', pred_answer, 'answer:', answer)
                     true_corrects += 1
                 elif pred_eq_id == tgt_eq_id:
-                    print('pred_answer:', pred_answer)
-                    print('pred_eq_id:', pred_eq_id)
-                    print('answer:', answer)
-                    print('tgt_eq_id:', tgt_eq_id)
+                    pass
+                    #print('pred_answer:', pred_answer)
+                    #print('pred_eq_id:', pred_eq_id)
+                    #print('answer:', answer)
+                    #print('tgt_eq_id:', tgt_eq_id)
             except TypeError:
                 pass
 
@@ -113,4 +114,4 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
     t5_acc = 100.0 * t5_corrects/size
     mrr = rr/size
     model.train()
-    return(avg_loss, accuracy, corrects, size, t5_acc, t5_corrects, mrr)
+    return(avg_loss, accuracy, true_acc, corrects, size, t5_acc, t5_corrects, mrr)
