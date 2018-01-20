@@ -68,8 +68,8 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 pred_answer = None
             pred_answers = np.append(pred_answers, [pred_answer])
             tgt_answers = np.append(tgt_answers, [tgt_answer])
-        print('pred_answers:', pred_answers)
-        print('tgt_answers:', tgt_answers)
+        #print('pred_answers:', pred_answers)
+        #print('tgt_answers:', tgt_answers)
         ans = ans.astype(float)
         #print('ans:', ans)
 
@@ -108,9 +108,9 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
     avg_loss = loss.data[0]/size
     accuracy = 100.0 * corrects/size
     true_acc = 100.0 * true_corrects/size
-    #print('acc:', accuracy)
-    #print('true_acc:', true_acc)
-    #print()
+    print('acc:', accuracy)
+    print('true_acc:', true_acc)
+    print()
     t5_acc = 100.0 * t5_corrects/size
     mrr = rr/size
     model.train()
