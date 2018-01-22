@@ -34,7 +34,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         corrects += preds.data.eq(target.data).sum()
 
         # True Acc
-        print('var_values:', val_values)
+        print('var_values:', var_values)
         print('ans:', ans)
 
         # Rank 5
