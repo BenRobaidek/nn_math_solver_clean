@@ -41,9 +41,11 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         for prediction, tgt, var_value, answer in zip(predictions, targets, var_values, answers):
 
             var_value = eval(var_value)
-            print('type(var_value):', type(var_value))
+
+            # Sub variables into predicted and target equations
             for k in var_value:
-                print(k)
+                prediction = prediction.replace(k, var_value[k])
+                tgt = tgt.replace(k, var_value[k])
             print('prediction:', prediction)
             print('tgt:', tgt)
             print('var_value:', var_value)
