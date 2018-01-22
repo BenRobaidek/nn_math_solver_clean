@@ -48,19 +48,21 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 prediction = prediction.replace(k, var_value[k])
                 tgt = tgt.replace(k, var_value[k])
 
+            print('prediction:', prediction)
+            print('tgt:', tgt)
+            print('var_value:', var_value)
+            print('answer:', answer)
+            print()
+
+
             # Add multiplication symbols to answer where needed
-            answer = re.sub(r'\(\d+\)/\(\d+\)','replaced',answer)
+            answer = re.sub(r'\(\d+\)/\(\d+\)',eval(),answer)
             answer = re.sub(r'(\d)\(','\1*(', answer)
 
             # remove = from equations
             prediction = prediction.strip('x =')
             tgt = tgt.strip('x =')
 
-            print('prediction:', prediction)
-            print('tgt:', tgt)
-            print('var_value:', var_value)
-            print('answer:', answer)
-            print()
 
             # evaluate
             prediction = eval(prediction)
