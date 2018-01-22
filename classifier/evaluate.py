@@ -34,62 +34,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         corrects += preds.data.eq(target.data).sum()
 
         # True Acc
-        parser = Parser()
-        var_values = np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)]
-        ans = np.array(ANS.vocab.itos)[np.array(batch.ans.data)]
-        print('ans:', ans)
-        print('var_values:', var_values)
-        for i,x in enumerate(ans):
-            x = x.replace('%', ' / 100 ')
-            try:
-                ans[i] = eval(x)
-            except Exception as e:
-                try:
-                    x = x.replace('(', ' * (', 1)
-                    ans[i] = eval(x)
-                except:
-                    print('THINGS WENT REALLY WRONG')
-
-        pred_answers = []
-        tgt_answers = []
-        for pred, tgt, var in zip(np.array(LABELS.vocab.itos)[preds.data],
-                                    np.array(LABELS.vocab.itos)[target.data],
-                                    var_values):
-            for k in eval(str(var)).keys():
-                pred = pred.replace(k, eval(str(var))[k])
-                tgt = tgt.replace(k, eval(str(var))[k])
-            pred = pred.strip('x = ')
-            tgt = tgt.strip('x = ')
-            try:
-                tgt_answer = parser.evaluate(tgt, variables=None)
-            except Exception as e:
-                tgt_answer = None
-            try:
-                pred_answer = parser.evaluate(pred, variables=None)
-            except Exception as e:
-                pred_answer = None
-            pred_answers = np.append(pred_answers, [pred_answer])
-            tgt_answers = np.append(tgt_answers, [tgt_answer])
-        #print('pred_answers:', pred_answers)
-        #print('tgt_answers:', tgt_answers)
-        ans = ans.astype(float)
-        #print('ans:', ans)
-
-        for pred_answer, pred_eq_id, answer, tgt_eq_id in zip(pred_answers, preds.data, ans, target.data):
-            try:
-                float(pred_answer)
-                if abs(pred_answer - answer) <= .02 * abs(answer):
-                    #print('pred_answer:', pred_answer, 'answer:', answer)
-                    true_corrects += 1
-                elif pred_eq_id == tgt_eq_id:
-                    pass
-                    print('BAAAADD')
-                    #print('pred_answer:', pred_answer)
-                    #print('pred_eq_id:', pred_eq_id)
-                    #print('answer:', answer)
-                    #print('tgt_eq_id:', tgt_eq_id)
-            except TypeError:
-                pass
+        
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
