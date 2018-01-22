@@ -34,10 +34,10 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         corrects += preds.data.eq(target.data).sum()
 
         # True Acc
-        print(var_values.data)
-        print('var_values:', VAR_VALUES.vocab.itos[var_values.data])
-        print('ans:', ANS.vocab.itos[np.array(ans.data)])
-        print('target:', LABELS.vocab.itos[np.array(target)])
+        #print(var_values.data)
+        print('var_values:', np.array(VAR_VALUES.vocab.itos)[nparray(var_values.data).astype(int)])
+        print('ans:', np.array(ANS.vocab.itos)[np.array(ans.data).astype(int)])
+        print('target:', LABELS.vocab.itos[np.array(target).astype(int)])
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
