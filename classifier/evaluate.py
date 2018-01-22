@@ -68,7 +68,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 prediction = eval(prediction)
             else:
                 prediction = None
-            if (not tgt == '<unk>') or (no tgt == 'x = 80千米 / 小时'):
+            if (not tgt == '<unk>') or (not tgt == 'x = 80千米 / 小时'):
                 tgt = eval(tgt)
             else:
                 tgt = None
