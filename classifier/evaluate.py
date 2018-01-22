@@ -34,8 +34,9 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         corrects += preds.data.eq(target.data).sum()
 
         # True Acc
-        print('var_values:', var_values.data[:])
-        print('ans:', ans.data[:])
+        print('var_values:', var_values.data)
+        print('ans:', ans.data)
+        print('tgt:', tgt)
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
