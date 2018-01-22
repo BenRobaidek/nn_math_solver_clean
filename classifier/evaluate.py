@@ -68,7 +68,10 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 prediction = eval(prediction)
             else:
                 prediction = None
-            tgt = eval(tgt)
+            if not tgt = '<unk>'
+                tgt = eval(tgt)
+            else:
+                tgt = None
             answer = eval(answer)
 
             # print results
