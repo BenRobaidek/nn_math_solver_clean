@@ -42,18 +42,26 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
 
             var_value = eval(var_value)
 
-            # Sub variables into predicted and target equations
+            # sub variables into predicted and target equations
             for k in var_value:
                 prediction = prediction.replace(k, var_value[k])
                 tgt = tgt.replace(k, var_value[k])
+
+            # remove = from equations
             prediction = prediction.strip('x =')
             tgt = tgt.strip('x =')
+
+            # evaluate
+            prediction = eval(prediction)
+            tgt = eval(tgt)
+            answer = eval(answer)
+
+            # print results
             print('prediction:', prediction)
             print('tgt:', tgt)
             print('var_value:', var_value)
             print('answer:', answer)
             print()
-            answer = eval(answer)
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
