@@ -40,7 +40,9 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         answers = np.array(ANS.vocab.itos)[np.array(batch.ans.data)]
         for prediction, tgt, var_value, answer in zip(predictions, targets, var_values, answers):
 
-
+            print('type(var_value):', type(var_value))
+            for k in var_value:
+                print(k)
             print('prediction:', prediction)
             print('tgt:', tgt)
             print('var_value:', var_value)
