@@ -48,7 +48,6 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 tgt = tgt.replace(k, var_value[k])
             prediction = prediction.strip('x=')
             tgt = tgt.strip('x=')
-            print('prediction:', prediction, 'pred_answer:', eval(prediction.strip('x=')))
             print('tgt:', tgt)
             print('var_value:', var_value)
             print('answer:', answer)
