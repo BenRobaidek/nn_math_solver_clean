@@ -35,9 +35,9 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
 
         # True Acc
         #print(var_values.data)
-        print('var_values:', np.array(VAR_VALUES.vocab.itos)[nparray(var_values.data).astype(int)])
+        print('var_values:', np.array(VAR_VALUES.vocab.itos)[np.array(var_values.data).astype(int)])
         print('ans:', np.array(ANS.vocab.itos)[np.array(ans.data).astype(int)])
-        print('target:', LABELS.vocab.itos[np.array(target).astype(int)])
+        print('target:', np.array(LABELS.vocab.itos)[np.array(target).astype(int)])
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
