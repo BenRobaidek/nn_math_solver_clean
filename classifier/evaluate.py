@@ -40,12 +40,13 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         answers = np.array(ANS.vocab.itos)[np.array(batch.ans.data)]
         for prediction, tgt, var_value, answer in zip(predictions, targets, var_values, answers):
 
-            answer = eval(answer)
+
             print('prediction:', prediction)
             print('tgt:', tgt)
             print('var_value:', var_value)
             print('answer:', answer)
             print()
+            answer = eval(answer)
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
