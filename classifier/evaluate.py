@@ -36,7 +36,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         # True Acc
         print('var_values:', var_values.data)
         print('ans:', ans.data)
-        print('tgt:', tgt)
+        print('target:', target)
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
