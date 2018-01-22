@@ -35,7 +35,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
 
         # True Acc
         print(var_values.data)
-        print('var_values:', VAR_VALUES.vocab.itos[np.array(var_values.data)])
+        print('var_values:', VAR_VALUES.vocab.itos[var_values.data])
         print('ans:', ANS.vocab.itos[np.array(ans.data)])
         print('target:', LABELS.vocab.itos[np.array(target)])
 
