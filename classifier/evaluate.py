@@ -5,6 +5,7 @@ import torch.nn.functional as F
 import numpy as np
 import sys
 from py_expression_eval import Parser
+import re
 
 def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pred_filter=True):
     model.eval()
@@ -47,6 +48,9 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 prediction = prediction.replace(k, var_value[k])
                 tgt = tgt.replace(k, var_value[k])
 
+            # Add multiplication symbols to answer where needed
+            answer = re.sub(r'{\d}(','\1 * (', answer)
+
             # remove = from equations
             prediction = prediction.strip('x =')
             tgt = tgt.strip('x =')
@@ -56,7 +60,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             print('var_value:', var_value)
             print('answer:', answer)
             print()
-            
+
             # evaluate
             prediction = eval(prediction)
             tgt = eval(tgt)
