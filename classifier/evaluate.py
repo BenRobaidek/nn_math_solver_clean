@@ -63,9 +63,11 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             prediction = prediction.strip('x =')
             tgt = tgt.strip('x =')
 
-
             # evaluate
-            prediction = eval(prediction)
+            if not prediction == 'x = 80千米 / 小时':
+                prediction = eval(prediction)
+            else:
+                prediction = None
             tgt = eval(tgt)
             answer = eval(answer)
 
