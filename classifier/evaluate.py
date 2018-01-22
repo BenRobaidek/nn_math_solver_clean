@@ -37,6 +37,8 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         parser = Parser()
         var_values = np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)]
         ans = np.array(ANS.vocab.itos)[np.array(batch.ans.data)]
+        print('ans:', ans)
+        print('var_values:', var_values)
         for i,x in enumerate(ans):
             x = x.replace('%', ' / 100 ')
             try:
