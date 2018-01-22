@@ -56,7 +56,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
 
 
             # Add multiplication symbols to answer where needed
-            answer = re.sub(r'\((\d+)\)/\((\d+)\)',r'(\1/\2)',answer)
+            answer = re.sub(r'\(\((\d+)\)/\((\d+)\)\)',r'(\1/\2)',answer)
             answer = re.sub(r'(\d)\(',r'\1\*\(', answer)
 
             # remove = from equations
