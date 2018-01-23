@@ -40,20 +40,17 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         var_values = np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)]
         answers = np.array(ANS.vocab.itos)[np.array(batch.ans.data)]
         for prediction, tgt, var_value, answer in zip(predictions, targets, var_values, answers):
-
+            print('prediction:', prediction)
+            print('tgt:', tgt)
+            print('var_value:', var_value)
+            print('answer:', answer)
+            print()
             var_value = eval(var_value)
 
             # sub variables into predicted and target equations
             for k in var_value:
                 prediction = prediction.replace(k, var_value[k])
                 tgt = tgt.replace(k, var_value[k])
-
-            print('prediction:', prediction)
-            print('tgt:', tgt)
-            print('var_value:', var_value)
-            print('answer:', answer)
-            print()
-
 
             # Add multiplication symbols to answer where needed
             answer = re.sub(r'\(\((\d+)\)/\((\d+)\)\)',r'(\1/\2)',answer)
@@ -71,6 +68,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 prediction = eval(prediction)
             else:
                 prediction = None
+
             if (not tgt == '<unk>') and (not tgt == 'x = 80千米 / 小时'):
                 tgt = eval(tgt)
             else:
