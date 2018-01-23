@@ -64,8 +64,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             tgt = tgt.strip('x =')
 
             # evaluate
-            if not prediction.strip() == 'x = 80千米 / 小时':
-                print('ENDED UP HERE, WEIRD')
+            if not prediction.strip() == '80千米 / 小时':
                 prediction = eval(prediction)
             else:
                 prediction = None
