@@ -93,7 +93,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             print()
             """
 
-            if (prediction is not None) and (tgt is not None) and (float(prediction) == float(tgt)):
+            if (answer is not None) and (tgt is not None) and (float(answer) == float(tgt)):
                 true_corrects += 1
 
         # Rank 5
