@@ -59,6 +59,9 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             answer = re.sub(r'\(\((\d+)\)/\((\d+)\)\)',r'(\1/\2)',answer)
             answer = re.sub(r'(\d)\(',r'\1*(', answer)
 
+            # replace % in answer
+            answer = answer.replace('%', ' / 100')
+
             # remove = from equations
             prediction = prediction.strip('x =')
             tgt = tgt.strip('x =')
