@@ -65,6 +65,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
 
             # evaluate
             if not prediction.strip() == 'x = 80千米 / 小时':
+                print('ENDED UP HERE, WEIRD')
                 prediction = eval(prediction)
             else:
                 prediction = None
