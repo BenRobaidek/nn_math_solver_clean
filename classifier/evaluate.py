@@ -101,6 +101,8 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                     error = abs((answer - tgt) / tgt)
                     if error <= .02:
                         true_corrects += 1
+                    else:
+                        print(answer, '!=', tgt)
                 except Exception as e:
                     print(e)
 
