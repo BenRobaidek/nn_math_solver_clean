@@ -40,11 +40,14 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         var_values = np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)]
         answers = np.array(ANS.vocab.itos)[np.array(batch.ans.data)]
         for prediction, tgt, var_value, answer in zip(predictions, targets, var_values, answers):
+            """
             print('prediction:', prediction)
             print('tgt:', tgt)
             print('var_value:', var_value)
             print('answer:', answer)
             print()
+            """
+
             var_value = eval(var_value)
 
             # sub variables into predicted and target equations
@@ -82,11 +85,13 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             answer = eval(answer)
 
             # print results
+            """
             print('prediction:', prediction)
             print('tgt:', tgt)
             print('var_value:', var_value)
             print('answer:', answer)
             print()
+            """
 
             if (prediction is not None) and (tgt is not None) and (float(prediction) == float(tgt)):
                 true_corrects += 1
@@ -111,9 +116,9 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
     avg_loss = loss.data[0]/size
     accuracy = 100.0 * corrects/size
     true_acc = 100.0 * true_corrects/size
-    #print('acc:', accuracy)
-    #print('true_acc:', true_acc)
-    #print()
+    print('acc:', accuracy)
+    print('true_acc:', true_acc)
+    print()
     t5_acc = 100.0 * t5_corrects/size
     mrr = rr/size
     model.train()
