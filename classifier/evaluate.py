@@ -101,8 +101,8 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
 
             if (answer is not None) and (tgt is not None):
                 try:
-                    prediction = float(prediction)
-                    tgt = float(tgt)
+                    #prediction = float(prediction)
+                    #tgt = float(tgt)
                     error = abs((prediction - tgt) / tgt)
                     if error <= .02:
                         true_corrects += 1
