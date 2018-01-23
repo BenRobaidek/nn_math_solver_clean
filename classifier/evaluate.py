@@ -99,7 +99,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             print()
 
 
-            if (answer is not None) and (tgt is not None):
+            if (prediction is not None) and (tgt is not None):
                 try:
                     prediction = float(prediction)
                     tgt = float(tgt)
