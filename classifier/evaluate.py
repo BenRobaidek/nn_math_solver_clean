@@ -79,12 +79,13 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 except ZeroDivisionError:
                     print('ZeroDivisionError')
             else:
-                print('Could not run eval(', prediction, ')')
+                #print('Could not run eval(', prediction, ')')
                 prediction = None
 
             if (not tgt == '<unk>') and (not tgt == 'x = 80千米 / 小时'):
                 tgt = eval(tgt)
             else:
+                print('Could not run eval(', prediction, ')')
                 tgt = None
             answer = eval(answer)
 
