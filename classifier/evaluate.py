@@ -100,15 +100,13 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
 
             if (answer is not None) and (tgt is not None):
                 try:
-                    error = abs((answer - tgt) / tgt)
+                    error = abs((prediction - tgt) / tgt)
                     if error <= .02:
                         true_corrects += 1
                     else:
                         print(answer, '!=', tgt)
                 except Exception as e:
                     print(e)
-            else:
-                print('hmmm')
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
