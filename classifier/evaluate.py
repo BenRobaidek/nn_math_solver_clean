@@ -40,7 +40,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         var_values = np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)]
         answers = np.array(ANS.vocab.itos)[np.array(batch.ans.data)]
         for prediction, tgt, var_value, answer in zip(predictions, targets, var_values, answers):
-            
+
             print('prediction:', prediction)
             print('tgt:', tgt)
             print('var_value:', var_value)
@@ -104,6 +104,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                     prediction = float(prediction)
                     tgt = float(tgt)
                     error = abs((prediction - tgt) / tgt)
+                    print('error:', error)
                     if error <= .02:
                         true_corrects += 1
                     else:
