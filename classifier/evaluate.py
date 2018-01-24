@@ -107,6 +107,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                     tgt = float(tgt)
                     error = abs(prediction - tgt)
                     print('error:', error)
+                    print('error <= .05:', error <= .05)
                     if error <= .05:
                         true_corrects += 1
                     else:
