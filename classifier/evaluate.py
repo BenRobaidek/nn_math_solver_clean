@@ -84,7 +84,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                         true_corrects += 1
                 except Exception as e:
                     print(e)
-            predictions_file.write(str(prediction) + '\t' + str(tgt))
+            predictions_file.write(str(prediction) + '\t' + str(tgt) + '\n')
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
