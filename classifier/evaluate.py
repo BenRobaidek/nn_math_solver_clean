@@ -34,6 +34,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         _, preds = torch.max(logit, 1)
         corrects += preds.data.eq(target.data).sum()
 
+        predictions_file = open('./predictions', 'w')
         # True Acc
         predictions = np.array(LABELS.vocab.itos)[np.array(preds.data)]
         targets = np.array(LABELS.vocab.itos)[np.array(batch.label.data)]
@@ -82,7 +83,8 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                         true_corrects += 1
                 except Exception as e:
                     print(e)
-            print('prediction:', prediction)
+            predictions_file.write(prediction)
+        predictions_file.close()
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
