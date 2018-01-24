@@ -50,7 +50,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 tgt = tgt.replace(k, var_value[k])
             # Add multiplication symbols to answer where needed
             answer = re.sub(r'\(\((\d+)\)/\((\d+)\)\)',r'(\1/\2)',answer)
-            answer = re.sub(r'(\d)\(',r'\1*(', answer)
+            answer = re.sub(r'(\d)\(',r'\1+(', answer)
             # replace % in answer
             answer = answer.replace('%', ' / 100')
             # replace ^ with ** in predicted equation
