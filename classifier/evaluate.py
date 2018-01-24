@@ -92,7 +92,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 except Exception as e:
                     print(e)
 
-            if (answer is not None) and (tgt is not None):
+            if (not tgt == '<unk>'):
                 try:
                     error = abs(answer - tgt)
                     if error <= .002:
