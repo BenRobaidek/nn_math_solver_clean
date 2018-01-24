@@ -114,6 +114,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                         print(tgt, '!=', tgt)
                 except Exception as e:
                     print(e)
+        print()
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
