@@ -61,8 +61,10 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             # replace ^ with ** in tgt equation
             tgt = tgt.replace('^', '**')
             print('tgt before:', tgt)
-            tgt = tgt.split()
-            print('tgt before:', tgt)
+            tgt = tgt.split(' / 100')
+            print('tgt mid:', tgt)
+            tgt = ' '.join(tgt)
+            print('tgt after:', tgt)
             # remove = from equations
             prediction = prediction.strip('x =')
             tgt = tgt.strip('x =')
