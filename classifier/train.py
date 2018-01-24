@@ -43,7 +43,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
     VAR_VALUES.build_vocab(val)
     ANS.build_vocab(val)
 
-    torch.save(LABELS, save_path + 'LABELS.pt')
+    torch.save(LABELS.vocab.itos, save_path + 'LABELS_vocab_itos.pt')
 
     snis = [eq.count('[') for eq in LABELS.vocab.itos]
 
