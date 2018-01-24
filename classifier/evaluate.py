@@ -47,7 +47,6 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             print('answer:', answer)
             print()
 
-
             var_value = eval(var_value)
 
             # sub variables into predicted and target equations
@@ -103,9 +102,9 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 try:
                     prediction = float(prediction)
                     tgt = float(tgt)
-                    error = abs((prediction - tgt) / tgt)
+                    error = abs(prediction - tgt)
                     print('error:', error)
-                    if error <= .02:
+                    if error <= .05:
                         true_corrects += 1
                     else:
                         print(tgt, '!=', tgt)
