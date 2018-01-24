@@ -41,11 +41,13 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         answers = np.array(ANS.vocab.itos)[np.array(batch.ans.data)]
         for prediction, tgt, var_value, answer in zip(predictions, targets, var_values, answers):
 
+            """
             print('prediction:', prediction)
             print('tgt:', tgt)
             print('var_value:', var_value)
             print('answer:', answer)
             print()
+            """
 
             var_value = eval(var_value)
 
@@ -91,12 +93,13 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
 
             # print results
 
+            """
             print('prediction:', prediction)
             print('tgt:', tgt)
             print('var_value:', var_value)
             print('answer:', answer)
             print()
-
+            """
 
             if (prediction is not None) and (tgt is not None):
                 try:
