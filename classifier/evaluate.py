@@ -48,11 +48,14 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             for k in var_value:
                 prediction = prediction.replace(k, var_value[k])
                 tgt = tgt.replace(k, var_value[k])
+
             # Add multiplication symbols to answer where needed
             answer = re.sub(r'\(\((\d+)\)/\((\d+)\)\)',r'(\1/\2)',answer)
-            answer = answer.replace(r'(\d)\(',r'\1+(', 1)
+            answer = re.sub(r'(\d)\(',r'\1+(', answer, 1)
             # replace % in answer
-            answer = answer.replace('%', ' / 100')
+            answer = re.sub(r'(\d+)%', float(r'\1') / 100)
+            answer = eval(answer)
+
             # replace ^ with ** in predicted equation
             prediction = prediction.replace('^', '**')
             # replace ^ with ** in tgt equation
@@ -74,7 +77,6 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 tgt = eval(tgt)
             else:
                 tgt = None
-            answer = eval(answer)
 
             if (prediction is not None) and (tgt is not None):
                 try:
