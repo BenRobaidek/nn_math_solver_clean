@@ -71,7 +71,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                     #print('prediction:', prediction)
                     prediction = eval(prediction)
                 except ZeroDivisionError:
-                    print('ZeroDivisionError')
+                    pass
 
             if (tgt == '<unk>'):
                 pass
@@ -90,16 +90,12 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
 
 
             if tgt == '<unk>':
-                print('answer when tgt==<unk>:', answer)
                 answer_correspond_to_equation += 1
             elif (not tgt == '<unk>'):
                 try:
                     error = abs(answer - tgt)
                     if error <= .002:
                         answer_correspond_to_equation += 1
-                    else:
-                        print('answer:', answer)
-                        print('tgt:', tgt)
                 except Exception as e:
                     print(e)
 
