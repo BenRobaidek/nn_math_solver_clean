@@ -312,7 +312,9 @@ def preprocess(question, equation, sni_model, fields, use_sni=True):
 
     # reduce %'s
     #equation = equation.replace('%', ' / 100 ')
-    equation = re.sub(r'(\d+)%', r'(\1 / 100 )', equation)
+    print('equation before:', equation)
+    equation = re.sub(r'(\d*.{0,1}\d+)%', r'(\1 / 100 )', equation)
+    print('equation after:', equation)
 
     # preprocess question
     equation = equation.split()
