@@ -65,6 +65,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             tgt = tgt.strip('x =')
             # evaluate
             prediction = prediction.strip()
+            print('prediction:', prediction)
             if (not prediction == '80千米 / 小时') and (not re.search(r'\[\S\]', prediction)) and (not prediction == '<unk>'):
                 try:
                     prediction = eval(prediction)
