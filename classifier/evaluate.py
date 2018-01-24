@@ -45,7 +45,6 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         eval_preds = ['prediction', 'target']
 
         for prediction, tgt, var_value, answer in zip(predictions, targets, var_values, answers):
-            predictions_file.write(str(tgt) + '\t')
             var_value = eval(var_value)
             # sub variables into predicted and target equations
             for k in var_value:
