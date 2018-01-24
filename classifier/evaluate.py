@@ -45,7 +45,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         eval_preds = ['equation', 'prediction', 'target']
 
         for prediction, tgt, var_value, answer in zip(predictions, targets, var_values, answers):
-            result = prediction
+            result = str(prediction)
             var_value = eval(var_value)
             # sub variables into predicted and target equations
             for k in var_value:
@@ -102,7 +102,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 except Exception as e:
                     #print(e)
                     pass
-            result = result + '\t' + prediction + '\t' + tgt + '\n'
+            result = result + '\t' + str(prediction) + '\t' + str(tgt) + '\n'
             eval_preds = np.append(eval_preds, [result])
 
         # Rank 5
