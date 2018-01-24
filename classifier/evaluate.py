@@ -83,7 +83,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                         true_corrects += 1
                 except Exception as e:
                     print(e)
-            predictions_file.write(prediction)
+            predictions_file.write(str(prediction))
         predictions_file.close()
 
         # Rank 5
