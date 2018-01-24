@@ -131,5 +131,4 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
     t5_acc = 100.0 * t5_corrects/size
     mrr = rr/size
     model.train()
-    predictions_file.close()
     return(avg_loss, accuracy, true_acc, corrects, size, t5_acc, t5_corrects, mrr, eval_preds)
