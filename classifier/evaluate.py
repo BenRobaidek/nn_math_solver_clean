@@ -10,6 +10,7 @@ import re
 def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pred_filter=True):
     model.eval()
     corrects, true_corrects, avg_loss, t5_corrects, rr = 0, 0, 0, 0, 0
+    predictions_file = open('./predictions', 'w')
     for batch_count,batch in enumerate(data_iter):
         inp, target, var_values, ans = batch.text, batch.label, batch.var_values, batch.ans
         inp.data.t_()
@@ -34,7 +35,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         _, preds = torch.max(logit, 1)
         corrects += preds.data.eq(target.data).sum()
 
-        predictions_file = open('./predictions', 'w')
+
         # True Acc
         predictions = np.array(LABELS.vocab.itos)[np.array(preds.data)]
         targets = np.array(LABELS.vocab.itos)[np.array(batch.label.data)]
