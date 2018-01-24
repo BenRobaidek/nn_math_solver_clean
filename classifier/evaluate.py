@@ -9,7 +9,7 @@ import re
 
 def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pred_filter=True):
     model.eval()
-    corrects, true_corrects, avg_loss, t5_corrects, rr = 0, 0, 0, 0, 0
+    corrects, true_corrects, answer_correspond_to_equation, avg_loss, t5_corrects, rr = 0, 0, 0, 0, 0, 0
     predictions_file = open('./predictions', 'w')
     for batch_count,batch in enumerate(data_iter):
         inp, target, var_values, ans = batch.text, batch.label, batch.var_values, batch.ans
@@ -81,10 +81,19 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                     prediction = float(prediction)
                     tgt = float(tgt)
                     error = abs(prediction - tgt)
-                    if error <= .05:
+                    if error <= .002:
                         true_corrects += 1
                 except Exception as e:
                     print(e)
+
+            if (answer is not None) and (tgt is not None):
+                try:
+                    error = abs(answer - tgt)
+                    if error <= .002:
+                        answer_correspond_to_equation += 1
+                except Exception as e:
+                    print(e)
+
             predictions_file.write(str(prediction) + '\t' + str(tgt) + '\n')
 
         # Rank 5
@@ -109,6 +118,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
     true_acc = 100.0 * true_corrects/size
     print('acc:', accuracy)
     print('true_acc:', true_acc)
+    print('answer_correspond_to_equation:', answer_correspond_to_equation/size)
     print()
     t5_acc = 100.0 * t5_corrects/size
     mrr = rr/size
