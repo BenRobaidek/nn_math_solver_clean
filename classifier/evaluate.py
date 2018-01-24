@@ -75,10 +75,12 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             else:
                 prediction = None
 
-            if (not tgt == '<unk>') and (not tgt == 'x = 80千米 / 小时'):
+            if (tgt == '<unk>'):
+                pass
+            elif (not tgt == 'x = 80千米 / 小时'):
                 tgt = eval(tgt)
             else:
-                tgt = None
+                print('WHY WOULD YOU END UP HERE')
 
             if (prediction is not None) and (tgt is not None):
                 try:
