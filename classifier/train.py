@@ -94,15 +94,13 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
                 'pred_filter':pred_filter}
     print('Training:', hyperparams)
     results = []
+
     for epoch in range(epochs):
         tot_loss = 0
         train_iter.repeat=False
         for batch_count,batch in enumerate(train_iter):
             model.zero_grad()
             inp = batch.text.t()
-
-            # Check with Rik about this
-            #inp.requires_grad=True
 
             preds = model(inp)
             loss = criterion(preds, batch.label)

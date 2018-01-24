@@ -40,39 +40,23 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         var_values = np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)]
         answers = np.array(ANS.vocab.itos)[np.array(batch.ans.data)]
         for prediction, tgt, var_value, answer in zip(predictions, targets, var_values, answers):
-
-            """
-            print('prediction:', prediction)
-            print('tgt:', tgt)
-            print('var_value:', var_value)
-            print('answer:', answer)
-            print()
-            """
-
             var_value = eval(var_value)
-
             # sub variables into predicted and target equations
             for k in var_value:
                 prediction = prediction.replace(k, var_value[k])
                 tgt = tgt.replace(k, var_value[k])
-
             # Add multiplication symbols to answer where needed
             answer = re.sub(r'\(\((\d+)\)/\((\d+)\)\)',r'(\1/\2)',answer)
             answer = re.sub(r'(\d)\(',r'\1*(', answer)
-
             # replace % in answer
             answer = answer.replace('%', ' / 100')
-
             # replace ^ with ** in predicted equation
             prediction = prediction.replace('^', '**')
-
             # replace ^ with ** in tgt equation
             tgt = tgt.replace('^', '**')
-
             # remove = from equations
             prediction = prediction.strip('x =')
             tgt = tgt.strip('x =')
-
             # evaluate
             prediction = prediction.strip()
             if (not prediction == '80千米 / 小时') and (not re.search(r'\[\S\]', prediction)) and (not prediction == '<unk>'):
@@ -81,25 +65,13 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 except ZeroDivisionError:
                     print('ZeroDivisionError')
             else:
-                #print('Could not run eval(', prediction, ')')
                 prediction = None
 
             if (not tgt == '<unk>') and (not tgt == 'x = 80千米 / 小时'):
                 tgt = eval(tgt)
             else:
-                #print('Could not run eval(', tgt, ')')
                 tgt = None
             answer = eval(answer)
-
-            # print results
-
-            """
-            print('prediction:', prediction)
-            print('tgt:', tgt)
-            print('var_value:', var_value)
-            print('answer:', answer)
-            print()
-            """
 
             if (prediction is not None) and (tgt is not None):
                 try:
@@ -110,6 +82,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                         true_corrects += 1
                 except Exception as e:
                     print(e)
+            print('prediction:', prediction)
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
