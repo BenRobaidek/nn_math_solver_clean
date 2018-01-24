@@ -53,7 +53,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             answer = re.sub(r'\(\((\d+)\)/\((\d+)\)\)',r'(\1/\2)',answer)
             answer = re.sub(r'(\d)\(',r'\1+(', answer, 1)
             # replace % in answer
-            answer = re.sub(r'(\d+)%', float(r'\1') / 100)
+            answer = re.sub(r'(\d+)%', str(float(r'\1') / 100), answer)
             answer = eval(answer)
 
             # replace ^ with ** in predicted equation
