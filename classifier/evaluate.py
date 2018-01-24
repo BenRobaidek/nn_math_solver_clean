@@ -86,8 +86,8 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                     if error <= .002:
                         true_corrects += 1
                 except Exception as e:
-                    print(e)
-
+                    #print(e)
+                    pass
 
             if tgt == '<unk>':
                 answer_correspond_to_equation += 1
@@ -97,7 +97,8 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                     if error <= .002:
                         answer_correspond_to_equation += 1
                 except Exception as e:
-                    print(e)
+                    #print(e)
+                    pass
 
             predictions_file.write(str(prediction) + '\t' + str(tgt) + '\n')
 
