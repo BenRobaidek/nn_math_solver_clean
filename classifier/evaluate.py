@@ -72,17 +72,13 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                     prediction = eval(prediction)
                 except ZeroDivisionError:
                     print('ZeroDivisionError')
-            else:
-                prediction = None
 
             if (tgt == '<unk>'):
                 pass
             elif (not tgt == 'x = 80千米 / 小时'):
                 tgt = eval(tgt)
-            else:
-                print('WHY WOULD YOU END UP HERE')
 
-            if (prediction is not None) and (tgt is not None):
+            if (prediction is not ) and (tgt is not None):
                 try:
                     prediction = float(prediction)
                     tgt = float(tgt)
@@ -92,7 +88,9 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 except Exception as e:
                     print(e)
 
-            if (not tgt == '<unk>'):
+            if tgt == '<unk>':
+                print('answer when tgt==<unk>:', answer)
+            elif (not tgt == '<unk>'):
                 try:
                     error = abs(answer - tgt)
                     if error <= .002:
