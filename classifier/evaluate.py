@@ -85,7 +85,6 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 except Exception as e:
                     print(e)
             predictions_file.write(str(prediction))
-        predictions_file.close()
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
@@ -113,4 +112,5 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
     t5_acc = 100.0 * t5_corrects/size
     mrr = rr/size
     model.train()
+    predictions_file.close()
     return(avg_loss, accuracy, true_acc, corrects, size, t5_acc, t5_corrects, mrr)
