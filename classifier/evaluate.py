@@ -68,6 +68,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
 
             if (not prediction == '80千米 / 小时') and (not re.search(r'\[\S\]', prediction)) and (not prediction == '<unk>'):
                 try:
+                    print('prediction:', prediction)
                     prediction = eval(prediction)
                 except ZeroDivisionError:
                     print('ZeroDivisionError')
