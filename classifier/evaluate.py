@@ -42,9 +42,10 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         var_values = np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)]
         answers = np.array(ANS.vocab.itos)[np.array(batch.ans.data)]
 
-        eval_preds = ['prediction', 'target']
+        eval_preds = ['equation', 'prediction', 'target']
 
         for prediction, tgt, var_value, answer in zip(predictions, targets, var_values, answers):
+            result = prediction
             var_value = eval(var_value)
             # sub variables into predicted and target equations
             for k in var_value:
@@ -101,8 +102,8 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 except Exception as e:
                     #print(e)
                     pass
-
-            eval_preds = np.append(eval_preds, [prediction, tgt])
+            result = result + '\t' + prediction + '\t' + tgt + '\n'
+            eval_preds = np.append(eval_preds, [result])
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
