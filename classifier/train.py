@@ -43,6 +43,8 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
     VAR_VALUES.build_vocab(val)
     ANS.build_vocab(val)
 
+    torch.save(LABELS, save_path + 'LABELS.pt')
+
     snis = [eq.count('[') for eq in LABELS.vocab.itos]
 
     train_iter, val_iter, test_iter = data.BucketIterator.splits(
