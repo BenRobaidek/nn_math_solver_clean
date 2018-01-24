@@ -78,7 +78,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             elif (not tgt == 'x = 80千米 / 小时'):
                 tgt = eval(tgt)
 
-            if (prediction is not ) and (tgt is not None):
+            if (not prediction == '<unk>') and (not tgt == '<unk>'):
                 try:
                     prediction = float(prediction)
                     tgt = float(tgt)
@@ -88,8 +88,10 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 except Exception as e:
                     print(e)
 
+
             if tgt == '<unk>':
                 print('answer when tgt==<unk>:', answer)
+                answer_correspond_to_equation += 1
             elif (not tgt == '<unk>'):
                 try:
                     error = abs(answer - tgt)
