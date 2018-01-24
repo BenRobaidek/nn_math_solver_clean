@@ -87,7 +87,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             if (not tgt == '<unk>') and (not tgt == 'x = 80千米 / 小时'):
                 tgt = eval(tgt)
             else:
-                print('Could not run eval(', tgt, ')')
+                #print('Could not run eval(', tgt, ')')
                 tgt = None
             answer = eval(answer)
 
@@ -106,15 +106,10 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                     prediction = float(prediction)
                     tgt = float(tgt)
                     error = abs(prediction - tgt)
-                    print('error:', error)
-                    print('error <= .05:', error <= .05)
                     if error <= .05:
                         true_corrects += 1
-                    else:
-                        print(prediction, '!=', tgt)
                 except Exception as e:
                     print(e)
-        print()
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
