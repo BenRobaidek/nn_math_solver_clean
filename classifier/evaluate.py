@@ -10,7 +10,7 @@ import re
 def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pred_filter=True):
     model.eval()
     corrects, true_corrects, answer_correspond_to_equation, avg_loss, t5_corrects, rr = 0, 0, 0, 0, 0, 0
-    predictions_file = open('./predictions', 'w')
+
     for batch_count,batch in enumerate(data_iter):
         inp, target, var_values, ans = batch.text, batch.label, batch.var_values, batch.ans
         inp.data.t_()
@@ -41,6 +41,9 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         targets = np.array(LABELS.vocab.itos)[np.array(batch.label.data)]
         var_values = np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)]
         answers = np.array(ANS.vocab.itos)[np.array(batch.ans.data)]
+
+        eval_preds = ['prediction', 'target']
+
         for prediction, tgt, var_value, answer in zip(predictions, targets, var_values, answers):
             predictions_file.write(str(tgt) + '\t')
             var_value = eval(var_value)
@@ -100,7 +103,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                     #print(e)
                     pass
 
-            predictions_file.write(str(prediction) + '\t' + str(tgt) + '\n')
+            eval_preds = np.append(eval_preds, [prediction, tgt])
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
@@ -130,4 +133,4 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
     mrr = rr/size
     model.train()
     predictions_file.close()
-    return(avg_loss, accuracy, true_acc, corrects, size, t5_acc, t5_corrects, mrr)
+    return(avg_loss, accuracy, true_acc, corrects, size, t5_acc, t5_corrects, mrr, eval_preds)

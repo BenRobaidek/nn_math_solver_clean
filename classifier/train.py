@@ -95,6 +95,9 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
     print('Training:', hyperparams)
     results = []
 
+    best_true_acc = 0
+    predictions_file = open(save_path + './predictions.txt', 'w')
+
     for epoch in range(epochs):
         tot_loss = 0
         train_iter.repeat=False
@@ -108,7 +111,13 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
             optimizer.step()
             tot_loss += loss.data[0]
 
-        (avg_loss, accuracy, true_acc, corrects, size, t5_acc, t5_corrects, mrr) = evaluate(val_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pred_filter=pred_filter)
+        (avg_loss, accuracy, true_acc, corrects, size, t5_acc, t5_corrects, mrr, eval_preds) = evaluate(val_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pred_filter=pred_filter)
+
+
+        # save best preds file
+        if true_acc > best_true_acc:
+            for line in eval_preds:
+                predictions_file.write(line)
 
         if save:
             if not os.path.isdir(save_path):
@@ -126,3 +135,4 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
     print('Best Accuracy:', np.sort([i['accuracy'] for i in results])[-1])
     print('Best True Accuracy:', np.sort([i['true_acc'] for i in results])[-1])
     return results
+    predictions_file.close()
