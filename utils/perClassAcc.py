@@ -11,13 +11,13 @@ def main(args):
     predictions = open('../classifier/predictions.txt').readlines()
     dictionary = {}
     for eq in itos:
-        dictionary[eq] = [0,0]
+        dictionary[eq] = None
     for line in predictions:
         eq, prediction, target = line.split('\t')
+        if dictionary.get(eq) == None:
+            dictionary[eq] == [0,0]
         if isFloat(prediction): prediction = float(prediction)
         if isFloat(target): target = float(target)
-        print('eq:', eq)
-        print('type(eq):',type(eq))
         if isFloat(prediction) and isFloat(target) and abs(prediction - target) <= .002:
             #print('type(dictionary):', type(dictionary))
             #print('dictionary.get(eq) BEFORE',dictionary.get(eq))
