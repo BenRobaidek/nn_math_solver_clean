@@ -28,7 +28,7 @@ def main(args):
         if isFloat(target): target = float(target)
         if isFloat(prediction) and isFloat(target) and abs(prediction - target) <= .002:
             right += 1
-        else
+        else:
             wrong += 1
 
     print(results)
