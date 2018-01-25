@@ -11,7 +11,7 @@ def main(args):
     perClassAcc_dict = {}
     for eq in itos:
         if perClassAcc_dict.get(eq) == None:
-            perClassAcc_dict[eq] == [0,0]
+            perClassAcc_dict[eq] == 0
 
     for k in perClassAcc_dict.keys():
         print(k, perClassAcc.get(k))
