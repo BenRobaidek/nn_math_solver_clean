@@ -15,9 +15,9 @@ def main(args):
     for line in predictions:
         eq, prediction, target = line.split('\t')
         if abs(prediction - target) <= .002:
-            dictionary.get(eq) = np.sum(dictionary.get(eq), [1,0]
+            dictionary.get(eq) = np.sum(dictionary.get(eq), [1,0])
         else:
-            dictionary.get(eq) = np.sum(dictionary.get(eq), [0,1]
+            dictionary.get(eq) = np.sum(dictionary.get(eq), [0,1])
     for k in dictionary.keys():
         print(k, dictionary.get(k))
 
