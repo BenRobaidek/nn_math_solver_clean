@@ -41,10 +41,10 @@ def main(args):
         if right == -1 or wrong == -1:
             right == None
             wrong == None
-            line[2] = 'NA'
+            line[3] = 'NA'
         else:
-            line[2] = right/(right+wrong)
-    
+            line[3] = right/(right+wrong)
+
     print(all_results)
 
 def isFloat(f):
