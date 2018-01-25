@@ -38,7 +38,12 @@ def main(args):
     all_results = all_results.reshape(len(itos), -1)
     for line in all_results:
         eq, right, wrong = line[0], line[1], line[2]
-        print(eq, right, wrong)
+        if right == -1 or wrong == -1:
+            right == None
+            wrong == None
+        print(eq, right/(right+wrong))
+
+
 
     #print(all_results)
 
