@@ -50,7 +50,7 @@ def main(args):
 
     all_results = sorted(all_results, key=lambda x: x[3], reverse=True)
     for line in all_results:
-        perClassAcc_file.write(line[0], 'true_acc:', line[3], '({}/{})'.format(line[1],line[1]+line[2]))
+        perClassAcc_file.write('' + line[0] + 'true_acc:' + line[3] + '({}/{})'.format(line[1],line[1]+line[2]))
     perClassAcc_file.close()
 
 def isFloat(f):
