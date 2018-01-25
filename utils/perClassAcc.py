@@ -14,8 +14,10 @@ def main(args):
         dictionary[eq] = None
     for line in predictions:
         eq, prediction, target = line.split('\t')
+        print('dictionary.get(eq):', dictionary.get(eq))
         if dictionary.get(eq) == None:
             dictionary[eq] == [0,0]
+            print('dictionary.get(eq):', dictionary.get(eq))
         if isFloat(prediction): prediction = float(prediction)
         if isFloat(target): target = float(target)
         print('eq:', eq)
