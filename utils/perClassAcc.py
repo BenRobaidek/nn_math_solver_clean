@@ -20,9 +20,10 @@ def main(args):
         print('type(eq):',type(eq))
         if isFloat(prediction) and isFloat(target) and abs(prediction - target) <= .002:
             print('type(dictionary):', type(dictionary))
-            print('dictionary.get(eq)',dictionary.get(eq))
+            print('dictionary.get(eq) BEFORE',dictionary.get(eq))
             print('np.add(dictionary.get(eq), [1,0])',np.add(dictionary.get(eq), [1,0]))
             dictionary[eq] = np.add(dictionary.get(eq), [1,0])
+            print('dictionary.get(eq) AFTER',dictionary.get(eq))
         else:
             print('type(dictionary):', type(dictionary))
             dictionary[eq] = np.add(dictionary.get(eq), [0,1])
