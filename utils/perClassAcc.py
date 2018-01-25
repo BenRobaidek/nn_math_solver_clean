@@ -35,8 +35,14 @@ def main(args):
     #print(results)
     print('len(itos):', np.unique(len(itos)))
 
-    for eq, [right, wrong] in zip(itos, results):
-        print(eq, right, wrong)
+    all_results = [eq, right, wrong for eq, [right, wrong] in zip(itos, results)]
+    for eq, right, wrong in all_results:
+        if right == -1: right = None
+        if wrong == -1: wrong = None
+
+    print(all_results)
+    #all_results = all_results.sort(key=lambda x: x[1] / x[2])
+
 
 def isFloat(f):
     try:
