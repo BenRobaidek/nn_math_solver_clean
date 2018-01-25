@@ -13,7 +13,7 @@ def main(args):
     #for eq in itos:
     #    print(eq)
 
-    results = np.ones([len(itos),2])
+    results = np.ones([len(itos),3])
     results = -1 * results
 
     for line in predictions:
@@ -33,21 +33,19 @@ def main(args):
     print('len(itos):', np.unique(len(itos)))
 
     all_results = []
-    for eq, right, wrong in zip(itos, results[:,0], results[:,1]):
-        all_results = np.append(all_results, [eq, right, wrong], axis=0)
+    for eq, right, wrong, acc in zip(itos, results[:,0], results[:,1], results[:,2]):
+        all_results = np.append(all_results, [eq, right, wrong, acc], axis=0)
     all_results = all_results.reshape(len(itos), -1)
     for line in all_results:
         eq, right, wrong = line[0], float(line[1]), float(line[2])
         if right == -1 or wrong == -1:
             right == None
             wrong == None
-            print(eq, 'NA')
+            line[2] = 'NA'
         else:
-            print(eq, right/(right+wrong))
-
-
-
-    #print(all_results)
+            line[2] = right/(right+wrong)
+    
+    print(all_results)
 
 def isFloat(f):
     try:
