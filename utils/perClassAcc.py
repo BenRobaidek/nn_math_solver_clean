@@ -12,7 +12,9 @@ def main(args):
     dictionary = {}
     for eq in itos:
         dictionary[eq] = [0,0]
+    for eq, prediction, target in zip(predictions.split('\t')):
         print(eq)
+
 
 def parseArgs():
     parser = argparse.ArgumentParser(description='test')
