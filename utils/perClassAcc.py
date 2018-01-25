@@ -31,7 +31,9 @@ def main(args):
         else:
             wrong += 1
 
-    print(results)
+    for line in results:
+        print(line)
+    #print(results)
     print('len(itos):', np.unique(len(itos)))
 
     """
