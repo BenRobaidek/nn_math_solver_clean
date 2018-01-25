@@ -18,6 +18,7 @@ def main(args):
 
     for line in predictions:
         equation, prediction, target = line.split('\t')
+        print(results[itos.index(equation),:])
 
     print('len(itos):', np.unique(len(itos)))
 
