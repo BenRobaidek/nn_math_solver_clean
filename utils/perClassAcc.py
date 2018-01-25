@@ -45,6 +45,7 @@ def main(args):
         else:
             line[3] = right/(right+wrong)
 
+    all_results = sorted(all_results, key=lambda x: x[3])
     print(all_results)
 
 def isFloat(f):
