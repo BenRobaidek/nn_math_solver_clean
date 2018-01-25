@@ -12,11 +12,12 @@ def main(args):
     dictionary = {}
     for eq in itos:
         dictionary[eq] = None
+    print('len(itos):', len(itos))
     for line in predictions:
         eq, prediction, target = line.split('\t')
         print('dictionary.get(eq):', dictionary.get(eq))
-        if dictionary.get(str(eq)) == None:
-            dictionary[str(eq)] == [0,0]
+        if dictionary.get(eq) == None:
+            dictionary[eq] == [0,0]
             print('dictionary[eq]:', dictionary[eq])
         if isFloat(prediction): prediction = float(prediction)
         if isFloat(target): target = float(target)
