@@ -35,6 +35,7 @@ def main(args):
     all_results = []
     for eq, right, wrong in zip(itos, results[:,0], results[:,1]):
         all_results = np.append(all_results, [eq, right, wrong], axis=0)
+    all_results = all_results.reshape(len(itos), -1)
     print(all_results)
 
 def isFloat(f):
