@@ -8,13 +8,8 @@ def main(args):
     Compute/print per class accuracy
     """
     itos = torch.load('../classifier/LABELS_vocab_itos.pt')
-    perClassAcc_dict = {}
     for eq in itos:
-        if perClassAcc_dict.get(eq) == None:
-            perClassAcc_dict[eq] == 0
-
-    for k in perClassAcc_dict.keys():
-        print(k, perClassAcc.get(k))
+        print(eq)
 
 def parseArgs():
     parser = argparse.ArgumentParser(description='test')
