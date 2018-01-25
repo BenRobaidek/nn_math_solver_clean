@@ -45,7 +45,7 @@ def main(args):
         else:
             line[3] = right/(right+wrong)
 
-    all_results = sorted(all_results, key=lambda x: x[3])
+    all_results = sorted(all_results, key=lambda x: x[3], reverse=True)
     for line in all_results:
         print(line[0], 'true_acc:', line[3], '({}/{})'.format(line[1],line[1]+line[2]))
 
