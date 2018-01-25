@@ -12,7 +12,8 @@ def main(args):
     dictionary = {}
     for eq in itos:
         dictionary[eq] = [0,0]
-    for eq, prediction, target in zip(predictions.split('\t')):
+    for line in predictions:
+        eq, prediction, target = line.split('\t')
         print(eq)
 
 
