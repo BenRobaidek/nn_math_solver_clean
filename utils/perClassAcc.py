@@ -40,7 +40,7 @@ def main(args):
     for line in all_results:
         line[1] = float(line[1])
         line[2] = float(line[2])
-        eq, right, wrong = line[0], line[1], line[2]
+        eq, right, wrong = line[0], float(line[1]), float(line[2])
         if right == -1 or wrong == -1:
             right == None
             wrong == None
@@ -52,7 +52,7 @@ def main(args):
     for line in all_results:
         perClassAcc_file.write(line[0], 'true_acc:', line[3], '({}/{})'.format(line[1],line[1]+line[2]))
     perClassAcc_file.close()
-    
+
 def isFloat(f):
     try:
         float(f)
