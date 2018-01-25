@@ -13,6 +13,7 @@ def main(args):
     for eq in itos:
         dictionary[eq] = None
     print('len(itos):', len(itos))
+    print('itos:', itos)
     for line in predictions:
         eq, prediction, target = line.split('\t')
         print('dictionary.get(eq):', dictionary.get(eq))
