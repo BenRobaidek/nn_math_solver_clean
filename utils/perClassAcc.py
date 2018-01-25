@@ -14,13 +14,21 @@ def main(args):
         dictionary[eq] = [0,0]
     for line in predictions:
         eq, prediction, target = line.split('\t')
-        if abs(prediction - target) <= .002:
+        if isFloat(prediction): prediction = float(prediction)
+        if isFloat(target): target = float(target)
+        if isFloat(prediction) and isFloat(target) and abs(prediction - target) <= .002:
             dictionary[eq] = np.sum(dictionary.get(eq), [1,0])
         else:
             dictionary[eq] = np.sum(dictionary.get(eq), [0,1])
     for k in dictionary.keys():
         print(k, dictionary.get(k))
 
+def isFloat(f):
+    try:
+        float(f)
+        return True
+    except Exception as e:
+        False
 
 def parseArgs():
     parser = argparse.ArgumentParser(description='test')
