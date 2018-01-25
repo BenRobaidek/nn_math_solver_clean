@@ -35,8 +35,9 @@ def main(args):
     #print(results)
     print('len(itos):', np.unique(len(itos)))
 
+    all_results = []
     for eq, right, wrong in zip(itos, results[:,0], results[:,1]):
-        print(eq, right, wrong)
+        all_results = all_reults.append([eq, right, wrong], axis=0)
 
 def isFloat(f):
     try:
