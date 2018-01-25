@@ -18,8 +18,10 @@ def main(args):
         if isFloat(target): target = float(target)
         print('eq:', eq)
         if isFloat(prediction) and isFloat(target) and abs(prediction - target) <= .002:
+            print('type(dictionary):', type(dictionary))
             dictionary[eq] = np.sum(dictionary.get(eq), [1,0])
         else:
+            print('type(dictionary):', type(dictionary))
             dictionary[eq] = np.sum(dictionary.get(eq), [0,1])
     for k in dictionary.keys():
         print(k, dictionary.get(k))
