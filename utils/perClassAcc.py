@@ -8,7 +8,10 @@ def main(args):
     Compute/print per class accuracy
     """
     itos = torch.load('../classifier/LABELS_vocab_itos.pt')
+    predictions = open('../classifier/predictions.txt').readlines()
+    dictionary = {}
     for eq in itos:
+        dictionary[eq] = 0
         print(eq)
 
 def parseArgs():
