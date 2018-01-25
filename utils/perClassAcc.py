@@ -10,8 +10,8 @@ def main(args):
     itos = torch.load('../classifier/LABELS_vocab_itos.pt')
     predictions = open('../classifier/predictions.txt').readlines()
 
-    #for eq in itos:
-
+    for eq in itos:
+        print(eq)
     #    dictionary[eq] = None
     print('len(itos):', np.unique(len(itos)))
 
