@@ -10,7 +10,7 @@ def main(args):
     itos = torch.load('../classifier/LABELS_vocab_itos.pt')
     perClassAcc_dict = {}
     for eq in itos:
-            perClassAcc_dict[eq] == {'right':0, 'wrong':0}
+            perClassAcc_dict[str(eq)] == {'right':0, 'wrong':0}
 
     for k in perClassAcc_dict.keys():
         print(k, perClassAcc.get(k))
