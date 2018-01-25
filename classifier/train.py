@@ -98,7 +98,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
     results = []
 
     best_true_acc = 0
-    predictions_file = open(save_path + './predictions.txt', 'w')
+    predictions_file = open(save_path + './predictions.txt', 'w+')
 
     for epoch in range(epochs):
         tot_loss = 0
