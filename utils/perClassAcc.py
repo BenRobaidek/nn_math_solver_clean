@@ -17,7 +17,7 @@ def main(args):
         print('dictionary.get(eq):', dictionary.get(eq))
         if dictionary.get(eq) == None:
             dictionary[eq] == [0,0]
-            print('dictionary.get(eq):', dictionary.get(eq))
+            print('dictionary[eq]:', dictionary[eq])
         if isFloat(prediction): prediction = float(prediction)
         if isFloat(target): target = float(target)
         print('eq:', eq)
