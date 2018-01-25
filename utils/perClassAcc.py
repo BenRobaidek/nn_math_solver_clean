@@ -41,8 +41,9 @@ def main(args):
         if right == -1 or wrong == -1:
             right == None
             wrong == None
-        print('type(right)',type(right))
-        print(eq, right/(right+wrong))
+            print(eq, 'NA')
+        else:
+            print(eq, right/(right+wrong))
 
 
 
