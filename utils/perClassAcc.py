@@ -9,6 +9,7 @@ def main(args):
     """
     itos = torch.load('../classifier/LABELS_vocab_itos.pt')
     predictions = open('../classifier/predictions.txt').readlines()
+    perClassAcc_file = open('../classifier/perClassAcc.txt', 'w')
 
     #for eq in itos:
     #    print(eq)
@@ -30,7 +31,7 @@ def main(args):
         else:
             results[itos.index(equation),1] += 1
 
-    print('len(itos):', np.unique(len(itos)))
+    #print('len(itos):', np.unique(len(itos)))
 
     all_results = []
     for eq, right, wrong, acc in zip(itos, results[:,0], results[:,1], results[:,2]):
@@ -49,8 +50,9 @@ def main(args):
 
     all_results = sorted(all_results, key=lambda x: x[3], reverse=True)
     for line in all_results:
-        print(line[0], 'true_acc:', line[3], '({}/{})'.format(line[1],line[1]+line[2]))
-
+        perClassAcc_file.write(line[0], 'true_acc:', line[3], '({}/{})'.format(line[1],line[1]+line[2]))
+    perClassAcc_file.close()
+    
 def isFloat(f):
     try:
         float(f)
