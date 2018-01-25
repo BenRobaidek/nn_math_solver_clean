@@ -54,8 +54,7 @@ def main(args):
     perClassAcc_file.close()
 
     all_results = np.array(all_results)
-    print('type(all_results):', type(all_results))
-    print('Val Acc:', all_results[:,:])
+    print('Val Acc:', np.sum(all_results[:,1]) / (np.sum(all_results[:,1]) + np.sum(all_results[:,2])))
 
 def isFloat(f):
     try:
