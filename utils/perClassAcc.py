@@ -20,6 +20,7 @@ def main(args):
         print('type(eq):',type(eq))
         if isFloat(prediction) and isFloat(target) and abs(prediction - target) <= .002:
             print('type(dictionary):', type(dictionary))
+            print('dictionary.get(eq)',dictionary.get(eq))
             dictionary[eq] = np.sum(dictionary.get(eq), [1,0])
         else:
             print('type(dictionary):', type(dictionary))
