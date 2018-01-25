@@ -10,7 +10,7 @@ def main(args):
     itos = torch.load('../classifier/LABELS_vocab_itos.pt')
     perClassAcc_dict = {}
     for eq in itos:
-        if perClassAcc.get(eq) = None:
+        if perClassAcc.get(eq) == None:
             print('havent loaded yet')
 
     for k in perClassAcc_dict.keys():
