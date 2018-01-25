@@ -37,7 +37,7 @@ def main(args):
         all_results = np.append(all_results, [eq, right, wrong], axis=0)
     all_results = all_results.reshape(len(itos), -1)
     for line in all_results:
-        eq, right, wrong = line[0], line[1], line[2]
+        eq, right, wrong = line[0], float(line[1]), float(line[2])
         if right == -1 or wrong == -1:
             right == None
             wrong == None
