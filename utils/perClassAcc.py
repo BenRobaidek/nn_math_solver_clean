@@ -47,7 +47,7 @@ def main(args):
 
     all_results = sorted(all_results, key=lambda x: x[3])
     for line in all_results:
-        print(line)
+        print(line[0], 'true_acc:', line[3], '({}/{})'.format(line[1],line[1]+line[2]))
 
 def isFloat(f):
     try:
