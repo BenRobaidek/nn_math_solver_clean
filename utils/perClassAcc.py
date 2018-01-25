@@ -9,27 +9,12 @@ def main(args):
     """
     itos = torch.load('../classifier/LABELS_vocab_itos.pt')
     predictions = open('../classifier/predictions.txt').readlines()
-    dictionary = {}
-    for eq in itos:
-        dictionary[eq] = None
-    print('len(itos):', len(itos))
-    print('itos:', itos)
-    for line in predictions:
-        eq, prediction, target = line.split('\t')
-        print('dictionary.get(eq):', dictionary.get(eq))
-        if dictionary.get(eq) == None:
-            dictionary[eq] == [0,0]
-            print('dictionary[eq]:', dictionary[eq])
-        if isFloat(prediction): prediction = float(prediction)
-        if isFloat(target): target = float(target)
-        print('eq:', eq)
-        if isFloat(prediction) and isFloat(target) and abs(prediction - target) <= .002:
-            print('dictionary.get(eq):', dictionary.get(eq))
-            print('dictionary[eq]:', dictionary[eq])
-            dictionary[eq] = np.add(dictionary.get(eq), [1,0])
-        else:
-            #print('type(dictionary):', type(dictionary))
-            dictionary[eq] = np.add(dictionary.get(eq), [0,1])
+
+    #for eq in itos:
+
+    #    dictionary[eq] = None
+    print('len(itos):', np.unique(len(itos)))
+
     for k in dictionary.keys():
         true_acc = dictionary.get(k)[0] / (dictionary.get(k)[0] + dictionary.get(k)[1])
         print(k, 'true acc:', true_acc)
