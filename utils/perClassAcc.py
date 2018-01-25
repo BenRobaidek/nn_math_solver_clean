@@ -11,7 +11,7 @@ def main(args):
     predictions = open('../classifier/predictions.txt').readlines()
     dictionary = {}
     for eq in itos:
-        dictionary[eq] = 0
+        dictionary[eq] = [0,0]
         print(eq)
 
 def parseArgs():
