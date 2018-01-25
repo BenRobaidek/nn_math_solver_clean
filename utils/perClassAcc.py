@@ -35,11 +35,8 @@ def main(args):
     #print(results)
     print('len(itos):', np.unique(len(itos)))
 
-    """
-    for k in dictionary.keys():
-        true_acc = dictionary.get(k)[0] / (dictionary.get(k)[0] + dictionary.get(k)[1])
-        print(k, 'true acc:', true_acc)
-    """
+    for i,eq in enumerate(itos):
+        print(eq, results[i,0], results[i,1])
 
 def isFloat(f):
     try:
