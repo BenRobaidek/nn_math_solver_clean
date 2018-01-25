@@ -20,6 +20,7 @@ def main(args):
         if isFloat(target): target = float(target)
         if isFloat(prediction) and isFloat(target) and abs(prediction - target) <= .002:
             print('dictionary.get(eq):', dictionary.get(eq))
+            print('dictionary.[eq]:', dictionary[eq])
             dictionary[eq] = np.add(dictionary.get(eq), [1,0])
         else:
             #print('type(dictionary):', type(dictionary))
