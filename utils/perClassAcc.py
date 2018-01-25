@@ -30,14 +30,12 @@ def main(args):
         else:
             results[itos.index(equation),1] += 1
 
-    for line in results:
-        print(line)
-    #print(results)
     print('len(itos):', np.unique(len(itos)))
 
     all_results = []
     for eq, right, wrong in zip(itos, results[:,0], results[:,1]):
         all_results = np.append(all_results, [eq, right, wrong], axis=0)
+    print(all_results)
 
 def isFloat(f):
     try:
