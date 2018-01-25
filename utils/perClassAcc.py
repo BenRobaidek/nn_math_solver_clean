@@ -20,8 +20,7 @@ def main(args):
         equation, prediction, target = line.split('\t')
 
 
-        if results[itos.index(equation),0] == -1 or
-                results[itos.index(equation),1] == -1:
+        if results[itos.index(equation),0] == -1 or results[itos.index(equation),1] == -1:
             results[itos.index(equation),0] = 0
             results[itos.index(equation),1] = 0
         if isFloat(prediction): prediction = float(prediction)
