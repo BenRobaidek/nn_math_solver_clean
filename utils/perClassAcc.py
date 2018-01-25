@@ -16,6 +16,7 @@ def main(args):
         eq, prediction, target = line.split('\t')
         if isFloat(prediction): prediction = float(prediction)
         if isFloat(target): target = float(target)
+        print('eq:', eq)
         if isFloat(prediction) and isFloat(target) and abs(prediction - target) <= .002:
             dictionary[eq] = np.sum(dictionary.get(eq), [1,0])
         else:
