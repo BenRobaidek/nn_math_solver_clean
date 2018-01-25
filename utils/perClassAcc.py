@@ -10,28 +10,25 @@ def main(args):
     itos = torch.load('../classifier/LABELS_vocab_itos.pt')
     predictions = open('../classifier/predictions.txt').readlines()
 
-    for eq in itos:
-        print(eq)
+    #for eq in itos:
+    #    print(eq)
 
     results = np.ones([len(itos),2])
     results = -1 * results
 
     for line in predictions:
         equation, prediction, target = line.split('\t')
-        right = results[itos.index(equation),0]
-        wrong = results[itos.index(equation),1]
+
+
         if right == -1 or wrong == -1:
-            right = 0
-            wrong = 0
-            # make sure this updates asarray
+            results[itos.index(equation),0] = 0
+            results[itos.index(equation),1] = 0
         if isFloat(prediction): prediction = float(prediction)
         if isFloat(target): target = float(target)
         if isFloat(prediction) and isFloat(target) and abs(prediction - target) <= .002:
-            right += 1
+            results[itos.index(equation),0] += 1
         else:
-            wrong += 1
-        results[itos.index(equation),0] = right
-        results[itos.index(equation),0] = wrong
+            results[itos.index(equation),1] += 1
 
     for line in results:
         print(line)
