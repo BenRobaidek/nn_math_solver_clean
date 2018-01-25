@@ -28,7 +28,8 @@ def main(args):
             #print('type(dictionary):', type(dictionary))
             dictionary[eq] = np.add(dictionary.get(eq), [0,1])
     for k in dictionary.keys():
-        print(k, dictionary.get(k))
+        true_acc = dictionary.get(k)[0] / (dictionary.get(k)[0] + dictionary.get(k)[1])
+        print(k, 'true acc:', true_acc)
 
 def isFloat(f):
     try:
