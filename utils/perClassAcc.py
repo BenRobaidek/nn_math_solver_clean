@@ -18,8 +18,20 @@ def main(args):
 
     for line in predictions:
         equation, prediction, target = line.split('\t')
-        print(results[itos.index(equation),:])
+        right = results[itos.index(equation),0]
+        wrong = results[itos.index(equation),1]
+        if right == -1 or wrong == -1:
+            right = 0
+            wrong = 0
+            # make sure this updates asarray
+        if isFloat(prediction): prediction = float(prediction)
+        if isFloat(target): target = float(target)
+        if isFloat(prediction) and isFloat(target) and abs(prediction - target) <= .002:
+            right += 1
+        else
+            wrong += 1
 
+    print(results)
     print('len(itos):', np.unique(len(itos)))
 
     """
