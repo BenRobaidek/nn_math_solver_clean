@@ -35,8 +35,8 @@ def main(args):
     #print(results)
     print('len(itos):', np.unique(len(itos)))
 
-    for i,eq in enumerate(itos):
-        print(eq, results[i,0], results[i,1])
+    all_results = zip(itos, results)
+    print(all_results)
 
 def isFloat(f):
     try:
