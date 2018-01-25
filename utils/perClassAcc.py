@@ -30,6 +30,8 @@ def main(args):
             right += 1
         else:
             wrong += 1
+        results[itos.index(equation),0] = right
+        results[itos.index(equation),0] = wrong
 
     for line in results:
         print(line)
