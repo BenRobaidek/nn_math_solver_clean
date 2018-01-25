@@ -12,13 +12,20 @@ def main(args):
 
     for eq in itos:
         print(eq)
-    #    dictionary[eq] = None
+
+    results = np.empty(len(itos),2)
+
+    for line in predictions:
+        equation, prediction, target = line.split('\t')
+
     print('len(itos):', np.unique(len(itos)))
 
+    """
     for k in dictionary.keys():
         true_acc = dictionary.get(k)[0] / (dictionary.get(k)[0] + dictionary.get(k)[1])
         print(k, 'true acc:', true_acc)
-
+    """
+        
 def isFloat(f):
     try:
         float(f)
