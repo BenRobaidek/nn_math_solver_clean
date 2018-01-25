@@ -53,7 +53,7 @@ def main(args):
         perClassAcc_file.write('' + line[0] + ' true_acc: ' + line[3] + ' ({}/{})'.format(line[1],float(line[1])+float(line[2])) + '\n')
     perClassAcc_file.close()
 
-    print('Val Acc:', np.sum(all_results[:][1]))
+    print('Val Acc:', all_results[:][1])
 
 def isFloat(f):
     try:
