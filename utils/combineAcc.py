@@ -14,7 +14,7 @@ def main(args):
     #classifier_preds = [line.strip().split('\t') for line in classifier_preds]
 
     print(s2s_preds)
-    print(np.shape(classifier_preds))
+    print(classifier_preds)
 
 def parseArgs():
     parser = argparse.ArgumentParser(description='test')
