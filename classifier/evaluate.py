@@ -19,7 +19,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
 
         logit = model(inp)
         print(F.softmax(logit))
-        values = torch.max(F.softmax(logit, dim=0))
+        values = torch.max(F.softmax(logit.data, dim=1))
         print('values:', values)
 
         # Filter predictions based on SNI
