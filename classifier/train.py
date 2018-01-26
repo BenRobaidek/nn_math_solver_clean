@@ -27,16 +27,10 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
     VAR_VALUES = data.Field(sequential=False)
     ANS = data.Field(sequential=False)
 
-    """
     train, val, test = data.TabularDataset.splits(
         path=data_path, train=train_path,
         validation=val_path, test=test_path, format='tsv',
         fields=[('text', TEXT), ('label', LABELS), ('var_values', VAR_VALUES), ('ans', ANS)])
-    """
-
-    train = data.TabularDataset(path=data_path + train_path, format='tsv', fields=[('text', TEXT), ('label', LABELS), ('var_values', VAR_VALUES), ('ans', ANS)])
-    val = data.TabularDataset(path=data_path + val_path, format='tsv', fields=[('text', TEXT), ('label', LABELS), ('var_values', VAR_VALUES), ('ans', ANS)], train=False)
-    test = data.TabularDataset(path=data_path + test_path, format='tsv', fields=[('text', TEXT), ('label', LABELS), ('var_values', VAR_VALUES), ('ans', ANS)], train=False)
 
     prevecs = None
     if (pretrained_emb == True):
@@ -53,9 +47,15 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
 
     snis = [eq.count('[') for eq in LABELS.vocab.itos]
 
+    """
     train_iter, val_iter, test_iter = data.BucketIterator.splits(
         (train, val, test), batch_sizes=(bs, bs, bs),
         sort_key=lambda x: len(x.text))
+    """
+
+    train_iter = data.BucketIterator(train, batch_size=bs, sort_key=ambda x: len(x.text))
+    val_iter = data.BucketIterator(val, batch_size=bs, sort_key=ambda x: len(x.text))
+    test_iter = data.BucketIterator(test, batch_size=bs, sort_key=ambda x: len(x.text))
 
     num_classes = len(LABELS.vocab)
     input_size = len(TEXT.vocab)
