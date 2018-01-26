@@ -17,11 +17,11 @@ def main(args):
 def getCombinedAcc(classifier_preds, s2s_preds, threshold):
     print('threshold:', threshold)
     corrects = []
-        for classifier_pred, s2s_pred in zip(classifier_preds, s2s_preds):
-            if float(classifier_pred[1]) > threshold:
-                corrects = np.append(corrects, [bool(classifier_pred[0])])
-            else:
-                corrects = np.append(corrects, [bool(s2s_pred)])
+    for classifier_pred, s2s_pred in zip(classifier_preds, s2s_preds):
+        if float(classifier_pred[1]) > threshold:
+            corrects = np.append(corrects, [bool(classifier_pred[0])])
+        else:
+            corrects = np.append(corrects, [bool(s2s_pred)])
     print(np.sum(corrects))
 
 def parseArgs():
