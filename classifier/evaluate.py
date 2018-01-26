@@ -13,7 +13,6 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
 
     eval_preds = []
     for batch_count,batch in enumerate(data_iter):
-        print(batch.label)
         inp, target, var_values, ans = batch.text, batch.label, batch.var_values, batch.ans
         inp.data.t_()
         #print('batch.var_values', batch.var_values)
@@ -43,6 +42,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         # True Acc
         predictions = np.array(LABELS.vocab.itos)[np.array(preds.data)]
         targets = np.array(LABELS.vocab.itos)[np.array(batch.label.data)]
+        print(targets)
         var_values = np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)]
         answers = np.array(ANS.vocab.itos)[np.array(batch.ans.data)]
 
