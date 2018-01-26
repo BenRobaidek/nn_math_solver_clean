@@ -11,8 +11,7 @@ def main(args):
     s2s_preds = [line.strip() == 'True' for line in s2s_preds]
 
     classifier_preds = np.array(open(args.classifier_preds).readlines())
-    classifier_preds = np.array([line.strip().split(' ') for line in classifier_preds])
-    classifier_preds[:,0] = [line == 'True' for line in classifier_preds[:,0]]
+    classifier_preds = np.array([[bool(line.strip().split(' ')[0]), line.strip().split(' ')[1]] for line in classifier_preds])
     getCombinedAcc(classifier_preds, s2s_preds, 0.1)
 
 def getCombinedAcc(classifier_preds, s2s_preds, threshold):
