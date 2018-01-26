@@ -15,7 +15,7 @@ def main(args):
 def parseArgs():
     parser = argparse.ArgumentParser(description='test')
     parser.add_argument('-s2s_preds', type=str, default='/tmp/predictions.txt.correct', help='path to ground s2s predictions [default: '']')
-    parser.add_argument('-classifier_preds', type=str, default='./preds.txt', help='path to preds file [default: '']')
+    parser.add_argument('-classifier_preds', type=str, default='../classifier/predictions.txt', help='path to classifier predictions file [default: '']')
     args = parser.parse_args()
     return args
 
