@@ -18,7 +18,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         #print('batch.var_values', batch.var_values)
 
         logit = model(inp)
-        values,_ = torch.max(F.softmax(logit), dim=1)
+
         #print('values:', values)
 
         # Filter predictions based on SNI
@@ -42,12 +42,11 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         # True Acc
         predictions = np.array(LABELS.vocab.itos)[np.array(preds.data)]
         targets = np.array(LABELS.vocab.itos)[np.array(batch.label.data)]
-        print(targets)
         var_values = np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)]
         answers = np.array(ANS.vocab.itos)[np.array(batch.ans.data)]
+        probabilities,_ = torch.max(F.softmax(logit), dim=1)
 
-        for prediction, tgt, var_value, answer in zip(predictions, targets, var_values, answers):
-            result = str(prediction)
+        for prediction, tgt, var_value, answer, probability in zip(predictions, targets, var_values, answers, probabilities):
             var_value = eval(var_value)
             # sub variables into predicted and target equations
             for k in var_value:
@@ -83,6 +82,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             elif (not tgt == 'x = 80千米 / 小时'):
                 tgt = eval(tgt)
 
+            result = ''
             if (not prediction == '<unk>') and (not tgt == '<unk>'):
                 try:
                     prediction = float(prediction)
@@ -90,9 +90,12 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                     error = abs(prediction - tgt)
                     if error <= .002:
                         true_corrects += 1
+                        result = 'True ' + str(probability)
+                    else:
+                        result = 'False ' + str(probability)
                 except Exception as e:
-                    #print(e)
                     pass
+            eval_preds = np.append(eval_preds, [result])
 
             if tgt == '<unk>':
                 answer_correspond_to_equation += 1
@@ -100,12 +103,12 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 try:
                     error = abs(answer - tgt)
                     if error <= .002:
+
                         answer_correspond_to_equation += 1
                 except Exception as e:
                     #print(e)
                     pass
-            result = result + '\t' + str(prediction) + '\t' + str(tgt) + '\n'
-            eval_preds = np.append(eval_preds, [result])
+
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
