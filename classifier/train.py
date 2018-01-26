@@ -32,6 +32,10 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
         validation=val_path, test=test_path, format='tsv',
         fields=[('text', TEXT), ('label', LABELS), ('var_values', VAR_VALUES), ('ans', ANS)])
 
+    val_in_order = data.TabularDataset(path=data_path + val_path, format='tsv',
+            fields=fields=[('text', TEXT), ('label', LABELS), ('var_values', VAR_VALUES), ('ans', ANS)])
+    print(val_in_order)
+
     prevecs = None
     if (pretrained_emb == True):
         TEXT.build_vocab(train,vectors=GloVe(name='6B', dim=emb_dim),
@@ -108,7 +112,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
             inp = batch.text.t()
 
             preds = model(inp)
-            print(np.sum(F.softmax(preds)))
+            print(F.softmax(preds))
             loss = criterion(preds, batch.label)
             loss.backward()
             optimizer.step()
