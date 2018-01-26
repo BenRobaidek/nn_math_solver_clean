@@ -13,13 +13,14 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
 
     eval_preds = []
     for batch_count,batch in enumerate(data_iter):
+        print(batch.label)
         inp, target, var_values, ans = batch.text, batch.label, batch.var_values, batch.ans
         inp.data.t_()
         #print('batch.var_values', batch.var_values)
 
         logit = model(inp)
         values,_ = torch.max(F.softmax(logit), dim=1)
-        print('values:', values)
+        #print('values:', values)
 
         # Filter predictions based on SNI
         if pred_filter:
