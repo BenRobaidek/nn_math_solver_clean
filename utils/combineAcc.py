@@ -9,7 +9,7 @@ def main(args):
     """
     s2s_preds = open(args.s2s_preds).readlines()
     classifier_preds = open(args.classifier_preds).readlines()
-    classifier_preds = [line for line.split('\t') in classifier_preds]
+    classifier_preds = [line.split('\t') for line in classifier_preds]
 
     print(s2s_preds)
     print(classifier_preds)
