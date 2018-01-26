@@ -7,8 +7,10 @@ def main(args):
     """
     prints combined classifier and seq2seq true accuracy
     """
-    s2s_preds = open(args.s2s_preds, 'r')
-    classifier_preds = open(args.classifier_preds, 'r')
+    s2s_preds = open(args.s2s_preds).readlines()
+    classifier_preds = open(args.classifier_preds).readlines()
+    classifier_preds = [line for line.split('\t') in classifier_preds]
+
     print(s2s_preds)
     print(classifier_preds)
 
