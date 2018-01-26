@@ -11,24 +11,17 @@ def main(args):
     s2s_preds = [line.strip() == 'True' for line in s2s_preds]
 
     classifier_preds = np.array(open(args.classifier_preds).readlines())
-    classifier_preds = np.array([[bool(line.strip().split(' ')[0]), line.strip().split(' ')[1]] for line in classifier_preds])
-    print(classifier_preds)
-    getCombinedAcc(classifier_preds, s2s_preds, 0.1)
+    classifier_preds = np.array(line.split(' ') for line in classifier_preds])
+    classifier_probabilities = np.array(classifier_preds[:,1]).astype(bool)
+    classifier_preds = np.array(classifier_preds[:,0]).astype(bool)
+    print('classifier_probabilities:', classifier_probabilities)
+    print('classifier_preds:', classifier_preds)
+    print('s2s_preds:', s2s_preds)
+    getCombinedAcc(classifier_probabilities, classifier_preds, s2s_preds, 0.1)
 
-def getCombinedAcc(classifier_preds, s2s_preds, threshold):
+def getCombinedAcc(classifier_probabilities, classifier_preds, s2s_preds, threshold):
     print('threshold:', threshold)
     corrects = []
-    for classifier_pred, s2s_pred in zip(classifier_preds, s2s_preds):
-        print('classifier_pred[0]:', classifier_pred[0])
-        print('s2s_preds:', s2s_pred)
-        print('classifier_pred[1]:', classifier_pred[1])
-        if float(classifier_pred[1]) > threshold:
-            corrects = np.append(corrects, [bool(classifier_pred[0])])
-        else:
-            corrects = np.append(corrects, [bool(s2s_pred)])
-    print(np.sum(classifier_preds[:,0].astype(bool)))
-    print(np.sum(s2s_preds)/len(corrects))
-    print(np.sum(corrects.astype(int))/len(corrects))
 
 def parseArgs():
     parser = argparse.ArgumentParser(description='test')
