@@ -18,6 +18,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         #print('batch.var_values', batch.var_values)
 
         logit = model(inp)
+        print(F.softmax(logit))
         values = torch.max(F.softmax(logit, dim=0))
         print('values:', values)
 
