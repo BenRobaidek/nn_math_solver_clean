@@ -12,6 +12,8 @@ def main(args):
 
     classifier_preds = open(args.classifier_preds).readlines()
     classifier_preds = [line.strip().split(' ') for line in classifier_preds]
+    classifier[:,0] = bool(classifier[:,0])
+    classifier[:,1] = float(classifier[:,0])
 
     print(s2s_preds)
     print(classifier_preds)
