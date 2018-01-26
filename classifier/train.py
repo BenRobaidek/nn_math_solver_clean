@@ -51,7 +51,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
         (train, val, test), batch_sizes=(bs, bs, bs),
         sort_key=lambda x: len(x.text))
 
-    val_iter_in_order = data.Iterator(val, batch_size=bs)
+    val_iter_in_order = data.Iterator(val, batch_size=bs, train=None, repeat=None, shuffle=None)
     print(val_iter_in_order)
 
     num_classes = len(LABELS.vocab)
@@ -111,7 +111,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
             inp = batch.text.t()
 
             preds = model(inp)
-            print(F.softmax(preds))
+            #print(F.softmax(preds))
             loss = criterion(preds, batch.label)
             loss.backward()
             optimizer.step()
