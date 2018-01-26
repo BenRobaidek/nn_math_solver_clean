@@ -90,9 +90,9 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                     error = abs(prediction - tgt)
                     if error <= .002:
                         true_corrects += 1
-                        result = 'True ' + str(probability.data[0])
+                        result = 'True ' + str(probability.data[0] + '\n')
                     else:
-                        result = 'False ' + str(probability.data[0])
+                        result = 'False ' + str(probability.data[0] + '\n')
                 except Exception as e:
                     pass
             eval_preds = np.append(eval_preds, [result])
