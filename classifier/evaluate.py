@@ -96,7 +96,8 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 except Exception as e:
                     pass
             eval_preds = np.append(eval_preds, [result])
-
+            else:
+                result = 'False ' + str(probability.data[0])# + '\n')
             if tgt == '<unk>':
                 answer_correspond_to_equation += 1
             elif (not tgt == '<unk>'):
