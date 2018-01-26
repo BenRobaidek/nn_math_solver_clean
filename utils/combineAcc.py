@@ -25,7 +25,7 @@ def getCombinedAcc(classifier_preds, s2s_preds, threshold):
             corrects = np.append(corrects, [bool(classifier_pred[0])])
         else:
             corrects = np.append(corrects, [bool(s2s_pred)])
-    print(np.sum(classifier_preds)/len(corrects))
+    print(np.sum(classifier_preds[:,0])/len(corrects))
     print(np.sum(s2s_preds)/len(corrects))
     print(np.sum(corrects.astype(int))/len(corrects))
 
