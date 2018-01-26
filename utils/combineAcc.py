@@ -22,7 +22,7 @@ def getCombinedAcc(classifier_preds, s2s_preds, threshold):
             corrects = np.append(corrects, [bool(classifier_pred[0])])
         else:
             corrects = np.append(corrects, [bool(s2s_pred)])
-    print(np.sum(corrects))
+    print(np.sum(corrects)/len(corrects))
 
 def parseArgs():
     parser = argparse.ArgumentParser(description='test')
