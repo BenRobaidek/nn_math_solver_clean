@@ -53,9 +53,9 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
         sort_key=lambda x: len(x.text))
     """
 
-    train_iter = data.BucketIterator(train, batch_size=bs, sort_key=lambda x: len(x.text))
-    val_iter = data.BucketIterator(val, batch_size=bs, sort_key=lambda x: len(x.text))
-    test_iter = data.BucketIterator(test, batch_size=bs, sort_key=lambda x: len(x.text))
+    train_iter = data.BucketIterator(train, batch_size=bs, sort_key=lambda x: len(x.text), train=True)
+    val_iter = data.Iterator(val, batch_size=bs, repeat=False, train=False)
+    test_iter = data.Iterator(test, batch_size=bs, repeat=False, train=False)
 
     num_classes = len(LABELS.vocab)
     input_size = len(TEXT.vocab)
