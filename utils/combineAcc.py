@@ -11,7 +11,7 @@ def main(args):
     s2s_preds = [line.strip() == 'True' for line in s2s_preds]
 
     classifier_preds = open(args.classifier_preds).readlines()
-    classifier_preds = [line.strip().split('\t') for line in classifier_preds]
+    #classifier_preds = [line.strip().split('\t') for line in classifier_preds]
 
     print(s2s_preds)
     print(np.shape(classifier_preds))
