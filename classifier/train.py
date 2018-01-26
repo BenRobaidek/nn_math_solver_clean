@@ -108,6 +108,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
             inp = batch.text.t()
 
             preds = model(inp)
+            print(F.softmax(preds))
             loss = criterion(preds, batch.label)
             loss.backward()
             optimizer.step()
