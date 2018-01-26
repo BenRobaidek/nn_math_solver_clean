@@ -18,6 +18,9 @@ def getCombinedAcc(classifier_preds, s2s_preds, threshold):
     print('threshold:', threshold)
     corrects = []
     for classifier_pred, s2s_pred in zip(classifier_preds, s2s_preds):
+        print('classifier_pred[0]:', classifier_pred[0])
+        print('s2s_preds:', s2s_pred)
+        print('classifier_pred[1]:', classifier_pred[1])
         if float(classifier_pred[1]) > threshold:
             corrects = np.append(corrects, [bool(classifier_pred[0])])
         else:
