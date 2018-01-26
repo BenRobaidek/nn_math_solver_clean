@@ -27,10 +27,16 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
     VAR_VALUES = data.Field(sequential=False)
     ANS = data.Field(sequential=False)
 
+    """
     train, val, test = data.TabularDataset.splits(
         path=data_path, train=train_path,
         validation=val_path, test=test_path, format='tsv',
         fields=[('text', TEXT), ('label', LABELS), ('var_values', VAR_VALUES), ('ans', ANS)])
+    """
+
+    train = data.TabularDataset(path=data_path + train_path, format='tsv', fields=[('text', TEXT), ('label', LABELS), ('var_values', VAR_VALUES), ('ans', ANS)])
+    val = data.TabularDataset(path=data_path + val_path, format='tsv', fields=[('text', TEXT), ('label', LABELS), ('var_values', VAR_VALUES), ('ans', ANS)], train=False)
+    test = data.TabularDataset(path=data_path + test_path, format='tsv', fields=[('text', TEXT), ('label', LABELS), ('var_values', VAR_VALUES), ('ans', ANS)], train=False)
 
     prevecs = None
     if (pretrained_emb == True):
@@ -50,9 +56,6 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
     train_iter, val_iter, test_iter = data.BucketIterator.splits(
         (train, val, test), batch_sizes=(bs, bs, bs),
         sort_key=lambda x: len(x.text))
-
-    val_iter_in_order = data.Iterator(val, batch_size=bs, train=None, repeat=None, shuffle=None)
-    print(val_iter_in_order)
 
     num_classes = len(LABELS.vocab)
     input_size = len(TEXT.vocab)
@@ -118,7 +121,6 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
             tot_loss += loss.data[0]
 
         (avg_loss, accuracy, true_acc, corrects, size, t5_acc, t5_corrects, mrr, eval_preds) = evaluate(val_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pred_filter=pred_filter)
-
 
         # save best preds file
         if true_acc > best_true_acc:
