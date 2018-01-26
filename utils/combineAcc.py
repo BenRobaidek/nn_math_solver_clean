@@ -11,7 +11,7 @@ def main(args):
     s2s_preds = [line.strip() == 'True' for line in s2s_preds]
 
     classifier_preds = open(args.classifier_preds).readlines()
-    classifier_preds = [line.strip().split(' ') for line in classifier_preds]
+    classifier_preds = np.array([line.strip().split(' ') for line in classifier_preds])
     print(classifier_preds)
     classifier_preds[:,0] = bool(classifier_preds[:,0])
     classifier_preds[:,1] = float(classifier_preds[:,0])
