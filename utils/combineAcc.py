@@ -10,14 +10,19 @@ def main(args):
     s2s_preds = open(args.s2s_preds).readlines()
     s2s_preds = [line.strip() == 'True' for line in s2s_preds]
 
-    classifier_preds = open(args.classifier_preds).readlines()
+    classifier_preds = np.array(open(args.classifier_preds).readlines())
     classifier_preds = np.array([line.strip().split(' ') for line in classifier_preds])
-    print(classifier_preds)
-    classifier_preds[:,0] = bool(classifier_preds[:,0])
-    classifier_preds[:,1] = float(classifier_preds[:,0])
+    getCombinedAcc(classifier_preds, s2s_preds, 0.5)
 
-    print(s2s_preds)
-
+def getCombinedAcc(classifier_preds, s2s_preds, threshold):
+    print('threshold:', threshold)
+    corrects = []
+        for classifier_pred, s2s_pred in zip(classifier_preds, s2s_preds):
+            if float(classifier_pred[1]) > threshold:
+                corrects = np.append(corrects, [bool(classifier_pred[0])])
+            else:
+                corrects = np.append(corrects, [bool(s2s_pred)])
+    print(np.sum(corrects))
 
 def parseArgs():
     parser = argparse.ArgumentParser(description='test')
