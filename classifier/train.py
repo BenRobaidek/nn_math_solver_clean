@@ -104,9 +104,9 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
     results = []
 
     best_true_acc = 0
-    predictions_file = open(save_path + './predictions.txt', 'w+')
 
     for epoch in range(epochs):
+        predictions_file = open(save_path + './predictions.txt', 'w')
         tot_loss = 0
         train_iter.repeat=False
         for batch_count,batch in enumerate(train_iter):
@@ -140,7 +140,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
                     'true_acc: {:.4f}%(todo/todo) t5_acc: {:.4f}%({}/{}) MRR:' \
                     '{:.6f}\n'.format(avg_loss, accuracy, corrects, size,
                             t5_acc, t5_corrects, size, mrr))
+        predictions_file.close()
     print('Best Accuracy:', np.sort([i['accuracy'] for i in results])[-1])
     print('Best True Accuracy:', np.sort([i['true_acc'] for i in results])[-1])
     return results
-    predictions_file.close()
