@@ -33,7 +33,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
         fields=[('text', TEXT), ('label', LABELS), ('var_values', VAR_VALUES), ('ans', ANS)])
 
     val_in_order = data.TabularDataset(path=data_path + val_path, format='tsv',
-            fields=fields=[('text', TEXT), ('label', LABELS), ('var_values', VAR_VALUES), ('ans', ANS)])
+            fields=[('text', TEXT), ('label', LABELS), ('var_values', VAR_VALUES), ('ans', ANS)])
     print(val_in_order)
 
     prevecs = None
