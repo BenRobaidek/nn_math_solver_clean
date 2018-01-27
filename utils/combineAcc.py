@@ -30,7 +30,7 @@ def getCombinedAcc(classifier_probabilities, classifier_preds, s2s_preds, thresh
             correct = np.append(corrects, [bool(s2s_pred)])
     print('classifier acc:', np.sum(classifier_preds)/len(classifier_preds))
     print('s2s acc:', np.sum(s2s_preds)/len(s2s_preds))
-    print('combined acc:', np.sum(np.array(corrects).astype(int))/len(corrects))
+    print('combined acc:', np.sum(np.array(corrects))/len(corrects))
 
 def parseArgs():
     parser = argparse.ArgumentParser(description='test')
