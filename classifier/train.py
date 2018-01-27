@@ -125,7 +125,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
         # save best preds file
         if true_acc > best_true_acc:
             if not os.path.isdir(save_path): os.makedirs(save_path)
-            predictions_file = open(save_path + './predictions.txt', 'w')
+            predictions_file = open(save_path + 'predictions.txt', 'w')
             for line in eval_preds:
                 predictions_file.write(line + '\n')
             predictions_file.close()
