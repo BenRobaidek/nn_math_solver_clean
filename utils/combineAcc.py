@@ -22,15 +22,15 @@ def main(args):
 
 def getCombinedAcc(classifier_probabilities, classifier_preds, s2s_preds, threshold):
     print('threshold:', threshold)
-    corrects = []
+    correct = 0
     for probability, classifier_pred, s2s_pred in zip(classifier_probabilities, classifier_preds, s2s_preds):
         if probability > threshold:
-            correct = np.append(corrects, [bool(classifier_pred)])
+            correct += int(classifier_pred)
         else:
-            correct = np.append(corrects, [bool(s2s_pred)])
+            correct += int(s2s_pred)
     print('classifier acc:', np.sum(classifier_preds)/len(classifier_preds))
     print('s2s acc:', np.sum(s2s_preds)/len(s2s_preds))
-    print('combined acc:', np.sum(np.array(corrects))/len(corrects))
+    print('combined acc:', correct/len(classifier_preds))
 
 def parseArgs():
     parser = argparse.ArgumentParser(description='test')
