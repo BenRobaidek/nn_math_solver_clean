@@ -15,18 +15,22 @@ def main(args):
     classifier_probabilities = np.array(classifier_preds[:,1])
     classifier_probabilities = np.array([line.strip() for line in classifier_probabilities]).astype(float)
     classifier_preds = [line == 'True' for line in classifier_preds[:,0]]
-    print('classifier_probabilities:', classifier_probabilities)
-    print('classifier_preds:', classifier_preds)
-    print('s2s_preds:', s2s_preds)
+    #print('classifier_probabilities:', classifier_probabilities)
+    #print('classifier_preds:', classifier_preds)
+    #print('s2s_preds:', s2s_preds)
     getCombinedAcc(classifier_probabilities, classifier_preds, s2s_preds, 0.1)
 
 def getCombinedAcc(classifier_probabilities, classifier_preds, s2s_preds, threshold):
     print('threshold:', threshold)
     corrects = []
     for probability, classifier_pred, s2s_pred in zip(classifier_probabilities, classifier_preds, s2s_preds):
-        print(probability)
-        print(classifier_pred)
-        print(s2s_pred)
+        if probability > threshold:
+            correct = np.append(corrects, [classifier_pred])
+        else:
+            correct = np.append(corrects, [s2s_pred])
+    print('classifier acc:', np.sum(classifier_preds)/len(classifier_preds))
+    print('s2s acc:', np.sum(s2s_preds)/len(s2s_preds))
+    print('combined acc:', np.sum(corrects)/len(corrects))
 
 def parseArgs():
     parser = argparse.ArgumentParser(description='test')
