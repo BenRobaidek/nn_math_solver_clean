@@ -74,7 +74,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 try:
                     #print('prediction:', prediction)
                     prediction = eval(prediction)
-                except ZeroDivisionError, OverflowError:
+                except (ZeroDivisionError, OverflowError):
                     pass
 
             if (tgt == '<unk>'):
