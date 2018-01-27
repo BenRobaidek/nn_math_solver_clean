@@ -1,4 +1,4 @@
 {"data_path":"../tencent/data/working/basic/", "rand":["True"], "mf":[1],
-    "net_type": ["lstm"], "epochs":[100] ,"bs":[8], "opt":["sgd"],
-    "ly":[1], "hs":[300], "num_dir":[2], "embfix":["False"], "embdim":[300],
-    "ptemb":["False"], "dropout":[0.3],"pred_filter":["True"]}
+    "net_type": ["lstm"], "epochs":[100] ,"bs":[8], "opt":["sgd", "adam", "adamax"],
+    "ly":[1,2,4], "hs":[100,200,300,500], "num_dir":[2], "embfix":["False"], "embdim":[50,100,200,300],
+    "ptemb":["False"], "dropout":[0,0.3,0.5,0.7],"pred_filter":["True"]}
