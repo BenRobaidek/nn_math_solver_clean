@@ -16,7 +16,7 @@ def main(args):
     classifier_probabilities = np.array(classifier_preds[:,1])
     classifier_probabilities = np.array([line.strip() for line in classifier_probabilities]).astype(float)
     classifier_preds = [line == 'True' for line in classifier_preds[:,0]]
-    results = [getCombinedAcc(classifier_probabilities, classifier_preds, s2s_preds, i/100) for i in range(100)])
+    results = [getCombinedAcc(classifier_probabilities, classifier_preds, s2s_preds, i/100) for i in range(100)]
     plt.plot(results)
     plt.ylabel('combined true acc')
     plt.show()
