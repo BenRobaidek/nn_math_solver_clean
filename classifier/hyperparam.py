@@ -62,6 +62,9 @@ def main():
                 results = None
                 if not hyperparams in list(hyperparam_results.keys()):
                     try:
+                        save_path = ''
+                        for k in hyperparams.keys():
+                            save_path = save_path + str(k) + str(hyperparams[k])
                         results = train(data_path=config['data_path'],
                                 train_path='train.tsv',
                                 val_path='val.tsv', test_path='test.tsv', mf=mf,
@@ -69,7 +72,7 @@ def main():
                                 ly=ly, hs=hs, num_dir=num_dir, emb_dim=embdim,
                                 embfix=bool(embfix), pretrained_emb=bool(ptemb),
                                 dropout=dropout, pred_filter=bool(pred_filter),
-                                save_path='./' + str(hyperparams) + '/', save=False, verbose=False)
+                                save_path='./' + save_path + '/', save=False, verbose=False)
                         results = sorted(results, key=lambda x: x['accuracy'],
                                 reverse=True)
                     except RuntimeError:
