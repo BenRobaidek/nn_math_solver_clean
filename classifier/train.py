@@ -124,14 +124,14 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
 
         # save best preds file
         if true_acc > best_true_acc:
+            if not os.path.isdir(save_path): os.makedirs(save_path)
             predictions_file = open(save_path + './predictions.txt', 'w')
             for line in eval_preds:
                 predictions_file.write(line + '\n')
             predictions_file.close()
 
         if save:
-            if not os.path.isdir(save_path):
-                os.makedirs(save_path)
+            if not os.path.isdir(save_path): os.makedirs(save_path)
             torch.save(model, save_path + '{}_e{}.pt'.format(accuracy, epoch))
 
         results = np.append(results, {'epoch':epoch, 'avg_loss':avg_loss,
@@ -142,7 +142,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
                     'true_acc: {:.4f}%(todo/todo) t5_acc: {:.4f}%({}/{}) MRR:' \
                     '{:.6f}\n'.format(avg_loss, accuracy, corrects, size,
                             t5_acc, t5_corrects, size, mrr))
-        
+
     print('Best Accuracy:', np.sort([i['accuracy'] for i in results])[-1])
     print('Best True Accuracy:', np.sort([i['true_acc'] for i in results])[-1])
     return results
