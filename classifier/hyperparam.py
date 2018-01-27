@@ -72,7 +72,7 @@ def main():
                                 ly=ly, hs=hs, num_dir=num_dir, emb_dim=embdim,
                                 embfix=bool(embfix), pretrained_emb=bool(ptemb),
                                 dropout=dropout, pred_filter=bool(pred_filter),
-                                save_path='./' + save_path + '/', save=False, verbose=False)
+                                save_path='./hyperparam_results/' + save_path + '/', save=False, verbose=False)
                         results = sorted(results, key=lambda x: x['accuracy'],
                                 reverse=True)
                     except RuntimeError:
