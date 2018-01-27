@@ -16,15 +16,17 @@ def main(args):
     classifier_probabilities = np.array(classifier_preds[:,1])
     classifier_probabilities = np.array([line.strip() for line in classifier_probabilities]).astype(float)
     classifier_preds = [line == 'True' for line in classifier_preds[:,0]]
-    results = [getCombinedAcc(classifier_probabilities, classifier_preds, s2s_preds, i/100) for i in range(100)]
+    x = np.divide(list(range(0,100)), 100)
+    print(x)
+    y = [getCombinedAcc(classifier_probabilities, classifier_preds, s2s_preds, i) for i in x]
     print('classifier acc:', np.sum(classifier_preds)/len(classifier_preds))
     print('s2s acc:', np.sum(s2s_preds)/len(s2s_preds))
-    plt.plot(results)
+    plt.plot(x, y)
     plt.ylabel('combined true acc')
+    plt.xlabel('probability threshold')
     plt.show()
 
 def getCombinedAcc(classifier_probabilities, classifier_preds, s2s_preds, threshold):
-    print('threshold:', threshold)
     correct = 0
     for probability, classifier_pred, s2s_pred in zip(classifier_probabilities, classifier_preds, s2s_preds):
         if probability > threshold:
