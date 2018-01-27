@@ -17,6 +17,8 @@ def main(args):
     classifier_probabilities = np.array([line.strip() for line in classifier_probabilities]).astype(float)
     classifier_preds = [line == 'True' for line in classifier_preds[:,0]]
     results = [getCombinedAcc(classifier_probabilities, classifier_preds, s2s_preds, i/100) for i in range(100)]
+    print('classifier acc:', np.sum(classifier_preds)/len(classifier_preds))
+    print('s2s acc:', np.sum(s2s_preds)/len(s2s_preds))
     plt.plot(results)
     plt.ylabel('combined true acc')
     plt.show()
@@ -29,8 +31,7 @@ def getCombinedAcc(classifier_probabilities, classifier_preds, s2s_preds, thresh
             correct += int(classifier_pred)
         else:
             correct += int(s2s_pred)
-    #print('classifier acc:', np.sum(classifier_preds)/len(classifier_preds))
-    #print('s2s acc:', np.sum(s2s_preds)/len(s2s_preds))
+
     #print('combined acc:', correct/len(classifier_preds))
     return(correct/len(classifier_preds))
 
