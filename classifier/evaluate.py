@@ -94,7 +94,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                     else:
                         result = 'False ' + str(probability.data[0])# + '\n')
                 except Exception as e:
-                    result = 'True ' + str(probability.data[0])
+                    result = 'False ' + str(probability.data[0])
             else:
                 result = 'False ' + str(probability.data[0])# + '\n')
             eval_preds = np.append(eval_preds, [result])
