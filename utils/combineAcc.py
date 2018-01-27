@@ -23,7 +23,7 @@ def main(args):
 def getCombinedAcc(classifier_probabilities, classifier_preds, s2s_preds, threshold):
     print('threshold:', threshold)
     corrects = []
-    for probability, classifier_pred, s2s_pred in zip(classifier_probabilities, classifier_pred, s2s_pred):
+    for probability, classifier_pred, s2s_pred in zip(classifier_probabilities, classifier_preds, s2s_preds):
         print(probability)
         print(classifier_pred)
         print(s2s_pred)
