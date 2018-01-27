@@ -17,7 +17,6 @@ def main(args):
     classifier_preds = [line == 'True' for line in classifier_preds[:,0]]
     print([getCombinedAcc(classifier_probabilities, classifier_preds, s2s_preds, i/100) for i in range(100)])
 
-
 def getCombinedAcc(classifier_probabilities, classifier_preds, s2s_preds, threshold):
     print('threshold:', threshold)
     correct = 0
@@ -26,9 +25,10 @@ def getCombinedAcc(classifier_probabilities, classifier_preds, s2s_preds, thresh
             correct += int(classifier_pred)
         else:
             correct += int(s2s_pred)
-    print('classifier acc:', np.sum(classifier_preds)/len(classifier_preds))
-    print('s2s acc:', np.sum(s2s_preds)/len(s2s_preds))
-    print('combined acc:', correct/len(classifier_preds))
+    #print('classifier acc:', np.sum(classifier_preds)/len(classifier_preds))
+    #print('s2s acc:', np.sum(s2s_preds)/len(s2s_preds))
+    #print('combined acc:', correct/len(classifier_preds))
+    return(correct/len(classifier_preds))
 
 def parseArgs():
     parser = argparse.ArgumentParser(description='test')
