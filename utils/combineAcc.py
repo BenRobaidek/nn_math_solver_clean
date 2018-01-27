@@ -23,6 +23,10 @@ def main(args):
 def getCombinedAcc(classifier_probabilities, classifier_preds, s2s_preds, threshold):
     print('threshold:', threshold)
     corrects = []
+    for probability, classifier_pred, s2s_pred in zip(probability, classifier_pred, s2s_pred):
+        print(probability)
+        print(classifier_pred)
+        print(s2s_pred)
 
 def parseArgs():
     parser = argparse.ArgumentParser(description='test')
