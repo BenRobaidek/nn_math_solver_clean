@@ -18,7 +18,7 @@ def main(args):
     #print('classifier_probabilities:', classifier_probabilities)
     #print('classifier_preds:', classifier_preds)
     #print('s2s_preds:', s2s_preds)
-    getCombinedAcc(classifier_probabilities, classifier_preds, s2s_preds, 0.1)
+    getCombinedAcc(classifier_probabilities, classifier_preds, s2s_preds, 1)
 
 def getCombinedAcc(classifier_probabilities, classifier_preds, s2s_preds, threshold):
     print('threshold:', threshold)
