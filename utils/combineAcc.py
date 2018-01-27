@@ -25,9 +25,9 @@ def getCombinedAcc(classifier_probabilities, classifier_preds, s2s_preds, thresh
     corrects = []
     for probability, classifier_pred, s2s_pred in zip(classifier_probabilities, classifier_preds, s2s_preds):
         if probability > threshold:
-            correct = np.append(corrects, [classifier_pred])
+            correct = np.append(corrects, [bool(classifier_pred)])
         else:
-            correct = np.append(corrects, [s2s_pred])
+            correct = np.append(corrects, [bool(s2s_pred)])
     print('classifier acc:', np.sum(classifier_preds)/len(classifier_preds))
     print('s2s acc:', np.sum(s2s_preds)/len(s2s_preds))
     print('combined acc:', np.sum(corrects)/len(corrects))
