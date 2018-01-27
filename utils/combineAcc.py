@@ -12,7 +12,8 @@ def main(args):
 
     classifier_preds = np.array(open(args.classifier_preds).readlines())
     classifier_preds = np.array([line.split(' ') for line in classifier_preds])
-    classifier_probabilities = np.array(classifier_preds[:,1]).astype(bool)
+    classifier_probabilities = np.array(classifier_preds[:,1])
+    classifier_probabilities = np.array([line.strip() for line in classifier_probabilities]).astype(bool)
     classifier_preds = np.array(classifier_preds[:,0]).astype(bool)
     print('classifier_probabilities:', classifier_probabilities)
     print('classifier_preds:', classifier_preds)
