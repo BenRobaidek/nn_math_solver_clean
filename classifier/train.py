@@ -102,6 +102,8 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
                 'pretrained_emb':pretrained_emb, 'dropout':dropout,
                 'pred_filter':pred_filter}
     print('Training:', hyperparams)
+    print('pretrained_emb:', pretrained_emb)
+    print('embfix:', embfix)
     results = []
 
     best_true_acc = 0
