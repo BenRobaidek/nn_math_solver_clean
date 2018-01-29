@@ -71,7 +71,7 @@ def main():
                                 epochs=epoch, bs=bs, opt=opt, net_type=net_type,
                                 ly=ly, hs=hs, num_dir=num_dir, emb_dim=embdim,
                                 embfix=embfix, pretrained_emb=ptemb,
-                                dropout=dropout, pred_filter=pred_filter,
+                                dropout=dropout, pred_filter=bool(pred_filter),
                                 save_path='./hyperparam_results/' + save_path + '/', save=False, verbose=False)
                         results = sorted(results, key=lambda x: x['accuracy'],
                                 reverse=True)
