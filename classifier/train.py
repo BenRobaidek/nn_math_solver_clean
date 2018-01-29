@@ -34,6 +34,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
 
     prevecs = None
     if (pretrained_emb == True):
+        print('USING PRETRAINED EMB')
         TEXT.build_vocab(train,vectors=GloVe(name='6B', dim=emb_dim),
                                                                 min_freq=mf)
         prevecs=TEXT.vocab.vectors
