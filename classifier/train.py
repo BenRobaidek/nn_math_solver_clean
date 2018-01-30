@@ -20,6 +20,9 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
     # Load data
     ############################################################################
 
+    embfix = False # Delete this line later
+    pretrained_emb = False # Delete this line later
+
     cuda = int(torch.cuda.is_available())-1
 
     TEXT = data.Field(lower=True,init_token="<start>",eos_token="<end>")
