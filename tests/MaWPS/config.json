@@ -1,0 +1,4 @@
+{"data_path":"../MaWPS/data/working/", "rand":["True"], "mf":[1],
+    "net_type": ["lstm"], "epochs":[50] ,"bs":[8], "opt":["sgd"],
+    "ly":[4], "hs":[500], "num_dir":[2], "embfix":["False"], "embdim":[500],
+    "ptemb":["False"], "dropout":[0],"pred_filter":["True"]}
