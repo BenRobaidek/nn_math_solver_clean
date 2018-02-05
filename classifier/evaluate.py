@@ -46,6 +46,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         answers = np.array(ANS.vocab.itos)[np.array(batch.ans.data)]
         probabilities,_ = torch.max(F.softmax(logit), dim=1)
 
+        """
         for prediction, tgt, var_value, answer, probability in zip(predictions, targets, var_values, answers, probabilities):
             var_value = eval(var_value)
             # sub variables into predicted and target equations
@@ -53,6 +54,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 print('var_value:', var_value)
                 prediction = prediction.replace(k, str(var_value[k]))
                 tgt = tgt.replace(k, str(var_value[k]))
+
 
             # Add multiplication symbols to answer where needed
             answer = re.sub(r'\(\((\d+)\)/\((\d+)\)\)',r'(\1/\2)',answer)
@@ -111,7 +113,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 except Exception as e:
                     #print(e)
                     pass
-
+        """
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
