@@ -50,7 +50,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             var_value = eval(var_value)
             # sub variables into predicted and target equations
             for k in var_value:
-                print('var_value:', var_value)
+
                 prediction = prediction.replace(k, var_value[k])
                 tgt = tgt.replace(k, var_value[k])
 
