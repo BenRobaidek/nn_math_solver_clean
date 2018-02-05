@@ -83,7 +83,7 @@ def preprocess(question, equation, lQueryVars):
             for symbol in equation:
                 if isFloat(symbol) and float(symbol) == float(token):
                     equation[equation.index(symbol)] = character
-            variables[character] = token
+            variables[character] = str(token)
             for q in question:
                 if isFloat(q) and float(q) == token:
                     question[question.index(q)] = character
