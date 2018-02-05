@@ -52,7 +52,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             for k in var_value:
                 print('var_value:', var_value)
                 prediction = prediction.replace(k, str(var_value[k]))
-                tgt = tgt.replace(k, var_value[k])
+                tgt = tgt.replace(k, str(var_value[k]))
 
             # Add multiplication symbols to answer where needed
             answer = re.sub(r'\(\((\d+)\)/\((\d+)\)\)',r'(\1/\2)',answer)
