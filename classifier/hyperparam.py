@@ -15,12 +15,12 @@ def main():
     ############################################################################
     parser = argparse.ArgumentParser(description='LSTM text classifier')
     parser.add_argument('-config', type=str,
-        default='../tests/MaWPS/config.json',
-        help='config file path [default: ../tests/MaWPS/config.json]')
+        default='../tests/exp1/config.json',
+        help='config file path [default: ../tests/exp1/config.json]')
     parser.add_argument('-hyperparam_results', type=str,
-        default='../tests/MaWPS/hyperparam_results.json',
+        default='../tests/exp1/hyperparam_results.json',
         help='hyperparameter search results file path' \
-            '[default: ../tests/MaWPS/hyperparam_results.json]')
+            '[default: ../tests/exp1/hyperparam_results.json]')
     args = parser.parse_args()
 
     ############################################################################
