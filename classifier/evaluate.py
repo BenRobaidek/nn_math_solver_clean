@@ -49,11 +49,11 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
 
         for prediction, tgt, var_value, answer, probability in zip(predictions, targets, var_values, answers, probabilities):
 
-            print('prediction:', prediction)
-            print('tgt:', tgt)
-            print('var_value:', var_value)
-            print('answer:', answer)
-            print('probability:', probability)
+            #print('prediction:', prediction)
+            #print('tgt:', tgt)
+            #print('var_value:', var_value)
+            #print('answer:', answer)
+            #print('probability:', probability)
             answer = eval(answer)
             for i,a in enumerate(answer):
                 answer[i] = float(a)
@@ -70,8 +70,8 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             tgt = tgt.replace('^', '**')
             # remove = from equations
 
-            print('prediction:', prediction)
-            print('tgt:', tgt)
+            #print('prediction:', prediction)
+            #print('tgt:', tgt)
             if (prediction is not '<unk>') and '=' in prediction:
                 # get variables out of predicted equation
                 answer_variables = np.unique(re.findall(r'[a-z,A-Z]', prediction, flags=0))
@@ -80,7 +80,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 for k,p in enumerate(prediction):
                     prediction[k] = '(' + p.split('=')[1] + ') - (' + p.split('=')[0] + ')'
                 prediction = ','.join(prediction)
-                print('prediction:', prediction)
+                #print('prediction:', prediction)
 
                 answers = dict()
                 try:
@@ -93,19 +93,19 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 print('answers:', answers)
                 print('type(answer):', type(answer))
                 for a, t in zip(sorted(answers.values()), sorted(answer)):
-                    print('a:', float(a))
-                    print('t:', t)
+                    #print('a:', float(a))
+                    #print('t:', t)
                     if not abs(a - t) < .002:
                         add = 0
                 true_corrects += add
-                
 
+            """
             print('prediction:', prediction)
             print('tgt:', tgt)
             print('var_value:', var_value)
             print('answer:', answer)
             print('probability:', probability)
-
+            """
 
 
 
