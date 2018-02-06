@@ -72,7 +72,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
 
             print('prediction:', prediction)
             print('tgt:', tgt)
-            if (prediction is not '<unk>') and (tgt is not '<unk>') and prediction.contains('='):
+            if (prediction is not '<unk>') and prediction.contains('='):
                 # get variables out of predicted equation
                 answer_variables = np.unique(re.findall(r'[a-z,A-Z]', prediction, flags=0))
 
