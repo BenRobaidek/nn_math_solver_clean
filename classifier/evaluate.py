@@ -87,8 +87,8 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                     print(e)
 
                 add = 1
-                for a, t in zip(sorted(answers.values()), sorted(answer)):
-                    print('a:', a)
+                for a, t in zip(sorted(answers.values()), answer):
+                    print('a:', float(a))
                     print('t:', t)
                     if abs(a - t) < .002:
                         print('SDFASDFASDFASDF')
