@@ -88,7 +88,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 except ValueError as e:
                     print(e)
 
-                """
+
                 add = 1
                 print('answers:', answers)
                 print('type(answer):', type(answer))
@@ -98,7 +98,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                     if not abs(a - t) < .002:
                         add = 0
                 true_corrects += add
-                """
+                
 
             print('prediction:', prediction)
             print('tgt:', tgt)
