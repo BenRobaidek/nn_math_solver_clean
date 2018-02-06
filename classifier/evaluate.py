@@ -47,6 +47,10 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         probabilities,_ = torch.max(F.softmax(logit), dim=1)
 
         for prediction, tgt, var_value, answer, probability in zip(predictions, targets, var_values, answers, probabilities):
+            print('prediction:', prediction)
+            print('tgt:', tgt)
+            print('var_value:', answer)
+            print('probability:', probability)
             var_value = eval(var_value)
             # sub variables into predicted and target equations
             for k in var_value:
