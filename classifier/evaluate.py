@@ -90,6 +90,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                     print(e)
 
                 add = 1
+                print('answers:', answers)
                 print('type(answer):', type(answer))
                 for a, t in zip(sorted(answers.values()), sorted(answer)):
                     print('a:', float(a))
