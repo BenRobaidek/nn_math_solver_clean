@@ -80,10 +80,13 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 prediction = ','.join(prediction)
                 print('prediction:', prediction)
 
+                answers = dict()
                 try:
-                    print('ANSWERS:', sympy.solve(prediction.split(','), answer_variables))
+                    answers = sympy.solve(prediction.split(','), answer_variables))
                 except ValueError as e:
                     print(e)
+
+                for answer, tgt in zip(answers.key(), tgt)
 
             print('prediction:', prediction)
             print('tgt:', tgt)
