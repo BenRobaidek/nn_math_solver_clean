@@ -88,8 +88,10 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
 
                 add = 1
                 for a, t in zip(sorted(answers.values()), sorted(answer)):
+                    print('a:', a)
+                    print('t:', t)
                     if abs(a - t) < .002:
-                        print('SDFASDFASDFASDF') 
+                        print('SDFASDFASDFASDF')
 
             print('prediction:', prediction)
             print('tgt:', tgt)
