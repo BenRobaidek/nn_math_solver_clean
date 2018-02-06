@@ -94,8 +94,9 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 for a, t in zip(sorted(answers.values()), sorted(answer)):
                     print('a:', float(a))
                     print('t:', t)
-                    if abs(a - t) < .002:
-                        print('SDFASDFASDFASDF')
+                    if not abs(a - t) < .002:
+                        add = 0
+                true_corrects += add
 
             print('prediction:', prediction)
             print('tgt:', tgt)
