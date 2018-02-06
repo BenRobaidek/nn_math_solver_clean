@@ -113,7 +113,7 @@ def json2tsv(json_indices, json_data, output_path):
     output = open(output_path, 'w')
     for d in json_data:
         if int(d['iIndex']) in json_indices:
-            solutions =  ','.join(d['lSolutions'])
+            solutions =  ','.join(str(d['lSolutions']))
             output.write(str(d['sQuestion']) + '\t' +
                     str(d['lEquations']) + '\t' + str(d['variables'])
                     + '\t' + solutions + '\n')
