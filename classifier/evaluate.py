@@ -86,7 +86,9 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 except ValueError as e:
                     print(e)
 
-                for answer, tgt in zip(answers.key(), tgt)
+                for answer, tgt in zip(answers.key(), tgt):
+                    print('answer_:', answer)
+                    print('tgt_:', tgt)
 
             print('prediction:', prediction)
             print('tgt:', tgt)
