@@ -53,8 +53,9 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             print('var_value:', var_value)
             print('answer:', answer)
             print('probability:', probability)
-            var_value = eval(var_value)
+
             # sub variables into predicted and target equations
+            var_value = eval(var_value)
             for k in var_value:
                 prediction = prediction.replace(k, str(var_value[k]))
                 tgt = tgt.replace(k, str(var_value[k]))
@@ -64,6 +65,9 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             # replace ^ with ** in tgt equation
             tgt = tgt.replace('^', '**')
             # remove = from equations
+
+            # get variables out of predicted equation
+            print(re.findall(r'[a-Z]', prediction, flags=0))
 
             print('prediction:', prediction)
             print('tgt:', tgt)
