@@ -67,7 +67,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             # remove = from equations
 
             # get variables out of predicted equation
-            print(re.findall(r'[A-z]', prediction, flags=0))
+            print(np.unique(re.findall(r'[A-z]', prediction, flags=0)))
 
             print('prediction:', prediction)
             print('tgt:', tgt)
