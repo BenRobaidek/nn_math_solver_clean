@@ -81,7 +81,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 print('prediction:', prediction)
 
                 try:
-                    sympy.solve(prediction.split(','), answer_variables)
+                    print('ANSWERS:', sympy.solve(prediction.split(','), answer_variables))
                 except ValueError as e:
                     print(e)
 
