@@ -70,6 +70,8 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             tgt = tgt.replace('^', '**')
             # remove = from equations
 
+            print('prediction:', prediction)
+            print('tgt:', tgt)
             if (prediction is not '<unk>') and (tgt is not '<unk>'):
                 # get variables out of predicted equation
                 answer_variables = np.unique(re.findall(r'[a-z,A-Z]', prediction, flags=0))
