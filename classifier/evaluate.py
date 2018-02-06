@@ -48,11 +48,6 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         probabilities,_ = torch.max(F.softmax(logit), dim=1)
 
         for prediction, tgt, var_value, answer, probability in zip(predictions, targets, var_values, answers, probabilities):
-            print('prediction:', prediction)
-            print('tgt:', tgt)
-            print('var_value:', var_value)
-            print('answer:', answer)
-            print('probability:', probability)
 
             # sub variables into predicted and target equations
             var_value = eval(var_value)
@@ -70,7 +65,11 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             answer_variables = np.unique(re.findall(r'[A-z]', prediction, flags=0))
             print('answer_variables:', answer_variables)
             #sympy.solve(prediction,answer_variables)
-            print(sympy.solve(['X=12+4'],['X']))
+
+            print('prediction:', prediction)
+            prediction = prediction.split(',')
+            
+            print('prediction:', prediction)
             sympy.solve(prediction.split(','), answer_variables)
 
             print('prediction:', prediction)
