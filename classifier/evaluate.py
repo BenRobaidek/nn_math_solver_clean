@@ -69,7 +69,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             print('prediction:', prediction)
             prediction = prediction.split(',')
             for k,p in enumerate(prediction):
-                prediction[k] = '0=(' + p.split('=')[1] + ') - (' + p.split('=')[0] + ')'
+                prediction[k] = p.split('=')[1] + ') - (' + p.split('=')[0] + ')'
             prediction = ','.join(prediction)
             print('prediction:', prediction)
             sympy.solve(prediction.split(','), answer_variables)
