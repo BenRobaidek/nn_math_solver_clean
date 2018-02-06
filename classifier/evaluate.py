@@ -70,7 +70,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             answer_variables = np.unique(re.findall(r'[A-z]', prediction, flags=0))
             print('answer_variables:', answer_variables)
             #sympy.solve(prediction,answer_variables)
-            print(sympy.solve('X=12+4'))
+            print(sympy.solve(['X=12+4'],['X']))
             sympy.solve(prediction.split(','), answer_variables)
 
             print('prediction:', prediction)
