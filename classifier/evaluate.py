@@ -78,7 +78,11 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 prediction[k] = '(' + p.split('=')[1] + ') - (' + p.split('=')[0] + ')'
             prediction = ','.join(prediction)
             print('prediction:', prediction)
-            sympy.solve(prediction.split(','), answer_variables)
+
+            try:
+                sympy.solve(prediction.split(','), answer_variables)
+            except ValueError as e:
+                print(e)
 
             print('prediction:', prediction)
             print('tgt:', tgt)
