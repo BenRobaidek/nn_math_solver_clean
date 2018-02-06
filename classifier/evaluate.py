@@ -68,6 +68,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
 
             # get variables out of predicted equation
             answer_variables = np.unique(re.findall(r'[A-z]', prediction, flags=0))
+            print('answer_variables:', answer_variables)
             #sympy.solve(prediction,answer_variables)
             sympy.solve(prediction.split(','), answer_variables)
 
