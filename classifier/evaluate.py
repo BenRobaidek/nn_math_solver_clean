@@ -70,8 +70,6 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             tgt = tgt.replace('^', '**')
             # remove = from equations
 
-            print('prediction:', prediction)
-            print('tgt:', tgt)
             if (prediction is not '<unk>') and (tgt is not '<unk>'):
                 # get variables out of predicted equation
                 answer_variables = np.unique(re.findall(r'[a-z,A-Z]', prediction, flags=0))
@@ -91,6 +89,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 except ValueError as e:
                     print(e)
 
+                """
                 add = 1
                 print('answers:', answers)
                 print('type(answer):', type(answer))
@@ -100,6 +99,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                     if not abs(a - t) < .002:
                         add = 0
                 true_corrects += add
+                """
 
             print('prediction:', prediction)
             print('tgt:', tgt)
