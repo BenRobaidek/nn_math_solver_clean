@@ -18,7 +18,7 @@ def main():
 
 
     # LOAD JSON DATA
-    jsondata = json.loads(open('./input/AllWithEquations.json').read())
+    jsondata = json.loads(open('./input/Kushman.json').read())
     for x in jsondata:
         #print('BEFORE:', x['sQuestion'], x['lEquations'], x['lSolutions'])
         lQueryVars = x.get('lQueryVars')
