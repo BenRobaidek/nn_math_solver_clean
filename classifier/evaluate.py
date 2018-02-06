@@ -72,6 +72,8 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             # remove = from equations
             prediction = prediction.strip('x =')
             tgt = tgt.strip('x =')
+            prediction = prediction.strip('X=')
+            tgt = tgt.strip('X=')
             # evaluate
             prediction = prediction.strip()
 
