@@ -24,7 +24,7 @@ def main():
         lQueryVars = x.get('lQueryVars')
         x['sQuestion'], x['lEquations'], x['variables'] = preprocess(x['sQuestion'], x['lEquations'], lQueryVars)
         if len(x['lEquations'].split(',')) >= 2:
-            print(x['lQueryVars'])
+            #print(x['lQueryVars'])
             print('AFTER: ', x['sQuestion'], x['lEquations'], x['lSolutions'], x['variables'])
             print()
 
