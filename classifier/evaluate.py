@@ -55,6 +55,8 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             print('answer:', answer)
             print('probability:', probability)
             answer = eval(answer)
+            for i,a in enumerate(answer):
+                answer[i] = float(a)
 
             # sub variables into predicted and target equations
             var_value = eval(var_value)
@@ -89,7 +91,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
 
                 add = 1
                 print('type(answer):', type(answer))
-                for a, t in zip(sorted(answers.values()), answer.astype(float)):
+                for a, t in zip(sorted(answers.values()), sorted(answer)):
                     print('a:', float(a))
                     print('t:', t)
                     if abs(a - t) < .002:
