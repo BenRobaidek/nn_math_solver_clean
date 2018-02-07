@@ -54,6 +54,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             #print('var_value:', var_value)
             #print('answer:', answer)
             #print('probability:', probability)
+            print('answer:', answer)
             answer = eval(answer)
             for i,a in enumerate(answer):
                 answer[i] = float(a)
