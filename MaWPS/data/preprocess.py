@@ -74,8 +74,9 @@ def preprocess(question, equation, lQueryVars):
         if isFloat(token): question[i] = str(float(token))
     """
 
+    # find and replace constants in question and equation
     i = 0
-    variables = dict()
+    constants = dict()
     for j,token in enumerate(question):
         if isFloat(token):
             token = float(token)
@@ -83,27 +84,19 @@ def preprocess(question, equation, lQueryVars):
             for symbol in equation:
                 if isFloat(symbol) and float(symbol) == float(token):
                     equation[equation.index(symbol)] = character
-            variables[character] = str(token)
+            constants[character] = str(token)
             for q in question:
                 if isFloat(q) and float(q) == token:
                     question[question.index(q)] = character
             i += 1
 
-    j = 0
-    if lQueryVars is not None:
-        for var in lQueryVars:
-            for i,token in enumerate(equation):
-                if var == token:
-                    print(j)
-                    equation[i] = chr(88 - j)
-            j += 1
-        print('lQueryVars:', lQueryVars)
-        print(equation)
+    # find and replace variables in equation
+    print('equation:', equation)
 
     question = ' '.join(question)
     equation = ''.join(equation)
     #equation = equation.split(',')
-    return question, equation, variables
+    return question, equation, constants
 
 def json2tsv(json_indices, json_data, output_path):
     """
