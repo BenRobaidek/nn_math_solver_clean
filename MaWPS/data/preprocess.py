@@ -85,7 +85,7 @@ def preprocess(question, equation, lQueryVars):
     # find and replace variables in equation
     print('equation:', equation)
     variables = [x for x in equation if x not in ['+', '-', '*', '/', ',',
-            '**', '(', ')', '='] and not isFloat(x) and re.match(r'\[[a-z]\]', x)]
+            '**', '(', ')', '='] and not isFloat(x) and not re.match(r'\[[a-z]\]', x)]
     print('variables:', variables)
 
     question = ' '.join(question)
