@@ -66,13 +66,6 @@ def preprocess(question, equation, lQueryVars):
     equation = equation.split()
     question = question.split()
 
-    """
-    for i,token in enumerate(equation):
-        if isFloat(token): equation[i] = str(float(token))
-    for i,token in enumerate(question):
-        if isFloat(token): question[i] = str(float(token))
-    """
-
     # find and replace constants in question and equation
     i = 0
     constants = dict()
@@ -91,7 +84,8 @@ def preprocess(question, equation, lQueryVars):
 
     # find and replace variables in equation
     print('equation:', equation)
-    variables = [x for x in equation if x not in ['+', '-', '*', '/', '**', '(', ')', '=']]
+    variables = [x for x in equation if x not in ['+', '-', '*', '/', '**', '(', ')', '='] and not isFloat(x)]
+    print('variables:', variables)
 
     question = ' '.join(question)
     equation = ''.join(equation)
