@@ -89,7 +89,7 @@ def preprocess(question, equation, lQueryVars):
     variables = np.unique(variables)
     i = 0
     for v in variables:
-        equation[equation == v] = 'VAR_' + str(i)
+        equation[equation == v] = ('VAR_' + str(i))
         i += 1
     print('equation:', equation)
 
