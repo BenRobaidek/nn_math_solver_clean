@@ -55,7 +55,6 @@ def preprocess(question, equation, lQueryVars):
     equation = equation.replace('[', ' ( ')
     equation = equation.replace(']', ' ) ')
     equation = equation.replace('+', ' + ')
-    equation = equation.replace('+', ' + ')
     equation = equation.replace('-', ' - ')
     equation = equation.replace('*', ' * ')
     equation = equation.replace('/', ' / ')
@@ -92,6 +91,7 @@ def preprocess(question, equation, lQueryVars):
 
     # find and replace variables in equation
     print('equation:', equation)
+    variables = [x for x in equation if x not in ['+', '-', '*', '/', '**', '(', ')', '=']]
 
     question = ' '.join(question)
     equation = ''.join(equation)
