@@ -83,7 +83,6 @@ def preprocess(question, equation, lQueryVars):
             i += 1
 
     # find and replace variables in equation
-    print('equation:', equation)
     variables = [x for x in equation if x not in ['+', '-', '*', '/', ',',
             '**', '(', ')', '='] and not isFloat(x) and not re.match(r'\[[a-z]\]', x)]
     variables = np.unique(variables)
@@ -91,7 +90,6 @@ def preprocess(question, equation, lQueryVars):
     for v in variables:
         equation = [x if x!=v else 'VAR_' + str(i) for x in equation]
         i += 1
-    print('equation:', equation)
 
     question = ' '.join(question)
     equation = ''.join(equation)
