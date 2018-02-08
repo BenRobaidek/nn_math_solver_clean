@@ -54,10 +54,10 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             #print('var_value:', var_value)
             #print('answer:', answer)
             #print('probability:', probability)
-            print('answer:', answer)
+            #print('answer:', answer)
             answer = eval(answer)
             for i,a in enumerate(answer):
-                print('type(a):', type(a))
+                #print('type(a):', type(a))
                 answer[i] = float(a)
 
             # sub variables into predicted and target equations
@@ -72,7 +72,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             tgt = tgt.replace('^', '**')
             # remove = from equations
 
-            #print('prediction:', prediction)
+            print('type(prediction):', type(prediction))
             #print('tgt:', tgt)
             if (prediction is not '<unk>') and '=' in prediction:
                 # get variables out of predicted equation
