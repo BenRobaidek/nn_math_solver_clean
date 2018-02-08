@@ -91,7 +91,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 print(answer_variables)
                 if not np.unique(re.findall(r'\[[a-z]\]', prediction, flags=0)) >= 1:
                     print(prediction.split(','))
-                    answers = sympy.solve(prediction.split(','), answer_variables)
+                    answers = sympy.solveset(prediction.split(','), answer_variables)
                     print('answers:', answers)
 
             """
