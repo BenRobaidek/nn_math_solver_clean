@@ -95,6 +95,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                     symbols = sympy.symbols(' '.join(answer_variables))
                     print('expr:', expr)
                     print('symbols:', symbols)
+                    if len(expr) == 1: expr = expr[0]
                     answers = sympy.solveset(expr)#, symbols)
                     print('answers:', answers)
 
