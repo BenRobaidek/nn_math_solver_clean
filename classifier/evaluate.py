@@ -98,8 +98,8 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                     #if len(expr) == 1: expr = expr[0]
                     pred_answers = sympy.solve(expr)#, symbols)
 
+                all_equal = True
                 if len(pred_answers) == len(answer):
-                    all_equal = True
                     for pa, ta in zip(pred_answers, answer):
                         if not pa == ta:
                             all_equal = False
