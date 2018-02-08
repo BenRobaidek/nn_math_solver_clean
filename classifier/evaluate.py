@@ -78,7 +78,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             if (prediction is not '<unk>') and '=' in prediction:
 
                 # get variables out of predicted equation
-                answer_constants = np.unique(re.findall(r'\[[a-z,A-Z]\]', prediction, flags=0))
+                answer_variables = np.unique(re.findall(r'VAR_[\d]', prediction, flags=0))
 
                 prediction = prediction.split(',')
                 for k,p in enumerate(prediction):
@@ -89,8 +89,10 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 answers = dict()
 
                 print(prediction.split(','))
-                print(answer_constants)
-                answers = sympy.solve(prediction.split(','), answer_constants)
+                print(answer_variables)
+                if not np.unique(re.findall(r'\[[a-z]\]', prediction, flags=0)) >= 1:
+                    answers = sympy.solve(prediction.split(','), answer_variables)
+                    print('answers:', answers)
 
             """
             print('prediction:', prediction)
