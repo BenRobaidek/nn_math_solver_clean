@@ -107,7 +107,7 @@ def json2tsv(json_indices, json_data, output_path):
             solutions =  ','.join([str(x) for x in d['lSolutions']])
             output.write(str(d['sQuestion']) + '\t' +
                     str(d['lEquations']) + '\t' + str(d['variables'])
-                    + '\t' + solutions + '\n')
+                    + '\t' + '[' + solutions + ']' + '\n')
     output.close()
 
 def split_indices(k_test=5):
