@@ -89,8 +89,8 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 answers = dict()
 
                 print(prediction.split(','))
-                print(answer_variables)
-                answers = sympy.solve(prediction.split(','), answer_variables)
+                print(answer_constants)
+                answers = sympy.solve(prediction.split(','), answer_constants)
 
             """
             print('prediction:', prediction)
