@@ -74,9 +74,9 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
 
             print('type(prediction):', type(prediction))
             #print('tgt:', tgt)
-            print('here')
+
             if (prediction is not '<unk>') and '=' in prediction:
-                print('HERE')
+
                 # get variables out of predicted equation
                 answer_variables = np.unique(re.findall(r'[a-z,A-Z]', prediction, flags=0))
 
@@ -99,8 +99,10 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 for a, t in zip(sorted(answers.values()), sorted(answer)):
                     #print('a:', float(a))
                     #print('t:', t)
+                    print('here')
                     if not abs(a - t) < .002:
                         add = 0
+                    print('HERE')
                 true_corrects += add
 
             """
