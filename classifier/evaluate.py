@@ -87,7 +87,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 if len(prediction) == 1: prediction = prediction[0]
                 answers = dict()
                 print(answer_variables)
-                if not np.unique(re.findall(r'\[[a-z]\]', prediction, flags=0)) >= 1:
+                if not len(np.unique(re.findall(r'\[[a-z]\]', prediction, flags=0))) >= 1:
                     expr = sympy.simplify(prediction)
                     symbols = sympy.symbols(str(answer_variables))
                     print('expr:', expr)
