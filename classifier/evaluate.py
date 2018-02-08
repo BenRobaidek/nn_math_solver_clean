@@ -93,9 +93,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                     print('BEFORE HERE')
                 except ValueError as e:
                     print(e)
-
-
-                a = b + c
+                    
             """
             print('prediction:', prediction)
             print('tgt:', tgt)
