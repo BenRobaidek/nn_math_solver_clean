@@ -86,7 +86,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                     prediction[k] = '(' + p.split('=')[1] + ') - (' + p.split('=')[0] + ')'
 
                 #if len(prediction) == 1: prediction = prediction[0]
-                answers = dict()
+                pred_answers = dict()
                 print(answer_variables)
 
                 if not len(np.unique(re.findall(r'\[[a-z]\]', ','.join(prediction)))) >= 1:
@@ -96,8 +96,17 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                     print('expr:', expr)
                     print('symbols:', symbols)
                     #if len(expr) == 1: expr = expr[0]
-                    answers = sympy.solve(expr)#, symbols)
-                    print('answers:', answers)
+                    pred_answers = sympy.solve(expr)#, symbols)
+
+                if len(pred_answers) == len(answer):
+                    all_equal = True
+                    for pa, ta in zip(pred_answers, answer):
+                        if not pa == ta:
+                            all_equal = False
+                true_corrects += int(all_equal)
+
+
+
 
             """
             print('prediction:', prediction)
