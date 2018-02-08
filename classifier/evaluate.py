@@ -87,14 +87,14 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
 
                 #if len(prediction) == 1: prediction = prediction[0]
                 pred_answers = dict()
-                print(answer_variables)
+                #print(answer_variables)
 
                 if not len(np.unique(re.findall(r'\[[a-z]\]', ','.join(prediction)))) >= 1:
-                    print('prediction:', prediction)
+                    #print('prediction:', prediction)
                     expr = [parse_expr(x) for x in prediction]
                     symbols = sympy.symbols(' '.join(answer_variables))
-                    print('expr:', expr)
-                    print('symbols:', symbols)
+                    #print('expr:', expr)
+                    #print('symbols:', symbols)
                     #if len(expr) == 1: expr = expr[0]
                     pred_answers = sympy.solve(expr)#, symbols)
 
