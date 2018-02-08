@@ -83,14 +83,15 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 prediction = prediction.split(',')
                 for k,p in enumerate(prediction):
                     prediction[k] = '(' + p.split('=')[1] + ') - (' + p.split('=')[0] + ')'
+                print('prediction:', prediction)
                 prediction = ','.join(prediction)
-                #print('prediction:', prediction)
+                print('prediction:', prediction)
 
                 answers = dict()
 
                 print(answer_variables)
                 if not np.unique(re.findall(r'\[[a-z]\]', prediction, flags=0)) >= 1:
-                    expr = sympy.simplify(prediction.split(','))
+                    expr = sympy.simplify()
                     print('expr:', expr)
                     answers = sympy.solveset(expr, tuple(answer_variables))
                     print('answers:', answers)
