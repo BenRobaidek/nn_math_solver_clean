@@ -57,6 +57,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             print('answer:', answer)
             answer = eval(answer)
             for i,a in enumerate(answer):
+                print('a:', a)
                 answer[i] = float(a)
 
             # sub variables into predicted and target equations
