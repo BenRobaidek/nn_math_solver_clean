@@ -73,7 +73,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             tgt = tgt.replace('^', '**')
             # remove = from equations
 
-            print('type(prediction):', type(prediction))
+            #print('type(prediction):', type(prediction))
             #print('tgt:', tgt)
 
             if (prediction is not '<unk>') and '=' in prediction:
