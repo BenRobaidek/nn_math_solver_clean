@@ -88,10 +88,12 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
 
                 answers = dict()
                 try:
+                    print('AFATER HERE')
                     answers = sympy.solve(prediction.split(','), answer_variables)
+                    print('BEFORE HERE')
                 except ValueError as e:
                     print(e)
-                print('AFATER HERE')
+
 
                 a = b + c
             """
