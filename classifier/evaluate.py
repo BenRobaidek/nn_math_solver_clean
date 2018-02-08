@@ -93,16 +93,11 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                     #print('prediction:', prediction)
                     expr = [parse_expr(x) for x in prediction]
                     symbols = sympy.symbols(' '.join(answer_variables))
-                    #print('expr:', expr)
-                    #print('symbols:', symbols)
-                    #if len(expr) == 1: expr = expr[0]
                     pred_answers = sympy.solve(expr)#, symbols)
 
-                all_equal = True
+                all_equal = False
                 if len(pred_answers) == len(answer):
-                    for pa, ta in zip(pred_answers, answer):
-                        if not pa == ta:
-                            all_equal = False
+                    all_equal = np.less(np.absolute(np.subtract(pred_answers, answer)), np.ones(np.shape(preds)) * .002)
                 true_corrects += int(all_equal)
 
 
