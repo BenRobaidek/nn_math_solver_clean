@@ -93,6 +93,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                     expr = sympy.simplify(prediction)
                     symbols = sympy.symbols(str(answer_variables))
                     print('expr:', expr)
+                    print('symbols:', symbols)
                     answers = sympy.solveset(expr, symbols)
                     print('answers:', answers)
 
