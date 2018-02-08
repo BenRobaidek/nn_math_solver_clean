@@ -90,7 +90,8 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
 
                 print(answer_variables)
                 if not np.unique(re.findall(r'\[[a-z]\]', prediction, flags=0)) >= 1:
-                    print(prediction.split(','))
+                    expressions = prediction.split(',')
+                    if len(expressions) == 1: expressions = expressions[0]
                     answers = sympy.solveset(prediction.split(','), tuple(answer_variables))
                     print('answers:', answers)
 
