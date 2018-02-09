@@ -78,7 +78,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             #print('type(prediction):', type(prediction))
             #print('tgt:', tgt)
 
-            
+
             if (tgt == '<unk>'):
                 unk += 1
             if (prediction is not '<unk>') and '=' in prediction:
@@ -103,15 +103,15 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 all_equal = False
                 if len(pred_answers) == len(answer):
                     #print(pred_answers)
-                    print('pred_answers:', pred_answers)
-                    print('answer:', answer)
+                    #print('pred_answers:', pred_answers)
+                    #print('answer:', answer)
                     differences = np.absolute(np.subtract(np.array(list(pred_answers.values())).astype(float), answer))
-                    print('differences:', differences)
+                    #print('differences:', differences)
                     correct_answers = np.less(differences, np.ones(np.shape(pred_answers.values())) * .002)
-                    print('correct_answers:', correct_answers)
+                    #print('correct_answers:', correct_answers)
                     all_equal = np.all(correct_answers)
-                    print('all_equal:', all_equal)
-                    print()
+                    #print('all_equal:', all_equal)
+                    #print()
                 true_corrects += int(all_equal)
 
 
