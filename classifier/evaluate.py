@@ -99,7 +99,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 if len(pred_answers) == len(answer):
                     #print(pred_answers)
                     print(list(pred_answers.values()))
-                    all_equal = np.less(np.absolute(np.subtract(np.array(pred_answers.values()).astype(float), answer)), np.ones(np.shape(pred_answers)) * .002)
+                    all_equal = np.less(np.absolute(np.subtract(np.array(list(pred_answers.values())).astype(float), answer)), np.ones(np.shape(pred_answers)) * .002)
                 true_corrects += int(all_equal)
 
 
