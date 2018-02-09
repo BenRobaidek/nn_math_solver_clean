@@ -100,7 +100,13 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                     #print(pred_answers)
                     print('pred_answers:', pred_answers)
                     print('answer:', answer)
-                    all_equal = np.all(np.less(np.absolute(np.subtract(np.array(list(pred_answers.values())).astype(float), answer)), np.ones(np.shape(pred_answers)) * .002))
+                    differences = np.absolute(np.subtract(np.array(list(pred_answers.values())).astype(float), answer))
+                    print('differences:', differences)
+                    correct_answers = np.less(differences, np.ones(np.shape(pred_answers.values())) * .002))
+                    print('correct_answers:', correct_answers)
+                    all_equal = np.all(correct_answers)
+                    print('all_equal:', all_equal)
+                    print()
                 true_corrects += int(all_equal)
 
 
