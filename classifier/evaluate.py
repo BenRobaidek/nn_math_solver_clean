@@ -43,7 +43,9 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
 
         # True Acc
         predictions = np.array(LABELS.vocab.itos)[np.array(preds.data)]
+        print('PREDICTIONS:', predictions)
         targets = np.array(LABELS.vocab.itos)[np.array(batch.label.data)]
+        print('TARGETS:', targets)
         var_values = np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)]
         answers = np.array(ANS.vocab.itos)[np.array(batch.ans.data)]
         probabilities,_ = torch.max(F.softmax(logit), dim=1)
