@@ -1,4 +1,4 @@
 {"data_path":"../MaWPS/data/working/", "rand":["True"], "mf":[1],
-    "net_type": ["lstm"], "epochs":[100] ,"bs":[8], "opt":["sgd", "adamax", "adam"],
+    "net_type": ["lstm"], "epochs":[50] ,"bs":[8], "opt":["sgd", "adamax", "adam"],
     "ly":[1,2,4], "hs":[50,100,300,500], "num_dir":[2], "embfix":["False"], "embdim":[50,100,300,500],
     "ptemb":["False"], "dropout":[0.3],"pred_filter":["True"]}
