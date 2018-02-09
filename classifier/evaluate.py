@@ -11,7 +11,7 @@ from sympy.parsing.sympy_parser import parse_expr
 
 def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pred_filter=True):
     model.eval()
-    corrects, true_corrects, answer_correspond_to_equation, avg_loss, t5_corrects, rr = 0, 0, 0, 0, 0, 0
+    corrects, true_corrects, answer_correspond_to_equation, avg_loss, t5_corrects, rr, unk = 0, 0, 0, 0, 0, 0, 0
 
     eval_preds = []
     for batch_count,batch in enumerate(data_iter):
@@ -43,9 +43,9 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
 
         # True Acc
         predictions = np.array(LABELS.vocab.itos)[np.array(preds.data)]
-        print('PREDICTIONS:', predictions)
+        #print('PREDICTIONS:', predictions)
         targets = np.array(LABELS.vocab.itos)[np.array(batch.label.data)]
-        print('TARGETS:', targets)
+        #print('TARGETS:', targets)
         var_values = np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)]
         answers = np.array(ANS.vocab.itos)[np.array(batch.ans.data)]
         probabilities,_ = torch.max(F.softmax(logit), dim=1)
@@ -78,6 +78,8 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             #print('type(prediction):', type(prediction))
             #print('tgt:', tgt)
 
+            if (target is '<unk>'):
+                unk += 1
             if (prediction is not '<unk>') and '=' in prediction:
 
                 # get variables out of predicted equation
@@ -146,6 +148,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
     true_acc = 100.0 * true_corrects/size
     print('acc:', accuracy)
     print('true_acc:', true_acc)
+    print('percent unk:', unk/size)
     #print('answer_correspond_to_equation:', answer_correspond_to_equation/size)
     print()
     t5_acc = 100.0 * t5_corrects/size
