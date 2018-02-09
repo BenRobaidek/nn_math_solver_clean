@@ -78,6 +78,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
             #print('type(prediction):', type(prediction))
             #print('tgt:', tgt)
 
+            print('tgt:', tgt)
             if (tgt is '<unk>'):
                 unk += 1
             if (prediction is not '<unk>') and '=' in prediction:
