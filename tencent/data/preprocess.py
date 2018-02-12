@@ -101,8 +101,9 @@ def main():
 
     # SAVE SRC/TGT FILES NO SNI
     if not os.path.exists('./working/no_sni/'): os.makedirs('./working/no_sni/')
-    json2tsv(train_indicesk5, jsondata_no_sni,   './working/no_sni/train.tsv')
-    json2tsv(val_indicesk5,   jsondata_no_sni,   './working/no_sni/val.tsv')
+    json2tsv(train_indices, jsondata_no_sni,   './working/no_sni/train.tsv')
+    json2tsv(val_indices,   jsondata_no_sni,   './working/no_sni/val.tsv')
+    json2tsv(test_indices,   jsondata_no_sni,   './working/no_sni/test.tsv')
 
     # SAVE VARIABLE VALUES TO FILE NO SNI
     saveValues(val_indicesk5, jsondata_no_sni,    './working/no_sni/val_values.txt')
@@ -142,17 +143,17 @@ def main():
     """
 
     train_val_indicesk5 = np.append(train_indicesk5, val_indicesk5)
-    json2tsv(train_val_indicesk5, common_data2,    './working/common0.2/train_val_common.tsv')
-    json2tsv(train_val_indicesk5, uncommon_data2,  './working/common0.2/train_val_uncommon.tsv')
+    json2tsv(train_val_indices, common_data2,    './working/common0.2/train_val_common.tsv')
+    json2tsv(train_val_indices, uncommon_data2,  './working/common0.2/train_val_uncommon.tsv')
 
-    json2tsv(train_val_indicesk5, common_data4,    './working/common0.4/train_val_common.tsv')
-    json2tsv(train_val_indicesk5, uncommon_data4,  './working/common0.4/train_val_uncommon.tsv')
+    json2tsv(train_val_indices, common_data4,    './working/common0.4/train_val_common.tsv')
+    json2tsv(train_val_indices, uncommon_data4,  './working/common0.4/train_val_uncommon.tsv')
 
-    json2tsv(train_val_indicesk5, common_data6,    './working/common0.6/train_val_common.tsv')
-    json2tsv(train_val_indicesk5, uncommon_data6,  './working/common0.6/train_val_uncommon.tsv')
+    json2tsv(train_val_indices, common_data6,    './working/common0.6/train_val_common.tsv')
+    json2tsv(train_val_indices, uncommon_data6,  './working/common0.6/train_val_uncommon.tsv')
 
-    json2tsv(train_val_indicesk5, common_data8,    './working/common0.8/train_val_common.tsv')
-    json2tsv(train_val_indicesk5, uncommon_data8,  './working/common0.8/train_val_uncommon.tsv')
+    json2tsv(train_val_indices, common_data8,    './working/common0.8/train_val_common.tsv')
+    json2tsv(train_val_indices, uncommon_data8,  './working/common0.8/train_val_uncommon.tsv')
 
     # SAVE FULL TSV FILES
     tsvs2tsv('./working/common0.2/train_val_common.tsv', './working/common0.2/train_val_uncommon.tsv', './working/common0.2/train_val.tsv')
