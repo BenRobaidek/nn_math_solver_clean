@@ -77,11 +77,13 @@ def main():
                                     embfix=bool(embfix), pretrained_emb=bool(ptemb),
                                     dropout=dropout, pred_filter=bool(pred_filter),
                                     save_path='./hyperparam_results/' + save_path + '/', save=False, verbose=False)
-                            results = sorted(results, key=lambda x: x['accuracy'], reverse=True)
+                            results = sorted(results, key=lambda x: x['true_acc'], reverse=True)
                             cross_val_results[str(i)] = results
                     except RuntimeError:
                         print('Oops... Ran out of memory')
                     hyperparam_results[str(hyperparams)] = cross_val_results
+                    cross_val_true_acc = list(cross_val_results.values())
+                    print('cross validation true acc:', cross_val_true_acc)
             with open(args.hyperparam_results, 'w') as f:
                 json.dump(hyperparam_results, f, indent=2)
 
