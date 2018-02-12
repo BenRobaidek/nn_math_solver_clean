@@ -61,27 +61,29 @@ def main():
                             'pred_filter':pred_filter}
                 results = None
                 if not hyperparams in list(hyperparam_results.keys()):
+                    cross_val_results = dict()
                     try:
                         save_path = ''
                         for k in hyperparams.keys():
                             save_path = save_path + str(k) + str(hyperparams[k])
-                        for i in range(1,5):
-                            print(i)
-                        results = train(data_path=config['data_path'],
-                                train_path='train.tsv',
-                                val_path='val.tsv', test_path='test.tsv', mf=mf,
-                                epochs=epoch, bs=bs, opt=opt, net_type=net_type,
-                                ly=ly, hs=hs, num_dir=num_dir, emb_dim=embdim,
-                                embfix=bool(embfix), pretrained_emb=bool(ptemb),
-                                dropout=dropout, pred_filter=bool(pred_filter),
-                                save_path='./hyperparam_results/' + save_path + '/', save=False, verbose=False)
-                        results = sorted(results, key=lambda x: x['accuracy'],
-                                reverse=True)
+                        for i in range(1,6):
+                            results = train(data_path=config['data_path'],
+                                    train_path='traink' + str(i) + '.tsv',
+                                    val_path='valk' + str(i) + '.tsv',
+                                    test_path='testk' + str(i) + '.tsv',
+                                    mf=mf, epochs=epoch, bs=bs, opt=opt,
+                                    net_type=net_type,
+                                    ly=ly, hs=hs, num_dir=num_dir, emb_dim=embdim,
+                                    embfix=bool(embfix), pretrained_emb=bool(ptemb),
+                                    dropout=dropout, pred_filter=bool(pred_filter),
+                                    save_path='./hyperparam_results/' + save_path + '/', save=False, verbose=False)
+                            results = sorted(results, key=lambda x: x['accuracy'], reverse=True)
+                            cross_val_results[str(i)] = results
                     except RuntimeError:
                         print('Oops... Ran out of memory')
-                    hyperparam_results[str(hyperparams)] = results
+                    hyperparam_results[str(hyperparams)] = cross_val_results
             with open(args.hyperparam_results, 'w') as f:
-                json.dump(hyperparam_results, f)
+                json.dump(hyperparam_results, f, indent=2)
 
     ############################################################################
     # RETRAIN/SAVE BEST MODEL
