@@ -82,7 +82,8 @@ def main():
                     except RuntimeError:
                         print('Oops... Ran out of memory')
                     hyperparam_results[str(hyperparams)] = cross_val_results
-                    cross_val_true_acc = list(cross_val_results.values())[:][:].get('true_acc')
+                    print('cross_val_results:', cross_val_results)
+                    cross_val_true_acc = list(cross_val_results.values())
                     print('cross validation true acc:', cross_val_true_acc)
             with open(args.hyperparam_results, 'w') as f:
                 json.dump(hyperparam_results, f, indent=2)
