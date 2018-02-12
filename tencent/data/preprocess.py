@@ -108,7 +108,7 @@ def main():
     saveValues(val_indicesk5, jsondata_no_sni,    './working/no_sni/val_values.txt')
 
     # REMOVE TEST FOLD BEFORE COUNTING UNCOMMON EQUATIONS
-    jsondata = [d for d in jsondata if int(d['id']) not in test_indicesk5]
+    jsondata = [d for d in jsondata if int(d['id']) not in test_indices]
 
     # REMOVE UNCOMMON EQUATIONS
     print('Removing uncommon equations...')
