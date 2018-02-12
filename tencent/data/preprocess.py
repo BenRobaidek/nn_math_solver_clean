@@ -101,8 +101,8 @@ def main():
 
     # SAVE SRC/TGT FILES NO SNI
     if not os.path.exists('./working/no_sni/'): os.makedirs('./working/no_sni/')
-    json2tsv(train_indicesk5, jsondata_no_sni,   './working/no_sni/traink5.tsv')
-    json2tsv(val_indicesk5,   jsondata_no_sni,   './working/no_sni/valk5.tsv')
+    json2tsv(train_indicesk5, jsondata_no_sni,   './working/no_sni/train.tsv')
+    json2tsv(val_indicesk5,   jsondata_no_sni,   './working/no_sni/val.tsv')
 
     # SAVE VARIABLE VALUES TO FILE NO SNI
     saveValues(val_indicesk5, jsondata_no_sni,    './working/no_sni/val_values.txt')
@@ -126,10 +126,10 @@ def main():
     if not os.path.exists('./working/common0.8/'): os.makedirs('./working/common0.8/')
 
     # SAVE VARIABLE VALUES TO FILE FOR COMMON/UNCOMMON
-    saveValues(val_indicesk5, jsondata, './working/common0.2/val_values.txt')
-    saveValues(val_indicesk5, jsondata, './working/common0.4/val_values.txt')
-    saveValues(val_indicesk5, jsondata, './working/common0.6/val_values.txt')
-    saveValues(val_indicesk5, jsondata, './working/common0.8/val_values.txt')
+    saveValues(val_indices, jsondata, './working/common0.2/val_values.txt')
+    saveValues(val_indices, jsondata, './working/common0.4/val_values.txt')
+    saveValues(val_indices, jsondata, './working/common0.6/val_values.txt')
+    saveValues(val_indices, jsondata, './working/common0.8/val_values.txt')
 
     # SAVE ANSWER FILES
     """
