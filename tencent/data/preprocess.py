@@ -106,7 +106,7 @@ def main():
     json2tsv(test_indices,   jsondata_no_sni,   './working/no_sni/test.tsv')
 
     # SAVE VARIABLE VALUES TO FILE NO SNI
-    saveValues(val_indicesk5, jsondata_no_sni,    './working/no_sni/val_values.txt')
+    saveValues(val_indices, jsondata_no_sni,    './working/no_sni/val_values.txt')
 
     # REMOVE TEST FOLD BEFORE COUNTING UNCOMMON EQUATIONS
     jsondata = [d for d in jsondata if int(d['id']) not in test_indices]
