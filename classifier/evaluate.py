@@ -44,6 +44,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         targets = np.array(LABELS.vocab.itos)[np.array(batch.label.data)]
         var_values = np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)]
         answers = np.array(ANS.vocab.itos)[np.array(batch.ans.data)]
+        print('logit:', logit)
         probabilities,_ = torch.max(F.softmax(logit, dim=0), dim=1)
 
         for prediction, tgt, var_value, answer, probability in zip(predictions, targets, var_values, answers, probabilities):
