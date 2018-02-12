@@ -70,7 +70,7 @@ def main():
                             results = train(data_path=config['data_path'],
                                     train_path='traink' + str(i) + '.tsv',
                                     val_path='valk' + str(i) + '.tsv',
-                                    test_path='testk' + str(i) + '.tsv',
+                                    test_path='test.tsv',
                                     mf=mf, epochs=epoch, bs=bs, opt=opt,
                                     net_type=net_type,
                                     ly=ly, hs=hs, num_dir=num_dir, emb_dim=embdim,
