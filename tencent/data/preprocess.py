@@ -44,20 +44,13 @@ def main():
     # PREPROCESS DATA
     print('Preprocessing...')
     for d in jsondata:
-        #print('d[\'segmented_text\']:', d['segmented_text'])
-        #print('d[\'equation\']', d['equation'])
         d['segmented_text'], d['equation'], d['variable_values'] = preprocess(d['segmented_text'], d['equation'], model, fields, use_sni=True)
-        #print('d[\'segmented_text\']:', d['segmented_text'])
-        #print('d[\'equation\']', d['equation'])
-        #print()
     print('Preprocessing complete...')
-    #print(jsondata)
 
     # PREPROCESS DATA WITHOUT SNI
     print('Preprocessing without sni...')
     for d in jsondata_no_sni:
         d['segmented_text'], d['equation'], d['variable_values'] = preprocess(d['segmented_text'], d['equation'], model, fields, use_sni=False)
-        #print(d['segmented_text'])
     print('Preprocessing without sni complete...')
 
     # CREATE WORKING AND OUTPUT FOLDERS IF NEEDED
@@ -76,6 +69,11 @@ def main():
 
     # GET TRAIN, VAL, TEST INDICES
     train_indices, val_indices, test_indices = split_indices(k_test=5)
+    train_indicesk1, val_indicesk1 = split_indices_crossval(k_test=1)
+    train_indicesk2, val_indicesk2 = split_indices_crossval(k_test=2)
+    train_indicesk3, val_indicesk3 = split_indices_crossval(k_test=3)
+    train_indicesk4, val_indicesk4 = split_indices_crossval(k_test=4)
+    train_indicesk5, val_indicesk5 = split_indices_crossval(k_test=5)
 
     # SAVE SRC/TGT FILES
     if not os.path.exists('./working/basic/'): os.makedirs('./working/basic/')
@@ -83,20 +81,34 @@ def main():
     json2tsv(val_indices,   jsondata,   './working/basic/val.tsv')
     json2tsv(test_indices,  jsondata,   './working/basic/test.tsv')
 
+    json2tsv(train_indicesk1, jsondata,   './working/basic/traink1.tsv')
+    json2tsv(val_indicesk1,   jsondata,   './working/basic/valk1.tsv')
+
+    json2tsv(train_indicesk2, jsondata,   './working/basic/traink2.tsv')
+    json2tsv(val_indicesk2,   jsondata,   './working/basic/valk2.tsv')
+
+    json2tsv(train_indicesk3, jsondata,   './working/basic/traink3.tsv')
+    json2tsv(val_indicesk3,   jsondata,   './working/basic/valk3.tsv')
+
+    json2tsv(train_indicesk4, jsondata,   './working/basic/traink4.tsv')
+    json2tsv(val_indicesk4,   jsondata,   './working/basic/valk4.tsv')
+
+    json2tsv(train_indicesk5, jsondata,   './working/basic/traink5.tsv')
+    json2tsv(val_indicesk5,   jsondata,   './working/basic/valk5.tsv')
+
     # SAVE VARIABLE VALUES TO FILE
-    saveValues(val_indices, jsondata,    './working/basic/val_values.txt')
+    saveValues(val_indicesk5, jsondata,    './working/basic/val_values.txt')
 
     # SAVE SRC/TGT FILES NO SNI
     if not os.path.exists('./working/no_sni/'): os.makedirs('./working/no_sni/')
-    json2tsv(train_indices, jsondata_no_sni,   './working/no_sni/train.tsv')
-    json2tsv(val_indices,   jsondata_no_sni,   './working/no_sni/val.tsv')
-    json2tsv(test_indices,  jsondata_no_sni,   './working/no_sni/test.tsv')
+    json2tsv(train_indicesk5, jsondata_no_sni,   './working/no_sni/traink5.tsv')
+    json2tsv(val_indicesk5,   jsondata_no_sni,   './working/no_sni/valk5.tsv')
 
     # SAVE VARIABLE VALUES TO FILE NO SNI
-    saveValues(val_indices, jsondata_no_sni,    './working/no_sni/val_values.txt')
+    saveValues(val_indicesk5, jsondata_no_sni,    './working/no_sni/val_values.txt')
 
     # REMOVE TEST FOLD BEFORE COUNTING UNCOMMON EQUATIONS
-    jsondata = [d for d in jsondata if int(d['id']) not in test_indices]
+    jsondata = [d for d in jsondata if int(d['id']) not in test_indicesk5]
 
     # REMOVE UNCOMMON EQUATIONS
     print('Removing uncommon equations...')
@@ -114,10 +126,10 @@ def main():
     if not os.path.exists('./working/common0.8/'): os.makedirs('./working/common0.8/')
 
     # SAVE VARIABLE VALUES TO FILE FOR COMMON/UNCOMMON
-    saveValues(val_indices, jsondata, './working/common0.2/val_values.txt')
-    saveValues(val_indices, jsondata, './working/common0.4/val_values.txt')
-    saveValues(val_indices, jsondata, './working/common0.6/val_values.txt')
-    saveValues(val_indices, jsondata, './working/common0.8/val_values.txt')
+    saveValues(val_indicesk5, jsondata, './working/common0.2/val_values.txt')
+    saveValues(val_indicesk5, jsondata, './working/common0.4/val_values.txt')
+    saveValues(val_indicesk5, jsondata, './working/common0.6/val_values.txt')
+    saveValues(val_indicesk5, jsondata, './working/common0.8/val_values.txt')
 
     # SAVE ANSWER FILES
     """
@@ -129,18 +141,18 @@ def main():
     saveAnswers(val_indices, jsondata, './working/no_sni/answers.txt')
     """
 
-    train_val_indices = np.append(train_indices, val_indices)
-    json2tsv(train_val_indices, common_data2,    './working/common0.2/train_val_common.tsv')
-    json2tsv(train_val_indices, uncommon_data2,  './working/common0.2/train_val_uncommon.tsv')
+    train_val_indicesk5 = np.append(train_indicesk5, val_indicesk5)
+    json2tsv(train_val_indicesk5, common_data2,    './working/common0.2/train_val_common.tsv')
+    json2tsv(train_val_indicesk5, uncommon_data2,  './working/common0.2/train_val_uncommon.tsv')
 
-    json2tsv(train_val_indices, common_data4,    './working/common0.4/train_val_common.tsv')
-    json2tsv(train_val_indices, uncommon_data4,  './working/common0.4/train_val_uncommon.tsv')
+    json2tsv(train_val_indicesk5, common_data4,    './working/common0.4/train_val_common.tsv')
+    json2tsv(train_val_indicesk5, uncommon_data4,  './working/common0.4/train_val_uncommon.tsv')
 
-    json2tsv(train_val_indices, common_data6,    './working/common0.6/train_val_common.tsv')
-    json2tsv(train_val_indices, uncommon_data6,  './working/common0.6/train_val_uncommon.tsv')
+    json2tsv(train_val_indicesk5, common_data6,    './working/common0.6/train_val_common.tsv')
+    json2tsv(train_val_indicesk5, uncommon_data6,  './working/common0.6/train_val_uncommon.tsv')
 
-    json2tsv(train_val_indices, common_data8,    './working/common0.8/train_val_common.tsv')
-    json2tsv(train_val_indices, uncommon_data8,  './working/common0.8/train_val_uncommon.tsv')
+    json2tsv(train_val_indicesk5, common_data8,    './working/common0.8/train_val_common.tsv')
+    json2tsv(train_val_indicesk5, uncommon_data8,  './working/common0.8/train_val_uncommon.tsv')
 
     # SAVE FULL TSV FILES
     tsvs2tsv('./working/common0.2/train_val_common.tsv', './working/common0.2/train_val_uncommon.tsv', './working/common0.2/train_val.tsv')
@@ -210,6 +222,22 @@ def split_indices(k_test=5):
     val_indices = np.array(train_val[-1000:]).astype(int)
     test_indices = np.array(test).astype(int)
     return train_indices, val_indices, test_indices
+
+def split_indices_crossval(k_test=5):
+    """
+    Returns train, validation, and test indices
+    foldi.txt files must already exist in ./input/
+    """
+    train_val = []
+    for i in range(1,6):
+        if not i == k_test:
+            train_val = np.append(train_val, open('./input/fold' + str(i) + '.txt').readlines())
+    #random.shuffle(train_val)
+    test = open('./input/fold' + str(k_test) + '.txt').readlines()
+    train_indices = np.array(train_val[0:-1000]).astype(int)
+    val_indices = np.array(train_val[-1000:]).astype(int)
+    test_indices = np.array(test).astype(int)
+    return np.append(train_indices, val_indices), test_indices
 
 def mostCommon(data, percent):
     """
