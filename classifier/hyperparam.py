@@ -84,8 +84,9 @@ def main():
                     hyperparam_results[str(hyperparams)] = cross_val_results
                     print('cross_val_results:', cross_val_results)
                     cross_val_true_acc = list(cross_val_results.values())
-                    for i,x in enumerate(cross_val_true_acc):
-                        print(x[0].get('true_acc'))
+                    #for i,x in enumerate(cross_val_true_acc):
+                    #    print(x[0].get('true_acc'))
+                    cross_val_true_acc = [x[0].get('true_acc') for x in cross_val_true_acc]
                     print('cross validation true acc:', cross_val_true_acc)
             with open(args.hyperparam_results, 'w') as f:
                 json.dump(hyperparam_results, f, indent=2)
