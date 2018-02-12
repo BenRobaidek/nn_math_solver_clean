@@ -142,7 +142,7 @@ def main():
     saveAnswers(val_indices, jsondata, './working/no_sni/answers.txt')
     """
 
-    train_val_indicesk5 = np.append(train_indicesk5, val_indicesk5)
+    train_val_indices = np.append(train_indices, val_indices)
     json2tsv(train_val_indices, common_data2,    './working/common0.2/train_val_common.tsv')
     json2tsv(train_val_indices, uncommon_data2,  './working/common0.2/train_val_uncommon.tsv')
 
