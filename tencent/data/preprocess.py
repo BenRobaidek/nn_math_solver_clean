@@ -97,7 +97,7 @@ def main():
     json2tsv(val_indicesk5,   jsondata,   './working/basic/valk5.tsv')
 
     # SAVE VARIABLE VALUES TO FILE
-    saveValues(val_indicesk5, jsondata,    './working/basic/val_values.txt')
+    saveValues(val_indices, jsondata,    './working/basic/val_values.txt')
 
     # SAVE SRC/TGT FILES NO SNI
     if not os.path.exists('./working/no_sni/'): os.makedirs('./working/no_sni/')
