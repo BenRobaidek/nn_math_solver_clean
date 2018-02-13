@@ -54,7 +54,10 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         probabilities,_ = torch.max(F.softmax(logit, dim=1), dim=1)
 
         # append correct and probability
-        print(pred_corrects[:] + '\t' + probabilities[:])
+        result = []
+        for pred_correct, probability in zip(pred_corrects, probabilitys):
+            result = np.append(result, [pred_correct + '\t' + probability])
+        print('result:', result)
         eval_preds = np.append(eval_preds, [result])
 
         """
