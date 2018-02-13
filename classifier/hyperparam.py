@@ -65,7 +65,7 @@ def main():
                     try:
                         # \/ DELETE THIS WHEN DONE \/
                         # load retrieval predictions
-                        r_predictions_k1 = [x for x in open('../tencent/data/output/s2s/correctsk1.tsv').readlines()]
+                        r_predictions_k1 = [x for x in open('../tencent/data/output/retrieval/correctsk1.tsv').readlines()]
                         print(r_predictions_k1)
 
                         save_path = ''
