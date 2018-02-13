@@ -144,7 +144,7 @@ def main():
                             np.sum(c_s2s_predictionsk3)/len(c_s2s_predictionsk3),
                             np.sum(c_s2s_predictionsk4)/len(c_s2s_predictionsk4),
                             np.sum(c_s2s_predictionsk5)/len(c_s2s_predictionsk5)
-                            )
+                            ])
                         print('classifier + s2s cross validation true accuracy:', c_s2s_cross_validation_true_accuracy)
 
                         ########################################################
