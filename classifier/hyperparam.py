@@ -97,10 +97,14 @@ def main():
                             np.sum(s2s_predictions_k3)/len(s2s_predictions_k3),
                             np.sum(s2s_predictions_k4)/len(s2s_predictions_k4),
                             np.sum(s2s_predictions_k5)/len(s2s_predictions_k5)])
-                        print('s2s cross validation true accuracy:',s2s_cross_validation_true_accuracy)
+                        print('s2s cross validation true accuracy:', s2s_cross_validation_true_accuracy)
 
                         # load retrieval predictions
-                        # TODO
+                        r_predictions_k1 = 
+                        r_predictions_k2 =
+                        r_predictions_k3 =
+                        r_predictions_k4 =
+                        r_predictions_k5 =
 
                         # compute C + S cross val acc
                         # TODO
