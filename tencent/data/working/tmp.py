@@ -1,9 +1,18 @@
 def main():
     split('./basic/traink1.tsv', './s2s/src-traink1.txt', './s2s/tgt-traink1.txt')
+    split('./basic/valk1.tsv', './s2s/src-valk1.txt', './s2s/tgt-valk1.txt')
+
     split('./basic/traink2.tsv', './s2s/src-traink2.txt', './s2s/tgt-traink2.txt')
+    split('./basic/valk2.tsv', './s2s/src-valk2.txt', './s2s/tgt-valk2.txt')
+
     split('./basic/traink3.tsv', './s2s/src-traink3.txt', './s2s/tgt-traink3.txt')
+    split('./basic/valk3.tsv', './s2s/src-valk3.txt', './s2s/tgt-valk3.txt')
+
     split('./basic/traink4.tsv', './s2s/src-traink4.txt', './s2s/tgt-traink4.txt')
+    split('./basic/valk4.tsv', './s2s/src-valk4.txt', './s2s/tgt-valk4.txt')
+
     split('./basic/traink5.tsv', './s2s/src-traink5.txt', './s2s/tgt-traink5.txt')
+    split('./basic/valk5.tsv', './s2s/src-valk5.txt', './s2s/tgt-valk5.txt')
 
 def split(tsv, src_txt, tgt_txt):
     tsv = open(tsv).readlines()
