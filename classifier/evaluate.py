@@ -41,14 +41,18 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         _, preds = torch.max(logit, 1)
         corrects += preds.data.eq(target.data).sum()
 
-        # WORKING HERE
-        print('TENCENT SOLVER')
+        # TRUE ACCURACY
         equations = np.array(LABELS.vocab.itos)[np.array(preds.data)]
         variables = np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)]
         answers = np.array(ANS.vocab.itos)[np.array(batch.ans.data)]
 
         # solve predicted equations if possible, true iff solved correctly
         pred_corrects = solver.solve(equations, variables, answers)
+        true_corrects += np.sum(pred_corrects)
+
+        # solve tgt equations if possible, true iff solved correctly
+        equations = np.array(LABELS.vocab.itos)[np.array(target.data)]
+        tgt_corrects = solver.solve(equations, variables, answers)
         true_corrects += np.sum(pred_corrects)
 
         # get classifier probabilities
@@ -58,87 +62,9 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         result = []
         for pred_correct, probability in zip(pred_corrects, probabilities):
             result = np.append(result, [str(pred_correct) + '\t' + str(probability.data[0])])
-        print('result:', result)
         eval_preds = np.append(eval_preds, [result])
 
-        """
-        # True Acc
-        predictions = np.array(LABELS.vocab.itos)[np.array(preds.data)]
-        targets = np.array(LABELS.vocab.itos)[np.array(batch.label.data)]
-        var_values = np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)]
-        answers = np.array(ANS.vocab.itos)[np.array(batch.ans.data)]
-        #print('logit:', logit)
-        probabilities,_ = torch.max(F.softmax(logit, dim=1), dim=1)
-
-        for prediction, tgt, var_value, answer, probability in zip(predictions, targets, var_values, answers, probabilities):
-            var_value = eval(var_value)
-            # sub variables into predicted and target equations
-            for k in var_value:
-
-                prediction = prediction.replace(k, var_value[k])
-                tgt = tgt.replace(k, var_value[k])
-
-
-            # Add multiplication symbols to answer where needed
-            answer = re.sub(r'\(\((\d+)\)/\((\d+)\)\)',r'(\1/\2)',answer)
-            answer = re.sub(r'(\d)\(',r'\1+(', answer, 1)
-            # replace % in answer
-            answer = answer.replace('%', ' / 100')
-            answer = eval(answer)
-
-            # replace ^ with ** in predicted equation
-            prediction = prediction.replace('^', '**')
-            # replace ^ with ** in tgt equation
-            tgt = tgt.replace('^', '**')
-            # remove = from equations
-            prediction = prediction.strip('x =')
-            tgt = tgt.strip('x =')
-            # evaluate
-            prediction = prediction.strip()
-
-            if (not prediction == '80千米 / 小时') and (not re.search(r'\[\S\]', prediction)) and (not prediction == '<unk>'):
-                try:
-                    #print('prediction:', prediction)
-                    prediction = eval(prediction)
-                except (ZeroDivisionError, OverflowError):
-                    pass
-
-            if (tgt == '<unk>'):
-                pass
-            elif (not tgt == 'x = 80千米 / 小时'):
-                tgt = eval(tgt)
-
-            result = ''
-            if (not prediction == '<unk>') and (not tgt == '<unk>'):
-                try:
-                    prediction = float(prediction)
-                    tgt = float(tgt)
-                    error = abs(prediction - tgt)
-                    if error <= .002:
-                        true_corrects += 1
-                        result = 'True ' + str(probability.data[0])# + '\n')
-                    else:
-                        result = 'False ' + str(probability.data[0])# + '\n')
-                except Exception as e:
-                    result = 'False ' + str(probability.data[0])
-            else:
-                result = 'False ' + str(probability.data[0])# + '\n')
-            eval_preds = np.append(eval_preds, [result])
-
-            if tgt == '<unk>':
-                answer_correspond_to_equation += 1
-            elif (not tgt == '<unk>'):
-                try:
-                    error = abs(answer - tgt)
-                    if error <= .002:
-
-                        answer_correspond_to_equation += 1
-                except Exception as e:
-                    #print(e)
-                    pass
-        """
-
-        # Rank 5
+        # RANK 5
         _, t5_indices = torch.topk(logit, 5)
         x = torch.unsqueeze(target.data, 1)
         target_index = torch.cat((x, x, x, x, x), 1)
