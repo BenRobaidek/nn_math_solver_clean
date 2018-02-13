@@ -74,11 +74,11 @@ def main():
                         print(np.sum(s2s_predictions_k1))
 
                         s2s_cross_validation_true_accuracy = np.average([
-                                np.sum(s2s_predictions_k1),
-                                np.sum(s2s_predictions_k2),
-                                np.sum(s2s_predictions_k3),
-                                np.sum(s2s_predictions_k4),
-                                np.sum(s2s_predictions_k5)])
+                            np.sum(s2s_predictions_k1)/len(s2s_predictions_k1),
+                            np.sum(s2s_predictions_k2)/len(s2s_predictions_k2),
+                            np.sum(s2s_predictions_k3)/len(s2s_predictions_k3),
+                            np.sum(s2s_predictions_k4)/len(s2s_predictions_k4),
+                            np.sum(s2s_predictions_k5)/len(s2s_predictions_k5)])
 
                         print('s2s cross validation true accuracy:',s2s_cross_validation_true_accuracy)
 
