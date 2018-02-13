@@ -37,8 +37,9 @@ def solve(equations, variables, answers):
                 pass
 
         try:
-            if ans=='<unk>': corrects = np.append(corrects, [True])
-            if abs(float(eq) - float(ans)) < .002:
+            if ans=='<unk>':
+                corrects = np.append(corrects, [True])
+            elif abs(float(eq) - float(ans)) < .002:
                 corrects = np.append(corrects, [True])
             else:
                 corrects = np.append(corrects, [False])
