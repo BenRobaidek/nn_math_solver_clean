@@ -41,7 +41,7 @@ def solve(equations, variables, answers):
                 corrects = np.append(corrects, [True])
             else:
                 corrects = np.append(corrects, [False])
-        except TypeError as e:
+        except ValueError as e:
             corrects = np.append(corrects, [False])
             #print(e)
 
