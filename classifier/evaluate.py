@@ -43,6 +43,10 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
 
         # WORKING HERE
         print('TENCENT SOLVER')
+        equations = np.array(LABELS.vocab.itos)[np.array(preds.data)]
+        variables = np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)]
+        answers = np.array(ANS.vocab.itos)[np.array(batch.ans.data)]
+        solver.solve(equations, variables, answers)
 
         # True Acc
         predictions = np.array(LABELS.vocab.itos)[np.array(preds.data)]
