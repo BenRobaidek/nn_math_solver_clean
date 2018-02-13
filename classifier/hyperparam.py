@@ -65,8 +65,7 @@ def main():
                     try:
 
                         # load s2s predictions
-                        s2s_predictions_k1 = open('../tencent/data/working/s2s/correctsk1.tsv').readlines()
-                        s2s2s_predictions_k1 = [x = x.strip() for x in s2s_predictions_k1]
+                        s2s_predictions_k1 = np.array(open('../tencent/data/working/s2s/correctsk1.tsv').readlines()).astype(bool)
 
                         s2s_predictions_k2 = open('../tencent/data/working/s2s/correctsk2.tsv').readlines()
                         s2s_predictions_k3 = open('../tencent/data/working/s2s/correctsk3.tsv').readlines()
