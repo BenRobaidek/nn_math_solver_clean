@@ -39,9 +39,9 @@ def solve(equations, variables, answers):
 
         try:
             if abs(eq - ans) < .002:
-                corrects.append(True)
+                np.append(corrects, [True])
             else:
-                corrects.append(False)
+                np.append(corrects, [False])
         except Exception as e:
             print(e)
 
