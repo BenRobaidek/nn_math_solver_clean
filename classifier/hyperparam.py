@@ -81,6 +81,7 @@ def main():
                             cross_val_results[str(i)] = results
                         cross_val_true_acc = np.average([x[0].get('true_acc') for x in list(cross_val_results.values())])
                         cross_val_results['cross_val_true_acc'] = cross_val_true_acc
+                        print('classifier cross validation true accuracy:', cross_val_true_acc)
 
                         # load s2s predictions
                         s2s_predictions_k1 = np.array([x.strip() == 'True' for x in open('../tencent/data/working/s2s/correctsk1.tsv').readlines()])
