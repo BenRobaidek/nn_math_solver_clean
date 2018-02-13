@@ -71,7 +71,7 @@ def main():
                         s2s_predictions_k4 = np.array(x.strip() for x in open('../tencent/data/working/s2s/correctsk4.tsv').readlines()).astype(bool)
                         s2s_predictions_k5 = np.array(x.strip() for x in open('../tencent/data/working/s2s/correctsk5.tsv').readlines()).astype(bool)
 
-                        print(np.sum(s2s_predictions_k1))
+                        print(s2s_predictions_k1)
 
                         s2s_cross_validation_true_accuracy = np.average([
                             np.sum(s2s_predictions_k1)/len(s2s_predictions_k1),
