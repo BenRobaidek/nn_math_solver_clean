@@ -63,6 +63,11 @@ def main():
                 if not hyperparams in list(hyperparam_results.keys()):
                     cross_val_results = dict()
                     try:
+                        # \/ DELETE THIS WHEN DONE \/
+                        # load retrieval predictions
+                        r_predictions_k1 = [x for x in open('../tencent/data/output/s2s/correctsk1.tsv').readlines()]
+                        print(r_predictions_k1)
+
                         save_path = ''
                         for k in hyperparams.keys():
                             save_path = save_path + str(k) + str(hyperparams[k])
@@ -100,11 +105,8 @@ def main():
                         print('s2s cross validation true accuracy:', s2s_cross_validation_true_accuracy)
 
                         # load retrieval predictions
-                        r_predictions_k1 = 
-                        r_predictions_k2 =
-                        r_predictions_k3 =
-                        r_predictions_k4 =
-                        r_predictions_k5 =
+                        r_predictions_k1 = [x for x in open('../tencent/data/output/s2s/correctsk1.tsv').readlines()]
+                        print(r_predictions_k1)
 
                         # compute C + S cross val acc
                         # TODO
