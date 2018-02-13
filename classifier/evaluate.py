@@ -8,7 +8,7 @@ sys.path.append('../')
 sys.path.append('../tencent/')
 from py_expression_eval import Parser
 import re
-from ..tencent import solver
+from tencent import solver
 
 def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pred_filter=True):
     model.eval()
