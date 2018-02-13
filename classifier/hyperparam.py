@@ -81,6 +81,29 @@ def main():
                             cross_val_results[str(i)] = results
                         cross_val_true_acc = np.average([x[0].get('true_acc') for x in list(cross_val_results.values())])
                         cross_val_results['cross_val_true_acc'] = cross_val_true_acc
+
+                        # load s2s predictions
+                        s2s_predictions_k1 = open(save_path + 's2s_predictions_k1.tsv').readlines()
+                        s2s_predictions_k2 = open(save_path + 's2s_predictions_k2.tsv').readlines()
+                        s2s_predictions_k3 = open(save_path + 's2s_predictions_k3.tsv').readlines()
+                        s2s_predictions_k4 = open(save_path + 's2s_predictions_k4.tsv').readlines()
+                        s2s_predictions_k5 = open(save_path + 's2s_predictions_k5.tsv').readlines()
+
+                        # load retrieval predictions
+                        # TODO
+
+                        # compute C + S cross val acc
+                        # TODO
+
+                        # compute R + C cross val acc
+                        # TODO
+
+                        # compute R + S cross val acc
+                        # TODO
+
+                        # compute R + C + S cross val acc
+                        # TODO
+
                     except RuntimeError:
                         print('Oops... Ran out of memory')
                     hyperparam_results[str(hyperparams)] = cross_val_results
@@ -104,6 +127,7 @@ def main():
                 embfix=bool(embfix), pretrained_emb=bool(ptemb),
                 dropout=dropout, pred_filter=bool(pred_filter),
                 save_path='./', save=False, verbose=False)
+
 
 if __name__ == '__main__':
     main()
