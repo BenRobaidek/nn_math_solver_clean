@@ -1,4 +1,4 @@
-import OpenNMT-py as onmt
+import OpenNMT as onmt
 
 def main():
     print('Running main...')
