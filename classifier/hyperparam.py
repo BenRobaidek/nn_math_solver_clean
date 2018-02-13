@@ -108,11 +108,11 @@ def main():
 
                         # calculate/print retrieval cross validation acc
                         retrieval_cross_validation_true_accuracy = np.average([
-                            np.sum(retrieval_predictions_k1)/len(retrieval_predictions_k1),
-                            np.sum(retrieval_predictions_k2)/len(retrieval_predictions_k2),
-                            np.sum(retrieval_predictions_k3)/len(retrieval_predictions_k3),
-                            np.sum(retrieval_predictions_k4)/len(retrieval_predictions_k4),
-                            np.sum(retrieval_predictions_k5)/len(retrieval_predictions_k5)])
+                            np.sum(r_predictions_k1)/len(r_predictions_k1),
+                            np.sum(r_predictions_k2)/len(r_predictions_k2),
+                            np.sum(r_predictions_k3)/len(r_predictions_k3),
+                            np.sum(r_predictions_k4)/len(r_predictions_k4),
+                            np.sum(r_predictions_k5)/len(r_predictions_k5)])
                         print('retrieval cross validation true accuracy:', retrieval_cross_validation_true_accuracy)
 
                         # compute C + S cross val acc
