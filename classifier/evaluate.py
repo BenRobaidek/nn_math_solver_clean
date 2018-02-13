@@ -53,7 +53,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         # solve tgt equations if possible, true iff solved correctly
         equations = np.array(LABELS.vocab.itos)[np.array(target.data)]
         tgt_corrects = solver.solve(equations, variables, answers)
-        true_corrects += np.sum(pred_corrects)
+        answer_correspond_to_equation += np.sum(tgt_corrects)
 
         # get classifier probabilities
         probabilities,_ = torch.max(F.softmax(logit, dim=1), dim=1)
