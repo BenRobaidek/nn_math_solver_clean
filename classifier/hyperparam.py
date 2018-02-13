@@ -93,7 +93,7 @@ def main():
                                 np.sum(s2s_predictions_k2),
                                 np.sum(s2s_predictions_k3),
                                 np.sum(s2s_predictions_k4),
-                                np.sum(s2s_predictions_k5))
+                                np.sum(s2s_predictions_k5)))
 
                         # load retrieval predictions
                         # TODO
