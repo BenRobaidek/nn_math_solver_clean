@@ -65,11 +65,11 @@ def main():
                     try:
 
                         # load s2s predictions
-                        s2s_predictions_k1 = [bool(x) for x in open('../tencent/data/working/s2s/correctsk1.tsv').readlines()]
-                        s2s_predictions_k2 = [bool(x) for x in open('../tencent/data/working/s2s/correctsk2.tsv').readlines()]
-                        s2s_predictions_k3 = [bool(x) for x in open('../tencent/data/working/s2s/correctsk3.tsv').readlines()]
-                        s2s_predictions_k4 = [bool(x) for x in open('../tencent/data/working/s2s/correctsk4.tsv').readlines()]
-                        s2s_predictions_k5 = [bool(x) for x in open('../tencent/data/working/s2s/correctsk5.tsv').readlines()]
+                        s2s_predictions_k1 = open('../tencent/data/working/s2s/correctsk1.tsv').readlines()
+                        s2s_predictions_k2 = open('../tencent/data/working/s2s/correctsk2.tsv').readlines()
+                        s2s_predictions_k3 = open('../tencent/data/working/s2s/correctsk3.tsv').readlines()
+                        s2s_predictions_k4 = open('../tencent/data/working/s2s/correctsk4.tsv').readlines()
+                        s2s_predictions_k5 = open('../tencent/data/working/s2s/correctsk5.tsv').readlines()
 
                         print(s2s_predictions_k1)
 
