@@ -1,4 +1,7 @@
 def main():
+    split('./basic/train.tsv', './s2s/src-train.txt', './s2s/tgt-train.txt')
+    split('./basic/val.tsv', './s2s/src-val.txt', './s2s/tgt-val.txt')
+
     split('./basic/traink1.tsv', './s2s/src-traink1.txt', './s2s/tgt-traink1.txt')
     split('./basic/valk1.tsv', './s2s/src-valk1.txt', './s2s/tgt-valk1.txt')
 
