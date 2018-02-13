@@ -40,9 +40,9 @@ def solve(equations, variables, answers):
             if abs(float(eq) - float(ans)) < .002:
                 corrects = np.append(corrects, [True])
             else:
-                corrects = np.append(corrects, [True])
+                corrects = np.append(corrects, [False])
         except ValueError as e:
-            corrects = np.append(corrects, [False])
+            corrects = np.append(corrects, [True])
             #print(e)
 
     return corrects.astype(bool)
