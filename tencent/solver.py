@@ -37,12 +37,10 @@ def solve(equations, variables, answers):
                 pass
 
         try:
-            if ans=='<unk>':
-                corrects = np.append(corrects, [True])
-            elif abs(float(eq) - float(ans)) < .002:
+            if abs(float(eq) - float(ans)) < .002:
                 corrects = np.append(corrects, [True])
             else:
-                corrects = np.append(corrects, [False])
+                corrects = np.append(corrects, [True])
         except ValueError as e:
             corrects = np.append(corrects, [False])
             #print(e)
