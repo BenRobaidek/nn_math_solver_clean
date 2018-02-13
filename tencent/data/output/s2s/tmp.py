@@ -7,11 +7,11 @@ sys.path.append('../../../../tencent/')
 from tencent import solver
 
 def main():
-    printCorrects('./predk1.txt', '../basic/valk1.tsv', './correctsk1.tsv')
-    printCorrects('./predk2.txt', '../basic/valk2.tsv', './correctsk2.tsv')
-    printCorrects('./predk3.txt', '../basic/valk3.tsv', './correctsk3.tsv')
-    printCorrects('./predk4.txt', '../basic/valk4.tsv', './correctsk4.tsv')
-    printCorrects('./predk5.txt', '../basic/valk5.tsv', './correctsk5.tsv')
+    printCorrects('./predk1.txt', '../../working/basic/valk1.tsv', './correctsk1.tsv')
+    printCorrects('./predk2.txt', '../../working/basic/valk2.tsv', './correctsk2.tsv')
+    printCorrects('./predk3.txt', '../../working/basic/valk3.tsv', './correctsk3.tsv')
+    printCorrects('./predk4.txt', '../../working/basic/valk4.tsv', './correctsk4.tsv')
+    printCorrects('./predk5.txt', '../../working/basic/valk5.tsv', './correctsk5.tsv')
 
 def printClassAcc(preds_path, tgts_path):
     preds = open(preds_path).readlines()
