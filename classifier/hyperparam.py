@@ -63,11 +63,6 @@ def main():
                 if not hyperparams in list(hyperparam_results.keys()):
                     cross_val_results = dict()
                     try:
-                        # \/ DELETE THIS WHEN DONE \/
-                        # load retrieval predictions
-                        r_predictions_k1 = np.array([[x.strip().split()[0] == 'True', float(x.strip().split()[1])] for x in open('../tencent/data/output/retrieval/correctsk1.tsv').readlines()])
-                        print(r_predictions_k1)
-
                         save_path = ''
                         for k in hyperparams.keys():
                             save_path = save_path + str(k) + str(hyperparams[k])
@@ -105,8 +100,11 @@ def main():
                         print('s2s cross validation true accuracy:', s2s_cross_validation_true_accuracy)
 
                         # load retrieval predictions
-                        r_predictions_k1 = [x for x in open('../tencent/data/output/s2s/correctsk1.tsv').readlines()]
-                        print(r_predictions_k1)
+                        r_predictions_k1 = [[x.strip().split()[0] == 'True', float(x.strip().split()[1])] for x in open('../tencent/data/output/retrieval/correctsk1.tsv').readlines()]
+                        r_predictions_k2 = [[x.strip().split()[0] == 'True', float(x.strip().split()[1])] for x in open('../tencent/data/output/retrieval/correctsk2.tsv').readlines()]
+                        r_predictions_k3 = [[x.strip().split()[0] == 'True', float(x.strip().split()[1])] for x in open('../tencent/data/output/retrieval/correctsk3.tsv').readlines()]
+                        r_predictions_k4 = [[x.strip().split()[0] == 'True', float(x.strip().split()[1])] for x in open('../tencent/data/output/retrieval/correctsk4.tsv').readlines()]
+                        r_predictions_k5 = [[x.strip().split()[0] == 'True', float(x.strip().split()[1])] for x in open('../tencent/data/output/retrieval/correctsk5.tsv').readlines()]
 
                         # compute C + S cross val acc
                         # TODO
