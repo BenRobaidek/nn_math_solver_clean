@@ -1,4 +1,5 @@
 import onmt
+from tencent import solver
 
 def main():
     print('Running main...')

@@ -83,11 +83,11 @@ def main():
                         cross_val_results['cross_val_true_acc'] = cross_val_true_acc
 
                         # load s2s predictions
-                        s2s_predictions_k1 = open(save_path + 's2s_predictions_k1.tsv').readlines()
-                        s2s_predictions_k2 = open(save_path + 's2s_predictions_k2.tsv').readlines()
-                        s2s_predictions_k3 = open(save_path + 's2s_predictions_k3.tsv').readlines()
-                        s2s_predictions_k4 = open(save_path + 's2s_predictions_k4.tsv').readlines()
-                        s2s_predictions_k5 = open(save_path + 's2s_predictions_k5.tsv').readlines()
+                        s2s_predictions_k1 = open('../tencent/data/working/s2s/correctsk1.tsv').readlines()
+                        s2s_predictions_k2 = open('../tencent/data/working/s2s/correctsk2.tsv').readlines()
+                        s2s_predictions_k3 = open('../tencent/data/working/s2s/correctsk3.tsv').readlines()
+                        s2s_predictions_k4 = open('../tencent/data/working/s2s/correctsk4.tsv').readlines()
+                        s2s_predictions_k5 = open('../tencent/data/working/s2s/correctsk5.tsv').readlines()
 
                         # load retrieval predictions
                         # TODO
