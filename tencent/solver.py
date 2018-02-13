@@ -32,7 +32,6 @@ def solve(equations, variables, answers):
 
         if (not eq == '80千米 / 小时') and (not re.search(r'\[\S\]', eq)) and (not eq == '<unk>'):
             try:
-                print('eq:', eq)
                 eq = eval(eq)
             except (ZeroDivisionError, OverflowError):
                 pass
