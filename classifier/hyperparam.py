@@ -78,6 +78,7 @@ def main():
                                     dropout=dropout, pred_filter=bool(pred_filter),
                                     save_path='./hyperparam_results/' + save_path + '/', save=False, verbose=False)
                             results = sorted(results, key=lambda x: x['true_acc'], reverse=True)
+                            print('results:', results)
                             cross_val_results[str(i)] = results
                         cross_val_true_acc = np.average([x[0].get('true_acc') for x in list(cross_val_results.values())])
                         cross_val_results['cross_val_true_acc'] = cross_val_true_acc
@@ -116,7 +117,9 @@ def main():
                         print('retrieval cross validation true accuracy:', retrieval_cross_validation_true_accuracy)
 
                         # compute C + S cross val acc
-                        # TODO
+                        thresh = .5
+                        c_s2s_cross_validation_true_accuracy = [c[0] if c[1] > thresh else s for c,s in zip(class_predictionsk1,s2s_predictions_k1)]
+                        print('classifier + s2s cross validation true accuracy:', )
 
                         # compute R + C cross val acc
                         # TODO
