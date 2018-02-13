@@ -45,4 +45,4 @@ def solve(equations, variables, answers):
             corrects = np.append(corrects, [False])
             print(e)
 
-    return corrects
+    return corrects.astype(bool)
