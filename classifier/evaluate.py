@@ -56,7 +56,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         # append correct and probability
         result = []
         for pred_correct, probability in zip(pred_corrects, probabilities):
-            result = np.append(result, [pred_correct + '\t' + probability])
+            result = np.append(result, [str(pred_correct) + '\t' + str(probability)])
         print('result:', result)
         eval_preds = np.append(eval_preds, [result])
 
