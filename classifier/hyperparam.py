@@ -88,6 +88,12 @@ def main():
                         s2s_predictions_k3 = open('../tencent/data/working/s2s/correctsk3.tsv').readlines()
                         s2s_predictions_k4 = open('../tencent/data/working/s2s/correctsk4.tsv').readlines()
                         s2s_predictions_k5 = open('../tencent/data/working/s2s/correctsk5.tsv').readlines()
+                        print('s2s cross validation true accuracy:',
+                                np.average(np.sum(s2s_predictions_k1),
+                                np.sum(s2s_predictions_k2),
+                                np.sum(s2s_predictions_k3),
+                                np.sum(s2s_predictions_k4),
+                                np.sum(s2s_predictions_k5))
 
                         # load retrieval predictions
                         # TODO
