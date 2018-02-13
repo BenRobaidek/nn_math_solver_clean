@@ -1,6 +1,8 @@
 """
 Solver for tencent problems
 """
+import numpy as np
+import re
 
 def solve(equations, variables, answers):
     corrects = np.array()
