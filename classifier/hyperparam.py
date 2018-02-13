@@ -106,6 +106,15 @@ def main():
                         r_predictions_k4 = [[x.strip().split()[0] == 'True', float(x.strip().split()[1])] for x in open('../tencent/data/output/retrieval/correctsk4.tsv').readlines()]
                         r_predictions_k5 = [[x.strip().split()[0] == 'True', float(x.strip().split()[1])] for x in open('../tencent/data/output/retrieval/correctsk5.tsv').readlines()]
 
+                        # calculate/print retrieval cross validation acc
+                        retrieval_cross_validation_true_accuracy = np.average([
+                            np.sum(retrieval_predictions_k1)/len(retrieval_predictions_k1),
+                            np.sum(retrieval_predictions_k2)/len(retrieval_predictions_k2),
+                            np.sum(retrieval_predictions_k3)/len(retrieval_predictions_k3),
+                            np.sum(retrieval_predictions_k4)/len(retrieval_predictions_k4),
+                            np.sum(retrieval_predictions_k5)/len(retrieval_predictions_k5)])
+                        print('retrieval cross validation true accuracy:', retrieval_cross_validation_true_accuracy)
+
                         # compute C + S cross val acc
                         # TODO
 
