@@ -63,6 +63,20 @@ def main():
                 if not hyperparams in list(hyperparam_results.keys()):
                     cross_val_results = dict()
                     try:
+
+                        # load s2s predictions
+                        s2s_predictions_k1 = np.array(x.strip() for x in open('../tencent/data/working/s2s/correctsk1.tsv').readlines()).astype(bool)
+                        s2s_predictions_k2 = np.array(x.strip() for x in open('../tencent/data/working/s2s/correctsk2.tsv').readlines()).astype(bool)
+                        s2s_predictions_k3 = np.array(x.strip() for x in open('../tencent/data/working/s2s/correctsk3.tsv').readlines()).astype(bool)
+                        s2s_predictions_k4 = np.array(x.strip() for x in open('../tencent/data/working/s2s/correctsk4.tsv').readlines()).astype(bool)
+                        s2s_predictions_k5 = np.array(x.strip() for x in open('../tencent/data/working/s2s/correctsk5.tsv').readlines()).astype(bool)
+                        print('s2s cross validation true accuracy:',
+                                np.average([np.sum(s2s_predictions_k1),
+                                np.sum(s2s_predictions_k2),
+                                np.sum(s2s_predictions_k3),
+                                np.sum(s2s_predictions_k4),
+                                np.sum(s2s_predictions_k5)]))
+
                         save_path = ''
                         for k in hyperparams.keys():
                             save_path = save_path + str(k) + str(hyperparams[k])
@@ -82,18 +96,7 @@ def main():
                         cross_val_true_acc = np.average([x[0].get('true_acc') for x in list(cross_val_results.values())])
                         cross_val_results['cross_val_true_acc'] = cross_val_true_acc
 
-                        # load s2s predictions
-                        s2s_predictions_k1 = np.array(x.strip() for x in open('../tencent/data/working/s2s/correctsk1.tsv').readlines()).astype(bool)
-                        s2s_predictions_k2 = np.array(x.strip() for x in open('../tencent/data/working/s2s/correctsk2.tsv').readlines()).astype(bool)
-                        s2s_predictions_k3 = np.array(x.strip() for x in open('../tencent/data/working/s2s/correctsk3.tsv').readlines()).astype(bool)
-                        s2s_predictions_k4 = np.array(x.strip() for x in open('../tencent/data/working/s2s/correctsk4.tsv').readlines()).astype(bool)
-                        s2s_predictions_k5 = np.array(x.strip() for x in open('../tencent/data/working/s2s/correctsk5.tsv').readlines()).astype(bool)
-                        print('s2s cross validation true accuracy:',
-                                np.average(np.sum(s2s_predictions_k1),
-                                np.sum(s2s_predictions_k2),
-                                np.sum(s2s_predictions_k3),
-                                np.sum(s2s_predictions_k4),
-                                np.sum(s2s_predictions_k5)))
+
 
                         # load retrieval predictions
                         # TODO
