@@ -117,7 +117,7 @@ def main():
 
                         # compute C + S cross val acc
                         thresh = .5
-                        class_predictionsk1 = [[x.split()[0], x.split()[1] for x in results[0].get('preds')]
+                        class_predictionsk1 = [[x.split()[0], x.split()[1]] for x in results[0].get('preds')]
                         print('class_predictionsk1:', class_predictionsk1)
                         class_predictionsk2 = 1
                         class_predictionsk3 = 1
