@@ -6,6 +6,7 @@ import numpy as np
 import sys
 from py_expression_eval import Parser
 import re
+from ..tencent.solver import solve
 
 def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pred_filter=True):
     model.eval()
@@ -38,6 +39,8 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         _, preds = torch.max(logit, 1)
         corrects += preds.data.eq(target.data).sum()
 
+        # WORKING HERE
+        print('TENCENT SOLVER')
 
         # True Acc
         predictions = np.array(LABELS.vocab.itos)[np.array(preds.data)]
