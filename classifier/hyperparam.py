@@ -126,15 +126,26 @@ def main():
                         # classifier + seq2seq
                         ########################################################
                         # compute C + S cross val acc
-                        thresh = .5
                         class_predictionsk1 = [[x.split()[0] == 'True', float(x.split()[1])] for x in results[0].get('preds')]
-                        print('class_predictionsk1:', class_predictionsk1)
-                        class_predictionsk2 = 1
-                        class_predictionsk3 = 1
-                        class_predictionsk4 = 1
-                        class_predictionsk5 = 1
-                        c_s2s_cross_validation_true_accuracy = [c[0] if c[1] > thresh else s for c,s in zip(class_predictionsk1,s2s_predictions_k1)]
-                        print('classifier + s2s cross validation true accuracy:', 3)
+                        class_predictionsk2 = [[x.split()[0] == 'True', float(x.split()[1])] for x in results[0].get('preds')]
+                        class_predictionsk3 = [[x.split()[0] == 'True', float(x.split()[1])] for x in results[0].get('preds')]
+                        class_predictionsk4 = [[x.split()[0] == 'True', float(x.split()[1])] for x in results[0].get('preds')]
+                        class_predictionsk5 = [[x.split()[0] == 'True', float(x.split()[1])] for x in results[0].get('preds')]
+
+                        c_s2s_predictionsk1 = combineCS(class_predictionsk1, s2s_predictions_k1)
+                        c_s2s_predictionsk2 = combineCS(class_predictionsk2, s2s_predictions_k2)
+                        c_s2s_predictionsk3 = combineCS(class_predictionsk3, s2s_predictions_k3)
+                        c_s2s_predictionsk4 = combineCS(class_predictionsk4, s2s_predictions_k4)
+                        c_s2s_predictionsk5 = combineCS(class_predictionsk5, s2s_predictions_k5)
+
+                        c_s2s_cross_validation_true_accuracy = np.average([
+                            np.sum(c_s2s_predictionsk1)/len(c_s2s_predictionsk1),
+                            np.sum(c_s2s_predictionsk2)/len(c_s2s_predictionsk2),
+                            np.sum(c_s2s_predictionsk3)/len(c_s2s_predictionsk3),
+                            np.sum(c_s2s_predictionsk4)/len(c_s2s_predictionsk4),
+                            np.sum(c_s2s_predictionsk5)/len(c_s2s_predictionsk5)
+                            )
+                        print('classifier + s2s cross validation true accuracy:', c_s2s_cross_validation_true_accuracy)
 
                         ########################################################
                         # retrieval + classifier
@@ -178,6 +189,11 @@ def main():
                 dropout=dropout, pred_filter=bool(pred_filter),
                 save_path='./', save=False, verbose=False)
 
+def combineCS(class_predictions, s2s_predictions, thresh=.5):
+    """
+    combines classifier and s2s results
+    """
+    return [c[0] if c[1] > thresh else s for c,s in zip(class_predictions,s2s_predictions)]
 
 if __name__ == '__main__':
     main()
