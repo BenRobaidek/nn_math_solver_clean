@@ -4,9 +4,10 @@ from torch.autograd import Variable
 import torch.nn.functional as F
 import numpy as np
 import sys
+sys.path.append('../tencent/')
 from py_expression_eval import Parser
 import re
-from tencent.solver import solve
+from ..tencent.solver import solve
 
 def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pred_filter=True):
     model.eval()
