@@ -4,6 +4,7 @@ from torch.autograd import Variable
 import torch.nn.functional as F
 import numpy as np
 import sys
+sys.path.append('../')
 sys.path.append('../tencent/')
 from py_expression_eval import Parser
 import re
