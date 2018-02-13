@@ -38,7 +38,7 @@ def solve(equations, variables, answers):
                 pass
 
         try:
-            if abs(eq - answer) < .002:
+            if abs(eq - ans) < .002:
                 corrects.append(True)
             else:
                 corrects.append(False)
