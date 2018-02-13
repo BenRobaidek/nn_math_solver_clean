@@ -43,6 +43,6 @@ def solve(equations, variables, answers):
                 corrects = np.append(corrects, [False])
         except Exception as e:
             corrects = np.append(corrects, [False])
-            print(e)
+            #print(e)
 
     return corrects.astype(bool)

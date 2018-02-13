@@ -46,8 +46,18 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         equations = np.array(LABELS.vocab.itos)[np.array(preds.data)]
         variables = np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)]
         answers = np.array(ANS.vocab.itos)[np.array(batch.ans.data)]
-        print(solver.solve(equations, variables, answers))
 
+        # solve predicted equations if possible, true iff solved correctly
+        pred_corrects = solver.solve(equations, variables, answers)
+
+        # get classifier probabilities
+        probabilities,_ = torch.max(F.softmax(logit, dim=1), dim=1)
+
+        # append correct and probability
+        print(np.apend(pred_corrects, probabilities, dim=1))
+        eval_preds = np.append(eval_preds, [result])
+
+        """
         # True Acc
         predictions = np.array(LABELS.vocab.itos)[np.array(preds.data)]
         targets = np.array(LABELS.vocab.itos)[np.array(batch.label.data)]
@@ -122,6 +132,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
                 except Exception as e:
                     #print(e)
                     pass
+        """
 
         # Rank 5
         _, t5_indices = torch.topk(logit, 5)
