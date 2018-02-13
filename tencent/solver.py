@@ -19,7 +19,7 @@ def solve(equations, variables, answers):
         ans = re.sub(r'(\d)\(',r'\1+(', ans, 1)
         # replace % in answer
         ans = ans.replace('%', ' * .01')
-        ans = eval(answer)
+        ans = eval(ans)
 
         # replace ^ with ** in predicted equation
         eq = eq.replace('^', '**')
