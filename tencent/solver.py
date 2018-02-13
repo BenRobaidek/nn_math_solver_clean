@@ -42,7 +42,7 @@ def solve(equations, variables, answers):
             else:
                 corrects = np.append(corrects, [False])
         except ValueError as e:
-            corrects = np.append(corrects, [True])
+            corrects = np.append(corrects, [False])
             #print(e)
 
     return corrects.astype(bool)
