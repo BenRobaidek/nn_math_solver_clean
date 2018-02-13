@@ -38,11 +38,11 @@ def solve(equations, variables, answers):
 
         try:
             if abs(float(eq) - float(ans)) < .002:
-                np.append(corrects, [True])
+                corrects = np.append(corrects, [True])
             else:
-                np.append(corrects, [False])
+                corrects = np.append(corrects, [False])
         except Exception as e:
-            np.append(corrects, [False])
+            corrects = np.append(corrects, [False])
             print(e)
 
     return corrects
