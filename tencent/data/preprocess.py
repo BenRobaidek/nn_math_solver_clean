@@ -69,11 +69,11 @@ def main():
 
     # GET TRAIN, VAL, TEST INDICES
     train_indices, val_indices, test_indices = split_indices(k_test=5)
-    train_indicesk1, val_indicesk1 = split_indices_crossval(k_test=1)
-    train_indicesk2, val_indicesk2 = split_indices_crossval(k_test=2)
-    train_indicesk3, val_indicesk3 = split_indices_crossval(k_test=3)
-    train_indicesk4, val_indicesk4 = split_indices_crossval(k_test=4)
-    train_indicesk5, val_indicesk5 = split_indices_crossval(k_test=5)
+    train_indicesk123, val_indicesk4, test_indicesk5 = split_indices_crossval(k_val=4, k_test=5)
+    train_indicesk234, val_indicesk5, test_indicesk1 = split_indices_crossval(k_val=5, k_test=1)
+    train_indicesk345, val_indicesk1, test_indicesk2 = split_indices_crossval(k_val=1, k_test=2)
+    train_indicesk451, val_indicesk2, test_indicesk3 = split_indices_crossval(k_val=2, k_test=3)
+    train_indicesk512, val_indicesk3, test_indicesk4 = split_indices_crossval(k_val=3, k_test=4)
 
     # SAVE SRC/TGT FILES
     if not os.path.exists('./working/basic/'): os.makedirs('./working/basic/')
@@ -81,29 +81,54 @@ def main():
     json2tsv(val_indices,   jsondata,   './working/basic/val.tsv')
     json2tsv(test_indices,  jsondata,   './working/basic/test.tsv')
 
-    json2tsv(train_indicesk1, jsondata,   './working/basic/traink1.tsv')
-    json2tsv(val_indicesk1,   jsondata,   './working/basic/valk1.tsv')
+    json2tsv(train_indicesk123, jsondata,   './working/basic/traink123.tsv')
+    json2tsv(val_indicesk4,     jsondata,   './working/basic/valk4.tsv')
+    json2tsv(test_indicesk5,    jsondata,   './working/basic/testk5.tsv')
 
-    json2tsv(train_indicesk2, jsondata,   './working/basic/traink2.tsv')
-    json2tsv(val_indicesk2,   jsondata,   './working/basic/valk2.tsv')
+    json2tsv(train_indicesk234, jsondata,   './working/basic/traink234.tsv')
+    json2tsv(val_indicesk5,     jsondata,   './working/basic/valk5.tsv')
+    json2tsv(test_indicesk1,    jsondata,   './working/basic/testk1.tsv')
 
-    json2tsv(train_indicesk3, jsondata,   './working/basic/traink3.tsv')
-    json2tsv(val_indicesk3,   jsondata,   './working/basic/valk3.tsv')
+    json2tsv(train_indicesk345, jsondata,   './working/basic/traink345.tsv')
+    json2tsv(val_indicesk1,     jsondata,   './working/basic/valk1.tsv')
+    json2tsv(test_indicesk2,    jsondata,   './working/basic/testk2.tsv')
 
-    json2tsv(train_indicesk4, jsondata,   './working/basic/traink4.tsv')
-    json2tsv(val_indicesk4,   jsondata,   './working/basic/valk4.tsv')
+    json2tsv(train_indicesk451, jsondata,   './working/basic/traink451.tsv')
+    json2tsv(val_indicesk2,     jsondata,   './working/basic/valk2.tsv')
+    json2tsv(test_indicesk3,    jsondata,   './working/basic/testk3.tsv')
 
-    json2tsv(train_indicesk5, jsondata,   './working/basic/traink5.tsv')
-    json2tsv(val_indicesk5,   jsondata,   './working/basic/valk5.tsv')
+    json2tsv(train_indicesk512, jsondata,   './working/basic/traink512.tsv')
+    json2tsv(val_indicesk3,     jsondata,   './working/basic/valk3.tsv')
+    json2tsv(test_indicesk4,    jsondata,   './working/basic/testk4.tsv')
 
     # SAVE VARIABLE VALUES TO FILE
     saveValues(val_indices, jsondata,    './working/basic/val_values.txt')
 
     # SAVE SRC/TGT FILES NO SNI
     if not os.path.exists('./working/no_sni/'): os.makedirs('./working/no_sni/')
-    json2tsv(train_indices, jsondata_no_sni,   './working/no_sni/train.tsv')
-    json2tsv(val_indices,   jsondata_no_sni,   './working/no_sni/val.tsv')
-    json2tsv(test_indices,   jsondata_no_sni,   './working/no_sni/test.tsv')
+    json2tsv(train_indices, jsondata_no_sni,   './working/basic/train.tsv')
+    json2tsv(val_indices,   jsondata_no_sni,   './working/basic/val.tsv')
+    json2tsv(test_indices,  jsondata_no_sni,   './working/basic/test.tsv')
+
+    json2tsv(train_indicesk123, jsondata_no_sni,   './working/basic/traink123.tsv')
+    json2tsv(val_indicesk4,     jsondata_no_sni,   './working/basic/valk4.tsv')
+    json2tsv(test_indicesk5,    jsondata_no_sni,   './working/basic/testk5.tsv')
+
+    json2tsv(train_indicesk234, jsondata_no_sni,   './working/basic/traink234.tsv')
+    json2tsv(val_indicesk5,     jsondata_no_sni,   './working/basic/valk5.tsv')
+    json2tsv(test_indicesk1,    jsondata_no_sni,   './working/basic/testk1.tsv')
+
+    json2tsv(train_indicesk345, jsondata_no_sni,   './working/basic/traink345.tsv')
+    json2tsv(val_indicesk1,     jsondata_no_sni,   './working/basic/valk1.tsv')
+    json2tsv(test_indicesk2,    jsondata_no_sni,   './working/basic/testk2.tsv')
+
+    json2tsv(train_indicesk451, jsondata_no_sni,   './working/basic/traink451.tsv')
+    json2tsv(val_indicesk2,     jsondata_no_sni,   './working/basic/valk2.tsv')
+    json2tsv(test_indicesk3,    jsondata_no_sni,   './working/basic/testk3.tsv')
+
+    json2tsv(train_indicesk512, jsondata_no_sni,   './working/basic/traink512.tsv')
+    json2tsv(val_indicesk3,     jsondata_no_sni,   './working/basic/valk3.tsv')
+    json2tsv(test_indicesk4,    jsondata_no_sni,   './working/basic/testk4.tsv')
 
     # SAVE VARIABLE VALUES TO FILE NO SNI
     saveValues(val_indices, jsondata_no_sni,    './working/no_sni/val_values.txt')
@@ -224,21 +249,25 @@ def split_indices(k_test=5):
     test_indices = np.array(test).astype(int)
     return train_indices, val_indices, test_indices
 
-def split_indices_crossval(k_test=5):
+def split_indices_crossval(k_val=4, k_test=5):
     """
     Returns train, validation, and test indices
     foldi.txt files must already exist in ./input/
     """
-    train_val = []
+    train = []
+    val = []
+    test = []
     for i in range(1,6):
-        if not i == k_test:
-            train_val = np.append(train_val, open('./input/fold' + str(i) + '.txt').readlines())
-    #random.shuffle(train_val)
-    test = open('./input/fold' + str(k_test) + '.txt').readlines()
-    train_indices = np.array(train_val[0:-1000]).astype(int)
-    val_indices = np.array(train_val[-1000:]).astype(int)
+        if i == k_test:
+            test = np.append(test, open('./input/fold' + str(i) + '.txt').readlines())
+        elif i == k_val:
+            val = np.append(val, open('./input/fold' + str(i) + '.txt').readlines())
+        else:
+            train = np.append(train, open('./input/fold' + str(i) + '.txt').readlines())
+    train_indices = np.array(train).astype(int)
+    val_indices = np.array(val).astype(int)
     test_indices = np.array(test).astype(int)
-    return np.append(train_indices, val_indices), test_indices
+    return train_indices, val_indices, test_indices
 
 def mostCommon(data, percent):
     """
