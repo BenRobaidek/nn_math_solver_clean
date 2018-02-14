@@ -67,11 +67,10 @@ def main():
                         for k in hyperparams.keys():
                             save_path = save_path + str(k) + str(hyperparams[k])
                         for i in range(1,6):
-                            i = 4
                             print(i%5+1, (i+1)%5+1 , (i+2)%5+1)
-                            train_path = 'traink' + str(i%5) + str(i+1%5) + str(i+2%5) + '.tsv'
-                            val_path = 'valk' + str(i+3%5) + '.tsv'
-                            test_path = 'testk' + str(i+4%5) + '.tsv'
+                            train_path = 'traink' + str(i%5+1) + str((i+1)%5+1) + str((i+2)%5+1) + '.tsv'
+                            val_path = 'valk' + str((i+3)%5+1) + '.tsv'
+                            test_path = 'testk' + str((i+4)%5+1) + '.tsv'
                             results = train(data_path=config['data_path'],
                                     train_path=train_path,
                                     val_path=val_path,
