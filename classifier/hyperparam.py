@@ -171,11 +171,13 @@ def main():
                         print('Oops... Ran out of memory')
                     print('type(cross_val_results):', type(cross_val_results))
                     for k in cross_val_results.keys():
-                        print(k, type(k))
                         print('cross_val_results[k]', cross_val_results[k])
                         for x in cross_val_results[k]:
                             print(x)
-                            x.pop('preds')
+                            try:
+                                x.pop('preds')
+                            except TypeError:
+                                pass
                             print(x)
                     hyperparam_results[str(hyperparams)] = cross_val_results
 
