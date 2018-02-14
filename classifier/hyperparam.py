@@ -126,11 +126,11 @@ def main():
                         ########################################################
                         # compute C + S cross val acc
                         print(cross_val_results)
-                        class_predictionsk1 = [[x.split()[0] == 'True', float(x.split()[1])] for x in cross_val_results.get('1')[0].get('preds')]
-                        class_predictionsk2 = [[x.split()[0] == 'True', float(x.split()[1])] for x in cross_val_results.get('2')[0].get('preds')]
-                        class_predictionsk3 = [[x.split()[0] == 'True', float(x.split()[1])] for x in cross_val_results.get('3')[0].get('preds')]
-                        class_predictionsk4 = [[x.split()[0] == 'True', float(x.split()[1])] for x in cross_val_results.get('4')[0].get('preds')]
-                        class_predictionsk5 = [[x.split()[0] == 'True', float(x.split()[1])] for x in cross_val_results.get('5')[0].get('preds')]
+                        class_predictionsk1 = [[x.split()[0] == 'True', float(x.split()[1])] for x in cross_val_results.get(1)[0].get('preds')]
+                        class_predictionsk2 = [[x.split()[0] == 'True', float(x.split()[1])] for x in cross_val_results.get(2)[0].get('preds')]
+                        class_predictionsk3 = [[x.split()[0] == 'True', float(x.split()[1])] for x in cross_val_results.get(3)[0].get('preds')]
+                        class_predictionsk4 = [[x.split()[0] == 'True', float(x.split()[1])] for x in cross_val_results.get(4)[0].get('preds')]
+                        class_predictionsk5 = [[x.split()[0] == 'True', float(x.split()[1])] for x in cross_val_results.get(5)[0].get('preds')]
 
                         c_s2s_predictionsk1 = combineCS(class_predictionsk1, s2s_predictions_k1)
                         c_s2s_predictionsk2 = combineCS(class_predictionsk2, s2s_predictions_k2)
