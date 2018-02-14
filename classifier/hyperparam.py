@@ -172,7 +172,8 @@ def main():
                     for k in cross_val_results.keys():
                         print('type(k):', type(k))
                         print('k:', k)
-                        cross_val_results[int(k)][:].pop('preds')
+                        for x in cross_val_results[int(k)]
+                            x.pop('preds')
                     hyperparam_results[str(hyperparams)] = cross_val_results
 
             with open(args.hyperparam_results, 'w') as f:
