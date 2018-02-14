@@ -172,6 +172,8 @@ def main():
                     hyperparam_results[str(hyperparams)] = cross_val_results
 
             with open(args.hyperparam_results, 'w') as f:
+                print('type(hyperparam_results):', type(hyperparam_results))
+                print('hyperparam_results', hyperparam_results)
                 json.dump(hyperparam_results, f, indent=2)
 
     ############################################################################
