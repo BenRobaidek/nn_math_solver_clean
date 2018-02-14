@@ -167,12 +167,9 @@ def main():
 
                     except RuntimeError:
                         print('Oops... Ran out of memory')
-                    print('type(cross_val_results)', type(cross_val_results))
-                    print('cross_val_results', cross_val_results)
                     for k in cross_val_results.keys():
-                        print('type(k):', type(k))
-                        print('k:', k)
                         for x in cross_val_results[int(k)]:
+                            print(x)
                             x.pop('preds')
                     hyperparam_results[str(hyperparams)] = cross_val_results
 
