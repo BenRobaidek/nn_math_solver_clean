@@ -169,6 +169,7 @@ def main():
                         print('Oops... Ran out of memory')
                     for k in cross_val_results.keys():
                         print(k, type(k))
+                        print('cross_val_results[k]', cross_val_results[k])
                         for x in cross_val_results[k]:
                             print(x)
                             x.pop('preds')
