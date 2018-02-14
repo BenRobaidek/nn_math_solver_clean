@@ -197,8 +197,8 @@ def combineCS(class_predictions, s2s_predictions):
     for thresh in np.multiply(list(range(0,100)), .01):
         results[thresh] = np.sum([c[0] if c[1] > thresh else s for c,s in zip(class_predictions,s2s_predictions)])
     print(results)
-    best_thresh = 0
-    return [c[0] if c[1] > thresh else s for c,s in zip(class_predictions,s2s_predictions)]
+    best_thresh = max(results, key=results.get)
+    return [c[0] if c[1] > best_thresh else s for c,s in zip(class_predictions,s2s_predictions)]
 
 if __name__ == '__main__':
     main()
