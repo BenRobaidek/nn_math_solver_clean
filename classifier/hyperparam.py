@@ -125,6 +125,7 @@ def main():
                         # classifier + seq2seq
                         ########################################################
                         # compute C + S cross val acc
+                        print(cross_val_results)
                         class_predictionsk1 = [[x.split()[0] == 'True', float(x.split()[1])] for x in cross_val_results.get(1)[0].get('preds')]
                         class_predictionsk2 = [[x.split()[0] == 'True', float(x.split()[1])] for x in cross_val_results.get(2)[0].get('preds')]
                         class_predictionsk3 = [[x.split()[0] == 'True', float(x.split()[1])] for x in cross_val_results.get(3)[0].get('preds')]
