@@ -172,13 +172,11 @@ def main():
                     print('type(cross_val_results):', type(cross_val_results))
                     for k in cross_val_results.keys():
                         print('cross_val_results[k]', cross_val_results[k])
-                        for x in cross_val_results[k]:
-                            print(x)
-                            try:
+                        try:
+                            for x in cross_val_results[k]:
                                 x.pop('preds')
-                            except TypeError:
-                                pass
-                            print(x)
+                        except TypeError:
+                            pass
                     hyperparam_results[str(hyperparams)] = cross_val_results
 
             with open(args.hyperparam_results, 'w') as f:
