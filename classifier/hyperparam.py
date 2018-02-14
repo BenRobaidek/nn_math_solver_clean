@@ -168,14 +168,11 @@ def main():
                         print('Oops... Ran out of memory')
                     print('type(cross_val_results)', type(cross_val_results))
                     print('cross_val_results', cross_val_results)
-
+                    #for k in cross_val_results.keys():
+                    #    cross_val_results.get(k)[:].pop('preds')
                     hyperparam_results[str(hyperparams)] = cross_val_results
 
             with open(args.hyperparam_results, 'w') as f:
-                for k in hyperparam_results.keys():
-                    cross_val_results = hyperparam_results.get(k)
-                    for l in cross_val_results.keys():
-                        cross_val_results.get(l)[:].pop('preds')
                 json.dump(hyperparam_results, f, indent=2)
 
     ############################################################################
