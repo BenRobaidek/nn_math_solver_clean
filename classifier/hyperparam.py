@@ -132,6 +132,8 @@ def main():
                         class_predictionsk4 = [[x.split()[0] == 'True', float(x.split()[1])] for x in cross_val_results.get(4)[0].get('preds')]
                         class_predictionsk5 = [[x.split()[0] == 'True', float(x.split()[1])] for x in cross_val_results.get(5)[0].get('preds')]
 
+                        print('type(cross_val_results):', type(cross_val_results))
+
                         c_s2s_predictionsk1 = combineCS(class_predictionsk1, s2s_predictions_k1)
                         c_s2s_predictionsk2 = combineCS(class_predictionsk2, s2s_predictions_k2)
                         c_s2s_predictionsk3 = combineCS(class_predictionsk3, s2s_predictions_k3)
@@ -167,6 +169,7 @@ def main():
 
                     except RuntimeError:
                         print('Oops... Ran out of memory')
+                    print('type(cross_val_results):', type(cross_val_results))
                     for k in cross_val_results.keys():
                         print(k, type(k))
                         print('cross_val_results[k]', cross_val_results[k])
