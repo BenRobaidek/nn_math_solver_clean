@@ -83,7 +83,6 @@ def main():
                         cross_val_results['cross_val_true_acc'] = cross_val_true_acc
                         print('classifier cross validation true accuracy:', cross_val_true_acc)
 
-
                         ########################################################
                         # seq2seq
                         ########################################################
@@ -173,6 +172,9 @@ def main():
 
             with open(args.hyperparam_results, 'w') as f:
                 print('type(hyperparam_results):', type(hyperparam_results))
+                print('hyperparam_results', hyperparam_results)
+                for v in hyperparam_results.values():
+                    v.get('preds') = str(v.get('preds'))
                 print('hyperparam_results', hyperparam_results)
                 json.dump(hyperparam_results, f, indent=2)
 
