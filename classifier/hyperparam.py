@@ -78,7 +78,7 @@ def main():
                                     dropout=dropout, pred_filter=bool(pred_filter),
                                     save_path='./hyperparam_results/' + save_path + '/', save=False, verbose=False)
                             results = sorted(results, key=lambda x: x['true_acc'], reverse=True)
-                            cross_val_results[str(i)] = results
+                            cross_val_results[i] = results
                         cross_val_true_acc = np.average([x[0].get('true_acc') for x in list(cross_val_results.values())])
                         cross_val_results['cross_val_true_acc'] = cross_val_true_acc
                         print('classifier cross validation true accuracy:', cross_val_true_acc)
