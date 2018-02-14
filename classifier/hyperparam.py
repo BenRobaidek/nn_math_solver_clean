@@ -69,10 +69,13 @@ def main():
                         for i in range(1,6):
                             i = 4
                             print(i % 5, i % 5 + 1, i % 5 + 2)
+                            train_path = 'traink' + str(i % 5) + str(i % 5 + 1) + str(i % 5 + 2) + '.tsv'
+                            val_path = 'valk' + str(i % 5 + 3) + '.tsv'
+                            test_path = 'testk' + str(i % 5 + 4) + '.tsv'
                             results = train(data_path=config['data_path'],
-                                    train_path='traink' + str(i) + '.tsv',
-                                    val_path='valk' + str(i) + '.tsv',
-                                    test_path='test.tsv',
+                                    train_path=train_path,
+                                    val_path=val_path,
+                                    test_path=test_path,
                                     mf=mf, epochs=epoch, bs=bs, opt=opt,
                                     net_type=net_type,
                                     ly=ly, hs=hs, num_dir=num_dir, emb_dim=embdim,
