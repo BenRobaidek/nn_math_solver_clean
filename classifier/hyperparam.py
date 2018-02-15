@@ -149,13 +149,13 @@ def main():
                                 class_predictions_valk2 +
                                 class_predictions_valk3 +
                                 class_predictions_valk4 +
-                                class_predictions_valk5),
+                                class_predictions_valk5,
                                 s2s_predictions_valk1 +
                                 s2s_predictions_valk2 +
                                 s2s_predictions_valk3 +
                                 s2s_predictions_valk4 +
                                 s2s_predictions_valk5
-                                ))
+                                )
                         print('best_thresh:', best_thresh)
                         print('classifier + s2s cross validation true accuracy (VAL):', c_s2s_cross_validation_true_accuracy)
 
