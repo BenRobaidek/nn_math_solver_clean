@@ -3,6 +3,7 @@ Solver for kushman problems
 """
 import numpy as np
 import re
+import sympy
 from sympy.parsing.sympy_parser import parse_expr
 
 def solve(equations, variables, answers):
