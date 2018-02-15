@@ -27,7 +27,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
 
     TEXT = data.Field(lower=True,init_token="<start>",eos_token="<end>")
     LABELS = data.Field(sequential=False)
-    VAR_VALUES_VAl = data.Field(sequential=False)
+    VAR_VALUES_VAL = data.Field(sequential=False)
     VAR_VALUES_TEST = data.Field(sequential=False)
     ANS = data.Field(sequential=False)
 
