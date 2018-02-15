@@ -35,7 +35,7 @@ def solve(equations, variables, answers):
 
             if not len(np.unique(re.findall(r'\[[a-z]\]', ','.join(eq)))) >= 1:
                 #print('eq:', eq)
-                expr = [parse_expr(x) for x in eq]
+                expr = [eval(x) for x in eq]
                 symbols = sympy.symbols(' '.join(answer_variables))
                 pred_answers = sympy.solve(expr)#, symbols)
 
