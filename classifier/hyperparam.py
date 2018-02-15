@@ -144,17 +144,16 @@ def main():
                         class_predictions_valk4 = [[x.split()[0] == 'True', float(x.split()[1])] for x in cross_val_results.get(3)[0].get('preds')]
                         class_predictions_valk5 = [[x.split()[0] == 'True', float(x.split()[1])] for x in cross_val_results.get(4)[0].get('preds')]
 
-                        best_thresh = getThresh(np.append(
-                                class_predictions_valk1,
-                                class_predictions_valk2,
-                                class_predictions_valk3,
-                                class_predictions_valk4,
+                        best_thresh = getThresh(
+                                class_predictions_valk1 +
+                                class_predictions_valk2 +
+                                class_predictions_valk3 +
+                                class_predictions_valk4 +
                                 class_predictions_valk5),
-                                np.append(
-                                s2s_predictions_valk1,
-                                s2s_predictions_valk2,
-                                s2s_predictions_valk3,
-                                s2s_predictions_valk4,
+                                s2s_predictions_valk1 +
+                                s2s_predictions_valk2 +
+                                s2s_predictions_valk3 +
+                                s2s_predictions_valk4 +
                                 s2s_predictions_valk5
                                 ))
                         print('best_thresh:', best_thresh)
