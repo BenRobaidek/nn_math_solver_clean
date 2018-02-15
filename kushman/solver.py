@@ -3,9 +3,11 @@ Solver for kushman problems
 """
 import numpy as np
 import re
+from py_expression_eval import Parser
 
 def solve(equations, variables, answers):
     corrects = np.array([])
+
     for eq, var, ans in zip(equations, variables, answers):
         ans = eval(ans)
         for i,a in enumerate(ans):
@@ -35,7 +37,7 @@ def solve(equations, variables, answers):
 
             if not len(np.unique(re.findall(r'\[[a-z]\]', ','.join(eq)))) >= 1:
                 #print('eq:', eq)
-                expr = [eval(x) for x in eq]
+                expr = [Parser.parse_expr(x) for x in eq]
                 symbols = sympy.symbols(' '.join(answer_variables))
                 pred_answers = sympy.solve(expr)#, symbols)
 
@@ -51,5 +53,5 @@ def solve(equations, variables, answers):
                 all_equal = np.all(correct_answers)
                 #print('all_equal:', all_equal)
                 #print()
-            corrects = corrects.apend([all_equal])
+            corrects = corrects.append([all_equal])
     return corrects.astype(bool)
