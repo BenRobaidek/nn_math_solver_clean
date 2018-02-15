@@ -51,5 +51,5 @@ def solve(equations, variables, answers):
                 all_equal = np.all(correct_answers)
                 #print('all_equal:', all_equal)
                 #print()
-            true_corrects += int(all_equal)
+            corrects = corrects.apend([all_equal])
     return corrects.astype(bool)
