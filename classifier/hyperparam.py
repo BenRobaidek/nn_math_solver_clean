@@ -156,8 +156,24 @@ def main():
                                 s2s_predictions_valk4 +
                                 s2s_predictions_valk5
                                 )
+
+                        val_preds_class = combineCS(
+                                class_predictions_valk1 +
+                                class_predictions_valk2 +
+                                class_predictions_valk3 +
+                                class_predictions_valk4 +
+                                class_predictions_valk5,
+                                s2s_predictions_valk1 +
+                                s2s_predictions_valk2 +
+                                s2s_predictions_valk3 +
+                                s2s_predictions_valk4 +
+                                s2s_predictions_valk5,
+                                thresh=best_thresh
+                                )
+
+                        print('val_preds_class acc', np.sum(val_preds_class)/len(val_preds_class))
                         print('best_thresh:', best_thresh)
-                        print('classifier + s2s cross validation true accuracy (VAL):', c_s2s_cross_validation_true_accuracy)
+                        #print('classifier + s2s cross validation true accuracy (VAL):', c_s2s_cross_validation_true_accuracy)
 
                         ########################################################
                         # retrieval + classifier
