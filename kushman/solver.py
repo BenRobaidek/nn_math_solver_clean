@@ -40,7 +40,7 @@ def solve(equations, variables, answers):
                 pred_answers = sympy.solve(expr)#, symbols)
 
             all_equal = False
-            if len(pred_answers) == len(answer):
+            if len(pred_answers) == len(ans):
                 #print(pred_answers)
                 #print('pred_answers:', pred_answers)
                 #print('answer:', answer)
