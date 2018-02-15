@@ -83,74 +83,82 @@ def main():
                                     save_path='./hyperparam_results/' + save_path + '/', save=False, verbose=False)
                             results = sorted(results, key=lambda x: x['true_acc'], reverse=True)
                             cross_val_results[i] = results
-                        cross_val_true_acc = np.average([x[0].get('true_acc') for x in list(cross_val_results.values())])
+                        val_cross_val_true_acc = np.average([x[0].get('true_acc') for x in list(cross_val_results.values())])
                         test_cross_val_true_acc = np.average([x[0].get('test_true_acc') for x in list(cross_val_results.values())])
-                        cross_val_results['cross_val_true_acc'] = cross_val_true_acc
-                        print('classifier cross validation true accuracy:', cross_val_true_acc)
+                        cross_val_results['val_cross_val_true_acc'] = val_cross_val_true_acc
+                        cross_val_results['test_cross_val_true_acc'] = test_cross_val_true_acc
+                        print('classifier cross validation true accuracy (VAL):', val_cross_val_true_acc)
                         print('classifier cross validation true accuracy (TEST):', test_cross_val_true_acc)
 
                         ########################################################
                         # seq2seq
                         ########################################################
                         # load s2s predictions
-                        s2s_predictions_k1 = np.array([x.strip() == 'True' for x in open('../tencent/data/output/s2s/correctsk1.tsv').readlines()])
-                        s2s_predictions_k2 = np.array([x.strip() == 'True' for x in open('../tencent/data/output/s2s/correctsk2.tsv').readlines()])
-                        s2s_predictions_k3 = np.array([x.strip() == 'True' for x in open('../tencent/data/output/s2s/correctsk3.tsv').readlines()])
-                        s2s_predictions_k4 = np.array([x.strip() == 'True' for x in open('../tencent/data/output/s2s/correctsk4.tsv').readlines()])
-                        s2s_predictions_k5 = np.array([x.strip() == 'True' for x in open('../tencent/data/output/s2s/correctsk5.tsv').readlines()])
+                        s2s_predictions_valk1 = np.array([x.strip() == 'True' for x in open('../tencent/data/output/s2s/correctsk1.tsv').readlines()])
+                        s2s_predictions_valk2 = np.array([x.strip() == 'True' for x in open('../tencent/data/output/s2s/correctsk2.tsv').readlines()])
+                        s2s_predictions_valk3 = np.array([x.strip() == 'True' for x in open('../tencent/data/output/s2s/correctsk3.tsv').readlines()])
+                        s2s_predictions_valk4 = np.array([x.strip() == 'True' for x in open('../tencent/data/output/s2s/correctsk4.tsv').readlines()])
+                        s2s_predictions_valk5 = np.array([x.strip() == 'True' for x in open('../tencent/data/output/s2s/correctsk5.tsv').readlines()])
 
                         # calculate/print s2s cross validation acc
-                        s2s_cross_validation_true_accuracy = np.average([
-                            np.sum(s2s_predictions_k1)/len(s2s_predictions_k1),
-                            np.sum(s2s_predictions_k2)/len(s2s_predictions_k2),
-                            np.sum(s2s_predictions_k3)/len(s2s_predictions_k3),
-                            np.sum(s2s_predictions_k4)/len(s2s_predictions_k4),
-                            np.sum(s2s_predictions_k5)/len(s2s_predictions_k5)])
-                        print('s2s cross validation true accuracy:', s2s_cross_validation_true_accuracy)
+                        s2s_cross_validation_true_accuracy_val = np.average([
+                            np.sum(s2s_predictions_valk1)/len(s2s_predictions_valk1),
+                            np.sum(s2s_predictions_valk2)/len(s2s_predictions_valk2),
+                            np.sum(s2s_predictions_valk3)/len(s2s_predictions_valk3),
+                            np.sum(s2s_predictions_valk4)/len(s2s_predictions_valk4),
+                            np.sum(s2s_predictions_valk5)/len(s2s_predictions_valk5)])
+                        cross_val_results['s2s_cross_validation_true_accuracy_val'] = s2s_cross_validation_true_accuracy_val
+                        cross_val_results['s2s_cross_validation_true_accuracy_test'] = None #TODO
+                        print('s2s cross validation true accuracy (VAL):', s2s_cross_validation_true_accuracy_val)
+                        print('s2s cross validation true accuracy (TEST):', 'TODO')
 
                         ########################################################
                         # retrieval
                         ########################################################
                         # load retrieval predictions
-                        r_predictions_k1 = [[x.strip().split()[0] == 'True', float(x.strip().split()[1])] for x in open('../tencent/data/output/retrieval/correctsk1.tsv').readlines()]
-                        r_predictions_k2 = [[x.strip().split()[0] == 'True', float(x.strip().split()[1])] for x in open('../tencent/data/output/retrieval/correctsk2.tsv').readlines()]
-                        r_predictions_k3 = [[x.strip().split()[0] == 'True', float(x.strip().split()[1])] for x in open('../tencent/data/output/retrieval/correctsk3.tsv').readlines()]
-                        r_predictions_k4 = [[x.strip().split()[0] == 'True', float(x.strip().split()[1])] for x in open('../tencent/data/output/retrieval/correctsk4.tsv').readlines()]
-                        r_predictions_k5 = [[x.strip().split()[0] == 'True', float(x.strip().split()[1])] for x in open('../tencent/data/output/retrieval/correctsk5.tsv').readlines()]
+                        r_predictions_valk1 = [[x.strip().split()[0] == 'True', float(x.strip().split()[1])] for x in open('../tencent/data/output/retrieval/correctsk1.tsv').readlines()]
+                        r_predictions_valk2 = [[x.strip().split()[0] == 'True', float(x.strip().split()[1])] for x in open('../tencent/data/output/retrieval/correctsk2.tsv').readlines()]
+                        r_predictions_valk3 = [[x.strip().split()[0] == 'True', float(x.strip().split()[1])] for x in open('../tencent/data/output/retrieval/correctsk3.tsv').readlines()]
+                        r_predictions_valk4 = [[x.strip().split()[0] == 'True', float(x.strip().split()[1])] for x in open('../tencent/data/output/retrieval/correctsk4.tsv').readlines()]
+                        r_predictions_valk5 = [[x.strip().split()[0] == 'True', float(x.strip().split()[1])] for x in open('../tencent/data/output/retrieval/correctsk5.tsv').readlines()]
 
                         # calculate/print retrieval cross validation acc
-                        retrieval_cross_validation_true_accuracy = np.average([
-                            np.sum(r_predictions_k1)/len(r_predictions_k1),
-                            np.sum(r_predictions_k2)/len(r_predictions_k2),
-                            np.sum(r_predictions_k3)/len(r_predictions_k3),
-                            np.sum(r_predictions_k4)/len(r_predictions_k4),
-                            np.sum(r_predictions_k5)/len(r_predictions_k5)])
-                        print('retrieval cross validation true accuracy:', retrieval_cross_validation_true_accuracy)
+                        retrieval_cross_validation_true_accuracy_val = np.average([
+                            np.sum(r_predictions_valk1)/len(r_predictions_valk1),
+                            np.sum(r_predictions_valk2)/len(r_predictions_valk2),
+                            np.sum(r_predictions_valk3)/len(r_predictions_valk3),
+                            np.sum(r_predictions_valk4)/len(r_predictions_valk4),
+                            np.sum(r_predictions_valk5)/len(r_predictions_valk5)])
+                        cross_val_results['retrieval_cross_validation_true_accuracy_val'] = retrieval_cross_validation_true_accuracy_val
+                        cross_val_results['retrieval_cross_validation_true_accuracy_test'] = None #TODO
+                        print('retrieval cross validation true accuracy (VAL):', retrieval_cross_validation_true_accuracy_val)
+                        print('retrieval cross validation true accuracy (TEST):', 'TODO')
 
                         ########################################################
                         # classifier + seq2seq
                         ########################################################
                         # compute C + S cross val acc
-                        class_predictionsk1 = [[x.split()[0] == 'True', float(x.split()[1])] for x in cross_val_results.get(0)[0].get('preds')]
-                        class_predictionsk2 = [[x.split()[0] == 'True', float(x.split()[1])] for x in cross_val_results.get(1)[0].get('preds')]
-                        class_predictionsk3 = [[x.split()[0] == 'True', float(x.split()[1])] for x in cross_val_results.get(2)[0].get('preds')]
-                        class_predictionsk4 = [[x.split()[0] == 'True', float(x.split()[1])] for x in cross_val_results.get(3)[0].get('preds')]
-                        class_predictionsk5 = [[x.split()[0] == 'True', float(x.split()[1])] for x in cross_val_results.get(4)[0].get('preds')]
+                        class_predictions_valk1 = [[x.split()[0] == 'True', float(x.split()[1])] for x in cross_val_results.get(0)[0].get('preds')]
+                        class_predictions_valk2 = [[x.split()[0] == 'True', float(x.split()[1])] for x in cross_val_results.get(1)[0].get('preds')]
+                        class_predictions_valk3 = [[x.split()[0] == 'True', float(x.split()[1])] for x in cross_val_results.get(2)[0].get('preds')]
+                        class_predictions_valk4 = [[x.split()[0] == 'True', float(x.split()[1])] for x in cross_val_results.get(3)[0].get('preds')]
+                        class_predictions_valk5 = [[x.split()[0] == 'True', float(x.split()[1])] for x in cross_val_results.get(4)[0].get('preds')]
 
-                        c_s2s_predictionsk1 = combineCS(class_predictionsk1, s2s_predictions_k1)
-                        c_s2s_predictionsk2 = combineCS(class_predictionsk2, s2s_predictions_k2)
-                        c_s2s_predictionsk3 = combineCS(class_predictionsk3, s2s_predictions_k3)
-                        c_s2s_predictionsk4 = combineCS(class_predictionsk4, s2s_predictions_k4)
-                        c_s2s_predictionsk5 = combineCS(class_predictionsk5, s2s_predictions_k5)
-
-                        c_s2s_cross_validation_true_accuracy = np.average([
-                            np.sum(c_s2s_predictionsk1)/len(c_s2s_predictionsk1),
-                            np.sum(c_s2s_predictionsk2)/len(c_s2s_predictionsk2),
-                            np.sum(c_s2s_predictionsk3)/len(c_s2s_predictionsk3),
-                            np.sum(c_s2s_predictionsk4)/len(c_s2s_predictionsk4),
-                            np.sum(c_s2s_predictionsk5)/len(c_s2s_predictionsk5)
-                            ])
-                        print('classifier + s2s cross validation true accuracy:', c_s2s_cross_validation_true_accuracy)
+                        best_thresh = getThresh(np.append(
+                                class_predictions_valk1,
+                                class_predictions_valk2,
+                                class_predictions_valk3,
+                                class_predictions_valk4,
+                                class_predictions_valk5),
+                                np.append(
+                                s2s_predictions_valk1,
+                                s2s_predictions_valk2,
+                                s2s_predictions_valk3,
+                                s2s_predictions_valk4,
+                                s2s_predictions_valk5
+                                ))
+                        print('best_thresh:', best_thresh)
+                        print('classifier + s2s cross validation true accuracy (VAL):', c_s2s_cross_validation_true_accuracy)
 
                         ########################################################
                         # retrieval + classifier
@@ -201,14 +209,16 @@ def main():
                 dropout=dropout, pred_filter=bool(pred_filter),
                 save_path='./', save=False, verbose=False)
 
-def combineCS(class_predictions, s2s_predictions):
+def getThresh(class_predictions, s2s_predictions):
     """
     combines classifier and s2s results
     """
     results = dict()
     for thresh in np.multiply(list(range(0,100)), .01):
         results[thresh] = np.sum([c[0] if c[1] > thresh else s for c,s in zip(class_predictions,s2s_predictions)])
-    best_thresh = max(results, key=results.get)
+    return max(results, key=results.get)
+
+def combineCS(class_predictions, s2s_predictions, thresh):
     return [c[0] if c[1] > best_thresh else s for c,s in zip(class_predictions,s2s_predictions)]
 
 if __name__ == '__main__':
