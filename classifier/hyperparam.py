@@ -84,8 +84,10 @@ def main():
                             results = sorted(results, key=lambda x: x['true_acc'], reverse=True)
                             cross_val_results[i] = results
                         cross_val_true_acc = np.average([x[0].get('true_acc') for x in list(cross_val_results.values())])
+                        test_cross_val_true_acc = np.average([x[0].get('test_true_acc') for x in list(cross_val_results.values())])
                         cross_val_results['cross_val_true_acc'] = cross_val_true_acc
                         print('classifier cross validation true accuracy:', cross_val_true_acc)
+                        print('classifier cross validation true accuracy (TEST):', test_cross_val_true_acc)
 
                         ########################################################
                         # seq2seq

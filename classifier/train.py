@@ -128,6 +128,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
             tot_loss += loss.data[0]
 
         (avg_loss, accuracy, true_acc, corrects, size, t5_acc, t5_corrects, mrr, eval_preds) = evaluate(val_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pred_filter=pred_filter)
+        (_, _, test_true_acc, _, _, _, _, _, test_eval_preds) = evaluate(test_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pred_filter=pred_filter)
 
         # save best preds file
         if true_acc > best_true_acc:
@@ -144,7 +145,8 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
         results = np.append(results, {'epoch':epoch, 'avg_loss':avg_loss,
             'accuracy':accuracy, 'true_acc':true_acc, 'corrects':corrects,
             'size': size, 't5_acc':t5_acc, 't5_corrects':t5_corrects, 'mrr':mrr,
-            'preds': eval_preds})
+            'preds': eval_preds, 'test_eval_preds':test_eval_preds,
+            'test_true_acc':test_true_acc})
         if verbose: print('\nEvaluation - loss: {:.6f}  acc: {:.4f}%({}/{}) ' \
                     'true_acc: {:.4f}%(todo/todo) t5_acc: {:.4f}%({}/{}) MRR:' \
                     '{:.6f}\n'.format(avg_loss, accuracy, corrects, size,
