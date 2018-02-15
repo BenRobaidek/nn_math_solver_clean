@@ -154,8 +154,8 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
 
         # load correct solver
         solver = None
-        if data_path.contains('tencent'): solver = tencent_solver
-        if data_path.contains('kushman'): solver = kushman_solver
+        if 'tencent' in data_path: solver = tencent_solver
+        if 'kushman' in data_path: solver = kushman_solver
 
         (avg_loss, accuracy, true_acc, corrects, size, t5_acc, t5_corrects, mrr, eval_preds) = evaluate(
                 val_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES_VAL, ANS_VAL, snis, pred_filter=pred_filter, solver=solver)
