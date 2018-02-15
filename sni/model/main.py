@@ -11,6 +11,8 @@ import torch
 #torch.cuda.set_device(1)
 #print('Current Device:', torch.cuda.current_device())
 
+#PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs200_dr1_ed128_fembFalse_ptembFalse_drp0.5_mf1
+
 rand = True
 
 mf = (1,)
@@ -18,14 +20,14 @@ net_type = ('lstm',)# 'gru')
 #lr = (.001, .002)
 epochs = 10,
 bs = 64,
-opt = ('adam', 'adam', 'sgd')
-num_lay =  (1,2,4)
-hs = (50,128,200,300)
-num_dir = (1,2)
-embdim = (100,128,512)
+opt = ('adam',)
+num_lay =  (1,)
+hs = (200,)
+num_dir = (1,)
+embdim = (128,)
 embfix = (False,)#True)
 ptemb = (False,)#True)
-dropout = (0,0.3,0.5,0.7)
+dropout = (0.5,)
 save = False
 
 
