@@ -58,8 +58,8 @@ def split_indices(k_test=5):
             train_val = np.append(train_val, open('./input/fold' + str(i) + '.txt').readlines())
     #random.shuffle(train_val)
     test = open('./input/fold' + str(k_test) + '.txt').readlines()
-    train_indices = np.array(train_val[0:-1000]).astype(int)
-    val_indices = np.array(train_val[-1000:]).astype(int)
+    train_indices = np.array(train_val[0:-102]).astype(int)
+    val_indices = np.array(train_val[-102:]).astype(int)
     test_indices = np.array(test).astype(int)
     return train_indices, val_indices, test_indices
 
