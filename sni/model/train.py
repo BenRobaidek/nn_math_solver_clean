@@ -88,7 +88,6 @@ def train(args):
     highest_t1_acc_params = ''
     results = ''
     for epoch in range(args.epochs):
-        losses = []
         tot_loss = 0
         train_iter.repeat=False
         for batch_count,batch in enumerate(train_iter):
@@ -106,7 +105,6 @@ def train(args):
             loss = criterion(preds, batch.label)
             loss.backward()
             optimizer.step()
-            losses.append(loss)
             tot_loss += loss.data[0]
 
             #if (batch_count % 20 == 0):

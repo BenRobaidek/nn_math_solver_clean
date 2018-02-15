@@ -18,15 +18,15 @@ net_type = ('lstm',)# 'gru')
 #lr = (.001, .002)
 epochs = 10,
 bs = 64,
-opt = ('adam',)# 'adam', 'sgd')
-num_lay =  (1,)
-hs = (128,)
+opt = ('adam', 'adam', 'sgd')
+num_lay =  (1,2,4)
+hs = (50,128,200,300)
 num_dir = (1,2)
 embdim = (100,128,512)
 embfix = (False,)#True)
 ptemb = (False,)#True)
-dropout = (0,)
-save = True
+dropout = (0,0.3,0.5,0.7)
+save = False
 
 
 x = list(itertools.product(net_type, epochs, bs, opt, num_lay, hs, num_dir,
