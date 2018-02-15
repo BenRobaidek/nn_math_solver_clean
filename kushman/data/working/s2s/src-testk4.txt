@@ -1,0 +1,37 @@
+You are selling tickets for a high school play . Student tickets cost [a] dollars and general admission tickets cost [b] dollars . You sell [c] tickets and collect [d] dollars . How many student tickets and general admission tickets did you sell ?
+The sum of [a] numbers is [b] . The first number is [c] less than twice the second number . Find the smaller number . Find the larger number.
+The Kings won two less than three times as many games as they lost . They played [a] games . How many wins and losses did the team have ?
+A student is pricing [a] different picture packages . John 's Photo World charges [b] dollars per sheet and a one time sitting fee of [c] dollars . Sam 's Picture Emporium charges [d] dollars per sheet and a one time sitting fee of [e] dollars . For how many sheets of pictures do the [a] companies charge the same amount ?
+Safety Rent A Truck costs [a] dollars plus [b] dollars per mile . City Rentals rents the truck for [c] dollars plus [d] dollars per mile . For what mileage are the costs the same ?
+Apples cost [a] dollars per pound and grapes cost [b] dollars per pound . Jenny bought [c] pounds of fruit and paid [d] dollars . How many pounds of apples did she buy ? How many pounds of grapes ?
+An amusement park sells [a] kinds of tickets . Tickets for children cost [b] dollars . Adult tickets cost [c] dollars . On a certain day , [d] people entered the park . On that same day the admission fees collected totaled [e] dollars . How many children were admitted on that day ? How many adults were admitted ?
+Jane has a dress shop . She has space for [a] dresses . She sells only red and blue dresses . After reading several fashion magazines she decides to stock her shelves with [b] more blue dresses than red dresses . How many blue dresses and red dresses should she stock ?
+You have [a] total items that consist of hats and boots . The total cost is [b] dollars . Boots cost [c] dollars and hats cost [d] dollars . How many boots are there ? How many hats ?
+Safety Rent-a-Car rents an intermediate-size car at a daily rate of [a] dollars plus [b] per mile . City Rentals rent an intermediate-size car for [c] dollars plus [d] per mile . For what milage is the cost the same ?
+In a basketball game , Will scored [a] points , consisting only of 3-point shots and 2-point shots . He made a total of [b] shots . How many 3-point shots did he make ? How many 2-point shots did he make ?
+Tickets for a concert were priced at [a] dollars for students and [b] dollars for non-students . There were [c] tickets sold for a total of [d] dollars . How many student tickets were sold ? How many non-student tickets ?
+Two rainstorms occurred in one week in a certain area . In the first storm [a] milliliters of rain fell per hour , and in the second storm [b] milliliters of rain fell per hour . Rain fell that week for a total of [c] hours , for a total rainfall of [d] milliliters . How many hours was the first storm and the second storm .
+On a test containing [a] questions , the final score is based on [b] point for each correct answer and [c] of a point subtracted for each incorrect answer . Allan answered all of the questions and received a final score of [d] points . How many questions did Allan answer correctly ?
+A chemist has one solution that is [a] % acid and a second that is [b] % acid . How many liters of each should be mixed together to get [c] liters that is [d] % acid ?
+One number exceeds another by [a] and their sum is [b] . Find the larger number.
+A chemistry lab can be used by [a] students at one time . The lab has [b] work-stations . Some set up for [c] students and the others set up for [d] students . How many work-stations accommodate [c] students ?
+At a movie theater , tickets cost [a] dollars for adults and [b] dollars for children . A group of [c] moviegoers pays a total of [d] dollars . How many adults and children were in the group ?
+There are [a] kids in Mrs Jones ' class . There are twice as many girls as boys . How many boys and girls are there ?
+High school graduating class is made up of [a] students . There are [b] more girls than boys . How many boys are in the class ?
+Rita received a [a] dollars gift card for a coffee store . She used it in buying some coffee that cost [b] dollars per pound . After buying the coffee , she had [c] dollars left on her card . How many pounds of coffee did she buy ?
+According to Dr . Aaron R . Folsom of the University of Minnesota School of Public Health , your maximum ideal waist size is directly proportional to your hip size . For a woman with [a] inch hips , the maximum ideal waist size is [b] inches . What is the maximum waist size for a woman with [c] inch hips ?
+The sum of [a] numbers is [b] . The second is [c] more than [d] times the first . Find the smaller number . Find the larger number.
+A chemist has a solution that is [a] % alcohol and one that is [b] % alcohol . He wants to make [c] liters of a [d] % solution . How many liters of the [a] % solution should he add ? How many liters of the [d] % solution should he add ?
+If the product of [a] and a number is increased by [b] , the result is [c] . What is the number ?
+Latoya purchased a prepaid phone card for [a] dollars . Long distance calls cost [b] cents a minute using this card . Latoya used her card only once to make a long distance call . If the remaining credit on her card is [c] dollars , how many minutes did her call last ?
+A person wishes to invest [a] dollars , part at [b] % and part at [c] % . If the total interest desired at the end of the year is [d] dollars , how much should be invested at each rate ?
+A movie theater charges [a] dollars for adults and [b] dollars for children . The receipts for a showing of a movie were [c] dollars . If [d] tickets were sold , find how many adult tickets were sold . Find how many child tickets were sold .
+To make [a] kilograms of aluminum alloy with [b] % aluminum , a scientist wants to use [c] metals with [d] % and [e] % aluminum content respectively . How many kilograms of [d] % aluminum and how many kilograms of [e] % aluminum should she mix ?
+The US Senate had a total of [a] Democrats and Republicans . There were [b] more Republicans than Democrats . How many Democrats and Republicans were there in the Senate ?
+The Drama Club sold [a] tickets for the end-of-year-performance . Admission prices were [b] dollars for adults and [c] dollars for students . The total amount collected at the box office was [d] dollars . How many students attended the play ? How many adult attended the play ?
+The sum of [a] numbers is [b] . Twice the larger number exceeds [c] times the smaller number by [d] . Find the number.
+The cost of [a] gallons of regular gasoline and [b] gallons of premium gasoline is [c] dollars . Premium costs [d] dollars more per gallon than regular . What is the cost per gallon of each type of gasoline ?
+A piece of rope [a] meters long is cut into two pieces so that the longest piece is twice as long as the shorter piece . How long are the two pieces ?
+There are [a] animals on a farm , each of which is either a pig or a chicken . There are [b] legs altogether . How many pigs are there ? How many chickens ?
+Mitch is buying candy bars for his friends . He wants to give [a] bars to each friend , and he wants to have [b] spare bars . He can afford to buy [c] candy bars . How many friends can he treat ?
+Find a number such that [a] more than [b] the number is [c] the number.
