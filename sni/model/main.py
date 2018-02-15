@@ -27,7 +27,7 @@ num_dir = (1,)
 embdim = (128,)
 embfix = (False,)#True)
 ptemb = (False,)#True)
-dropout = (0.7)
+dropout = (0.7,)
 save = False
 
 
