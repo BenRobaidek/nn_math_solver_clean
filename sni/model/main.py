@@ -62,7 +62,7 @@ try:
                         ' -mf=' + str(mf) + \
                         ' -folder=' + '' + \
                         ' -save=' + str(save))
-            os.system('sort -o ../models/best_models.txt ' + \
-                                '../models/best_models.txt')
+            os.system('sort -o ../kushman/saved_models/best_models.txt ' + \
+                                '../kushman/saved_models/best_models.txt')
 except(KeyboardInterrupt, SystemExit):
     sys.exit("Interrupted by ctrl+c\n")
