@@ -15,19 +15,19 @@ import torch
 
 rand = True
 
-mf = (1,)
+mf = (1,2)
 net_type = ('lstm',)# 'gru')
 #lr = (.001, .002)
 epochs = 10,
 bs = 64,
-opt = ('adam',)
-num_lay =  (1,)
-hs = (200,)
-num_dir = (1,)
-embdim = (128,)
+opt = ('adam','sgd','adamax')
+num_lay =  (1,2)
+hs = (50,128,200,512)
+num_dir = (1,2)
+embdim = (50,128,250,512)
 embfix = (False,)#True)
 ptemb = (False,)#True)
-dropout = (0.5,)
+dropout = (0,0.3,0.5,0.7)
 save = False
 
 
@@ -44,8 +44,8 @@ try:
                 (net_type, epoch, bs, opt, num_lay, hs, num_dir, embdim, embfix,
                                                             ptemb, dropout, mf))
             os.system('python train.py' + \
-                        ' -save-path=' + '../../kushman/sni_saved_models/'+ \
-                        ' -data-path=' + '../../kushman/data/working/sni/'+ \
+                        ' -save-path=' + '../../tencent/sni_saved_models/'+ \
+                        ' -data-path=' + '../../tencent/data/working/sni/'+ \
                         ' -train-path=' + 'train.tsv' + \
                         ' -dev-path=' + 'val.tsv' + \
                         ' -test-path=' + 'test.tsv' + \
@@ -64,7 +64,7 @@ try:
                         ' -mf=' + str(mf) + \
                         ' -folder=' + '' + \
                         ' -save=' + str(save))
-            os.system('sort -o ../../kushman/saved_models/best_models.txt ' + \
-                                '../../kushman/saved_models/best_models.txt')
+            os.system('sort -o ../../tencent/sni_saved_models/best_models.txt ' + \
+                                '../../tencent/sni_saved_models/best_models.txt')
 except(KeyboardInterrupt, SystemExit):
     sys.exit("Interrupted by ctrl+c\n")
