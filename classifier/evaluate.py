@@ -6,11 +6,15 @@ import numpy as np
 import sys
 sys.path.append('../')
 sys.path.append('../tencent/')
+sys.path.append('../kushman/')
+from tencent import solver as tencent_solver
+from kushman import solver as kushman_solver
+
 from py_expression_eval import Parser
 import re
-from tencent import solver
 
-def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pred_filter=True):
+
+def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pred_filter=True, solver):
     model.eval()
     corrects, true_corrects, answer_correspond_to_equation, avg_loss, t5_corrects, rr = 0, 0, 0, 0, 0, 0
 
