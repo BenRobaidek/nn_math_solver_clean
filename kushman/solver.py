@@ -46,7 +46,7 @@ def solve(equations, variables, answers):
                 #print(pred_answers)
                 #print('pred_answers:', pred_answers)
                 #print('answer:', answer)
-                differences = np.absolute(np.subtract(np.array(list(pred_answers.values())).astype(float), answer))
+                differences = np.absolute(np.subtract(np.array(list(pred_answers.values())).astype(float), ans))
                 #print('differences:', differences)
                 correct_answers = np.less(differences, np.ones(np.shape(pred_answers.values())) * .002)
                 #print('correct_answers:', correct_answers)
