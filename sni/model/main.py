@@ -42,8 +42,8 @@ try:
                 (net_type, epoch, bs, opt, num_lay, hs, num_dir, embdim, embfix,
                                                             ptemb, dropout, mf))
             os.system('python train.py' + \
-                        ' -save-path=' + '../kushman/saved_models/'+ \
-                        ' -data-path=' + '../kushman/data/working/sni/'+ \
+                        ' -save-path=' + '../../kushman/sni_saved_models/'+ \
+                        ' -data-path=' + '../../kushman/data/working/sni/'+ \
                         ' -train-path=' + 'train.tsv' + \
                         ' -dev-path=' + 'val.tsv' + \
                         ' -test-path=' + 'test.tsv' + \
@@ -62,7 +62,7 @@ try:
                         ' -mf=' + str(mf) + \
                         ' -folder=' + '' + \
                         ' -save=' + str(save))
-            os.system('sort -o ../kushman/saved_models/best_models.txt ' + \
-                                '../kushman/saved_models/best_models.txt')
+            os.system('sort -o ../../kushman/saved_models/best_models.txt ' + \
+                                '../../kushman/saved_models/best_models.txt')
 except(KeyboardInterrupt, SystemExit):
     sys.exit("Interrupted by ctrl+c\n")
