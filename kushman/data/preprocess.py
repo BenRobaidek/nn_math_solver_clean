@@ -16,17 +16,11 @@ import evalTest
 
 def main():
 
-
     # LOAD JSON DATA
-    jsondata = json.loads(open('./input/AllWithEquations.json').read())
+    jsondata = json.loads(open('./input/Kushman.json').read())
     for x in jsondata:
-        #print('BEFORE:', x['sQuestion'], x['lEquations'], x['lSolutions'])
         lQueryVars = x.get('lQueryVars')
         x['sQuestion'], x['lEquations'], x['variables'] = preprocess(x['sQuestion'], x['lEquations'], lQueryVars)
-        if len(x['lEquations'].split(',')) >= 2:
-            print(x['lQueryVars'])
-            print('AFTER: ', x['sQuestion'], x['lEquations'], x['lSolutions'], x['variables'])
-            print()
 
     # 5 FOLD CROSS VALIDATION
     print('Using existing cross validation splits')
@@ -34,12 +28,35 @@ def main():
     #print('Preforming cross validation splits...')
     #crossValidation(jsondata, k = 5, k_test=5)
 
-    # GET TRAIN, VAL, TEST indices
-    train_indices, val_indices, test_indices = split_indices(k_test=5)
+    # GET TRAIN, VAL, TEST INDICES
+    train_indicesk123, val_indicesk4, test_indicesk5 = split_indices_crossval(k_val=4, k_test=5)
+    train_indicesk234, val_indicesk5, test_indicesk1 = split_indices_crossval(k_val=5, k_test=1)
+    train_indicesk345, val_indicesk1, test_indicesk2 = split_indices_crossval(k_val=1, k_test=2)
+    train_indicesk451, val_indicesk2, test_indicesk3 = split_indices_crossval(k_val=2, k_test=3)
+    train_indicesk512, val_indicesk3, test_indicesk4 = split_indices_crossval(k_val=3, k_test=4)
 
-    json2tsv(train_indices, jsondata, './working/train.tsv')
-    json2tsv(val_indices, jsondata, './working/val.tsv')
-    json2tsv(test_indices, jsondata, './working/test.tsv')
+    # SAVE SRC/TGT FILES
+    if not os.path.exists('./working/basic/'): os.makedirs('./working/basic/')
+
+    json2tsv(train_indicesk123, jsondata,   './working/basic/traink123.tsv')
+    json2tsv(val_indicesk4,     jsondata,   './working/basic/valk4.tsv')
+    json2tsv(test_indicesk5,    jsondata,   './working/basic/testk5.tsv')
+
+    json2tsv(train_indicesk234, jsondata,   './working/basic/traink234.tsv')
+    json2tsv(val_indicesk5,     jsondata,   './working/basic/valk5.tsv')
+    json2tsv(test_indicesk1,    jsondata,   './working/basic/testk1.tsv')
+
+    json2tsv(train_indicesk345, jsondata,   './working/basic/traink345.tsv')
+    json2tsv(val_indicesk1,     jsondata,   './working/basic/valk1.tsv')
+    json2tsv(test_indicesk2,    jsondata,   './working/basic/testk2.tsv')
+
+    json2tsv(train_indicesk451, jsondata,   './working/basic/traink451.tsv')
+    json2tsv(val_indicesk2,     jsondata,   './working/basic/valk2.tsv')
+    json2tsv(test_indicesk3,    jsondata,   './working/basic/testk3.tsv')
+
+    json2tsv(train_indicesk512, jsondata,   './working/basic/traink512.tsv')
+    json2tsv(val_indicesk3,     jsondata,   './working/basic/valk3.tsv')
+    json2tsv(test_indicesk4,    jsondata,   './working/basic/testk4.tsv')
 
 def preprocess(question, equation, lQueryVars):
     # handle $'s
@@ -55,7 +72,6 @@ def preprocess(question, equation, lQueryVars):
     equation = equation.replace('[', ' ( ')
     equation = equation.replace(']', ' ) ')
     equation = equation.replace('+', ' + ')
-    equation = equation.replace('+', ' + ')
     equation = equation.replace('-', ' - ')
     equation = equation.replace('*', ' * ')
     equation = equation.replace('/', ' / ')
@@ -67,15 +83,9 @@ def preprocess(question, equation, lQueryVars):
     equation = equation.split()
     question = question.split()
 
-    """
-    for i,token in enumerate(equation):
-        if isFloat(token): equation[i] = str(float(token))
-    for i,token in enumerate(question):
-        if isFloat(token): question[i] = str(float(token))
-    """
-
+    # find and replace constants in question and equation
     i = 0
-    variables = dict()
+    constants = dict()
     for j,token in enumerate(question):
         if isFloat(token):
             token = float(token)
@@ -83,27 +93,25 @@ def preprocess(question, equation, lQueryVars):
             for symbol in equation:
                 if isFloat(symbol) and float(symbol) == float(token):
                     equation[equation.index(symbol)] = character
-            variables[character] = str(token)
+            constants[character] = str(token)
             for q in question:
                 if isFloat(q) and float(q) == token:
                     question[question.index(q)] = character
             i += 1
 
-    j = 0
-    if lQueryVars is not None:
-        for var in lQueryVars:
-            for i,token in enumerate(equation):
-                if var == token:
-                    print(j)
-                    equation[i] = chr(88 - j)
-            j += 1
-        print('lQueryVars:', lQueryVars)
-        print(equation)
+    # find and replace variables in equation
+    variables = [x for x in equation if x not in ['+', '-', '*', '/', ',',
+            '**', '(', ')', '='] and not isFloat(x) and not re.match(r'\[[a-z]\]', x)]
+    variables = np.unique(variables)
+    i = 0
+    for v in variables:
+        equation = [x if x!=v else 'VAR_' + str(i) for x in equation]
+        i += 1
 
     question = ' '.join(question)
     equation = ''.join(equation)
     #equation = equation.split(',')
-    return question, equation, variables
+    return question, equation, constants
 
 def json2tsv(json_indices, json_data, output_path):
     """
@@ -113,25 +121,29 @@ def json2tsv(json_indices, json_data, output_path):
     output = open(output_path, 'w')
     for d in json_data:
         if int(d['iIndex']) in json_indices:
-            solutions =  ','.join(d['lSolutions'])
+            solutions =  ','.join([str(x) for x in d['lSolutions']])
             output.write(str(d['sQuestion']) + '\t' +
                     str(d['lEquations']) + '\t' + str(d['variables'])
-                    + '\t' + solutions + '\n')
+                    + '\t' + '[' + solutions + ']' + '\n')
     output.close()
 
-def split_indices(k_test=5):
+def split_indices_crossval(k_val=4, k_test=5):
     """
     Returns train, validation, and test indices
     foldi.txt files must already exist in ./input/
     """
-    train_val = []
+    train = []
+    val = []
+    test = []
     for i in range(1,6):
-        if not i == k_test:
-            train_val = np.append(train_val, open('./working/fold' + str(i) + '.txt').readlines())
-    #random.shuffle(train_val)
-    test = open('./working/fold' + str(k_test) + '.txt').readlines()
-    train_indices = np.array(train_val[0:-1000]).astype(int)
-    val_indices = np.array(train_val[-1000:]).astype(int)
+        if i == k_test:
+            test = np.append(test, open('./input/fold' + str(i) + '.txt').readlines())
+        elif i == k_val:
+            val = np.append(val, open('./input/fold' + str(i) + '.txt').readlines())
+        else:
+            train = np.append(train, open('./input/fold' + str(i) + '.txt').readlines())
+    train_indices = np.array(train).astype(int)
+    val_indices = np.array(val).astype(int)
     test_indices = np.array(test).astype(int)
     return train_indices, val_indices, test_indices
 
