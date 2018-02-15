@@ -42,8 +42,8 @@ try:
                 (net_type, epoch, bs, opt, num_lay, hs, num_dir, embdim, embfix,
                                                             ptemb, dropout, mf))
             os.system('python train.py' + \
-                        ' -save-path=' + '../saved_models/'+ \
-                        ' -data-path=' + '../data/'+ \
+                        ' -save-path=' + '../kushman/saved_models/'+ \
+                        ' -data-path=' + '../kushman/data/working/sni/'+ \
                         ' -train-path=' + 'train.tsv' + \
                         ' -dev-path=' + 'val.tsv' + \
                         ' -test-path=' + 'test.tsv' + \
