@@ -18,7 +18,7 @@ def main():
         default='../tests/exp1/config.json',
         help='config file path [default: ../tests/exp1/config.json]')
     parser.add_argument('-hyperparam_results', type=str,
-        default='../tests/exp1/hyperparam_results.json',
+        default='../tests/exp1/hyperparam_results_kushman.json',
         help='hyperparameter search results file path' \
             '[default: ../tests/exp1/hyperparam_results.json]')
     args = parser.parse_args()
