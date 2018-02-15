@@ -53,5 +53,5 @@ def solve(equations, variables, answers):
                 all_equal = np.all(correct_answers)
                 #print('all_equal:', all_equal)
                 #print()
-            corrects = corrects.append([all_equal])
+            corrects = np.append(corrects, [all_equal])
     return corrects.astype(bool)
