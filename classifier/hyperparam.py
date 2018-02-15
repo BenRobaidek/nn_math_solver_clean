@@ -235,7 +235,7 @@ def getThresh(class_predictions, s2s_predictions):
     return max(results, key=results.get)
 
 def combineCS(class_predictions, s2s_predictions, thresh):
-    return [c[0] if c[1] > best_thresh else s for c,s in zip(class_predictions,s2s_predictions)]
+    return [c[0] if c[1] > thresh else s for c,s in zip(class_predictions,s2s_predictions)]
 
 if __name__ == '__main__':
     main()
