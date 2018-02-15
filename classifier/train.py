@@ -29,7 +29,8 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
     LABELS = data.Field(sequential=False)
     VAR_VALUES_VAL = data.Field(sequential=False)
     VAR_VALUES_TEST = data.Field(sequential=False)
-    ANS = data.Field(sequential=False)
+    ANS_VAL = data.Field(sequential=False)
+    ANS_TEST = data.Field(sequential=False)
 
     """
     train, val, test = data.TabularDataset.splits(
@@ -40,15 +41,15 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
 
     train = data.TabularDataset(path=data_path + train_path, format='tsv',
             fields=[('text', TEXT), ('label', LABELS), ('var_values',
-            VAR_VALUES_VAL), ('ans', ANS)])
+            VAR_VALUES_VAL), ('ans', ANS_VAL)])
 
     val = data.TabularDataset(path=data_path + val_path, format='tsv',
             fields=[('text', TEXT), ('label', LABELS), ('var_values',
-            VAR_VALUES_VAL), ('ans', ANS)])
+            VAR_VALUES_VAL), ('ans', ANS_VAL)])
 
     test = data.TabularDataset(path=data_path + test_path, format='tsv',
             fields=[('text', TEXT), ('label', LABELS), ('var_values',
-            VAR_VALUES_TEST), ('ans', ANS)])
+            VAR_VALUES_TEST), ('ans', ANS_TEST)])
 
     prevecs = None
     if (pretrained_emb == True):
@@ -61,7 +62,8 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
     LABELS.build_vocab(train)
     VAR_VALUES_VAL.build_vocab(val)
     VAR_VALUES_TEST.build_vocab(test)
-    ANS.build_vocab(val)
+    ANS_VAL.build_vocab(val)
+    ANS_TEST.build_vocab(test)
 
     if not os.path.isdir(save_path): os.makedirs(save_path)
     torch.save(LABELS.vocab.itos, save_path + 'LABELS_vocab_itos.pt')
