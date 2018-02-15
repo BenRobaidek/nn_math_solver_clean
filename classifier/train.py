@@ -67,7 +67,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
     else:
         TEXT.build_vocab(train)
     LABELS.build_vocab(train)
-    print(len(LABELS))
+    print(len(LABELS.vocab.itos))
     VAR_VALUES_VAL.build_vocab(val)
     VAR_VALUES_TEST.build_vocab(test)
     ANS_VAL.build_vocab(val)
