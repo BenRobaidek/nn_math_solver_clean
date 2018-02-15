@@ -3,11 +3,10 @@ Solver for kushman problems
 """
 import numpy as np
 import re
-from py_expression_eval import Parser
+from sympy.parsing.sympy_parser import parse_expr
 
 def solve(equations, variables, answers):
     corrects = np.array([])
-    parse_expr = Parser()
     for eq, var, ans in zip(equations, variables, answers):
         ans = eval(ans)
         for i,a in enumerate(ans):
