@@ -176,6 +176,7 @@ def main():
                         try:
                             for x in cross_val_results[k]:
                                 x.pop('preds')
+                                x.pop('test_preds')
                         except TypeError:
                             pass
                     hyperparam_results[str(hyperparams)] = cross_val_results
