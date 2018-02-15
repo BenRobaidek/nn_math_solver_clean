@@ -31,10 +31,24 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
     VAR_VALUES_TEST = data.Field(sequential=False)
     ANS = data.Field(sequential=False)
 
+    """
     train, val, test = data.TabularDataset.splits(
         path=data_path, train=train_path,
         validation=val_path, test=test_path, format='tsv',
         fields=[('text', TEXT), ('label', LABELS), ('var_values', VAR_VALUES_VAL), ('ans', ANS)])
+    """
+
+    train = data.TabularDataset(path=data_path + train_path, format='tsv',
+            fields=[('text', TEXT), ('label', LABELS), ('var_values',
+            VAR_VALUES_VAL), ('ans', ANS)])
+
+    val = data.TabularDataset(path=data_path + val_path, format='tsv',
+            fields=[('text', TEXT), ('label', LABELS), ('var_values',
+            VAR_VALUES_VAL), ('ans', ANS)])
+
+    test = data.TabularDataset(path=data_path + test_path, format='tsv',
+            fields=[('text', TEXT), ('label', LABELS), ('var_values',
+            VAR_VALUES_TEST), ('ans', ANS)])
 
     prevecs = None
     if (pretrained_emb == True):
