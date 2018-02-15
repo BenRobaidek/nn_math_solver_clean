@@ -156,6 +156,7 @@ def main():
                                 s2s_predictions_valk4 +
                                 s2s_predictions_valk5
                                 )
+                        print('best_thresh:', best_thresh)
 
                         val_preds_class = combineCS(
                                 class_predictions_valk1 +
@@ -172,7 +173,7 @@ def main():
                                 )
 
                         print('val_preds_class acc', np.sum(val_preds_class)/len(val_preds_class))
-                        print('best_thresh:', best_thresh)
+
                         #print('classifier + s2s cross validation true accuracy (VAL):', c_s2s_cross_validation_true_accuracy)
 
                         ########################################################
