@@ -180,8 +180,8 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
     i = 0
     for v in variables:
         #equation = [x if x!=v else 'VAR_' + str(i) for x in equation]
-        #equation = [x if x!=v else 'VAR' for x in equation]
-        equation = [x if x!=v else '[a]' for x in equation]
+        equation = [x if x!=v else 'VAR' for x in equation]
+        #equation = [x if x!=v else '[a]' for x in equation]
         i += 1
 
     question = ' '.join(question)
