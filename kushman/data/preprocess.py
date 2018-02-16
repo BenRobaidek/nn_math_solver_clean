@@ -194,6 +194,8 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
         parse_expr(x, evaluate=False)
         x = sympy.simplify(x)
         equation[i] = str(x) + '=0'
+
+    equation = sorted(equation)
     equation = ','.join(equation)
 
     print('equation (after): ', equation)
