@@ -195,7 +195,7 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
         x = sympy.simplify(x)
         x = str(x)
         for k in constants.keys():
-            x.replace(k.strip('[').strip(']'), k)
+            x = x.replace(k.strip('[').strip(']'), k)
         equation[i] = x + '=0'
 
     equation = sorted(equation)
