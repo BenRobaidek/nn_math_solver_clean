@@ -87,8 +87,8 @@ def main():
                         # classifier
                         ########################################################
                         # load classifier predictions
-                        classifier_validation_predictions_ = [[x.split()[0] == 'True', float(x.split()[1])] for x in results[0].get('preds')]
-                        classifier_test_predictions_ = [[x.split()[0] == 'True', float(x.split()[1])] for x in results[0].get('test_eval_preds')]
+                        classifier_validation_predictions = [[x.split()[0] == 'True', float(x.split()[1])] for x in results[0].get('preds')]
+                        classifier_test_predictions = [[x.split()[0] == 'True', float(x.split()[1])] for x in results[0].get('test_eval_preds')]
 
                         ########################################################
                         # seq2seq
