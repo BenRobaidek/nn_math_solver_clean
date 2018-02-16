@@ -22,7 +22,7 @@ def main():
     jsondata_no_sni = copy.deepcopy(jsondata)
 
     # LOAD SNI MODEL
-    model = torch.load('../sni_saved_models/best_model.pt')
+    model = torch.load('../sni_saved_models/best_model.pt', map_location=lambda storage, loc: storage.cuda(1))
     if int(torch.cuda.is_available()) == 1:
         model = model.cuda()
     print(model)
