@@ -128,7 +128,7 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
             iterator = data.Iterator(dataset, batch_size=1)
             iterator.repeat=False
             for batch in iterator:
-                inp = batch.text.t()
+                inp = batch.text.t().cuda()
                 inp = inp.cuda(device_id=1)
 
 
