@@ -49,7 +49,7 @@ def main():
     print('Preprocessing without sni...')
     for d in jsondata_no_sni:
         lQueryVars = x.get('lQueryVars')
-        x['sQuestion'], x['lEquations'], x['variables'] = preprocess(x['sQuestion'], x['lEquations'], lQueryVars, sni_model, fields, use_sni=False)
+        x['sQuestion'], x['lEquations'], x['variables'] = preprocess(x['sQuestion'], x['lEquations'], lQueryVars, None, None, use_sni=False)
     print('Preprocessing without sni complete...')
 
     # 5 FOLD CROSS VALIDATION
