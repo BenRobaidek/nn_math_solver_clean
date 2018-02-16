@@ -11,6 +11,7 @@ from torchtext import data, datasets
 from py_expression_eval import Parser
 
 sys.path.append('../sni_saved_models/')
+sys.path.append('../../sni/')
 import model
 import evalTest
 
