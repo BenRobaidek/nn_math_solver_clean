@@ -195,7 +195,7 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
         x = sympy.simplify(x)
         equation[i] = str(x) + '=0'
 
-    #equation = sorted(equation)
+    equation = sorted(equation)
     equation = ','.join(equation)
 
     print('equation (after): ', equation)
