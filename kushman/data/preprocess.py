@@ -22,10 +22,12 @@ def main():
     jsondata_no_sni = copy.deepcopy(jsondata)
 
     # LOAD SNI MODEL
-    model = torch.load('../sni_saved_models/best_model.pt', map_location={'cuda:0':'cuda:1'})
-    #if int(torch.cuda.is_available()) == 1:
-    model = model.cuda()
-    print(model)
+    sni_model = model()
+    sni_model.load_state_dict(torch.load('../sni_saved_models/best_model.pt'))
+    #torch.load('../sni_saved_models/best_model.pt', map_location={'cuda:0':'cuda:1'})
+    if int(torch.cuda.is_available()) == 1:
+        sni_model = model.cuda()
+    print(sni_model)
 
 
     model.lstm.flatten_parameters()
@@ -42,13 +44,13 @@ def main():
     # PREPROCESS DATA W/ SNI
     for x in jsondata:
         lQueryVars = x.get('lQueryVars')
-        x['sQuestion'], x['lEquations'], x['variables'] = preprocess(x['sQuestion'], x['lEquations'], lQueryVars, model, fields, use_sni=True)
+        x['sQuestion'], x['lEquations'], x['variables'] = preprocess(x['sQuestion'], x['lEquations'], lQueryVars, sni_model, fields, use_sni=True)
 
     # PREPROCESS DATA WITHOUT SNI
     print('Preprocessing without sni...')
     for d in jsondata_no_sni:
         lQueryVars = x.get('lQueryVars')
-        x['sQuestion'], x['lEquations'], x['variables'] = preprocess(x['sQuestion'], x['lEquations'], lQueryVars, model, fields, use_sni=False)
+        x['sQuestion'], x['lEquations'], x['variables'] = preprocess(x['sQuestion'], x['lEquations'], lQueryVars, sni_model, fields, use_sni=False)
     print('Preprocessing without sni complete...')
 
     # 5 FOLD CROSS VALIDATION
