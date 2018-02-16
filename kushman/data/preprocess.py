@@ -185,6 +185,7 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
 
     question = ' '.join(question)
     equation = ''.join(equation)
+    equation = equation.replace(' ', '')
 
     # simplify equation
     print('equation (before):', equation)
