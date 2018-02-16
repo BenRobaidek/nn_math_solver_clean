@@ -126,6 +126,7 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
             example = question_copy[j-3:j+4]
             print('example:', example)
             ex = data.Example.fromlist([' '.join(example), ''], fields)
+            print('ex:', ex)
             dataset = data.Dataset([ex], fields)
             inp = None
             iterator = data.Iterator(dataset, batch_size=1)
