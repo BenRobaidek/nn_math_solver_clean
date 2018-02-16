@@ -10,6 +10,7 @@ import torch
 from torchtext import data, datasets
 from py_expression_eval import Parser
 
+sys.path.append('../sni_saved_models/')
 sys.path.append('../../sni/model')
 import model
 import evalTest
