@@ -110,6 +110,8 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
     equation = equation.split()
     question = question.split()
 
+    # prevent inplace changes on question
+    question_copy = [t for t in question]
     # find and replace constants in question and equation
     i = 0
     constants = dict()
