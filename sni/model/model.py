@@ -43,22 +43,24 @@ class Model(nn.Module):
         return (hx,cx)
 
     def forward(self, inp):
-        print('here1')
         hc = self.get_ch(inp.size(0))
-        print('here2')
         e = self.emb(inp)
-        print('here3')
+
         #e = inp
         if self.net_type == 'lstm':
             #self.lstm.flatten_parameters()
             _, (y,_) = self.lstm(e, hc)
+        print('here1')
         elif self.net_type == 'gru':
             #self.gru.flatten_parameters()
             _, y = self.gru(e, hc[0])
+        print('here2')
         if self.num_dir==2:
             y = torch.cat([y[0:y.size(0):2], y[1:y.size(0):2]], 2)
         if self.num_layers>1:
             y = torch.cat([y[i].unsqueeze(0) for i in range(self.num_layers)],2)
+        print('here3')
         y = torch.squeeze(y,0)
+        print('here4')
         z = self.Tanh(y)
         return self.Lin(z)
