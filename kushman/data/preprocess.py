@@ -27,7 +27,7 @@ def main():
         model = model.cuda()
     print(model)
 
-    print('HEREHERE')
+
     model.lstm.flatten_parameters()
     model.eval()
     TEXT = data.Field(lower=True,init_token="<start>",eos_token="<end>")
@@ -38,7 +38,7 @@ def main():
     TEXT.build_vocab(train)
     LABEL.build_vocab(train)
     LABEL.build_vocab(train)
-
+    print('HEREHERE')
     # PREPROCESS DATA W/ SNI
     for x in jsondata:
         lQueryVars = x.get('lQueryVars')
