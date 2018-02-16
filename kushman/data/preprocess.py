@@ -10,6 +10,7 @@ import torch
 from torchtext import data, datasets
 from py_expression_eval import Parser
 import sympy
+from sympy.parsing.sympy_parser import parse_expr
 
 sys.path.append('../sni_saved_models/')
 sys.path.append('../../sni/model/')
@@ -188,6 +189,7 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
     for x in equation:
         x = x.split('=')
         x = str('(' + str(x[0]) + ')' + '-' + '(' + str(x[1]) + ')')
+        parse_expr(x)
         print('x:', x)
         print(sympy.simplify(x))
 
