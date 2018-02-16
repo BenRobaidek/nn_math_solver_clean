@@ -102,7 +102,7 @@ def main():
                         ########################################################
                         # load retrieval predictions
                         retrieval_validation_predictions = [[x.strip().split()[0] == 'True', float(x.strip().split()[1])] for x in open('../tencent/data/output/retrieval/correctsk1.tsv').readlines()]
-                        print('retrieval validation acc:'. 'TODO')
+                        print('retrieval validation acc:', 'TODO')
 
                         ########################################################
                         # classifier + seq2seq
