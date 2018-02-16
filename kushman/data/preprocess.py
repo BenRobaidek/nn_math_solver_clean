@@ -22,7 +22,7 @@ def main():
     jsondata_no_sni = copy.deepcopy(jsondata)
 
     # LOAD SNI MODEL
-    sni_model = model(input_size=, hidden_size=200, num_classes=, num_layers=1,
+    sni_model = model(input_size=1136, hidden_size=200, num_classes=3, num_layers=1,
                      num_dir=2, batch_size=64, emb_dim=128,
                      dropout=0.5, net_type="lstm", prevecs=None, embfix=False)
     sni_model.load_state_dict(torch.load('../sni_saved_models/best_model.pt'))
