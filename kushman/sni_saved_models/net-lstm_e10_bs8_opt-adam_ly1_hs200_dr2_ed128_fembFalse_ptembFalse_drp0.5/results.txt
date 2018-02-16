@@ -1,0 +1,23 @@
+PARAMETERS:
+Net Type: lstm
+Epochs: 10
+Batch Size: 8
+Optimizer: adam
+Num Layers: 1
+Hidden Size: 200
+Num Directions: 2
+Embedding Dimension: 128
+Fixed Embeddings: False
+Pretrained Embeddings: False
+Dropout: 0.5
+Min Freq: 1
+EPOCH 0 - loss: 0.0000  acc: 96.3989%(348/361) t5_acc: 0.0000%(  0/361) MRR: 0.981994
+EPOCH 1 - loss: 0.0000  acc: 97.5069%(352/361) t5_acc: 0.0000%(  0/361) MRR: 0.987535
+EPOCH 2 - loss: 0.0000  acc: 95.8449%(346/361) t5_acc: 0.0000%(  0/361) MRR: 0.979224
+EPOCH 3 - loss: 0.0000  acc: 96.1219%(347/361) t5_acc: 0.0000%(  0/361) MRR: 0.980609
+EPOCH 4 - loss: 0.0000  acc: 96.3989%(348/361) t5_acc: 0.0000%(  0/361) MRR: 0.981994
+EPOCH 5 - loss: 0.0000  acc: 96.6759%(349/361) t5_acc: 0.0000%(  0/361) MRR: 0.983380
+EPOCH 6 - loss: 0.0000  acc: 96.6759%(349/361) t5_acc: 0.0000%(  0/361) MRR: 0.983380
+EPOCH 7 - loss: 0.0000  acc: 96.6759%(349/361) t5_acc: 0.0000%(  0/361) MRR: 0.983380
+EPOCH 8 - loss: 0.0000  acc: 96.6759%(349/361) t5_acc: 0.0000%(  0/361) MRR: 0.983380
+EPOCH 9 - loss: 0.0000  acc: 96.6759%(349/361) t5_acc: 0.0000%(  0/361) MRR: 0.983380

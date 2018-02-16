@@ -330,6 +330,7 @@ acc: 96.3989%(348/361) EPOCH 1 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.98
 acc: 96.3989%(348/361) EPOCH 2 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.981994PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs200_dr2_ed512_fembFalse_ptembFalse_drp0.0_mf1
 acc: 96.3989%(348/361) EPOCH 2 - loss: 0.0002 t5_acc: 0.0000%(  0/361) MRR: 0.981994PARAMETERS:net-lstm_e10_bs64_opt-adam_ly2_hs128_dr1_ed512_fembFalse_ptembFalse_drp0.0_mf1
 acc: 96.3989%(348/361) EPOCH 3 - loss: 0.0000 t5_acc: 0.0000%(  0/361) MRR: 0.981994PARAMETERS:net-lstm_e10_bs64_opt-adam_ly2_hs200_dr2_ed512_fembFalse_ptembFalse_drp0.5_mf1
+acc: 96.3989%(348/361) EPOCH 3 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.981994PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs200_dr1_ed128_fembFalse_ptembFalse_drp0.5_mf1
 acc: 96.3989%(348/361) EPOCH 3 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.981994PARAMETERS:net-lstm_e10_bs64_opt-adam_ly2_hs128_dr2_ed100_fembFalse_ptembFalse_drp0.3_mf1
 acc: 96.3989%(348/361) EPOCH 3 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.981994PARAMETERS:net-lstm_e10_bs64_opt-adam_ly2_hs128_dr2_ed128_fembFalse_ptembFalse_drp0.0_mf1
 acc: 96.3989%(348/361) EPOCH 3 - loss: 0.0002 t5_acc: 0.0000%(  0/361) MRR: 0.981994PARAMETERS:net-lstm_e10_bs64_opt-adam_ly4_hs128_dr2_ed100_fembFalse_ptembFalse_drp0.7_mf1
@@ -338,6 +339,7 @@ acc: 96.3989%(348/361) EPOCH 4 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.98
 acc: 96.3989%(348/361) EPOCH 4 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.981994PARAMETERS:net-lstm_e10_bs64_opt-adam_ly4_hs200_dr2_ed128_fembFalse_ptembFalse_drp0.5_mf1
 acc: 96.3989%(348/361) EPOCH 4 - loss: 0.0004 t5_acc: 0.0000%(  0/361) MRR: 0.981994PARAMETERS:net-lstm_e10_bs64_opt-adam_ly2_hs200_dr1_ed100_fembFalse_ptembFalse_drp0.0_mf1
 acc: 96.3989%(348/361) EPOCH 5 - loss: 0.0000 t5_acc: 0.0000%(  0/361) MRR: 0.981994PARAMETERS:net-lstm_e10_bs64_opt-adam_ly4_hs128_dr2_ed512_fembFalse_ptembFalse_drp0.0_mf1
+acc: 96.3989%(348/361) EPOCH 5 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.981994PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs200_dr1_ed128_fembFalse_ptembFalse_drp0.5_mf1
 acc: 96.3989%(348/361) EPOCH 5 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.981994PARAMETERS:net-lstm_e10_bs64_opt-adam_ly4_hs128_dr2_ed100_fembFalse_ptembFalse_drp0.0_mf1
 acc: 96.3989%(348/361) EPOCH 6 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.981994PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs200_dr1_ed512_fembFalse_ptembFalse_drp0.3_mf1
 acc: 96.3989%(348/361) EPOCH 6 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.981994PARAMETERS:net-lstm_e10_bs64_opt-adam_ly2_hs50_dr1_ed512_fembFalse_ptembFalse_drp0.3_mf1
@@ -362,6 +364,7 @@ acc: 96.3989%(348/361) EPOCH 9 - loss: 0.0000 t5_acc: 0.0000%(  0/361) MRR: 0.98
 acc: 96.3989%(348/361) EPOCH 9 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.981994PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs50_dr2_ed512_fembFalse_ptembFalse_drp0.0_mf1
 acc: 96.3989%(348/361) EPOCH 9 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.981994PARAMETERS:net-lstm_e10_bs64_opt-adam_ly2_hs50_dr1_ed100_fembFalse_ptembFalse_drp0.5_mf1
 acc: 96.3989%(348/361) EPOCH 9 - loss: 0.0002 t5_acc: 0.0000%(  0/361) MRR: 0.981994PARAMETERS:net-lstm_e10_bs64_opt-sgd_ly4_hs300_dr2_ed512_fembFalse_ptembFalse_drp0.5_mf1
+acc: 96.6759%(349/361) EPOCH 1 - loss: 0.0000 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs1_opt-adam_ly1_hs200_dr2_ed128_fembFalse_ptembFalse_drp0.5_mf1
 acc: 96.6759%(349/361) EPOCH 1 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly4_hs300_dr1_ed128_fembFalse_ptembFalse_drp0.3_mf1
 acc: 96.6759%(349/361) EPOCH 1 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly4_hs300_dr2_ed100_fembFalse_ptembFalse_drp0.3_mf1
 acc: 96.6759%(349/361) EPOCH 1 - loss: 0.0002 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly2_hs300_dr2_ed512_fembFalse_ptembFalse_drp0.5_mf1
@@ -384,6 +387,8 @@ acc: 96.6759%(349/361) EPOCH 3 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.98
 acc: 96.6759%(349/361) EPOCH 3 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly4_hs128_dr2_ed128_fembFalse_ptembFalse_drp0.7_mf1
 acc: 96.6759%(349/361) EPOCH 4 - loss: 0.0000 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs300_dr1_ed128_fembFalse_ptembFalse_drp0.5_mf1
 acc: 96.6759%(349/361) EPOCH 4 - loss: 0.0000 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly2_hs200_dr1_ed512_fembFalse_ptembFalse_drp0.3_mf1
+acc: 96.6759%(349/361) EPOCH 4 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs200_dr2_ed128_fembFalse_ptembFalse_drp0.5_mf1
+acc: 96.6759%(349/361) EPOCH 4 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs200_dr2_ed128_fembFalse_ptembFalse_drp0.5_mf1
 acc: 96.6759%(349/361) EPOCH 4 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly2_hs50_dr2_ed512_fembFalse_ptembFalse_drp0.0_mf1
 acc: 96.6759%(349/361) EPOCH 4 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly2_hs50_dr2_ed512_fembFalse_ptembFalse_drp0.3_mf1
 acc: 96.6759%(349/361) EPOCH 4 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly2_hs50_dr2_ed512_fembFalse_ptembFalse_drp0.5_mf1
@@ -402,12 +407,14 @@ acc: 96.6759%(349/361) EPOCH 5 - loss: 0.0002 t5_acc: 0.0000%(  0/361) MRR: 0.98
 acc: 96.6759%(349/361) EPOCH 6 - loss: 0.0000 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly2_hs200_dr2_ed512_fembFalse_ptembFalse_drp0.3_mf1
 acc: 96.6759%(349/361) EPOCH 6 - loss: 0.0000 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly2_hs300_dr1_ed128_fembFalse_ptembFalse_drp0.5_mf1
 acc: 96.6759%(349/361) EPOCH 6 - loss: 0.0000 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly2_hs300_dr2_ed128_fembFalse_ptembFalse_drp0.0_mf1
+acc: 96.6759%(349/361) EPOCH 6 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs200_dr1_ed128_fembFalse_ptembFalse_drp0.5_mf1
 acc: 96.6759%(349/361) EPOCH 6 - loss: 0.0002 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs200_dr1_ed128_fembFalse_ptembFalse_drp0.3_mf1
 acc: 96.6759%(349/361) EPOCH 7 - loss: 0.0000 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs300_dr1_ed128_fembFalse_ptembFalse_drp0.7_mf1
 acc: 96.6759%(349/361) EPOCH 7 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly2_hs128_dr2_ed100_fembFalse_ptembFalse_drp0.7_mf1
 acc: 96.6759%(349/361) EPOCH 7 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly2_hs50_dr1_ed512_fembFalse_ptembFalse_drp0.0_mf1
 acc: 96.6759%(349/361) EPOCH 7 - loss: 0.0002 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly2_hs200_dr1_ed128_fembFalse_ptembFalse_drp0.7_mf1
 acc: 96.6759%(349/361) EPOCH 8 - loss: 0.0000 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs128_dr1_ed512_fembFalse_ptembFalse_drp0.3_mf1
+acc: 96.6759%(349/361) EPOCH 8 - loss: 0.0000 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs200_dr1_ed128_fembFalse_ptembFalse_drp0.5_mf1
 acc: 96.6759%(349/361) EPOCH 8 - loss: 0.0000 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly2_hs128_dr1_ed100_fembFalse_ptembFalse_drp0.7_mf1
 acc: 96.6759%(349/361) EPOCH 8 - loss: 0.0000 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly2_hs300_dr1_ed100_fembFalse_ptembFalse_drp0.5_mf1
 acc: 96.6759%(349/361) EPOCH 8 - loss: 0.0000 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly4_hs128_dr1_ed100_fembFalse_ptembFalse_drp0.7_mf1
@@ -415,6 +422,7 @@ acc: 96.6759%(349/361) EPOCH 8 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.98
 acc: 96.6759%(349/361) EPOCH 8 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly4_hs50_dr1_ed128_fembFalse_ptembFalse_drp0.0_mf1
 acc: 96.6759%(349/361) EPOCH 9 - loss: 0.0000 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly2_hs200_dr1_ed512_fembFalse_ptembFalse_drp0.5_mf1
 acc: 96.6759%(349/361) EPOCH 9 - loss: 0.0000 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly4_hs300_dr2_ed128_fembFalse_ptembFalse_drp0.0_mf1
+acc: 96.6759%(349/361) EPOCH 9 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs200_dr1_ed128_fembFalse_ptembFalse_drp0.5_mf1
 acc: 96.6759%(349/361) EPOCH 9 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs50_dr2_ed100_fembFalse_ptembFalse_drp0.5_mf1
 acc: 96.6759%(349/361) EPOCH 9 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs50_dr2_ed100_fembFalse_ptembFalse_drp0.7_mf1
 acc: 96.6759%(349/361) EPOCH 9 - loss: 0.0002 t5_acc: 0.0000%(  0/361) MRR: 0.983380PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs50_dr1_ed100_fembFalse_ptembFalse_drp0.3_mf1
@@ -443,6 +451,7 @@ acc: 96.9529%(350/361) EPOCH 2 - loss: 0.0002 t5_acc: 0.0000%(  0/361) MRR: 0.98
 acc: 96.9529%(350/361) EPOCH 3 - loss: 0.0000 t5_acc: 0.0000%(  0/361) MRR: 0.984765PARAMETERS:net-lstm_e10_bs64_opt-adam_ly4_hs300_dr2_ed128_fembFalse_ptembFalse_drp0.3_mf1
 acc: 96.9529%(350/361) EPOCH 3 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.984765PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs128_dr2_ed512_fembFalse_ptembFalse_drp0.7_mf1
 acc: 96.9529%(350/361) EPOCH 3 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.984765PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs200_dr1_ed512_fembFalse_ptembFalse_drp0.0_mf1
+acc: 96.9529%(350/361) EPOCH 3 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.984765PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs200_dr2_ed128_fembFalse_ptembFalse_drp0.5_mf1
 acc: 96.9529%(350/361) EPOCH 3 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.984765PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs200_dr2_ed128_fembFalse_ptembFalse_drp0.7_mf1
 acc: 96.9529%(350/361) EPOCH 3 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.984765PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs300_dr2_ed128_fembFalse_ptembFalse_drp0.7_mf1
 acc: 96.9529%(350/361) EPOCH 3 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.984765PARAMETERS:net-lstm_e10_bs64_opt-adam_ly4_hs128_dr2_ed100_fembFalse_ptembFalse_drp0.5_mf1
@@ -471,6 +480,7 @@ acc: 96.9529%(350/361) EPOCH 5 - loss: 0.0000 t5_acc: 0.0000%(  0/361) MRR: 0.98
 acc: 96.9529%(350/361) EPOCH 5 - loss: 0.0000 t5_acc: 0.0000%(  0/361) MRR: 0.984765PARAMETERS:net-lstm_e10_bs64_opt-adam_ly4_hs300_dr2_ed512_fembFalse_ptembFalse_drp0.5_mf1
 acc: 96.9529%(350/361) EPOCH 5 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.984765PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs128_dr2_ed100_fembFalse_ptembFalse_drp0.7_mf1
 acc: 96.9529%(350/361) EPOCH 5 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.984765PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs128_dr2_ed128_fembFalse_ptembFalse_drp0.0_mf1
+acc: 96.9529%(350/361) EPOCH 5 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.984765PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs200_dr1_ed128_fembFalse_ptembFalse_drp0.5_mf1
 acc: 96.9529%(350/361) EPOCH 5 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.984765PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs200_dr2_ed100_fembFalse_ptembFalse_drp0.0_mf1
 acc: 96.9529%(350/361) EPOCH 5 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.984765PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs200_dr2_ed128_fembFalse_ptembFalse_drp0.5_mf1
 acc: 96.9529%(350/361) EPOCH 5 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.984765PARAMETERS:net-lstm_e10_bs64_opt-adam_ly2_hs128_dr1_ed128_fembFalse_ptembFalse_drp0.3_mf1
@@ -550,6 +560,7 @@ acc: 97.2299%(351/361) EPOCH 8 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.98
 acc: 97.2299%(351/361) EPOCH 8 - loss: 0.0002 t5_acc: 0.0000%(  0/361) MRR: 0.986150PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs300_dr1_ed100_fembFalse_ptembFalse_drp0.5_mf1
 acc: 97.2299%(351/361) EPOCH 9 - loss: 0.0000 t5_acc: 0.0000%(  0/361) MRR: 0.986150PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs128_dr1_ed128_fembFalse_ptembFalse_drp0.3_mf1
 acc: 97.2299%(351/361) EPOCH 9 - loss: 0.0000 t5_acc: 0.0000%(  0/361) MRR: 0.986150PARAMETERS:net-lstm_e10_bs64_opt-adam_ly2_hs128_dr1_ed100_fembFalse_ptembFalse_drp0.5_mf1
+acc: 97.5069%(352/361) EPOCH 1 - loss: 0.0000 t5_acc: 0.0000%(  0/361) MRR: 0.987535PARAMETERS:net-lstm_e10_bs8_opt-adam_ly1_hs200_dr2_ed128_fembFalse_ptembFalse_drp0.5_mf1
 acc: 97.5069%(352/361) EPOCH 1 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.987535PARAMETERS:net-lstm_e10_bs64_opt-adam_ly4_hs200_dr2_ed512_fembFalse_ptembFalse_drp0.0_mf1
 acc: 97.5069%(352/361) EPOCH 2 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.987535PARAMETERS:net-lstm_e10_bs64_opt-adam_ly4_hs200_dr2_ed128_fembFalse_ptembFalse_drp0.3_mf1
 acc: 97.5069%(352/361) EPOCH 3 - loss: 0.0000 t5_acc: 0.0000%(  0/361) MRR: 0.987535PARAMETERS:net-lstm_e10_bs64_opt-adam_ly2_hs300_dr2_ed512_fembFalse_ptembFalse_drp0.0_mf1
@@ -573,5 +584,5 @@ acc: 97.5069%(352/361) EPOCH 8 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.98
 acc: 97.5069%(352/361) EPOCH 9 - loss: 0.0000 t5_acc: 0.0000%(  0/361) MRR: 0.987535PARAMETERS:net-lstm_e10_bs64_opt-adam_ly2_hs300_dr1_ed512_fembFalse_ptembFalse_drp0.7_mf1
 acc: 97.7839%(353/361) EPOCH 3 - loss: 0.0000 t5_acc: 0.0000%(  0/361) MRR: 0.988920PARAMETERS:net-lstm_e10_bs64_opt-adam_ly2_hs300_dr1_ed100_fembFalse_ptembFalse_drp0.7_mf1
 acc: 97.7839%(353/361) EPOCH 4 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.988920PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs200_dr1_ed128_fembFalse_ptembFalse_drp0.5_mf1
-acc: 97.7839%(353/361) EPOCH 7 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.988920PARAMETERS:net-lstm_e10_bs64_opt-adam_ly2_hs50_dr2_ed128_fembFalse_ptembFalse_drp0.3_mf1
 acc: 97.7839%(353/361) EPOCH 6 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.988920PARAMETERS:net-lstm_e10_bs64_opt-adam_ly1_hs200_dr1_ed128_fembFalse_ptembFalse_drp0.5_mf1
+acc: 97.7839%(353/361) EPOCH 7 - loss: 0.0001 t5_acc: 0.0000%(  0/361) MRR: 0.988920PARAMETERS:net-lstm_e10_bs64_opt-adam_ly2_hs50_dr2_ed128_fembFalse_ptembFalse_drp0.3_mf1
