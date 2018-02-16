@@ -186,6 +186,7 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
     print('equation (before):', equation)
     equation = equation.split(',')
     for x in equation:
+        x = x.replace('=', ' = ')
         x = x.replace('[', '')
         x = x.replace(']', '')
         print(sympy.simplify(x))
