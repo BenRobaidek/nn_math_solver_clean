@@ -127,8 +127,8 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
             iterator.repeat=False
             for batch in iterator:
                 inp = batch.text.t()
-            print('HEREHERE')
             if (not use_sni) or (use_sni and isSignificant(inp, sni_model)):
+                print('HEREHERE')
                 token = float(token)
                 character = '[' +chr(97 + i) + ']'
                 for symbol in equation:
