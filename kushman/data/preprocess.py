@@ -195,7 +195,7 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
         print('x:', x)
         print(sympy.simplify(x))
 
-    print('equation (before):', equation)
+    print('equation (after):', equation)
 
 
     return question, equation, constants
