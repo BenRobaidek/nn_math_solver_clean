@@ -1,0 +1,33 @@
+PARAMETERS:
+Net Type: lstm
+Epochs: 20
+Batch Size: 64
+Optimizer: adamax
+Num Layers: 1
+Hidden Size: 128
+Num Directions: 1
+Embedding Dimension: 128
+Fixed Embeddings: False
+Pretrained Embeddings: False
+Dropout: 0.7
+Min Freq: 1
+EPOCH 0 - loss: 0.0001  acc: 97.4184%(2717/2789) t5_acc: 0.0000%(  0/2789) MRR: 0.987092
+EPOCH 1 - loss: 0.0000  acc: 97.5619%(2721/2789) t5_acc: 0.0000%(  0/2789) MRR: 0.987809
+EPOCH 2 - loss: 0.0000  acc: 97.4184%(2717/2789) t5_acc: 0.0000%(  0/2789) MRR: 0.987092
+EPOCH 3 - loss: 0.0000  acc: 97.5977%(2722/2789) t5_acc: 0.0000%(  0/2789) MRR: 0.987989
+EPOCH 4 - loss: 0.0000  acc: 97.4901%(2719/2789) t5_acc: 0.0000%(  0/2789) MRR: 0.987451
+EPOCH 5 - loss: 0.0000  acc: 97.4184%(2717/2789) t5_acc: 0.0000%(  0/2789) MRR: 0.987092
+EPOCH 6 - loss: 0.0000  acc: 97.6336%(2723/2789) t5_acc: 0.0000%(  0/2789) MRR: 0.988168
+EPOCH 7 - loss: 0.0000  acc: 97.6336%(2723/2789) t5_acc: 0.0000%(  0/2789) MRR: 0.988168
+EPOCH 8 - loss: 0.0001  acc: 97.2033%(2711/2789) t5_acc: 0.0000%(  0/2789) MRR: 0.986016
+EPOCH 9 - loss: 0.0001  acc: 97.2750%(2713/2789) t5_acc: 0.0000%(  0/2789) MRR: 0.986375
+EPOCH10 - loss: 0.0001  acc: 97.1316%(2709/2789) t5_acc: 0.0000%(  0/2789) MRR: 0.985658
+EPOCH11 - loss: 0.0001  acc: 97.5619%(2721/2789) t5_acc: 0.0000%(  0/2789) MRR: 0.987809
+EPOCH12 - loss: 0.0000  acc: 97.5619%(2721/2789) t5_acc: 0.0000%(  0/2789) MRR: 0.987809
+EPOCH13 - loss: 0.0001  acc: 97.4901%(2719/2789) t5_acc: 0.0000%(  0/2789) MRR: 0.987451
+EPOCH14 - loss: 0.0000  acc: 97.3826%(2716/2789) t5_acc: 0.0000%(  0/2789) MRR: 0.986913
+EPOCH15 - loss: 0.0001  acc: 97.4543%(2718/2789) t5_acc: 0.0000%(  0/2789) MRR: 0.987271
+EPOCH16 - loss: 0.0001  acc: 97.5260%(2720/2789) t5_acc: 0.0000%(  0/2789) MRR: 0.987630
+EPOCH17 - loss: 0.0001  acc: 97.3467%(2715/2789) t5_acc: 0.0000%(  0/2789) MRR: 0.986734
+EPOCH18 - loss: 0.0001  acc: 97.4184%(2717/2789) t5_acc: 0.0000%(  0/2789) MRR: 0.987092
+EPOCH19 - loss: 0.0001  acc: 97.3467%(2715/2789) t5_acc: 0.0000%(  0/2789) MRR: 0.986734
