@@ -196,7 +196,7 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
         equation[i] = str(x)
     equation = ','.join(equation)
 
-    print('equation (after):', equation)
+    print('equation (after): ', equation)
 
 
     return question, equation, constants
