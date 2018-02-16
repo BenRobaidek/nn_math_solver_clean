@@ -9,6 +9,7 @@ import os
 import torch
 from torchtext import data, datasets
 from py_expression_eval import Parser
+import sympy
 
 sys.path.append('../sni_saved_models/')
 sys.path.append('../../sni/model/')
@@ -183,9 +184,13 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
 
     # simplify equation
     print('equation (before):', equation)
+    equation = equation.split(',')
+    for x in equation:
+        print(sympy.simplify(x))
+
     print('equation (before):', equation)
 
-    #equation = equation.split(',')
+
     return question, equation, constants
 
 def json2tsv(json_indices, json_data, output_path):
