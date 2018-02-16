@@ -117,6 +117,7 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
 
     # prevent inplace changes on question
     question_copy = [t for t in question]
+    print('question_copy:', question_copy)
     # find and replace constants in question and equation
     i = 0
     constants = dict()
