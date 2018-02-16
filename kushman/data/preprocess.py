@@ -47,7 +47,7 @@ def main():
 
     # PREPROCESS DATA WITHOUT SNI
     print('Preprocessing without sni...')
-    for d in jsondata_no_sni:
+    for x in jsondata_no_sni:
         lQueryVars = x.get('lQueryVars')
         x['sQuestion'], x['lEquations'], x['variables'] = preprocess(x['sQuestion'], x['lEquations'], lQueryVars, None, None, use_sni=False)
     print('Preprocessing without sni complete...')
