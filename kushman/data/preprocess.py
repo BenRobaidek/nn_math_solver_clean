@@ -144,8 +144,8 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
     question_copy = [t for t in question]
     # prepend and postpend null tokens to question to allow for sni window size
     # of three
-    question_copy =  = ['null', 'null', 'null'] + question_copy + ['null', 'null', 'null']
-    
+    question_copy = ['null', 'null', 'null'] + question_copy + ['null', 'null', 'null']
+
     # find and replace constants in question and equation
     i = 0
     constants = dict()
