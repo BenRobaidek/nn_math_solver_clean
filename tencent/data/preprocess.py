@@ -111,24 +111,24 @@ def main():
     json2tsv(val_indices,   jsondata_no_sni,   './working/basic/val.tsv')
     json2tsv(test_indices,  jsondata_no_sni,   './working/basic/test.tsv')
 
-    json2tsv(train_indicesk123, jsondata_no_sni,   './working/basic/traink123.tsv')
-    json2tsv(val_indicesk4,     jsondata_no_sni,   './working/basic/valk4.tsv')
+    json2tsv(train_indicesk1234, jsondata_no_sni,   './working/basic/traink123.tsv')
+    json2tsv(val_indicesk1234,     jsondata_no_sni,   './working/basic/valk4.tsv')
     json2tsv(test_indicesk5,    jsondata_no_sni,   './working/basic/testk5.tsv')
 
-    json2tsv(train_indicesk234, jsondata_no_sni,   './working/basic/traink234.tsv')
-    json2tsv(val_indicesk5,     jsondata_no_sni,   './working/basic/valk5.tsv')
+    json2tsv(train_indicesk2345, jsondata_no_sni,   './working/basic/traink234.tsv')
+    json2tsv(val_indicesk2345,     jsondata_no_sni,   './working/basic/valk5.tsv')
     json2tsv(test_indicesk1,    jsondata_no_sni,   './working/basic/testk1.tsv')
 
-    json2tsv(train_indicesk345, jsondata_no_sni,   './working/basic/traink345.tsv')
-    json2tsv(val_indicesk1,     jsondata_no_sni,   './working/basic/valk1.tsv')
+    json2tsv(train_indicesk3451, jsondata_no_sni,   './working/basic/traink345.tsv')
+    json2tsv(val_indicesk3451,     jsondata_no_sni,   './working/basic/valk1.tsv')
     json2tsv(test_indicesk2,    jsondata_no_sni,   './working/basic/testk2.tsv')
 
-    json2tsv(train_indicesk451, jsondata_no_sni,   './working/basic/traink451.tsv')
-    json2tsv(val_indicesk2,     jsondata_no_sni,   './working/basic/valk2.tsv')
+    json2tsv(train_indicesk4512, jsondata_no_sni,   './working/basic/traink451.tsv')
+    json2tsv(val_indicesk4512,     jsondata_no_sni,   './working/basic/valk2.tsv')
     json2tsv(test_indicesk3,    jsondata_no_sni,   './working/basic/testk3.tsv')
 
-    json2tsv(train_indicesk512, jsondata_no_sni,   './working/basic/traink512.tsv')
-    json2tsv(val_indicesk3,     jsondata_no_sni,   './working/basic/valk3.tsv')
+    json2tsv(train_indicesk5123, jsondata_no_sni,   './working/basic/traink512.tsv')
+    json2tsv(val_indicesk5123,     jsondata_no_sni,   './working/basic/valk3.tsv')
     json2tsv(test_indicesk4,    jsondata_no_sni,   './working/basic/testk4.tsv')
 
     # SAVE VARIABLE VALUES TO FILE NO SNI
