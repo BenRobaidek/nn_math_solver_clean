@@ -43,8 +43,11 @@ class Model(nn.Module):
         return (hx,cx)
 
     def forward(self, inp):
+        print('here1')
         hc = self.get_ch(inp.size(0))
+        print('here2')
         e = self.emb(inp)
+        print('here3')
         #e = inp
         if self.net_type == 'lstm':
             #self.lstm.flatten_parameters()
