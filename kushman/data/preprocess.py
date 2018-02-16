@@ -203,6 +203,7 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
     equation = ','.join(equation)
 
     j = 0
+    print('EQUATION:', equation)
     constants_in_equation = re.findall(equation, r'\[[a-z]\]')
     print(constants_in_equation)
     for k in constants_in_equation:
