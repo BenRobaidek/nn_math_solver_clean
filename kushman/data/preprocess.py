@@ -186,7 +186,7 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
     # simplify equation
     print('equation (before):', equation)
     equation = equation.split(',')
-    for x in equation:
+    for i,x in enumerate(equation):
         x = x.replace('[','')
         x = x.replace(']','')
         x = x.split('=')
@@ -194,6 +194,7 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
         parse_expr(x, evaluate=False)
         print('x:', x)
         print(sympy.simplify(x))
+        equation[i] = str(x)
 
     print('equation (after):', equation)
 
