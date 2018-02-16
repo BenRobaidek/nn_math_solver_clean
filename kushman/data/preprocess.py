@@ -187,6 +187,8 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
     print('equation (before):', equation)
     equation = equation.split(',')
     for x in equation:
+        x = x.replace('[','')
+        x = x.replace(']','')
         x = x.split('=')
         x = str('(' + str(x[0]) + ')' + '-' + '(' + str(x[1]) + ')')
         parse_expr(x, evaluate=False)
