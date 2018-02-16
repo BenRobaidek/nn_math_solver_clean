@@ -194,14 +194,19 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
         parse_expr(x, evaluate=False)
         x = sympy.simplify(x)
         x = str(x)
+
+        j = 0
         for k in constants.keys():
-            x = x.replace(k.strip('[').strip(']'), k)
+            x = x.replace(k.strip('[').strip(']'), '[' + chr(97 + j) + ']')
+            #x = x.replace(k.strip('[').strip(']'), k)
         equation[i] = x + '=0'
 
     equation = sorted(equation)
     equation = ','.join(equation)
 
     #print('constants:', constants)
+
+
     print('equation (after): ', equation)
 
 
