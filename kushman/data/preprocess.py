@@ -18,9 +18,36 @@ def main():
 
     # LOAD JSON DATA
     jsondata = json.loads(open('./input/Kushman.json').read())
+    jsondata_no_sni = copy.deepcopy(jsondata)
+
+    # LOAD SNI MODEL
+    model = torch.load('../sni_saved_models/best_model.pt')
+    if int(torch.cuda.is_available()) == 1:
+        model = model.cuda()
+    print(model)
+
+    model.lstm.flatten_parameters()
+    model.eval()
+    TEXT = data.Field(lower=True,init_token="<start>",eos_token="<end>")
+    LABEL = data.Field(sequential=False)
+
+    fields = [('text', TEXT), ('label', LABEL)]
+    train = data.TabularDataset(path='../../sni/data/train.tsv', format='tsv', fields=fields)
+    TEXT.build_vocab(train)
+    LABEL.build_vocab(train)
+    LABEL.build_vocab(train)
+
+    # PREPROCESS DATA W/ SNI
     for x in jsondata:
         lQueryVars = x.get('lQueryVars')
-        x['sQuestion'], x['lEquations'], x['variables'] = preprocess(x['sQuestion'], x['lEquations'], lQueryVars)
+        x['sQuestion'], x['lEquations'], x['variables'] = preprocess(x['sQuestion'], x['lEquations'], lQueryVars, model, fields, use_sni=True)
+
+    # PREPROCESS DATA WITHOUT SNI
+    print('Preprocessing without sni...')
+    for d in jsondata_no_sni:
+        lQueryVars = x.get('lQueryVars')
+        x['sQuestion'], x['lEquations'], x['variables'] = preprocess(x['sQuestion'], x['lEquations'], lQueryVars, model, fields, use_sni=False)
+    print('Preprocessing without sni complete...')
 
     # 5 FOLD CROSS VALIDATION
     print('Using existing cross validation splits')
@@ -58,7 +85,7 @@ def main():
     json2tsv(val_indicesk3,     jsondata,   './working/basic/valk3.tsv')
     json2tsv(test_indicesk4,    jsondata,   './working/basic/testk4.tsv')
 
-def preprocess(question, equation, lQueryVars):
+def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
     # handle $'s
     question = question.replace('$', ' $ ')
     question = question.replace('. ', ' . ')
@@ -88,16 +115,26 @@ def preprocess(question, equation, lQueryVars):
     constants = dict()
     for j,token in enumerate(question):
         if isFloat(token):
-            token = float(token)
-            character = '[' +chr(97 + i) + ']'
-            for symbol in equation:
-                if isFloat(symbol) and float(symbol) == float(token):
-                    equation[equation.index(symbol)] = character
-            constants[character] = str(token)
-            for q in question:
-                if isFloat(q) and float(q) == token:
-                    question[question.index(q)] = character
-            i += 1
+            example = question_copy[j-3:j+4]
+            ex = data.Example.fromlist([' '.join(example), ''], fields)
+            dataset = data.Dataset([ex], fields)
+            inp = None
+            iterator = data.Iterator(dataset, batch_size=1)
+            iterator.repeat=False
+            for batch in iterator:
+                inp = batch.text.t()
+
+            if (not use_sni) or (use_sni and isSignificant(inp, sni_model)):
+                token = float(token)
+                character = '[' +chr(97 + i) + ']'
+                for symbol in equation:
+                    if isFloat(symbol) and float(symbol) == float(token):
+                        equation[equation.index(symbol)] = character
+                constants[character] = str(token)
+                for q in question:
+                    if isFloat(q) and float(q) == token:
+                        question[question.index(q)] = character
+                i += 1
 
     # find and replace variables in equation
     variables = [x for x in equation if x not in ['+', '-', '*', '/', ',',
@@ -161,6 +198,12 @@ def crossValidation(data, k = 5, k_test=5):
             output.write(str(d['iIndex']) + '\n')
         output.close()
         print('fold' + str(i) + '.txt' + ' saved')
+
+def isSignificant(inp, sni_model):
+    """
+    Returns True iff inp is classified as significant by sni_model
+    """
+    return(evalTest.fast_test(inp, sni_model).data[0] == 1)
 
 def isFloat(value):
     """
