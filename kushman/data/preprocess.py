@@ -39,9 +39,11 @@ def main():
     LABEL.build_vocab(train)
 
     # PREPROCESS DATA W/ SNI
+    print('Preprocessing with sni...')
     for x in jsondata:
         lQueryVars = x.get('lQueryVars')
         x['sQuestion'], x['lEquations'], x['variables'] = preprocess(x['sQuestion'], x['lEquations'], lQueryVars, sni_model, fields, use_sni=True)
+    print('Preprocessing with sni complete...')
 
     # PREPROCESS DATA WITHOUT SNI
     print('Preprocessing without sni...')
