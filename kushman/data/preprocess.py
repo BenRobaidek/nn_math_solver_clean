@@ -131,7 +131,6 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
                 inp = batch.text.t().cuda()
                 inp = inp.cuda(device=0)
 
-
             if (not use_sni) or (use_sni and isSignificant(inp, sni_model)):
                 token = float(token)
                 character = '[' +chr(97 + i) + ']'

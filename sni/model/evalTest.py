@@ -63,6 +63,7 @@ def eval(data_iter, model, TEXT, emb_dim):
 def fast_test(inp, model):
     print('inp:', inp)
     print('model:', model)
+    print('model.num_layers:', model.num_layers)
     output = model(inp)
 
     _, predicted = torch.max(output, 1)
