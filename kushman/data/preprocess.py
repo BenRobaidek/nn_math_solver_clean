@@ -68,48 +68,48 @@ def main():
     # SAVE SRC/TGT FILES W/ SNI
     if not os.path.exists('./working/basic/'): os.makedirs('./working/basic/')
 
-    json2tsv(train_indicesk123, jsondata,   './working/basic/traink123.tsv')
-    json2tsv(val_indicesk4,     jsondata,   './working/basic/valk4.tsv')
+    json2tsv(train_indicesk123, jsondata,   './working/basic/traink1234.tsv')
+    json2tsv(val_indicesk4,     jsondata,   './working/basic/valk1234.tsv')
     json2tsv(test_indicesk5,    jsondata,   './working/basic/testk5.tsv')
 
-    json2tsv(train_indicesk234, jsondata,   './working/basic/traink234.tsv')
-    json2tsv(val_indicesk5,     jsondata,   './working/basic/valk5.tsv')
+    json2tsv(train_indicesk234, jsondata,   './working/basic/traink2345.tsv')
+    json2tsv(val_indicesk5,     jsondata,   './working/basic/valk2345.tsv')
     json2tsv(test_indicesk1,    jsondata,   './working/basic/testk1.tsv')
 
-    json2tsv(train_indicesk345, jsondata,   './working/basic/traink345.tsv')
-    json2tsv(val_indicesk1,     jsondata,   './working/basic/valk1.tsv')
+    json2tsv(train_indicesk345, jsondata,   './working/basic/traink3451.tsv')
+    json2tsv(val_indicesk1,     jsondata,   './working/basic/valk3451.tsv')
     json2tsv(test_indicesk2,    jsondata,   './working/basic/testk2.tsv')
 
-    json2tsv(train_indicesk451, jsondata,   './working/basic/traink451.tsv')
-    json2tsv(val_indicesk2,     jsondata,   './working/basic/valk2.tsv')
+    json2tsv(train_indicesk451, jsondata,   './working/basic/traink4512.tsv')
+    json2tsv(val_indicesk2,     jsondata,   './working/basic/valk4512.tsv')
     json2tsv(test_indicesk3,    jsondata,   './working/basic/testk3.tsv')
 
-    json2tsv(train_indicesk512, jsondata,   './working/basic/traink512.tsv')
-    json2tsv(val_indicesk3,     jsondata,   './working/basic/valk3.tsv')
+    json2tsv(train_indicesk512, jsondata,   './working/basic/traink5123.tsv')
+    json2tsv(val_indicesk3,     jsondata,   './working/basic/valk5123.tsv')
     json2tsv(test_indicesk4,    jsondata,   './working/basic/testk4.tsv')
 
     # SAVE SRC/TGT FILES W/O SNI
     if not os.path.exists('./working/no_sni/'): os.makedirs('./working/no_sni/')
 
-    json2tsv(train_indicesk123, jsondata,   './working/no_sni/traink123.tsv')
-    json2tsv(val_indicesk4,     jsondata,   './working/no_sni/valk4.tsv')
-    json2tsv(test_indicesk5,    jsondata,   './working/no_sni/testk5.tsv')
+    json2tsv(train_indicesk123, jsondata_no_sni,   './working/no_sni/traink1234.tsv')
+    json2tsv(val_indicesk4,     jsondata_no_sni,   './working/no_sni/valk1234.tsv')
+    json2tsv(test_indicesk5,    jsondata_no_sni,   './working/no_sni/testk5.tsv')
 
-    json2tsv(train_indicesk234, jsondata,   './working/no_sni/traink234.tsv')
-    json2tsv(val_indicesk5,     jsondata,   './working/no_sni/valk5.tsv')
-    json2tsv(test_indicesk1,    jsondata,   './working/no_sni/testk1.tsv')
+    json2tsv(train_indicesk234, jsondata_no_sni,   './working/no_sni/traink2345.tsv')
+    json2tsv(val_indicesk5,     jsondata_no_sni,   './working/no_sni/valk2345.tsv')
+    json2tsv(test_indicesk1,    jsondata_no_sni,   './working/no_sni/testk1.tsv')
 
-    json2tsv(train_indicesk345, jsondata,   './working/no_sni/traink345.tsv')
-    json2tsv(val_indicesk1,     jsondata,   './working/no_sni/valk1.tsv')
-    json2tsv(test_indicesk2,    jsondata,   './working/no_sni/testk2.tsv')
+    json2tsv(train_indicesk345, jsondata_no_sni,   './working/no_sni/traink3451.tsv')
+    json2tsv(val_indicesk1,     jsondata_no_sni,   './working/no_sni/valk3451.tsv')
+    json2tsv(test_indicesk2,    jsondata_no_sni,   './working/no_sni/testk2.tsv')
 
-    json2tsv(train_indicesk451, jsondata,   './working/no_sni/traink451.tsv')
-    json2tsv(val_indicesk2,     jsondata,   './working/no_sni/valk2.tsv')
-    json2tsv(test_indicesk3,    jsondata,   './working/no_sni/testk3.tsv')
+    json2tsv(train_indicesk451, jsondata_no_sni,   './working/no_sni/traink4512.tsv')
+    json2tsv(val_indicesk2,     jsondata_no_sni,   './working/no_sni/valk4512.tsv')
+    json2tsv(test_indicesk3,    jsondata_no_sni,   './working/no_sni/testk3.tsv')
 
-    json2tsv(train_indicesk512, jsondata,   './working/no_sni/traink512.tsv')
-    json2tsv(val_indicesk3,     jsondata,   './working/no_sni/valk3.tsv')
-    json2tsv(test_indicesk4,    jsondata,   './working/no_sni/testk4.tsv')
+    json2tsv(train_indicesk512, jsondata_no_sni,   './working/no_sni/traink5123.tsv')
+    json2tsv(val_indicesk3,     jsondata_no_sni,   './working/no_sni/valk5123.tsv')
+    json2tsv(test_indicesk4,    jsondata_no_sni,   './working/no_sni/testk4.tsv')
 
 def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
     # handle $'s
