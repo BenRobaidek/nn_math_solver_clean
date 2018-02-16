@@ -124,6 +124,7 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
     for j,token in enumerate(question):
         if isFloat(token):
             example = question_copy[j-3:j+4]
+            print('example:', example)
             ex = data.Example.fromlist([' '.join(example), ''], fields)
             dataset = data.Dataset([ex], fields)
             inp = None
