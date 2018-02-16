@@ -203,7 +203,7 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
     equation = ','.join(equation)
 
     j = 0
-    contants_in_equation = re.findall(r'\[\d\]')
+    contants_in_equation = re.findall(equation, r'\[\d\]')
     print(constants_in_equation)
     for k in constants.keys():
         equation = equation.replace(k, '[' + chr(97 + j) + ']')
