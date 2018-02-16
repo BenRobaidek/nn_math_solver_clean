@@ -147,7 +147,7 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
                 i += 1
 
     # find and replace variables in equation
-    print('variables:', variables)
+    print('equation:', equation)
     variables = [x for x in equation if x not in ['+', '-', '*', '/', ',',
             '**', '(', ')', '='] and not isFloat(x) and not re.match(r'\[[a-z]\]', x)]
     variables = np.unique(variables)
