@@ -209,6 +209,7 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
     for k in sorted(constants_in_equation):
         equation = equation.replace(k, '[' + chr(97 + j) + ']')
         j += 1
+        print('EQUATION_:', equation)
 
     #print('constants:', constants)
 
