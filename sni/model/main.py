@@ -12,22 +12,23 @@ import torch
 #print('Current Device:', torch.cuda.current_device())
 
 #PARAMETERS:net-lstm_e10_bs64_opt-adamax_ly1_hs128_dr1_ed128_fembFalse_ptembFalse_drp0.7_mf1
+#net-lstm_e10_bs64_opt-adam_ly1_hs200_dr1_ed128_fembFalse_ptembFalse_drp0.5
 
 rand = True
 
 mf = (1,)
 net_type = ('lstm',)# 'gru')
 #lr = (.001, .002)
-epochs = 20,
+epochs = 10,
 bs = 64,
-opt = ('adamax',)
+opt = ('adam',)
 num_lay =  (1,)
-hs = (128,)
+hs = (200,)
 num_dir = (1,)
 embdim = (128,)
 embfix = (False,)#True)
 ptemb = (False,)#True)
-dropout = (0.7,)
+dropout = (0.5,)
 save = False
 
 
@@ -44,8 +45,8 @@ try:
                 (net_type, epoch, bs, opt, num_lay, hs, num_dir, embdim, embfix,
                                                             ptemb, dropout, mf))
             os.system('python train.py' + \
-                        ' -save-path=' + '../../tencent/sni_saved_models/'+ \
-                        ' -data-path=' + '../../tencent/data/working/sni/'+ \
+                        ' -save-path=' + '../../kushman/sni_saved_models/'+ \
+                        ' -data-path=' + '../../kushman/data/working/sni/'+ \
                         ' -train-path=' + 'train.tsv' + \
                         ' -dev-path=' + 'val.tsv' + \
                         ' -test-path=' + 'test.tsv' + \
@@ -64,7 +65,7 @@ try:
                         ' -mf=' + str(mf) + \
                         ' -folder=' + '' + \
                         ' -save=' + str(save))
-            os.system('sort -o ../../tencent/sni_saved_models/best_models.txt ' + \
-                                '../../tencent/sni_saved_models/best_models.txt')
+            os.system('sort -o ../../kushman/sni_saved_models/best_models.txt ' + \
+                                '../../kushman/sni_saved_models/best_models.txt')
 except(KeyboardInterrupt, SystemExit):
     sys.exit("Interrupted by ctrl+c\n")
