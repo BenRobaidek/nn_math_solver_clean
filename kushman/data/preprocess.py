@@ -26,6 +26,7 @@ def main():
         model = model.cuda()
     print(model)
 
+    print('HEREHERE')
     model.lstm.flatten_parameters()
     model.eval()
     TEXT = data.Field(lower=True,init_token="<start>",eos_token="<end>")
