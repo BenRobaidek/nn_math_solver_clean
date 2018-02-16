@@ -131,7 +131,7 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
             iterator.repeat=False
             for batch in iterator:
                 inp = batch.text.t().cuda()
-                inp = inp.cuda(device=0)
+                #inp = inp.cuda(device=0)
 
             if (not use_sni) or (use_sni and isSignificant(inp, sni_model)):
                 token = float(token)
