@@ -38,12 +38,12 @@ def main():
     TEXT.build_vocab(train)
     LABEL.build_vocab(train)
     LABEL.build_vocab(train)
-    print('HEREHERE')
+
     # PREPROCESS DATA W/ SNI
     for x in jsondata:
         lQueryVars = x.get('lQueryVars')
         x['sQuestion'], x['lEquations'], x['variables'] = preprocess(x['sQuestion'], x['lEquations'], lQueryVars, model, fields, use_sni=True)
-
+    print('HEREHERE')
     # PREPROCESS DATA WITHOUT SNI
     print('Preprocessing without sni...')
     for d in jsondata_no_sni:
