@@ -26,7 +26,7 @@ def main():
     print(sni_model)
     #torch.load('../sni_saved_models/best_model.pt', map_location={'cuda:0':'cuda:1'})
     if int(torch.cuda.is_available()) == 1:
-        sni_model = sni_model.cuda()#device=1)
+        sni_model = sni_model.cuda(device=1)
     print(sni_model)
 
 
