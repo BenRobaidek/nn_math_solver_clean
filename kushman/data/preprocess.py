@@ -30,8 +30,8 @@ def main():
     print(sni_model)
 
 
-    model.lstm.flatten_parameters()
-    model.eval()
+    sni_model.lstm.flatten_parameters()
+    sni_model.eval()
     TEXT = data.Field(lower=True,init_token="<start>",eos_token="<end>")
     LABEL = data.Field(sequential=False)
 
