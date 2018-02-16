@@ -11,7 +11,7 @@ from torchtext import data, datasets
 from py_expression_eval import Parser
 
 sys.path.append('../sni_saved_models/')
-sys.path.append('../../sni/model')
+sys.path.append('../../sni/model/')
 import model
 import evalTest
 
@@ -22,13 +22,10 @@ def main():
     jsondata_no_sni = copy.deepcopy(jsondata)
 
     # LOAD SNI MODEL
-    sni_model = torch.load('../sni_saved_models/best_model.pt') #map_location={'cuda:0' : 'cuda:1'}))#map_location=lambda storage, loc: storage.cuda(1)))
+    sni_model = torch.load('../sni_saved_models/best_model.pt')
+    if int(torch.cuda.is_available()) == 1:
+        sni_model = sni_model.cuda()
     print(sni_model)
-    #torch.load('../sni_saved_models/best_model.pt', map_location={'cuda:0':'cuda:1'})
-    #if int(torch.cuda.is_available()) == 1:
-    sni_model = sni_model.cuda(device=0)
-    print(sni_model)
-
 
     sni_model.lstm.flatten_parameters()
     sni_model.eval()
@@ -114,6 +111,10 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
     equation = equation.split()
     question = question.split()
 
+    # prepend and postpend null tokens to question to allow for sni window size
+    # of three
+    question = ['null', 'null', 'null'] + question + ['null', 'null', 'null']
+
     # prevent inplace changes on question
     question_copy = [t for t in question]
     # find and replace constants in question and equation
@@ -128,7 +129,7 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
             iterator = data.Iterator(dataset, batch_size=1)
             iterator.repeat=False
             for batch in iterator:
-                inp = batch.text.cuda()
+                inp = batch.text.t().cuda()
                 inp = inp.cuda(device=0)
 
             if (not use_sni) or (use_sni and isSignificant(inp, sni_model)):

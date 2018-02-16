@@ -48,9 +48,7 @@ class Model(nn.Module):
         #e = inp
         if self.net_type == 'lstm':
             #self.lstm.flatten_parameters()
-            print('lstm', self.lstm)
             _, (y,_) = self.lstm(e, hc)
-            print('')
         elif self.net_type == 'gru':
             #self.gru.flatten_parameters()
             _, y = self.gru(e, hc[0])
