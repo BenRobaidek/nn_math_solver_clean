@@ -192,8 +192,7 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
         x = x.split('=')
         x = str('(' + str(x[0]) + ')' + '-' + '(' + str(x[1]) + ')')
         parse_expr(x, evaluate=False)
-        print('x:', x)
-        print(sympy.simplify(x))
+        x = sympy.simplify(x)
         equation[i] = str(x)
     equation = ','.join(equation)
 
