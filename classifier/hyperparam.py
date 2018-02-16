@@ -69,7 +69,7 @@ def main():
 
                         train_path = 'traink1234.tsv'
                         val_path = 'valk1234.tsv'
-                        test_path = 'testk5.tsv
+                        test_path = 'testk5.tsv'
                         print('train:', train_path, 'val:', val_path, 'test:', test_path)
                         results = train(data_path=config['data_path'],
                                 train_path=train_path,
