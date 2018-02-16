@@ -117,16 +117,13 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
 
     # prevent inplace changes on question
     question_copy = [t for t in question]
-    print('question_copy:', question_copy)
     # find and replace constants in question and equation
     i = 0
     constants = dict()
     for j,token in enumerate(question):
         if isFloat(token):
             example = question_copy[j-3:j+4]
-            print('example:', example)
             ex = data.Example.fromlist([' '.join(example), ''], fields)
-            print('ex:', ex)
             dataset = data.Dataset([ex], fields)
             inp = None
             iterator = data.Iterator(dataset, batch_size=1)

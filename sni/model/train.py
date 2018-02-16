@@ -53,9 +53,9 @@ def train(args):
         sort_key=lambda x: len(x.text))#, device=cuda)
 
     num_classes = len(LABELS.vocab)
-    print('num_classes:', num_classes)
+    #print('num_classes:', num_classes)
     input_size = len(TEXT.vocab)
-    print('input_size:', input_size)
+    #print('input_size:', input_size)
     ###############################################################################
     # Build the model
     ###############################################################################
