@@ -26,7 +26,7 @@ def main():
     sni_model.load_state_dict(torch.load('../sni_saved_models/best_model.pt'))
     #torch.load('../sni_saved_models/best_model.pt', map_location={'cuda:0':'cuda:1'})
     if int(torch.cuda.is_available()) == 1:
-        sni_model = model.cuda()
+        sni_model = sni_model.cuda()
     print(sni_model)
 
 
