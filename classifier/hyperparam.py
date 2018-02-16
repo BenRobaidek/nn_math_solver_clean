@@ -94,7 +94,7 @@ def main():
                         # seq2seq
                         ########################################################
                         # load s2s predictions
-                        s2s_validation_predictions = = np.array([x.strip() == 'True' for x in open('../tencent/data/output/s2s/correctsk5.tsv').readlines()])
+                        s2s_validation_predictions = np.array([x.strip() == 'True' for x in open('../tencent/data/output/s2s/correctsk5.tsv').readlines()])
                         print('s2s validation acc:', 'TODO')
 
                         ########################################################
