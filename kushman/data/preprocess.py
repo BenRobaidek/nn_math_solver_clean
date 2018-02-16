@@ -23,7 +23,7 @@ def main():
 
     # LOAD SNI MODEL
     sni_model = model.Model(input_size=1136, hidden_size=200, num_classes=3, num_layers=1,num_dir=2, batch_size=64, emb_dim=128,dropout=0.5, net_type="lstm", prevecs=None, embfix=False)
-    sni_model.load_state_dict(torch.load('../sni_saved_models/best_model.pt', map_location=lambda storage, loc: storage.cuda(1)))
+    sni_model.load_state_dict(torch.load('../sni_saved_models/best_model.pt', map_location={'cuda:0' : 'cuda:1'}))#map_location=lambda storage, loc: storage.cuda(1)))
     #torch.load('../sni_saved_models/best_model.pt', map_location={'cuda:0':'cuda:1'})
     if int(torch.cuda.is_available()) == 1:
         sni_model = sni_model.cuda()
