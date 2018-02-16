@@ -115,8 +115,9 @@ def train(args):
             save_path = '{}/acc{:.2f}_e{}.pt'.format(args.save_path_full, accuracy, epoch)
             if not os.path.isdir(args.save_path_full):
                 os.makedirs(args.save_path_full)
-            #if args.save:
-            #    torch.save(model, save_path)
+            if args.save:
+                torch.save(model.state_dict(), save_path)
+                #torch.save(model, save_path)
 
         if highest_t1_acc < accuracy:
             highest_t1_acc = accuracy
