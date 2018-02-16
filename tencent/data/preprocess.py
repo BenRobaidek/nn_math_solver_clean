@@ -384,6 +384,7 @@ def preprocess(question, equation, sni_model, fields, use_sni=True):
     # prevent inplace changes on question
     question_copy = [t for t in question]
 
+    print('question_copy:', question_copy)
     # replace significant numbers in question and equation
     i = 0
     variable_values = dict()
