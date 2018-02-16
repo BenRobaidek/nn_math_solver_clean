@@ -43,7 +43,7 @@ def main():
     for x in jsondata:
         lQueryVars = x.get('lQueryVars')
         x['sQuestion'], x['lEquations'], x['variables'] = preprocess(x['sQuestion'], x['lEquations'], lQueryVars, model, fields, use_sni=True)
-    print('HEREHERE')
+
     # PREPROCESS DATA WITHOUT SNI
     print('Preprocessing without sni...')
     for d in jsondata_no_sni:
@@ -127,7 +127,7 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
             iterator.repeat=False
             for batch in iterator:
                 inp = batch.text.t()
-
+            print('HEREHERE')
             if (not use_sni) or (use_sni and isSignificant(inp, sni_model)):
                 token = float(token)
                 character = '[' +chr(97 + i) + ']'
