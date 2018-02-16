@@ -23,8 +23,8 @@ def main():
 
     # LOAD SNI MODEL
     sni_model = torch.load('../sni_saved_models/best_model.pt')
-    if int(torch.cuda.is_available()) == 1:
-        sni_model = sni_model.cuda()
+    #if int(torch.cuda.is_available()) == 1:
+    #    sni_model = sni_model.cuda()
     print(sni_model)
 
     sni_model.lstm.flatten_parameters()
@@ -132,7 +132,7 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
             iterator = data.Iterator(dataset, batch_size=1)
             iterator.repeat=False
             for batch in iterator:
-                inp = batch.text.t().cuda()
+                inp = batch.text.t()#.cuda()
                 #inp = inp.cuda(device=0)
 
             if (not use_sni) or (use_sni and isSignificant(inp, sni_model)):

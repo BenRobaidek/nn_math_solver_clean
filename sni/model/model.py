@@ -45,8 +45,6 @@ class Model(nn.Module):
     def forward(self, inp):
         hc = self.get_ch(inp.size(0))
         e = self.emb(inp)
-        print('np.shape(e):',np.shape(e))
-        print('np.shape(hc):',np.shape(hc))
         #e = inp
         if self.net_type == 'lstm':
             #self.lstm.flatten_parameters()
