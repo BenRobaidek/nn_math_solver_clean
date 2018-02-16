@@ -109,11 +109,9 @@ def main():
                         ########################################################
                         # compute C + S cross val acc
 
-                        classifier_test_predictions_ = [[x.split()[0] == 'True', float(x.split()[1])] for x in cross_val_results.get(0)[0].get('test_eval_preds')]
-
                         best_thresh = getThresh(
                                 classifier_validation_predictions,
-                                s2s_predictions_valk1
+                                s2s_validation_predictions
                                 )
                         print('best_thresh:', best_thresh)
 
