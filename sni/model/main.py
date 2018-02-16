@@ -31,7 +31,6 @@ ptemb = (False,)#True)
 dropout = (0.5,)
 save = False
 
-
 x = list(itertools.product(net_type, epochs, bs, opt, num_lay, hs, num_dir,
                                             embdim, embfix, ptemb, dropout, mf))
 if rand: random.shuffle(x)
