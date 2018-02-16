@@ -41,7 +41,7 @@ def solve(equations, variables, answers):
                 corrects = np.append(corrects, [True])
             else:
                 corrects = np.append(corrects, [False])
-        except ValueError as e:
+        except (ValueError, OverflowError) as e:
             """
             if calculating tgt eq to answer correlation, the line belod should
             be True as this corresponds to the SNI messing up
