@@ -23,8 +23,8 @@ def main():
 
     # LOAD SNI MODEL
     sni_model = torch.load('../sni_saved_models/best_model.pt')
-    #if int(torch.cuda.is_available()) == 1:
-    #    sni_model = sni_model.cuda()
+    if int(torch.cuda.is_available()) == 1:
+        sni_model = sni_model.cuda()
     print(sni_model)
 
     sni_model.lstm.flatten_parameters()
@@ -33,7 +33,7 @@ def main():
     LABEL = data.Field(sequential=False)
 
     fields = [('text', TEXT), ('label', LABEL)]
-    train = data.TabularDataset(path='../../sni/data/train.tsv', format='tsv', fields=fields)
+    train = data.TabularDataset(path='./working/sni/train.tsv', format='tsv', fields=fields)
     TEXT.build_vocab(train)
     LABEL.build_vocab(train)
     LABEL.build_vocab(train)
