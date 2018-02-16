@@ -198,6 +198,7 @@ def preprocess(question, equation, lQueryVars, sni_model, fields, use_sni):
     equation = sorted(equation)
     equation = ','.join(equation)
 
+    print('constants:', constants)
     print('equation (after): ', equation)
 
 
