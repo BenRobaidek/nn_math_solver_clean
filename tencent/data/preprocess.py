@@ -10,7 +10,7 @@ import torch
 from torchtext import data, datasets
 from py_expression_eval import Parser
 
-sys.path.append('../../sni/model')
+sys.path.append('../sni_saved_models/')
 import model
 import evalTest
 
@@ -21,7 +21,7 @@ def main():
     jsondata_no_sni = copy.deepcopy(jsondata)
 
     # LOAD SNI MODEL
-    model = torch.load('../../sni/saved_models/sni_best_model.pt')
+    model = torch.load('../sni_saved_models/best_model.pt')
     if int(torch.cuda.is_available()) == 1:
         model = model.cuda()
     print(model)
