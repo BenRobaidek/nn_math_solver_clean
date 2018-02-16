@@ -61,7 +61,10 @@ def eval(data_iter, model, TEXT, emb_dim):
     return(avg_loss, accuracy, corrects, size, t5_acc, t5_corrects, mrr);
 
 def fast_test(inp, model):
+    print('inp:', inp)
+    print('model:', model)
     output = model(inp)
+
     _, predicted = torch.max(output, 1)
     return predicted
 
