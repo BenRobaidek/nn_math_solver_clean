@@ -30,10 +30,12 @@ def solve(equations, variables, answers):
         # evaluate
         eq = eq.strip()
 
+        examples_not_working = 0
         if (not eq == '80千米 / 小时') and (not re.search(r'\[\S\]', eq)) and (not eq == '<unk>'):
             try:
                 eq = eval(eq)
             except (ZeroDivisionError, OverflowError, SyntaxError):
+                examples_not_working += 1
                 pass
 
         try:
@@ -47,5 +49,7 @@ def solve(equations, variables, answers):
             be True as this corresponds to the SNI messing up
             """
             corrects = np.append(corrects, [False])
+            examples_not_working += 1
 
+    print('examples_not_working', examples_not_working)
     return corrects.astype(bool)

@@ -2,12 +2,14 @@ import json
 import numpy as np
 
 def main():
-    jsonToTsv('./draw-train.txt','./draw.json', './draw-train.tsv')
-    jsonToTsv('./draw-dev.txt','./draw.json', './draw-dev.tsv')
-    jsonToTsv('./draw-test.txt','./draw.json', './draw-test.tsv')
+    jsonToTsv('./input/train.txt',  './input/draw.json', './working/no_sni/train.tsv')
+    jsonToTsv('./input/val.txt',    './input/draw.json', './working/no_sni/val.tsv')
+    jsonToTsv('./input/test.txt',   './input/draw.json', './working/no_sni/test.tsv')
 
 def jsonToTsv(indices_path, json_path, output_path):
     json_indices = np.genfromtxt(indices_path).astype(int)
+    print(indices_path)
+    print(len(json_indices))
     data = json.loads(open(json_path).read())
     output = open(output_path, 'w')
     for d in data:
