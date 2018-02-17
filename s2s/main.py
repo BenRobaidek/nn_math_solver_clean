@@ -43,7 +43,7 @@ def main():
             (net_type, epoch, bs, opt, num_lay, hs, num_dir, embdim, embfix,
                                                         ptemb, dropout, mf))
 
-        model = onmt.train.
+        #model = onmt.train.
 
 
 if __name__ == '__main__':
