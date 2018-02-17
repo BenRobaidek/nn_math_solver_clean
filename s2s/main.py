@@ -7,12 +7,10 @@ import subprocess
 import random
 import itertools
 import onmt
-from onmt import opts
+from onmt import train, opts
 from tencent import solver
 
 def main():
-
-
     rand = True
 
     mf = (1,)
