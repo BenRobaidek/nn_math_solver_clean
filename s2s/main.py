@@ -7,7 +7,7 @@ import subprocess
 import random
 import itertools
 import onmt
-from onmt import train, opts
+from OpenNMT-py import train, opts
 from tencent import solver
 
 def main():
