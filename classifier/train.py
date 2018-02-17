@@ -186,5 +186,5 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
                             t5_acc, t5_corrects, size, mrr))
 
     #print('Best Accuracy:', np.sort([i['accuracy'] for i in results])[-1])
-    print('Best True Accuracy:', np.sort([i['true_acc'] for i in results])[-1])
+    #print('Best True Accuracy:', np.sort([i['true_acc'] for i in results])[-1])
     return results

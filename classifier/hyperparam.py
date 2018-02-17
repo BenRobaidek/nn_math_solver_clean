@@ -176,6 +176,7 @@ def getThresh(class_predictions, s2s_predictions):
     """
     combines classifier and s2s results
     """
+    assert: len(class_predictions) == len(s2s_predictions)
     results = dict()
     for thresh in np.multiply(list(range(0,100)), .01):
         results[thresh] = np.sum([c[0] if c[1] > thresh else s for c,s in zip(class_predictions,s2s_predictions)])
