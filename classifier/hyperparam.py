@@ -94,8 +94,10 @@ def main():
                         # seq2seq
                         ########################################################
                         # load s2s predictions
-                        s2s_validation_predictions = np.array([x.strip() == 'True' for x in open('../tencent/data/output/s2s/correctsk5.tsv').readlines()])
-                        print('s2s validation acc:', 'TODO')
+                        s2s_validation_predictions = np.array([x.strip() == 'True' for x in open('../tencent/data/output/s2s/corrects_valk1234.tsv').readlines()])
+                        s2s_test_predictions = np.array([x.strip() == 'True' for x in open('../tencent/data/output/s2s/corrects_testk5.tsv').readlines()])
+                        print('s2s validation acc:', 100 * (np.sum(s2s_validation_predictions)/len(s2s2s_validation_predictions)))
+                        print('s2s test acc:', 100 * (np.sum(s2s_test_predictions)/len(s2s2s_test_predictions)))
 
                         ########################################################
                         # retrieval
