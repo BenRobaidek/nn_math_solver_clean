@@ -6,7 +6,6 @@ import os
 import subprocess
 import random
 import itertools
-import train
 import onmt
 from onmt import train, opts
 from tencent import solver
