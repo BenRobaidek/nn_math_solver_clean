@@ -15,7 +15,7 @@ def jsonToTsv(indices_path, json_path, output_path):
     for d in data:
         #print(d['iIndex'] in indices)
         if d['iIndex'] in json_indices:
-            print(d['sQuestion'])
+            #print(d['sQuestion'])
 
             # Preprocess Question
             tokens = np.array(d['sQuestion'].split())
