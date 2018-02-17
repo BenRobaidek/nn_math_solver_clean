@@ -123,7 +123,14 @@ def main():
                                 thresh=best_thresh
                                 )
 
-                        print('classifier + s2s cross validation true accuracy (VAL):', np.sum(classifier_s2s_validation_predictions)/len(classifier_s2s_validation_predictions))
+                        classifier_s2s_test_predictions = combineCS(
+                                classifier_test_predictions,
+                                s2s_test_predictions,
+                                thresh=best_thresh
+                                )
+
+                        print('classifier + s2s true accuracy (VAL):', np.sum(classifier_s2s_validation_predictions)/len(classifier_s2s_validation_predictions))
+                        print('classifier + s2s true accuracy (TEST):', np.sum(classifier_s2s_test_predictions)/len(classifier_s2s_test_predictions))
 
                         ########################################################
                         # retrieval + classifier
@@ -186,6 +193,7 @@ def getThresh(class_predictions, s2s_predictions):
     return max(results, key=results.get)
 
 def combineCS(class_predictions, s2s_predictions, thresh):
+    assert len(class_predictions) == len(s2s_predictions)
     return [c[0] if c[1] > thresh else s for c,s in zip(class_predictions,s2s_predictions)]
 
 if __name__ == '__main__':
