@@ -2,6 +2,7 @@
 Hyperparam search for onmt
 """
 import sys
+sys.path.append('../')
 import os
 import subprocess
 import random
