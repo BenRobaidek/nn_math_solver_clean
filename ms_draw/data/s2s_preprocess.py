@@ -13,10 +13,10 @@ def split(tsv, src_txt, tgt_txt):
     tsv = open(tsv).readlines()
     with open(src_txt, 'w') as src_txt:
         for x in tsv:
-            src_txt.write(x.split('\t')[0] + '\n')
+            src_txt.write(x.split('\t')[0].strip() + '\n')
     with open(tgt_txt, 'w') as tgt_txt:
         for x in tsv:
-            tgt_txt.write(x.split('\t')[1] + '\n')
+            tgt_txt.write(x.split('\t')[1].strip() + '\n')
 
 if __name__ == '__main__':
     main()

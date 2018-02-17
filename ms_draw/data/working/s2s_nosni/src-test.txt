@@ -1,200 +1,200 @@
-A factory makes [a] stools and [b] stools . They use the same kind of seats and legs for each . The only difference is the number of holes they bore in the seats for the legs . The company has [d] seats and [c] legs . 
-The difference between two numbers is [b] . The sum of these numbers is [a] . Find the numbers . 
-One solution contains [a] % alcohol while another contains [b] % alcohol . How many liters of each should be mixed to give [c] L of a solution which is [d] % alcohol ? 
-the sum of two numbers is [a] and their difference is [b] . find the numbers 
-two numbers differ by [c] . The larger number is [b] less than [a] the smaller number . Find the numbers . 
-A small publishing company is planning to publish a new book . The production costs will include one-time fixed costs -LRB- such as editing -RRB- and variable costs -LRB- such as printing -RRB- . The one-time fixed costs will amount to [c] . The variable costs will be [b] per book . The publisher will sell the finished product to bookstores at a price of $ [a] per book . How many books must the publisher print and sell so that the production costs will equal the money obtained from sales ? 
-One number is [b] more than [a] times the other , and their sum is [c] . what are the numbers . 
-Olga has [d] times as many [b] as [a] . If she has $ [c] , how many of each coin does she have ? 
-Mr. Herman had $ [b] , and Mr. Chandra had $ [c] . After each of them had paid for a concert ticket , Mr. Herman had [a] times as much money as Mr. Chandra . How much money did Mr. Chandra have left ? 
-Hotels collect [a] percent sale tax on all sales . If the total sales including tax are [b] find the portion that is the tax . 
-In history class , the girl to boy ratio is [a] to [b] . If there are a total of [c] students , how many girls are there ? 
-One whole number is [c] times a second . if [b] is added to the smaller number , the result equals [a] more than the larger number . Find both numbers . 
-there were [d] people at a play . admission was $ [a] for adults and $ [b] for children . the receits were $ [c] . how many adults and how many children attended the play ? 
-A solution of [a] % glycol is held in a 400 gallon tank . A [b] % solution of glycol is held in a 190 gallon tank . How much of the two tanks must be added together to have a [c] gallon tank of [d] % glycol ? 
-A bag of peanuts is worth [c] less than a bag of cashews . Equal amount of peanuts and cashews are used to make [a] bags of a mixture that sells for [b] per bag . How much is a bag of cashews worth ? 
-during the early 1990 's kelly invested [d] into two different types of accounts within a bank certificates of deposit and savings account . For her accounts she received [a] % interest for her certificates of deposit and [b] % for her savings account . In total she earned [c] for the yeat . How much money was invested in each type of account ? 
-[a] times one number added to another is [b] . [c] the first number , minus the other number is [d] . What are the numbers 
-gary drove to Sarnia . Part of the trip was along major highways and the rest was along country roads . the speed limit is [a] km/h on the hgihgways and [b] km/h on the other roads . he spent a total of [d] hours driving [c] km . write a system of equations that would allow you to find how much time did he spend on each type of road . 
-Every morning , Don Miguel exercises by walking a certain distance at an average of [a] kph , rests for [d] hours . and rides back along the same road on his chauffer-driven limousine at an average speed of [b] kph . If the total time of travel is [c] hours , how far does he walk ? 
-Justin can mow a lawn in [a] hours . David can mow a lawn in [b] hours . How long will it take them to mow one lawn together ? 
-A cruise boat travels [b] miles downstream in [a] hours and returns to its starting point upstream in [c] hours . Find the speed of the stream . 
-Tap a is able to fill a bath in [a] minutes , tap b is able to fill the same bath in [b] minutes . How long would it take them to fill the same bath if they are turned on together 
-You are [c] times as old as your sister . In [b] years time you will be [a] as old as your sister . What are your ages now ? 
-The greater of two numbers is [b] less than [a] the lesser number . The sum of the two numbers is [c] . What are the numbers ? 
-Aunt Mary , [c] years old , has a [b] old niece . In how many years will the aunt be [a] as old as her niece ? 
-HOW MANY LITERS OF A [a] % SALT SOLUTION MUST BE ADDED TO [c] LITERS OF A [d] % SALT SOLUTION TO YIELD AN ALLOY THAT IS A [b] % SALT SOLUTION ? 
-the sum of two numbers is [d] . [a] of the first number plus [b] of the second number is [c] . find the numbers . 
-two power shovels excavate [c] cubic meters of earth , the larger shovel working for [b] hours and the smaller for [a] hours . On another job , they removed [f] cubic meters with the larger shovel working [e] hours and the smaller working [d] hours . How much earth can each move in 1 hour working alone ? 
-One number is [e] more than [d] times a smaller number . If [a] the larger number is decreased by [b] times the smaller number , the result is [c] . 
-kevin 's sister mary is [b] years younger than he is . the total of their ages is [a] years . how old is kevin ? 
-the sum of two numbers is [c] . One number plus [a] times the other number is [b] . What are the numbers ? 
-the greater of two numbers is [c] more than the smaller . if the smaller is added to [a] the greater , the result is [b] . find both of the numbers . 
-A 6-passenger plane cruises at [c] mph in calm air . If the plane files [b] miles with the wind in the same smount of time as it flies [a] miles against the wind , then what is the wind speed ? 
-[b] less than [a] times a number is equal to the sum of the number and [c] . What is the number 
-A pipe can fill a tank in [a] minutes and another pipe can make empty the tank in [b] minutes . How much time it takes to empty the tank if both are working together . 
-I add [c] to a certain number and divide the sum by [b] . If my final answer is [a] , what is the number ? 
-Walt made an extra $ [d] last year from a part-time job . He invested part of the money at a [a] % annual rate of interest , and the rest at an [b] % annual rate of interest . At the end of the year , he made a total of $ [c] in interest . How much was invested at 8 % ? 
-The sum of two numbers is [c] . The larger number is [b] less than [a] times the smaller . Find both numbers . 
-Two integers have a sum of [a] . The difference of the two numbers is [b] . What are the two numbers . 
-a truck traveling [a] miles a hour and a car traveling [b] miles a hour cover the same distance . The truck travels [c] hours longer than the car . How far did they travel . 
-Two numbers have a sum of [a] . The smaller number is [b] less than the larger number . Find the two numbers . 
-British sterling silver is a copper-silver alloy that is [a] % copper by weight . How many grams of pure copper and how many grams of British sterling silver should be used to prepare [c] grams of a copper-silver alloy that is [b] % copper by weight ? 
-An airplane travels [c] km against the wind in [a] hours and [b] with the wind in the same amount of time . What is the rate of the plane in still air and what is the rate of the wind ? 
-The sum of two numbers is [c] . The second number is [b] less than [a] the first . Find the two numbers . 
-one number is [d] greater than another number when [b] times the smaller number is added to [a] the larger number the result is [c] . 
-It takes Sal [a] hours to paint a house . It takes Mary [b] hours to paint the same house . How long will it take to paint the house if both of them work together ? 
-A pool can be filled with water in [a] hours . Draining the pool requires [b] hours . If the pool is empty and the drain is open how much time will be needed to fill the pool ? 
-Jose can paint a room in [a] hours , juanita can paint the room in [b] hours , how long would it take them to paint the room working together ? 
-You are going to invest $ [d] , part at [b] % and part at [a] % . What is the most that can be invested at 14 % in order to make at least $ [c] interest per year ? 
-Soybean meal is [a] % protein ; cornmeal is [b] % protein . How many pounds of each should be mixed together in order to get [c] mixture that is [d] % protein ? 
-The sum of two numbers is [c] . [a] the smaller number is [b] more the larger number . What is the product of the two numbers ? 
-How many litres of fuel costing $ [d] per litre must be mixed with [c] litres of fuel costing $ [a] per litre to obtain [b] mixture costing $ 1 per litre . 
-a famer employs two students to pack peaches into trays for a market . at the end of the day they have packed a total of [c] trays . if student A packed [a] trays for every [b] that student B packed how many did each of them pack -LRB- show working -RRB- 
-Rosa is [c] years old and Arthur is [b] years old . How many years ago was Arthur [a] times as old as Rosa ? 
-[a] one number added to [b] times another gives [c] . find the numbers , if the difference between them is [d] . 
-Last month , a bookstore ran an ad for calculators on sale ; graphing calculators for $ [a] and scientific calculators for $ [b] . Sales of $ [c] were generated , with [d] more graphing calculators sold than the scientific calculators . How many of each type of calculators did the bookstore sell ? 
-One number is [b] of another number . Their sum is [a] . Find the numbers . 
-How many pounds of coffee worth [a] a pound should be mixed with [c] pounds worth [d] a pound a mixture worth [b] a pound ? 
-Tickets to the school 's dinner theatre cost $ [a] for children and $ [b] for adults . [d] tickets were sold for a total of $ [c] how many children attended ? how many adults attended 
-Two trains leave stations [c] miles apart at the same time and travel toward each other . One train travels at [a] miles per hour while the other travels at [b] miles per hour . How long will it take for the two trains to meet ? 
-Steve has [a] poker chips and [b] blue poker chips . Tom has [d] red poker chips and [e] blue poker chips . If steve 's chips are worth a total of $ [c] and tom 's are worth a total of $ [f] , determine the value of a blue chip ? 
-A can contains two different kinds of nuts , weighs [d] pounds , and costs $ [c] . One type of nut costs $ [a] a pound . The other type costs $ [b] a pound . How many pounds of $ 2.75 nuts are there ? 
-A train traveling [a] miles per hour leaves for a certain town . [c] hours later , a car traveling at [b] miles per hour leaves for the same town and arrives at the same time as the train . If both the train and the car traveled in a straight line , how far is the town from where they started ? 
-Jim 's weekly pay is [b] of Alicias 's . Together they earn [a] dollars per week . What is each person 's weekly pay ? 
-the sum of two numbers is [c] . [a] the first number minus the second is [b] . find the numbers . 
-In a recent election Corrine Brown received [b] more votes than Bill Randll . If the total number of votes was [a] , find the number of votes for each candidate . 
-The sum of the digits of a two-digit number is [b] . If the digits are reversed , the new number is [a] less than the original . Find the original number . 
-sam drove [d] km from city A to City B in [c] hours . he drove part of the way at [a] km/h and the rest of the way at [b] km/h . how far did he drive at each speed ? 
-A father 's age is [c] times that of his son . After [b] years , it will be [a] times that of his son . How many more years will take if father 's age is to be twice that of his son ? 
-jim is [c] years older than cindy . [b] years ago , the sum of their ages was [a] . find each of their ages now . 
-Sum of two numbers is [d] . [a] times one number minus [b] times the other is [c] . Determine the numbers 
-Karen left her house heading east , and her sister left [b] hours later heading west at a rate [d] mph faster than Karen . [a] hours after Karen left , she and her sister were [c] miles apart . How fast was Karen moving ? 
-One number is [d] less than another number . Find the numbers if [b] times the smaller number is [c] less than [a] times the larger number 
-To attend the state fair one group of [a] adults and [b] children paid $ [c] for their tickets another group of [d] adults and [e] children paid $ [f] for the tickets what is the price for each child ticket ?? 
-Find the selling price per ounce of mixture of [a] oz . of cologne that costs $ [c] per ounce and [b] oz . of a cologne that costs $ [d] per ounce . 
-from pipe a it takes [a] hours to fill the tank . from pipe b it takes [b] hours empty the tank . if the both pipes are opened how many hours to fill the tank ? 
-erin drove home at an average speed of [a] mph . she returned home in the evening along the same route and average [b] mph . if erin spent a total of [c] hour commuting to and from work , how many miles did erin drive to work in the morning ? 
-Jill is [b] kilometers away from Joe . Both begin to walk toward each other at the same time . Jill walks [c] km/h . They meet in [a] hours . How fast is Joe walking ? 
-The number [d] was written as the sum of two numbers . The first number was divided by [a] . This quotient was added to the second number divided by [b] , and the total was [c] . What were the two numbers ? 
-Two friends leave a hotel at the same time traveling in opposite direction . They travel for [a] hours and are then [b] miles apart . If Lily travels [c] miles per our faster than Noe , find the average rate of speed for each person . 
-the sum of two numbers is [b] . if one number is [a] % more than the other number , what are the numbers ? 
-[b] year ago , John was [a] times as old as Larry . [d] year later , he was [c] as old as Larry . How old are John and Larry ? 
-One [a] of a number is [b] more than the same number . What is the number ? 
-A mixture of [c] pounds of candy sells for $ [d] a pound . The mixture consists of chocolates worth $ [a] a pound and chocolates worth [b] cent a pound . How many pounds of the $ 1.50 chocolate were used to make the mixture ? 
-Jon can mow the lawn in [a] hours . Kim can mow the lawn in [b] hours . How long will it take them to mow the lawn if the work together ? 
-How many liters of a [a] % alcohol solution do you need to mix with [c] liters of a [d] % solution to obtain a [b] % solution ? 
-what is the height of a triangle whose area is [b] square meters and whose base is [a] meters 
-Bob invested $ [d] , part at [a] % and part at [b] % . If the total interest at the end of the year is $ [c] , how much did he invest at 18 % ? 
-A cruise boat travels [b] miles downstream in [a] hours and returns upstream in [c] hours . Find the rate of the stream . 
-With a tail wind , a plane traveled [b] mi in [a] hrs . With a head wind , the plane traveled the same distance in [c] hrs . Find the plane 's air speed and the speed of the wind . Assume that both were constant 
-if one guy can paint a house in [a] hours , and another guy can do it in [b] , how long will it take them together if the 5 hour guy starts [c] hour earlier then the 3 hour guy ? 
-The present ages of Lewis and Brown are in the ratio [d] to [e] . [c] years from now , the ages will be in the ratio [a] to [b] . Find the present ages of Lewis and Brown . 
-One plane took off from the San Fransisco , traveling east . At the same time another plane took off from the same airport , traveling west . The plane traveling east was going [c] miles per hour faster than the plane traveling west . After [a] hours , the planes were [b] miles apart . How fast was each plane going ? 
-jen is [d] years older than sue . in [c] years , she will be [a] as old as sue was [b] years ago . Find their ages now 
-The average salary for computer programmers is [b] less than [a] the average salary for carpenters . Combined , their average salaries are [c] . Determine the average salary for each of these jobs . 
-An alloy containing [a] % brass is to be combined with an alloy containing [b] % brass to form an alloy containing [d] % brass . How much of each alloy should be combined to make [c] pounds of the 27 % brass alloy ? 
-a woman is [b] years older than [a] times her daughter 's age . Their ages total [c] . What are their ages ? 
-Mr. Graham invested some of his $ [d] in bonds that made a [b] % profit and the rest in bonds that made a [a] % profit . If the profit on the 12 % bonds was $ [c] more than the profit on the 5 % bonds , how much did Mr. Graham invest in the 5 % bonds ? 
-Donna is going to rent a truck for one day . There are two companies she can choose from , and they have the following prices . Company A has no initial fee but charges $ [a] for every mile driven . Company B charges an initial fee of $ [c] and an additional $ [b] for every mile driven . For what milleage will Company A charge more than Company B ? 
-A boat can travel [c] mph in still water . If it travels [b] miles with the current in the same length of time it travels [a] against the current , what is the speed of the current ? 
-A boat traveled for [b] hr with a [c] mph current to reach a picnic area . the return trip against the same current took [a] hr . Find the speed of the boat in still water 
-Joan is [c] years older than Rob . [b] years ago the sum of their age was [a] , how old are they now . 
-The ratio of boys to girls in a class are [a] to [b] . If there are a total of [c] students in the class , how many boys are there ? 
-Sue and David are siblings . Their combined age is [a] . Sue is [b] years old than David . How old are Sue and David ? 
-one number is [d] more than another number . [a] times the larger number plus [b] times the smaller is [c] . Find the numbers . 
-Jim and Bob are painters . Jim can paint a wall in [a] hours and Bob can do the same size wall in [b] hours . How long will it take to paint the wall if Jim and Bob work together ? 
-A ship went up a stream of [b] km in [c] hours , and went down the same distance in [a] hours . What is the km per hour for this ship if there is no speed in this stream ? What is this stream 's km per hour ? 
-The difference of two numbers is [a] if one number is [b] times the other number , find the smallest number 
-michael is [c] as old as maggie . [b] years ago , michael was [a] times as old as maggie . how old is each now ? 
-A [a] % alcohol solution is mixed with a [b] % alcohol solution to obtain [c] fluid ounces of [d] % alcohol solution . How many fluid ounces of each are needed ? 
-Yoshi is [c] years older than his sister . [b] years from now , the sum of their age will be [a] . Find Yoshi 's present age . 
-a plane flies [b] miles with a tail wind , in [a] hours . It takes the same plane [c] hours to fly the [d] miles when flying against the wind . What is the planes speed in still air ? 
-Adriana 's [b] boat trip downriver took [a] hours , but the return trip back upstream took [c] hours . Figure the speed of the boat in still water and the speed of the current of the river . 
-An airplane travels [b] miles from Housten to Miami in [c] hours against the wind . On it 's return trip , with the wind , it takes only [a] hours . Find the rate of the airplane with no wind . Find the rate of the wind . 
-A tank can hold eighteen litres of water . Tap A takes [a] minutes to fill the tank , Tap B takes [b] minutes to fill the tank . If the two taps are turned on at the same time , how long would they take to fill the tank ? 
-In [c] years Hanna will be [a] as old as her little brother Lloyd . Hanna is [b] years old now . How old is Lloyd ? 
-Find how many quarts of [a] % butterfat milk and [b] % butterfat milk should be mixed to yield [c] quarts of [d] % butterfat milk . 
-A pastry chef created a [c] ounce sugar solution that was [d] % sugar from a [a] % sugar solution and a [b] % sugar solution . How much of the 20 % sugar solution and how much of the 40 % sugar solution were used ? 
-the sum of elisa 's age and elma 's age is [d] . elisa 's age [c] year from now will [a] times elma 's age [b] year ago . how old is each now . 
-Ruth is [d] as old as Pat . In [c] years Ruth will be [a] times as old as Pat was [b] years ago . How old is each now ? 
-when my father was [c] i was [b] . now he is [a] as old as i am . how old am i ? 
-A pool owner is trying to fill his pool . The pump takes [a] hrs . A garden hose takes [b] hours . He wants to fill it up in a hurry . So he turns on the pump AND puts in the garden hose . Unfortunately , he leaves the drain open which will drain the pool in [c] hours . How long will it take to fill the pool ? 
-Find two numbers whose sum is [c] such that when the larger number is divided by the smaller , the quotient is [a] . and the remainder is [b] . What are the numbers ? 
-two small planes start from the same point and fly in opposite directions the first plane flying [c] mph slower than the second plane . In [a] hours planes are [b] miles apart . Find rate of slower plane 
-if anna can paint a house in [a] hours and joe can paint a house in [b] hours . how long will it take them to do it together ? 
-The sum of two numbers is [c] . The larger is [b] less than [a] the smaller number . Find the numbers . 
-Two cars leave the same town at the same time , traveling in the same direction . How long until the two cars are [c] apart if one car travels at [b] mph , and the other car travels at [a] mph ? 
-[a] times one number minus a second is [b] , and the sum of the numbers is [c] . Find the numbers . 
-tyler is [b] years older than his sister , and the sum of their ages is [a] . how old is tyler ? how old is his sister ? 
-which 2 consecutive integers have a sum of [a] 
-the difference between of two numbers is [c] , the larger number is [b] less than [a] times the smaller number . 
-the sum of [c] and a certain number is equal to [a] times the number subtracted from [b] . find the number . 
-Two girls are [c] miles apart . Leaving at the same time , mary will travel [a] miles/hr and sally will travel [b] miles/hr . How long will they meet ? 
-The sum of the digits of a two-digit number is [c] . If [b] is added to the original number , the result is [a] times the original number with its digits reversed . Find the original number . 
-the cashier at the fast food outlet rings up a bill of $ [f] for an order of [e] milkshakes and [d] burgers . the next order is for [b] milkshakes and [a] burgers and the bill is $ [c] . determine the cost of each itmem . 
-Norbert sold [a] books on Thursday for a curtain price . On Friday , ha sold [b] of the same books , but he charged $ [d] less per book . If he made $ [c] in total , hom much did the book sell for each day ?? 
-There are [b] children in Year 6 . For every [a] girls there are [c] boys . So , there are how many boys and how many girls in Year 6 ? 
-A man is [c] times as old as his son . In [b] years he will be only [a] times as old as his son . how old is the man now 
-Jim rides his bike to school every morning at an average speed of [a] miles per hour . He rides home along the same route at [b] miles per hour . If the total time of his commute is [c] hour , how far , in miles , is Jim 's trip to work ? 
-On a History Exam , each multiple-choice question is worth [a] points , and each true false question is worth [b] points . Vanessa answered [d] questions correctly on the exam and earned a score of [c] points.How many multiple-choice questions did she answer correctly and how many true-false questions did she answer corectly ? 
-[a] two students are separated into two groups.The first group is [b] times as large as the second . How many students are in each group ? 
-the sum of two number is [a] . if the second number is [b] the first , what is the second number . 
-If Sara can paint a house in [a] hours and Bill can paint the same house in [b] hours how long will it take them to paint the house together ? 
-i wants to buy flowers for my friend with $ [c] . daisies are $ [a] each and roses are $ [b] each . but i buys [d] more daisies than roses . how much did the roses cost ? 
-Find two numbers whose sum is [a] and whose difference is [b] . 
-josh has [d] coins . these are [a] and [b] . if he has [c] dollars , how many of each will he have 
-I have [c] as many nickels as [a] . If the coins are worth $ [b] , how many quarters are there ? 
-In the time it takes to fliy [b] miles with a head wind , she can only fly [a] mies against the headwind . if the speed of the plane in stll air is [c] mph , find the wind speed . 
-two trains started from the same station at the same time and traveled in opposite directions . after traveling [a] hours , they were [b] miles apart . the rate of the fast train exceeded the rate of the slow train by [c] miles per hour . what is the rate of each train ? 
-the rocking pebbles are playing a concert at big state university the auditoruim seats [d] people . the concert manager decides to sell some tickets at $ [a] each and the rest at $ [b] each . how many of each kind should the manager sell if he wants ticket sales to total $ [c] ? 
-What age is a boy now if his mother is [c] times his age and in [b] years she will be [a] his age ? 
-I have [d] coins that are [a] and [b] and equal $ [c] . how many nickles do I have ? 
-jim is [b] years older than janice . the sum of there ages is [a] . how old is each person . 
-Two cars leave philadelphia , one traveling north and the other traveling south . After [a] hours , they are [b] miles apart . If one car is traveling [c] miles per hour faster than the other , what is the speed of each ? 
-the sum of two numbers is [a] . The difference between these numbers is [b] than find the numbers 
-A woman is [d] more year than [b] times the age of her daughter . In [c] years , she will be [a] times as old as her daughter will be then . What are their present ages ? 
-Car A leaves a certain point travelling at an average rate of [b] km/h . [c] hours later , Car B leaves the same point travelling at [a] km/h in the same direction . After how long will Car B over take Car A ? 
-A book cost $ [a] if bought online and $ [b] if bought at the store . The bookstore sold [d] books and took in $ [c] . How many books were bought online and how many were bought in the store ? 
-you have [d] [a] and [b] . their total value is $ [c] . write the system of equations to find the number n of nickels and the number of d dimes . 
-The smaller of two numbers is [d] less that the larger . [a] the larger plus [b] times the smaller is [c] . Find the numbers 
-A store is selling CD 's for $ [a] and for $ [b] . You buy [d] total and spend $ [c] . How many of each price did you buy ? 
-Deborah splits $ [d] between Bryce Bond Fund with an annual yield of [b] % and Strauss Stock Fund with an annual yield of [a] % . If her total income for one year on the two investments was $ [c] , then how much did she invest in each fund ? Please Help ? 
-deanna is [b] more than [a] times than ted . Twine the sum of their ages is [c] . How old is ted ? 
-the sum of two integers is [c] . if the smaller integer is [b] less than [a] times the larger , what are the integers ? 
-Reggie is [c] years older than Lani . [b] years ago the sum of their ages was [a] . How old are they now ? 
-the sum of two numbers is [a] . if the second number is subtracted from the first , the difference is [b] . find the numbers 
-Kesha has collected the autographs of [d] more television celebrities than she has of movie stars . each tv celebrity autograph is worth $ [a] and each movie star autograph is worth $ [b] . her colection is valued at $ [c] . how many Tv celebrity autographs does she have ? how many of movie star autographs does she have ? 
-There are [d] heads on a farm and [c] feet . How many cows -LRB- [a] legs -RRB- and how many chickens -LRB- [b] legs -RRB- are there ? 
-One number is [c] times another number . The greater of the two numbers is [b] less than [a] times the difference between the two numbers . Find the numbers . 
-It took you [a] hrs to travel to town , and it took you [b] hrs to travel back , because your return trip speed was [c] mph less than the outgoing speed . What was your return trip speed ? 
-Maria is now [c] times as old as Kate . [b] years ago , Maria was [a] times as old as Kate . Find each of their actual ages now . 
-Suppose that you have entered a [c] biathlon that consists of a run and bicycle race . During your run , your average rate is [a] mph and during your bicycle race , your average rate is [b] mph . You finish the race in [d] hours . What is the distance of the run and what is the distance of the bicycle race ? 
-Stan invested $ [d] , part at [a] % and part at [b] % . If the total interest at the end of the year is $ [c] , how much did he invest at 8 % ? 
-Train A , traveling [a] mph , leaves West heading toward East , [c] miles away . At the same time Train B , traveling [b] mph , leaves East heading toward West . When do the Two trains meet ? 
-$ [c] worth of [a] and [b] . there are only [d] coins . how many quarters . how many dimes 
-If positive number is [d] less than another positive number . [a] times lesser number minus [b] times the greater number is [c] . Find the 2 positive numbers . 
-andy is [b] years older than tom . the sum of their ages is [a] . how old are they ? 
-in a school the number of male teacher is [b] the number of female teacher . if total number of teacher is [a] , find the number of female teacher . 
-[a] times a two digit number is the same as [b] the number obtained on interchanging the digits of the number.If one digit of the number exceeds the other by [c] , find the number . 
-Sam is [d] years older than Jack . [b] Sam 's age subtracted from [a] times jack 's age is [c] more than Jack 's age . find both sam and jack 's age . 
-Tom is [d] times as old as Todd . In [b] years Tom 's age will be [c] years less than [a] times as old as Todd . How old is Todd ? 
-One number is [c] of another number . The sum of the two numbers is [b] less than [a] the larger number . Find the numbers . 
-How many liters of a [a] % sulfuric acid solution should be mixed with [c] liters of a [d] % sulfuric acid solution to produce a [b] % solution ? 
-An older person is [b] years older than [a] times the age of a younger person . The sum of their ages is [c] . Find their ages . 
-[d] the larger of the two numbers is [f] more than [e] times the smaller , and then the sum of [a] times the larger and [b] times the smaller is [c] . What are the nos . ? 
-The sum of two numbers is [d] . [a] times one of them is more than [b] times the second by [c] . Find the numbers . 
-Danielle drove from school to home averaging [a] mph . On the way back to school she averaged [b] mph . If the total driving time was [c] hours , how long did it take her to drive each way . 
-The sum of two numbers is [e] . [c] more than [b] the larger number is [d] less than [a] times the smaller . Find the numbers . 
-A merchant blends tea that sells for $ [a] a pound with tea that sells for $ [b] a pound to produce [c] lb of a mixture that sells for $ [d] a pound . How much of each was added ? 
-juan drives to work . because of traffic conditions , he averages [a] miles per hour . he returns home averaging [b] miles per hour . the total travel time is [c] hours . how do i do this equation ? 
-A wholesale outlet has 2 grades of coffee , one selling at [a] $ / KG & the other [b] $ / KG . Sam wants to mix the 2 grades together . he wants to make [c] KG of the mixture & sell it for $ [d] / KG . How much of each grade should be mixed ? 
-Juan made a [b] L of lemonade that consists of [c] % pure lemon juice . How much water must he add to dilute it to [a] % lemon juice ? 
-The length of a rectangle is [b] cm more than [a] times the width . If the perimeter of the rectangle is [c] cm , what are its dimensions ? I needed help setting up this problem & answering it 
-It takes [d] hours to fill a swimming pool using two pipes . If the pipe of larger diameter is used for [b] hours and the pipe with smaller diameter for [a] hours , only [c] the tank is filled . How long would it take for each pipe to fill the pool separately ? Please help !!! 
-If Sally can paint a house in [a] hours , & John can paint the same house in [b] hours , how long will it take for both of them to paint the house together ? 
-The number of cats in the United States exceeds the dog population by [b] m . The number of cats and dogs combined is [a] m . Determine the number of dogs and cats in the United States . 
-a man is [b] years old while his daughter is [c] years old . In how many years ' time will the daughter be [a] the age of her father ? 
-You are saving money to buy a set of DVDs that cost $ [a] . You have $ [b] saved . If the amount left to save is x , write an equation to represent the problem . Then solve . 
-[a] of a number of two digits is greater than [b] of its successor by [c] . Find the number . 
-you will mix [a] % acetone with [b] % acetone to make [c] ml of [d] % acetone.how much of each starting solution do you need ? 
+A factory makes [a] stools and [b] stools . They use the same kind of seats and legs for each . The only difference is the number of holes they bore in the seats for the legs . The company has [d] seats and [c] legs .
+The difference between two numbers is [b] . The sum of these numbers is [a] . Find the numbers .
+One solution contains [a] % alcohol while another contains [b] % alcohol . How many liters of each should be mixed to give [c] L of a solution which is [d] % alcohol ?
+the sum of two numbers is [a] and their difference is [b] . find the numbers
+two numbers differ by [c] . The larger number is [b] less than [a] the smaller number . Find the numbers .
+A small publishing company is planning to publish a new book . The production costs will include one-time fixed costs -LRB- such as editing -RRB- and variable costs -LRB- such as printing -RRB- . The one-time fixed costs will amount to [c] . The variable costs will be [b] per book . The publisher will sell the finished product to bookstores at a price of $ [a] per book . How many books must the publisher print and sell so that the production costs will equal the money obtained from sales ?
+One number is [b] more than [a] times the other , and their sum is [c] . what are the numbers .
+Olga has [d] times as many [b] as [a] . If she has $ [c] , how many of each coin does she have ?
+Mr. Herman had $ [b] , and Mr. Chandra had $ [c] . After each of them had paid for a concert ticket , Mr. Herman had [a] times as much money as Mr. Chandra . How much money did Mr. Chandra have left ?
+Hotels collect [a] percent sale tax on all sales . If the total sales including tax are [b] find the portion that is the tax .
+In history class , the girl to boy ratio is [a] to [b] . If there are a total of [c] students , how many girls are there ?
+One whole number is [c] times a second . if [b] is added to the smaller number , the result equals [a] more than the larger number . Find both numbers .
+there were [d] people at a play . admission was $ [a] for adults and $ [b] for children . the receits were $ [c] . how many adults and how many children attended the play ?
+A solution of [a] % glycol is held in a 400 gallon tank . A [b] % solution of glycol is held in a 190 gallon tank . How much of the two tanks must be added together to have a [c] gallon tank of [d] % glycol ?
+A bag of peanuts is worth [c] less than a bag of cashews . Equal amount of peanuts and cashews are used to make [a] bags of a mixture that sells for [b] per bag . How much is a bag of cashews worth ?
+during the early 1990 's kelly invested [d] into two different types of accounts within a bank certificates of deposit and savings account . For her accounts she received [a] % interest for her certificates of deposit and [b] % for her savings account . In total she earned [c] for the yeat . How much money was invested in each type of account ?
+[a] times one number added to another is [b] . [c] the first number , minus the other number is [d] . What are the numbers
+gary drove to Sarnia . Part of the trip was along major highways and the rest was along country roads . the speed limit is [a] km/h on the hgihgways and [b] km/h on the other roads . he spent a total of [d] hours driving [c] km . write a system of equations that would allow you to find how much time did he spend on each type of road .
+Every morning , Don Miguel exercises by walking a certain distance at an average of [a] kph , rests for [d] hours . and rides back along the same road on his chauffer-driven limousine at an average speed of [b] kph . If the total time of travel is [c] hours , how far does he walk ?
+Justin can mow a lawn in [a] hours . David can mow a lawn in [b] hours . How long will it take them to mow one lawn together ?
+A cruise boat travels [b] miles downstream in [a] hours and returns to its starting point upstream in [c] hours . Find the speed of the stream .
+Tap a is able to fill a bath in [a] minutes , tap b is able to fill the same bath in [b] minutes . How long would it take them to fill the same bath if they are turned on together
+You are [c] times as old as your sister . In [b] years time you will be [a] as old as your sister . What are your ages now ?
+The greater of two numbers is [b] less than [a] the lesser number . The sum of the two numbers is [c] . What are the numbers ?
+Aunt Mary , [c] years old , has a [b] old niece . In how many years will the aunt be [a] as old as her niece ?
+HOW MANY LITERS OF A [a] % SALT SOLUTION MUST BE ADDED TO [c] LITERS OF A [d] % SALT SOLUTION TO YIELD AN ALLOY THAT IS A [b] % SALT SOLUTION ?
+the sum of two numbers is [d] . [a] of the first number plus [b] of the second number is [c] . find the numbers .
+two power shovels excavate [c] cubic meters of earth , the larger shovel working for [b] hours and the smaller for [a] hours . On another job , they removed [f] cubic meters with the larger shovel working [e] hours and the smaller working [d] hours . How much earth can each move in 1 hour working alone ?
+One number is [e] more than [d] times a smaller number . If [a] the larger number is decreased by [b] times the smaller number , the result is [c] .
+kevin 's sister mary is [b] years younger than he is . the total of their ages is [a] years . how old is kevin ?
+the sum of two numbers is [c] . One number plus [a] times the other number is [b] . What are the numbers ?
+the greater of two numbers is [c] more than the smaller . if the smaller is added to [a] the greater , the result is [b] . find both of the numbers .
+A 6-passenger plane cruises at [c] mph in calm air . If the plane files [b] miles with the wind in the same smount of time as it flies [a] miles against the wind , then what is the wind speed ?
+[b] less than [a] times a number is equal to the sum of the number and [c] . What is the number
+A pipe can fill a tank in [a] minutes and another pipe can make empty the tank in [b] minutes . How much time it takes to empty the tank if both are working together .
+I add [c] to a certain number and divide the sum by [b] . If my final answer is [a] , what is the number ?
+Walt made an extra $ [d] last year from a part-time job . He invested part of the money at a [a] % annual rate of interest , and the rest at an [b] % annual rate of interest . At the end of the year , he made a total of $ [c] in interest . How much was invested at 8 % ?
+The sum of two numbers is [c] . The larger number is [b] less than [a] times the smaller . Find both numbers .
+Two integers have a sum of [a] . The difference of the two numbers is [b] . What are the two numbers .
+a truck traveling [a] miles a hour and a car traveling [b] miles a hour cover the same distance . The truck travels [c] hours longer than the car . How far did they travel .
+Two numbers have a sum of [a] . The smaller number is [b] less than the larger number . Find the two numbers .
+British sterling silver is a copper-silver alloy that is [a] % copper by weight . How many grams of pure copper and how many grams of British sterling silver should be used to prepare [c] grams of a copper-silver alloy that is [b] % copper by weight ?
+An airplane travels [c] km against the wind in [a] hours and [b] with the wind in the same amount of time . What is the rate of the plane in still air and what is the rate of the wind ?
+The sum of two numbers is [c] . The second number is [b] less than [a] the first . Find the two numbers .
+one number is [d] greater than another number when [b] times the smaller number is added to [a] the larger number the result is [c] .
+It takes Sal [a] hours to paint a house . It takes Mary [b] hours to paint the same house . How long will it take to paint the house if both of them work together ?
+A pool can be filled with water in [a] hours . Draining the pool requires [b] hours . If the pool is empty and the drain is open how much time will be needed to fill the pool ?
+Jose can paint a room in [a] hours , juanita can paint the room in [b] hours , how long would it take them to paint the room working together ?
+You are going to invest $ [d] , part at [b] % and part at [a] % . What is the most that can be invested at 14 % in order to make at least $ [c] interest per year ?
+Soybean meal is [a] % protein ; cornmeal is [b] % protein . How many pounds of each should be mixed together in order to get [c] mixture that is [d] % protein ?
+The sum of two numbers is [c] . [a] the smaller number is [b] more the larger number . What is the product of the two numbers ?
+How many litres of fuel costing $ [d] per litre must be mixed with [c] litres of fuel costing $ [a] per litre to obtain [b] mixture costing $ 1 per litre .
+a famer employs two students to pack peaches into trays for a market . at the end of the day they have packed a total of [c] trays . if student A packed [a] trays for every [b] that student B packed how many did each of them pack -LRB- show working -RRB-
+Rosa is [c] years old and Arthur is [b] years old . How many years ago was Arthur [a] times as old as Rosa ?
+[a] one number added to [b] times another gives [c] . find the numbers , if the difference between them is [d] .
+Last month , a bookstore ran an ad for calculators on sale ; graphing calculators for $ [a] and scientific calculators for $ [b] . Sales of $ [c] were generated , with [d] more graphing calculators sold than the scientific calculators . How many of each type of calculators did the bookstore sell ?
+One number is [b] of another number . Their sum is [a] . Find the numbers .
+How many pounds of coffee worth [a] a pound should be mixed with [c] pounds worth [d] a pound a mixture worth [b] a pound ?
+Tickets to the school 's dinner theatre cost $ [a] for children and $ [b] for adults . [d] tickets were sold for a total of $ [c] how many children attended ? how many adults attended
+Two trains leave stations [c] miles apart at the same time and travel toward each other . One train travels at [a] miles per hour while the other travels at [b] miles per hour . How long will it take for the two trains to meet ?
+Steve has [a] poker chips and [b] blue poker chips . Tom has [d] red poker chips and [e] blue poker chips . If steve 's chips are worth a total of $ [c] and tom 's are worth a total of $ [f] , determine the value of a blue chip ?
+A can contains two different kinds of nuts , weighs [d] pounds , and costs $ [c] . One type of nut costs $ [a] a pound . The other type costs $ [b] a pound . How many pounds of $ 2.75 nuts are there ?
+A train traveling [a] miles per hour leaves for a certain town . [c] hours later , a car traveling at [b] miles per hour leaves for the same town and arrives at the same time as the train . If both the train and the car traveled in a straight line , how far is the town from where they started ?
+Jim 's weekly pay is [b] of Alicias 's . Together they earn [a] dollars per week . What is each person 's weekly pay ?
+the sum of two numbers is [c] . [a] the first number minus the second is [b] . find the numbers .
+In a recent election Corrine Brown received [b] more votes than Bill Randll . If the total number of votes was [a] , find the number of votes for each candidate .
+The sum of the digits of a two-digit number is [b] . If the digits are reversed , the new number is [a] less than the original . Find the original number .
+sam drove [d] km from city A to City B in [c] hours . he drove part of the way at [a] km/h and the rest of the way at [b] km/h . how far did he drive at each speed ?
+A father 's age is [c] times that of his son . After [b] years , it will be [a] times that of his son . How many more years will take if father 's age is to be twice that of his son ?
+jim is [c] years older than cindy . [b] years ago , the sum of their ages was [a] . find each of their ages now .
+Sum of two numbers is [d] . [a] times one number minus [b] times the other is [c] . Determine the numbers
+Karen left her house heading east , and her sister left [b] hours later heading west at a rate [d] mph faster than Karen . [a] hours after Karen left , she and her sister were [c] miles apart . How fast was Karen moving ?
+One number is [d] less than another number . Find the numbers if [b] times the smaller number is [c] less than [a] times the larger number
+To attend the state fair one group of [a] adults and [b] children paid $ [c] for their tickets another group of [d] adults and [e] children paid $ [f] for the tickets what is the price for each child ticket ??
+Find the selling price per ounce of mixture of [a] oz . of cologne that costs $ [c] per ounce and [b] oz . of a cologne that costs $ [d] per ounce .
+from pipe a it takes [a] hours to fill the tank . from pipe b it takes [b] hours empty the tank . if the both pipes are opened how many hours to fill the tank ?
+erin drove home at an average speed of [a] mph . she returned home in the evening along the same route and average [b] mph . if erin spent a total of [c] hour commuting to and from work , how many miles did erin drive to work in the morning ?
+Jill is [b] kilometers away from Joe . Both begin to walk toward each other at the same time . Jill walks [c] km/h . They meet in [a] hours . How fast is Joe walking ?
+The number [d] was written as the sum of two numbers . The first number was divided by [a] . This quotient was added to the second number divided by [b] , and the total was [c] . What were the two numbers ?
+Two friends leave a hotel at the same time traveling in opposite direction . They travel for [a] hours and are then [b] miles apart . If Lily travels [c] miles per our faster than Noe , find the average rate of speed for each person .
+the sum of two numbers is [b] . if one number is [a] % more than the other number , what are the numbers ?
+[b] year ago , John was [a] times as old as Larry . [d] year later , he was [c] as old as Larry . How old are John and Larry ?
+One [a] of a number is [b] more than the same number . What is the number ?
+A mixture of [c] pounds of candy sells for $ [d] a pound . The mixture consists of chocolates worth $ [a] a pound and chocolates worth [b] cent a pound . How many pounds of the $ 1.50 chocolate were used to make the mixture ?
+Jon can mow the lawn in [a] hours . Kim can mow the lawn in [b] hours . How long will it take them to mow the lawn if the work together ?
+How many liters of a [a] % alcohol solution do you need to mix with [c] liters of a [d] % solution to obtain a [b] % solution ?
+what is the height of a triangle whose area is [b] square meters and whose base is [a] meters
+Bob invested $ [d] , part at [a] % and part at [b] % . If the total interest at the end of the year is $ [c] , how much did he invest at 18 % ?
+A cruise boat travels [b] miles downstream in [a] hours and returns upstream in [c] hours . Find the rate of the stream .
+With a tail wind , a plane traveled [b] mi in [a] hrs . With a head wind , the plane traveled the same distance in [c] hrs . Find the plane 's air speed and the speed of the wind . Assume that both were constant
+if one guy can paint a house in [a] hours , and another guy can do it in [b] , how long will it take them together if the 5 hour guy starts [c] hour earlier then the 3 hour guy ?
+The present ages of Lewis and Brown are in the ratio [d] to [e] . [c] years from now , the ages will be in the ratio [a] to [b] . Find the present ages of Lewis and Brown .
+One plane took off from the San Fransisco , traveling east . At the same time another plane took off from the same airport , traveling west . The plane traveling east was going [c] miles per hour faster than the plane traveling west . After [a] hours , the planes were [b] miles apart . How fast was each plane going ?
+jen is [d] years older than sue . in [c] years , she will be [a] as old as sue was [b] years ago . Find their ages now
+The average salary for computer programmers is [b] less than [a] the average salary for carpenters . Combined , their average salaries are [c] . Determine the average salary for each of these jobs .
+An alloy containing [a] % brass is to be combined with an alloy containing [b] % brass to form an alloy containing [d] % brass . How much of each alloy should be combined to make [c] pounds of the 27 % brass alloy ?
+a woman is [b] years older than [a] times her daughter 's age . Their ages total [c] . What are their ages ?
+Mr. Graham invested some of his $ [d] in bonds that made a [b] % profit and the rest in bonds that made a [a] % profit . If the profit on the 12 % bonds was $ [c] more than the profit on the 5 % bonds , how much did Mr. Graham invest in the 5 % bonds ?
+Donna is going to rent a truck for one day . There are two companies she can choose from , and they have the following prices . Company A has no initial fee but charges $ [a] for every mile driven . Company B charges an initial fee of $ [c] and an additional $ [b] for every mile driven . For what milleage will Company A charge more than Company B ?
+A boat can travel [c] mph in still water . If it travels [b] miles with the current in the same length of time it travels [a] against the current , what is the speed of the current ?
+A boat traveled for [b] hr with a [c] mph current to reach a picnic area . the return trip against the same current took [a] hr . Find the speed of the boat in still water
+Joan is [c] years older than Rob . [b] years ago the sum of their age was [a] , how old are they now .
+The ratio of boys to girls in a class are [a] to [b] . If there are a total of [c] students in the class , how many boys are there ?
+Sue and David are siblings . Their combined age is [a] . Sue is [b] years old than David . How old are Sue and David ?
+one number is [d] more than another number . [a] times the larger number plus [b] times the smaller is [c] . Find the numbers .
+Jim and Bob are painters . Jim can paint a wall in [a] hours and Bob can do the same size wall in [b] hours . How long will it take to paint the wall if Jim and Bob work together ?
+A ship went up a stream of [b] km in [c] hours , and went down the same distance in [a] hours . What is the km per hour for this ship if there is no speed in this stream ? What is this stream 's km per hour ?
+The difference of two numbers is [a] if one number is [b] times the other number , find the smallest number
+michael is [c] as old as maggie . [b] years ago , michael was [a] times as old as maggie . how old is each now ?
+A [a] % alcohol solution is mixed with a [b] % alcohol solution to obtain [c] fluid ounces of [d] % alcohol solution . How many fluid ounces of each are needed ?
+Yoshi is [c] years older than his sister . [b] years from now , the sum of their age will be [a] . Find Yoshi 's present age .
+a plane flies [b] miles with a tail wind , in [a] hours . It takes the same plane [c] hours to fly the [d] miles when flying against the wind . What is the planes speed in still air ?
+Adriana 's [b] boat trip downriver took [a] hours , but the return trip back upstream took [c] hours . Figure the speed of the boat in still water and the speed of the current of the river .
+An airplane travels [b] miles from Housten to Miami in [c] hours against the wind . On it 's return trip , with the wind , it takes only [a] hours . Find the rate of the airplane with no wind . Find the rate of the wind .
+A tank can hold eighteen litres of water . Tap A takes [a] minutes to fill the tank , Tap B takes [b] minutes to fill the tank . If the two taps are turned on at the same time , how long would they take to fill the tank ?
+In [c] years Hanna will be [a] as old as her little brother Lloyd . Hanna is [b] years old now . How old is Lloyd ?
+Find how many quarts of [a] % butterfat milk and [b] % butterfat milk should be mixed to yield [c] quarts of [d] % butterfat milk .
+A pastry chef created a [c] ounce sugar solution that was [d] % sugar from a [a] % sugar solution and a [b] % sugar solution . How much of the 20 % sugar solution and how much of the 40 % sugar solution were used ?
+the sum of elisa 's age and elma 's age is [d] . elisa 's age [c] year from now will [a] times elma 's age [b] year ago . how old is each now .
+Ruth is [d] as old as Pat . In [c] years Ruth will be [a] times as old as Pat was [b] years ago . How old is each now ?
+when my father was [c] i was [b] . now he is [a] as old as i am . how old am i ?
+A pool owner is trying to fill his pool . The pump takes [a] hrs . A garden hose takes [b] hours . He wants to fill it up in a hurry . So he turns on the pump AND puts in the garden hose . Unfortunately , he leaves the drain open which will drain the pool in [c] hours . How long will it take to fill the pool ?
+Find two numbers whose sum is [c] such that when the larger number is divided by the smaller , the quotient is [a] . and the remainder is [b] . What are the numbers ?
+two small planes start from the same point and fly in opposite directions the first plane flying [c] mph slower than the second plane . In [a] hours planes are [b] miles apart . Find rate of slower plane
+if anna can paint a house in [a] hours and joe can paint a house in [b] hours . how long will it take them to do it together ?
+The sum of two numbers is [c] . The larger is [b] less than [a] the smaller number . Find the numbers .
+Two cars leave the same town at the same time , traveling in the same direction . How long until the two cars are [c] apart if one car travels at [b] mph , and the other car travels at [a] mph ?
+[a] times one number minus a second is [b] , and the sum of the numbers is [c] . Find the numbers .
+tyler is [b] years older than his sister , and the sum of their ages is [a] . how old is tyler ? how old is his sister ?
+which 2 consecutive integers have a sum of [a]
+the difference between of two numbers is [c] , the larger number is [b] less than [a] times the smaller number .
+the sum of [c] and a certain number is equal to [a] times the number subtracted from [b] . find the number .
+Two girls are [c] miles apart . Leaving at the same time , mary will travel [a] miles/hr and sally will travel [b] miles/hr . How long will they meet ?
+The sum of the digits of a two-digit number is [c] . If [b] is added to the original number , the result is [a] times the original number with its digits reversed . Find the original number .
+the cashier at the fast food outlet rings up a bill of $ [f] for an order of [e] milkshakes and [d] burgers . the next order is for [b] milkshakes and [a] burgers and the bill is $ [c] . determine the cost of each itmem .
+Norbert sold [a] books on Thursday for a curtain price . On Friday , ha sold [b] of the same books , but he charged $ [d] less per book . If he made $ [c] in total , hom much did the book sell for each day ??
+There are [b] children in Year 6 . For every [a] girls there are [c] boys . So , there are how many boys and how many girls in Year 6 ?
+A man is [c] times as old as his son . In [b] years he will be only [a] times as old as his son . how old is the man now
+Jim rides his bike to school every morning at an average speed of [a] miles per hour . He rides home along the same route at [b] miles per hour . If the total time of his commute is [c] hour , how far , in miles , is Jim 's trip to work ?
+On a History Exam , each multiple-choice question is worth [a] points , and each true false question is worth [b] points . Vanessa answered [d] questions correctly on the exam and earned a score of [c] points.How many multiple-choice questions did she answer correctly and how many true-false questions did she answer corectly ?
+[a] two students are separated into two groups.The first group is [b] times as large as the second . How many students are in each group ?
+the sum of two number is [a] . if the second number is [b] the first , what is the second number .
+If Sara can paint a house in [a] hours and Bill can paint the same house in [b] hours how long will it take them to paint the house together ?
+i wants to buy flowers for my friend with $ [c] . daisies are $ [a] each and roses are $ [b] each . but i buys [d] more daisies than roses . how much did the roses cost ?
+Find two numbers whose sum is [a] and whose difference is [b] .
+josh has [d] coins . these are [a] and [b] . if he has [c] dollars , how many of each will he have
+I have [c] as many nickels as [a] . If the coins are worth $ [b] , how many quarters are there ?
+In the time it takes to fliy [b] miles with a head wind , she can only fly [a] mies against the headwind . if the speed of the plane in stll air is [c] mph , find the wind speed .
+two trains started from the same station at the same time and traveled in opposite directions . after traveling [a] hours , they were [b] miles apart . the rate of the fast train exceeded the rate of the slow train by [c] miles per hour . what is the rate of each train ?
+the rocking pebbles are playing a concert at big state university the auditoruim seats [d] people . the concert manager decides to sell some tickets at $ [a] each and the rest at $ [b] each . how many of each kind should the manager sell if he wants ticket sales to total $ [c] ?
+What age is a boy now if his mother is [c] times his age and in [b] years she will be [a] his age ?
+I have [d] coins that are [a] and [b] and equal $ [c] . how many nickles do I have ?
+jim is [b] years older than janice . the sum of there ages is [a] . how old is each person .
+Two cars leave philadelphia , one traveling north and the other traveling south . After [a] hours , they are [b] miles apart . If one car is traveling [c] miles per hour faster than the other , what is the speed of each ?
+the sum of two numbers is [a] . The difference between these numbers is [b] than find the numbers
+A woman is [d] more year than [b] times the age of her daughter . In [c] years , she will be [a] times as old as her daughter will be then . What are their present ages ?
+Car A leaves a certain point travelling at an average rate of [b] km/h . [c] hours later , Car B leaves the same point travelling at [a] km/h in the same direction . After how long will Car B over take Car A ?
+A book cost $ [a] if bought online and $ [b] if bought at the store . The bookstore sold [d] books and took in $ [c] . How many books were bought online and how many were bought in the store ?
+you have [d] [a] and [b] . their total value is $ [c] . write the system of equations to find the number n of nickels and the number of d dimes .
+The smaller of two numbers is [d] less that the larger . [a] the larger plus [b] times the smaller is [c] . Find the numbers
+A store is selling CD 's for $ [a] and for $ [b] . You buy [d] total and spend $ [c] . How many of each price did you buy ?
+Deborah splits $ [d] between Bryce Bond Fund with an annual yield of [b] % and Strauss Stock Fund with an annual yield of [a] % . If her total income for one year on the two investments was $ [c] , then how much did she invest in each fund ? Please Help ?
+deanna is [b] more than [a] times than ted . Twine the sum of their ages is [c] . How old is ted ?
+the sum of two integers is [c] . if the smaller integer is [b] less than [a] times the larger , what are the integers ?
+Reggie is [c] years older than Lani . [b] years ago the sum of their ages was [a] . How old are they now ?
+the sum of two numbers is [a] . if the second number is subtracted from the first , the difference is [b] . find the numbers
+Kesha has collected the autographs of [d] more television celebrities than she has of movie stars . each tv celebrity autograph is worth $ [a] and each movie star autograph is worth $ [b] . her colection is valued at $ [c] . how many Tv celebrity autographs does she have ? how many of movie star autographs does she have ?
+There are [d] heads on a farm and [c] feet . How many cows -LRB- [a] legs -RRB- and how many chickens -LRB- [b] legs -RRB- are there ?
+One number is [c] times another number . The greater of the two numbers is [b] less than [a] times the difference between the two numbers . Find the numbers .
+It took you [a] hrs to travel to town , and it took you [b] hrs to travel back , because your return trip speed was [c] mph less than the outgoing speed . What was your return trip speed ?
+Maria is now [c] times as old as Kate . [b] years ago , Maria was [a] times as old as Kate . Find each of their actual ages now .
+Suppose that you have entered a [c] biathlon that consists of a run and bicycle race . During your run , your average rate is [a] mph and during your bicycle race , your average rate is [b] mph . You finish the race in [d] hours . What is the distance of the run and what is the distance of the bicycle race ?
+Stan invested $ [d] , part at [a] % and part at [b] % . If the total interest at the end of the year is $ [c] , how much did he invest at 8 % ?
+Train A , traveling [a] mph , leaves West heading toward East , [c] miles away . At the same time Train B , traveling [b] mph , leaves East heading toward West . When do the Two trains meet ?
+$ [c] worth of [a] and [b] . there are only [d] coins . how many quarters . how many dimes
+If positive number is [d] less than another positive number . [a] times lesser number minus [b] times the greater number is [c] . Find the 2 positive numbers .
+andy is [b] years older than tom . the sum of their ages is [a] . how old are they ?
+in a school the number of male teacher is [b] the number of female teacher . if total number of teacher is [a] , find the number of female teacher .
+[a] times a two digit number is the same as [b] the number obtained on interchanging the digits of the number.If one digit of the number exceeds the other by [c] , find the number .
+Sam is [d] years older than Jack . [b] Sam 's age subtracted from [a] times jack 's age is [c] more than Jack 's age . find both sam and jack 's age .
+Tom is [d] times as old as Todd . In [b] years Tom 's age will be [c] years less than [a] times as old as Todd . How old is Todd ?
+One number is [c] of another number . The sum of the two numbers is [b] less than [a] the larger number . Find the numbers .
+How many liters of a [a] % sulfuric acid solution should be mixed with [c] liters of a [d] % sulfuric acid solution to produce a [b] % solution ?
+An older person is [b] years older than [a] times the age of a younger person . The sum of their ages is [c] . Find their ages .
+[d] the larger of the two numbers is [f] more than [e] times the smaller , and then the sum of [a] times the larger and [b] times the smaller is [c] . What are the nos . ?
+The sum of two numbers is [d] . [a] times one of them is more than [b] times the second by [c] . Find the numbers .
+Danielle drove from school to home averaging [a] mph . On the way back to school she averaged [b] mph . If the total driving time was [c] hours , how long did it take her to drive each way .
+The sum of two numbers is [e] . [c] more than [b] the larger number is [d] less than [a] times the smaller . Find the numbers .
+A merchant blends tea that sells for $ [a] a pound with tea that sells for $ [b] a pound to produce [c] lb of a mixture that sells for $ [d] a pound . How much of each was added ?
+juan drives to work . because of traffic conditions , he averages [a] miles per hour . he returns home averaging [b] miles per hour . the total travel time is [c] hours . how do i do this equation ?
+A wholesale outlet has 2 grades of coffee , one selling at [a] $ / KG & the other [b] $ / KG . Sam wants to mix the 2 grades together . he wants to make [c] KG of the mixture & sell it for $ [d] / KG . How much of each grade should be mixed ?
+Juan made a [b] L of lemonade that consists of [c] % pure lemon juice . How much water must he add to dilute it to [a] % lemon juice ?
+The length of a rectangle is [b] cm more than [a] times the width . If the perimeter of the rectangle is [c] cm , what are its dimensions ? I needed help setting up this problem & answering it
+It takes [d] hours to fill a swimming pool using two pipes . If the pipe of larger diameter is used for [b] hours and the pipe with smaller diameter for [a] hours , only [c] the tank is filled . How long would it take for each pipe to fill the pool separately ? Please help !!!
+If Sally can paint a house in [a] hours , & John can paint the same house in [b] hours , how long will it take for both of them to paint the house together ?
+The number of cats in the United States exceeds the dog population by [b] m . The number of cats and dogs combined is [a] m . Determine the number of dogs and cats in the United States .
+a man is [b] years old while his daughter is [c] years old . In how many years ' time will the daughter be [a] the age of her father ?
+You are saving money to buy a set of DVDs that cost $ [a] . You have $ [b] saved . If the amount left to save is x , write an equation to represent the problem . Then solve .
+[a] of a number of two digits is greater than [b] of its successor by [c] . Find the number .
+you will mix [a] % acetone with [b] % acetone to make [c] ml of [d] % acetone.how much of each starting solution do you need ?
