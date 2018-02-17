@@ -89,6 +89,8 @@ def main():
                         # load classifier predictions
                         classifier_validation_predictions = [[x.split()[0] == 'True', float(x.split()[1])] for x in results[0].get('preds')]
                         classifier_test_predictions = [[x.split()[0] == 'True', float(x.split()[1])] for x in results[0].get('test_eval_preds')]
+                        print('classifier true acc (VAL):', 100 * (np.sum(classifier_validation_predictions)/len(classifier_validation_predictions)))
+                        print('classifier true acc (TEST):', 100 * (np.sum(classifier_test_predictions)/len(classifier_test_predictions)))
 
                         ########################################################
                         # seq2seq
@@ -96,8 +98,8 @@ def main():
                         # load s2s predictions
                         s2s_validation_predictions = np.array([x.strip() == 'True' for x in open('../tencent/data/output/s2s/corrects_valk1234.tsv').readlines()])
                         s2s_test_predictions = np.array([x.strip() == 'True' for x in open('../tencent/data/output/s2s/corrects_testk5.tsv').readlines()])
-                        print('s2s validation acc:', 100 * (np.sum(s2s_validation_predictions)/len(s2s_validation_predictions)))
-                        print('s2s test acc:', 100 * (np.sum(s2s_test_predictions)/len(s2s_test_predictions)))
+                        print('s2s true acc (VAL):', 100 * (np.sum(s2s_validation_predictions)/len(s2s_validation_predictions)))
+                        print('s2s true acc (TEST):', 100 * (np.sum(s2s_test_predictions)/len(s2s_test_predictions)))
 
                         ########################################################
                         # retrieval
