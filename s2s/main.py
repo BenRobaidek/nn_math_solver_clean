@@ -7,7 +7,7 @@ import subprocess
 import random
 import itertools
 import onmt
-from onmt import train, opts
+from onmt import opts
 from tencent import solver
 
 def main():
