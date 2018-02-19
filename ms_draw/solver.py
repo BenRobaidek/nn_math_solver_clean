@@ -19,8 +19,8 @@ def solve(equations, variables, answers):
 
         # sub variables into predicted and target equations
         var = eval(var)
-        for k in var:
-            eq = eq.replace(k, str(var[k]))
+        for constant in var:
+            eq = eq.replace('[' + constant['coeff'] + ']', constant['value'])
 
         # replace ^ with ** in predicted equation
         eq = eq.replace('^', '**')
