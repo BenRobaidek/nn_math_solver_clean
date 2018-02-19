@@ -33,7 +33,7 @@ def solve(equations, variables, answers):
         if (eq is not '<unk>') and '=' in eq:
 
             # get variables out of predicted equation
-            answer_variables = np.unique(re.findall(r'VAR_[\d]', eq, flags=0))
+            answer_variables = np.unique(re.findall(r'\[[mnop]\]', eq, flags=0))
 
             eq = eq.split(',')
             for k,p in enumerate(eq):
@@ -44,10 +44,11 @@ def solve(equations, variables, answers):
             #print(answer_variables)
 
             if not len(np.unique(re.findall(r'\[[a-z]\]', ','.join(eq)))) >= 1:
-                #print('eq:', eq)
+                print('eq:', eq)
                 expr = [parse_expr(x) for x in eq]
                 symbols = sympy.symbols(' '.join(answer_variables))
                 pred_answers = sympy.solve(expr)#, symbols)
+                print('pred_answers:', pred_answers)
 
             all_equal = False
             if len(pred_answers) == len(ans):
