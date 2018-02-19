@@ -30,7 +30,7 @@ def solve(equations, variables, answers):
         #print('ans:', ans)
 
         print('eq:', eq)
-        if (eq is not '<unk>'):
+        if (eq.strip() is not '<unk>'):
 
             # get variables out of predicted equation
             answer_variables = np.unique(re.findall(r'\[[mnop]\]', eq, flags=0))
