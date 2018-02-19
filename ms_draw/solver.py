@@ -1,5 +1,5 @@
 """
-Solver for kushman problems
+Solver for ms_draw problems
 """
 import numpy as np
 import re
@@ -11,7 +11,7 @@ def solve(equations, variables, answers):
     for eq, var, ans in zip(equations, variables, answers):
         #print('eq:', eq)
         #print('var:', var)
-        #print('ans:', ans)
+        #print('ans:', ans)asdfasdf
         ans = eval(ans)
         for i,a in enumerate(ans):
             #print('type(a):', type(a))
@@ -47,6 +47,7 @@ def solve(equations, variables, answers):
             if not len(np.unique(re.findall(r'\[[a-l]\]', ','.join(eq)))) >= 1:
                 #print('eq:', eq)
                 expr = [parse_expr(x.replace('[', '').replace(']', '')) for x in eq]
+                print(answer_variables)
                 symbols = sympy.symbols(' '.join(answer_variables))
                 pred_answers = sympy.solve(expr)#, symbols)
                 #print('pred_answers:', pred_answers)
