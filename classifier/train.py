@@ -157,6 +157,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
 
         # load correct solver
         solver = None
+        print('data path:', data_path)
         if 'tencent' in data_path: solver = tencent_solver
         if 'kushman' in data_path: solver = kushman_solver
         if 'ms_draw' in data_path: solver = kushman_solver
