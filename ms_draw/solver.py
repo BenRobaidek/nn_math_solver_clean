@@ -67,4 +67,6 @@ def solve(equations, variables, answers):
         elif (eq.strip() == '<unk>'):
             print('UNK')
             corrects = np.append(corrects, [True])
+        else:
+            print("ASDFASDFASDFASDFASDFASDF")
     return corrects.astype(bool)
