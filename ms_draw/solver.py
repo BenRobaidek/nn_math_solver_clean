@@ -49,7 +49,7 @@ def solve(equations, variables, answers):
                 expr = [parse_expr(x.replace('[', '').replace(']', '')) for x in eq]
                 print(answer_variables)
                 symbols = sympy.symbols(' '.join(answer_variables))
-                pred_answers = sympy.solve(expr)#, symbols)
+                pred_answers = sympy.solve(expr, symbols)
                 #print('pred_answers:', pred_answers)
 
             all_equal = False
