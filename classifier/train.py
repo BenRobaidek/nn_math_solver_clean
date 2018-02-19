@@ -12,8 +12,10 @@ import sys
 sys.path.append('../')
 sys.path.append('../tencent/')
 sys.path.append('../kushman/')
+sys.path.append('../ms_draw/')
 from tencent import solver as tencent_solver
 from kushman import solver as kushman_solver
+from ms_draw import solver as msdraw_solver
 
 import model as m
 from evaluate import evaluate
@@ -157,6 +159,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
         solver = None
         if 'tencent' in data_path: solver = tencent_solver
         if 'kushman' in data_path: solver = kushman_solver
+        if 'ms_draw' in data_path: solver = kushman_solver
 
         (avg_loss, accuracy, true_acc, corrects, size, t5_acc, t5_corrects, mrr, eval_preds) = evaluate(
                 val_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES_VAL, ANS_VAL, snis, pred_filter=pred_filter, solver=solver)

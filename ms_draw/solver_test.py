@@ -1,6 +1,6 @@
 import solver
 
-pred_equations = open('./data/basic/').readlines()
+pred_equations = open('./data/no_sni/').readlines()
 tgt_equations =
 variables =
 answers =
