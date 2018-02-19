@@ -9,9 +9,9 @@ from sympy.parsing.sympy_parser import parse_expr
 def solve(equations, variables, answers):
     corrects = np.array([])
     for eq, var, ans in zip(equations, variables, answers):
-        print('eq:', eq)
-        print('var:', var)
-        print('ans:', ans)
+        #print('eq:', eq)
+        #print('var:', var)
+        #print('ans:', ans)
         ans = eval(ans)
         for i,a in enumerate(ans):
             #print('type(a):', type(a))
@@ -43,13 +43,13 @@ def solve(equations, variables, answers):
             pred_answers = dict()
             #print(answer_variables)
 
-            print('answer_variables:', answer_variables)
+            #print('answer_variables:', answer_variables)
             if not len(np.unique(re.findall(r'\[[a-l]\]', ','.join(eq)))) >= 1:
-                print('eq:', eq)
+                #print('eq:', eq)
                 expr = [parse_expr(x.replace('[', '').replace(']', '')) for x in eq]
                 symbols = sympy.symbols(' '.join(answer_variables))
                 pred_answers = sympy.solve(expr)#, symbols)
-                print('pred_answers:', pred_answers)
+                #print('pred_answers:', pred_answers)
 
             all_equal = False
             if len(pred_answers) == len(ans):
