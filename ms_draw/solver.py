@@ -65,5 +65,6 @@ def solve(equations, variables, answers):
                 #print()
             corrects = np.append(corrects, [all_equal])
         if (eq is '<unk>'):
+            print('UNK')
             corrects = np.append(corrects, [True])
     return corrects.astype(bool)
