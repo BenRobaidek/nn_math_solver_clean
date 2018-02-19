@@ -29,7 +29,7 @@ def solve(equations, variables, answers):
         #print('var:', var)
         #print('ans:', ans)
 
-        print('eq:', eq)
+        #print('eq:', eq)
         if (not eq.strip() == '<unk>'):
 
             # get variables out of predicted equation
@@ -47,7 +47,7 @@ def solve(equations, variables, answers):
             if not len(np.unique(re.findall(r'\[[a-l]\]', ','.join(eq)))) >= 1:
                 #print('eq:', eq)
                 expr = [parse_expr(x.replace('[', '').replace(']', '')) for x in eq]
-                print(answer_variables)
+                #print(answer_variables)
                 symbols = sympy.symbols(' '.join(answer_variables))
                 pred_answers = sympy.solve(expr, symbols)
                 #print('pred_answers:', pred_answers)
