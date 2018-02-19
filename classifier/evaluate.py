@@ -49,14 +49,14 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         equations = np.array(LABELS.vocab.itos)[np.array(preds.data)]
         variables = np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)]
         answers = np.array(ANS.vocab.itos)[np.array(batch.ans.data)]
-
+        print('equations:', equations)
         # solve predicted equations if possible, true iff solved correctly
         pred_corrects = solver.solve(equations, variables, answers)
         true_corrects += np.sum(pred_corrects)
 
         # solve tgt equations if possible, true iff solved correctly
         equations = np.array(LABELS.vocab.itos)[np.array(batch.label.data)]
-        print('equations:', equations)
+
         tgt_corrects = solver.solve(equations, variables, answers)
         print('pred_corrects:', pred_corrects)
         print('tgt_corrects:', tgt_corrects)
