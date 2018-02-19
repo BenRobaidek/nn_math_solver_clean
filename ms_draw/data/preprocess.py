@@ -1,48 +1,73 @@
 import json
 import numpy as np
+import json
+import copy
+import re
+import math
 
 def main():
-    jsonToTsv('./input/train.txt',  './input/draw.json', './working/no_sni/train.tsv')
-    jsonToTsv('./input/val.txt',    './input/draw.json', './working/no_sni/val.tsv')
-    jsonToTsv('./input/test.txt',   './input/draw.json', './working/no_sni/test.tsv')
+    # LOAD JSON DATA
+    jsondata = json.loads(open('./input/draw.json').read())
+    jsondata_no_sni = copy.deepcopy(jsondata)
 
-def jsonToTsv(indices_path, json_path, output_path):
-    json_indices = np.genfromtxt(indices_path).astype(int)
-    print(indices_path)
-    print(len(json_indices))
-    data = json.loads(open(json_path).read())
+    # PREPROCESS DATA WITHOUT SNI
+    #TODO
+
+    # PREPROCESS DATA WITHOUT SNI
+    print('Preprocessing without sni...')
+    for d in jsondata_no_sni:
+        d['sQuestion'], d['Template'] = preprocess(d['sQuestion'], d['Template'], d['Alignment'], model=None, fields=None, use_sni=False)
+    print('Preprocessing without sni complete...')
+
+    # LOAD INDICES
+    train_indices = [int(x.strip()) for x in open('./input/train.txt').readlines()]
+    val_indices = [int(x.strip()) for x in open('./input/val.txt').readlines()]
+    test_indices = [int(x.strip()) for x in open('./input/test.txt').readlines()]
+
+    # OUTPUT TO JSON FILES
+    jsonToTsv(train_indices,  jsondata_no_sni, './working/no_sni/train.tsv')
+    jsonToTsv(val_indices,    jsondata_no_sni, './working/no_sni/val.tsv')
+    jsonToTsv(test_indices,   jsondata_no_sni, './working/no_sni/test.tsv')
+
+def preprocess(question, template, alignment, model, fields, use_sni=True):
+    # Preprocess Question
+    question = question.strip() + ' '
+    if re.search('( [.?] )$', question) is None: question = question + ' . '
+    if re.search('( [.?] )', question) is not None: question = re.split('( [.?] )', question)
+    else: question = re.split('( [.?] )', question + ' . ')
+    #if not question[-1] == '.': question = question + ['.']
+    question = [x.split() for x in question]
+    question = question[0:-1]
+    question = [np.append(question[2*i], question[2*i+1]).astype(str) for i in range(0,int(math.floor(len(question))/2))]
+
+    for constant in alignment:
+        question[constant['SentenceId']][constant['TokenId']] = '[' + constant['coeff'] + ']'
+
+    question = [' '.join(x) for x in question]
+    question = ' '.join(question)
+
+    # Preprocess Equations
+    for j,eq in enumerate(template):
+        symbols = eq.split()
+        for i,symbol in enumerate(symbols):
+            if symbol not in ['+', '-', '*', '/', '(', ')', '='] and not isFloat(symbol):
+                symbols[i] = '[' + symbol + ']'
+        template[j] = ' '.join(symbols)
+    print('template:', template)
+
+    return question, template
+
+
+def jsonToTsv(indices, data, output_path):
     output = open(output_path, 'w')
     for d in data:
-        #print(d['iIndex'] in indices)
-        if d['iIndex'] in json_indices:
-            #print(d['sQuestion'])
-
-            # Preprocess Question
-            tokens = np.array(d['sQuestion'].split())
-            for a in d['Alignment']:
-                indices = np.array([])
-                indices = np.append(indices, np.where(tokens == '.')) # add . indicies
-                indices = np.append(indices, np.where(tokens == '?')) ## add ? indicies
-                indices += 1
-                indices = np.append(indices, [0])
-                indices.sort()
-                tokens[int(indices[a['SentenceId']] + a['TokenId'])] = '[' + a['coeff'] + ']'
-            for token in tokens:
-                output.write(token + ' ')
-            output.write('\t')
-
-            # Preprocess Equations
-            result = ''
-            for eq in d['Template']:
-                symbols = eq.split()
-                for i,symbol in enumerate(symbols):
-                    if symbol not in ['+', '-', '*', '/', '(', ')', '='] and not isFloat(symbol):
-                        symbols[i] = '[' + symbol + ']'
-                for symbol in symbols:
-                    result += str(symbol) + ' '
-                result += ' ; '
-            result = result[:-3]
-            output.write(result + '\n')
+        if d['iIndex'] in indices:
+            result = d['sQuestion'] + '\t'
+            result = result + str(','.join(d['Template'])) + '\t'
+            result = result + str(d['Alignment']) + '\t'
+            result = result + str(d['lSolutions']) + '\n'
+            output.write(result)
+    output.close()
 
 def isFloat(value):
   try:
