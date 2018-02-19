@@ -56,7 +56,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
 
         # solve tgt equations if possible, true iff solved correctly
         equations = np.array(LABELS.vocab.itos)[np.array(batch.label.data)]
-        print('equations:', equation)
+        print('equations:', equations)
         tgt_corrects = solver.solve(equations, variables, answers)
         print('pred_corrects:', pred_corrects)
         print('tgt_corrects:', tgt_corrects)
