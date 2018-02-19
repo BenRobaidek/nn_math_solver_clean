@@ -20,14 +20,14 @@ def main():
     print('Preprocessing without sni complete...')
 
     # LOAD INDICES
-    train_indicesk1234 = [int(x.strip()) for x in open('./input/traink.txt').readlines()]
+    train_indicesk1234 = [int(x.strip()) for x in open('./input/train.txt').readlines()]
     val_indicesk1234 = [int(x.strip()) for x in open('./input/val.txt').readlines()]
     test_indicesk5 = [int(x.strip()) for x in open('./input/test.txt').readlines()]
 
     # OUTPUT TO JSON FILES
-    jsonToTsv(train_indices,  jsondata_no_sni, './working/no_sni/traink1234.tsv')
-    jsonToTsv(val_indices,    jsondata_no_sni, './working/no_sni/valk1234.tsv')
-    jsonToTsv(test_indices,   jsondata_no_sni, './working/no_sni/testk5.tsv')
+    jsonToTsv(train_indicesk1234,  jsondata_no_sni, './working/no_sni/traink1234.tsv')
+    jsonToTsv(val_indicesk1234,    jsondata_no_sni, './working/no_sni/valk1234.tsv')
+    jsonToTsv(test_indicesk5,   jsondata_no_sni, './working/no_sni/testk5.tsv')
 
 def preprocess(question, template, alignment, model, fields, use_sni=True):
     # Preprocess Question
