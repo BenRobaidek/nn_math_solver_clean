@@ -57,7 +57,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         # solve tgt equations if possible, true iff solved correctly
         equations = np.array(LABELS.vocab.itos)[np.array(batch.label.data)]
         tgt_corrects = solver.solve(equations, variables, answers)
-        #print(tgt_corrects)
+        print('tgt_corrects:', tgt_corrects)
         answer_correspond_to_equation += np.sum(tgt_corrects)
 
         # get classifier probabilities
