@@ -160,7 +160,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
         print('data path:', data_path)
         if 'tencent' in data_path: solver = tencent_solver
         if 'kushman' in data_path: solver = kushman_solver
-        if 'ms_draw' in data_path: solver = kushman_solver
+        if 'ms_draw' in data_path: solver = tencent_solver
 
         (avg_loss, accuracy, true_acc, corrects, size, t5_acc, t5_corrects, mrr, eval_preds) = evaluate(
                 val_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES_VAL, ANS_VAL, snis, pred_filter=pred_filter, solver=solver)
