@@ -43,6 +43,7 @@ def solve(equations, variables, answers):
             pred_answers = dict()
             #print(answer_variables)
 
+            print('answer_variables:', answer_variables)
             if not len(np.unique(re.findall(r'\[[a-l]\]', ','.join(eq)))) >= 1:
                 print('eq:', eq)
                 expr = [parse_expr(x) for x in eq]
