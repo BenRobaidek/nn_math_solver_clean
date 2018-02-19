@@ -25,9 +25,9 @@ def solve(equations, variables, answers):
         # replace ^ with ** in predicted equation
         eq = eq.replace('^', '**')
 
-        print('eq:', eq)
-        print('var:', var)
-        print('ans:', ans)
+        #print('eq:', eq)
+        #print('var:', var)
+        #print('ans:', ans)
 
 
         if (eq is not '<unk>') and '=' in eq:
