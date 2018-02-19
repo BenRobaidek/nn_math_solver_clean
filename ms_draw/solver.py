@@ -20,7 +20,7 @@ def solve(equations, variables, answers):
         # sub variables into predicted and target equations
         var = eval(var)
         for constant in var:
-            eq = eq.replace('[' + constant['coeff'] + ']', constant['value'])
+            eq = eq.replace('[' + constant['coeff'] + ']', constant['Value'])
 
         # replace ^ with ** in predicted equation
         eq = eq.replace('^', '**')
