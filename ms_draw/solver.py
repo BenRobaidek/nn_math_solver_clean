@@ -29,7 +29,7 @@ def solve(equations, variables, answers):
         #print('var:', var)
         #print('ans:', ans)
 
-
+        print('eq:', eq)
         if (eq is not '<unk>'):
 
             # get variables out of predicted equation
