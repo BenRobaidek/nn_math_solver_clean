@@ -9,9 +9,9 @@ from sympy.parsing.sympy_parser import parse_expr
 def solve(equations, variables, answers):
     corrects = np.array([])
     for eq, var, ans in zip(equations, variables, answers):
-        #print('eq:', eq)
-        #print('var:', var)
-        #print('ans:', ans)
+        print('eq:', eq)
+        print('var:', var)
+        print('ans:', ans)
         ans = eval(ans)
         for i,a in enumerate(ans):
             #print('type(a):', type(a))
@@ -24,6 +24,11 @@ def solve(equations, variables, answers):
 
         # replace ^ with ** in predicted equation
         eq = eq.replace('^', '**')
+
+        print('eq:', eq)
+        print('var:', var)
+        print('ans:', ans)
+
 
         if (eq is not '<unk>') and '=' in eq:
 
