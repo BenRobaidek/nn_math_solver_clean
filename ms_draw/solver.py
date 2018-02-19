@@ -54,6 +54,7 @@ def solve(equations, variables, answers):
                 correct_answers = np.less(differences, np.ones(np.shape(pred_answers.values())) * .002)
                 #print('correct_answers:', correct_answers)
                 all_equal = np.all(correct_answers)
+                if all_equal: print(pred_answers)
                 #print('all_equal:', all_equal)
                 #print()
             corrects = np.append(corrects, [all_equal])
