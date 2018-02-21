@@ -51,5 +51,5 @@ def solve(equations, variables, answers):
             corrects = np.append(corrects, [False])
             examples_not_working += 1
 
-    print('examples_not_working', examples_not_working)
+    #print('examples_not_working', examples_not_working)
     return corrects.astype(bool)
