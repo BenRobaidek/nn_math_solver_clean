@@ -101,6 +101,7 @@ def main():
                         # seq2seq
                         ########################################################
                         # load s2s predictions
+                        print('config[data_path]:', config['data_path'])
                         s2s_validation_predictions_path = config['data_path'].strip('/working/basic/') + '/output/s2s/corrects_valk1234.tsv'
                         s2s_test_predictions_path = config['data_path'].strip('/working/basic/') + '/output/s2s/corrects_testk5.tsv'
                         s2s_validation_predictions = np.array([x.strip() == 'True' for x in open(s2s_validation_predictions_path).readlines()])
