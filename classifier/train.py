@@ -166,6 +166,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
 
         (avg_loss, accuracy, true_acc, corrects, size, t5_acc, t5_corrects, mrr, eval_preds) = evaluate(
                 val_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES_VAL, ANS_VAL, snis, pred_filter=pred_filter, solver=solver)
+        print('Classification acc___ (VAL):', accuracy)
         (_, test_acc, test_true_acc, _, _, _, _, _, test_eval_preds) = evaluate(
                 test_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES_TEST, ANS_TEST, snis, pred_filter=pred_filter, solver=solver)
 
