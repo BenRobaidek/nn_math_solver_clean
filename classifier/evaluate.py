@@ -49,7 +49,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
         equations = np.array(LABELS.vocab.itos)[np.array(preds.data)]
         variables = np.array(VAR_VALUES.vocab.itos)[np.array(batch.var_values.data)]
         answers = np.array(ANS.vocab.itos)[np.array(batch.ans.data)]
-        
+
         # solve predicted equations if possible, true iff solved correctly
         pred_corrects = solver.solve(equations, variables, answers)
         true_corrects += np.sum(pred_corrects)
@@ -93,7 +93,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
     true_acc = 100.0 * true_corrects/size
     #print('acc:', accuracy)
     #print('true_acc:', true_acc)
-    print('answer_correspond_to_equation:', answer_correspond_to_equation/size)
+    #print('answer_correspond_to_equation:', answer_correspond_to_equation/size)
     #print()
     t5_acc = 100.0 * t5_corrects/size
     mrr = rr/size
