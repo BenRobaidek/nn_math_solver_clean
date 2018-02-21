@@ -174,11 +174,13 @@ def main():
     ############################################################################
     # RETRAIN/SAVE BEST MODEL
     ############################################################################
-    if input('Do you wish to train the best model found thus far? (y/n)? ') == 'y':
+    if input('Do you wish to report the best model found thus far? (y/n)? ') == 'y':
         print('hyperparam_results:', hyperparam_results)
 
         #best_hyperparams = sorted(hyperparams_results, key=lambda x: x.values()['accuracy'],
         #        reverse=True)
+
+        """
         train(data_path=config['data_path'],
                 train_path='train.tsv',
                 val_path='val.tsv', test_path='test.tsv', mf=mf,
@@ -187,6 +189,7 @@ def main():
                 embfix=bool(embfix), pretrained_emb=bool(ptemb),
                 dropout=dropout, pred_filter=bool(pred_filter),
                 save_path='./', save=False, verbose=False)
+        """
 
 def getThresh(class_predictions, s2s_predictions):
     """
