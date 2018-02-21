@@ -5,8 +5,8 @@ sys.path.append('../tencent')
 from tencent import solver
 
 def main():
-    pred_equations = open('../ms_draw/data/output/s2s_nosni/pred-test.txt').readlines()
-    tgt_equations = [x.split('\t')[1] for x in open('../ms_draw/data/working/no_sni/test.tsv').readlines()]
+    pred_equations = open('../mawps/data/output/s2s/pred-test.txt').readlines()
+    tgt_equations = [x.split('\t')[1] for x in open('../ms_draw/data/test.tsv').readlines()]
 
     #variables = [x.split('\t')[2] for x in open('../ms_draw/data/working/no_sni/testk5.tsv').readlines()]
     #answers = [x.split('\t')[3] for x in open('../ms_draw/data/working/no_sni/testk5.tsv').readlines()]
