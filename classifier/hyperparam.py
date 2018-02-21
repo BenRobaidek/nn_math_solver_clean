@@ -30,8 +30,6 @@ def main():
     with open(args.config, 'r') as f:
         config = json.load(f)
 
-    print(config['data_path'])
-
     ############################################################################
     # HYPERPARAM SEARCH
     ############################################################################
@@ -103,6 +101,8 @@ def main():
                         # seq2seq
                         ########################################################
                         # load s2s predictions
+                        s2s_validation_predictions_path = config['data_path'].strip('working/basic/') + 'output/s2s/corrects_valk1234.tsv'
+                        s2s_test_predictions_path = config['data_path'].strip('working/basic/') + 'output/s2s/corrects_testk5.tsv'
                         s2s_validation_predictions = np.array([x.strip() == 'True' for x in open('../tencent/data/output/s2s/corrects_valk1234.tsv').readlines()])
                         s2s_test_predictions = np.array([x.strip() == 'True' for x in open('../tencent/data/output/s2s/corrects_testk5.tsv').readlines()])
                         print('s2s true acc (VAL):', 100 * (np.sum(s2s_validation_predictions)/len(s2s_validation_predictions)))
