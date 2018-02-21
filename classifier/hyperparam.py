@@ -82,7 +82,7 @@ def main():
                                 dropout=dropout, pred_filter=bool(pred_filter),
                                 save_path='./hyperparam_results/' + save_path + '/', save=False, verbose=False)
                         results = sorted(results, key=lambda x: x['true_acc'], reverse=True)
-                        
+
                         ########################################################
                         # classifier
                         ########################################################
@@ -91,7 +91,7 @@ def main():
                         classifier_test_predictions = [[x.split()[0] == 'True', float(x.split()[1])] for x in results[0].get('test_eval_preds')]
 
                         results = sorted(results, key=lambda x: x['accuracy'], reverse=True)
-                        print('Classification acc:', results[0].get('accuracy'))
+                        print('Classification acc (TEST):', results[0].get('test_acc'))
 
                         #print('results:', results)
                         print('classifier true acc (VAL):', 100 * (np.sum(classifier_validation_predictions)/len(classifier_validation_predictions)))
