@@ -90,8 +90,8 @@ def main():
                         classifier_validation_predictions = [[x.split()[0] == 'True', float(x.split()[1])] for x in results[0].get('preds')]
                         classifier_test_predictions = [[x.split()[0] == 'True', float(x.split()[1])] for x in results[0].get('test_eval_preds')]
 
-                        results = sorted(results, key=lambda x: x['acc'], reverse=True)
-                        print('Classification acc:', results[0].get('acc'))
+                        results = sorted(results, key=lambda x: x['accuracy'], reverse=True)
+                        print('Classification acc:', results[0].get('accuracy'))
 
                         #print('results:', results)
                         print('classifier true acc (VAL):', 100 * (np.sum(classifier_validation_predictions)/len(classifier_validation_predictions)))
