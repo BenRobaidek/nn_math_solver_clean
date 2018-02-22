@@ -12,9 +12,9 @@ def solve(equations, variables, answers):
     test = [x.split('\t')[1] for x in open('../mawps/data/test.tsv').readlines()]
     for pred_eq, gold_eq, var in zip(equations, test, test_dicts):
         var = eval(var)
-        print('pred_eq', pred_eq)
-        print('gold_eq', gold_eq)
-        print('var', var)
+        #print('pred_eq', pred_eq)
+        #print('gold_eq', gold_eq)
+        #print('var', var)
 
         for k in var.keys():
             pred_eq = pred_eq.replace(var.get(k), str(k))
@@ -27,11 +27,6 @@ def solve(equations, variables, answers):
             symbols = sympy.symbols('x')
             pred_answer = sympy.solve(expr, symbols)
 
-        print('pred_eq', pred_eq)
-        print('gold_eq.split(=)', gold_eq.split('='))
-        print('gold_eq.split(=)[0]', gold_eq.split('=')[0])
-        print('gold_eq.split(=)[1]', gold_eq.split('=')[1])
-        print('var', var)
         gold_answer = None
         if (not gold_eq.strip()=='<unk>') and ('[' not in gold_eq) and '=' in gold_eq:
             gold_eq = '(' + gold_eq.split('=')[1] + ') - (' + gold_eq.split('=')[0] + ')'
@@ -39,11 +34,10 @@ def solve(equations, variables, answers):
             symbols = sympy.symbols('x')
             gold_answer = sympy.solve(expr, symbols)
 
-        print('pred_eq', pred_eq)
-        print('gold_eq', gold_eq)
-        print('var', var)
-
+        if abs(pred_answer - gold_answer) < .002:
+            corrects = np.append(corrects, [True])
+        else:
+            corrects = np.append(corrects, [False])
 
     #print('test_dicts:', test_dicts)
-    corrects = np.ones(len(equations))
     return corrects.astype(bool)
