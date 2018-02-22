@@ -11,10 +11,10 @@ def main():
     variables = [x.split('\t')[2] for x in open('../ms_draw/data/working/no_sni/testk5.tsv').readlines()]
     answers = [x.split('\t')[3] for x in open('../ms_draw/data/working/no_sni/testk5.tsv').readlines()]
 
-    print('pred_equations:', pred_equations)
-    print('tgt_equations:', tgt_equations)
-    print('variables:', variables)
-    print('answers:', answers)
+    #print('pred_equations:', pred_equations)
+    #print('tgt_equations:', tgt_equations)
+    #print('variables:', variables)
+    #print('answers:', answers)
 
     corrects = solver.solve(pred_equations, variables, answers)
 
@@ -29,6 +29,7 @@ def main():
     print('per class accuracy:', 100*class_corrects/len(pred_equations))
 
     output = open('../ms_draw/data/output/s2s_nosni/corrects_testk5.txt', 'w')
+    print(corrects)
     for x in corrects:
         output.write(str(x) + '\n')
     output.close()
