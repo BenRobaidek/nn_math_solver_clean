@@ -120,7 +120,7 @@ def main():
                         # compute C + S cross val acc
 
                         best_thresh = getThresh(
-                                classifier_validation_predictions,
+                                classifier_test_predictions,
                                 s2s_validation_predictions
                                 )
                         print('best_thresh:', best_thresh)
