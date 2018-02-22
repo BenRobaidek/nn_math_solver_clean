@@ -63,7 +63,7 @@ def solve(equations, variables, answers):
                 #print('correct_answers:', correct_answers)
                 all_equal = np.all(correct_answers)
                 #print('all_equal:', all_equal)
-                if not all_equal: print('pred_answers:', pred_answers.values(), 'ans:', ans)
+                if not all_equal: print('pred_answers:', sorted(pred_answers.values()), 'ans:', sorted(ans))
             corrects = np.append(corrects, [all_equal])
         elif (eq.strip() == '<unk>'):
             corrects = np.append(corrects, [True])
