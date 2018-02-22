@@ -46,7 +46,7 @@ def solve(equations, variables, answers):
             #print('answer_variables:', answer_variables)
             if not len(np.unique(re.findall(r'\[[a-l]\]', ','.join(eq)))) >= 1:
                 #print('eq:', eq)
-                print(x.replace('[', '').replace(']', ''))
+                print(eq)
                 expr = [parse_expr(x.replace('[', '').replace(']', '')) for x in eq]
                 #print(answer_variables)
                 symbols = sympy.symbols(' '.join(answer_variables))
