@@ -22,8 +22,8 @@ def main():
     class_corrects = 0
     assert len(pred_equations) == len(tgt_equations)
     for p,t in zip(pred_equations, tgt_equations):
-        print('p:', p)
-        print('t:', t)
+        print('p:', p.strip())
+        print('t:', t.strip())
         p = ','.join([x.strip() for x in p.split(';')])
         t = ','.join([x.strip() for x in t.split(',')])
         if not p.strip() == t.strip(): print(p.strip(),t.strip())
