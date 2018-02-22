@@ -24,6 +24,7 @@ def solve(equations, variables, answers):
         gold_eq = '(' + gold_eq.split('=')[1] + ') - (' + gold_eq.split('=')[0] + ')'
 
         if (pred_eq is not '<unk>'):
+            print(pred_eq)
             expr = parse_expr(pred_eq)
             symbols = sympy.symbols('x')
             pred_answers = sympy.solve(expr, symbols)
