@@ -94,11 +94,11 @@ def main():
                         print('Classification acc (TEST):', results[0].get('test_acc'))
 
                         #print('results:', results)
-                        print('classifier_validation_predictions:', classifier_validation_predictions)
-                        print('np.sum(classifier_validation_predictions):', np.sum(classifier_validation_predictions))
-                        print('len(classifier_validation_predictions):', len(classifier_validation_predictions))
-                        print('np.sum(classifier_test_predictions):', np.sum(classifier_test_predictions))
-                        print('len(classifier_test_predictions):', len(classifier_test_predictions))
+                        print('classifier_validation_predictions[0,:]:', classifier_validation_predictions[0,:])
+                        print('np.sum(classifier_validation_predictions[0,:]):', np.sum(classifier_validation_predictions[0,:]))
+                        print('len(classifier_validation_predictions[0,:]):', len(classifier_validation_predictions[0,:]))
+                        print('np.sum(classifier_test_predictions[0,:]):', np.sum(classifier_test_predictions[0,:]))
+                        print('len(classifier_test_predictions[0,:]):', len(classifier_test_predictions[0,:]))
 
 
 
