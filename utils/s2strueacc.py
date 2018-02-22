@@ -1,15 +1,15 @@
 import sys
 import numpy as np
 sys.path.append('../')
-sys.path.append('../tencent')
-from tencent import solver
+sys.path.append('../ms_draw')
+from ms_draw import solver
 
 def main():
-    pred_equations = open('../tencent/data/output/s2s_basic/pred-valk1234.txt').readlines()
-    tgt_equations = [x.split('\t')[1] for x in open('../tencent/data/working/basic/valk1234.tsv').readlines()]
+    pred_equations = open('../ms_draw/data/output/s2s_nosni/pred-valk1234.txt').readlines()
+    tgt_equations = [x.split('\t')[1] for x in open('../ms_draw/data/working/no_sni/valk1234.tsv').readlines()]
 
-    variables = [x.split('\t')[2] for x in open('../tencent/data/working/no_sni/valk1234.tsv').readlines()]
-    answers = [x.split('\t')[3] for x in open('../tencent/data/working/no_sni/valk1234.tsv').readlines()]
+    variables = [x.split('\t')[2] for x in open('../ms_draw/data/working/no_sni/valk1234.tsv').readlines()]
+    answers = [x.split('\t')[3] for x in open('../ms_draw/data/working/no_sni/valk1234.tsv').readlines()]
 
     print('pred_equations:', pred_equations)
     print('tgt_equations:', tgt_equations)
@@ -28,7 +28,7 @@ def main():
         if p.strip() == t.strip(): class_corrects += 1
     print('per class accuracy:', 100*class_corrects/len(pred_equations))
 
-    output = open('../tencent/data/output/s2s_basic/corrects_valk1234.txt', 'w')
+    output = open('../ms_draw/data/output/s2s_basic/corrects_valk1234.txt', 'w')
     for x in corrects:
         output.write(str(x) + '\n')
     output.close()
