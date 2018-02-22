@@ -50,6 +50,8 @@ def solve(equations, variables, answers):
                 #print('pred_answers:', pred_answers)
 
             all_equal = False
+            print('pred_answers:', pred_answers)
+            print('ans:', ans)
             if len(pred_answers) == len(ans):
                 print('ASDF')
                 #print('pred_answers:', pred_answers)
