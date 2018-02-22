@@ -30,7 +30,13 @@ def solve(equations, variables, answers):
             symbols = sympy.symbols('x')
             pred_answer = sympy.solve(expr, symbols)
 
-        print(pred_answer)
+        gold_answer = None
+        if (not gold_eq.strip()=='<unk>') and ('[' not in gold_eq):
+            gold_eq = '(' + gold_eq.split('=')[1] + ') - (' + gold_eq.split('=')[0] + ')'
+            gold_eq = '(' + gold_eq.split('=')[1] + ') - (' + gold_eq.split('=')[0] + ')'
+            expr = parse_expr(gold_eq)
+            symbols = sympy.symbols('x')
+            gold_answer = sympy.solve(expr, symbols)
 
         print('pred_eq', pred_eq)
         print('gold_eq', gold_eq)
