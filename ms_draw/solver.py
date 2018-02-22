@@ -40,6 +40,7 @@ def solve(equations, variables, answers):
             pred_answers = dict()
             print('eq:', eq)
 
+            answer_variables = [x.replace('[', '').replace(']', '') for x in answer_variables]
             print('answer_variables:', answer_variables)
             if not len(np.unique(re.findall(r'\[[a-l]\]', ','.join(eq)))) >= 1:
                 #print('eq:', eq)
