@@ -28,7 +28,7 @@ def main():
         if p.strip() == t.strip(): class_corrects += 1
     print('per class accuracy:', 100*class_corrects/len(pred_equations))
 
-    output = open('../ms_draw/data/output/s2s_basic/corrects_valk1234.txt', 'w')
+    output = open('../ms_draw/data/output/s2s_nosni/corrects_valk1234.txt', 'w')
     for x in corrects:
         output.write(str(x) + '\n')
     output.close()
