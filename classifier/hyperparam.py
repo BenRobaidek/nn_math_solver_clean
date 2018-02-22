@@ -94,6 +94,13 @@ def main():
                         print('Classification acc (TEST):', results[0].get('test_acc'))
 
                         #print('results:', results)
+                        print('np.sum(classifier_validation_predictions):', np.sum(classifier_validation_predictions))
+                        print('len(classifier_validation_predictions):', len(classifier_validation_predictions))
+                        print('np.sum(classifier_test_predictions):', np.sum(classifier_test_predictions))
+                        print('len(classifier_test_predictions):', len(classifier_test_predictions))
+
+
+
                         print('classifier true acc (VAL):', 100 * (np.sum(classifier_validation_predictions)/len(classifier_validation_predictions)))
                         print('classifier true acc (TEST):', 100 * (np.sum(classifier_test_predictions)/len(classifier_test_predictions)))
 
