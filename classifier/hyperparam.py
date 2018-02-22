@@ -112,7 +112,10 @@ def main():
                         # retrieval
                         ########################################################
                         # load retrieval predictions
-                        retrieval_validation_predictions = [[x.strip().split()[0] == 'True', float(x.strip().split()[1])] for x in open('../tencent/data/output/retrieval/correctsk1.tsv').readlines()]
+                        retrieval_validation_predictions = [[x.strip().split()[0] == 'True', float(x.strip().split()[1])] for x in open('../tencent/data/output/retrieval/val.correct.txt.tsv').readlines()]
+                        retrieval_test_predictions = [[x.strip().split()[0] == 'True', float(x.strip().split()[1])] for x in open('../tencent/data/output/retrieval/test.correct.txt.tsv').readlines()]
+                        print(retrieval_validation_predictions)
+                        print(retrieval_test_predictions
                         print('retrieval validation acc:', 'TODO')
 
                         ########################################################
@@ -153,7 +156,7 @@ def main():
                         # retrieval + classifier
                         ########################################################
                         # compute R + C cross val acc
-                        # TODO
+
 
                         ########################################################
                         # retrieval + seq2seq
@@ -165,7 +168,7 @@ def main():
                         # retrieval + classifier + seq2seq
                         ########################################################
                         # compute R + C + S cross val acc
-                        # TODO
+                        print(getThreshCS2SR(classifier_validation_predictions, s2s_validation_predictions, retrieval_validation_predictions))
 
                     except RuntimeError:
                         print('Oops... Ran out of memory')
@@ -213,8 +216,22 @@ def getThresh(class_predictions, s2s_predictions):
         #print(np.sum([c[0] if c[1] > thresh else s for c,s in zip(class_predictions,s2s_predictions)]))
     return max(results, key=results.get)
 
+def getThreshCSR(class_predictions, s2s_predictions, r_predictions):
+    results = dict()
+    assert len(class_predictions) == len(s2s_predictions)
+    assert len(class_predictions) == len(r_predictions)
+    for class_thresh in np.multiply(list(range(0,100)), .01):
+        for r_thresh in np.multiply(list(range(0,100)), .01):
+            results[[class_thresh,r_thresh]] = np.sum([r[0] if r[1] > r_thresh else c[0] if c[1] > thresh else s for c,s,r in zip(class_predictions,s2s_predictions,r_predictions)])
+    return max(results, key=results.get)
+
+def combineCSR(class_predictions, s2s_predictions, r_predictions, r_thresh, c_thresh):
+    assert len(class_predictions) == len(s2s_predictions)
+    return [r[0] if r[1] > r_thresh else c[0] if c[1] > c_thresh else s for c,s,r in zip(class_predictions,s2s_predictions,r_predictions)]
+
 def combineCS(class_predictions, s2s_predictions, thresh):
     assert len(class_predictions) == len(s2s_predictions)
+    assert len(class_predictions) == len(r_predictions)
     return [c[0] if c[1] > thresh else s for c,s in zip(class_predictions,s2s_predictions)]
 
 if __name__ == '__main__':

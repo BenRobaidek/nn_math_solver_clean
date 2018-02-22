@@ -22,17 +22,17 @@ def solve(equations, variables, answers):
         # replace ^ with ** in predicted equation
         eq = eq.replace('^', '**')
 
-        #print('eq:', eq)
-        #print('var:', var)
-        #print('ans:', ans)
+        print('eq:', eq)
+        print('var:', var)
+        print('ans:', ans)
 
         #print('eq:', eq)
-        if (not eq.strip() == '<unk>'):
+        if (not eq.strip() == '<unk>') and ('=' in eq):
 
             # get variables out of predicted equation
             answer_variables = np.unique(re.findall(r'\[[mnop]\]', eq, flags=0))
 
-            eq = eq.split(',')
+            eq = eq.split(';')
             for k,p in enumerate(eq):
                 eq[k] = '(' + p.split('=')[1] + ') - (' + p.split('=')[0] + ')'
 
@@ -43,29 +43,35 @@ def solve(equations, variables, answers):
             answer_variables = [x.replace('[', '').replace(']', '') for x in answer_variables]
             #print('answer_variables:', answer_variables)
             if not len(np.unique(re.findall(r'\[[a-l]\]', ','.join(eq)))) >= 1:
-                #print('eq:', eq)
-                expr = [parse_expr(x.replace('[', '').replace(']', '')) for x in eq]
-                #print('expr:', expr)
-                symbols = sympy.symbols(' '.join(answer_variables))
-                #print('symbols:', symbols)
-                pred_answers = sympy.solve(expr, symbols)
-                #print('pred_answers:', pred_answers)
+                try:
+                    print('eq:', eq)
+                    expr = [parse_expr(x.replace('[', '').replace(']', '')) for x in eq]
+                    print('expr:', expr)
+                    symbols = sympy.symbols(' '.join(answer_variables))
+                    print('symbols:', symbols)
+                    pred_answers = sympy.solve(expr, symbols)
+                    #print('pred_answers:', pred_answers)
+                except AttributeError as e:
+                    pass
 
             all_equal = False
             #print('pred_answers:', pred_answers)
             #print('ans:', ans)
             if len(pred_answers) == len(ans):
-                #print('ASDF')
+                try:
+                    #print('ASDF')
 
-                differences = np.absolute(np.subtract(np.array(sorted(pred_answers.values())).astype(float), sorted(ans)))
-                #print('differences:', differences)
-                correct_answers = np.less(differences, np.ones(np.shape(pred_answers.values())) * .002)
-                #print('correct_answers:', correct_answers)
-                all_equal = np.all(correct_answers)
-                #print('all_equal:', all_equal)
-                #if not all_equal: print('pred_answers:', sorted(pred_answers.values()), 'ans:', sorted(ans))
+                    differences = np.absolute(np.subtract(np.array(sorted(pred_answers.values())).astype(float), sorted(ans)))
+                    #print('differences:', differences)
+                    correct_answers = np.less(differences, np.ones(np.shape(pred_answers.values())) * .002)
+                    #print('correct_answers:', correct_answers)
+                    all_equal = np.all(correct_answers)
+                    #print('all_equal:', all_equal)
+                    #if not all_equal: print('pred_answers:', sorted(pred_answers.values()), 'ans:', sorted(ans))
+                except TypeError as e:
+                    pass
             corrects = np.append(corrects, [all_equal])
-        elif (eq.strip() == '<unk>'):
+        elif (eq.strip() == '<unk>') or (not '=' in eq):
             corrects = np.append(corrects, [False])
 
     return corrects.astype(bool)
