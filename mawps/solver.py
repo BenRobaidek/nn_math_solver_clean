@@ -34,7 +34,7 @@ def solve(equations, variables, answers):
             symbols = sympy.symbols('x')
             gold_answer = sympy.solve(expr, symbols)
 
-        if if pred_answer is not None and gold_answer is not None and abs(pred_answer - gold_answer) < .002:
+        if pred_answer is not None and gold_answer is not None and abs(pred_answer - gold_answer) < .002:
             corrects = np.append(corrects, [True])
         else:
             corrects = np.append(corrects, [False])
