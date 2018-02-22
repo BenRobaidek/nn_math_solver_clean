@@ -202,6 +202,7 @@ def getThresh(class_predictions, s2s_predictions):
     """
     combines classifier and s2s results
     """
+    print(len(class_predictions), len(s2s_predictions))
     assert len(class_predictions) == len(s2s_predictions)
     results = dict()
     for thresh in np.multiply(list(range(0,100)), .01):
