@@ -116,7 +116,7 @@ def main():
                         retrieval_test_predictions = [[x.strip().split()[0] == 'True', float(x.strip().split()[1])] for x in open('../tencent/data/output/retrieval/test.correct.txt.tsv').readlines()]
                         print(retrieval_validation_predictions)
                         print(retrieval_test_predictions)
-                        print('retrieval validation acc:', 'TODO')
+                        #print('retrieval validation acc:', '')
 
                         ########################################################
                         # classifier + seq2seq
