@@ -5,18 +5,18 @@ sys.path.append('../tencent')
 from tencent import solver
 
 def main():
-    pred_equations = open('../mawps/data/output/s2s/pred-test.txt').readlines()
-    tgt_equations = [x.split('\t')[1] for x in open('../mawps/data/test.tsv').readlines()]
+    pred_equations = open('../tencent/data/output/s2s_basic/pred-testk5.txt').readlines()
+    tgt_equations = [x.split('\t')[1] for x in open('../tencent/data/working/basic/testk5.tsv').readlines()]
 
-    #variables = [x.split('\t')[2] for x in open('../ms_draw/data/working/no_sni/testk5.tsv').readlines()]
-    #answers = [x.split('\t')[3] for x in open('../ms_draw/data/working/no_sni/testk5.tsv').readlines()]
+    variables = [x.split('\t')[2] for x in open('../tencent/data/working/no_sni/testk5.tsv').readlines()]
+    answers = [x.split('\t')[3] for x in open('../tencent/data/working/no_sni/testk5.tsv').readlines()]
 
-    #print('pred_equations:', pred_equations)
-    #print('tgt_equations:', tgt_equations)
-    #print('variables:', variables)
-    #print('answers:', answers)
+    print('pred_equations:', pred_equations)
+    print('tgt_equations:', tgt_equations)
+    print('variables:', variables)
+    print('answers:', answers)
 
-    #corrects = solver.solve(pred_equations, variables, answers)
+    corrects = solver.solve(pred_equations, variables, answers)
 
     # Calculate per class accuracy
     class_corrects = 0
@@ -29,7 +29,7 @@ def main():
     print('per class accuracy:', 100*class_corrects/len(pred_equations))
 
 
-    #print('True acc:', 100*np.sum(corrects)/len(corrects))
+    print('True acc:', 100*np.sum(corrects)/len(corrects))
 
 if __name__ == '__main__':
     main()
