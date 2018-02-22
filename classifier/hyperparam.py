@@ -156,6 +156,13 @@ def main():
                         # retrieval + classifier
                         ########################################################
                         # compute R + C cross val acc
+                        best_thresh = getThresh(, retrieval_validation_predictions, classifier_validation_predictions[:,0]):
+                        classifier_r_validation_predictions = combineCS(
+                                retrieval_validation_predictions_predictions,
+                                classifier_validation_predictions,
+                                thresh=best_thresh
+                                )
+                        print(classifier_r_validation_predictions)
 
 
 
@@ -169,7 +176,7 @@ def main():
                         # retrieval + classifier + seq2seq
                         ########################################################
                         # compute R + C + S cross val acc
-                        print(getThreshCS2SR(classifier_validation_predictions, s2s_validation_predictions, retrieval_validation_predictions))
+
 
                     except RuntimeError:
                         print('Oops... Ran out of memory')
@@ -232,7 +239,6 @@ def combineCSR(class_predictions, s2s_predictions, r_predictions, r_thresh, c_th
 
 def combineCS(class_predictions, s2s_predictions, thresh):
     assert len(class_predictions) == len(s2s_predictions)
-    assert len(class_predictions) == len(r_predictions)
     return [c[0] if c[1] > thresh else s for c,s in zip(class_predictions,s2s_predictions)]
 
 if __name__ == '__main__':
