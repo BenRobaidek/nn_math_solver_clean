@@ -31,7 +31,7 @@ def train(data_path, train_path, val_path, test_path, mf, epochs, bs, opt,
     # Load data
     ############################################################################
 
-    embfix = False # Delete this line later
+    embfix = True # Delete this line later
     pretrained_emb = True # Delete this line later
 
     cuda = int(torch.cuda.is_available())-1
