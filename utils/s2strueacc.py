@@ -25,7 +25,7 @@ def main():
         print('p:', p)
         print('t:', t)
         p = ','.join([x.strip() for x in p.split(';')])
-        t = ','.join([x.strip() for x in t.split(';')])
+        t = ','.join([x.strip() for x in t.split(',')])
         if not p.strip() == t.strip(): print(p.strip(),t.strip())
         if p.strip() == t.strip(): class_corrects += 1
     print('per class accuracy:', 100*class_corrects/len(pred_equations))
