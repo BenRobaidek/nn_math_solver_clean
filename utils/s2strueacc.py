@@ -28,9 +28,9 @@ def main():
         t = ','.join([x.strip() for x in t])
         #print('p:', p)
         #print('t:', t)
-        if p.strip() == t.strip(): print(p.strip(),t.strip())
+        if not p.strip() == t.strip(): print(p.strip(),'_________',t.strip())
         if p.strip() == t.strip(): class_corrects += 1
-    print('per class accuracy:', 100*class_corrects/len(pred_equations))
+    print('class accuracy:', 100*class_corrects/len(pred_equations))
 
     output = open('../ms_draw/data/output/s2s_nosni/corrects_testk5.txt', 'w')
     print(corrects)
