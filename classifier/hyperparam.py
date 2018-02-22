@@ -114,8 +114,8 @@ def main():
                         # load retrieval predictions
                         retrieval_validation_predictions = [[x.strip().split()[0] == 'True', float(x.strip().split()[1])] for x in open('../tencent/data/output/retrieval/val.correct.txt').readlines()]
                         retrieval_test_predictions = [[x.strip().split()[0] == 'True', float(x.strip().split()[1])] for x in open('../tencent/data/output/retrieval/test.correct.txt').readlines()]
-                        print(retrieval_validation_predictions)
-                        print(retrieval_test_predictions)
+                        #print(retrieval_validation_predictions)
+                        #print(retrieval_test_predictions)
                         #print('retrieval validation acc:', '')
 
                         ########################################################
@@ -156,6 +156,7 @@ def main():
                         # retrieval + classifier
                         ########################################################
                         # compute R + C cross val acc
+                        print(classifier_validation_predictions[:][0])
                         best_thresh = getThresh(retrieval_validation_predictions, classifier_validation_predictions[:][0])
                         classifier_r_validation_predictions = combineCS(
                                 retrieval_validation_predictions_predictions,
