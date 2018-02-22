@@ -24,8 +24,8 @@ def main():
     for p,t in zip(pred_equations, tgt_equations):
         p = p.strip().split(';')
         t = t.strip().split(',')
-        print('p:', p.strip())
-        print('t:', t.strip())
+        print('p:', p)
+        print('t:', t)
         p = ','.join([x.strip() for x in p])
         t = ','.join([x.strip() for x in t])
         if not p.strip() == t.strip(): print(p.strip(),t.strip())
