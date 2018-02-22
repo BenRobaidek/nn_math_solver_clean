@@ -107,6 +107,8 @@ def main():
                         s2s_validation_predictions = np.array([x.strip() == 'True' for x in open(s2s_validation_predictions_path).readlines()])
                         s2s_test_predictions = np.array([x.strip() == 'True' for x in open(s2s_test_predictions_path).readlines()])
                         print(s2s_test_predictions.astype(int))
+                        print('np.sum(s2s_test_predictions.astype(int))', np.sum(s2s_test_predictions.astype(int)))
+                        print('len(s2s_test_predictions.astype(int))', len(s2s_test_predictions.astype(int)))
                         print('s2s true acc (VAL):', 100 * (np.sum(s2s_validation_predictions.astype(int))/len(s2s_validation_predictions)))
                         print('s2s true acc (TEST):', 100 * (np.sum(s2s_test_predictions.astype(int))/len(s2s_test_predictions)))
 
