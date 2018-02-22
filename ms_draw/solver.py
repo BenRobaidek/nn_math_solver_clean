@@ -38,24 +38,24 @@ def solve(equations, variables, answers):
 
             #if len(eq) == 1: eq = eq[0]
             pred_answers = dict()
-            print('eq:', eq)
+            #print('eq:', eq)
 
             answer_variables = [x.replace('[', '').replace(']', '') for x in answer_variables]
-            print('answer_variables:', answer_variables)
+            #print('answer_variables:', answer_variables)
             if not len(np.unique(re.findall(r'\[[a-l]\]', ','.join(eq)))) >= 1:
                 #print('eq:', eq)
                 expr = [parse_expr(x.replace('[', '').replace(']', '')) for x in eq]
-                print('expr:', expr)
+                #print('expr:', expr)
                 symbols = sympy.symbols(' '.join(answer_variables))
-                print('symbols:', symbols)
+                #print('symbols:', symbols)
                 pred_answers = sympy.solve(expr, symbols)
                 #print('pred_answers:', pred_answers)
 
             all_equal = False
-            print('pred_answers:', pred_answers)
-            print('ans:', ans)
+            #print('pred_answers:', pred_answers)
+            #print('ans:', ans)
             if len(pred_answers) == len(ans):
-                print('ASDF')
+                #print('ASDF')
                 #print('pred_answers:', pred_answers)
                 #print('answer:', answer)
                 differences = np.absolute(np.subtract(np.array(list(pred_answers.values())).astype(float), ans))
