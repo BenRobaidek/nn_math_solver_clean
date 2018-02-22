@@ -36,6 +36,7 @@ def solve(equations, variables, answers):
             gold_eq = '(' + gold_eq.split('=')[1] + ') - (' + gold_eq.split('=')[0] + ')'
             expr = parse_expr(gold_eq)
             symbols = sympy.symbols('x')
+            gold_answer = sympy.solve(expr, symbols)
             if gold_answer == []:
                 gold_answer = None
             else:
