@@ -92,18 +92,8 @@ def main():
 
                         results = sorted(results, key=lambda x: x['accuracy'], reverse=True)
                         print('Classification acc (TEST):', results[0].get('test_acc'))
-
-                        #print('results:', results)
-                        print('classifier_validation_predictions[0,:]:', np.array(classifier_validation_predictions)[:,0])
-                        print('np.sum(classifier_validation_predictions[0,:]):', np.sum(classifier_validation_predictions[0][:]))
-                        print('len(classifier_validation_predictions[0,:]):', len(classifier_validation_predictions[0][:]))
-                        print('np.sum(classifier_test_predictions[0,:]):', np.sum(classifier_test_predictions[0][:]))
-                        print('len(classifier_test_predictions[0,:]):', len(classifier_test_predictions[0][:]))
-
-
-
-                        print('classifier true acc (VAL):', 100 * (np.sum(classifier_validation_predictions)/len(classifier_validation_predictions)))
-                        print('classifier true acc (TEST):', 100 * (np.sum(classifier_test_predictions)/len(classifier_test_predictions)))
+                        print('classifier true acc (VAL):', 100 * (np.sum(np.array(classifier_validation_predictions)[:,0])/len(np.array(classifier_validation_predictions)[:,0])))
+                        print('classifier true acc (TEST):', 100 * (np.sum(np.array(classifier_test_predictions)[:,0])/len(np.array(classifier_test_predictions)[:,0])))
 
                         ########################################################
                         # seq2seq
