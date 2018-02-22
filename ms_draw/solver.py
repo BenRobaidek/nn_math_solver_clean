@@ -38,9 +38,9 @@ def solve(equations, variables, answers):
 
             #if len(eq) == 1: eq = eq[0]
             pred_answers = dict()
-            #print(answer_variables)
+            print('eq:', eq)
 
-            #print('answer_variables:', answer_variables)
+            print('answer_variables:', answer_variables)
             if not len(np.unique(re.findall(r'\[[a-l]\]', ','.join(eq)))) >= 1:
                 #print('eq:', eq)
                 expr = [parse_expr(x.replace('[', '').replace(']', '')) for x in eq]
