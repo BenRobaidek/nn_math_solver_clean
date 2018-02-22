@@ -26,7 +26,7 @@ def solve(equations, variables, answers):
             expr = parse_expr(pred_eq)
             symbols = sympy.symbols('x')
             pred_answer = sympy.solve(expr, symbols)
-            #print(pred_answer)
+            print(pred_answer)
             pred_answer = pred_answer[0]
 
         gold_answer = None
