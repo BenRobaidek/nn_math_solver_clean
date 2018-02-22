@@ -34,9 +34,7 @@ def solve(equations, variables, answers):
         print('gold_eq.split(=)[1]', gold_eq.split('=')[1])
         print('var', var)
         gold_answer = None
-        if (not gold_eq.strip()=='<unk>') and ('[' not in gold_eq):
-            gold_eq.split('=')[0]
-            gold_eq.split('=')[1]
+        if (not gold_eq.strip()=='<unk>') and ('[' not in gold_eq) and '=' in gold_eq:
             gold_eq = '(' + gold_eq.split('=')[1] + ') - (' + gold_eq.split('=')[0] + ')'
             gold_eq = '(' + gold_eq.split('=')[1] + ') - (' + gold_eq.split('=')[0] + ')'
             expr = parse_expr(gold_eq)
