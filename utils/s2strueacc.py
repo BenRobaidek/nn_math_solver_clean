@@ -24,10 +24,10 @@ def main():
     for p,t in zip(pred_equations, tgt_equations):
         p = p.strip().split(';')
         t = t.strip().split(',')
-        print('p:', p)
-        print('t:', t)
         p = ','.join([x.strip() for x in p])
         t = ','.join([x.strip() for x in t])
+        print('p:', p)
+        print('t:', t)
         if not p.strip() == t.strip(): print(p.strip(),t.strip())
         if p.strip() == t.strip(): class_corrects += 1
     print('per class accuracy:', 100*class_corrects/len(pred_equations))
