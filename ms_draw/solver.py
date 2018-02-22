@@ -32,7 +32,7 @@ def solve(equations, variables, answers):
             # get variables out of predicted equation
             answer_variables = np.unique(re.findall(r'\[[mnop]\]', eq, flags=0))
 
-            eq = eq.split(',')
+            eq = eq.split(';')
             for k,p in enumerate(eq):
                 eq[k] = '(' + p.split('=')[1] + ') - (' + p.split('=')[0] + ')'
 
