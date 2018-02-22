@@ -20,8 +20,6 @@ def solve(equations, variables, answers):
             pred_eq = pred_eq.replace(var.get(k), str(k))
             gold_eq = gold_eq.replace(var.get(k), str(k))
 
-
-
         pred_answer = None
         if (not pred_eq.strip()=='<unk>') and ('[' not in pred_eq):
             pred_eq = '(' + pred_eq.split('=')[1] + ') - (' + pred_eq.split('=')[0] + ')'
