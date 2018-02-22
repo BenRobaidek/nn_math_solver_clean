@@ -25,14 +25,14 @@ def solve(equations, variables, answers):
             pred_eq = '(' + pred_eq.split('=')[1] + ') - (' + pred_eq.split('=')[0] + ')'
             expr = parse_expr(pred_eq)
             symbols = sympy.symbols('x')
-            pred_answer = sympy.solve(expr, symbols)
+            pred_answer = sympy.solve(expr, symbols)[0]
 
         gold_answer = None
         if (not gold_eq.strip()=='<unk>') and ('[' not in gold_eq) and '=' in gold_eq:
             gold_eq = '(' + gold_eq.split('=')[1] + ') - (' + gold_eq.split('=')[0] + ')'
             expr = parse_expr(gold_eq)
             symbols = sympy.symbols('x')
-            gold_answer = sympy.solve(expr, symbols)
+            gold_answer = sympy.solve(expr, symbols)[0]
 
         if pred_answer is not None and gold_answer is not None and abs(pred_answer - gold_answer) < .002:
             corrects = np.append(corrects, [True])
