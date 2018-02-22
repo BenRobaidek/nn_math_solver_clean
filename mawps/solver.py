@@ -28,7 +28,7 @@ def solve(equations, variables, answers):
             pred_answer = sympy.solve(expr, symbols)[0]
 
         gold_answer = None
-        if (not gold_eq.strip()=='<unk>') and ('[' not in gold_eq) and '=' in gold_eq:
+        if (not gold_eq.strip()=='<unk>') and ('[' not in gold_eq):
             gold_eq = '(' + gold_eq.split('=')[1] + ') - (' + gold_eq.split('=')[0] + ')'
             expr = parse_expr(gold_eq)
             symbols = sympy.symbols('x')
