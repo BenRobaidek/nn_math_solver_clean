@@ -11,7 +11,7 @@ def solve(equations, variables, answers):
     for eq, var, ans in zip(equations, variables, answers):
         print('eq:', eq)
         print('var:', var)
-        print('ans:', ans)asdfasdf
+        print('ans:', ans)
         ans = eval(ans)
         for i,a in enumerate(ans):
             #print('type(a):', type(a))
