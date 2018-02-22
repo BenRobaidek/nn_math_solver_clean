@@ -3,6 +3,8 @@ Solver for mawps problems
 """
 import numpy as np
 import re
+import sympy
+from sympy.parsing.sympy_parser import parse_expr
 
 def solve(equations, variables, answers):
     corrects = np.array([])
@@ -20,6 +22,13 @@ def solve(equations, variables, answers):
 
         pred_eq = '(' + pred_eq.split('=')[1] + ') - (' + pred_eq.split('=')[0] + ')'
         gold_eq = '(' + gold_eq.split('=')[1] + ') - (' + gold_eq.split('=')[0] + ')'
+
+        if (pred_eq is not '<unk>'):
+            expr = parse_expr(pred_eq)
+            symbols = sympy.symbols('x')
+            pred_answers = sympy.solve(expr, symbols)
+
+        print(pred_answers)
 
         print('pred_eq', pred_eq)
         print('gold_eq', gold_eq)
