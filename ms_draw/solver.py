@@ -51,7 +51,7 @@ def solve(equations, variables, answers):
 
             all_equal = False
             if len(pred_answers) == len(ans):
-                #print(pred_answers)
+                print('ASDF')
                 #print('pred_answers:', pred_answers)
                 #print('answer:', answer)
                 differences = np.absolute(np.subtract(np.array(list(pred_answers.values())).astype(float), ans))
