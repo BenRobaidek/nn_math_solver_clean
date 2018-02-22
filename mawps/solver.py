@@ -16,7 +16,7 @@ def solve(equations, variables, answers):
 
         for k in var.keys():
             pred_eq.replace(var.get(k), str(k))
-            tgt_eq.replace(var.get(k), str(k))
+            gold_eq.replace(var.get(k), str(k))
 
         print('pred_eq', pred_eq)
         print('gold_eq', gold_eq)
