@@ -9,7 +9,7 @@ from sympy.parsing.sympy_parser import parse_expr
 def solve(equations, variables, answers):
     corrects = np.array([])
     test_dicts = open('../mawps/data/test.dicts').readlines()
-    test = [x.split('\t')[1] for x in open('../mawps/data/working/basic/test.tsv').readlines()]
+    test = [x.split('\t')[1] for x in open('../mawps/data/working/basic/testk5.tsv').readlines()]
     print(len(equations), len(test), len(test_dicts))
     for pred_eq, gold_eq, var in zip(equations, test, test_dicts):
         var = eval(var)
