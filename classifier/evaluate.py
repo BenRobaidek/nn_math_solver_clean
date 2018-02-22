@@ -91,7 +91,7 @@ def evaluate(data_iter, model, TEXT, emb_dim, LABELS, VAR_VALUES, ANS, snis, pre
     avg_loss = loss.data[0]/size
     accuracy = 100.0 * corrects/size
     true_acc = 100.0 * true_corrects/size
-    #print('answer_correspond_to_equation:', answer_correspond_to_equation/size)
+    print('answer_correspond_to_equation:', answer_correspond_to_equation/size)
     #print()
     t5_acc = 100.0 * t5_corrects/size
     mrr = rr/size
