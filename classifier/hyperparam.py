@@ -143,7 +143,10 @@ def main():
 
                         # print questions that both classifier and s2s get wrong
                         val_problems = open(config['data_path'] + val_path).readlines()
-                        print(classifier_s2s_validation_predictions)
+                        #print(classifier_s2s_validation_predictions)
+
+                        for i,j in zip(classifier_s2s_validation_predictions,val_problems):
+                            if i: print(j)
 
 
                         ########################################################
