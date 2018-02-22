@@ -67,6 +67,6 @@ def solve(equations, variables, answers):
                 #print()
             corrects = np.append(corrects, [all_equal])
         elif (eq.strip() == '<unk>'):
-            corrects = np.append(corrects, [False])
+            corrects = np.append(corrects, [True])
 
     return corrects.astype(bool)
