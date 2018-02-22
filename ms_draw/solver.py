@@ -61,7 +61,7 @@ def solve(equations, variables, answers):
                 pred_answers = sorted(list(pred_answers.values()))
                 differences = np.absolute(np.subtract(np.array(pred_answers).astype(float), ans))
                 #print('differences:', differences)
-                correct_answers = np.less(differences, np.ones(np.shape(pred_answers.values())) * .002)
+                correct_answers = np.less(differences, np.ones(np.shape(pred_answers)) * .002)
                 #print('correct_answers:', correct_answers)
                 all_equal = np.all(correct_answers)
                 #print('all_equal:', all_equal)
