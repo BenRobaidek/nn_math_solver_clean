@@ -14,6 +14,14 @@ def solve(equations, variables, answers):
         print('gold_eq', gold_eq)
         print('var', var)
 
+        for k in var.keys():
+            pred_eq.replace(k,var.get(k))
+            tgt_eq.replace(k,var.get(k))
+
+        print('pred_eq', pred_eq)
+        print('gold_eq', gold_eq)
+        print('var', var)
+
 
     #print('test_dicts:', test_dicts)
     corrects = np.ones(len(equations))
