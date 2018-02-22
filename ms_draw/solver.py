@@ -56,15 +56,14 @@ def solve(equations, variables, answers):
             #print('ans:', ans)
             if len(pred_answers) == len(ans):
                 #print('ASDF')
-                print('pred_answers:', pred_answers.values())
-                print('ans:', ans)
+
                 differences = np.absolute(np.subtract(np.array(list(pred_answers.values())).astype(float), ans))
                 #print('differences:', differences)
                 correct_answers = np.less(differences, np.ones(np.shape(pred_answers.values())) * .002)
                 #print('correct_answers:', correct_answers)
                 all_equal = np.all(correct_answers)
                 #print('all_equal:', all_equal)
-                #print()
+                if all_equal: print('pred_answers:', pred_answers.values(), 'ans:', ans)
             corrects = np.append(corrects, [all_equal])
         elif (eq.strip() == '<unk>'):
             corrects = np.append(corrects, [True])
