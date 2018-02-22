@@ -82,7 +82,7 @@ def main():
                                 dropout=dropout, pred_filter=bool(pred_filter),
                                 save_path='./hyperparam_results/' + save_path + '/', save=False, verbose=False)
                         results = sorted(results, key=lambda x: x['true_acc'], reverse=True)
-                        results = sorted(results, key=lambda x: x['accuracy'], reverse=True)
+                        #results = sorted(results, key=lambda x: x['accuracy'], reverse=True)
 
                         ########################################################
                         # classifier
@@ -140,6 +140,11 @@ def main():
 
                         print('classifier + s2s true accuracy (VAL):', np.sum(classifier_s2s_validation_predictions)/len(classifier_s2s_validation_predictions))
                         print('classifier + s2s true accuracy (TEST):', np.sum(classifier_s2s_test_predictions)/len(classifier_s2s_test_predictions))
+
+                        # print questions that both classifier and s2s get wrong
+                        val_problems = open(config['data_path'] + val_path).readlines()
+                        print(classifier_s2s_validation_predictions)
+
 
                         ########################################################
                         # retrieval + classifier
