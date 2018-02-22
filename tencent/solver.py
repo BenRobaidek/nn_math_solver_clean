@@ -11,7 +11,6 @@ def solve(equations, variables, answers):
         var = eval(var)
 
         # sub variables into predicted and target equations
-        print(var)
         for k in var:
             eq = eq.replace(k, var[k])
 
