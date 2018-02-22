@@ -29,7 +29,7 @@ def solve(equations, variables, answers):
             pred_answer = sympy.solve(expr, symbols)
 
         print('pred_eq', pred_eq)
-        print('gold_eq', gold_eq)
+        print('gold_eq', gold_eq.split('='))
         print('var', var)
         gold_answer = None
         if (not gold_eq.strip()=='<unk>') and ('[' not in gold_eq):
