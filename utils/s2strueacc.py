@@ -22,7 +22,7 @@ def main():
     class_corrects = 0
     assert len(pred_equations) == len(tgt_equations)
     for p,t in zip(pred_equations, tgt_equations):
-        p = p.strip().split(';')
+        p = p.strip().split(',')
         t = t.strip().split(',')
         p = ','.join([x.strip() for x in p])
         t = ','.join([x.strip() for x in t])
