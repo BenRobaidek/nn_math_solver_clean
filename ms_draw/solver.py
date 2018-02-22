@@ -32,7 +32,7 @@ def solve(equations, variables, answers):
             # get variables out of predicted equation
             answer_variables = np.unique(re.findall(r'\[[mnop]\]', eq, flags=0))
 
-            eq = eq.split(';')
+            eq = eq.split(',')
             for k,p in enumerate(eq):
                 eq[k] = '(' + p.split('=')[1] + ') - (' + p.split('=')[0] + ')'
 
@@ -46,8 +46,6 @@ def solve(equations, variables, answers):
                 expr = [parse_expr(x.replace('[', '').replace(']', '')) for x in eq]
                 #print(answer_variables)
                 symbols = sympy.symbols(' '.join(answer_variables))
-                print(expr)
-                print(symbols)
                 pred_answers = sympy.solve(expr, symbols)
                 #print('pred_answers:', pred_answers)
 
