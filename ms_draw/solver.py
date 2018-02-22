@@ -9,9 +9,9 @@ from sympy.parsing.sympy_parser import parse_expr
 def solve(equations, variables, answers):
     corrects = np.array([])
     for eq, var, ans in zip(equations, variables, answers):
-        #print('eq:', eq)
-        #print('var:', var)
-        #print('ans:', ans)asdfasdf
+        print('eq:', eq)
+        print('var:', var)
+        print('ans:', ans)asdfasdf
         ans = eval(ans)
         for i,a in enumerate(ans):
             #print('type(a):', type(a))
