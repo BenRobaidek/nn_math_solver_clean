@@ -22,10 +22,12 @@ def main():
     class_corrects = 0
     assert len(pred_equations) == len(tgt_equations)
     for p,t in zip(pred_equations, tgt_equations):
+        p = p.strip().split(';')
+        t = t.strip().split(',')
         print('p:', p.strip())
         print('t:', t.strip())
-        p = ','.join([x.strip() for x in p.split(';')])
-        t = ','.join([x.strip() for x in t.split(',')])
+        p = ','.join([x.strip() for x in p])
+        t = ','.join([x.strip() for x in t])
         if not p.strip() == t.strip(): print(p.strip(),t.strip())
         if p.strip() == t.strip(): class_corrects += 1
     print('per class accuracy:', 100*class_corrects/len(pred_equations))
