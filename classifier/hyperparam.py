@@ -114,8 +114,8 @@ def main():
                         # load retrieval predictions
                         retrieval_validation_predictions = [[x.strip().split()[0] == 'True', float(x.strip().split()[1])] for x in open('../tencent/data/output/retrieval/val.correct.txt').readlines()]
                         retrieval_test_predictions = [[x.strip().split()[0] == 'True', float(x.strip().split()[1])] for x in open('../tencent/data/output/retrieval/test.correct.txt').readlines()]
-                        print('r true accuracy (VAL):', np.sum(retrieval_validation_predictions)/len(retrieval_validation_predictions))
-                        print('r true accuracy (TEST):', np.sum(retrieval_test_predictions)/len(retrieval_test_predictions))
+                        print('r true accuracy (VAL):', np.sum(np.array(retrieval_validation_predictions))[:,0]/len(np.array(retrieval_validation_predictions))[:,0]))
+                        print('r true accuracy (TEST):', np.sum(np.array(retrieval_test_predictions))[:,0]/len(np.array(retrieval_test_predictions))[:,0]))
                         #print(retrieval_validation_predictions)
                         #print(retrieval_test_predictions)
                         #print('retrieval validation acc:', '')
