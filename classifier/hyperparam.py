@@ -93,12 +93,12 @@ def main():
 
                         output = open('./mawps.class.corrects.val.txt', 'w')
                         for x in classifier_validation_predictions:
-                            output.write(str(x[0]) + '\t' + x[1] + '\n')
+                            output.write(str(x[0]) + '\t' + str(x[1]) + '\n')
                         output.close
 
                         output = open('./mawps.class.corrects.test.txt', 'w')
                         for x in classifier_test_predictions:
-                            output.write(str(x[0]) + '\t' + x[1] + '\n')
+                            output.write(str(x[0]) + '\t' + str(x[1]) + '\n')
                         output.close
 
                         results = sorted(results, key=lambda x: x['accuracy'], reverse=True)
