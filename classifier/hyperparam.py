@@ -162,12 +162,12 @@ def main():
                         print('best_thresh:', best_thresh)
                         classifier_r_validation_predictions = combineCS(
                                 retrieval_validation_predictions,
-                                classifier_validation_predictions,
+                                np.array(classifier_validation_predictions)[:,0],
                                 thresh=best_thresh
                                 )
                         classifier_r_test_predictions = combineCS(
                                 retrieval_test_predictions,
-                                classifier_test_predictions,
+                                np.array(classifier_test_predictions)[:,0],
                                 thresh=best_thresh
                                 )
                         #print(classifier_r_validation_predictions)
