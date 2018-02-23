@@ -156,15 +156,19 @@ def main():
                         # retrieval + classifier
                         ########################################################
                         # compute R + C cross val acc
-                        print(np.array(classifier_validation_predictions)[:,0])
                         best_thresh = getThresh(retrieval_validation_predictions, np.array(classifier_validation_predictions)[:,0].astype(bool))
                         classifier_r_validation_predictions = combineCS(
                                 retrieval_validation_predictions,
                                 classifier_validation_predictions,
                                 thresh=best_thresh
                                 )
-                        print(classifier_r_validation_predictions)
-
+                        classifier_r_test_predictions = combineCS(
+                                retrieval_test_predictions,
+                                classifier_test_predictions,
+                                thresh=best_thresh
+                                )
+                        print('r + classifier true accuracy (VAL):', np.sum(classifier_r_validation_predictions)/len(classifier_r_validation_predictions))
+                        print('r + classifier true accuracy (TEST):', np.sum(classifier_r_test_predictions)/len(classifier_r_test_predictions))
 
 
                         ########################################################
