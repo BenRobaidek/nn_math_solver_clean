@@ -82,7 +82,7 @@ def main():
                                 dropout=dropout, pred_filter=bool(pred_filter),
                                 save_path='./hyperparam_results/' + save_path + '/', save=False, verbose=False)
                         results = sorted(results, key=lambda x: x['true_acc'], reverse=True)
-                        #results = sorted(results, key=lambda x: x['accuracy'], reverse=True)
+                        results = sorted(results, key=lambda x: x['accuracy'], reverse=True)
 
                         ########################################################
                         # classifier
