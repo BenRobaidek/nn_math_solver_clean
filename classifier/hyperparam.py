@@ -214,7 +214,7 @@ def main():
                                 )
                         r_s2s_test_predictions = combineCS(
                                 retrieval_test_predictions,
-                                s2s2s_test_predictions,
+                                s2s_test_predictions,
                                 thresh=best_thresh
                                 )
                         #print(classifier_r_validation_predictions)
