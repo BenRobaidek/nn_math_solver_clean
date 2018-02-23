@@ -205,7 +205,23 @@ def main():
                         # retrieval + seq2seq
                         ########################################################
                         # compute R + S cross val acc
-                        # TODO
+                        best_thresh = getThresh(retrieval_validation_predictions, s2s_validation_predictions)
+                        print('best_thresh:', best_thresh)
+                        r_s2s_validation_predictions = combineCS(
+                                retrieval_validation_predictions,
+                                s2s_validation_predictions,
+                                thresh=best_thresh
+                                )
+                        r_s2s_test_predictions = combineCS(
+                                retrieval_test_predictions,
+                                s2s2s_test_predictions,
+                                thresh=best_thresh
+                                )
+                        #print(classifier_r_validation_predictions)
+                        #print(classifier_r_test_predictions)
+                        #print(classifier_r_validation_predictions)
+                        print('r + s2s true accuracy (VAL):', np.sum(r_s2s_validation_predictions)/len(r_s2s_validation_predictions))
+                        print('r + s2s true accuracy (TEST):', np.sum(r_s2s_test_predictions)/len(r_s2s_test_predictions))
 
                         ########################################################
                         # retrieval + classifier + seq2seq
