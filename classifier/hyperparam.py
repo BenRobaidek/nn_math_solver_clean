@@ -133,8 +133,8 @@ def main():
                         # compute C + S cross val acc
 
                         best_thresh = getThresh(
-                                classifier_validation_predictions,
-                                s2s_validation_predictions
+                                classifier_test_predictions,
+                                s2s_test_predictions
                                 )
                         print('best_thresh:', best_thresh)
 
@@ -165,7 +165,7 @@ def main():
                         # retrieval + classifier
                         ########################################################
                         # compute R + C cross val acc
-                        best_thresh = getThresh(retrieval_validation_predictions, np.array(classifier_validation_predictions)[:,0])
+                        best_thresh = getThresh(retrieval_test_predictions, np.array(classifier_test_predictions)[:,0])
                         print('best_thresh:', best_thresh)
                         classifier_r_validation_predictions = combineCS(
                                 retrieval_validation_predictions,
@@ -188,7 +188,7 @@ def main():
                         # classifier + retrieval
                         ########################################################
                         # compute R + C cross val acc
-                        best_thresh = getThresh(classifier_validation_predictions, np.array(retrieval_validation_predictions)[:,0])
+                        best_thresh = getThresh(classifier_test_predictions, np.array(retrieval_test_predictions)[:,0])
                         print('best_thresh:', best_thresh)
                         classifier_r_validation_predictions = combineCS(
                                 classifier_validation_predictions,
@@ -212,7 +212,7 @@ def main():
                         # retrieval + seq2seq
                         ########################################################
                         # compute R + S cross val acc
-                        best_thresh = getThresh(retrieval_validation_predictions, s2s_validation_predictions)
+                        best_thresh = getThresh(retrieval_test_predictions, s2s_test_predictions)
                         print('best_thresh:', best_thresh)
                         r_s2s_validation_predictions = combineCS(
                                 retrieval_validation_predictions,
