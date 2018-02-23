@@ -200,7 +200,7 @@ def main():
                                 np.array(retrieval_test_predictions)[:,0],
                                 thresh=best_thresh
                                 )
-                        #print(classifier_r_validation_predictions)
+                        print(classifier_r_validation_predictions)
                         #print(classifier_r_test_predictions)
                         classifier_r_validation_predictions = np.array(classifier_r_validation_predictions)#[:,0]
                         #print(classifier_r_validation_predictions)
@@ -224,7 +224,7 @@ def main():
                                 s2s_test_predictions,
                                 thresh=best_thresh
                                 )
-                        #print(classifier_r_validation_predictions)
+                        print(classifier_r_validation_predictions)
                         #print(classifier_r_test_predictions)
                         #print(classifier_r_validation_predictions)
                         print('r + s2s true accuracy (VAL):', np.sum(r_s2s_validation_predictions)/len(r_s2s_validation_predictions))
