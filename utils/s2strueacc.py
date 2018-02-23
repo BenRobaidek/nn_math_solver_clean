@@ -1,15 +1,15 @@
 import sys
 import numpy as np
 sys.path.append('../')
-sys.path.append('../tencent')
-from tencent import solver
+sys.path.append('../ms_draw')
+from ms_draw import solver
 
 def main():
-    pred_equations = open('../tencent/data/output/cnn_basic/pred-testk5.txt').readlines()
-    tgt_equations = [x.split('\t')[1] for x in open('../tencent/data/working/basic/testk5.tsv').readlines()]
+    pred_equations = open('../ms_draw/data/output/s2s_nosni/pred-test.txt').readlines()
+    tgt_equations = [x.split('\t')[1] for x in open('../ms_draw/data/working/no_sni/test.tsv').readlines()]
 
-    variables = [x.split('\t')[2] for x in open('../tencent/data/working/basic/testk5.tsv').readlines()]
-    answers = [x.split('\t')[3] for x in open('../tencent/data/working/basic/testk5.tsv').readlines()]
+    variables = [x.split('\t')[2] for x in open('../ms_draw/data/working/no_sni/test.tsv').readlines()]
+    answers = [x.split('\t')[3] for x in open('../ms_draw/data/working/no_sni/test.tsv').readlines()]
 
     #print('pred_equations:', pred_equations)
     #print('tgt_equations:', tgt_equations)
@@ -20,6 +20,8 @@ def main():
 
     # Calculate per class accuracy
     class_corrects = 0
+    print(pred_equations)
+    print(len(pred_equations), len(tgt_equations))
     assert len(pred_equations) == len(tgt_equations)
     for p,t in zip(pred_equations, tgt_equations):
         p = p.strip().split(',')
@@ -32,7 +34,7 @@ def main():
         if p.strip() == t.strip(): class_corrects += 1
     print('class accuracy:', 100*class_corrects/len(pred_equations))
 
-    output = open('../tencent/data/output/cnn_basic/corrects_testk5.txt', 'w')
+    output = open('../ms_draw/data/output/s2s_nosni/corrects_test.txt', 'w')
     print(corrects)
     for x in corrects:
         output.write(str(x) + '\n')

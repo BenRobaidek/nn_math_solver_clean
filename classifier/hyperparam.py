@@ -101,8 +101,8 @@ def main():
                         ########################################################
                         # load s2s predictions
                         print('config[data_path]:', config['data_path'])
-                        s2s_validation_predictions_path = config['data_path'].strip('/working/basic/') + 'a/output/s2s_basic/corrects_valk1234.txt'
-                        s2s_test_predictions_path = config['data_path'].strip('/working/basic/') + 'a/output/s2s_basic/corrects_testk5.txt'
+                        s2s_validation_predictions_path = config['data_path'].strip('/working/basic/') + '/output/s2s_basic/corrects_valk1234.txt'
+                        s2s_test_predictions_path = config['data_path'].strip('/working/basic/') + '/output/s2s_basic/corrects_testk5.txt'
                         s2s_validation_predictions = np.array([x.strip() == 'True' for x in open(s2s_validation_predictions_path).readlines()])
                         s2s_test_predictions = np.array([x.strip() == 'True' for x in open(s2s_test_predictions_path).readlines()])
                         print('s2s true acc (VAL):', 100 * (np.sum(s2s_validation_predictions.astype(int))/len(s2s_validation_predictions)))
@@ -112,8 +112,8 @@ def main():
                         # retrieval
                         ########################################################
                         # load retrieval predictions
-                        retrieval_validation_predictions = [[x.strip().split()[0] == 'True', float(x.strip().split()[1])] for x in open('../tencent/data/output/retrieval/val.correct.txt').readlines()]
-                        retrieval_test_predictions = [[x.strip().split()[0] == 'True', float(x.strip().split()[1])] for x in open('../tencent/data/output/retrieval/test.correct.txt').readlines()]
+                        retrieval_validation_predictions = [[x.strip().split()[0] == 'True', float(x.strip().split()[1])] for x in open('../mawps/data/output/retrieval/val.correct.txt').readlines()]
+                        retrieval_test_predictions = [[x.strip().split()[0] == 'True', float(x.strip().split()[1])] for x in open('../mawps/data/output/retrieval/test.correct.txt').readlines()]
                         print('r true accuracy (VAL):', np.sum(np.array(retrieval_validation_predictions)[:,0])/len(np.array(retrieval_validation_predictions)[:,0]))
                         print('r true accuracy (TEST):', np.sum(np.array(retrieval_test_predictions)[:,0])/len(np.array(retrieval_test_predictions)[:,0]))
                         #print(retrieval_validation_predictions)
