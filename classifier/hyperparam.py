@@ -91,6 +91,16 @@ def main():
                         classifier_validation_predictions = [[x.split()[0] == 'True', float(x.split()[1])] for x in results[0].get('preds')]
                         classifier_test_predictions = [[x.split()[0] == 'True', float(x.split()[1])] for x in results[0].get('test_eval_preds')]
 
+                        output = open('./mawps.class.corrects.val.txt', 'w')
+                        for x in classifier_validation_predictions:
+                            output.write(str(x[0]) + '\t' + x[1] + '\n')
+                        output.close
+
+                        output = open('./mawps.class.corrects.test.txt', 'w')
+                        for x in classifier_test_predictions:
+                            output.write(str(x[0]) + '\t' + x[1] + '\n')
+                        output.close
+
                         results = sorted(results, key=lambda x: x['accuracy'], reverse=True)
                         print('Classification acc (TEST):', results[0].get('test_acc'))
                         print('classifier true acc (VAL):', 100 * (np.sum(np.array(classifier_validation_predictions)[:,0])/len(np.array(classifier_validation_predictions)[:,0])))
