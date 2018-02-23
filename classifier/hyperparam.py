@@ -120,6 +120,13 @@ def main():
                         #print(retrieval_test_predictions)
                         #print('retrieval validation acc:', '')
 
+
+                        print(classifier_validation_predictions)
+                        print(classifier_test_predictions)
+                        print(s2s_validation_predictions)
+                        print(s2s_test_predictions)
+                        print(retrieval_validation_predictions)
+                        print(retrieval_test_predictions)
                         ########################################################
                         # classifier + seq2seq
                         ########################################################
