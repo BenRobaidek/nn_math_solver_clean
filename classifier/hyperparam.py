@@ -173,7 +173,7 @@ def main():
                         #print(classifier_r_validation_predictions)
                         #print(classifier_r_test_predictions)
                         classifier_r_validation_predictions = np.array(classifier_r_validation_predictions)#[:,0]
-                        print(classifier_r_validation_predictions)
+                        #print(classifier_r_validation_predictions)
                         print('r + classifier true accuracy (VAL):', np.sum(classifier_r_validation_predictions)/len(classifier_r_validation_predictions))
                         print('r + classifier true accuracy (TEST):', np.sum(classifier_r_test_predictions)/len(classifier_r_test_predictions))
 
