@@ -167,8 +167,8 @@ def main():
                                 classifier_test_predictions,
                                 thresh=best_thresh
                                 )
-                        print(classifier_r_validation_predictions)
-                        print(classifier_r_test_predictions)
+                        #print(classifier_r_validation_predictions)
+                        #print(classifier_r_test_predictions)
                         print('r + classifier true accuracy (VAL):', np.sum(classifier_r_validation_predictions)/len(classifier_r_validation_predictions))
                         print('r + classifier true accuracy (TEST):', np.sum(classifier_r_test_predictions)/len(classifier_r_test_predictions))
 
