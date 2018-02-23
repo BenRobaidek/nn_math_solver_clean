@@ -159,6 +159,7 @@ def main():
                         ########################################################
                         # compute R + C cross val acc
                         best_thresh = getThresh(retrieval_validation_predictions, np.array(classifier_validation_predictions)[:,0].astype(bool))
+                        print('best_thresh:', best_thresh)
                         classifier_r_validation_predictions = combineCS(
                                 retrieval_validation_predictions,
                                 classifier_validation_predictions,
