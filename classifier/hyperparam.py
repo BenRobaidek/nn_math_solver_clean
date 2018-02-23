@@ -177,6 +177,29 @@ def main():
                         print('r + classifier true accuracy (VAL):', np.sum(classifier_r_validation_predictions)/len(classifier_r_validation_predictions))
                         print('r + classifier true accuracy (TEST):', np.sum(classifier_r_test_predictions)/len(classifier_r_test_predictions))
 
+                        ########################################################
+                        # classifier + retrieval
+                        ########################################################
+                        # compute R + C cross val acc
+                        best_thresh = getThresh(classifier_validation_predictions, np.array(retrieval_validation_predictions)[:,0])
+                        print('best_thresh:', best_thresh)
+                        classifier_r_validation_predictions = combineCS(
+                                classifier_validation_predictions,
+                                np.array(retrieval_validation_predictions)[:,0],
+                                thresh=best_thresh
+                                )
+                        classifier_r_test_predictions = combineCS(
+                                classifier_test_predictions,
+                                np.array(retrieval_test_predictions)[:,0],
+                                thresh=best_thresh
+                                )
+                        #print(classifier_r_validation_predictions)
+                        #print(classifier_r_test_predictions)
+                        classifier_r_validation_predictions = np.array(classifier_r_validation_predictions)#[:,0]
+                        #print(classifier_r_validation_predictions)
+                        print('r + classifier true accuracy (VAL):', np.sum(classifier_r_validation_predictions)/len(classifier_r_validation_predictions))
+                        print('r + classifier true accuracy (TEST):', np.sum(classifier_r_test_predictions)/len(classifier_r_test_predictions))
+
 
                         ########################################################
                         # retrieval + seq2seq
