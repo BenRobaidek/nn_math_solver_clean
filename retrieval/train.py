@@ -2,12 +2,16 @@ import numpy as np
 import sympy
 from sympy.parsing.sympy_parser import parse_expr
 import re
+import sys
+sys.path.append('../')
+sys.path.append('../tencent/')
+from tencent import solver as tencent_solver
 
 def main():
     train(data_path='../tencent/data/working/basic/',
-            train_path='valk1234.tsv',
-            val_path='test_easy.tsv',
-            test_path='test_easy.tsv')
+            train_path='traink1234.tsv',
+            val_path='valk1234.tsv',
+            test_path='testk5.tsv')
 
 def train(data_path, train_path, val_path, test_path,):
     print('Training...')
@@ -21,14 +25,21 @@ def train(data_path, train_path, val_path, test_path,):
     print('Done...')
 
     corrects = 0
+    pred_equations = np.array([])
     for x in val:
-        print('gold:', x[1])
         problem_tfidfs = tfidfs(x[0].split(), [x[0] for x in train])
         if x[1] == train[getClosestIndex(problem_tfidfs, train_tfidfs)][1]:
             corrects += 1
-        print('pred:', train[getClosestIndex(problem_tfidfs, train_tfidfs)][1])
+        pred_equations = np.append(pred_equations,train[getClosestIndex(problem_tfidfs, train_tfidfs)][1])
+        print('gold:', x[1], '\npred:', train[getClosestIndex(problem_tfidfs, train_tfidfs)][1])
 
+    print(pred_equations)
     print('classification accuracy (VAL):', corrects/len([x[0] for x in val]))
+
+    variables = [x[2] for x in val]
+    answers = [x[3] for x in train]
+    pred_corrects = tencent_solver.solve(pred_equations, variables, answers)
+    print('true_acc (VAL):', sum(pred_corrects)/len([x[0] for x in val]))
 
 
 def getClosestIndex(problem_tfidfs, train_tfidfs):
